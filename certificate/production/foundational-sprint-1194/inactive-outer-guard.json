@@ -1,0 +1,16 @@
+{
+  "status": "inactive outer-contact guard",
+  "precision_bits": 300,
+  "tiles": 32768,
+  "largest_dx_upper": -31.4393986241034,
+  "largest_d_line_at_one_upper": 0.1105025877639819,
+  "largest_d_stationarity_target_upper": -202.33880711698328,
+  "minimum_F_target_lower": 0.21039994329695993,
+  "failure_count": 0,
+  "first_failures": [],
+  "literal_strict_line_derivative_test": false,
+  "successor_monotonicity_repair": true,
+  "right_outer_contacts_excluded": true,
+  "left_outer_contacts_excluded_by_reflection": true,
+  "claim_boundary": "On the complete inactive right tail, L_x(1) increases from its calibrated value at x_*. Slope ordering then gives L_x(y)>=F(y) for every y. Reflection supplies the left tail."
+}

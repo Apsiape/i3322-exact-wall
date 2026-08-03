@@ -1,0 +1,225 @@
+{
+  "status": "commutant factorization plus hidden direct-sum commuting guards",
+  "exact_local_factor_residual": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ]
+  ],
+  "middle_determinant": "-(2*z - 1)*(2*z + 1)",
+  "middle_spectrum": "1+/-2z, nonnegative for |z|<=1/2",
+  "fixtures": 20,
+  "maximum_cross_commutator": 1.1283232075890994e-15,
+  "minimum_R0": 0.000437461597205474,
+  "minimum_RA": -3.1609913784742103e-15,
+  "minimum_RB": -3.5336438227586285e-15,
+  "maximum_assembly_residual": 1.4361593850758602e-15,
+  "all_gates_pass": true,
+  "checks": [
+    {
+      "family": 0,
+      "fixture": 0,
+      "dimension": 10,
+      "max_cross_commutator": 8.57318376086058e-16,
+      "minimum_R0": 0.007389218989253293,
+      "minimum_RA": -1.5129646070045504e-15,
+      "minimum_RB": -6.816396988842785e-16,
+      "assembly_residual": 9.453784733153521e-16
+    },
+    {
+      "family": 0,
+      "fixture": 1,
+      "dimension": 10,
+      "max_cross_commutator": 6.162737736584506e-16,
+      "minimum_R0": 0.25087534583364796,
+      "minimum_RA": -1.0593495303870793e-15,
+      "minimum_RB": -5.043545352904234e-16,
+      "assembly_residual": 9.106951247322987e-16
+    },
+    {
+      "family": 0,
+      "fixture": 2,
+      "dimension": 10,
+      "max_cross_commutator": 6.148179723222937e-16,
+      "minimum_R0": 0.008055565970937593,
+      "minimum_RA": -4.683572388671681e-16,
+      "minimum_RB": -3.2010733898883664e-16,
+      "assembly_residual": 6.767955294706531e-16
+    },
+    {
+      "family": 0,
+      "fixture": 3,
+      "dimension": 10,
+      "max_cross_commutator": 6.303096608751463e-16,
+      "minimum_R0": 0.2508753463279444,
+      "minimum_RA": -3.1921558631996047e-16,
+      "minimum_RB": -2.8600626169669413e-16,
+      "assembly_residual": 6.795328056173052e-16
+    },
+    {
+      "family": 0,
+      "fixture": 4,
+      "dimension": 10,
+      "max_cross_commutator": 5.274793189998911e-16,
+      "minimum_R0": 0.06515760333653363,
+      "minimum_RA": -4.304726668896871e-16,
+      "minimum_RB": -1.138487808760571e-15,
+      "assembly_residual": 4.311190078090427e-16
+    },
+    {
+      "family": 1,
+      "fixture": 0,
+      "dimension": 12,
+      "max_cross_commutator": 9.404292905093086e-16,
+      "minimum_R0": 0.05661393417831862,
+      "minimum_RA": -4.771992132351006e-16,
+      "minimum_RB": -1.037204452161246e-15,
+      "assembly_residual": 1.4361593850758602e-15
+    },
+    {
+      "family": 1,
+      "fixture": 1,
+      "dimension": 12,
+      "max_cross_commutator": 6.066431268210197e-16,
+      "minimum_R0": 0.07329691804128176,
+      "minimum_RA": -1.0516034592999076e-15,
+      "minimum_RB": -2.334881110149842e-15,
+      "assembly_residual": 8.691147649892943e-16
+    },
+    {
+      "family": 1,
+      "fixture": 2,
+      "dimension": 12,
+      "max_cross_commutator": 5.98778860641601e-16,
+      "minimum_R0": 0.015504817683971862,
+      "minimum_RA": -1.7293226905466437e-15,
+      "minimum_RB": -1.086630488519066e-15,
+      "assembly_residual": 8.626538589918084e-16
+    },
+    {
+      "family": 1,
+      "fixture": 3,
+      "dimension": 12,
+      "max_cross_commutator": 7.884799555560603e-16,
+      "minimum_R0": 0.027560276078895385,
+      "minimum_RA": -9.617195956832575e-16,
+      "minimum_RB": -1.0389661708758252e-15,
+      "assembly_residual": 7.43919485011916e-16
+    },
+    {
+      "family": 1,
+      "fixture": 4,
+      "dimension": 12,
+      "max_cross_commutator": 5.773863829813138e-16,
+      "minimum_R0": 0.000437461597205474,
+      "minimum_RA": -5.435957655971894e-16,
+      "minimum_RB": -1.0841080828089875e-15,
+      "assembly_residual": 8.494650246759986e-16
+    },
+    {
+      "family": 2,
+      "fixture": 0,
+      "dimension": 16,
+      "max_cross_commutator": 7.940596327511724e-16,
+      "minimum_R0": 0.0611505163468947,
+      "minimum_RA": -1.7839600564591023e-15,
+      "minimum_RB": -3.7446162015398987e-16,
+      "assembly_residual": 8.31175068417463e-16
+    },
+    {
+      "family": 2,
+      "fixture": 1,
+      "dimension": 16,
+      "max_cross_commutator": 1.1283232075890994e-15,
+      "minimum_R0": 0.06186410170733704,
+      "minimum_RA": -1.1979187225344146e-15,
+      "minimum_RB": -4.495169221093026e-16,
+      "assembly_residual": 9.789732975272879e-16
+    },
+    {
+      "family": 2,
+      "fixture": 2,
+      "dimension": 16,
+      "max_cross_commutator": 8.455288051895323e-16,
+      "minimum_R0": 0.00541744520173544,
+      "minimum_RA": -1.4063446827749782e-15,
+      "minimum_RB": -1.53283038794395e-15,
+      "assembly_residual": 1.1017725192001908e-15
+    },
+    {
+      "family": 2,
+      "fixture": 3,
+      "dimension": 16,
+      "max_cross_commutator": 8.039098656544281e-16,
+      "minimum_R0": 0.013605549944922177,
+      "minimum_RA": -7.531332851809103e-16,
+      "minimum_RB": -9.88854790830644e-16,
+      "assembly_residual": 1.268942740192976e-15
+    },
+    {
+      "family": 2,
+      "fixture": 4,
+      "dimension": 16,
+      "max_cross_commutator": 8.982830540844852e-16,
+      "minimum_R0": 0.058283575000922676,
+      "minimum_RA": -6.004147737892666e-16,
+      "minimum_RB": -2.161424187148811e-15,
+      "assembly_residual": 1.0449779596982282e-15
+    },
+    {
+      "family": 3,
+      "fixture": 0,
+      "dimension": 13,
+      "max_cross_commutator": 7.548845470339426e-16,
+      "minimum_R0": 0.011459560926688062,
+      "minimum_RA": -6.791503237128202e-16,
+      "minimum_RB": -3.5336438227586285e-15,
+      "assembly_residual": 7.935590231556748e-16
+    },
+    {
+      "family": 3,
+      "fixture": 1,
+      "dimension": 13,
+      "max_cross_commutator": 1.1034346590841721e-15,
+      "minimum_R0": 0.15306203822298006,
+      "minimum_RA": -3.1609913784742103e-15,
+      "minimum_RB": -6.188534960272164e-16,
+      "assembly_residual": 9.788358195601766e-16
+    },
+    {
+      "family": 3,
+      "fixture": 2,
+      "dimension": 13,
+      "max_cross_commutator": 8.584413562964457e-16,
+      "minimum_R0": 0.0648705184876257,
+      "minimum_RA": -6.855118719544082e-16,
+      "minimum_RB": -8.260888997233153e-16,
+      "assembly_residual": 1.0507887885536942e-15
+    },
+    {
+      "family": 3,
+      "fixture": 3,
+      "dimension": 13,
+      "max_cross_commutator": 8.519793432028775e-16,
+      "minimum_R0": 0.250875353021958,
+      "minimum_RA": -3.5728467461416976e-16,
+      "minimum_RB": -2.3993487948874572e-15,
+      "assembly_residual": 6.640377724558189e-16
+    },
+    {
+      "family": 3,
+      "fixture": 4,
+      "dimension": 13,
+      "max_cross_commutator": 7.407667981427505e-16,
+      "minimum_R0": 0.025160416657559855,
+      "minimum_RA": -3.9567416662609005e-16,
+      "minimum_RB": -9.329898975706108e-16,
+      "assembly_residual": 8.302894663053402e-16
+    }
+  ],
+  "claim_boundary": "The exact factorization is representation-free. The numerical fixtures are hidden finite direct sums and guard implementation only."
+}

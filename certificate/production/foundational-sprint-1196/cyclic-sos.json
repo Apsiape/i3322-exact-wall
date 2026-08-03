@@ -1,0 +1,46 @@
+{
+  "status": "exact cyclic Bellman SOS matrix identity",
+  "size_checks": [
+    {
+      "n": 3,
+      "nonzero_residuals": [],
+      "passed": true
+    },
+    {
+      "n": 4,
+      "nonzero_residuals": [],
+      "passed": true
+    },
+    {
+      "n": 5,
+      "nonzero_residuals": [],
+      "passed": true
+    },
+    {
+      "n": 6,
+      "nonzero_residuals": [],
+      "passed": true
+    },
+    {
+      "n": 7,
+      "nonzero_residuals": [],
+      "passed": true
+    },
+    {
+      "n": 8,
+      "nonzero_residuals": [],
+      "passed": true
+    },
+    {
+      "n": 9,
+      "nonzero_residuals": [],
+      "passed": true
+    }
+  ],
+  "all_matrix_residuals_zero": true,
+  "equality_selfloop_q": "-s*(s - 1)",
+  "quarter_minus_selfloop_q": "(2*s - 1)**2/4",
+  "quarter_gap_is_square": true,
+  "zero_couplings_allowed": true,
+  "claim_boundary": "Conditional only on the positive Bellman fixed point from Sprint 1195, every finite aligned periodic carrier is strictly below q_*. This does not align arbitrary I3322 strategies."
+}

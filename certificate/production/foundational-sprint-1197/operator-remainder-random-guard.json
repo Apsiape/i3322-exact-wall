@@ -1,0 +1,365 @@
+{
+  "status": "direct held-out complex-matrix remainder guard",
+  "q_cert": 0.250875394515,
+  "fixtures": 32,
+  "minimum_R0": 1.8960942411331283e-06,
+  "minimum_RA": -1.5211789298494597e-15,
+  "minimum_RB": -1.1107025356896605e-15,
+  "maximum_assembly_residual": 1.3420525746917117e-15,
+  "all_gates_pass": true,
+  "checks": [
+    {
+      "dimensions": [
+        2,
+        3
+      ],
+      "fixture": 0,
+      "min_eigen_R0": 5.444162468975312e-05,
+      "min_eigen_RA": 2.983724378680108e-16,
+      "min_eigen_RB": -1.7118065892267843e-16,
+      "assembly_residual": 4.983156350975583e-16
+    },
+    {
+      "dimensions": [
+        2,
+        3
+      ],
+      "fixture": 1,
+      "min_eigen_R0": 0.05871509430575426,
+      "min_eigen_RA": -3.4133260990465215e-16,
+      "min_eigen_RB": -5.54547186440513e-16,
+      "assembly_residual": 7.154158826614302e-16
+    },
+    {
+      "dimensions": [
+        2,
+        3
+      ],
+      "fixture": 2,
+      "min_eigen_R0": 0.095240179118845,
+      "min_eigen_RA": 2.2204460339991705e-16,
+      "min_eigen_RB": -2.246463887179394e-16,
+      "assembly_residual": 4.1741671213991654e-16
+    },
+    {
+      "dimensions": [
+        2,
+        3
+      ],
+      "fixture": 3,
+      "min_eigen_R0": 0.250875352521844,
+      "min_eigen_RA": -3.1954607584856067e-16,
+      "min_eigen_RB": -4.2188976452647153e-16,
+      "assembly_residual": 5.267707329319531e-16
+    },
+    {
+      "dimensions": [
+        2,
+        3
+      ],
+      "fixture": 4,
+      "min_eigen_R0": 0.07255611107743462,
+      "min_eigen_RA": 1.6935947060531422e-16,
+      "min_eigen_RB": -3.4306577128019646e-16,
+      "assembly_residual": 5.998727449875458e-16
+    },
+    {
+      "dimensions": [
+        2,
+        3
+      ],
+      "fixture": 5,
+      "min_eigen_R0": 0.05810101531432992,
+      "min_eigen_RA": 8.360489434195796e-09,
+      "min_eigen_RB": -1.910661203521972e-16,
+      "assembly_residual": 4.50086913566739e-16
+    },
+    {
+      "dimensions": [
+        2,
+        3
+      ],
+      "fixture": 6,
+      "min_eigen_R0": 0.2508753697794973,
+      "min_eigen_RA": -5.967448757360216e-16,
+      "min_eigen_RB": -1.0029788826416853e-16,
+      "assembly_residual": 8.956779923270546e-16
+    },
+    {
+      "dimensions": [
+        2,
+        3
+      ],
+      "fixture": 7,
+      "min_eigen_R0": 0.125093113552174,
+      "min_eigen_RA": -2.586570617389152e-16,
+      "min_eigen_RB": -4.9009748729953e-16,
+      "assembly_residual": 3.8282949952247606e-16
+    },
+    {
+      "dimensions": [
+        3,
+        5
+      ],
+      "fixture": 0,
+      "min_eigen_R0": 0.01278455219333526,
+      "min_eigen_RA": -7.811971442670767e-16,
+      "min_eigen_RB": -1.7959249547241938e-16,
+      "assembly_residual": 6.438864782976587e-16
+    },
+    {
+      "dimensions": [
+        3,
+        5
+      ],
+      "fixture": 1,
+      "min_eigen_R0": 0.05485948961142781,
+      "min_eigen_RA": -5.800537426703656e-17,
+      "min_eigen_RB": -7.125518209519657e-16,
+      "assembly_residual": 5.495094585239368e-16
+    },
+    {
+      "dimensions": [
+        3,
+        5
+      ],
+      "fixture": 2,
+      "min_eigen_R0": 0.001163036213322366,
+      "min_eigen_RA": -4.4131171507540327e-16,
+      "min_eigen_RB": -7.685891899774144e-16,
+      "assembly_residual": 4.591374785385182e-16
+    },
+    {
+      "dimensions": [
+        3,
+        5
+      ],
+      "fixture": 3,
+      "min_eigen_R0": 0.008923329948418789,
+      "min_eigen_RA": -4.27103794276569e-16,
+      "min_eigen_RB": -5.462735478019602e-16,
+      "assembly_residual": 5.633434088735119e-16
+    },
+    {
+      "dimensions": [
+        3,
+        5
+      ],
+      "fixture": 4,
+      "min_eigen_R0": 0.0555913351687853,
+      "min_eigen_RA": 1.4750535771758481e-18,
+      "min_eigen_RB": -6.749577835503239e-16,
+      "assembly_residual": 7.209184555563205e-16
+    },
+    {
+      "dimensions": [
+        3,
+        5
+      ],
+      "fixture": 5,
+      "min_eigen_R0": 0.025073469140056228,
+      "min_eigen_RA": 5.287637718713273e-09,
+      "min_eigen_RB": -5.994095555085738e-16,
+      "assembly_residual": 4.761131236055905e-16
+    },
+    {
+      "dimensions": [
+        3,
+        5
+      ],
+      "fixture": 6,
+      "min_eigen_R0": 0.002802968031093569,
+      "min_eigen_RA": -4.461681343638652e-16,
+      "min_eigen_RB": -3.20329469182929e-16,
+      "assembly_residual": 5.780885744991394e-16
+    },
+    {
+      "dimensions": [
+        3,
+        5
+      ],
+      "fixture": 7,
+      "min_eigen_R0": 0.1271125084120373,
+      "min_eigen_RA": -4.46064074792713e-16,
+      "min_eigen_RB": -7.538873463434709e-16,
+      "assembly_residual": 6.192003135788002e-16
+    },
+    {
+      "dimensions": [
+        4,
+        4
+      ],
+      "fixture": 0,
+      "min_eigen_R0": 0.25087538922736163,
+      "min_eigen_RA": -1.2928427785089632e-16,
+      "min_eigen_RB": -2.220446049250313e-16,
+      "assembly_residual": 5.616616387143422e-16
+    },
+    {
+      "dimensions": [
+        4,
+        4
+      ],
+      "fixture": 1,
+      "min_eigen_R0": 0.01485008388451806,
+      "min_eigen_RA": -1.5211789298494597e-15,
+      "min_eigen_RB": -1.539854422948632e-16,
+      "assembly_residual": 5.911686296848976e-16
+    },
+    {
+      "dimensions": [
+        4,
+        4
+      ],
+      "fixture": 2,
+      "min_eigen_R0": 0.0034505767715196922,
+      "min_eigen_RA": -5.132883695481921e-16,
+      "min_eigen_RB": -5.978150825889712e-16,
+      "assembly_residual": 5.924115228073674e-16
+    },
+    {
+      "dimensions": [
+        4,
+        4
+      ],
+      "fixture": 3,
+      "min_eigen_R0": 0.10859132195612006,
+      "min_eigen_RA": -6.932060662630034e-16,
+      "min_eigen_RB": -2.325880427810413e-16,
+      "assembly_residual": 7.034241145349942e-16
+    },
+    {
+      "dimensions": [
+        4,
+        4
+      ],
+      "fixture": 4,
+      "min_eigen_R0": 0.25087538922736136,
+      "min_eigen_RA": -7.589226945727046e-16,
+      "min_eigen_RB": -6.343518660531058e-16,
+      "assembly_residual": 3.989390130254058e-16
+    },
+    {
+      "dimensions": [
+        4,
+        4
+      ],
+      "fixture": 5,
+      "min_eigen_R0": 0.0014299737337674346,
+      "min_eigen_RA": -2.9138659946683924e-16,
+      "min_eigen_RB": -6.471656285521026e-16,
+      "assembly_residual": 6.470040725321191e-16
+    },
+    {
+      "dimensions": [
+        4,
+        4
+      ],
+      "fixture": 6,
+      "min_eigen_R0": 0.21012451617496036,
+      "min_eigen_RA": 8.938484002153182e-16,
+      "min_eigen_RB": -2.676376161973847e-16,
+      "assembly_residual": 9.417746353247489e-16
+    },
+    {
+      "dimensions": [
+        4,
+        4
+      ],
+      "fixture": 7,
+      "min_eigen_R0": 0.03561283457788696,
+      "min_eigen_RA": -4.1917534650279283e-16,
+      "min_eigen_RB": -7.278130663111e-16,
+      "assembly_residual": 3.601602585060922e-16
+    },
+    {
+      "dimensions": [
+        6,
+        3
+      ],
+      "fixture": 0,
+      "min_eigen_R0": 0.0031197966381643727,
+      "min_eigen_RA": -3.4234783808268375e-16,
+      "min_eigen_RB": -7.781879073596168e-16,
+      "assembly_residual": 1.3420525746917117e-15
+    },
+    {
+      "dimensions": [
+        6,
+        3
+      ],
+      "fixture": 1,
+      "min_eigen_R0": 1.8960942411331283e-06,
+      "min_eigen_RA": -6.154386784071532e-16,
+      "min_eigen_RB": -1.9182336592955685e-16,
+      "assembly_residual": 9.560156440414526e-16
+    },
+    {
+      "dimensions": [
+        6,
+        3
+      ],
+      "fixture": 2,
+      "min_eigen_R0": 0.006397160250886531,
+      "min_eigen_RA": -3.14235479898989e-16,
+      "min_eigen_RB": -4.3437104023459067e-16,
+      "assembly_residual": 6.071128789052176e-16
+    },
+    {
+      "dimensions": [
+        6,
+        3
+      ],
+      "fixture": 3,
+      "min_eigen_R0": 0.09338224892362733,
+      "min_eigen_RA": -6.595766757424333e-16,
+      "min_eigen_RB": 7.54739314364862e-17,
+      "assembly_residual": 6.419527380850818e-16
+    },
+    {
+      "dimensions": [
+        6,
+        3
+      ],
+      "fixture": 4,
+      "min_eigen_R0": 0.2508753560288578,
+      "min_eigen_RA": -2.0591439250221352e-16,
+      "min_eigen_RB": 1.484682268380814e-08,
+      "assembly_residual": 7.325773171897407e-16
+    },
+    {
+      "dimensions": [
+        6,
+        3
+      ],
+      "fixture": 5,
+      "min_eigen_R0": 0.04117723436359566,
+      "min_eigen_RA": -8.147107086220841e-16,
+      "min_eigen_RB": -1.1107025356896605e-15,
+      "assembly_residual": 4.824949937580634e-16
+    },
+    {
+      "dimensions": [
+        6,
+        3
+      ],
+      "fixture": 6,
+      "min_eigen_R0": 0.25087534825559604,
+      "min_eigen_RA": -1.5803562275215828e-16,
+      "min_eigen_RB": -7.308177432785113e-16,
+      "assembly_residual": 7.087797288653199e-16
+    },
+    {
+      "dimensions": [
+        6,
+        3
+      ],
+      "fixture": 7,
+      "min_eigen_R0": 3.3453064698316517e-06,
+      "min_eigen_RA": -4.197408960060268e-16,
+      "min_eigen_RB": -1.55077038780393e-16,
+      "assembly_residual": 9.017903884746465e-16
+    }
+  ],
+  "claim_boundary": "This is a direct numerical guard using the separately certified rational hull; the exact continuum theorem is algebraic."
+}

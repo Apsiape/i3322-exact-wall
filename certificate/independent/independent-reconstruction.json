@@ -1,0 +1,38 @@
+{
+  "status": "independent reconstruction of the complete computer-assisted Bellman input",
+  "independence_contract": {
+    "interval_backend": "mpmath.iv",
+    "complex_backend": "locally implemented rectangular intervals",
+    "production_modules_imported": false,
+    "forbidden_imports": [],
+    "comparison_performed_after_independent_verdict": true
+  },
+  "gates": {
+    "independent_arithmetic": true,
+    "plateau_and_degree12_series": true,
+    "analytic_graph_transform": true,
+    "miranda_shooting_zero": true,
+    "central_invariant_graph": true,
+    "boundary_wing": true,
+    "inactive_exterior": true,
+    "no_forbidden_interval_import": true
+  },
+  "gate_score": "8/8",
+  "all_gates_pass": true,
+  "post_verdict_comparison": {
+    "production_q_receipt": "[0.250875384513976536 +/- 4.86e-19]",
+    "production_q_decimal_bounds": [
+      "0.250875384513976535514",
+      "0.250875384513976536486"
+    ],
+    "independent_q_directed_bounds": [
+      "0.2508753845139765355147934110068914495183589966735762539686356978581196543595275124866110425227129905",
+      "0.2508753845139765357198798108850040972227400760030447637667234651412131964260435293547014829697338104"
+    ],
+    "intervals_overlap": true,
+    "independent_bounds_round_to_displayed_decimal": true,
+    "rounding_rule": "round-half-even to 18 digits after the decimal point",
+    "analytic_correction_ratio_independent_over_production": 1.020883045322888
+  },
+  "claim_boundary": "This is method-independent interval reconstruction of every computer-assisted Bellman gate. Analytic operator and nonattainment proofs remain exact-paper arguments with separate symbolic engines."
+}

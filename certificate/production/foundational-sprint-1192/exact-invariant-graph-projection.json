@@ -1,0 +1,48 @@
+{
+  "status": "exact invariant-graph projection certificate",
+  "precision_bits": 300,
+  "tiles": 32768,
+  "local_plateau_tiles": 8192,
+  "local_plateau_piece": {
+    "largest_dx_upper": -0.9042691018804823,
+    "largest_dy_upper": -5.264047218503097,
+    "minimum_pivot_lower": 0.25775004173511346,
+    "tiles_certified": 8192
+  },
+  "pieces": [
+    {
+      "iterate": 0,
+      "largest_dx_upper": -0.9016966884996285,
+      "largest_dy_upper": -5.177541002241302,
+      "minimum_pivot_lower": 0.257787779257587,
+      "tiles_certified": 32768
+    },
+    {
+      "iterate": 1,
+      "largest_dx_upper": -5.177541002241302,
+      "largest_dy_upper": -27.484101774316958,
+      "minimum_pivot_lower": 0.2579701433862213,
+      "tiles_certified": 32768
+    },
+    {
+      "iterate": 2,
+      "largest_dx_upper": -27.484101774316958,
+      "largest_dy_upper": -97.13697554578407,
+      "minimum_pivot_lower": 0.2590248610189804,
+      "tiles_certified": 32768
+    },
+    {
+      "iterate": 3,
+      "largest_dx_upper": -97.13697554578407,
+      "largest_dy_upper": -89.17721500172632,
+      "minimum_pivot_lower": 0.2647600228856629,
+      "tiles_certified": 32768
+    }
+  ],
+  "failure_count": 0,
+  "first_failures": [],
+  "all_tiles_certified": true,
+  "literal_six_forward_piece_prediction": false,
+  "corrected_plateau_to_section_plus_reflection": true,
+  "claim_boundary": "If all_tiles_certified is true, the exact unstable-manifold branch selected by the certified shooting rectangle projects as a positive single-valued monotone twist graph from the plateau through the reflection section; reversibility supplies the other half. The literal preregistered six-forward-piece formulation failed because it used the wrong chart beyond reflection. Global Bellman minimality is separate."
+}

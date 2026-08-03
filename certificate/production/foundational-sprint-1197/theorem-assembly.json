@@ -1,0 +1,14 @@
+{
+  "status": "machine-readable custody audit for exact tensor-product I3322 supremum",
+  "gates": {
+    "exact_positive_bellman_fixed_point": true,
+    "aligned_lower_sequence_and_periodic_consistency": true,
+    "exact_bell_operator_algebra": true,
+    "geometric_dual_normalization_guard": true,
+    "direct_complex_operator_remainders": true,
+    "false_reflection_shortcut_not_used": true
+  },
+  "all_gates_pass": true,
+  "q_interval": "[0.250875384513976536 +/- 4.86e-19]",
+  "claim_boundary": "Tensor-product quantum supremum only. Finite-dimensional nonattainment and foundational interpretation are separate."
+}

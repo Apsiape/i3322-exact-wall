@@ -1,0 +1,13 @@
+{
+  "status": "machine-readable custody gate for commuting-operator I3322",
+  "gates": {
+    "tensor_product_supremum_dependency": true,
+    "finite_equality_kernel_dependency": true,
+    "commutant_factorization_and_matrix_guards": true,
+    "theorem_document_present": true,
+    "preregistration_present": true
+  },
+  "q_interval": "[0.250875384513976536 +/- 4.86e-19]",
+  "all_gates_pass": true,
+  "claim_boundary": "Commuting-operator supremum and finite-dimensional nonattainment; no Connes-embedding, experimental, or foundational claim."
+}

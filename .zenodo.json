@@ -1,0 +1,29 @@
+{
+  "title": "A rigorously characterized I3322 quantum wall and finite-dimensional nonattainment",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "creators": [
+    {
+      "name": "Douglas, Seth",
+      "orcid": "0009-0007-4708-3252"
+    }
+  ],
+  "description": "The tensor-product and commuting-operator suprema of the canonical I3322 Bell functional are identified with a rigorously characterized domain-wall constant, and neither model has a finite-dimensional maximizer. The release includes two independently implemented interval reconstructions and exact analytic audits.",
+  "keywords": [
+    "Bell inequalities",
+    "I3322",
+    "quantum correlations",
+    "commuting operators",
+    "computer-assisted proof",
+    "nonattainment"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Apsiape/i3322-exact-wall",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

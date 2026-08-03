@@ -1,0 +1,17 @@
+{
+  "status": "machine-readable prerequisite audit for exact aligned wall",
+  "gates": {
+    "exact_contact_covariance": true,
+    "exact_connection_miranda_faces": true,
+    "one_unstable_plateau_direction": true,
+    "central_graph_certified": true,
+    "boundary_wing_exists_unique": true,
+    "boundary_wing_graph_certified": true,
+    "inactive_outer_guard": true,
+    "positive_pivots_central": true,
+    "positive_pivots_wing": true
+  },
+  "all_gates_pass": true,
+  "q_interval_from_validated_connection": "[0.250875384513976536 +/- 4.86e-19]",
+  "claim_boundary": "These gates support the continuous Bellman fixed-point and finite aligned open Jacobi theorem. They do not prove alignment of arbitrary I3322 strategies or the unrestricted quantum value."
+}

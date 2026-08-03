@@ -1,0 +1,572 @@
+{
+  "status": "frozen standalone I3322 release custody manifest",
+  "schema": 3,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "canonical_bytes": 45,
+      "hash_mode": "canonical-lf",
+      "sha256": "913db989b4c9cd20ec3eadae8c87ad2f1752194368edf6b8c4c72f7a2cabd27e"
+    },
+    {
+      "path": ".github/workflows/verify.yml",
+      "canonical_bytes": 826,
+      "hash_mode": "canonical-lf",
+      "sha256": "43c96ece6e6b1c5d0096098aaf03bab27d3d62fa1615e52533774b757c574d35"
+    },
+    {
+      "path": ".gitignore",
+      "canonical_bytes": 88,
+      "hash_mode": "canonical-lf",
+      "sha256": "06522e79744411f0261c33c729ffd56ab96f802962c03561755ef043a16d8f6b"
+    },
+    {
+      "path": ".zenodo.json",
+      "canonical_bytes": 988,
+      "hash_mode": "canonical-lf",
+      "sha256": "65fa7f1e2aebc91d94245439c80ab89eae272c0ee54d52f53fcd24c6e592b9cc"
+    },
+    {
+      "path": "certificate/independent/analytic-tail-mpmath.json",
+      "canonical_bytes": 1111,
+      "hash_mode": "canonical-lf",
+      "sha256": "3781c2abbb100a197a1e0d53e588afdf5afc11d2c11f8489045a261cfa897478"
+    },
+    {
+      "path": "certificate/independent/analytic_tail_mpmath.py",
+      "canonical_bytes": 9540,
+      "hash_mode": "canonical-lf",
+      "sha256": "49e5fc1abe959990d97ad5d27f1803fb9d51fd2561a9b7b1e4b99ac251ed8ef2"
+    },
+    {
+      "path": "certificate/independent/arithmetic-selftest.json",
+      "canonical_bytes": 364,
+      "hash_mode": "canonical-lf",
+      "sha256": "3f1d92fa45bad5af361392ec7f6ab0d494498987b39a5f4f4639ed813d37ed87"
+    },
+    {
+      "path": "certificate/independent/arithmetic_selftest.py",
+      "canonical_bytes": 2396,
+      "hash_mode": "canonical-lf",
+      "sha256": "04c62cc07629028d5bee5a4b43c92ac4a92f61e899a919fc12295916c5c69f1c"
+    },
+    {
+      "path": "certificate/independent/global-graph-mpmath.json",
+      "canonical_bytes": 2014,
+      "hash_mode": "canonical-lf",
+      "sha256": "ebebe1e147afcb72b605310dd4239b65c56130bfedb684255ae865aaf35e02ec"
+    },
+    {
+      "path": "certificate/independent/global_graph_mpmath.py",
+      "canonical_bytes": 7966,
+      "hash_mode": "canonical-lf",
+      "sha256": "a121799dd63d2e29a5e7659d0be0746bad239527f67ead48db05f74e900c3aed"
+    },
+    {
+      "path": "certificate/independent/independent-reconstruction.json",
+      "canonical_bytes": 1661,
+      "hash_mode": "canonical-lf",
+      "sha256": "b85b2ad279ab6759c8fb695daafcb104cd51b529335d43426f41329a38a5bb19"
+    },
+    {
+      "path": "certificate/independent/iv_core.py",
+      "canonical_bytes": 10464,
+      "hash_mode": "canonical-lf",
+      "sha256": "5ece016c5a86d54c033ba28bf9958423368071d1634106197124a15715f27917"
+    },
+    {
+      "path": "certificate/independent/plateau-series-mpmath.json",
+      "canonical_bytes": 1087,
+      "hash_mode": "canonical-lf",
+      "sha256": "c873d0c4a6f0f8f350f32708095166bfc803c03de8cf85e1de4fcced2c6445f6"
+    },
+    {
+      "path": "certificate/independent/plateau_series_mpmath.py",
+      "canonical_bytes": 2796,
+      "hash_mode": "canonical-lf",
+      "sha256": "4af6258a3f9d083d4622b43f67d449180935deb9362c7295acebe4cf6524b6ca"
+    },
+    {
+      "path": "certificate/independent/PRE-REGISTRATION.md",
+      "canonical_bytes": 2293,
+      "hash_mode": "canonical-lf",
+      "sha256": "a11948079a861b29379dcab5d4f3e46448c7a9e88cc66250d78277fb9826d2c1"
+    },
+    {
+      "path": "certificate/independent/README.md",
+      "canonical_bytes": 864,
+      "hash_mode": "canonical-lf",
+      "sha256": "b7985fcc36c784faadc86ab2992b26a2403eaa63da033f17041fc5c1e3a03237"
+    },
+    {
+      "path": "certificate/independent/shooting-miranda-mpmath.json",
+      "canonical_bytes": 3947,
+      "hash_mode": "canonical-lf",
+      "sha256": "6dab224276049c3d59a8a21d1323cc601fb4c0fc9e97ba326f8705d37a8c287e"
+    },
+    {
+      "path": "certificate/independent/shooting_miranda_mpmath.py",
+      "canonical_bytes": 6229,
+      "hash_mode": "canonical-lf",
+      "sha256": "08b77f3e40cb0df17000ca826456ba0cf9a743e194fe258ec96eba85d649f713"
+    },
+    {
+      "path": "certificate/independent/verify_independent_reconstruction.py",
+      "canonical_bytes": 4685,
+      "hash_mode": "canonical-lf",
+      "sha256": "0756a00ee96935e67d484611bd3cc843b96c4247f8cfc05e25187f928e83419a"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1115/plateau-hyperbolicity-certificate.json",
+      "canonical_bytes": 1366,
+      "hash_mode": "canonical-lf",
+      "sha256": "9891c223a216ef4469ec75d489cd4e2c0eefbc4dab293e8d3f7d4bec0e1c0256"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1115/plateau_hyperbolicity_certificate.py",
+      "canonical_bytes": 5441,
+      "hash_mode": "canonical-lf",
+      "sha256": "b0ee97dee11e75c7db56445bc0117d4264cba8d956c0eb9a9923985c0bc700e0"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1116/analytic-tail-graph-transform.json",
+      "canonical_bytes": 4676,
+      "hash_mode": "canonical-lf",
+      "sha256": "0cee6f7eb7ab9ccd044d742d93617619c30c1ad971474ee2695cab9aef7c84ed"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1116/analytic_tail_graph_transform.py",
+      "canonical_bytes": 14480,
+      "hash_mode": "canonical-lf",
+      "sha256": "00a1ed92241c515a5d5b472c3a94129ca0f3541c807743a111946f509dfad55f"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1116/validated-exact-shooting-degree.json",
+      "canonical_bytes": 8400,
+      "hash_mode": "canonical-lf",
+      "sha256": "4f4b2e16831711f1ba9d3ca8441727bd7d2fe1840a4304abd3cf45752a4a6891"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1116/validated_exact_shooting_degree.py",
+      "canonical_bytes": 10717,
+      "hash_mode": "canonical-lf",
+      "sha256": "edb4db5000b7c27e4c237087cea775f7ec1ca1dab19a485ef47e1c4a3e2ca1d0"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1116/validated_truncated_shooting.py",
+      "canonical_bytes": 11323,
+      "hash_mode": "canonical-lf",
+      "sha256": "297da980c0e7a7701a1a434e5e2062f28f9a3ab0201750b8c03eaf9a63d17100"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1179/minplus-hull-32001.npz",
+      "canonical_bytes": 484521,
+      "hash_mode": "raw",
+      "sha256": "998002bbd1ca77dfed1ebf59a8ffaa7d1f0d3c1717ecefa5fa7d74c73b541e86"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1192/exact-invariant-graph-projection.json",
+      "canonical_bytes": 1790,
+      "hash_mode": "canonical-lf",
+      "sha256": "08bdce7c0d2bb1f113a13d2bc0688501b765cd4f89acb4093c1265dec8af77a5"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1192/exact_invariant_graph_projection.py",
+      "canonical_bytes": 6652,
+      "hash_mode": "canonical-lf",
+      "sha256": "82c38e0302b3450c42d5146b7707c369491e1e2e25d4460b0f6a99cb88df742a"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1193/exact-boundary-wing.json",
+      "canonical_bytes": 1281,
+      "hash_mode": "canonical-lf",
+      "sha256": "23dcfbac62d30f4e5fdf9617ea54b068e4d533164a685b1421f75217fb13cd35"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1193/exact_boundary_wing.py",
+      "canonical_bytes": 5308,
+      "hash_mode": "canonical-lf",
+      "sha256": "ede884b540806cd07544eb8eb4fa7f4d0cdc7049b5203f0b0962d6f19af00939"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1194/inactive-outer-guard.json",
+      "canonical_bytes": 723,
+      "hash_mode": "canonical-lf",
+      "sha256": "132e3c8c340e4bd184a20136609f6d1a415af94443a325bd5cb16f1f324e488c"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1194/inactive_outer_guard.py",
+      "canonical_bytes": 4854,
+      "hash_mode": "canonical-lf",
+      "sha256": "f2289be0e38d6c94a23601b10e700ba0af1a8842683f159d4126401130674264"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1195/contact-covariance.json",
+      "canonical_bytes": 748,
+      "hash_mode": "canonical-lf",
+      "sha256": "992ceea4da471539aae5b79cf932a082412502d6f0564776e1b150a4935a6a0c"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1195/contact_covariance_verify.py",
+      "canonical_bytes": 3394,
+      "hash_mode": "canonical-lf",
+      "sha256": "60c8bb3eabfd4bec06bf789cc45f43d5af23510cb986936a8c2059dd6725dee0"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1195/EXACT-ALIGNED-WALL-THEOREM.md",
+      "canonical_bytes": 6107,
+      "hash_mode": "canonical-lf",
+      "sha256": "7de35f4968713216b51e435063c1cb3e9b0a39480b3bbcd1abbe3ce8a62471b1"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1195/PRE-REGISTRATION.md",
+      "canonical_bytes": 1507,
+      "hash_mode": "canonical-lf",
+      "sha256": "0a3913bad1e5da7080806f5cd5e00d634c70a7de0b75a481bb8911d8d7f0c0d7"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1195/theorem-assembly.json",
+      "canonical_bytes": 764,
+      "hash_mode": "canonical-lf",
+      "sha256": "e8e0613f1ef2ced16bee5519b81e6fc5d694da7ae07ce6bada7fababcccaa94a"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1195/theorem_assembly_verify.py",
+      "canonical_bytes": 2581,
+      "hash_mode": "canonical-lf",
+      "sha256": "d2d2beaa3e04e604764b9d80b7e2ea532d942d790a99567852ebf09b14d1a697"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1196/cyclic-sos.json",
+      "canonical_bytes": 1029,
+      "hash_mode": "canonical-lf",
+      "sha256": "1475ff186d0b87ba55b752f585b315813575414a492cf6928d6f2272cf7829ce"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1196/cyclic_sos_verify.py",
+      "canonical_bytes": 2314,
+      "hash_mode": "canonical-lf",
+      "sha256": "59b34e8b32ac46564c79718062c8533f7a03fd571e3ba7315b03a05d1e7c8fbe"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1197/bellman-quantum-dual.json",
+      "canonical_bytes": 1641,
+      "hash_mode": "canonical-lf",
+      "sha256": "9c291988eae5733925ce4716f5160e1fdf654c72321a04da4a83875e358579dc"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1197/bellman_quantum_dual_verify.py",
+      "canonical_bytes": 6103,
+      "hash_mode": "canonical-lf",
+      "sha256": "e7c7eb43fdd34b20e577e6adeefa51bc33f7a70db57e808230b4b9da6ed9224f"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1197/EXACT-I3322-QUANTUM-SUPREMUM.md",
+      "canonical_bytes": 5773,
+      "hash_mode": "canonical-lf",
+      "sha256": "9a5d34fbfb88e13ebe9ec86e27d8c27347cbeaf04336f2d64eb85ff96e7a6c66"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1197/operator-remainder-random-guard.json",
+      "canonical_bytes": 9095,
+      "hash_mode": "canonical-lf",
+      "sha256": "99cf4a64366d2666f8f4e1c6f2a28dafd14975deff2feeff88cf694c8b6fc6cb"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1197/operator_remainder_random_guard.py",
+      "canonical_bytes": 4273,
+      "hash_mode": "canonical-lf",
+      "sha256": "22b17ec892ea15ac9f4c037e69251f6160f54d35a2d24d8cec401e99b650b12d"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1197/PRE-REGISTRATION-2.md",
+      "canonical_bytes": 1206,
+      "hash_mode": "canonical-lf",
+      "sha256": "2421f8bfa839dfc6321413e38d7ecf5ae2adf0f0591a1443d33a9b250f497b6f"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1197/PRE-REGISTRATION.md",
+      "canonical_bytes": 1559,
+      "hash_mode": "canonical-lf",
+      "sha256": "15461ad1f91d4d596f21f5bf4f49a51e184e966d5e30afc6de09b76a5608a780"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1197/symmetrized-dual-guard.json",
+      "canonical_bytes": 537,
+      "hash_mode": "canonical-lf",
+      "sha256": "b2c0ee3bdf8d4b8e6d6185f94fb94dc0e9347fb973914e98a07e6d361936fe82"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1197/symmetrized_dual_guard.py",
+      "canonical_bytes": 2221,
+      "hash_mode": "canonical-lf",
+      "sha256": "3baf6d6e6e29945d916bf47596bb5ad0be76e9d4f9e4b86129187e94aad63fc8"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1197/theorem-assembly.json",
+      "canonical_bytes": 621,
+      "hash_mode": "canonical-lf",
+      "sha256": "4ac529558636d3f9d6b84cb8cccbfc1e4d6d98de2b70efea4f7e3bc7ebaca7fa"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1197/theorem_assembly_verify.py",
+      "canonical_bytes": 1792,
+      "hash_mode": "canonical-lf",
+      "sha256": "2f20d8e11fdc394d3b27afd1e9cc41842126c0d26886f412a72ccffe8a22f786"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1198/equality-kernel-audit.json",
+      "canonical_bytes": 1241,
+      "hash_mode": "canonical-lf",
+      "sha256": "e0522515bd58dfc3b48842aee10260c8fb2393bdf7944f348ca9fd6108d6a327"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1198/equality_kernel_verify.py",
+      "canonical_bytes": 7048,
+      "hash_mode": "canonical-lf",
+      "sha256": "9ff9ab4663b2658c6f2c1eb3754628b868456fc3351ae5973c1f78fdd512cfae"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1198/FINITE-DIMENSIONAL-NONATTAINMENT.md",
+      "canonical_bytes": 6849,
+      "hash_mode": "canonical-lf",
+      "sha256": "979edb4354a205dc5e4ca5ff693ae1342aa6d7bb0c86372cd02abff5b7f4ed50"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1198/PRE-REGISTRATION.md",
+      "canonical_bytes": 1960,
+      "hash_mode": "canonical-lf",
+      "sha256": "1a0d428672ae6e408eaebdf22bd711676a2c9a268a44e56450fd18e20fe65d26"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1198/theorem-assembly.json",
+      "canonical_bytes": 606,
+      "hash_mode": "canonical-lf",
+      "sha256": "e7b31518977a0294bef4fa23bb23d842dae6283fb6b2692c1eded1ce3e92c61e"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1198/theorem_assembly_verify.py",
+      "canonical_bytes": 2202,
+      "hash_mode": "canonical-lf",
+      "sha256": "815254bb14be5637f2ac7d7284fb8db54a9ed4e6f44b991569230e0b5d607d1f"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1199/commuting-certificate-audit.json",
+      "canonical_bytes": 6882,
+      "hash_mode": "canonical-lf",
+      "sha256": "1aba57c373a1b67ef6e93ecf0acc9b86a665187daf779a41130d78b4bc24e2bc"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1199/COMMUTING-I3322-THEOREM.md",
+      "canonical_bytes": 4104,
+      "hash_mode": "canonical-lf",
+      "sha256": "e945a969fc5767b2226655feb2570dd546ebb9b1dc2ae7da321869c7a028d89e"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1199/commuting_certificate_verify.py",
+      "canonical_bytes": 7004,
+      "hash_mode": "canonical-lf",
+      "sha256": "cc998a7c690cc430512d0c95eea0873c3b3774e4ea2c2669ee8863b1cfb78457"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1199/PRE-REGISTRATION.md",
+      "canonical_bytes": 1824,
+      "hash_mode": "canonical-lf",
+      "sha256": "331623cf0de7fac25d793b394e55aa85a282b33cabaabb6845811fb31612454b"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1199/theorem-assembly.json",
+      "canonical_bytes": 547,
+      "hash_mode": "canonical-lf",
+      "sha256": "34c50782029abadbb4cc16df0ca665f369962cc7e1fd06aea08bd7b8acb383f7"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1199/theorem_assembly_verify.py",
+      "canonical_bytes": 1742,
+      "hash_mode": "canonical-lf",
+      "sha256": "e88be5462d142f3f7e8b6f7f7ca17286d1d6903749ffc368ac2e4290493bdb91"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1200/AUDIT-REPORT.md",
+      "canonical_bytes": 4417,
+      "hash_mode": "canonical-lf",
+      "sha256": "7162c14a3e54435c7de279e2c4b1088a21f10854d0205475ce158e2c74e5a5f8"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1200/dependency-audit.json",
+      "canonical_bytes": 1344,
+      "hash_mode": "canonical-lf",
+      "sha256": "8b4dbbd0b5be606fe1a8bf2277afc2ccf448d553f6f5c0b2d97e60dec7f1f7c4"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1200/dependency_audit.py",
+      "canonical_bytes": 3490,
+      "hash_mode": "canonical-lf",
+      "sha256": "72527a9224e70e1ec6ff21e171a0e434dd51742046c8b5833e3bbc2a563af1db"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1200/independent-nonattainment.json",
+      "canonical_bytes": 6201,
+      "hash_mode": "canonical-lf",
+      "sha256": "cf19ae44799eeb4458fe51f30f048ba70a56c2eec29b5f601f1da978c1a1723f"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1200/independent_nonattainment_verify.py",
+      "canonical_bytes": 3799,
+      "hash_mode": "canonical-lf",
+      "sha256": "043e34aeab11bbb1efd500e825deba6a319de69bdb76dddec577bbb556a606b8"
+    },
+    {
+      "path": "certificate/release/build_release_manifest.py",
+      "canonical_bytes": 2155,
+      "hash_mode": "canonical-lf",
+      "sha256": "75deb6e435ac7d76bbe24cf1d6cb756c6f5841102afbccd1ca84846fd465e604"
+    },
+    {
+      "path": "certificate/release/dimension-gap-audit.json",
+      "canonical_bytes": 1537,
+      "hash_mode": "canonical-lf",
+      "sha256": "0f5d59cdbbe19b7578af6655584c2d42a016c30e021b70b58ce2f232ae4407bb"
+    },
+    {
+      "path": "certificate/release/dimension_gap_audit.py",
+      "canonical_bytes": 2231,
+      "hash_mode": "canonical-lf",
+      "sha256": "908a3dabcaaedbb958101e0b7b7e4298a1f9006dd927306b3aede22509add3ac"
+    },
+    {
+      "path": "certificate/release/normalization-concordance.json",
+      "canonical_bytes": 1366,
+      "hash_mode": "canonical-lf",
+      "sha256": "63ea8e75d48c567704c054c15fcdc6b1c7312b367fad7242151ff48bc45dba05"
+    },
+    {
+      "path": "certificate/release/normalization_concordance_verify.py",
+      "canonical_bytes": 3266,
+      "hash_mode": "canonical-lf",
+      "sha256": "1f585993a8e99b47695c9c35bbf159f659b9913b36fe1c89ba90ddedc0ca7eb2"
+    },
+    {
+      "path": "certificate/release/README.md",
+      "canonical_bytes": 522,
+      "hash_mode": "canonical-lf",
+      "sha256": "f60880cb8210d8a20be89b205c515c565687eebced32e05fe86207c42e489101"
+    },
+    {
+      "path": "certificate/release/verify_release.py",
+      "canonical_bytes": 6987,
+      "hash_mode": "canonical-lf",
+      "sha256": "f684942581496f7c7783aad7f16566b4247108b479ee9434435fe38f63c14826"
+    },
+    {
+      "path": "CITATION.cff",
+      "canonical_bytes": 1073,
+      "hash_mode": "canonical-lf",
+      "sha256": "1240d91744cb2a7a1b1c4e8ab500f7c8c738ac6eb8a029ccdf73cf1fc43347f3"
+    },
+    {
+      "path": "LICENSE.md",
+      "canonical_bytes": 747,
+      "hash_mode": "canonical-lf",
+      "sha256": "64ccebb61436c1186669db02fdd4cef0daa6ee534e14561c56720f419df9f57d"
+    },
+    {
+      "path": "LICENSES/BSD-3-Clause.txt",
+      "canonical_bytes": 1462,
+      "hash_mode": "canonical-lf",
+      "sha256": "0983bb8ecb915f394d33231ce86462d219f1db1cdd7a5c798b1e9ea0bca36fc1"
+    },
+    {
+      "path": "LICENSES/CC-BY-4.0.txt",
+      "canonical_bytes": 17023,
+      "hash_mode": "canonical-lf",
+      "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744"
+    },
+    {
+      "path": "paper/CERTIFICATE-MAP.md",
+      "canonical_bytes": 5653,
+      "hash_mode": "canonical-lf",
+      "sha256": "8eb70ed4bcdf8cd21e65d0ce22fa5273429dbf04916ebc6b7d21aa4987a8ef98"
+    },
+    {
+      "path": "paper/DIMENSION-GAP-STATUS.md",
+      "canonical_bytes": 2077,
+      "hash_mode": "canonical-lf",
+      "sha256": "3463e77a18aa07fde7a2e6fd399b7e48d9293b9fcc85f6c9eac44194348be5d8"
+    },
+    {
+      "path": "paper/MANUSCRIPT.md",
+      "canonical_bytes": 15006,
+      "hash_mode": "canonical-lf",
+      "sha256": "73add3ef82405996cdd704199f2c202fc48d4057119f4465928f2b1e3808315d"
+    },
+    {
+      "path": "paper/manuscript.pdf",
+      "canonical_bytes": 278512,
+      "hash_mode": "raw",
+      "sha256": "721dec1074610dac534337f2cc689479ec5f5801524698f3fb7abe7ec2277deb"
+    },
+    {
+      "path": "paper/manuscript.tex",
+      "canonical_bytes": 12820,
+      "hash_mode": "canonical-lf",
+      "sha256": "396bcea525c20bafd6efeab61796450393b6a3dd74f0b551b928b1209cae7376"
+    },
+    {
+      "path": "paper/NORMALIZATION-CONCORDANCE.md",
+      "canonical_bytes": 1855,
+      "hash_mode": "canonical-lf",
+      "sha256": "82bf25f2935b18052db1805dd8aa1dd35f8f2405acc08e2607bbb35aa4a5f245"
+    },
+    {
+      "path": "paper/PRIORITY-AUDIT.md",
+      "canonical_bytes": 4810,
+      "hash_mode": "canonical-lf",
+      "sha256": "d69690353812c110e80a03cc7f0370c853e27f68a980dd90e3be6deb1257f653"
+    },
+    {
+      "path": "paper/PRIORITY-SEARCH-RECEIPT.json",
+      "canonical_bytes": 2037,
+      "hash_mode": "canonical-lf",
+      "sha256": "1fddebacc6adcc19b5c307ea0717d79170ee3889eced99235e977e113460c982"
+    },
+    {
+      "path": "paper/references.bib",
+      "canonical_bytes": 2434,
+      "hash_mode": "canonical-lf",
+      "sha256": "f3d3af2038a05cc876212ed9a04f089bdc4ad252975e7f59c0c024b7dd8da04e"
+    },
+    {
+      "path": "paper/TECHNICAL-SUPPLEMENT.md",
+      "canonical_bytes": 10249,
+      "hash_mode": "canonical-lf",
+      "sha256": "ac06fd8826fe0509d5b030b7367d8bbf943f377bac30b839ebd326b7c643755a"
+    },
+    {
+      "path": "paper/technical-supplement.pdf",
+      "canonical_bytes": 181207,
+      "hash_mode": "raw",
+      "sha256": "50f9decaead6836da83fa6e328e3e23276a5e841e1cf6ba7e87cceb0c773501a"
+    },
+    {
+      "path": "paper/technical-supplement.tex",
+      "canonical_bytes": 9770,
+      "hash_mode": "canonical-lf",
+      "sha256": "619bada4beb59163ba8d44ea03dbac7ced69aa491a970c7eee07230a2419b1ac"
+    },
+    {
+      "path": "README.md",
+      "canonical_bytes": 2964,
+      "hash_mode": "canonical-lf",
+      "sha256": "997a771c4c800636e1b5f410720f6b32f1c7b41013ad23544547d00ec880da98"
+    },
+    {
+      "path": "requirements.txt",
+      "canonical_bytes": 61,
+      "hash_mode": "canonical-lf",
+      "sha256": "6b1e7e7d24ae3170ee31f6757ea4a750faa356f73dd0ff9ea7d1918027f10dc9"
+    }
+  ],
+  "file_count": 94,
+  "complete_dependency_closure": true
+}

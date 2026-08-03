@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this theorem package or its certificates, please cite this work."
+title: "A rigorously characterized I3322 quantum wall and finite-dimensional nonattainment"
+type: article
+authors:
+  - given-names: Seth
+    family-names: Douglas
+    email: apsiape@gmail.com
+    orcid: "https://orcid.org/0009-0007-4708-3252"
+version: 1.0.0
+license: CC-BY-4.0
+repository-code: "https://github.com/Apsiape/i3322-exact-wall"
+abstract: >-
+  The tensor-product and commuting-operator suprema of the canonical I3322
+  Bell functional are identified with a rigorously characterized domain-wall
+  constant, and neither model has a finite-dimensional maximizer.
+keywords:
+  - Bell inequalities
+  - I3322
+  - quantum correlations
+  - commuting operators
+  - computer-assisted proof
+  - nonattainment
+preferred-citation:
+  type: article
+  title: "A rigorously characterized I3322 quantum wall and finite-dimensional nonattainment"
+  authors:
+    - given-names: Seth
+      family-names: Douglas
+      orcid: "https://orcid.org/0009-0007-4708-3252"
+  year: 2026

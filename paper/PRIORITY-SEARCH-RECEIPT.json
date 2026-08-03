@@ -1,0 +1,47 @@
+{
+  "search_date": "2026-08-03",
+  "claim": "For canonical I3322, the tensor-product and commuting-operator suprema equal the certified domain-wall constant 0.250875384513976536..., and neither model has a finite-dimensional maximizer.",
+  "status": "No matching theorem found; priority remains provisional until archival timestamp.",
+  "databases": [
+    "arXiv",
+    "INSPIRE",
+    "Crossref",
+    "OpenAlex",
+    "zbMATH-facing web search",
+    "publisher pages",
+    "general web search"
+  ],
+  "queries": [
+    "exact decimal 0.250875384513976536",
+    "I3322 finite dimensional nonattainment",
+    "I3322 exact quantum value",
+    "I3322 commuting operator maximum",
+    "forward and backward citations of Pal-Vertesi 2010",
+    "forward and backward citations of Araujo et al. 2026"
+  ],
+  "current_context": [
+    {
+      "work": "Pal and Vertesi 2010, arXiv:1006.3032",
+      "finding": "Constructs the increasing-dimensional sequence and states optimality and finite-dimensional insufficiency as conjectures."
+    },
+    {
+      "work": "Coladangelo and Stark 2018, arXiv:1804.05116",
+      "finding": "Proves a different finite/infinite-dimensional separation and still describes the I3322 property as conjectural."
+    },
+    {
+      "work": "Araujo et al. 2026, DOI 10.1007/s10208-026-09761-x",
+      "finding": "Current journal treatment still describes maximal I3322 violation as conjecturally infinite-dimensional."
+    },
+    {
+      "work": "Flora et al. 2026, arXiv:2607.14755",
+      "finding": "Uses I3322 as a hard NPA benchmark; does not prove the exact value or nonattainment."
+    }
+  ],
+  "known_blind_spots": [
+    "Search indexes can lag very recent preprints and accepted manuscripts.",
+    "Literal-token searches can miss papers discussing the functional only in full text.",
+    "MathSciNet and Google Scholar were not directly machine-queryable in this environment.",
+    "A negative bibliographic search cannot establish priority."
+  ],
+  "public_wording": "Use 'we prove'; do not use 'first proof'."
+}

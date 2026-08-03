@@ -1,0 +1,14 @@
+{
+  "status": "machine-readable custody gate for finite-dimensional nonattainment",
+  "gates": {
+    "tensor_product_supremum_certificate": true,
+    "equality_kernel_scalar_audit": true,
+    "validated_wall_strictly_above_one_quarter": true,
+    "theorem_document_present": true,
+    "registration_present": true
+  },
+  "q_interval": "[0.250875384513976536 +/- 4.86e-19]",
+  "q_lower_minus_one_quarter": "0.000875384513976535514",
+  "all_gates_pass": true,
+  "claim_boundary": "Finite-dimensional tensor-product nonattainment only; no claim about commuting-operator attainment or physical realization."
+}

@@ -1,0 +1,23 @@
+{
+  "status": "adversarial dependency and strict-contact audit",
+  "gates": {
+    "strict_central_contact_graph": true,
+    "strict_boundary_wing_graph": true,
+    "inactive_contacts_excluded": true,
+    "aligned_bellman_dependency": true,
+    "tensor_operator_certificate": true,
+    "finite_nonattainment_certificate": true,
+    "commuting_extension_certificate": true,
+    "wall_strictly_above_quarter": true
+  },
+  "q_interval": "[0.250875384513976536 +/- 4.86e-19]",
+  "q_lower_minus_quarter": "0.000875384513976535514",
+  "source_sha256": {
+    "certificate/production/foundational-sprint-1195/EXACT-ALIGNED-WALL-THEOREM.md": "7de35f4968713216b51e435063c1cb3e9b0a39480b3bbcd1abbe3ce8a62471b1",
+    "certificate/production/foundational-sprint-1197/EXACT-I3322-QUANTUM-SUPREMUM.md": "9a5d34fbfb88e13ebe9ec86e27d8c27347cbeaf04336f2d64eb85ff96e7a6c66",
+    "certificate/production/foundational-sprint-1198/FINITE-DIMENSIONAL-NONATTAINMENT.md": "979edb4354a205dc5e4ca5ff693ae1342aa6d7bb0c86372cd02abff5b7f4ed50",
+    "certificate/production/foundational-sprint-1199/COMMUTING-I3322-THEOREM.md": "e945a969fc5767b2226655feb2570dd546ebb9b1dc2ae7da321869c7a028d89e"
+  },
+  "all_gates_pass": true,
+  "scope_repair": "State the commuting theorem for its standard PVM presentation; do not make a separate general POVM-dilation claim load-bearing."
+}

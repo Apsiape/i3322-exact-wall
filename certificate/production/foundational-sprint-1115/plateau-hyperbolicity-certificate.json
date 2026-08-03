@@ -1,0 +1,46 @@
+{
+  "status": "exact algebraic plateau and exact branch-wide hyperbolicity",
+  "q_interval": [
+    "250875384513/1000000000000",
+    "50175076903/200000000000"
+  ],
+  "c_interval": [
+    "878272945173/1000000000000",
+    "878272945189/1000000000000"
+  ],
+  "ratio_branches": {
+    "low": "sqrt(1 - c**2)/(c + 1)",
+    "domain_wall": "sqrt(1 - c**2)*(2*c - 1)/((1 - c)*(2*c + 1))"
+  },
+  "q_domain_wall": "(4*c**4 - 5*c**2 + 2)/(4*c**2 - 1)",
+  "q_derivative": "2*c*(4*c**2 - 3)*(4*c**2 + 1)/((2*c - 1)**2*(2*c + 1)**2)",
+  "characteristic_numerator_factorization": "(4*c**3 - 3*c + t*(4*c**3 - 3*c + 1) - 1)*(-4*c**3 + 4*c**2*t*(1 - 4*c**2) + 3*c + t**2*(4*c**3 - 3*c + 1) + 1)",
+  "branch": "sqrt(3)/2 < c < 1",
+  "root_count": {
+    "inside_unit_interval": 2,
+    "above_one": 1,
+    "argument": "exact endpoint signs of one linear and one quadratic factor"
+  },
+  "reference_multipliers": [
+    {
+      "real": 5.837984065330379,
+      "imag": 0.0,
+      "abs": 5.837984065330379
+    },
+    {
+      "real": 0.8603760495461579,
+      "imag": 0.0,
+      "abs": 0.8603760495461579
+    },
+    {
+      "real": 0.1473755392132041,
+      "imag": 0.0,
+      "abs": 0.1473755392132041
+    }
+  ],
+  "claims_not_made": [
+    "the connection Q lies in the displayed Q interval",
+    "the unstable manifold reaches the reflection section",
+    "global I3322 optimality"
+  ]
+}

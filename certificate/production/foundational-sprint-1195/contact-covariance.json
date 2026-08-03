@@ -1,0 +1,20 @@
+{
+  "status": "exact symbolic contact covariance",
+  "bellman_residual": "0",
+  "shooting_position_residual": "0",
+  "beta_coefficients": [
+    "-(2*u*x*sqrt(1 - z**2) + u*sqrt(1 - z**2) - z)/(2*u*sqrt(-(z - 1)*(z + 1)))",
+    "0",
+    "sqrt(-(z - 1)*(z + 1))/(2*u**2)"
+  ],
+  "contact_covariance_residuals": [
+    "0",
+    "0",
+    "0"
+  ],
+  "contact_multiplier": "1/v**2",
+  "plateau_multiplier_residual": "0",
+  "plateau_contact_multiplier": "D/A=(1-c)(2c+1)^2/((1+c)(2c-1)^2)",
+  "all_exact_checks_zero": true,
+  "claim_boundary": "The displayed shooting map preserves the Bellman envelope one-form up to the positive factor 1/v^2. On the high plateau branch this covector multiplier is the isolated stable root D/A, not the unstable root."
+}

@@ -1,0 +1,29 @@
+{
+  "status": "independent mpmath complex graph-transform reconstruction",
+  "backend": "mpmath.iv plus local rectangular-complex arithmetic",
+  "imports_production_engine": false,
+  "order": 12,
+  "coefficient_cutoff": 50,
+  "low_degree_invariance_contains_zero": true,
+  "complex_tiles_checked": 400,
+  "analytic_radicand_real_margin": 0.2254517879515958,
+  "analytic_denominator_margin": 1.0718109345550557,
+  "basis_infinity_norm_upper": 11.901386898464445,
+  "basis_inverse_infinity_norm_upper": 1.938646430925978,
+  "lipschitz_row_sums_upper": [
+    6.738023665065409,
+    1.2420930361032951,
+    1.045976122185942
+  ],
+  "contraction_upper": 0.19770002373488452,
+  "eta_coordinate_uppers": [
+    1.9082175014951724e-27,
+    1.332179681093891e-26,
+    1.5230014307484336e-26
+  ],
+  "adapted_correction_upper": 1.898294248790014e-26,
+  "original_coordinate_correction_upper": 2.2592334301979876e-25,
+  "rescaled_original_correction_upper": 6.628805788981313e-27,
+  "all_gates_pass": true,
+  "claim_boundary": "Independent analytic-tail reconstruction only; shooting and global graph are separate gates."
+}

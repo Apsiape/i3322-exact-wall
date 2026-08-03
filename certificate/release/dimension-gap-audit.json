@@ -1,0 +1,50 @@
+{
+  "status": "numerical convergence audit; no quantitative dimension theorem",
+  "q_star": 0.25087538451397656,
+  "data": [
+    {
+      "dimension": 31,
+      "value": 0.250492717483438,
+      "gap": 0.00038266703053857487
+    },
+    {
+      "dimension": 63,
+      "value": 0.250850779989507,
+      "gap": 2.4604524469562516e-05
+    },
+    {
+      "dimension": 127,
+      "value": 0.250875195790122,
+      "gap": 1.8872385454393736e-07
+    },
+    {
+      "dimension": 191,
+      "value": 0.250875382981378,
+      "gap": 1.5325985480707516e-09
+    },
+    {
+      "dimension": 255,
+      "value": 0.250875384501519,
+      "gap": 1.2457535003562725e-11
+    }
+  ],
+  "global_log_linear_fit": {
+    "log_gap_slope_per_dimension": -0.07652763634765625,
+    "intercept": -5.66499393249071
+  },
+  "successive_log_gap_rates": [
+    0.08575734036068654,
+    0.07610001198396746,
+    0.07520812761518322,
+    0.07519366109631946
+  ],
+  "plateau_log_ratio": 0.07519285863979573,
+  "observed_reading": "The centered aligned sequence is consistent with gap Theta(R^{-n}), R approximately the positive plateau ratio.",
+  "theorem_boundary": [
+    "The data do not upper-bound arbitrary dimension-d strategies.",
+    "The nonattainment proof uses exact finite support reversal and is not quantitatively stable as written.",
+    "No device-independent lower bound on dimension is claimed."
+  ],
+  "next_lemma": "Prove a robust finite-support reversal theorem or a dimension-d defect bound for the three PSD remainders.",
+  "all_data_gates_pass": true
+}

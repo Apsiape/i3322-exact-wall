@@ -1,0 +1,346 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.9in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{microtype}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newcommand{\B}{\mathcal B_{3322}}
+\newcommand{\id}{I}
+
+\title{A rigorously characterized $I_{3322}$ quantum wall\\
+and finite-dimensional nonattainment}
+\author{Seth Douglas\\
+\small \href{mailto:apsiape@gmail.com}{apsiape@gmail.com}\quad
+\href{https://orcid.org/0009-0007-4708-3252}{ORCID: 0009-0007-4708-3252}}
+\date{August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We determine the supremum of the $I_{3322}$ Bell functional in both the
+tensor-product and commuting-operator models.  The value is the rigorously
+characterized domain-wall constant
+\[
+q_*=0.250875384513976536\ldots,
+\quad
+q_*\in[0.250875384513976535514,0.250875384513976536486].
+\]
+A computer-assisted shooting argument produces a positive Bellman fixed point
+and finite tensor-product strategies approaching $q_*$.  A
+representation-free operator certificate, obtained by geometrically combining
+a Bellman inequality with its reflected counterpart, gives the matching
+commuting-operator upper bound.  Equality on a finite joint spectrum forces
+two local decreasing transports to coincide.  Their amplitude compatibility
+then bounds every putative finite attaining component by $1/4$.  Since
+$q_*>1/4$, no finite-dimensional tensor-product or commuting-operator strategy
+attains the supremum.  The displayed decimal is a validated shooting zero,
+not an asserted elementary closed form.
+\end{abstract}
+
+\section{Statement of the result}
+
+Let $A_1,A_2,A_3$ and $B_1,B_2,B_3$ be projections.  In the commuting model
+they act on one Hilbert space and $[A_i,B_j]=0$.  We use the normalization
+\begin{align}
+\B={}&-A_2-B_1-2B_2
+ +A_1B_1+A_1B_2+A_2B_1+A_2B_2 \notag\\
+&-A_1B_3+A_2B_3-A_3B_1+A_3B_2 .                 \label{eq:bell}
+\end{align}
+This is the inequality introduced by Collins and Gisin
+\cite{CollinsGisin2004}.  Its classical bound is zero.  Qubit strategies
+attain $1/4$.  P\'al and V\'ertesi constructed increasing-dimensional
+strategies approaching approximately $0.250875384514$ and conjectured
+finite-dimensional nonattainment \cite{PalVertesi2010}.
+Our projector convention agrees term-for-term with their best-response
+recursion.  In the standard Collins--Gisin table it is obtained by swapping
+the first two settings on both sides; the exact affine conversion to the
+dichotomic convention is recorded in the accompanying normalization
+concordance.
+
+\begin{theorem}\label{thm:main}
+There is a rigorously characterized constant $q_*$ satisfying
+\begin{equation}
+q_*\in[0.250875384513976535514,0.250875384513976536486] \label{eq:qinterval}
+\end{equation}
+for which
+\[
+\omega_{\otimes}(\B)=\omega_{\rm c}(\B)=q_*.
+\]
+No finite-dimensional tensor-product strategy and no finite-dimensional
+commuting-operator strategy attains $q_*$.
+\end{theorem}
+
+The NPA hierarchy \cite{NPA2008} and its recent ncKKT refinements
+\cite{AraujoEtAl2026} provide increasingly sharp numerical bounds for this
+problem.  Our proof instead extracts an exact operator certificate from the
+limiting domain-wall recursion.  Infinite-versus-finite dimensional
+separations and non-closure are known in larger Bell scenarios
+\cite{Slofstra2017,ColadangeloStark2018}; the point here is the exact resolution
+of the canonical three-setting binary functional.
+Very recent budgeted moment-selection work continues to use $I_{3322}$ as a
+hard NPA benchmark rather than supplying an exact theorem
+\cite{FloraEtAl2026}.
+
+\section{Certified Bellman datum}
+
+Put
+\begin{equation}
+b(x)=\frac{\sqrt{1-x^2}}2,
+\qquad
+d(x,u)=xu+\frac{x-u}{2}-1.                       \label{eq:bd}
+\end{equation}
+The only computer-assisted input to the analytic proof is the following.
+
+\begin{proposition}[Certified Bellman datum]\label{prop:bellman}
+There exist $q_*$ satisfying \eqref{eq:qinterval}, a positive continuous
+concave function $F:[-1,1]\to(0,\infty)$, and a strictly increasing map
+$P:[-1,1]\to[-1,1]$ such that, with
+\[
+p(x)=\frac{b(x)^2}{F(x)},
+\]
+one has
+\begin{equation}
+p(x)+F(u)\le q_*-d(x,u)                            \label{eq:bellman}
+\end{equation}
+for every $x,u\in[-1,1]$.  For each $u$, equality holds at the unique point
+$x=P(u)$.  Moreover, a sequence of finite-dimensional tensor-product
+strategies has Bell values converging to $q_*$.
+\end{proposition}
+
+Equivalently, $F$ is a fixed point of
+\begin{equation}
+(T_qF)(u)=\min_{x\in[-1,1]}
+\left(q+1-\frac x2-(x-\tfrac12)u-\frac{1-x^2}{4F(x)}\right). \label{eq:T}
+\end{equation}
+The validated construction of Proposition~\ref{prop:bellman} is summarized in
+Section~\ref{sec:certificate}.
+
+\section{Geometric symmetrization}
+
+Apply \eqref{eq:bellman} at $(x,u)$ and $(-u,-x)$.  Since
+$d(-u,-x)=d(x,u)$,
+\begin{equation}
+\begin{split}
+p(x)+F(u)&\le q_*-d(x,u),\\
+F(-x)+p(-u)&\le q_*-d(x,u).
+\end{split}                                         \label{eq:twoBellman}
+\end{equation}
+Define
+\begin{equation}
+a(x)=\sqrt{p(x)F(-x)},
+\qquad
+c(u)=\sqrt{F(u)p(-u)}.                              \label{eq:ac}
+\end{equation}
+Cauchy--Schwarz applied to
+$(\sqrt{p(x)},\sqrt{F(u)})$ and
+$(\sqrt{F(-x)},\sqrt{p(-u)})$ gives
+\begin{equation}
+a(x)+c(u)\le q_*-d(x,u).                            \label{eq:transport}
+\end{equation}
+Direct multiplication yields
+\begin{equation}
+a(x)a(-x)=b(x)^2,
+\qquad
+c(u)c(-u)=b(u)^2.                                   \label{eq:products}
+\end{equation}
+
+\section{Commuting-operator certificate}
+
+Set
+\begin{equation}
+X=A_1+A_2-\id,\quad Y=A_2-A_1,
+\qquad
+U=B_1+B_2-\id,\quad V=B_2-B_1.                     \label{eq:XYUV}
+\end{equation}
+The projection relations imply
+\begin{equation}
+X^2+Y^2=\id,\quad XY+YX=0,
+\qquad
+U^2+V^2=\id,\quad UV+VU=0.                         \label{eq:csrels}
+\end{equation}
+A direct expansion gives
+\begin{equation}
+\B=G(X,U)+Y(B_3-\id/2)+(A_3-\id/2)V,               \label{eq:reparam}
+\end{equation}
+where
+\[
+G(X,U)=XU+X/2-U/2-\id.
+\]
+Let
+\[
+\alpha(x)=\frac12-a(x),
+\qquad
+\beta(u)=q_*-\frac12-c(u).
+\]
+Because $X$ and $U$ commute, joint functional calculus applied to
+\eqref{eq:transport} gives
+\begin{equation}
+R_0:=\alpha(X)+\beta(U)-G(X,U)\ge0.                 \label{eq:R0}
+\end{equation}
+
+Let $J_A$ be the polar sign of $Y$ on the support of $\id-X^2$.  Then
+\begin{equation}
+Y=2b(X)J_A,
+\qquad
+J_Af(X)=f(-X)J_A.                                  \label{eq:polarA}
+\end{equation}
+Put $S_B=2B_3-\id$ and $L_A=\sqrt{a(X)}$.  Cross-party commutation gives
+$[J_A,S_B]=0$.  Using \eqref{eq:products},
+\begin{equation}
+L_AJ_AS_BL_A=b(X)J_AS_B=Y(B_3-\id/2).              \label{eq:factorA}
+\end{equation}
+Consequently
+\begin{equation}
+\begin{split}
+R_A&:=\frac12\id-\alpha(X)-Y(B_3-\id/2)\\
+&=L_A(\id-J_AS_B)L_A\ge0.                          \label{eq:RA}
+\end{split}
+\end{equation}
+The product $J_AS_B$ is a self-adjoint contraction.  Endpoint summands, where
+$b(X)=Y=0$, follow by continuity.  The identical Bob construction gives
+\begin{equation}
+R_B:=(q_*-\tfrac12)\id-\beta(U)-(A_3-\id/2)V
+=\sqrt{c(U)}(\id-S_AJ_B)\sqrt{c(U)}\ge0.           \label{eq:RB}
+\end{equation}
+Adding \eqref{eq:R0}, \eqref{eq:RA}, and \eqref{eq:RB} yields
+\begin{equation}
+\boxed{q_*\id-\B=R_0+R_A+R_B\ge0.}                \label{eq:certificate}
+\end{equation}
+Thus $\omega_{\rm c}\le q_*$.  Proposition~\ref{prop:bellman} supplies a
+tensor-product sequence approaching $q_*$, proving equality of both suprema.
+
+\section{Finite-dimensional nonattainment}
+
+Suppose a finite-dimensional strategy attains $q_*$, and let $\psi$ be an
+attaining unit vector.  Positivity in \eqref{eq:certificate} implies
+\begin{equation}
+R_0\psi=R_A\psi=R_B\psi=0.                          \label{eq:kernels}
+\end{equation}
+The scalar value of $R_0$ at a joint spectral pair $(x,u)$ is
+$q_*-d(x,u)-a(x)-c(u)$.  Equality forces equality in both inequalities of
+\eqref{eq:twoBellman} and in Cauchy--Schwarz.  Hence every occupied pair obeys
+\begin{equation}
+x=P(u),\qquad -u=P(-x).                             \label{eq:zeroGraph}
+\end{equation}
+Let $\Sigma$ be the finite set of occupied $u$-coordinates.  Strict
+monotonicity makes $P$ injective.
+
+On the occupied interior support define
+\[
+K_A=J_AS_B,\quad K_B=S_AJ_B,
+\qquad
+r_A(x)=\frac{a(x)}{b(x)},\quad r_B(u)=\frac{c(u)}{b(u)}.
+\]
+The local equations in \eqref{eq:kernels} become
+\begin{equation}
+K_A\psi=r_A(X)\psi,
+\qquad
+K_B\psi=r_B(U)\psi.                               \label{eq:localKernel}
+\end{equation}
+The first reverses $x$ and therefore acts on $\Sigma$ by
+\begin{equation}
+\mathfrak a(u)=P^{-1}(-P(u)),                      \label{eq:amap}
+\end{equation}
+while the second acts by
+\begin{equation}
+\mathfrak b(u)=-u.                                 \label{eq:bmap}
+\end{equation}
+Both are decreasing bijections of the same finite ordered set.  Such a set
+has only one decreasing bijection, so $\mathfrak a=\mathfrak b$.  Every
+occupied $(x,u)$ is paired with $(-x,-u)$.
+
+Let $\psi_+$ and $\psi_-$ be the corresponding nonzero spectral components.
+Taking norms in \eqref{eq:localKernel} and using \eqref{eq:products} gives
+\begin{equation}
+\rho:=\frac{\|\psi_-\|}{\|\psi_+\|}
+=\sqrt{\frac{F(-x)}{F(x)}}
+=\sqrt{\frac{F(u)}{F(-u)}}.                       \label{eq:rho}
+\end{equation}
+Bellman and Cauchy equality then force
+\begin{equation}
+F(x)=\frac{b_x}{\rho},\quad F(-x)=\rho b_x,
+\quad F(u)=\rho b_u,\quad F(-u)=\frac{b_u}{\rho}. \label{eq:Ffour}
+\end{equation}
+At the two reflected components,
+\begin{equation}
+q_*-d(x,u)=\rho(b_x+b_u),
+\qquad
+q_*-d(-x,-u)=\frac{b_x+b_u}{\rho}.                \label{eq:twoValues}
+\end{equation}
+Subtracting and eliminating $\rho$ gives
+\begin{equation}
+q_*=xu-1+\sqrt{(b_x+b_u)^2+\frac{(x-u)^2}{4}}.     \label{eq:qfinite}
+\end{equation}
+
+Put $s_x=\sqrt{1-x^2}$, $s_u=\sqrt{1-u^2}$, and $t=1-xu\ge0$.  Then
+\begin{equation}
+(b_x+b_u)^2+\frac{(x-u)^2}{4}
+=\frac{1-xu+s_xs_u}{2}\le t,                      \label{eq:radbound}
+\end{equation}
+since
+\[
+(1-xu)^2-s_x^2s_u^2=(x-u)^2\ge0.
+\]
+Therefore
+\begin{equation}
+q_*\le-t+\sqrt t\le\frac14,                       \label{eq:quarter}
+\end{equation}
+contradicting \eqref{eq:qinterval}.  This proves finite-dimensional
+nonattainment.  Independently, a finite-dimensional commuting representation
+decomposes into finitely many spatial matrix blocks; equality would force one
+finite tensor block to attain $q_*$.
+
+\section{Validated construction of the Bellman datum}\label{sec:certificate}
+
+The Bellman equality and stationarity equations close as a three-dimensional
+shooting map.  In coordinates $(z,x,r)$, put
+\[
+\Delta=zx+\frac{z-x}{2}-1,
+\qquad
+v=\frac{2(q-\Delta-\sqrt{1-z^2}/(2r))}{\sqrt{1-x^2}}.
+\]
+The successor coordinate is the explicit rational-radical expression obtained
+from stationarity.  The selected orbit leaves a hyperbolic positive plateau,
+meets a two-condition reflection section, and returns by reversing symmetry.
+
+The validation stack comprises: a 400-bit Miranda enclosure of the shooting
+zero; a symbolic envelope-covariance identity; 300-bit interval covers of the
+central graph and endpoint wings; strict derivative signs on every tile;
+exclusion of all inactive outer predecessors; positivity of the Bellman
+function; and square-summable domain-wall tails whose finite truncations
+approach $q_*$.  Every computer-assisted item was also reconstructed with a
+separate \texttt{mpmath.iv} implementation and locally written complex
+intervals, without importing the Arb/FLINT production modules.  All gates pass
+and its enclosure overlaps the production result.  The certificate map and
+technical supplement give every script, margin, failed guard, and the exact
+independence contract.
+
+\section{Scope}
+
+Theorem~\ref{thm:main} concerns one Bell functional.  It does not assert an
+elementary closed form for $q_*$, spatiality of arbitrary commuting
+correlations, or experimental accessibility of the limiting wall.  The proof
+is independent of any broader foundational interpretation.  The observed
+finite-carrier gaps are exponentially consistent with the plateau multiplier,
+but no quantitative device-independent dimension lower bound is claimed.
+
+\paragraph{Computational disclosure.}
+Frontier language models were used extensively for proof discovery,
+implementation, adversarial auditing, and editorial assistance.  The named
+author assumes responsibility for the release.  Every load-bearing
+computer-assisted claim is mapped to independently replayable certificates.
+
+\paragraph{Artifacts.}
+The complete sources, frozen receipts, and independent reconstruction are at
+\url{https://github.com/Apsiape/i3322-exact-wall}.
+
+\begingroup
+\footnotesize
+\bibliographystyle{plain}
+\bibliography{references}
+\endgroup
+\end{document}

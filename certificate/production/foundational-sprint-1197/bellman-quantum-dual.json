@@ -1,0 +1,51 @@
+{
+  "status": "exact algebra plus held-out complex-matrix reconstruction",
+  "original_reparameterization_residual": "0",
+  "A_product_residual": "0",
+  "B_product_residual": "0",
+  "reflected_cost_residual": "0",
+  "cauchy_polynomial_residual": "0",
+  "local_determinant_before_reflection": "F_minus*F_plus - 4*b**2*z**2",
+  "local_determinant_after_reflection": "-b**2*(2*z - 1)*(2*z + 1)",
+  "local_determinant_nonnegative_for_response_interval": "b^2*(1-4*z^2) >= 0 for |z|<=1/2",
+  "endpoint_plus_gap": "F_minus",
+  "zero_block_gap": "0",
+  "random_matrix_checks": [
+    {
+      "dimensions": [
+        2,
+        2
+      ],
+      "max_bell_operator_residual": 7.794532389054425e-16,
+      "max_pair_relation_residual": 1.9618998208952217e-15
+    },
+    {
+      "dimensions": [
+        3,
+        4
+      ],
+      "max_bell_operator_residual": 9.0864790852923e-16,
+      "max_pair_relation_residual": 2.3356688251400995e-15
+    },
+    {
+      "dimensions": [
+        5,
+        3
+      ],
+      "max_bell_operator_residual": 1.1870908097894615e-15,
+      "max_pair_relation_residual": 2.96170382477828e-15
+    },
+    {
+      "dimensions": [
+        6,
+        6
+      ],
+      "max_bell_operator_residual": 7.55787927517851e-16,
+      "max_pair_relation_residual": 3.0806722301615453e-15
+    }
+  ],
+  "max_random_bell_residual": 1.1870908097894615e-15,
+  "max_random_pair_relation_residual": 3.0806722301615453e-15,
+  "all_gates_pass": true,
+  "claim_boundary": "These identities validate the Bell-operator decomposition and geometric symmetrization. The theorem also requires the exact Bellman fixed point certified in Sprint 1195."
+}

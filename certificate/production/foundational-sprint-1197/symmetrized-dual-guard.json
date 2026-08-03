@@ -1,0 +1,15 @@
+{
+  "status": "numerical guard for corrected geometric dual",
+  "grid_size": 32001,
+  "dual_ceiling": 0.25087538451404456,
+  "exact_wall_reference": 0.25087538451397656,
+  "dual_excess": 6.800116025829084e-14,
+  "argmax": [
+    -0.8781875,
+    -0.87825
+  ],
+  "max_A_product_residual": 1.1102230246251565e-16,
+  "max_B_product_residual": 8.326672684688674e-17,
+  "passes_registered_guard": true,
+  "claim_boundary": "The continuum proof is symbolic; this hull calculation is a hostile numerical normalization and endpoint guard only."
+}

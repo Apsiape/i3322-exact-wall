@@ -1,0 +1,251 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,mathtools,booktabs,array,hyperref,microtype}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\M}{\mathcal M}
+\title{Technical supplement: the validated Bellman/domain-wall certificate}
+\author{Seth Douglas\\
+\small \href{mailto:apsiape@gmail.com}{apsiape@gmail.com}\quad
+\href{https://orcid.org/0009-0007-4708-3252}{ORCID: 0009-0007-4708-3252}}
+\date{3 August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This supplement specifies the computer-assisted input to the exact $I_{3322}$
+wall theorem.  It records the characteristic map, hyperbolic plateau, analytic
+unstable-manifold enclosure, Miranda shooting box, exact contact covariance,
+global graph covers, boundary and exterior exclusions, and the boundary
+between certified theorem and numerical conjecture.  All inequalities that
+carry the theorem are interval-certified; symbolic identities are exact.
+\end{abstract}
+
+\section{Arithmetic model and theorem boundary}
+
+Rigorous inequalities use Arb real balls through \texttt{python-flint}; exact
+identities use SymPy.  A displayed decimal is descriptive only.  A numerical
+gate passes only when an interval excludes zero with the registered sign.
+
+The computer-assisted proposition supplies a positive concave
+$F:[-1,1]\to(0,\infty)$, a strictly increasing predecessor map $P$, and
+\[
+ q_*\in[0.250875384513976535514,
+          0.250875384513976536486]
+\]
+such that, with $b(x)=\sqrt{1-x^2}/2$, $p(x)=b(x)^2/F(x)$, and
+$d(x,u)=xu+(x-u)/2-1$,
+\[
+ p(x)+F(u)\le q_*-d(x,u),                       \tag{S1}
+\]
+with equality at the unique point $x=P(u)$.  It also produces finite
+tensor-product strategies approaching $q_*$.  The operator certificate and
+finite-dimensional nonattainment then proceed analytically in the main paper.
+
+\section{Characteristic map}
+
+For a state $(x,y,r)$ define $s_x=\sqrt{1-x^2}$,
+$s_y=\sqrt{1-y^2}$ and
+\[
+ D=xy+\frac{x-y}{2}-1,
+ \qquad
+ v=\frac{2(q-D-s_x/(2r))}{s_y},
+\]
+\[
+ z=\frac12\left(\frac{(1-2x)+2yv/s_y}{v^2}-1\right).
+\]
+The characteristic recurrence is
+\[
+ \M_q(x,y,r)=(y,z,v).                            \tag{S2}
+\]
+It is obtained from equality and stationarity in (S1).  Direct symbolic
+substitution verifies the recurrence and its exact reversal symmetry.  The
+selected orbit leaves a positive fixed plateau, hits a two-equation reflection
+section, and returns along the reflected branch.
+
+\section{Plateau and analytic tail}
+
+The fixed point $(C,C,R)$ belongs to the exact algebraic branch
+\[
+ R=\frac{\sqrt{1-C^2}(2C-1)}{(1-C)(2C+1)},
+ \qquad
+ q=\frac{4C^4-5C^2+2}{4C^2-1},
+ \quad \frac{\sqrt3}{2}<C<1.                    \tag{S3}
+\]
+Exact elimination isolates the branch and proves the relevant root count.  At
+the selected point $D\M_q$ has two stable eigenvalues and one unstable
+eigenvalue.  Their reference midpoints are
+\[
+ 5.8379840653\ldots,\qquad
+ 0.8603760495\ldots,\qquad
+ 0.1473755392\ldots .
+\]
+The interval certificate, not these rounded values, separates them from the
+unit circle.
+
+The local unstable curve $\Pi(t)$ is normalized by
+\[
+ \M_q(\Pi(t))=\Pi(\mu t).                        \tag{S4}
+\]
+A high-order polynomial approximation is corrected by a graph transform on a
+complex ball.  The certified data are summarized in Table~\ref{tab:tail}.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lr}
+\toprule
+quantity & certified bound \\
+\midrule
+complex boundary tiles & 400 \\
+real radicand margin & $>0.22545$ \\
+denominator margin & $>1.0726$ \\
+graph-transform contraction & $<0.180945557$ \\
+adapted-coordinate correction & $<1.859\times10^{-26}$ \\
+original-coordinate correction & $<2.213\times10^{-25}$ \\
+\bottomrule
+\end{tabular}
+\caption{Analytic unstable-manifold enclosure.}
+\label{tab:tail}
+\end{table}
+
+\section{Validated shooting zero}
+
+The unknowns are the plateau coordinate $C$ and unstable parameter $t$.  After
+four and five iterates, the two residuals are
+\[
+ h_1=\texttt{crossing}[0]+\texttt{crossing}[1],
+ \qquad
+ h_2=\texttt{after}[2]-1/\texttt{crossing}[2].   \tag{S5}
+\]
+They encode reflection of the position and amplitude.  A preconditioned
+Miranda argument validates a zero in
+\[
+ C=0.8782729451808124521\pm4.86\times10^{-20},
+\]
+\[
+ t=0.0037582873342893243\pm4.36\times10^{-20}.
+\]
+Every opposite face has the required strict sign after local-manifold and
+propagation errors are included.  The two tail allowances are below
+$1.9\times10^{-23}$ and $9.95\times10^{-25}$.  Propagating the box through
+(S3) gives the enclosure of $q_*$.  Miranda supplies existence; branch
+isolation and the strict graph below supply the uniqueness used in the
+Bellman construction.
+
+\section{Exact contact covariance}
+
+Let the one-form on the Bellman equality surface be
+\[
+ \beta=dF(x)-(1/2-y)\,dx.
+\]
+An exact symbolic calculation yields
+\[
+ \M_q^*\beta=\frac{1}{v^2}\beta.                \tag{S6}
+\]
+All coefficient residuals reduce identically to zero.  Since the local
+unstable tangent is in $\ker\beta$, (S6) transports the envelope relation
+along the certified orbit.  This identity is the exact bridge from the
+shooting recurrence to the scalar Bellman function; it is not inferred from a
+plot or interpolant.
+
+\section{Global graph and endpoints}
+
+The central orbit is covered at 300-bit precision by 8,192 local plateau
+tiles and four central pieces of 32,768 tiles each.  Every projected derivative
+box has the registered strict sign, every pivot is positive, and there are no
+failed tiles.  Reflection supplies the opposite half.  Thus the characteristic
+curve is single-valued and the predecessor $P$ is strictly increasing.
+
+An earlier six-forward-piece parametrization failed.  The accepted cover is
+plateau-to-section plus reflection.  Both facts remain in the machine receipt
+to prevent the corrected theorem from silently inheriting the rejected
+coordinate convention.
+
+The active right wing begins at the unique root in a width-$2\times10^{-14}$
+bracket around
+\[
+ t=-0.003719358976358651\ldots .
+\]
+The root residual has derivative below $-34.725$.  Two pieces of 32,768 boxes
+certify the graph to the endpoint, whose predecessor is near
+$0.898116482394039$.  Reflection supplies the left wing.
+
+The inactive exterior uses 32,768 boxes.  Successor monotonicity and the
+stationarity-target derivative exclude every additional contact; the
+reconstructed $F$ has lower bound $0.2104$.  A first attempted guard based on
+a strict line derivative failed at the calibrated endpoint.  The theorem uses
+the repaired successor-monotonicity guard, and the receipt retains the failed
+test.
+
+\section{Assembly of the Bellman proposition}
+
+The exact covariance, strict graph signs, endpoint wings, and inactive
+exclusion show that $F>0$, that its contact slope is monotone, and hence that
+$F$ is concave.  The contact tangent gives (S1) globally, with exactly one
+contact for each $u$.
+
+Hyperbolicity supplies square-summable plateau tails.  Truncating the two-sided
+orbit and normalizing gives finite tensor-product strategies whose boundary
+errors tend to zero.  Their Bell values converge to $q_*$.  The analytic
+positive-operator decomposition proves the matching commuting upper bound.
+
+\section{Equality audit and independent reconstruction}
+
+Equality in the three positive remainders forces two decreasing bijections of
+the same finite ordered support.  They must be the same reversal.  Eliminating
+the resulting amplitude ratio gives
+\[
+ q_*\le -s+\sqrt{s}\le\frac14,
+\]
+contradicting the lower endpoint of the certified interval.  This argument has
+an independently written exact implementation based on rank tables and a
+separate symbolic elimination.
+
+The release verifier freezes hashes, checks semantic gates, and can rerun all
+engines.  The production path is deterministic replay.  A second path uses
+\texttt{mpmath.iv}, a locally implemented rectangular complex-interval layer,
+and no imports from the Arb/FLINT production modules.  It passes 18,000
+rational-enclosure checks and independently reconstructs the plateau,
+degree-12 invariant series, analytic graph transform, Miranda zero, central
+graph, endpoint wing, and inactive exterior.  All eight registered gates pass.
+Its directed shooting interval is
+\[
+\begin{split}
+[&0.2508753845139765355147934110068914495\ldots,\\
+ &0.2508753845139765357198798108850040972\ldots],
+\end{split}
+\]
+which overlaps the production Arb enclosure; both endpoints round to the
+displayed 18-place value.  Its analytic-tail allowance is
+$2.2592334301979876\times10^{-25}$, only $1.020883\ldots$ times the production
+allowance.  This is method-independent internal reconstruction, not a claim
+about physical enactment or a substitute for the analytic proof.
+
+\section{Dimension-rate boundary}
+
+For the aligned centered finite carriers, the gaps at dimensions
+$31,63,127,191,255$ are respectively approximately
+\[
+3.8267\!\times\!10^{-4},\ 2.4605\!\times\!10^{-5},\
+1.8872\!\times\!10^{-7},\ 1.5326\!\times\!10^{-9},\
+1.2458\!\times\!10^{-11}.
+\]
+Their successive exponential rates converge to $0.07519366\ldots$, while the
+plateau gives $\log R=0.07519286\ldots$.  This is strong evidence for
+$q_*-Q_n=\Theta(R^{-n})$ in that family.  It is not a dimension theorem:
+the data are lower bounds, and the exact finite-support reversal is not stable
+as written.  No device-independent quantitative dimension bound is claimed.
+
+\section{Reproduction}
+
+From the repository root, quick custody verification and full deterministic
+replay are respectively
+\begin{verbatim}
+python certificate/release/verify_release.py
+python certificate/release/verify_release.py --full
+\end{verbatim}
+The manifest and exact file-to-claim map are distributed beside this
+supplement.
+
+\end{document}

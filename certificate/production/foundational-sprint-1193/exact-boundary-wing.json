@@ -1,0 +1,40 @@
+{
+  "status": "exact boundary-wing certificate",
+  "precision_bits": 300,
+  "root_bracket": "[-0.0037193589764 +/- 5.14e-14]",
+  "endpoint_residuals": [
+    {
+      "face": "more_negative",
+      "residual": "[2.09e-13 +/- 6.93e-16]"
+    },
+    {
+      "face": "less_negative",
+      "residual": "[-4.85e-13 +/- 2.36e-16]"
+    }
+  ],
+  "root_derivative": "[-34.72512910 +/- 8.62e-9]",
+  "existence_by_IVT": true,
+  "uniqueness_in_bracket": true,
+  "terminal_predecessor_interval": "[0.89811648239403900 +/- 6.25e-18]",
+  "tiles": 32768,
+  "pieces": [
+    {
+      "iterate": 0,
+      "largest_dx_upper": -0.9048020843408178,
+      "largest_dy_upper": -5.2821562715732275,
+      "minimum_pivot_lower": 0.25753189226878187,
+      "tiles_certified": 32768
+    },
+    {
+      "iterate": 1,
+      "largest_dx_upper": -5.2821562715732275,
+      "largest_dy_upper": -30.815376008136656,
+      "minimum_pivot_lower": 0.25647373006374524,
+      "tiles_certified": 32768
+    }
+  ],
+  "failure_count": 0,
+  "first_failures": [],
+  "complete_right_wing_graph": true,
+  "claim_boundary": "The negative branch of the exact positive-plateau unstable manifold is a positive monotone graph ending at contact +1. Reflection gives the left wing. Bellman support-line closure is a separate theorem."
+}

@@ -1,0 +1,104 @@
+{
+  "status": "exact I3322 normalization concordance",
+  "repository_projector": {
+    "alice_marginals": [
+      0,
+      -1,
+      0
+    ],
+    "bob_marginals": [
+      -1,
+      -2,
+      0
+    ],
+    "joint": [
+      [
+        1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        0
+      ]
+    ]
+  },
+  "collins_gisin": {
+    "alice_setting_permutation_zero_based": [
+      1,
+      0,
+      2
+    ],
+    "bob_setting_permutation_zero_based": [
+      1,
+      0,
+      2
+    ],
+    "alice_marginals": [
+      -1,
+      0,
+      0
+    ],
+    "bob_marginals": [
+      -2,
+      -1,
+      0
+    ],
+    "joint": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        0
+      ]
+    ]
+  },
+  "pal_vertesi_rows_match_exactly": true,
+  "dichotomic": {
+    "substitution": "P_i=(I-A_i)/2, Q_j=(I+B_j)/2",
+    "alice_marginals_times_four": [
+      -1,
+      -1,
+      0
+    ],
+    "bob_marginals_times_four": [
+      -1,
+      -1,
+      0
+    ],
+    "joint_times_four": [
+      [
+        -1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        1,
+        0
+      ]
+    ],
+    "affine_relation": "B_projector=-I+H_dichotomic/4"
+  },
+  "all_gates_pass": true
+}

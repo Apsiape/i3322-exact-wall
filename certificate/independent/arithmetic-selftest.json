@@ -1,0 +1,12 @@
+{
+  "status": "independent mpmath interval arithmetic self-test",
+  "seed": 20260803,
+  "rational_operation_checks": 16000,
+  "sqrt_checks": 2000,
+  "total_checks": 18000,
+  "failure_count": 0,
+  "first_failures": [],
+  "all_gates_pass": true,
+  "arithmetic_backend": "mpmath.iv real intervals; local rectangular complex layer",
+  "forbidden_import_flint": true
+}

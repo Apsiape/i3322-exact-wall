@@ -1,0 +1,42 @@
+{
+  "status": "exact equality-kernel scalar audit plus independent numerical guard",
+  "exact_residuals": {
+    "bellman_plus_forward": "0",
+    "bellman_plus_reflected": "0",
+    "bellman_minus_forward": "0",
+    "bellman_minus_reflected": "0",
+    "ratio_alice_ratio_squared": "0",
+    "ratio_bob_ratio_squared": "0",
+    "ratio_cauchy_equality": "0",
+    "ratio_to_radical": "0",
+    "radical_square": "0",
+    "radicand_identity_mod_unit_circles": "0",
+    "cauchy_schwarz_identity_mod_unit_circles": "0",
+    "final_quarter_square": "0",
+    "bellman_difference_factorization": "0"
+  },
+  "strictly_decreasing_bijection_counts": {
+    "1": 1,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1,
+    "6": 1,
+    "7": 1,
+    "8": 1,
+    "9": 1
+  },
+  "random_guard": {
+    "samples": 250000,
+    "maximum": 0.2499966927760066,
+    "ceiling": 0.25,
+    "known_equality_fixture": 0.2499999999999999
+  },
+  "qubit_boundary_fixture": {
+    "projector_residual": 2.7755575615628914e-17,
+    "maximum_bell_eigenvalue": 0.24999999999999975,
+    "expected": 0.25
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "The engine audits the finite-order lemma and scalar contradiction. The operator-kernel reduction is proved in the theorem document."
+}

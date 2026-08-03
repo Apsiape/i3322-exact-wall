@@ -1,0 +1,143 @@
+{
+  "status": "independent mpmath Miranda shooting certificate",
+  "backend": "mpmath.iv; no production imports",
+  "rectangle": {
+    "C": [
+      "0.8782729451808124520514776394587039268823793661623032741245323669525128359017546634577951740472310597",
+      "0.8782729451808124520714776394587039268823793661623032741245323669525128359017546634577951742950093374"
+    ],
+    "t": [
+      "0.003758287334289324256445918996206691067662984018655379609444813863207525630032792334982355445492358726",
+      "0.003758287334289324276445918996206691067662984018655379609444813863207525630032792334982355446857155867"
+    ],
+    "Q": [
+      "0.2508753845139765355147934110068914495183589966735762539686356978581196543595275124866110425227129905",
+      "0.2508753845139765357198798108850040972227400760030447637667234651412131964260435293547014829697338104"
+    ]
+  },
+  "initial_manifold_error": 3e-25,
+  "propagation": [
+    {
+      "step": 1,
+      "coordinate_error_uppers": [
+        3e-25,
+        2.37621987119984e-24,
+        1.6344441157937339e-24
+      ],
+      "jacobian_abs_row_sum_uppers": [
+        1.0,
+        7.920732903999467,
+        5.448147052645779
+      ]
+    },
+    {
+      "step": 2,
+      "coordinate_error_uppers": [
+        2.37621987119984e-24,
+        1.4458823018930263e-23,
+        6.5084500657137946e-24
+      ],
+      "jacobian_abs_row_sum_uppers": [
+        1.0,
+        7.05380714830151,
+        4.7498614344115815
+      ]
+    },
+    {
+      "step": 3,
+      "coordinate_error_uppers": [
+        1.4458823018930263e-23,
+        5.822361843825308e-23,
+        1.7416058117843045e-23
+      ],
+      "jacobian_abs_row_sum_uppers": [
+        1.0,
+        4.59547263615852,
+        2.8167466894660924
+      ]
+    },
+    {
+      "step": 4,
+      "coordinate_error_uppers": [
+        5.822361843825308e-23,
+        1.001104435759796e-22,
+        3.155516325543207e-23
+      ],
+      "jacobian_abs_row_sum_uppers": [
+        1.0,
+        2.8291653835375254,
+        1.4755480680826454
+      ]
+    },
+    {
+      "step": 5,
+      "coordinate_error_uppers": [
+        1.001104435759796e-22,
+        1.6380640173020581e-22,
+        7.223716745636128e-23
+      ],
+      "jacobian_abs_row_sum_uppers": [
+        1.0,
+        2.0953659314094386,
+        1.6361313636143764
+      ]
+    }
+  ],
+  "residual_error_uppers": [
+    1.5833406201423264e-22,
+    1.1020692176637782e-22
+  ],
+  "preconditioned_error_uppers": [
+    1.897888430672705e-23,
+    9.950216833129556e-25
+  ],
+  "face_checks": [
+    {
+      "axis": "C",
+      "face": "lower",
+      "transformed_interval": [
+        -1.0000000000097704e-20,
+        -9.999999999902295e-21
+      ],
+      "mean_value_cross_radius": 9.770460806209715e-32,
+      "tail_error_allowance_upper": 1.897888430672705e-23,
+      "opposite_sign_certified": true
+    },
+    {
+      "axis": "C",
+      "face": "upper",
+      "transformed_interval": [
+        9.999999999902295e-21,
+        1.0000000000097704e-20
+      ],
+      "mean_value_cross_radius": 9.770460806209715e-32,
+      "tail_error_allowance_upper": 1.897888430672705e-23,
+      "opposite_sign_certified": true
+    },
+    {
+      "axis": "t",
+      "face": "lower",
+      "transformed_interval": [
+        -1.00000000000004e-20,
+        -9.999999999999599e-21
+      ],
+      "mean_value_cross_radius": 4.00576546113119e-34,
+      "tail_error_allowance_upper": 9.950216833129556e-25,
+      "opposite_sign_certified": true
+    },
+    {
+      "axis": "t",
+      "face": "upper",
+      "transformed_interval": [
+        9.999999999999599e-21,
+        1.00000000000004e-20
+      ],
+      "mean_value_cross_radius": 4.00576546113119e-34,
+      "tail_error_allowance_upper": 9.950216833129556e-25,
+      "opposite_sign_certified": true
+    }
+  ],
+  "miranda_conditions": true,
+  "all_gates_pass": true,
+  "claim_boundary": "Existence of an exact shooting zero conditional only on the independently reconstructed analytic-tail allowance."
+}
