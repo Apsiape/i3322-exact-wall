@@ -1,5 +1,7 @@
 # Exact I3322 quantum wall
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21782008.svg)](https://doi.org/10.5281/zenodo.21782008)
+
 This repository contains a computer-assisted proof that the tensor-product and
 commuting-operator suprema of the canonical three-setting, two-outcome
 `I3322` Bell functional equal the rigorously characterized constant
@@ -10,6 +12,11 @@ q* in [0.250875384513976535514, 0.250875384513976536486].
 ```
 
 Neither model has a finite-dimensional maximizer.
+
+Archival identifiers: concept DOI
+[`10.5281/zenodo.21782008`](https://doi.org/10.5281/zenodo.21782008); frozen
+`v1.0.0` DOI
+[`10.5281/zenodo.21782009`](https://doi.org/10.5281/zenodo.21782009).
 
 The result resolves the conjectural value and finite-dimensional
 nonattainment reported by Pal and Vertesi in 2010. It is not a claim of

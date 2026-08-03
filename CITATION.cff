@@ -8,8 +8,10 @@ authors:
     email: apsiape@gmail.com
     orcid: "https://orcid.org/0009-0007-4708-3252"
 version: 1.0.0
+doi: 10.5281/zenodo.21782009
 license: CC-BY-4.0
 repository-code: "https://github.com/Apsiape/i3322-exact-wall"
+url: "https://doi.org/10.5281/zenodo.21782009"
 abstract: >-
   The tensor-product and commuting-operator suprema of the canonical I3322
   Bell functional are identified with a rigorously characterized domain-wall
@@ -29,3 +31,4 @@ preferred-citation:
       family-names: Douglas
       orcid: "https://orcid.org/0009-0007-4708-3252"
   year: 2026
+  doi: 10.5281/zenodo.21782009
