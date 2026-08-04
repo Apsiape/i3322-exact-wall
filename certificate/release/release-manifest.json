@@ -1947,6 +1947,54 @@
       "sha256": "1702d24a577204cf8914bd3150dd1c2710009ebdda96fe7f9980c425e7a89b4c"
     },
     {
+      "path": "certificate/production/foundational-sprint-1269/PRE-REGISTRATION.md",
+      "canonical_bytes": 1058,
+      "hash_mode": "canonical-lf",
+      "sha256": "05347254557611af9d5103f199dd9099fbb4e411d40c4085c7b2534d0278937d"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1269/shooting-atlas-drift-reconstruction.json",
+      "canonical_bytes": 1393,
+      "hash_mode": "canonical-lf",
+      "sha256": "fb1fe91783bee29b4af2c6354fa989a0cdbc1f3dc1f38ff4e20e74ad8c02afab"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1269/SHOOTING-ATLAS-DRIFT-RECONSTRUCTION.md",
+      "canonical_bytes": 1370,
+      "hash_mode": "canonical-lf",
+      "sha256": "17a444db0d8680c9ef5d9fd4e5552022e78c93287f844fe44333e5adcc679da9"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1269/shooting_atlas_drift_reconstruction.py",
+      "canonical_bytes": 7198,
+      "hash_mode": "canonical-lf",
+      "sha256": "c7c71d0e070ccf1b5b526cb8acc7a9b6378703447cc230c7aaaff846438a8a90"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1270/exact-reverser-and-atlas-guard.json",
+      "canonical_bytes": 1021,
+      "hash_mode": "canonical-lf",
+      "sha256": "ce624decdb96079fcf8dd10c7b898cab36fd03ea1f414948e8c6656da77c6ad3"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1270/EXACT-REVERSER-AND-CORRECTED-ATLAS.md",
+      "canonical_bytes": 1500,
+      "hash_mode": "canonical-lf",
+      "sha256": "9e40deb9659c41f5c2d7c1a059c9919e36994c4e8d8d79d11640ee3e37bda586"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1270/exact_reverser_and_atlas_verify.py",
+      "canonical_bytes": 6833,
+      "hash_mode": "canonical-lf",
+      "sha256": "da3116bd69aacf0607423d0da1cad2d5f2d76c0d4253b370d68709a6bbaa8d93"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1270/PRE-REGISTRATION.md",
+      "canonical_bytes": 861,
+      "hash_mode": "canonical-lf",
+      "sha256": "e81724b0d2914c30c21137a2495011800a2f0209fc40b4c0e7cc9b694306bdc4"
+    },
+    {
       "path": "certificate/release/build_release_manifest.py",
       "canonical_bytes": 2437,
       "hash_mode": "canonical-lf",
@@ -1996,9 +2044,9 @@
     },
     {
       "path": "certificate/release/verify_release.py",
-      "canonical_bytes": 17075,
+      "canonical_bytes": 17573,
       "hash_mode": "canonical-lf",
-      "sha256": "ef409abc5fc665278c675afc26a7f3eaae33ff2df07f0e79219b1cb853f25e97"
+      "sha256": "2a5252e6ffda35bb1029732a92e21c6eb19d8ebf183a3c6caeed56635a6635f2"
     },
     {
       "path": "CITATION.cff",
@@ -2122,9 +2170,9 @@
     },
     {
       "path": "README.md",
-      "canonical_bytes": 8928,
+      "canonical_bytes": 9329,
       "hash_mode": "canonical-lf",
-      "sha256": "db290528f45f9c3bd79eb45fc391079529c49148cdc8b9f45e7828fc893d9a63"
+      "sha256": "2f509febad665622df26db76ff35881a8b5b8ff64d3509f6c2d14a925b7d0686"
     },
     {
       "path": "requirements.txt",
@@ -2170,9 +2218,9 @@
     },
     {
       "path": "review/OPERATOR-FLAG-CAMPAIGN.md",
-      "canonical_bytes": 11277,
+      "canonical_bytes": 12479,
       "hash_mode": "canonical-lf",
-      "sha256": "7a9fd7d4498e1e8265c606108a48f9901d17f4584dd7bbba8bb8acdc0d44025a"
+      "sha256": "755e2ac9d07f0066a00a130abb934de67d52f68f596643cec4c7893d9c263474"
     },
     {
       "path": "review/POST-ADJUDICATION-COUPLED-SECTOR.md",
@@ -2187,6 +2235,6 @@
       "sha256": "a405ef962afdfc120b5c3f2901ca58e95e2ab3963e642fa73dc2022f2d280cfa"
     }
   ],
-  "file_count": 364,
+  "file_count": 372,
   "scope": "Custody manifest for selected published files. Analytic dependency closure is checked separately by verify_release.py and is not inferred from file enumeration alone."
 }

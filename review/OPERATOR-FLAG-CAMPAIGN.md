@@ -140,6 +140,21 @@ The replacement campaign deliberately starts before packetization.
     `chi=q-p` in the registered boxes.  Every root is numerically separated
     from horizontal coalescence by more than `1/20`.  This is a numerical
     target, not a theorem; interval zero exclusion is the live gate.
+28. **Wrong-chart rejection (Sprint 1269).** A direct shooting reconstruction
+    was preregistered as an independent ancestry test and failed five of six
+    targets: overlapping charts disagreed by about `0.195`, the composite
+    predecessor ceased to be monotone, and eleven apparent roots appeared.
+    This reproduces Sprint 1192's warned-against error of propagating a local
+    chart forward past its reflection section.  The failed construction and
+    its receipt are retained.
+29. **Exact reverser and repaired atlas (Sprint 1270).** The shooting map has
+    the exact involutory reverser `R(x,y,u)=(-y,-x,1/v)` and satisfies
+    `R M R=M^-1`; all three symbolic residuals vanish.  Restricting to the
+    certified pre-section charts and their reversible images yields 18 charts
+    whose maximum overlap spread is `1.2e-15`, with monotone predecessor and
+    the same three roots to the registered tolerance.  The numerical atlas is
+    only an ancestry check.  The inactive outer sliver is separately typed by
+    Sprint 1217, and interval root exclusion remains open.
 
 ## What is and is not new
 
@@ -191,8 +206,9 @@ from Sprint 1265 and must be absorbed without forcing a superlinear cut depth.
 Until the complete parameter ledger or a bounded-complexity sign partition is
 proved and independently replayed, the public theorem boundary is unchanged.
 
-The bounded-complexity option is now concrete: Sprint 1268 predicts four
-intrinsic drift chambers.  Certifying exactly three roots and their horizontal
-separation would replace the artificial fine grid by three fixed response
-prefixes.  No use of that scout is permitted in a theorem before the interval
-certificate lands.
+The bounded-complexity option is now concrete: Sprints 1268--1270 predict four
+intrinsic drift chambers by two independent numerical constructions, while
+the second construction's reversibility is exact.  Certifying exactly three
+roots and their horizontal separation would replace the artificial fine grid
+by three fixed response prefixes.  No use of the numerical zero census is
+permitted in a theorem before the interval certificate lands.

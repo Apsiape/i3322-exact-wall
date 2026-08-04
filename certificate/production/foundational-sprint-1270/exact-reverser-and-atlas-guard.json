@@ -1,0 +1,36 @@
+{
+  "status": "exact shooting reverser and corrected numerical atlas",
+  "exact": {
+    "reversed_cost_residual": "0",
+    "reversed_ratio_residual": "0",
+    "reversed_coordinate_residual": "0",
+    "all_exact_residuals_zero": true
+  },
+  "numerical": {
+    "charts": 18,
+    "symmetric_active_carrier": [
+      -0.898,
+      0.898
+    ],
+    "maximum_F_overlap_spread": 1.1657341758564144e-15,
+    "predecessor_min_increment": 4.2035058511191714e-05,
+    "roots": [
+      -0.8643911578940383,
+      -0.37698914694690155,
+      0.7999047448721928
+    ],
+    "maximum_root_difference": 0.0016888043223729499,
+    "horizontal_separations": [
+      0.36885621317599177,
+      1.1458098208927554,
+      0.07597648523773548
+    ],
+    "corrected_atlas_pass": true
+  },
+  "gates": {
+    "exact_reverser": true,
+    "corrected_atlas": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "The reverser is exact. The atlas/root census is floating-point and does not replace the registered interval zero-count certificate."
+}

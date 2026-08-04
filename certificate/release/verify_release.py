@@ -92,6 +92,8 @@ REPLAY = [
     f"{PROD}/foundational-sprint-1266/one_sided_prefix_flux_verify.py",
     f"{PROD}/foundational-sprint-1267/cancellation_preserving_localization_verify.py",
     f"{PROD}/foundational-sprint-1268/drift_sign_topology_scout.py",
+    f"{PROD}/foundational-sprint-1269/shooting_atlas_drift_reconstruction.py",
+    f"{PROD}/foundational-sprint-1270/exact_reverser_and_atlas_verify.py",
     f"{PROD}/foundational-sprint-1231/dimension_bound_algebra_verify.py",
     f"{PROD}/foundational-sprint-1233/master_ledger_verify.py",
     f"{REL}/normalization_concordance_verify.py",
@@ -210,6 +212,7 @@ def check_semantics() -> None:
         f"{PROD}/foundational-sprint-1266/one-sided-prefix-flux-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1267/cancellation-preserving-localization-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1268/drift-sign-topology-scout.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1270/exact-reverser-and-atlas-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1238/coupled-sector-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1239/terminal-fork-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1232/inactive-quadratic-interval.json": "all_gates_pass",
@@ -245,10 +248,15 @@ def check_semantics() -> None:
     assert "Y^-1(g_k I_i)" in packets
     coupled = load(f"{PROD}/foundational-sprint-1238/coupled-sector-guard.json")
     terminal = load(f"{PROD}/foundational-sprint-1239/terminal-fork-guard.json")
+    rejected_atlas = load(
+        f"{PROD}/foundational-sprint-1269/shooting-atlas-drift-reconstruction.json"
+    )
     assert coupled["terminal_near_entry_closed"] is False
     assert coupled["universal_dimension_lower_bound_proved"] is False
     assert terminal["scalar_terminal_commonization_proved"] is False
     assert terminal["shared_factor_forms_exact"] is True
+    assert rejected_atlas["naive_atlas_rejected"] is True
+    assert rejected_atlas["failure_matches_known_wrong_chart"] is True
 
 
 def replay() -> None:

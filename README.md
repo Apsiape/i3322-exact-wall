@@ -31,7 +31,7 @@ subsequent coupled-sector repair forces a fixed amount of drift mass, but an
 exact shared-factor countermodel shows that scalar packet norms lose the
 multiplicity provenance needed at terminal near-entry.
 
-Sprints 1240--1268 now provide an operator-valued restart. The response
+Sprints 1240--1270 now provide an operator-valued restart. The response
 remainders have been lifted to two-sided correspondences of the complete
 Schmidt coefficient operator. Regularized Schmidt support gives a nested
 ordered-flag filtration; Bellman contact controls its averaged left/right
@@ -75,8 +75,13 @@ inequality.  A two-resolution Bellman scout now identifies a sharper possible
 replacement: the intrinsic diagonal drift appears to have exactly three
 simple zeros, producing four sign chambers whose boundary points are uniformly
 separated from horizontal coalescence.  This would replace the fine grid by a
-constant-complexity partition, but the zero count is not claimed until a
-full-domain interval certificate lands. The
+constant-complexity partition.  A first shooting-atlas reconstruction failed
+because it propagated the local chart beyond its reflection section; that
+failure is retained as a negative receipt.  The exact reverser
+`R(x,y,u)=(-y,-x,1/v)` now repairs the ancestry: all three symbolic reverser
+residuals vanish, and the corrected 18-chart numerical atlas independently
+recovers the same three roots on the symmetric active carrier.  The root count
+is still not claimed until a full-domain interval certificate lands. The
 conditional constant ledger is retained as an open proof
 campaign, but this repository
 does **not** presently claim
