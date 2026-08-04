@@ -248,20 +248,48 @@ the polynomial remainder modulo only $s_j^2+c_j^2-1$; the Bell residual and
 all projection residuals are zero.  Neither engine imports the interval or
 nonattainment implementation.
 
-\section{Dimension-rate boundary}
+\section{Quantitative truncation rate}
 
-For the aligned centered finite carriers, the gaps at dimensions
-$31,63,127,191,255$ are respectively approximately
+For the principal section $I_L=\{-L,\ldots,L\}$, normalized mass
+$S_L=\sum_{j\in I_L}\lambda_j^2$, and compressed Bell value $v_L$, summing
+the exact wall eigenvalue equation gives
+\[
+q_*-v_L=
+\frac{h_{-L}\lambda_{-L-1}\lambda_{-L}
+      +h_{L+1}\lambda_L\lambda_{L+1}}{S_L}.
+\]
+An independent symbolic reconstruction verifies this identity, detects both
+missing-boundary controls, derives the plateau ratio formula from the
+stationary equations, and encloses
+\[
+\begin{aligned}
+R&\in[1.078092050802091,1.078092050802094],\\
+\log R&\in[0.07519285919570098,0.07519285919570368].
+\end{aligned}
+\]
+Together with the certified analytic tails, this proves
+\[
+\lim_{L\to\infty}\frac{-\log(q_*-v_L)}{2L+1}=\log R
+\]
+and therefore, for the unrestricted optimum $Q_d$ allowing binary POVMs,
+\[
+0<q_*-Q_d\leq \exp[-d\log R+O(1)].
+\]
+This is an achievability upper bound on the dimension needed for a specified
+accuracy.  It is not a device-independent dimension lower bound.
+
+\paragraph{Numerical illustration.}
+For aligned centered finite carriers of dimensions
+$31$, $63$, $127$, $191$, and $255$, the gaps are respectively approximately
 \[
 3.8267\!\times\!10^{-4},\ 2.4605\!\times\!10^{-5},\
 1.8872\!\times\!10^{-7},\ 1.5326\!\times\!10^{-9},\
 1.2458\!\times\!10^{-11}.
 \]
 Their successive exponential rates converge to $0.07519366\ldots$, while the
-plateau gives $\log R=0.07519286\ldots$.  This is strong evidence for
-$q_*-Q_n=\Theta(R^{-n})$ in that family.  It is not a dimension theorem:
-the data are lower bounds, and the exact finite-support reversal is not stable
-as written.  No device-independent quantitative dimension bound is claimed.
+proved exponent is $\log R=0.07519286\ldots$.  These values illustrate the
+theorem and were not used to infer its exponent.  The exact finite-support
+reversal remains unstable as written, so necessity is still open.
 
 \section{Reproduction}
 

@@ -19,7 +19,7 @@ DATA = [
     (191, 0.250875382981378),
     (255, 0.250875384501519),
 ]
-PLATEAU_RATIO = 1.078092050202774
+PLATEAU_RATIO = 1.07809205080209208
 
 
 def main() -> None:
@@ -34,7 +34,7 @@ def main() -> None:
         for i in range(len(n) - 1)
     ]
     output = {
-        "status": "numerical convergence audit; no quantitative dimension theorem",
+        "status": "numerical convergence audit; no device-independent dimension lower bound",
         "q_star": Q_STAR,
         "data": [
             {"dimension": int(dim), "value": value, "gap": Q_STAR - value}
@@ -46,7 +46,7 @@ def main() -> None:
         },
         "successive_log_gap_rates": asymptotic_slopes,
         "plateau_log_ratio": math.log(PLATEAU_RATIO),
-        "observed_reading": "The centered aligned sequence is consistent with gap Theta(R^{-n}), R approximately the positive plateau ratio.",
+        "observed_reading": "The centered aligned sequence illustrates the independently proved wall-truncation exponent log(R).",
         "theorem_boundary": [
             "The data do not upper-bound arbitrary dimension-d strategies.",
             "The nonattainment proof uses exact finite support reversal and is not quantitatively stable as written.",

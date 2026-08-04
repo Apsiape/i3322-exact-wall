@@ -38,6 +38,7 @@ REPLAY = [
     f"{PROD}/foundational-sprint-1200/independent_nonattainment_verify.py",
     f"{PROD}/foundational-sprint-1200/dependency_audit.py",
     f"{PROD}/foundational-sprint-1206/spatial_realization_verify.py",
+    f"{PROD}/foundational-sprint-1207/truncation_flux_verify.py",
     f"{REL}/normalization_concordance_verify.py",
     f"{REL}/dimension_gap_audit.py",
     f"{IND}/arithmetic_selftest.py",
@@ -47,6 +48,7 @@ REPLAY = [
     f"{IND}/global_graph_mpmath.py",
     f"{IND}/verify_independent_reconstruction.py",
     f"{IND}/spatial_symbolic_verify.py",
+    f"{IND}/truncation_flux_mpmath.py",
 ]
 
 PRIVATE_MARKERS = [
@@ -115,10 +117,12 @@ def check_semantics() -> None:
         f"{PROD}/foundational-sprint-1200/dependency-audit.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1200/independent-nonattainment.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1206/spatial-realization-guard.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1207/truncation-flux-guard.json": "all_gates_pass",
         f"{REL}/normalization-concordance.json": "all_gates_pass",
         f"{REL}/dimension-gap-audit.json": "all_data_gates_pass",
         f"{IND}/independent-reconstruction.json": "all_gates_pass",
         f"{IND}/spatial-symbolic-guard.json": "all_gates_pass",
+        f"{IND}/truncation-flux-independent.json": "all_gates_pass",
     }
     for relative, field in true_fields.items():
         assert load(relative)[field] is True, f"{relative}: {field}"
@@ -163,7 +167,7 @@ def main() -> None:
         "private_corpus_dependency": False,
         "independence_boundary": (
             "production Arb stack plus separate mpmath.iv reconstruction and "
-            "independent symbolic spatial-carrier reconstruction"
+            "independent symbolic spatial-carrier and truncation reconstruction"
         ),
     }, indent=2))
 

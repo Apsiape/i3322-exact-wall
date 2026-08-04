@@ -1,0 +1,74 @@
+{
+  "status": "independent symbolic and mpmath.iv truncation reconstruction",
+  "imports_production_engine": false,
+  "symbolic_fixtures": [
+    {
+      "size": 5,
+      "interval": [
+        1,
+        3
+      ],
+      "exact_flux_residual": "0",
+      "omit_left_residual": "h1*l0*l1",
+      "omit_right_residual": "h4*l3*l4"
+    },
+    {
+      "size": 6,
+      "interval": [
+        1,
+        4
+      ],
+      "exact_flux_residual": "0",
+      "omit_left_residual": "h1*l0*l1",
+      "omit_right_residual": "h5*l4*l5"
+    },
+    {
+      "size": 7,
+      "interval": [
+        2,
+        4
+      ],
+      "exact_flux_residual": "0",
+      "omit_left_residual": "h2*l1*l2",
+      "omit_right_residual": "h5*l4*l5"
+    },
+    {
+      "size": 8,
+      "interval": [
+        2,
+        6
+      ],
+      "exact_flux_residual": "0",
+      "omit_left_residual": "h2*l1*l2",
+      "omit_right_residual": "h7*l6*l7"
+    }
+  ],
+  "plateau_ratio_formula": "sqrt(1 - c**2)*(2*c - 1)/((1 - c)*(2*c + 1))",
+  "plateau_ratio_residuals": [
+    "0",
+    "0"
+  ],
+  "source_c_interval": [
+    "0.8782729451808124510614776394587039268823793661623032741245323669525128359017546634577951740549399756",
+    "0.8782729451808124530614776394587039268823793661623032741245323669525128359017546634577951742873004215"
+  ],
+  "plateau_ratio_interval": [
+    1.078092050802091,
+    1.078092050802094
+  ],
+  "log_plateau_ratio_interval": [
+    0.07519285919570098,
+    0.07519285919570368
+  ],
+  "registered_prediction_scores": {
+    "P1_exact_two_boundary_flux": true,
+    "P2_wrong_boundary_controls": true,
+    "P3_ratio_derived_symbolically": true,
+    "P4_ratio_enclosure": true,
+    "P5_log_enclosure": true
+  },
+  "registered_predictions_passed": 5,
+  "registered_predictions_total": 5,
+  "all_gates_pass": true,
+  "claim_boundary": "This reconstructs the exact finite-section identity and the certified plateau exponent input independently. It proves no device-independent dimension lower bound."
+}

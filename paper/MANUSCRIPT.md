@@ -5,8 +5,9 @@
 [ORCID 0009-0007-4708-3252](https://orcid.org/0009-0007-4708-3252) ·
 [apsiape@gmail.com](mailto:apsiape@gmail.com)
 
-**Version 1.2 revision — spatial realization independently reconstructed;
-priority boundaries are recorded in `PRIORITY-AUDIT.md`.**
+**Prospective Version 1.3 revision — quantitative spatial truncation
+independently reconstructed; priority boundaries are recorded in
+`PRIORITY-AUDIT.md`.**
 
 ## Abstract
 
@@ -39,6 +40,19 @@ correlation lies in (C_{qs}(3,3;2,2) setminus C_q(3,3;2,2)).
 The decimal above is not asserted to have an elementary closed form. Its
 meaning is the unique validated zero of an explicit domain-wall shooting
 problem, enclosed by interval arithmetic.
+
+The same wall has an exact finite-section flux law. If (Q_d) denotes the
+optimum over strategies of local dimension at most (d), with binary POVMs
+allowed, then
+
+\[
+0<q_*-Q_d\le \exp[-d\log R+O(1)],
+\qquad R=1.07809205080209208\ldots .
+\]
+
+Thus accuracy (\varepsilon) is achievable with
+(d\le \log(1/\varepsilon)/\log R+O(1)). This is an achievability theorem,
+not a device-independent dimension lower bound.
 
 As a corollary, the finite-dimensional quantum correlation set in the
 three-input binary scenario is not closed; this is the minimal bipartite
@@ -280,6 +294,73 @@ The local identity is independently guarded by exact rational open and
 endpoint-free fixtures and by a symbolic periodic reconstruction. Thus this
 normal spatial correlation lies in (C_{qs}) and attains the wall; the
 finite-dimensional nonattainment theorem places it outside (C_q).
+
+## 2B. Quantitative finite-dimensional approximation
+
+Let (Q_d) be the supremum of (\mathcal B_{3322}) over tensor-product
+strategies whose two local Hilbert spaces have dimension at most (d), allowing
+binary POVMs. For (L\ge0), put (I_L=\{-L,\ldots,L\}),
+(S_L=\sum_{j\in I_L}\lambda_j^2), and (d=2L+1). Compress the six spatial
+measurements from Section 2A to (\operatorname{span}\{e_j:j\in I_L\}). A
+compressed projection is a positive contraction, hence a valid binary effect.
+With the normalized truncated state, call the resulting Bell value (v_L).
+
+Write (h_j=\sqrt{1-c_j^2}/2). Summing the wall eigenvalue equation over the
+principal section gives the exact boundary-flux identity
+
+\[
+q_*-v_L=
+\frac{h_{-L}\lambda_{-L-1}\lambda_{-L}
+      +h_{L+1}\lambda_L\lambda_{L+1}}{S_L}.       \tag{2.9}
+\]
+
+Indeed, every diagonal and internal nearest-neighbor term occurs in the
+principal Jacobi quadratic form. The two displayed edges are the only terms
+lost at the boundary. Positivity of the wall makes the deficit strictly
+positive.
+
+The certified analytic tails satisfy
+
+\[
+\frac{\lambda_{j+1}}{\lambda_j}\longrightarrow R^{-1}
+\quad(j\to+\infty),\qquad
+\frac{\lambda_{j-1}}{\lambda_j}\longrightarrow R^{-1}
+\quad(j\to-\infty),
+\]
+
+where
+
+\[
+R=1.07809205080209208\ldots,qquad
+\log R=0.07519285919570202\ldots .                \tag{2.10}
+\]
+
+The boundary coefficients tend to positive constants and (S_L\to1), so
+
+\[
+\lim_{L\to\infty}
+\frac{-\log(q_*-v_L)}{2L+1}=\log R.               \tag{2.11}
+\]
+
+Consequently, along odd dimensions,
+
+\[
+0<q_*-Q_d\le q_*-v_{(d-1)/2}
+=\exp[-d\log R+O(1)],                             \tag{2.12}
+\]
+
+and even dimensions follow by padding with an unused summand. Therefore
+
+\[
+d\le \frac{\log(1/\varepsilon)}{\log R}+O(1),
+\qquad \frac1{\log R}=13.2991351931\ldots,        \tag{2.13}
+\]
+
+is sufficient to achieve deficit at most (\varepsilon). The implication is
+only one-way: (2.12) supplies explicit finite-dimensional strategies and does
+not prove that every (\varepsilon)-optimal strategy needs logarithmic
+dimension. The exact identity and plateau exponent have separate production
+and independent symbolic/interval reconstructions.
 
 ## 3. Geometric symmetrization
 

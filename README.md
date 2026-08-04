@@ -15,6 +15,19 @@ Neither model has a finite-dimensional maximizer. The certified bi-infinite
 wall nevertheless defines an explicit normal vector-state maximizer on
 `ell^2(Z) tensor ell^2(Z)` through the alternating Pal--Vertesi projectors.
 
+Its centered finite sections obey an exact boundary-flux identity. If `Q_d`
+is the unrestricted tensor-product optimum in local dimension at most `d`,
+allowing binary POVMs, then
+
+```text
+0 < q* - Q_d <= exp[-d log(R) + O(1)],
+R = 1.07809205080209208....
+```
+
+Thus logarithmic dimension is sufficient for accuracy `epsilon`. This is not
+a device-independent lower bound on the dimension required by arbitrary
+strategies.
+
 Consequently,
 
 ```text
@@ -50,6 +63,7 @@ not the first exact certified bound for I3322.
 ## Paper
 
 - [Main manuscript](paper/manuscript.pdf)
+- [Prospective v1.3.0 release notes](paper/RELEASE-NOTES-v1.3.0.md)
 - [v1.2.0 release notes](paper/RELEASE-NOTES-v1.2.0.md)
 - [v1.1.0 release notes](paper/RELEASE-NOTES-v1.1.0.md)
 - [Technical supplement](paper/technical-supplement.pdf)

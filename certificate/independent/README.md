@@ -13,8 +13,15 @@ python certificate/independent/analytic_tail_mpmath.py
 python certificate/independent/shooting_miranda_mpmath.py
 python certificate/independent/global_graph_mpmath.py
 python certificate/independent/verify_independent_reconstruction.py
+python certificate/independent/spatial_symbolic_verify.py
+python certificate/independent/truncation_flux_mpmath.py
 ```
 
 The global graph pass takes roughly three minutes on the reference machine.
 The assembler checks the source AST for forbidden `flint` imports before it
 loads a production receipt for post-verdict numerical comparison.
+
+The final two commands separately reconstruct the spatial Bell-to-Jacobi
+identity and the finite-section boundary-flux law. The truncation engine also
+derives and interval-encloses the plateau exponent without importing a
+production module.

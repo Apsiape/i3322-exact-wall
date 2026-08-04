@@ -46,6 +46,11 @@ not an asserted elementary closed form.  As a corollary, the finite-dimensional
 quantum correlation set in the three-input binary scenario is not closed; this
 is the minimal bipartite binary-output scenario by input counts where
 nonclosure and finite/spatial separation can occur.
+The wall's principal sections also obey an exact boundary-flux law.  If $Q_d$
+allows binary POVMs on local dimension at most $d$, then
+$0<q_*-Q_d\le \exp[-d\log R+O(1)]$, where
+$R=1.07809205080209208\ldots$.  This is quantitative achievability, not a
+device-independent dimension lower bound.
 \end{abstract}
 
 \section{Statement of the result}
@@ -250,6 +255,67 @@ endpoint-free fixtures and by a symbolic periodic reconstruction.  The last
 identity is \eqref{eq:wallEigen}.  Thus the correlation belongs to $C_{qs}$
 and attains the certified wall; finite-dimensional nonattainment places it
 outside $C_q$.
+
+\section{Quantitative finite-dimensional approximation}
+\label{sec:dimension-rate}
+
+Let $Q_d$ be the supremum of $\B$ over tensor-product strategies whose two
+local Hilbert spaces have dimension at most $d$, allowing binary POVMs.  For
+$L\geq0$, put $I_L=\{-L,\ldots,L\}$,
+$S_L=\sum_{j\in I_L}\lambda_j^2$, and $d=2L+1$.  Compress the six spatial
+measurements from Section~\ref{sec:spatial} to
+$\operatorname{span}\{e_j:j\in I_L\}$.  A compressed projection is a positive
+contraction, hence a valid binary effect.  Let $v_L$ be the Bell value of the
+normalized truncated state and write $h_j=\sqrt{1-c_j^2}/2$.
+
+Summing the wall eigenvalue equation over the principal section gives the
+exact identity
+\begin{equation}
+q_*-v_L=
+\frac{h_{-L}\lambda_{-L-1}\lambda_{-L}
+      +h_{L+1}\lambda_L\lambda_{L+1}}{S_L}.
+\label{eq:boundaryFlux}
+\end{equation}
+Every diagonal and internal nearest-neighbor term occurs in the principal
+Jacobi quadratic form; the two displayed edges are the only omitted terms.
+Positivity of the wall makes the deficit strictly positive.
+
+The certified analytic tails satisfy
+\[
+\frac{\lambda_{j+1}}{\lambda_j}\longrightarrow R^{-1}
+\quad(j\to+\infty),\qquad
+\frac{\lambda_{j-1}}{\lambda_j}\longrightarrow R^{-1}
+\quad(j\to-\infty),
+\]
+where
+\begin{equation}
+R=1.07809205080209208\ldots,qquad
+\log R=0.07519285919570202\ldots .
+\label{eq:plateauRate}
+\end{equation}
+The boundary coefficients tend to positive constants and $S_L\to1$, hence
+\begin{equation}
+\lim_{L\to\infty}
+\frac{-\log(q_*-v_L)}{2L+1}=\log R.
+\label{eq:dimensionExponent}
+\end{equation}
+Consequently, along odd dimensions,
+\begin{equation}
+0<q_*-Q_d\le q_*-v_{(d-1)/2}
+=\exp[-d\log R+O(1)],
+\label{eq:dimensionUpper}
+\end{equation}
+and even dimensions follow by padding with an unused summand.  Thus deficit
+at most $\varepsilon$ is achievable with
+\begin{equation}
+d\leq\frac{\log(1/\varepsilon)}{\log R}+O(1),
+\qquad \frac1{\log R}=13.2991351931\ldots .
+\label{eq:dimensionSufficient}
+\end{equation}
+This implication is one-way: it constructs efficient finite-dimensional
+approximants but proves no dimension lower bound for arbitrary strategies.
+The flux identity and plateau exponent have separate production and
+independent symbolic/interval reconstructions.
 
 \section{Geometric symmetrization}
 

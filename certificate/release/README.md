@@ -5,7 +5,8 @@
 - default: check manifest coverage, frozen SHA-256 custody, private-path
   exclusion, and theorem receipt semantics;
 - `--full`: additionally regenerate every production and independent receipt
-  in dependency order, then recheck the theorem semantics.
+  in dependency order, including the independently reconstructed spatial
+  truncation theorem, then recheck the theorem semantics.
 
 Regenerate the manifest only after an intentional release change:
 

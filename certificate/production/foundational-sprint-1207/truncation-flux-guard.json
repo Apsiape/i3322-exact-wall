@@ -1,0 +1,152 @@
+{
+  "status": "exact rational Jacobi truncation-flux guard",
+  "arithmetic": "fractions.Fraction only",
+  "fixtures": [
+    {
+      "size": 7,
+      "interval": [
+        1,
+        5
+      ],
+      "offset": 0,
+      "exact_flux_residual": "0",
+      "omit_left_detected": "28/961",
+      "omit_right_detected": "840/22103",
+      "positive_flux": true
+    },
+    {
+      "size": 7,
+      "interval": [
+        1,
+        5
+      ],
+      "offset": 2,
+      "exact_flux_residual": "0",
+      "omit_left_detected": "46/961",
+      "omit_right_detected": "9/1922",
+      "positive_flux": true
+    },
+    {
+      "size": 7,
+      "interval": [
+        1,
+        5
+      ],
+      "offset": 5,
+      "exact_flux_residual": "0",
+      "omit_left_detected": "1001/11532",
+      "omit_right_detected": "546/22103",
+      "positive_flux": true
+    },
+    {
+      "size": 9,
+      "interval": [
+        2,
+        6
+      ],
+      "offset": 0,
+      "exact_flux_residual": "0",
+      "omit_left_detected": "1944/41971",
+      "omit_right_detected": "18/2209",
+      "positive_flux": true
+    },
+    {
+      "size": 9,
+      "interval": [
+        2,
+        6
+      ],
+      "offset": 2,
+      "exact_flux_residual": "0",
+      "omit_left_detected": "5423/83942",
+      "omit_right_detected": "493/26508",
+      "positive_flux": true
+    },
+    {
+      "size": 9,
+      "interval": [
+        2,
+        6
+      ],
+      "offset": 5,
+      "exact_flux_residual": "0",
+      "omit_left_detected": "888/41971",
+      "omit_right_detected": "259/6627",
+      "positive_flux": true
+    },
+    {
+      "size": 11,
+      "interval": [
+        2,
+        8
+      ],
+      "offset": 0,
+      "exact_flux_residual": "0",
+      "omit_left_detected": "2970/85291",
+      "omit_right_detected": "1320/58357",
+      "positive_flux": true
+    },
+    {
+      "size": 11,
+      "interval": [
+        2,
+        8
+      ],
+      "offset": 2,
+      "exact_flux_residual": "0",
+      "omit_left_detected": "8085/170582",
+      "omit_right_detected": "3675/116714",
+      "positive_flux": true
+    },
+    {
+      "size": 11,
+      "interval": [
+        2,
+        8
+      ],
+      "offset": 5,
+      "exact_flux_residual": "0",
+      "omit_left_detected": "135/8978",
+      "omit_right_detected": "855/116714",
+      "positive_flux": true
+    },
+    {
+      "size": 13,
+      "interval": [
+        3,
+        9
+      ],
+      "offset": 0,
+      "exact_flux_residual": "0",
+      "omit_left_detected": "33/8281",
+      "omit_right_detected": "2420/74529",
+      "positive_flux": true
+    },
+    {
+      "size": 13,
+      "interval": [
+        3,
+        9
+      ],
+      "offset": 2,
+      "exact_flux_residual": "0",
+      "omit_left_detected": "855/66248",
+      "omit_right_detected": "475/74529",
+      "positive_flux": true
+    },
+    {
+      "size": 13,
+      "interval": [
+        3,
+        9
+      ],
+      "offset": 5,
+      "exact_flux_residual": "0",
+      "omit_left_detected": "477/16562",
+      "omit_right_detected": "1325/74529",
+      "positive_flux": true
+    }
+  ],
+  "all_gates_pass": true,
+  "claim_boundary": "This proves the algebraic boundary-flux identity. The I3322 application additionally uses the certified spatial wall and its analytic plateau asymptotics."
+}

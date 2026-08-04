@@ -17,6 +17,9 @@ This file separates analytic claims from computer-assisted inputs.
 | Infinite alternating projections | Sprint 1206 | direct-sum proof plus two exact guards |
 | Spatial Bell-to-Jacobi identity | Sprint 1206 | exact-rational fixtures and independent symbolic reconstruction |
 | Normal vector-state attainment | Sprint 1206 | `ell^2` wall input plus absolute-convergence proof |
+| Exact principal-section flux identity | Sprint 1207 | exact-rational production guard plus independent symbolic reconstruction |
+| Wall-truncation exponent `log R` | Sprint 1207 | certified analytic tails plus independent interval enclosure |
+| Logarithmic-dimensional achievability | Sprint 1207 | analytic consequence of the preceding two rows |
 
 ## Spatial-separation and nonclosure chain
 
@@ -59,6 +62,8 @@ only after the independent verdict was assembled.
 - `certificate/production/foundational-sprint-1200/independent-nonattainment.json`
 - `certificate/production/foundational-sprint-1206/spatial-realization-guard.json`
 - `certificate/independent/spatial-symbolic-guard.json`
+- `certificate/production/foundational-sprint-1207/truncation-flux-guard.json`
+- `certificate/independent/truncation-flux-independent.json`
 
 ## Reproduction commands
 
@@ -96,6 +101,7 @@ python certificate/production/foundational-sprint-1199/theorem_assembly_verify.p
 python certificate/production/foundational-sprint-1200/independent_nonattainment_verify.py
 python certificate/production/foundational-sprint-1200/dependency_audit.py
 python certificate/production/foundational-sprint-1206/spatial_realization_verify.py
+python certificate/production/foundational-sprint-1207/truncation_flux_verify.py
 python certificate/release/normalization_concordance_verify.py
 python certificate/release/dimension_gap_audit.py
 python certificate/independent/arithmetic_selftest.py
@@ -105,6 +111,7 @@ python certificate/independent/shooting_miranda_mpmath.py
 python certificate/independent/global_graph_mpmath.py
 python certificate/independent/verify_independent_reconstruction.py
 python certificate/independent/spatial_symbolic_verify.py
+python certificate/independent/truncation_flux_mpmath.py
 ```
 
 The production graph covers take approximately one minute in total and the

@@ -265,11 +265,30 @@ Both pass. Absolute convergence of the infinite expectation is analytic:
 diagonal terms are controlled by `||lambda||_2^2` and neighbor terms by
 Cauchy--Schwarz.
 
-The numerical finite-carrier sequence is consistent with
-`q_*-Q_n = Theta(R^{-n})`, with the fitted asymptotic exponent agreeing with
-`log R` to about `8e-7`. The current exact reversal proof is discontinuous and
-does not give a robust defect estimate. Therefore no quantitative
-device-independent dimension lower bound is claimed.
+The wall truncations now have a proved rate, not only a numerical fit. For the
+principal section `I_L={-L,...,L}`, normalized mass `S_L`, and compressed Bell
+value `v_L`, summing the exact wall eigenvalue equation gives
+
+```text
+q_*-v_L = [h_-L lambda_-L-1 lambda_-L
+            + h_(L+1) lambda_L lambda_(L+1)] / S_L.
+```
+
+The independent reconstruction derives this identity symbolically, detects
+both missing-boundary controls, derives the plateau ratio formula from the
+stationary equations, and encloses
+
+```text
+R in [1.078092050802091, 1.078092050802094],
+log R in [0.07519285919570098, 0.07519285919570368].
+```
+
+Together with the certified analytic tails, this proves
+`-log(q_*-v_L)/(2L+1) -> log R`, and hence the unrestricted optimum with
+binary POVMs obeys `q_*-Q_d <= exp[-d log R+O(1)]`. This is an achievability
+upper bound on required dimension. The current exact reversal proof remains
+discontinuous and does not give the opposite, device-independent dimension
+lower bound.
 
 ## S12. Reproduction
 
