@@ -267,6 +267,14 @@ The replacement campaign deliberately starts before packetization.
     assembly.  No public theorem is retracted on floating evidence alone; an
     Arb matched-coordinate exclusion is now mandatory and precedes all drift
     work.
+43. **First Arb matched-coordinate adjudication (Sprint 1284).** The amplitude
+    difference excludes zero by `1.62483e-4`, but only three of five gates
+    pass: dependency inflation leaves the `t2` box at `3.87e-15` against a
+    `1e-15` gate and the raw Bellman zero interval at `2.72e-13`.  The result
+    is retained as a failed preregistration, not promoted.  The repair avoids
+    correlated root localization: monotonicity plus the original opposite-
+    sign bracket gives a unique match, so it suffices to exclude zero for the
+    amplitude difference over that entire bracket.
 
 ## What is and is not new
 

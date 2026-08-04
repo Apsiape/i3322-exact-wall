@@ -1,0 +1,79 @@
+{
+  "status": "Arb matched-coordinate amplitude adjudication",
+  "precision_bits": 400,
+  "c_box": "[0.8782729451808124521 +/- 4.86e-20]",
+  "t1": "0.0015293272133344497",
+  "initial_t2_bracket": [
+    "0.0015874649714962908",
+    "0.001588503145749181"
+  ],
+  "initial_face_residuals": {
+    "left": {
+      "interval": "[0.000172285352 +/- 3.18e-13]",
+      "lower": 0.00017228535203345574,
+      "upper": 0.0001722853523175427,
+      "width_upper_bound": 2.840869599736722e-13,
+      "contains_zero": false
+    },
+    "right": {
+      "interval": "[-0.000127690474 +/- 3.26e-13]",
+      "lower": -0.00012769047432526488,
+      "upper": -0.0001276904740413009,
+      "width_upper_bound": 2.839639957772028e-13,
+      "contains_zero": false
+    }
+  },
+  "bisection_steps": 27,
+  "final_t2_box": {
+    "interval": "[0.00158806114371 +/- 4.21e-15]",
+    "lower": 0.0015880611437103353,
+    "upper": 0.0015880611437142029,
+    "width_upper_bound": 3.867500476985777e-15,
+    "contains_zero": false
+  },
+  "coordinate_residual": {
+    "interval": "[+/- 2.10e-9]",
+    "lower": -2.0956844291128253e-09,
+    "upper": 2.0954155102084936e-09,
+    "width_upper_bound": 4.191099939321319e-09,
+    "contains_zero": true
+  },
+  "raw_local_Bellman_residual": {
+    "interval": "[+/- 1.36e-13]",
+    "lower": -1.3583397695786321e-13,
+    "upper": 1.3583397694909603e-13,
+    "width_upper_bound": 2.7166795390695924e-13,
+    "contains_zero": true
+  },
+  "reflected_source_amplitude": {
+    "interval": "[0.501049932823 +/- 3.30e-13]",
+    "lower": 0.5010499328226706,
+    "upper": 0.5010499328228755,
+    "width_upper_bound": 2.0484555222663827e-13,
+    "contains_zero": false
+  },
+  "original_target_amplitude": {
+    "interval": "[0.50121242 +/- 4.21e-9]",
+    "lower": 0.5012124157949853,
+    "upper": 0.5012124216671848,
+    "width_upper_bound": 5.8721995252475345e-09,
+    "contains_zero": false
+  },
+  "amplitude_difference": {
+    "interval": "[0.00016249 +/- 7.03e-9]",
+    "lower": 0.00016248297210984117,
+    "upper": 0.00016248884451421645,
+    "width_upper_bound": 5.872404375273366e-09,
+    "contains_zero": false
+  },
+  "amplitude_difference_lower_absolute_bound": 0.00016248297210984117,
+  "gates": {
+    "initial_t2_faces_have_opposite_signs": true,
+    "t2_bracket_width_below_one_e_minus_fifteen": false,
+    "final_coordinate_residual_contains_zero": true,
+    "raw_local_Bellman_equality_certified": false,
+    "amplitude_difference_excludes_zero_by_one_e_minus_four": true
+  },
+  "all_gates_pass": false,
+  "claim_boundary": "This certifies a normalization incompatibility in the current shooting-chart assembly. It identifies a proof-certificate gap; it does not by itself disprove the stated I3322 value."
+}

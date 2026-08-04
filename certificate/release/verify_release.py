@@ -107,6 +107,7 @@ REPLAY = [
     f"{PROD}/foundational-sprint-1281/reversed_plateau_obstruction_verify.py",
     f"{PROD}/foundational-sprint-1282/bellman_selector_collision.py",
     f"{PROD}/foundational-sprint-1283/global_amplitude_consistency_audit.py",
+    f"{PROD}/foundational-sprint-1284/arb_matched_amplitude_adjudication.py",
     f"{PROD}/foundational-sprint-1231/dimension_bound_algebra_verify.py",
     f"{PROD}/foundational-sprint-1233/master_ledger_verify.py",
     f"{REL}/normalization_concordance_verify.py",
@@ -299,6 +300,9 @@ def check_semantics() -> None:
     amplitude_audit = load(
         f"{PROD}/foundational-sprint-1283/global-amplitude-consistency-audit.json"
     )
+    arb_amplitude = load(
+        f"{PROD}/foundational-sprint-1284/arb-matched-amplitude-adjudication.json"
+    )
     assert coupled["terminal_near_entry_closed"] is False
     assert coupled["universal_dimension_lower_bound_proved"] is False
     assert terminal["scalar_terminal_commonization_proved"] is False
@@ -376,6 +380,16 @@ def check_semantics() -> None:
     assert max(
         row["maximum_raw_local_Bellman_residual"] for row in amplitude_audit["orders"]
     ) < 4e-16
+    assert arb_amplitude["all_gates_pass"] is False
+    assert sum(arb_amplitude["gates"].values()) == 3
+    assert arb_amplitude["gates"][
+        "amplitude_difference_excludes_zero_by_one_e_minus_four"
+    ] is True
+    assert arb_amplitude["amplitude_difference_lower_absolute_bound"] > 1.62e-4
+    assert arb_amplitude["gates"][
+        "t2_bracket_width_below_one_e_minus_fifteen"
+    ] is False
+    assert arb_amplitude["gates"]["raw_local_Bellman_equality_certified"] is False
     assert weighted_contraction["gates"]["cycle_radius_below_point_nine"] is True
     assert weighted_contraction["gates"]["weight_range_below_ten"] is True
 
