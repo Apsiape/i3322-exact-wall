@@ -2218,9 +2218,9 @@
     },
     {
       "path": "certificate/production/foundational-sprint-1280/ALGEBRAIC-CONTACT-NORMAL-FORM.md",
-      "canonical_bytes": 2536,
+      "canonical_bytes": 2874,
       "hash_mode": "canonical-lf",
-      "sha256": "1e8e5df7bb1f079105682f1246f9769ce7ea81d4a522cef1a86dd627f6407543"
+      "sha256": "04947749f1fcfc9589d4677abf3a31b67e53c7575d234636926d27939c737b66"
     },
     {
       "path": "certificate/production/foundational-sprint-1280/algebraic_bellman_contact_verify.py",
@@ -2233,6 +2233,30 @@
       "canonical_bytes": 1243,
       "hash_mode": "canonical-lf",
       "sha256": "4104305964071215422adbee2125ff33c45b46f77be3e876798124e418fc3761"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1281/EXACT-REVERSED-PLATEAU-OBSTRUCTION.md",
+      "canonical_bytes": 2650,
+      "hash_mode": "canonical-lf",
+      "sha256": "806769a0437bd3117ec45b84449389a800722ef802026d925f176fcdba38f188"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1281/PRE-REGISTRATION.md",
+      "canonical_bytes": 1325,
+      "hash_mode": "canonical-lf",
+      "sha256": "e970e0a93d4e22ea836f440d96fe5b9cae23c6e16410261f7f9361bb2a13034e"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1281/reversed-plateau-obstruction.json",
+      "canonical_bytes": 1804,
+      "hash_mode": "canonical-lf",
+      "sha256": "2cab6d4ea438d72628b10064123cde47a874dc389842bbbf44433dee4a9582f6"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1281/reversed_plateau_obstruction_verify.py",
+      "canonical_bytes": 4580,
+      "hash_mode": "canonical-lf",
+      "sha256": "61b3d1ad5fe8cbf5b7fd5f7ebb03bd523850e482da558aaef4112bebb9f3d5e2"
     },
     {
       "path": "certificate/release/build_release_manifest.py",
@@ -2284,9 +2308,9 @@
     },
     {
       "path": "certificate/release/verify_release.py",
-      "canonical_bytes": 22300,
+      "canonical_bytes": 22767,
       "hash_mode": "canonical-lf",
-      "sha256": "df7f169da3efeb73be43171cbd94c458d55ef75c0f16d6def7e18c568861a265"
+      "sha256": "9680247743335416b15b7558ace23adfb7e1d89c35a5dfe9dcad959cf175f9a6"
     },
     {
       "path": "CITATION.cff",
@@ -2410,9 +2434,9 @@
     },
     {
       "path": "README.md",
-      "canonical_bytes": 12786,
+      "canonical_bytes": 13154,
       "hash_mode": "canonical-lf",
-      "sha256": "e9486de55437b06c81e895fa7bdbfd2fd1d12ad256e326e4429d6d3da41b35e6"
+      "sha256": "0e9fbdccd539f0700eb9ef4d0ce4818dcadfcd112c13841453863f4208fa64d1"
     },
     {
       "path": "requirements.txt",
@@ -2458,9 +2482,9 @@
     },
     {
       "path": "review/OPERATOR-FLAG-CAMPAIGN.md",
-      "canonical_bytes": 20011,
+      "canonical_bytes": 21019,
       "hash_mode": "canonical-lf",
-      "sha256": "feb4092da5f91bbbb0484a4cc13462d5c1d3b5962b31e016b51c04ac54b5aa10"
+      "sha256": "fc577f400f114cd708d8c7cc4e2666c84c9b67c1bd7df8f7172c3db2a055c901"
     },
     {
       "path": "review/POST-ADJUDICATION-COUPLED-SECTOR.md",
@@ -2475,6 +2499,6 @@
       "sha256": "a405ef962afdfc120b5c3f2901ca58e95e2ab3963e642fa73dc2022f2d280cfa"
     }
   ],
-  "file_count": 412,
+  "file_count": 416,
   "scope": "Custody manifest for selected published files. Analytic dependency closure is checked separately by verify_release.py and is not inferred from file enumeration alone."
 }

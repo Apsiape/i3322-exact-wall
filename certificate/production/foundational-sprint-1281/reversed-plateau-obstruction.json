@@ -1,0 +1,41 @@
+{
+  "status": "exact reversed-plateau weighted-contraction obstruction",
+  "exact_checks": {
+    "quartic_is_plateau_law": true,
+    "negative_value_is_low_branch": true,
+    "reversed_ratio_is_fixed": true,
+    "reversed_coordinate_is_fixed": true,
+    "contact_multiplier_is_ratio_squared": true,
+    "multiplier_excess_factorization": true
+  },
+  "dependency_gates": {
+    "exact_plateau_branch": true,
+    "exact_reverser": true,
+    "global_characteristic_graph": true,
+    "global_bellman_fixed_point": true
+  },
+  "symbolic": {
+    "plateau_ratio_R": "sqrt(1 - c**2)*(2*c - 1)/((1 - c)*(2*c + 1))",
+    "plateau_q": "(4*c**4 - 5*c**2 + 2)/(4*c**2 - 1)",
+    "negative_contact": "x=-c, u=1/R",
+    "negative_Bellman_value": "-(c - 1)*(2*c + 1)/(2*(2*c - 1))",
+    "contact_multiplier": "R^2",
+    "R_squared_minus_one": "-2*c*(4*c**2 - 3)/((c - 1)*(2*c + 1)**2)"
+  },
+  "branch_signs": {
+    "c_positive": true,
+    "four_c_squared_minus_three_positive": true,
+    "c_minus_one_negative": true,
+    "denominator_square_positive": true,
+    "ratio_squared_minus_one_positive": true,
+    "argument": "On sqrt(3)/2<c<1, the numerator -2c(4c^2-3) and the factor c-1 are both negative, while (2c+1)^2 is positive."
+  },
+  "gates": {
+    "all_symbolic_checks_exact": true,
+    "all_dependency_gates_pass": true,
+    "multiplier_strictly_above_one_on_branch": true
+  },
+  "all_gates_pass": true,
+  "theorem": "For every bounded positive weight with finite nonzero value at the reversed plateau -C, the weighted Bellman composition derivative has operator norm at least R^2>1. It is not a contraction in any such weighted sup norm.",
+  "claim_boundary": "This excludes a weighted-sup contraction proof architecture. It does not alter the exact I3322 wall or prove the conditional dimension lower bound."
+}

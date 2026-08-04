@@ -79,3 +79,11 @@ parabolic normal form rather than Banach contraction.
 The conditional normal form and Arb evaluation are exact.  The global
 realization is not proved, and one preregistered numerical gate failed.  No
 public theorem is changed.
+
+## Subsequent closure
+
+Sprint 1281 identifies `x_*=-C` exactly, where `C` is the already certified
+Sprint-1115 high-plateau coordinate.  Exact reversibility realizes the global
+fixed characteristic `(-C,-C,1/R)`.  Thus the missing realization gate in
+this document is closed by ancestry, not by repairing the failed sampled
+argmin gate.

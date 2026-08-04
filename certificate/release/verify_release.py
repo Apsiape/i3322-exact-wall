@@ -104,6 +104,7 @@ REPLAY = [
     f"{PROD}/foundational-sprint-1278/bellman_bottleneck_classifier.py",
     f"{PROD}/foundational-sprint-1279/bellman_grid_phase_attack.py",
     f"{PROD}/foundational-sprint-1280/algebraic_bellman_contact_verify.py",
+    f"{PROD}/foundational-sprint-1281/reversed_plateau_obstruction_verify.py",
     f"{PROD}/foundational-sprint-1231/dimension_bound_algebra_verify.py",
     f"{PROD}/foundational-sprint-1233/master_ledger_verify.py",
     f"{REL}/normalization_concordance_verify.py",
@@ -287,6 +288,9 @@ def check_semantics() -> None:
     algebraic_contact = load(
         f"{PROD}/foundational-sprint-1280/algebraic-bellman-contact.json"
     )
+    reversed_plateau = load(
+        f"{PROD}/foundational-sprint-1281/reversed-plateau-obstruction.json"
+    )
     assert coupled["terminal_near_entry_closed"] is False
     assert coupled["universal_dimension_lower_bound_proved"] is False
     assert terminal["scalar_terminal_commonization_proved"] is False
@@ -339,6 +343,12 @@ def check_semantics() -> None:
     assert algebraic_contact["numerical_identification"][
         "fixed_predecessor_residual"
     ] > 1e-4
+    assert reversed_plateau["all_gates_pass"] is True
+    assert all(reversed_plateau["exact_checks"].values())
+    assert all(reversed_plateau["dependency_gates"].values())
+    assert reversed_plateau["gates"][
+        "multiplier_strictly_above_one_on_branch"
+    ] is True
     assert weighted_contraction["gates"]["cycle_radius_below_point_nine"] is True
     assert weighted_contraction["gates"]["weight_range_below_ten"] is True
 

@@ -237,6 +237,16 @@ The replacement campaign deliberately starts before packetization.
     but its argmin residual `1.03e-4` misses the `3e-5` gate.  This is retained
     as an informative failure: certify the global value inequality at `x_*`,
     not a numerically ill-conditioned predecessor coordinate.
+40. **Exact reversed-plateau obstruction (Sprint 1281).** The apparent new
+    contact is exactly the negative reversible image of Sprint 1115's high
+    plateau: the Sprint-1280 quartic is the old formula for `q(C)` rearranged,
+    and the exact reverser sends `(C,C,R)` to the fixed state
+    `(-C,-C,1/R)`.  Its Bellman value is the low branch and its derivative
+    multiplier is exactly `R^2>1`.  The global graph/Bellman receipts already
+    realize the contact.  Therefore every bounded positive weighted sup norm
+    has derivative norm at least `R^2` on this one-point orbit.  The global
+    contraction route is now ruled out exactly; the prior sampled contraction
+    was a discretization artifact.
 
 ## What is and is not new
 
@@ -312,5 +322,9 @@ Sprint 1279 completes the first: the signal is stable under grid phase and
 51,201-node refinement, and a post-run algebraic contact candidate now supplies
 the exact interval target.  Sprint 1280 derives that target conditionally and
 shows that the envelope jet is stable while the argmin is not.  The remaining
-gate is a global one-variable value inequality at the algebraic point.  The
-contraction route must remain demoted.
+gate appeared to be a global one-variable value inequality at the algebraic
+point, but Sprint 1281 closes it by ancestry: the point is the already
+certified reversed plateau.  This makes the contraction route not merely
+demoted but exactly impossible in every bounded positive weighted sup norm.
+The drift zero count must now be run directly on the certified characteristic
+graph by interval sign/degree methods.

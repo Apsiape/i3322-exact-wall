@@ -127,8 +127,13 @@ stationarity exposed the conditional algebraic contact equation
 Arb certificate, with candidate multiplier `1.1622824700`.  Its 51,201-node
 value and derivative match to `4.95e-9` and `6.25e-5`, while the sampled
 argmin misses its preregistered gate—an expected ill-conditioning at a
-parabolic contact.  Certifying the global candidate inequality, rather than
-the sampled minimizer coordinate, is now the exact gate. The
+parabolic contact.  A cross-certificate audit then identifies the candidate
+exactly: it is the reversed image `(-C,-C,1/R)` of the already certified high
+plateau `(C,C,R)`.  Its derivative multiplier is exactly `R^2>1`, so no
+bounded positive weighted sup norm can make the global Bellman derivative a
+contraction.  The sampled contractions were discretization artifacts.  The
+remaining three-root campaign must evaluate the certified characteristic
+graph directly by interval sign or degree methods. The
 conditional constant ledger is retained as an open proof
 campaign, but this repository
 does **not** presently claim
