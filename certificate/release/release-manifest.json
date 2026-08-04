@@ -279,6 +279,24 @@
       "sha256": "9a24e22816f909b17891b987204513d040c5e89ade9026d923e7e1b0a2b24b79"
     },
     {
+      "path": "certificate/independent/finite-strategy/finite-strategy-mpmath.json",
+      "canonical_bytes": 1577,
+      "hash_mode": "canonical-lf",
+      "sha256": "7c76f7aeb009c12a03f5da402d0edd532f69b92f986b9f66476a130418e2160b"
+    },
+    {
+      "path": "certificate/independent/finite-strategy/finite_strategy_mpmath.py",
+      "canonical_bytes": 4034,
+      "hash_mode": "canonical-lf",
+      "sha256": "5e0d360a08757a58916d033258cc304e357ac13997d6b46f463df4af896bb73e"
+    },
+    {
+      "path": "certificate/independent/finite-strategy/PRE-REGISTRATION.md",
+      "canonical_bytes": 1041,
+      "hash_mode": "canonical-lf",
+      "sha256": "3a8a20051f62cc98cbf7feec4831caab5fa8d32d45b001788692d045aa01aef9"
+    },
+    {
       "path": "certificate/independent/global-graph-mpmath.json",
       "canonical_bytes": 2014,
       "hash_mode": "canonical-lf",
@@ -2530,9 +2548,9 @@
     },
     {
       "path": "certificate/release/README.md",
-      "canonical_bytes": 2114,
+      "canonical_bytes": 2243,
       "hash_mode": "canonical-lf",
-      "sha256": "9aa12a9c233f6fddfef24219a981368b8ea33fa7d9433b6420a875f933471d3e"
+      "sha256": "570a51b08755deb0416726754945f9552965533b42df059a631a18793ab90a34"
     },
     {
       "path": "certificate/release/v13-claim-contract.json",
@@ -2548,9 +2566,9 @@
     },
     {
       "path": "certificate/release/verify_release.py",
-      "canonical_bytes": 29753,
+      "canonical_bytes": 30403,
       "hash_mode": "canonical-lf",
-      "sha256": "2289e2a27ead0262b454ba3904d6572b26ef046b4fca4123c9d9664bc886d279"
+      "sha256": "a59de09a9d3d5f22de6cda3ad4a492b6494429afbb01e64a359e9e321ed91c5c"
     },
     {
       "path": "CITATION.cff",
@@ -2578,9 +2596,9 @@
     },
     {
       "path": "paper/CERTIFICATE-MAP.md",
-      "canonical_bytes": 17486,
+      "canonical_bytes": 17623,
       "hash_mode": "canonical-lf",
-      "sha256": "a62df8eb6b1ba18a19d2f09fe6c87b73246b4a3522daafcb446d7226f971373d"
+      "sha256": "2e60bf877e04c57be13fe6a7e6dce002a36c52f3af5bb36451a4bc02e075451d"
     },
     {
       "path": "paper/CERTIFICATE-STATUS-ALERT.md",
@@ -2745,6 +2763,6 @@
       "sha256": "a405ef962afdfc120b5c3f2901ca58e95e2ab3963e642fa73dc2022f2d280cfa"
     }
   ],
-  "file_count": 457,
+  "file_count": 460,
   "scope": "Custody manifest for selected published files. Analytic dependency closure is checked separately by verify_release.py and is not inferred from file enumeration alone."
 }

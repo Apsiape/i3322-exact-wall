@@ -13,6 +13,8 @@ been repaired.
 Sprint 1288 adds an exact finite-strategy lower bound. The verifier therefore
 also checks the unconditional interval
 `0.25087519579012 < omega_tensor <= omega_commuting <= 0.250876384514`.
+The lower strategy is separately reconstructed with `mpmath.iv` at 160
+decimal digits without importing the production verifier.
 
 The full replay is byte-deterministic. Sprint 1279 previously serialized
 wall-clock timing into its scientific JSON; that non-mathematical field was

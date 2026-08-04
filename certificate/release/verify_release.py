@@ -126,6 +126,7 @@ REPLAY = [
     f"{IND}/global_graph_mpmath.py",
     f"{IND}/amplitude-gap/amplitude_gap_mpmath.py",
     f"{IND}/amplitude-gap/amplitude_gap_concordance.py",
+    f"{IND}/finite-strategy/finite_strategy_mpmath.py",
     f"{IND}/verify_independent_reconstruction.py",
     f"{IND}/spatial_symbolic_verify.py",
     f"{IND}/truncation_flux_mpmath.py",
@@ -249,6 +250,7 @@ def check_semantics() -> None:
         f"{IND}/independent-reconstruction.json": "audit_consistent",
         f"{IND}/spatial-symbolic-guard.json": "all_gates_pass",
         f"{IND}/truncation-flux-independent.json": "all_gates_pass",
+        f"{IND}/finite-strategy/finite-strategy-mpmath.json": "all_gates_pass",
         f"{IND}/dimension-necessity/source-manifest-audit.json": "all_gates_pass",
         f"{IND}/dimension-necessity/post-blind-exact-audit.json": "all_gates_pass",
         f"{REL}/v13-claim-contract.json": "all_gates_pass",
@@ -342,6 +344,9 @@ def check_semantics() -> None:
     )
     amplitude_concordance = load(
         f"{IND}/amplitude-gap/amplitude-gap-concordance.json"
+    )
+    independent_finite = load(
+        f"{IND}/finite-strategy/finite-strategy-mpmath.json"
     )
     assert coupled["terminal_near_entry_closed"] is False
     assert coupled["universal_dimension_lower_bound_proved"] is False
@@ -466,6 +471,13 @@ def check_semantics() -> None:
     ] > 1.4e-4
     assert amplitude_concordance["all_gates_pass"] is True
     assert amplitude_concordance["gates"]["amplitude_intervals_overlap"] is True
+    assert independent_finite["all_gates_pass"] is True
+    assert independent_finite["imports_production_engine"] is False
+    assert independent_finite["dimension"] == 127
+    assert independent_finite["interval_width_upper_float"] < 1e-80
+    assert independent_finite["gates"][
+        "actual_interval_above_production_floor"
+    ] is True
     assert weighted_contraction["gates"]["cycle_radius_below_point_nine"] is True
     assert weighted_contraction["gates"]["weight_range_below_ten"] is True
 
@@ -524,7 +536,8 @@ def main() -> None:
         "independence_boundary": (
             "production Arb stack plus separate mpmath.iv reconstruction and "
             "independent symbolic spatial-carrier/truncation reconstruction, "
-            "plus a separately written 21-source conditional dimension-necessity "
+            "plus an independent 160-digit finite-strategy evaluation and a "
+            "separately written 21-source conditional dimension-necessity "
             "reconstruction; the Bellman normalization gap is reproduced by "
             "independent Arb and mpmath.iv engines; the original chronology is "
             "not externally time-sealed and the remaining parameter-absorption "

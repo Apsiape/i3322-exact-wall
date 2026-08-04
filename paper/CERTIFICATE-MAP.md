@@ -11,6 +11,7 @@ This file separates analytic claims from computer-assisted inputs.
 | `omega_tensor <= omega_commuting <= q_hat` | Sprint 1287 | preceding two rows plus commuting joint functional calculus |
 | Explicit 127-dimensional tensor lower strategy | Sprint 1288 | exact rational profile/state plus certified rational square-root floors |
 | Unconditional two-sided window of width below `1.189e-6` | Sprints 1287/1288 | exact lower quotient and exact commuting upper bound |
+| Independent finite-strategy reconstruction | independent lane | direct 160-digit `mpmath.iv` evaluation, no production engine import |
 
 The candidate builder is not a theorem owner. It merely emits the committed
 rational knot list. `exact_rational_bellman_subsolution.py` and
