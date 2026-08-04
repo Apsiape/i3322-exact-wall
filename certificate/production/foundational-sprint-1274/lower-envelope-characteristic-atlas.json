@@ -1,5 +1,6 @@
 {
-  "status": "lower-envelope characteristic-atlas test",
+  "status": "characteristic-atlas selector test",
+  "selector": "least",
   "shooting_charts": 13,
   "maximum_sheet_multiplicity": 10,
   "minimum_selected_sheet_gap": 0.0,

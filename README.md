@@ -95,7 +95,12 @@ neither is a reparameterization of the other.  The resulting proof target is
 now log-free: the drift has the exact sign and zeros of
 `D(x)=F(x)F(P(x))-F(-x)F(-P(x))`.  Two independent numerical resolutions
 recover the same three roots with no sign disagreement, but the full-domain
-Arb zero-count certificate remains open. The
+Arb zero-count certificate remains open.  Two attempted shooting-atlas
+shortcuts are now rejected: choosing the least characteristic sheet produces
+15 false roots, while first filtering by positive local `P'` loses boundary
+coverage.  The remaining proof must enclose the globally selected Bellman
+fixed point itself; local value and local Morse type do not encode its boundary
+condition. The
 conditional constant ledger is retained as an open proof
 campaign, but this repository
 does **not** presently claim

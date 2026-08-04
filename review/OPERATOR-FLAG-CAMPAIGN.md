@@ -180,6 +180,16 @@ The replacement campaign deliberately starts before packetization.
     missed the preregistered `1e-8` gate; continuous evaluation repaired the
     instrument without moving the gate.  `D` is now the interval target, but
     the numerical three-root census is still not a theorem.
+33. **Untyped lower-envelope failure (Sprint 1274).** Choosing the least
+    positive value among up to ten overlapping characteristic sheets gives a
+    nonmonotone predecessor, 15 false roots, and `0.195` maximum disagreement
+    from the global Bellman profile.  A characteristic is a stationary path,
+    not automatically an admissible minimizing path.
+34. **Local Morse-filter failure (Sprint 1275).** Requiring positive local
+    `dP/dx` before minimizing fails coverage already at `x=-0.9`.  The correct
+    global boundary sheet is absent from the over-propagated local family.
+    Value and local second variation are therefore both insufficient; the
+    selector is a global boundary/action or viscosity condition.
 
 ## What is and is not new
 
@@ -241,4 +251,6 @@ also rules out certifying the roots from `uv-1` alone: the interval engine must
 carry the normalization defect `K` or evaluate the global Bellman profiles
 directly.  Sprint 1272 further rules out substituting the symmetrization-tariff
 zero set for the drift zero set.  Sprint 1273 selects the latter route and
-removes logarithms from the remaining interval problem.
+removes logarithms from the remaining interval problem.  Sprints 1274--1275
+close the local-characteristic shortcut, leaving direct interval
+sub/supersolutions for the global Bellman fixed point as the honest route.

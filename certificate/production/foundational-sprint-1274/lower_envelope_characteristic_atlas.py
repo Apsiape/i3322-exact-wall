@@ -28,7 +28,7 @@ def load(path: Path, name: str):
     return module
 
 
-def main() -> None:
+def run(selector: str = "least") -> dict:
     engine = load(ENGINE_PATH, "s1274_engine")
     bellman = load(BELLMAN_PATH, "s1274_bellman")
     ctx.prec = 250
@@ -91,22 +91,30 @@ def main() -> None:
 
     family(np.linspace(0,.0037582873342893243,3001),11)
     family(np.linspace(-.003719358976358651,0,2401),3)
-    charts=[
-        (row[0,0],row[-1,0],PchipInterpolator(row[:,0],row[:,1]),PchipInterpolator(row[:,0],row[:,2]))
-        for row in rows if np.all(np.diff(row[:,0])>0)
-    ]
+    charts=[]
+    for row in rows:
+        if not np.all(np.diff(row[:,0])>0):
+            continue
+        f_chart=PchipInterpolator(row[:,0],row[:,1])
+        p_chart=PchipInterpolator(row[:,0],row[:,2])
+        charts.append((row[0,0],row[-1,0],f_chart,p_chart,p_chart.derivative()))
 
     sample=np.linspace(-.9,.9,7201)
     selected_f=[]; selected_p=[]; multiplicities=[]; gaps=[]
-    coverage=True
+    coverage=True; first_uncovered=None
     for x in sample:
         candidates=[
-            (float(chart[2](x)),float(chart[3](x)),index)
+            (float(chart[2](x)),float(chart[3](x)),index,float(chart[4](x)))
             for index,chart in enumerate(charts) if chart[0]<=x<=chart[1]
         ]
         candidates=[row for row in candidates if row[0]>0 and np.isfinite(row[0])]
+        if selector == "stable_least":
+            candidates=[row for row in candidates if row[3]>0]
+        elif selector != "least":
+            raise ValueError(selector)
         if not candidates:
             coverage=False
+            first_uncovered=float(x)
             break
         candidates.sort(key=lambda row: row[0])
         selected_f.append(candidates[0][0]); selected_p.append(candidates[0][1])
@@ -114,7 +122,29 @@ def main() -> None:
         gaps.append(candidates[1][0]-candidates[0][0] if len(candidates)>1 else float("inf"))
 
     if not coverage:
-        raise AssertionError("characteristic family failed registered coverage")
+        gates={
+            "complete_coverage":False,
+            "selected_predecessor_near_monotone":False,
+            "exactly_three_roots":False,
+            "registered_root_agreement":False,
+            "global_F_agreement":False,
+            "global_P_agreement":False,
+        }
+        return {
+            "status":"characteristic-atlas selector test",
+            "selector":selector,
+            "shooting_charts":len(charts),
+            "first_uncovered_coordinate":first_uncovered,
+            "maximum_sheet_multiplicity_before_failure":(
+                max(multiplicities) if multiplicities else 0
+            ),
+            "gates":gates,
+            "all_gates_pass":False,
+            "claim_boundary":(
+                "The registered selector fails coverage before any global "
+                "profile or root census can be formed."
+            ),
+        }
     selected_f=np.asarray(selected_f); selected_p=np.asarray(selected_p)
     F=PchipInterpolator(sample,selected_f)
     P=PchipInterpolator(sample,selected_p)
@@ -144,7 +174,8 @@ def main() -> None:
         "global_P_agreement": float(np.max(np.abs(selected_p-reference_p)))<2e-2,
     }
     report={
-        "status":"lower-envelope characteristic-atlas test",
+        "status":"characteristic-atlas selector test",
+        "selector":selector,
         "shooting_charts":len(charts),
         "maximum_sheet_multiplicity":max(multiplicities),
         "minimum_selected_sheet_gap":float(min(finite_gaps)),
@@ -160,6 +191,11 @@ def main() -> None:
             "interval-atlas strategy but would not prove Bellman envelope selection."
         ),
     }
+    return report
+
+
+def main() -> None:
+    report=run("least")
     (HERE/"lower-envelope-characteristic-atlas.json").write_text(
         json.dumps(report,indent=2)+"\n",encoding="utf-8"
     )

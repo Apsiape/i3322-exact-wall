@@ -2067,6 +2067,54 @@
       "sha256": "2de82cbe4956fc6f25997f0f86607ce0383a62161becbb0a6400abfb2816e6e3"
     },
     {
+      "path": "certificate/production/foundational-sprint-1274/lower-envelope-characteristic-atlas.json",
+      "canonical_bytes": 1194,
+      "hash_mode": "canonical-lf",
+      "sha256": "ea97ec0ac977ad9e465cb4b85543d9db256ee022abd75d3a8c842ca8b72dea3d"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1274/LOWER-ENVELOPE-SELECTOR-FAILURE.md",
+      "canonical_bytes": 1346,
+      "hash_mode": "canonical-lf",
+      "sha256": "34f5b57e719d33d52229572cfd76cf250d59f507f2eef967fddd49622945a67f"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1274/lower_envelope_characteristic_atlas.py",
+      "canonical_bytes": 7722,
+      "hash_mode": "canonical-lf",
+      "sha256": "8e841590ed6b4447473cf1489b9e5ad44d0deeab0d742950f6a424065a1f8930"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1274/PRE-REGISTRATION.md",
+      "canonical_bytes": 1283,
+      "hash_mode": "canonical-lf",
+      "sha256": "0378c352b03946ef4e7b5ef3459774fd6ecdbfaa3d765e9a3fbc8bded50afd57"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1275/morse-filtered-characteristic-atlas.json",
+      "canonical_bytes": 618,
+      "hash_mode": "canonical-lf",
+      "sha256": "1b29ef742eed53e8dbeef3b63f0ed08e8d776046699d7e7456e3846bb6e07bfe"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1275/MORSE-FILTERED-SELECTOR-FAILURE.md",
+      "canonical_bytes": 1270,
+      "hash_mode": "canonical-lf",
+      "sha256": "ab1e08e6dd770bb31b6501c2122ddf870ada01d612b5144134f0ba20deb3f0af"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1275/morse_filtered_characteristic_atlas.py",
+      "canonical_bytes": 1014,
+      "hash_mode": "canonical-lf",
+      "sha256": "ce6584f62cc793b74b570e27ba8231a896949566025cc98aaddb41e82a3c1be8"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1275/PRE-REGISTRATION.md",
+      "canonical_bytes": 970,
+      "hash_mode": "canonical-lf",
+      "sha256": "26cd8e8b8e1e056ead002f9f6c7d530a4a9445f96039b08166599fcfce16ea84"
+    },
+    {
       "path": "certificate/release/build_release_manifest.py",
       "canonical_bytes": 2437,
       "hash_mode": "canonical-lf",
@@ -2116,9 +2164,9 @@
     },
     {
       "path": "certificate/release/verify_release.py",
-      "canonical_bytes": 18559,
+      "canonical_bytes": 19378,
       "hash_mode": "canonical-lf",
-      "sha256": "71e362b864870c0a092dce7d45becef10d8346d5bc2c7404090f3414aae4c382"
+      "sha256": "5b4321412ccec7af778814671aec417f5e61349156c46df079e993da4de107a8"
     },
     {
       "path": "CITATION.cff",
@@ -2242,9 +2290,9 @@
     },
     {
       "path": "README.md",
-      "canonical_bytes": 10327,
+      "canonical_bytes": 10675,
       "hash_mode": "canonical-lf",
-      "sha256": "a56de018134d029bafec2cd5cd95629723a00347d1404d3860d2fd9f5dbdba4d"
+      "sha256": "28fbfe9a86f848fa7f04e677e5af54467aa9a77d3dd6adb5cdfd41ecccd5e731"
     },
     {
       "path": "requirements.txt",
@@ -2290,9 +2338,9 @@
     },
     {
       "path": "review/OPERATOR-FLAG-CAMPAIGN.md",
-      "canonical_bytes": 14703,
+      "canonical_bytes": 15589,
       "hash_mode": "canonical-lf",
-      "sha256": "64c0499ad2479d6bedce44b3e0b22f46f0a88ddd584865fd4806b765061057ab"
+      "sha256": "37b00d1d5697db591bc96e05c54162eab2eacd40196486fe75d73a44e62935fd"
     },
     {
       "path": "review/POST-ADJUDICATION-COUPLED-SECTOR.md",
@@ -2307,6 +2355,6 @@
       "sha256": "a405ef962afdfc120b5c3f2901ca58e95e2ab3963e642fa73dc2022f2d280cfa"
     }
   ],
-  "file_count": 384,
+  "file_count": 392,
   "scope": "Custody manifest for selected published files. Analytic dependency closure is checked separately by verify_release.py and is not inferred from file enumeration alone."
 }

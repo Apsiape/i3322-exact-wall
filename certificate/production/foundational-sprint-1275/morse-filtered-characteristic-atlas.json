@@ -1,0 +1,17 @@
+{
+  "status": "characteristic-atlas selector test",
+  "selector": "stable_least",
+  "shooting_charts": 13,
+  "first_uncovered_coordinate": -0.9,
+  "maximum_sheet_multiplicity_before_failure": 0,
+  "gates": {
+    "complete_coverage": false,
+    "selected_predecessor_near_monotone": false,
+    "exactly_three_roots": false,
+    "registered_root_agreement": false,
+    "global_F_agreement": false,
+    "global_P_agreement": false
+  },
+  "all_gates_pass": false,
+  "claim_boundary": "This is a floating-point local-Morse selector test. Passing would still require interval derivative signs and global Bellman closure."
+}

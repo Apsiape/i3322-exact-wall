@@ -97,6 +97,8 @@ REPLAY = [
     f"{PROD}/foundational-sprint-1271/reciprocal_bellman_verify.py",
     f"{PROD}/foundational-sprint-1272/normalization_defect_geometry_scout.py",
     f"{PROD}/foundational-sprint-1273/log_free_drift_verify.py",
+    f"{PROD}/foundational-sprint-1274/lower_envelope_characteristic_atlas.py",
+    f"{PROD}/foundational-sprint-1275/morse_filtered_characteristic_atlas.py",
     f"{PROD}/foundational-sprint-1231/dimension_bound_algebra_verify.py",
     f"{PROD}/foundational-sprint-1233/master_ledger_verify.py",
     f"{REL}/normalization_concordance_verify.py",
@@ -259,6 +261,12 @@ def check_semantics() -> None:
     normalization_scout = load(
         f"{PROD}/foundational-sprint-1272/normalization-defect-geometry-scout.json"
     )
+    lower_envelope = load(
+        f"{PROD}/foundational-sprint-1274/lower-envelope-characteristic-atlas.json"
+    )
+    morse_selector = load(
+        f"{PROD}/foundational-sprint-1275/morse-filtered-characteristic-atlas.json"
+    )
     assert coupled["terminal_near_entry_closed"] is False
     assert coupled["universal_dimension_lower_bound_proved"] is False
     assert terminal["scalar_terminal_commonization_proved"] is False
@@ -271,6 +279,13 @@ def check_semantics() -> None:
     assert normalization_scout["predictions"]["unique_numerical_maximum_at_zero"] is False
     assert normalization_scout["predictions"]["registered_half_q_excess_bound"] is False
     assert normalization_scout["predictions"]["tariff_zeros_coincide_with_drift_roots"] is False
+    assert lower_envelope["all_gates_pass"] is False
+    assert lower_envelope["gates"]["complete_coverage"] is True
+    assert lower_envelope["gates"]["selected_predecessor_near_monotone"] is False
+    assert len(lower_envelope["roots"]) == 15
+    assert morse_selector["all_gates_pass"] is False
+    assert morse_selector["gates"]["complete_coverage"] is False
+    assert morse_selector["first_uncovered_coordinate"] == -0.9
 
 
 def replay() -> None:
