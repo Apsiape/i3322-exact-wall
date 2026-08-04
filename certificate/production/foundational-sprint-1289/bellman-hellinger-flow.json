@@ -1,0 +1,77 @@
+{
+  "status": "exact Bellman--Hellinger flow algebra and path weld",
+  "gates": {
+    "hellinger_square_identity_exact": true,
+    "coordinate_infimum_exact": true,
+    "kkt_balance_exact": true,
+    "open_path_embedding_exact": true,
+    "open_path_endpoint_terms_vanish": true,
+    "perfect_contact_counterfixture_exact": true,
+    "contact_alone_fails_balance": true,
+    "counterfixture_strong_duality_exact": true
+  },
+  "all_gates_pass": true,
+  "finite_duality_formula": "inf_g max_ij(d_ij+b_i^2/g_i+g_j) = sup_pi(sum_ij pi_ij d_ij + 2 sum_i b_i sqrt(r_i s_i))",
+  "path_embedding": {
+    "profile": [
+      "1",
+      "15/17",
+      "5/13",
+      "-5/13",
+      "-1"
+    ],
+    "amplitudes": [
+      "2",
+      "3",
+      "5",
+      "7"
+    ],
+    "edge_mass": [
+      "4/87",
+      "3/29",
+      "25/87",
+      "49/87"
+    ],
+    "row_marginal": [
+      "4/87",
+      "3/29",
+      "25/87",
+      "49/87",
+      "0"
+    ],
+    "column_marginal": [
+      "0",
+      "4/87",
+      "3/29",
+      "25/87",
+      "49/87"
+    ],
+    "rayleigh_quotient": "10416/83317",
+    "flow_dual_objective": "10416/83317",
+    "identity_exact": true,
+    "endpoint_contributions_zero": true
+  },
+  "contact_without_balance": {
+    "primal_value": "3",
+    "all_edges_in_contact": true,
+    "unbalanced_contact_flow_dual_value": "1",
+    "balance_residuals": [
+      "-1",
+      "1"
+    ],
+    "contact_does_not_force_balance": true,
+    "balanced_self_loop_dual_value": "3",
+    "strong_duality_visible_in_fixture": true,
+    "balanced_pi": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ]
+  },
+  "claim_boundary": "This verifier checks the decisive exact identities and fixtures. Finite strong duality itself is proved analytically by Slater duality in BELLMAN-HELLINGER-FLOW-DUALITY.md."
+}
