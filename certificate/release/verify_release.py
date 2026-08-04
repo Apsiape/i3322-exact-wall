@@ -103,6 +103,7 @@ REPLAY = [
     f"{PROD}/foundational-sprint-1277/continuous_predecessor_debt_scout.py",
     f"{PROD}/foundational-sprint-1278/bellman_bottleneck_classifier.py",
     f"{PROD}/foundational-sprint-1279/bellman_grid_phase_attack.py",
+    f"{PROD}/foundational-sprint-1280/algebraic_bellman_contact_verify.py",
     f"{PROD}/foundational-sprint-1231/dimension_bound_algebra_verify.py",
     f"{PROD}/foundational-sprint-1233/master_ledger_verify.py",
     f"{REL}/normalization_concordance_verify.py",
@@ -283,6 +284,9 @@ def check_semantics() -> None:
     phase_attack = load(
         f"{PROD}/foundational-sprint-1279/bellman-grid-phase-attack.json"
     )
+    algebraic_contact = load(
+        f"{PROD}/foundational-sprint-1280/algebraic-bellman-contact.json"
+    )
     assert coupled["terminal_near_entry_closed"] is False
     assert coupled["universal_dimension_lower_bound_proved"] is False
     assert terminal["scalar_terminal_commonization_proved"] is False
@@ -323,6 +327,18 @@ def check_semantics() -> None:
     assert phase_attack["phase_gap_range"][1] < 2.5e-4
     assert phase_attack["deep_gap_range"][1] < 1.5e-4
     assert phase_attack["deep_refinement"][-1]["minimum_gap"] < 2.2e-5
+    assert algebraic_contact["all_gates_pass"] is False
+    assert algebraic_contact["gates"]["all_symbolic_checks_exact"] is True
+    assert algebraic_contact["gates"][
+        "coefficient_strictly_above_one_point_one_six"
+    ] is True
+    assert algebraic_contact["gates"][
+        "predecessor_and_value_match_candidate"
+    ] is False
+    assert algebraic_contact["numerical_identification"]["F_value_residual"] < 5e-9
+    assert algebraic_contact["numerical_identification"][
+        "fixed_predecessor_residual"
+    ] > 1e-4
     assert weighted_contraction["gates"]["cycle_radius_below_point_nine"] is True
     assert weighted_contraction["gates"]["weight_range_below_ten"] is True
 

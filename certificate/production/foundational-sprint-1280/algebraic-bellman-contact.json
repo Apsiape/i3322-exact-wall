@@ -1,0 +1,67 @@
+{
+  "status": "conditional exact Bellman contact normal form",
+  "symbolic": {
+    "bellman_polynomial": "4*f**2 - 4*f*q + 4*f*x**2 - 4*f - x**2 + 1",
+    "stationarity_factorization": "(2*f + x - 1)*(-4*f*x - 2*f + 2*x**2 + x - 1)/2",
+    "low_branch_resultant": "8*(x + 1)*(-4*q*x**2 + q + 4*x**4 - 5*x**2 + 2)",
+    "quartic": "q + 4*x**4 - x**2*(4*q + 5) + 2",
+    "checks": {
+      "stationarity_factorization_exact": true,
+      "low_branch_substitution_exact": true,
+      "resultant_factor_exact": true,
+      "outer_squared_root_exact": true
+    }
+  },
+  "arb_candidate": {
+    "q": {
+      "interval": "[0.250875384513976536 +/- 4.87e-19]",
+      "midpoint": 0.25087538451397656,
+      "width_upper_bound": 9.720000046970049e-19,
+      "lower": 0.25087538451397656,
+      "upper": 0.25087538451397656
+    },
+    "x_star": {
+      "interval": "[-0.87827294518081245 +/- 8.23e-18]",
+      "midpoint": -0.8782729451808124,
+      "width_upper_bound": 6.893675300240193e-18,
+      "lower": -0.8782729451808124,
+      "upper": -0.8782729451808124
+    },
+    "F_star": {
+      "interval": "[0.2217619690903789 +/- 3.79e-17]",
+      "midpoint": 0.22176196909037887,
+      "width_upper_bound": 2.4603516003555518e-17,
+      "lower": 0.22176196909037887,
+      "upper": 0.22176196909037887
+    },
+    "coefficient_star": {
+      "interval": "[1.162282470002661 +/- 4.21e-16]",
+      "midpoint": 1.1622824700026608,
+      "width_upper_bound": 3.1946196551837343e-16,
+      "lower": 1.1622824700026606,
+      "upper": 1.1622824700026608
+    }
+  },
+  "numerical_identification": {
+    "nodes": 51201,
+    "bottleneck_coordinate": -0.8782756093933272,
+    "coordinate_disagreement": 2.664212514713604e-06,
+    "predecessor_at_x_star": -0.8781701404808161,
+    "fixed_predecessor_residual": 0.00010280469999635056,
+    "F_at_x_star": 0.22176197404134998,
+    "F_value_residual": 4.950971105310842e-09,
+    "F_derivative_at_x_star": 1.3782104928175258,
+    "envelope_derivative_target": 1.3782729451808124,
+    "envelope_derivative_residual": 6.245236328661363e-05
+  },
+  "gates": {
+    "all_symbolic_checks_exact": true,
+    "all_candidate_widths_below_one_e_minus_fifteen": true,
+    "coefficient_strictly_above_one_point_one_six": true,
+    "bottleneck_coordinate_matches_candidate": true,
+    "predecessor_and_value_match_candidate": false,
+    "envelope_derivative_matches_candidate": true
+  },
+  "all_gates_pass": false,
+  "claim_boundary": "The normal form is exact under the stated contact hypotheses. The global Bellman realization is numerical and is not certified."
+}

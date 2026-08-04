@@ -123,8 +123,12 @@ then keeps all nine nearby-resolution gaps below `1.23e-4`, and deeper
 `1.1616`.  After that preregistered run, Bellman equality and envelope
 stationarity exposed the conditional algebraic contact equation
 `4x^4-(4q+5)x^2+(q+2)=0`; its outer negative root is
-`-0.87827294518`.  Certifying that the global minimizer realizes this root is
-now the exact gate. The
+`-0.87827294518`.  The conditional normal form now has an exact symbolic and
+Arb certificate, with candidate multiplier `1.1622824700`.  Its 51,201-node
+value and derivative match to `4.95e-9` and `6.25e-5`, while the sampled
+argmin misses its preregistered gate—an expected ill-conditioning at a
+parabolic contact.  Certifying the global candidate inequality, rather than
+the sampled minimizer coordinate, is now the exact gate. The
 conditional constant ledger is retained as an open proof
 campaign, but this repository
 does **not** presently claim

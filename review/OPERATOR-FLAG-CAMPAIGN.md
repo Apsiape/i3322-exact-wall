@@ -227,6 +227,16 @@ The replacement campaign deliberately starts before packetization.
     candidate equation `4x^4-(4q+5)x^2+(q+2)=0`, whose outer negative root is
     `-0.87827294518`.  The equation is presently a conditional local normal
     form; global minimizer realization remains the proof gate.
+39. **Algebraic contact normal form (Sprint 1280).** Under differentiable,
+    active, unique fixed-predecessor hypotheses, Bellman equality and
+    stationarity factor exactly and the low-value branch satisfies
+    `4x^4-(4q+5)x^2+(q+2)=0`.  Arb puts the outer negative candidate at
+    `x_*=-0.87827294518081245...` with multiplier
+    `c_*=1.162282470002661...>1.16`.  Five of six registered gates pass:
+    the 51,201-node value and derivative match to `4.95e-9` and `6.25e-5`,
+    but its argmin residual `1.03e-4` misses the `3e-5` gate.  This is retained
+    as an informative failure: certify the global value inequality at `x_*`,
+    not a numerically ill-conditioned predecessor coordinate.
 
 ## What is and is not new
 
@@ -300,4 +310,7 @@ ladder selects the parabolic-contact-consistent horn, so the immediate task is
 an independent refinement attack followed by interval contact certification.
 Sprint 1279 completes the first: the signal is stable under grid phase and
 51,201-node refinement, and a post-run algebraic contact candidate now supplies
-the exact interval target.  The contraction route must remain demoted.
+the exact interval target.  Sprint 1280 derives that target conditionally and
+shows that the envelope jet is stable while the argmin is not.  The remaining
+gate is a global one-variable value inequality at the algebraic point.  The
+contraction route must remain demoted.
