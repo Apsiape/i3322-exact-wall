@@ -67,6 +67,19 @@ nonattainment, `C_qs \ C_q`, or nonclosure. The upper endpoint lies about
 `1.000000023e-6` above the historical wall candidate; that numerical proximity
 is not used as a lower-bound theorem.
 
+Sprint 1288 then supplies the missing independent lower side: a committed
+127-dimensional finite tensor-product strategy evaluated with exact rational
+square-root floors. Repository HEAD therefore proves the unconditional window
+
+```text
+0.25087519579012 < omega_tensor
+                   <= omega_commuting <= 0.250876384514,
+```
+
+whose exact certified width is approximately `1.1887238777740562e-6`. This
+still does not identify the exact optimum or restore any nonattainment or
+correlation-set separation claim.
+
 ## Repair signal, not yet a repair
 
 Sprint 1286 directly iterates the globally selected Bellman operator without

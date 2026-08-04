@@ -9,7 +9,8 @@ tagged archival release; DOI and citation metadata remain those of v1.2.0.
 Sprint 1285 proves an exact nonzero global-amplitude mismatch in the
 load-bearing Bellman assembly. Sprint 1287 subsequently certifies the separate
 exact upper bound `omega_c<=0.250876384514`, but it does not prove equality at
-the historical wall value. Therefore no `v1.3.0` release may be tagged as the
+the historical wall value. Sprint 1288 adds the independent finite lower bound
+`omega_tensor>0.25087519579012`. Therefore no `v1.3.0` release may be tagged as the
 historical exact-optimum/nonattainment theorem. The finite-section flux and
 tail calculations may remain exact statements about the explicit wall, but
 they cannot currently be promoted as deficits from the true I3322 optimum.

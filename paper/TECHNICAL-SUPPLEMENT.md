@@ -6,7 +6,8 @@
 > historical certificate specification, but its Bellman theorem assembly is
 > not presently closed. See `CERTIFICATE-STATUS-ALERT.md`. A later, independent
 > rational subsolution proves `omega_c <= 0.250876384514` without repairing the
-> fixed-point assembly.
+> fixed-point assembly; a direct 127-dimensional strategy supplies the lower
+> bound `omega_tensor > 0.25087519579012`.
 
 **Seth Douglas** ·
 [ORCID 0009-0007-4708-3252](https://orcid.org/0009-0007-4708-3252) ·

@@ -28,6 +28,18 @@ upper bound, but it does not restore exact equality, nonattainment, spatial
 separation, or nonclosure. See
 [`EXACT-NEAR-OPTIMAL-UPPER-BOUND.md`](certificate/production/foundational-sprint-1287/EXACT-NEAR-OPTIMAL-UPPER-BOUND.md).
 
+Sprint 1288 independently installs one explicit 127-dimensional strategy and
+certifies its value from below using rational square-root floors. Together the
+two new certificates give the unconditional window
+
+```text
+0.25087519579012 < omega_tensor
+                   <= omega_commuting <= 0.250876384514,
+```
+
+of width below `1.189e-6`. See
+[`RIGOROUS-I3322-WINDOW.md`](certificate/production/foundational-sprint-1288/RIGOROUS-I3322-WINDOW.md).
+
 The historical release claimed a computer-assisted proof that the tensor-product and
 commuting-operator suprema of the canonical three-setting, two-outcome
 `I3322` Bell functional equal the rigorously characterized constant

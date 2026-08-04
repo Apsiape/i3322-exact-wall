@@ -1,0 +1,30 @@
+{
+  "status": "exact finite-dimensional I3322 lower strategy",
+  "dimension": 127,
+  "candidate_profile_sha256": "076092165884d3bc3a553f0e2607158af9f779f1a9d1262350e33e6119e257d9",
+  "sqrt_floor_decimal_places": 60,
+  "normalization": "24999999999999998634999233641396355699/25000000000000000000000000000000000000",
+  "diagonal_numerator": "-1432157387148626491045392528458692604760603101495188716979135099647183/5000000000000000000000000000000000000000000000000000000000000000000000",
+  "neighbor_numerator_lower": "26865333660992375522752825256924193274185717764104979460865613432038075661191728498315730882404009/50000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "certified_value_lower": "12543759789506110612298899972337267226579686749153092291074262435566245661191728498315730882404009/49999999999999997269998467282792711398000000000000000000000000000000000000000000000000000000000000",
+  "certified_value_lower_decimal": 0.25087519579012224,
+  "rigorous_upper": "125438192257/500000000000",
+  "rigorous_upper_decimal": 0.250876384514,
+  "rigorous_window_width": "59436193888702808185781891285813861591741418907708925737564433754338808271501684269117595991/49999999999999997269998467282792711398000000000000000000000000000000000000000000000000000000000000",
+  "rigorous_window_width_decimal": 1.1887238777740562e-06,
+  "minimum_sqrt_floor_slack": "210729489016545522371287774198109714827065566231109567671/15625000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "gates": {
+    "candidate_iteration_converged": true,
+    "candidate_witness_hash_matches": true,
+    "dimensions_and_endpoints_exact": true,
+    "committed_vector_strictly_positive": true,
+    "all_square_root_floors_certified": true,
+    "normalization_denominator_positive": true,
+    "certified_value_above_point_250875": true,
+    "rigorous_window_width_below_one_point_four_e_minus_six": true
+  },
+  "all_gates_pass": true,
+  "theorem": "The displayed finite 127-dimensional tensor-product strategy gives a rigorous lower bound on the true I3322 value. Together with Sprint 1287 it yields the displayed unconditional two-sided window.",
+  "proof_runtime": "Python standard library only; every theorem-stage operation uses integers or Fraction.",
+  "claim_boundary": "This does not identify the exact optimum or prove nonattainment, tensor/commuting separation, or nonclosure."
+}

@@ -3,12 +3,16 @@
 `verify_release.py` has two modes:
 
 At repository HEAD, a successful custody run reports
-`CUSTODY_PASS_RIGOROUS_UPPER_HEADLINE_GAP`, not `PASS`: the files, registered
+`CUSTODY_PASS_RIGOROUS_WINDOW_HEADLINE_GAP`, not `PASS`: the files, registered
 negative receipt, and Sprint-1287 exact rational upper bound are internally
 reproducible, while Sprint 1285 leaves the historical exact-optimum headline
 open. A zero process exit code means the audit completed and agreed with that
 disclosed status; it does not mean equality, nonattainment, or nonclosure has
 been repaired.
+
+Sprint 1288 adds an exact finite-strategy lower bound. The verifier therefore
+also checks the unconditional interval
+`0.25087519579012 < omega_tensor <= omega_commuting <= 0.250876384514`.
 
 The full replay is byte-deterministic. Sprint 1279 previously serialized
 wall-clock timing into its scientific JSON; that non-mathematical field was
