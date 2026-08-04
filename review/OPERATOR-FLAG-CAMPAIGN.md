@@ -190,6 +190,14 @@ The replacement campaign deliberately starts before packetization.
     global boundary sheet is absent from the over-propagated local family.
     Value and local second variation are therefore both insufficient; the
     selector is a global boundary/action or viscosity condition.
+35. **Weighted Bellman contraction scout (Sprint 1276).** The unweighted
+    derivative has local multiplier `1.264>1`, but max-plus cycle pricing
+    constructs weights of dynamic range below `5.5` that make both sampled
+    graphs `0.9`-contractive.  Four of five predictions pass.  The registered
+    one-cycle claim fails because the fine nearest-grid map has two adjacent
+    plateau self-loops, both below `0.861`; those vertices are not merged by
+    hand.  The weighted contraction is a viable continuous proof architecture,
+    while the discrete graph does not certify continuous orbit topology.
 
 ## What is and is not new
 
@@ -254,3 +262,5 @@ zero set for the drift zero set.  Sprint 1273 selects the latter route and
 removes logarithms from the remaining interval problem.  Sprints 1274--1275
 close the local-characteristic shortcut, leaving direct interval
 sub/supersolutions for the global Bellman fixed point as the honest route.
+Sprint 1276 identifies the required norm: a Lyapunov-weighted sup norm built
+from predecessor history, not a constant-width barrier.

@@ -1,0 +1,60 @@
+{
+  "status": "two-resolution max-plus Bellman contraction scout; cycle-count prediction failed",
+  "registered_kappa": 0.9,
+  "coarse": {
+    "bellman_nodes": 1601,
+    "sample_points": 3601,
+    "unweighted_maximum": 1.2642715835000717,
+    "unweighted_maximum_coordinate": -0.09399999999999997,
+    "cycles": [
+      {
+        "length": 1,
+        "geometric_mean": 0.8598406026890721,
+        "coordinates": [
+          0.8785
+        ]
+      }
+    ],
+    "cycle_count": 1,
+    "maximum_cycle_geometric_mean": 0.8598406026890721,
+    "weight_dynamic_range": 5.456363489271967,
+    "weighted_maximum": 0.9000000000000002,
+    "weighted_minimum": 0.8598406026890721
+  },
+  "fine": {
+    "bellman_nodes": 3201,
+    "sample_points": 3601,
+    "unweighted_maximum": 1.2642976743982524,
+    "unweighted_maximum_coordinate": -0.09450000000000003,
+    "cycles": [
+      {
+        "length": 1,
+        "geometric_mean": 0.8606460917007062,
+        "coordinates": [
+          0.878
+        ]
+      },
+      {
+        "length": 1,
+        "geometric_mean": 0.860304756414793,
+        "coordinates": [
+          0.8785
+        ]
+      }
+    ],
+    "cycle_count": 2,
+    "maximum_cycle_geometric_mean": 0.8606460917007062,
+    "weight_dynamic_range": 5.439074219279346,
+    "weighted_maximum": 0.9000000000000002,
+    "weighted_minimum": 0.8603047564147929
+  },
+  "gates": {
+    "local_amplification_present": true,
+    "one_cycle_each": false,
+    "cycle_radius_below_point_nine": true,
+    "weighted_contraction": true,
+    "weight_range_below_ten": true
+  },
+  "all_gates_pass": false,
+  "claim_boundary": "This proves the displayed inequalities only on two finite sampled functional graphs. A continuous interval Lyapunov certificate is open."
+}

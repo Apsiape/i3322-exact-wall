@@ -100,7 +100,12 @@ shortcuts are now rejected: choosing the least characteristic sheet produces
 15 false roots, while first filtering by positive local `P'` loses boundary
 coverage.  The remaining proof must enclose the globally selected Bellman
 fixed point itself; local value and local Morse type do not encode its boundary
-condition. The
+condition.  A max-plus Lyapunov scout now supplies a viable global replacement:
+although the unweighted Bellman derivative amplifies locally by as much as
+`1.264`, a positive weight of dynamic range below `5.5` makes both sampled
+response graphs `0.9`-contractive.  The fine discretization splits the plateau
+into two adjacent self-loops, so continuous orbit topology and contraction
+remain interval gates rather than theorem claims. The
 conditional constant ledger is retained as an open proof
 campaign, but this repository
 does **not** presently claim

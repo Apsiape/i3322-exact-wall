@@ -99,6 +99,7 @@ REPLAY = [
     f"{PROD}/foundational-sprint-1273/log_free_drift_verify.py",
     f"{PROD}/foundational-sprint-1274/lower_envelope_characteristic_atlas.py",
     f"{PROD}/foundational-sprint-1275/morse_filtered_characteristic_atlas.py",
+    f"{PROD}/foundational-sprint-1276/weighted_bellman_contraction_scout.py",
     f"{PROD}/foundational-sprint-1231/dimension_bound_algebra_verify.py",
     f"{PROD}/foundational-sprint-1233/master_ledger_verify.py",
     f"{REL}/normalization_concordance_verify.py",
@@ -267,6 +268,9 @@ def check_semantics() -> None:
     morse_selector = load(
         f"{PROD}/foundational-sprint-1275/morse-filtered-characteristic-atlas.json"
     )
+    weighted_contraction = load(
+        f"{PROD}/foundational-sprint-1276/weighted-bellman-contraction-scout.json"
+    )
     assert coupled["terminal_near_entry_closed"] is False
     assert coupled["universal_dimension_lower_bound_proved"] is False
     assert terminal["scalar_terminal_commonization_proved"] is False
@@ -286,6 +290,11 @@ def check_semantics() -> None:
     assert morse_selector["all_gates_pass"] is False
     assert morse_selector["gates"]["complete_coverage"] is False
     assert morse_selector["first_uncovered_coordinate"] == -0.9
+    assert weighted_contraction["all_gates_pass"] is False
+    assert weighted_contraction["gates"]["one_cycle_each"] is False
+    assert weighted_contraction["gates"]["weighted_contraction"] is True
+    assert weighted_contraction["gates"]["cycle_radius_below_point_nine"] is True
+    assert weighted_contraction["gates"]["weight_range_below_ten"] is True
 
 
 def replay() -> None:
