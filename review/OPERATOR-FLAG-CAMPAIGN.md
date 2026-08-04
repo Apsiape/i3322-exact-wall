@@ -38,6 +38,27 @@ The replacement campaign deliberately starts before packetization.
    Composing the two response maps reproduces the certified I3322 amplitude
    cocycle. The old skew product is therefore an exact action on a canonical
    operator filtration, not a packet artifact.
+7. **Operator-valued resolution (Sprint 1246).** Without any commutation,
+   congruence by a response multiplier replaces scalar resolution `tI` by the
+   anisotropic metric `tC^-2`. The scalar log-scale translation is its
+   commuting shadow.
+8. **Order-resolution event measure (Sprints 1247--1248).** Logarithmically
+   differentiating the soft-support filtration produces a positive measure on
+   contact order and resolution. Its total mass is exactly Schmidt rank, its
+   first vertical moment is the flag-localized log determinant, and every soft
+   flag is a rectangle of this one measure. Resolution truncation now exposes
+   the missing boundary flux rather than deleting it.
+9. **Square-root response transport (Sprint 1249).** A preregistered negative
+   control failed: `1/sqrt(t)` stability survived. Self-adjoint dilation then
+   proved
+
+   ```text
+   ||W_t(M)-W_t(N)||_HS
+   <=[3 sqrt(6)/(8 sqrt(t))]||M-N||_HS.
+   ```
+
+   Individual response debts therefore control all full event rectangles with
+   no Schmidt-basis choice and no response-multiplier norm.
 
 ## What is and is not new
 
@@ -47,7 +68,8 @@ regularized determinants and capacity are central in
 operator-algebra representations are used in
 [robust game-algebra self-testing](https://arxiv.org/abs/2411.03259) and
 [constant-sized unbounded-dimension self-tests](https://arxiv.org/abs/2103.01729).
-The general functional-calculus identities in Sprints 1240, 1242, and 1245
+The general functional-calculus identities in Sprints 1240, 1242, and
+1245--1249
 should not be advertised as new standalone mathematics.
 
 The I3322-specific assembly is the prospective contribution: its certified
@@ -66,13 +88,13 @@ theorem.
 
 ## Exact remaining gate
 
-Prove or refute a robust finite-order theorem of the form
+Prove or refute a robust finite-measure theorem of the form
 
 ```text
-two approximately transported decreasing soft flags
-+ nontrivial logarithmic resolution drift
-+ Schmidt rank at most d
-=> a response/contact boundary charge depending on d.
+two controlled response pushforwards of the event measure
++ nontrivial order-resolution skew drift
++ total event mass d and normalized first moment
+=> a charged boundary flux depending on d.
 ```
 
 Only after this is combined with Sprints 1208, 1232, and 1243 can a universal

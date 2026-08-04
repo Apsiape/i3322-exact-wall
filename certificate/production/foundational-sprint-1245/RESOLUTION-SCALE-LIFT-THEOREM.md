@@ -2,6 +2,9 @@
 
 Status: **exact operator lift of the amplitude cocycle**
 
+Sprint 1246 subsequently removes the commutation hypothesis by replacing
+scalar resolution `tI` with the exact operator-valued metric `tC^(-2)`.
+
 ## 1. Contact makes the Schmidt density decomposable
 
 At exact Bellman contact, the coefficient operator has block support only on

@@ -1,0 +1,17 @@
+{
+  "status": "response rectangle transport guard",
+  "fixtures": 10000,
+  "maximum_matrix_bound_ratio": 0.7419594933991432,
+  "maximum_trace_bound_ratio": 0.5797735734846317,
+  "minimum_multiplier_density_commutator": 3.015112918259346e-05,
+  "safe_square_root_constant": 0.9185586535436917,
+  "too_small_constant_violations": 6,
+  "gates": {
+    "matrix_transport_bound": true,
+    "rectangle_trace_bound": true,
+    "hostile_noncommutation": true,
+    "too_small_sqrt_t_constant_rejected": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "Individual response pushforwards are controlled on complete rectangles. The two-response skew-composition flux theorem remains open."
+}

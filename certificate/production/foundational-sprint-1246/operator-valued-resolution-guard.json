@@ -1,0 +1,12 @@
+{
+  "status": "operator-valued resolution guard",
+  "symbolic_commuting_residual": "0",
+  "wrong_scale_orientation_control": "rho*t*(c - 1)*(c + 1)*(c**2 + 1)/((c**2*rho + t)*(c**2*t + rho))",
+  "random_noncommuting_fixtures": 10000,
+  "maximum_left_identity_residual": 1.4592478486805068e-11,
+  "maximum_flag_trace_residual": 9.737100015172473e-12,
+  "maximum_right_identity_residual": 1.3413985570544546e-11,
+  "minimum_sampled_multiplier_density_commutator": 0.00016093828752434194,
+  "all_gates_pass": true,
+  "claim_boundary": "This verifies the exact noncommutative identity on hostile noncommuting fixtures. Relative Alice/Bob metric composition and finite-rank closure remain open."
+}

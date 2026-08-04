@@ -108,6 +108,10 @@ only after the independent verdict was assembled.
 - `certificate/production/foundational-sprint-1243/GRID-FREE-CONTACT-FLAG-THEOREM.md`
 - `certificate/production/foundational-sprint-1244/MIXED-FLAG-DISTANCE-THEOREM.md`
 - `certificate/production/foundational-sprint-1245/RESOLUTION-SCALE-LIFT-THEOREM.md`
+- `certificate/production/foundational-sprint-1246/OPERATOR-VALUED-RESOLUTION-THEOREM.md`
+- `certificate/production/foundational-sprint-1247/ORDER-RESOLUTION-EVENT-MEASURE.md`
+- `certificate/production/foundational-sprint-1248/RECTANGLE-RECONSTRUCTION-THEOREM.md`
+- `certificate/production/foundational-sprint-1249/RESPONSE-RECTANGLE-TRANSPORT.md`
 - `certificate/independent/dimension-necessity/BLIND-DIMENSION-RECONSTRUCTION.md`
 - `certificate/independent/dimension-necessity/POST-BLIND-ACCEPTANCE.md`
 - `certificate/release/v13-claim-contract.json`
@@ -156,6 +160,10 @@ python certificate/production/foundational-sprint-1242/regularized_schmidt_flag_
 python certificate/production/foundational-sprint-1243/grid_free_contact_flag_verify.py
 python certificate/production/foundational-sprint-1244/mixed_flag_distance_verify.py
 python certificate/production/foundational-sprint-1245/resolution_scale_lift_verify.py
+python certificate/production/foundational-sprint-1246/operator_valued_resolution_verify.py
+python certificate/production/foundational-sprint-1247/order_resolution_measure_verify.py
+python certificate/production/foundational-sprint-1248/rectangle_reconstruction_verify.py
+python certificate/production/foundational-sprint-1249/response_rectangle_transport_verify.py
 python certificate/release/normalization_concordance_verify.py
 python certificate/release/dimension_gap_audit.py
 python certificate/independent/arithmetic_selftest.py

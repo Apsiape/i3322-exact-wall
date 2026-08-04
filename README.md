@@ -31,16 +31,22 @@ subsequent coupled-sector repair forces a fixed amount of drift mass, but an
 exact shared-factor countermodel shows that scalar packet norms lose the
 multiplicity provenance needed at terminal near-entry.
 
-Sprints 1240--1245 now provide an operator-valued restart. The response
+Sprints 1240--1249 now provide an operator-valued restart. The response
 remainders have been lifted to two-sided correspondences of the complete
 Schmidt coefficient operator. Regularized Schmidt support gives a nested
 ordered-flag filtration; Bellman contact controls its averaged left/right
 mismatch without grids; and the amplitude cocycle acts exactly by translating
 the logarithmic resolution scale. A hostile doppelganger proves that marginal
 singular spectra alone remain insufficient, so a mixed flag/Wasserstein
-distance records the relative gluing of the two responses. The remaining gate
-is a robust finite-rank order-and-scale boundary theorem. The conditional
-constant ledger is retained as an open proof campaign, but this repository
+distance records the relative gluing of the two responses. Differentiating the
+filtration produces a canonical positive measure on ordered contact position
+and logarithmic Schmidt resolution: its total mass is exactly Schmidt rank,
+its first vertical moment is the flag-localized log-determinant potential, and
+every regularized flag is one of its rectangles. A hostile control also
+improved response stability from `1/t` to a dimension-free `1/sqrt(t)` law.
+The remaining gate is a two-response skew-composition flux theorem on this
+measure. The conditional constant ledger is retained as an open proof
+campaign, but this repository
 does **not** presently claim
 `D(epsilon)=Theta(log(1/epsilon))`.
 

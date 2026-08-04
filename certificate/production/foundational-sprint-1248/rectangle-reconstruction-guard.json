@@ -1,0 +1,18 @@
+{
+  "status": "rectangle reconstruction guard",
+  "fixtures": 1000,
+  "maximum_tail_quadrature_residual": 1.5287771049088406e-13,
+  "minimum_lower_bound_slack": 0.0,
+  "minimum_rank_upper_bound_slack": 9.66093592491557e-06,
+  "minimum_trace_upper_bound_slack": 4.7054760165567144e-08,
+  "minimum_wrong-tail_residual": 0.1625166807439205,
+  "gates": {
+    "upper_tail_reconstructs_soft_support": true,
+    "dimension_free_lower_mass": true,
+    "rank_upper_mass": true,
+    "trace_upper_mass": true,
+    "opposite_tail_rejected": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "Soft flags are exact rectangles of the event measure. The response-flux inequality needed for a universal dimension lower bound remains open."
+}

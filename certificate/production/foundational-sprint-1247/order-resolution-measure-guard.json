@@ -1,0 +1,23 @@
+{
+  "status": "order-resolution event-measure guard",
+  "fixtures": 250,
+  "scalar_integral": 0.9999999999999369,
+  "scalar_first_moment": -0.9942522733428685,
+  "expected_scalar_first_moment": -0.9942522733438669,
+  "maximum_rank_mass_residual": 5.329070518200751e-15,
+  "maximum_operator_support_residual": 3.946387896004147e-14,
+  "maximum_translation_residual": 1.576213700060856e-16,
+  "minimum_wrong-sign_residual": 1.3701999421800508e-05,
+  "maximum_unitary_covariance_residual": 3.1158426221950537e-15,
+  "gates": {
+    "scalar_unit_mass": true,
+    "scalar_log_first_moment": true,
+    "rank_mass": true,
+    "operator_support_mass": true,
+    "positive_translation_orientation": true,
+    "wrong_translation_orientation_rejected": true,
+    "unitary_covariance": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "The canonical measure and its exact commuting response action are verified. A quantitative I3322 finite-mass escape inequality is not yet proved."
+}

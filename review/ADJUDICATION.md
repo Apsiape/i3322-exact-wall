@@ -111,14 +111,18 @@ theorem. The release decision remains **HOLD**.
 
 ## Operator-valued replacement update
 
-Sprints 1240--1245 implement the first option without restoring the claim.
+Sprints 1240--1249 implement the first option without restoring the claim.
 They retain the full Schmidt coefficient operator, replace arbitrary cells by
 the complete nested contact flag, and identify the response cocycle with an
 exact translation of regularization scale. An exact doppelganger kills
 marginal determinant/singular-spectrum closure, while a mixed
 flag/Wasserstein distance records the relative response gluing that the scalar
-route lost.
+route lost. The filtration now lifts to a positive order-resolution event
+measure whose total mass is Schmidt rank; every soft flag is one of its
+rectangles. Individual response pushforwards obey a dimension-free
+`1/sqrt(t)` stability law.
 
-The remaining theorem is a robust finite-rank order-and-scale boundary law.
+The remaining theorem is a two-response skew-composition flux law on that
+finite measure.
 Until it is proved and independently reconstructed, the release decision and
 the maximal public statement are unchanged.

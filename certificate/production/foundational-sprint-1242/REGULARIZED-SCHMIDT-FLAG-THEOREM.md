@@ -87,6 +87,16 @@ Equations (9)--(10), combined with Sprint 1240's two response
 correspondences, control transported soft flags without choosing individual
 Schmidt vectors or resolving degenerate singular spaces.
 
+Sprint 1249 later strengthens (9) by applying scalar Lipschitz calculus to the
+self-adjoint dilation of `M`:
+
+```text
+||W_t(M)-W_t(N)||_HS
+ <=[3 sqrt(6)/(8 sqrt(t))]||M-N||_HS.               (10a)
+```
+
+This removes the operator-norm factor and replaces `1/t` by `1/sqrt(t)`.
+
 ## 4. The exact gate
 
 Sprint 1241 showed that marginal singular spectra cannot distinguish two
