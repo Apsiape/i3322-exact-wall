@@ -124,6 +124,12 @@ The replacement campaign deliberately starts before packetization.
     `y,u,a(y),-u` supplies the same prefix before and after both responses,
     losing at most the sum of source-contact and horizontal-response first
     moments divided by the grid width.
+25. **One-sided prefix flux (Sprint 1266).** Querying only cuts below the
+    selected core boundary makes every exterior contaminant an inbound
+    response crosser and every lost core interval an outbound crosser.  The
+    resulting boundary bill has coefficient `2B/g`, independent of the number
+    of occupied fibres; only the synchronized-prefix discrepancy pays the
+    linear rank factor.
 
 ## What is and is not new
 
@@ -165,9 +171,12 @@ canonical Alice--Bob order--resolution coupling
 => controlled monotone-fibre transport.
 ```
 
-Sprints 1260--1265 now construct the common carrier and remove cellwise
-cancellation. For every shared prefix the Alice and Bob response triangles
-have the same numerical middle set. What remains is an explicit finite-window
-integration of the Sprint-1249 response errors together with the source/output
-bad mass and the two vertical boundary bills. Until that ledger is derived and
+Sprints 1260--1266 now construct the common carrier, remove cellwise
+cancellation, and prevent the lower response flux from acquiring the prefix
+rank factor. For every shared prefix the Alice and Bob response triangles
+have the same numerical middle set. What remains is a cancellation-preserving
+localization of the full Sprint-1249 response rectangles to the address-good
+carrier. Bounding the discarded source, output, and shifted complements
+separately is not allowed: it would charge long cut intervals and erase the
+gain of Sprint 1266. Until that lemma and its final constant ledger are
 independently replayed, the public theorem boundary is unchanged.

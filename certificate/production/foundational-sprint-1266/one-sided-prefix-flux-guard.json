@@ -1,0 +1,17 @@
+{
+  "status": "exact-rational one-sided prefix-flux guard",
+  "fixtures": 10000,
+  "fixtures_with_nonzero_flux": 9825,
+  "minimum_master_slack": "0",
+  "hostile_prefix_energy": "0",
+  "hostile_flux": "2",
+  "gates": {
+    "random_exact_fixtures": true,
+    "boundary_branch_exercised": true,
+    "flux_is_necessary": true,
+    "registered_flux_repairs_hostile_fixture": true,
+    "flux_coefficient_independent_of_fibre_count": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "The lower cut flux is not multiplied by ordered-fibre count. Localization of full response rectangles to the common carrier remains open."
+}
