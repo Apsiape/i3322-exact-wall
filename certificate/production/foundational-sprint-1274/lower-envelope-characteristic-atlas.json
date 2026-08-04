@@ -1,0 +1,37 @@
+{
+  "status": "lower-envelope characteristic-atlas test",
+  "shooting_charts": 13,
+  "maximum_sheet_multiplicity": 10,
+  "minimum_selected_sheet_gap": 0.0,
+  "selected_predecessor_minimum_increment": -0.03820888712910919,
+  "roots": [
+    -0.8710011394201446,
+    -0.8706495344436199,
+    -0.8701850958338093,
+    -0.8699259670256748,
+    -0.8695726303644962,
+    -0.8693892844911872,
+    -0.8686868168679776,
+    -0.8683165305896068,
+    -0.8671677885688485,
+    -0.8668444685722614,
+    -0.8658597224358981,
+    -0.8654156117457616,
+    -0.8651823882768277,
+    -0.36770506384749413,
+    0.8143943371798013
+  ],
+  "maximum_root_difference": Infinity,
+  "maximum_F_disagreement": 0.19479120821201762,
+  "maximum_P_disagreement": 0.06654859232622878,
+  "gates": {
+    "complete_coverage": true,
+    "selected_predecessor_near_monotone": false,
+    "exactly_three_roots": false,
+    "registered_root_agreement": false,
+    "global_F_agreement": false,
+    "global_P_agreement": false
+  },
+  "all_gates_pass": false,
+  "claim_boundary": "This is a floating-point selector test. Passing would identify an interval-atlas strategy but would not prove Bellman envelope selection."
+}
