@@ -1,0 +1,13 @@
+{
+  "status": "log-resolution cut-flux guard",
+  "exact_rational_fixtures": 10000,
+  "minimum_average_bound_slack": "0",
+  "minimum_selected_cut_slack": "0",
+  "i3322_two_shift_bill": "4*log(13/2)",
+  "gates": {
+    "exact_average_flux_bound": true,
+    "cut_selection_bound": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "Full-measure vertical boundary flux is controlled by shifted-cut averaging. The grid-free order/contact closure inequality remains open."
+}

@@ -1,0 +1,15 @@
+{
+  "status": "exact event skew-action guard",
+  "random_involution_fixtures": 10000,
+  "wrong_orientation_detections": 68125,
+  "symbolic_i3322_cocycle_residual": "0",
+  "finite_order_sizes_checked": 9,
+  "gates": {
+    "exact_centre_telescope": true,
+    "wrong_response_order_detected": true,
+    "i3322_cocycle_orientation": true,
+    "finite_increasing_cycles_are_fixed": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "The exact two-response skew orientation and finite-support closure are guarded. No approximate flux or universal dimension lower bound is claimed."
+}

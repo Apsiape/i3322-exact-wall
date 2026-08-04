@@ -1,0 +1,19 @@
+{
+  "status": "exact-rational order-resolution dichotomy guard",
+  "fixtures": 50000,
+  "exact_order_coefficient": "2093/25",
+  "exact_vertical_coefficient": "169/100",
+  "certified_B_derivative_upper": "1183/100",
+  "certified_log_alpha_derivative_upper": "14",
+  "rounded_order_coefficient": "84",
+  "rounded_vertical_coefficient": "17/10",
+  "minimum_weighted_mean_identity_slack": "0",
+  "wrong_mean_detections": 49486,
+  "gates": {
+    "weighted_mean_cancellation": true,
+    "rounded_constants_dominate": true,
+    "generic_wrong_mean_rejected": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "The scalar coefficient ledger is exact. The global event-measure invariance and finite-rank boundary theorem remain open."
+}

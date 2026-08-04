@@ -111,7 +111,7 @@ theorem. The release decision remains **HOLD**.
 
 ## Operator-valued replacement update
 
-Sprints 1240--1249 implement the first option without restoring the claim.
+Sprints 1240--1255 implement the first option without restoring the claim.
 They retain the full Schmidt coefficient operator, replace arbitrary cells by
 the complete nested contact flag, and identify the response cocycle with an
 exact translation of regularization scale. An exact doppelganger kills
@@ -122,7 +122,17 @@ measure whose total mass is Schmidt rank; every soft flag is one of its
 rectangles. Individual response pushforwards obey a dimension-free
 `1/sqrt(t)` stability law.
 
-The remaining theorem is a two-response skew-composition flux law on that
-finite measure.
+The response composition, logarithmic boundary bill, and pointwise
+order-or-resolution wall are now explicit.  More importantly, the two event
+measures are marginals of a canonical positive joint coupling built from the
+coefficient operator, so the terminal-fork multiplicity provenance is no
+longer selected by hand.  An abstract finite monotone-flow theorem also
+closes the rank-only combinatorial gate: paths pay endpoints and fixed points
+pay resolution translations.
+
+The remaining theorem is the charged coarse descent from that continuous
+joint coupling to one finite decreasing flow.  It must bound every
+off-diagonal contact and rounding/interface term; it may not reinstate the
+retracted localized-response premise.
 Until it is proved and independently reconstructed, the release decision and
 the maximal public statement are unchanged.

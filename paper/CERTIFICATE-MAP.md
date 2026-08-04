@@ -112,6 +112,12 @@ only after the independent verdict was assembled.
 - `certificate/production/foundational-sprint-1247/ORDER-RESOLUTION-EVENT-MEASURE.md`
 - `certificate/production/foundational-sprint-1248/RECTANGLE-RECONSTRUCTION-THEOREM.md`
 - `certificate/production/foundational-sprint-1249/RESPONSE-RECTANGLE-TRANSPORT.md`
+- `certificate/production/foundational-sprint-1250/EXACT-EVENT-SKEW-ACTION.md`
+- `certificate/production/foundational-sprint-1251/LOG-RESOLUTION-CUT-FLUX.md`
+- `certificate/production/foundational-sprint-1252/QUANTITATIVE-ORDER-COALESCENCE.md`
+- `certificate/production/foundational-sprint-1253/ORDER-RESOLUTION-DICHOTOMY.md`
+- `certificate/production/foundational-sprint-1254/JOINT-ORDER-RESOLUTION-COUPLING.md`
+- `certificate/production/foundational-sprint-1255/FINITE-MONOTONE-SKEW-FLOW.md`
 - `certificate/independent/dimension-necessity/BLIND-DIMENSION-RECONSTRUCTION.md`
 - `certificate/independent/dimension-necessity/POST-BLIND-ACCEPTANCE.md`
 - `certificate/release/v13-claim-contract.json`
@@ -164,6 +170,12 @@ python certificate/production/foundational-sprint-1246/operator_valued_resolutio
 python certificate/production/foundational-sprint-1247/order_resolution_measure_verify.py
 python certificate/production/foundational-sprint-1248/rectangle_reconstruction_verify.py
 python certificate/production/foundational-sprint-1249/response_rectangle_transport_verify.py
+python certificate/production/foundational-sprint-1250/event_skew_action_verify.py
+python certificate/production/foundational-sprint-1251/log_cut_flux_verify.py
+python certificate/production/foundational-sprint-1252/order_coalescence_verify.py
+python certificate/production/foundational-sprint-1253/order_resolution_dichotomy_verify.py
+python certificate/production/foundational-sprint-1254/joint_order_resolution_verify.py
+python certificate/production/foundational-sprint-1255/finite_monotone_skew_flow_verify.py
 python certificate/release/normalization_concordance_verify.py
 python certificate/release/dimension_gap_audit.py
 python certificate/independent/arithmetic_selftest.py

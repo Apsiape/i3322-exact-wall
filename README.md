@@ -31,7 +31,7 @@ subsequent coupled-sector repair forces a fixed amount of drift mass, but an
 exact shared-factor countermodel shows that scalar packet norms lose the
 multiplicity provenance needed at terminal near-entry.
 
-Sprints 1240--1249 now provide an operator-valued restart. The response
+Sprints 1240--1255 now provide an operator-valued restart. The response
 remainders have been lifted to two-sided correspondences of the complete
 Schmidt coefficient operator. Regularized Schmidt support gives a nested
 ordered-flag filtration; Bellman contact controls its averaged left/right
@@ -44,8 +44,14 @@ and logarithmic Schmidt resolution: its total mass is exactly Schmidt rank,
 its first vertical moment is the flag-localized log-determinant potential, and
 every regularized flag is one of its rectangles. A hostile control also
 improved response stability from `1/t` to a dimension-free `1/sqrt(t)` law.
-The remaining gate is a two-response skew-composition flux theorem on this
-measure. The conditional constant ledger is retained as an open proof
+The two response actions now compose exactly on that measure; logarithmic cut
+averaging charges the boundary flux; and the quarter wall has been rewritten
+as a pointwise order-or-resolution displacement.  A new canonical positive
+joint lift retains the complete Alice/Bob multiplicity provenance, and an
+abstract finite monotone-flow theorem proves that rank-limited flows pay a
+path endpoint or a fixed-point translation.  The remaining gate is a charged
+coarse descent from the continuous joint coupling to that finite flow. The
+conditional constant ledger is retained as an open proof
 campaign, but this repository
 does **not** presently claim
 `D(epsilon)=Theta(log(1/epsilon))`.

@@ -59,6 +59,30 @@ The replacement campaign deliberately starts before packetization.
 
    Individual response debts therefore control all full event rectangles with
    no Schmidt-basis choice and no response-multiplier norm.
+10. **Exact skew action and boundary averaging (Sprints 1250--1251).** The two
+    response actions compose with the certified cocycle orientation on the
+    event measure.  Averaging logarithmic cuts charges every response boundary
+    crossing and supplies a cut with flux `O(d/H)`; no complement is deleted.
+11. **Quantitative order coalescence (Sprint 1252).** One-dimensional monotone
+    transport converts contact, response, and cut flux into a grid-free bound
+    for the retained integral of `|a(u)+u|`.
+12. **Order-or-resolution wall (Sprint 1253).** The weighted closure theorem
+    gives the pointwise scalar dichotomy
+
+    ```text
+    q_*-1/4 <=84|a(u)+u|+(17/10)|log C(u)|.
+    ```
+
+    This eliminates the need to identify response-specific Hilbert fibres.
+13. **Canonical joint lift (Sprint 1254).** The positive blocks
+    `||E_A sqrt(t)D(t+D*D)^-1 F_B||_HS^2` couple the complete Alice and Bob
+    event measures exactly.  Near contact, their quadratic order mismatch is
+    at most `360 epsilon_0/t^3`.  Multiplicity provenance is now carried by a
+    canonical positive object rather than chosen packet targets.
+14. **Finite monotone skew flow (Sprint 1255).** A finite decreasing two-flow
+    decomposes into paths and fixed points.  Paths pay an endpoint; fixed
+    points pay a vertical translation.  For at most `d` source atoms, the
+    abstract core-mass bill is explicit and polynomial in `d`.
 
 ## What is and is not new
 
@@ -88,15 +112,18 @@ theorem.
 
 ## Exact remaining gate
 
-Prove or refute a robust finite-measure theorem of the form
+The abstract finite-measure theorem is now proved.  The remaining typed gate
+is its descent from the continuous joint contact coupling:
 
 ```text
-two controlled response pushforwards of the event measure
-+ nontrivial order-resolution skew drift
-+ total event mass d and normalized first moment
-=> a charged boundary flux depending on d.
+canonical Alice--Bob order--resolution coupling
++ controlled off-diagonal contact cost
++ two response rectangle bounds
+=> one common finite decreasing coarse flow
+   with every rounding/interface term charged.
 ```
 
-Only after this is combined with Sprints 1208, 1232, and 1243 can a universal
-lower bound on `q_*-Q_d` be restored. The present work changes the architecture
-of the open problem; it does not change the public theorem boundary.
+Only after that descent is combined with the Sprint-1255 flow bill can a
+universal lower bound on `q_*-Q_d` be restored.  The present work closes the
+scalar, provenance, and abstract rank gates; it does not change the public
+theorem boundary.

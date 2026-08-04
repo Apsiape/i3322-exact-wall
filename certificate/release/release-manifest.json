@@ -1491,6 +1491,150 @@
       "sha256": "8cf834d9e4e6c1e4e5239fcf448c083962c4d56a6f11336579acb4dfe8ab7d92"
     },
     {
+      "path": "certificate/production/foundational-sprint-1250/event-skew-action-guard.json",
+      "canonical_bytes": 584,
+      "hash_mode": "canonical-lf",
+      "sha256": "2df3fcd5ea2e02b54b4f39848ca2fa9b6f53e4343d90fe75dc2655b4c1637eac"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1250/event_skew_action_verify.py",
+      "canonical_bytes": 3512,
+      "hash_mode": "canonical-lf",
+      "sha256": "11fa4264535227879b54103c0a3308d679efa3b39276ba4b4013dc6600aafd3a"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1250/EXACT-EVENT-SKEW-ACTION.md",
+      "canonical_bytes": 4002,
+      "hash_mode": "canonical-lf",
+      "sha256": "77f23d92e43f8db1f6ea1128f58fac8d1ff6e9168dea5cb3d4f27e6a8664e12f"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1250/PRE-REGISTRATION.md",
+      "canonical_bytes": 883,
+      "hash_mode": "canonical-lf",
+      "sha256": "6683d0caac283f3b508152077c86befd24e25d339ff8d7615dd2881c27651d29"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1251/log-cut-flux-guard.json",
+      "canonical_bytes": 474,
+      "hash_mode": "canonical-lf",
+      "sha256": "ae1f43d276fb2c4f50f820fffaeaa83b64d3cc1b34ff606185c6eb8f049f6584"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1251/LOG-RESOLUTION-CUT-FLUX.md",
+      "canonical_bytes": 3550,
+      "hash_mode": "canonical-lf",
+      "sha256": "359e6b84532db7e27b1fbe45a33ff7bd30c0e8c2ac631d1342a1406885daa672"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1251/log_cut_flux_verify.py",
+      "canonical_bytes": 3970,
+      "hash_mode": "canonical-lf",
+      "sha256": "220f4fac2c35005856cb3fe089e1887691383d37c702943575ddd2575df1d7c3"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1251/PRE-REGISTRATION.md",
+      "canonical_bytes": 1140,
+      "hash_mode": "canonical-lf",
+      "sha256": "2909f24d25a36f96aed4d42df6f8f6cc5a53f4d543be8df3bdd004b96e00dca1"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1252/order-coalescence-guard.json",
+      "canonical_bytes": 501,
+      "hash_mode": "canonical-lf",
+      "sha256": "85e215b991636c473aa61c2ca665190489b4f6932e5567c2aeca7f1de664d825"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1252/order_coalescence_verify.py",
+      "canonical_bytes": 3790,
+      "hash_mode": "canonical-lf",
+      "sha256": "e4ff2256d4d63cd21af97226f5782d436d5f047836d166b7f9326c79c3b59f0d"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1252/PRE-REGISTRATION.md",
+      "canonical_bytes": 871,
+      "hash_mode": "canonical-lf",
+      "sha256": "560dc0921b36e92c1e0e42439e62571ec401367c3fe9fb6a7f594da4c151a767"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1252/QUANTITATIVE-ORDER-COALESCENCE.md",
+      "canonical_bytes": 4021,
+      "hash_mode": "canonical-lf",
+      "sha256": "e1d0f925d1d5ff88fa08545b67b1a1cb8a2a2ff09cfccde66d5924a333569885"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1253/order-resolution-dichotomy-guard.json",
+      "canonical_bytes": 734,
+      "hash_mode": "canonical-lf",
+      "sha256": "6283d400bd8f3ef3b73e5235dbd41076a96a99e6bc99f2ff42ef24ecb12ca15b"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1253/ORDER-RESOLUTION-DICHOTOMY.md",
+      "canonical_bytes": 3404,
+      "hash_mode": "canonical-lf",
+      "sha256": "25e173f3125981a12de5b37306c10c5e636458fac8c54ca05b9860a729af1fe0"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1253/order_resolution_dichotomy_verify.py",
+      "canonical_bytes": 3908,
+      "hash_mode": "canonical-lf",
+      "sha256": "1cdc87c0b3c4ed0eb713588bee0e63c5b12fbb16922251b209668301fbc6ee44"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1253/PRE-REGISTRATION.md",
+      "canonical_bytes": 1026,
+      "hash_mode": "canonical-lf",
+      "sha256": "c2c5590ed6e8abd0a7421de21d00c0976ac1426a5ede88307b8cebe0c12a52b5"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1254/JOINT-ORDER-RESOLUTION-COUPLING.md",
+      "canonical_bytes": 3762,
+      "hash_mode": "canonical-lf",
+      "sha256": "b76bf1cd8e40ae4be68897a6fdec1fd56607e477da50a2ff0b01d9d9c1efe706"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1254/joint-order-resolution-guard.json",
+      "canonical_bytes": 642,
+      "hash_mode": "canonical-lf",
+      "sha256": "b0e35edc8441c78d5ed3c6dc33f53d00315885e73bafbf8f75d532ba16e2f565"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1254/joint_order_resolution_verify.py",
+      "canonical_bytes": 4375,
+      "hash_mode": "canonical-lf",
+      "sha256": "f5cce9ce078c9846ab8d5f3d684b95acf9a15fdb938c64d588b147d261824439"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1254/PRE-REGISTRATION.md",
+      "canonical_bytes": 964,
+      "hash_mode": "canonical-lf",
+      "sha256": "4315f42cc5631118cb274444b8e6c37da27b8cce11db588e1effa43b1bf38be0"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1255/finite-monotone-skew-flow-guard.json",
+      "canonical_bytes": 426,
+      "hash_mode": "canonical-lf",
+      "sha256": "bc2054cbfaf07cb07b879dbefcca998ec6a4912ab267dd68b64feedb4a83dc42"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1255/FINITE-MONOTONE-SKEW-FLOW.md",
+      "canonical_bytes": 4408,
+      "hash_mode": "canonical-lf",
+      "sha256": "99298e47ca2ed3101d191460f2e96999883cae52daca4f2524051d6f89d28c55"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1255/finite_monotone_skew_flow_verify.py",
+      "canonical_bytes": 4146,
+      "hash_mode": "canonical-lf",
+      "sha256": "09feac2c6054e6a12c4ad5207105bf1309d2031610398eb33ce7cb4d71734740"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1255/PRE-REGISTRATION.md",
+      "canonical_bytes": 1069,
+      "hash_mode": "canonical-lf",
+      "sha256": "b56876d0185ef26222a4fda6d9173efec446dc457bc18b7e9d6bb67d5283fa89"
+    },
+    {
       "path": "certificate/release/build_release_manifest.py",
       "canonical_bytes": 2437,
       "hash_mode": "canonical-lf",
@@ -1540,9 +1684,9 @@
     },
     {
       "path": "certificate/release/verify_release.py",
-      "canonical_bytes": 13884,
+      "canonical_bytes": 14872,
       "hash_mode": "canonical-lf",
-      "sha256": "0962294cfc4effde1e04813b2e87e4a6596497764559206f7bc37b02c04269a8"
+      "sha256": "49489435839eebb780f509ce953e8e175b75bc0ac393e0eed76bb9e8224d4323"
     },
     {
       "path": "CITATION.cff",
@@ -1570,9 +1714,9 @@
     },
     {
       "path": "paper/CERTIFICATE-MAP.md",
-      "canonical_bytes": 12326,
+      "canonical_bytes": 13335,
       "hash_mode": "canonical-lf",
-      "sha256": "fb155817a78e167c0e6347c9f2e69ef3d9f0faffd80560d01177562d3fc3fe85"
+      "sha256": "54732b1a8cb025b03bf6b90462047395d4f6c31146d7224a8553ef3bd08d3d70"
     },
     {
       "path": "paper/DIMENSION-GAP-STATUS.md",
@@ -1666,9 +1810,9 @@
     },
     {
       "path": "README.md",
-      "canonical_bytes": 6568,
+      "canonical_bytes": 7011,
       "hash_mode": "canonical-lf",
-      "sha256": "f5b365e1142d11672f020439802d01d8c40b1565fbb1c16a712183dce93861d4"
+      "sha256": "119d562c450e409a1c574385af4f1a961484ff513d6321590faea28953eeea8d"
     },
     {
       "path": "requirements.txt",
@@ -1678,9 +1822,9 @@
     },
     {
       "path": "review/ADJUDICATION.md",
-      "canonical_bytes": 5476,
+      "canonical_bytes": 6112,
       "hash_mode": "canonical-lf",
-      "sha256": "2044fe4ce1726bb46840513d5df546d3582c7b12129ddf7f23973622e450a8c2"
+      "sha256": "832abe861af96aea7fa85235312a654e21f904d75a51890bebcc925af5c7d8c6"
     },
     {
       "path": "review/LOCALIZATION-NO-GO.md",
@@ -1714,9 +1858,9 @@
     },
     {
       "path": "review/OPERATOR-FLAG-CAMPAIGN.md",
-      "canonical_bytes": 4920,
+      "canonical_bytes": 6452,
       "hash_mode": "canonical-lf",
-      "sha256": "fa8988828a6e49f624305485f40a30b791a5e986762d8a41db5c513e991e3404"
+      "sha256": "deadee0214b89aa6407751d902415e9ae76be83d962a95e366af120aaade3c63"
     },
     {
       "path": "review/POST-ADJUDICATION-COUPLED-SECTOR.md",
@@ -1731,6 +1875,6 @@
       "sha256": "a405ef962afdfc120b5c3f2901ca58e95e2ab3963e642fa73dc2022f2d280cfa"
     }
   ],
-  "file_count": 288,
+  "file_count": 312,
   "scope": "Custody manifest for selected published files. Analytic dependency closure is checked separately by verify_release.py and is not inferred from file enumeration alone."
 }

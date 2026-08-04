@@ -1,0 +1,16 @@
+{
+  "status": "hostile rectangular-matrix joint-coupling guard",
+  "fixtures": 2400,
+  "maximum_left_marginal_residual": 2.5395466701271578e-11,
+  "maximum_right_marginal_residual": 1.3696131356594301e-11,
+  "maximum_contact_identity_residual": 5.329232162475385e-10,
+  "maximum_norm_bound_ratio": 0.23485939120930877,
+  "gates": {
+    "left_marginal": true,
+    "right_marginal": true,
+    "contact_commutator_identity": true,
+    "registered_norm_bound": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "The matrix identities and conservative near-contact bound are guarded. The I3322 continuous-to-coarse descent is not proved."
+}

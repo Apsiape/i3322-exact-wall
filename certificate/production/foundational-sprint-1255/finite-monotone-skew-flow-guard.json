@@ -1,0 +1,12 @@
+{
+  "status": "exact-rational finite skew-flow adversary",
+  "fixtures": 25000,
+  "minimum_theorem_slack": "0",
+  "nontrivial_cycle_detections": 0,
+  "gates": {
+    "all_random_fixtures": true,
+    "increasing_graph_has_only_fixed_cycles": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "The abstract finite-flow inequality is guarded on exact-rational step-tail adversaries. I3322 coarse descent is not asserted."
+}

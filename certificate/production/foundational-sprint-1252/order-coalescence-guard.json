@@ -1,0 +1,13 @@
+{
+  "status": "quantitative order-coalescence guard",
+  "exact_rational_fixtures": 20000,
+  "minimum_wasserstein_identity_slack": "0",
+  "wrong_monotonicity_detections": 3519,
+  "i3322_lipschitz_constant": 20,
+  "gates": {
+    "decreasing_common_source_is_optimal": true,
+    "mixed_monotonicity_control_rejected": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "The decreasing-map transport identity and coalescence algebra are guarded. The amplitude/quarter-margin closure remains open."
+}
