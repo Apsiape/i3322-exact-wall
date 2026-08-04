@@ -10,8 +10,8 @@
 \newcommand{\B}{\mathcal B_{3322}}
 \newcommand{\id}{I}
 
-\title{A rigorously characterized $I_{3322}$ quantum wall\\
-and finite-dimensional nonattainment}
+\title{A rigorously characterized $I_{3322}$ quantum wall,\\
+spatial attainment, and finite-dimensional nonattainment}
 \author{Seth Douglas\\
 \small \href{mailto:apsiape@gmail.com}{apsiape@gmail.com}\quad
 \href{https://orcid.org/0009-0007-4708-3252}{ORCID: 0009-0007-4708-3252}}
@@ -29,19 +29,23 @@ q_*=0.250875384513976536\ldots,
 \quad
 q_*\in[0.250875384513976535514,0.250875384513976536486].
 \]
-A computer-assisted shooting argument produces a positive Bellman fixed point
-and finite tensor-product strategies approaching $q_*$.  A
+A computer-assisted shooting argument produces a positive Bellman fixed point,
+an $\ell^2(\mathbb Z)$ domain-wall eigenvector, and finite tensor-product
+strategies approaching $q_*$.  Installing the wall in the alternating
+P\'al--V\'ertesi projector blocks gives an explicit normal spatial strategy
+that attains $q_*$.  A
 representation-free operator certificate, obtained by geometrically combining
 a Bellman inequality with its reflected counterpart, gives the matching
 commuting-operator upper bound.  Equality on a finite joint spectrum forces
 two local decreasing transports to coincide.  Their amplitude compatibility
 then bounds every putative finite attaining component by $1/4$.  Since
 $q_*>1/4$, no finite-dimensional tensor-product or commuting-operator strategy
-attains the supremum.  The displayed decimal is a validated shooting zero,
+attains the supremum.  Thus the maximizing correlation lies in
+$C_{qs}(3,3;2,2)\setminus C_q(3,3;2,2)$.  The displayed decimal is a validated shooting zero,
 not an asserted elementary closed form.  As a corollary, the finite-dimensional
 quantum correlation set in the three-input binary scenario is not closed; this
 is the minimal bipartite binary-output scenario by input counts where
-nonclosure can occur.
+nonclosure and finite/spatial separation can occur.
 \end{abstract}
 
 \section{Statement of the result}
@@ -74,7 +78,8 @@ for which
 \omega_{\otimes}(\B)=\omega_{\rm c}(\B)=q_*.
 \]
 No finite-dimensional tensor-product strategy and no finite-dimensional
-commuting-operator strategy attains $q_*$.
+commuting-operator strategy attains $q_*$.  A normal vector state on
+$\ell^2(\mathbb Z)\otimes\ell^2(\mathbb Z)$ does attain $q_*$.
 \end{theorem}
 
 The NPA hierarchy \cite{NPA2008} and its recent ncKKT refinements
@@ -94,29 +99,34 @@ Very recent budgeted moment-selection work continues to use $I_{3322}$ as a
 hard NPA benchmark rather than supplying an exact theorem
 \cite{FloraEtAl2026}.
 
-\subsection{Minimal binary nonclosure}
+\subsection{Minimal binary spatial separation and nonclosure}
 
 Let $C_q(m_A,m_B;2,2)$ denote the set of finite-dimensional bipartite quantum
 correlations with $m_A$ and $m_B$ binary measurements.  We allow POVMs; this
-is equivalent to the finite-dimensional PVM convention.
+is equivalent to the finite-dimensional PVM convention.  Let $C_{qs}$ denote
+the same correlations with arbitrary spatial tensor-product Hilbert spaces
+and normal states.
 
-\begin{theorem}[Minimal binary nonclosure]\label{thm:nonclosure}
-The set $C_q(3,3;2,2)$ is not closed.  If either $m_A\leq2$ or $m_B\leq2$,
-then $C_q(m_A,m_B;2,2)$ is compact.  Hence $(3,3;2,2)$ is minimal, under the
-coordinatewise ordering of input counts, among bipartite binary-output
-scenarios with nonclosed finite-dimensional quantum correlation sets.
+\begin{theorem}[Minimal binary spatial separation]\label{thm:nonclosure}
+There is a correlation
+\[
+p_*\in C_{qs}(3,3;2,2)\setminus C_q(3,3;2,2)
+\quad\text{with}\quad I_{3322}(p_*)=q_*.
+\]
+Consequently $C_q(3,3;2,2)$ is not closed.  If either $m_A\leq2$ or
+$m_B\leq2$, then $C_q=C_{qs}$ and the common set is compact.  Hence
+$(3,3;2,2)$ is minimal, under the coordinatewise ordering of input counts,
+for both phenomena among bipartite binary-output scenarios.
 \end{theorem}
 
 \begin{proof}
-The certified Bellman datum supplies finite-dimensional correlations $p_n$
-whose $I_{3322}$ values converge to $q_*$.  The probability vectors lie in a
-fixed compact cube, so a subsequence converges to some $p_\infty$ in
-$\overline{C_q(3,3;2,2)}$.  Continuity gives
-$I_{3322}(p_\infty)=q_*$.  Theorem~\ref{thm:main} excludes every
-finite-dimensional attainer, so $p_\infty\notin C_q(3,3;2,2)$.  This proves
+Section~\ref{sec:spatial} constructs the asserted $p_*$ explicitly.
+Theorem~\ref{thm:main} excludes every finite-dimensional attainer, so
+$p_*\notin C_q$.  Since $C_{qs}\subseteq\overline{C_q}$, this also proves
 nonclosure.  The implication from I3322 nonattainment to this statement was
 explicitly anticipated by Dykema, Paulsen, and Prakash
-\cite{DykemaPaulsenPrakash2018}.
+\cite{DykemaPaulsenPrakash2018}; general $C_q\ne C_{qs}$ separations were
+proved by Coladangelo and Stark \cite{ColadangeloStark2018}.
 
 For minimality, consider $p\in C_q(2,m;2,2)$.  Simultaneously dilate Alice's
 two binary POVMs to two projections.  Jordan's lemma decomposes their common
@@ -130,17 +140,18 @@ C_q(2,m;2,2)=\operatorname{conv}(K_m),
 \]
 where $K_m$ is the compact set of qubit--qubit behaviors with the prescribed
 measurements.  The convex hull of a compact subset of a finite-dimensional
-space is compact.  More explicitly, the no-signaling affine dimension is
-$3m+2$, so Carath\'eodory reduces every behavior to at most $3m+3$ qubit
-blocks, giving local dimensions at most $6m+6$.  The argument with the parties
-interchanged proves the other case.  Related recent dimension bounds appear
-in \cite{Masanes2005,PanahiEtAl2025}.
+space is compact.  The standard inclusions
+$C_q\subseteq C_{qs}\subseteq\overline{C_q}$ then force $C_q=C_{qs}$.
+More explicitly, the no-signaling affine dimension is $3m+2$, so
+Carath\'eodory reduces every behavior to at most $3m+3$ qubit blocks, giving
+local dimensions at most $6m+6$.  The argument with the parties interchanged
+proves the other case.  Related recent dimension bounds appear in
+\cite{Masanes2005,PanahiEtAl2025}.
 \end{proof}
 
 The theorem is only a binary-output, bipartite setting-count statement.  It
 does not compare scenarios with more outputs, more parties, communication, or
-network causal structure.  It also does not decide whether an
-infinite-dimensional spatial strategy attains $q_*$.
+network causal structure.
 
 \section{Certified Bellman datum}
 
@@ -165,7 +176,14 @@ p(x)+F(u)\le q_*-d(x,u)                            \label{eq:bellman}
 \end{equation}
 for every $x,u\in[-1,1]$.  For each $u$, equality holds at the unique point
 $x=P(u)$.  Moreover, a sequence of finite-dimensional tensor-product
-strategies has Bell values converging to $q_*$.
+strategies has Bell values converging to $q_*$.  There also exist a profile
+$(c_j)_{j\in\mathbb Z}\subset(-1,1)$ and a positive normalized vector
+$\lambda=(\lambda_j)_{j\in\mathbb Z}\in\ell^2(\mathbb Z)$, with geometric
+tails, such that
+\begin{equation}
+H(c)\lambda=q_*\lambda,\qquad
+H_{jj}=d(c_j,c_{j+1}),\quad H_{j-1,j}=b(c_j).       \label{eq:wallEigen}
+\end{equation}
 \end{proposition}
 
 Equivalently, $F$ is a fixed point of
@@ -175,6 +193,63 @@ Equivalently, $F$ is a fixed point of
 \end{equation}
 The validated construction of Proposition~\ref{prop:bellman} is summarized in
 Section~\ref{sec:certificate}.
+
+\section{Normal spatial attainment}\label{sec:spatial}
+
+We now install the certified wall in the alternating block construction of
+P\'al and V\'ertesi \cite{PalVertesi2010}.  For $t\in[-1,1]$, set
+$s_t=\sqrt{1-t^2}$ and
+\begin{equation}
+P_A^\pm(t)=\frac12
+\begin{pmatrix}1-t&\pm s_t\\ \pm s_t&1+t\end{pmatrix},\quad
+P_B^\pm(t)=\frac12
+\begin{pmatrix}1+t&\pm s_t\\ \pm s_t&1-t\end{pmatrix},\quad
+R=\frac12\begin{pmatrix}1&1\\1&1\end{pmatrix}.   \label{eq:spatialBlocks}
+\end{equation}
+These are rank-one orthogonal projections.  On each local copy of
+$\ell^2(\mathbb Z)$, partition the standard basis into the two perfect
+matchings
+\[
+E_A=\{(2k-1,2k):k\in\mathbb Z\},\qquad
+E_B=\{(2k,2k+1):k\in\mathbb Z\}.
+\]
+On every edge $(j-1,j)\in E_A$, install
+\[
+A_1=P_A^-(c_j),\qquad A_2=P_A^+(c_j),\qquad B_3=R,
+\]
+and on every edge $(j-1,j)\in E_B$, install
+\[
+B_1=P_B^-(c_j),\qquad B_2=P_B^+(c_j),\qquad A_3=R.
+\]
+Each measurement is therefore an orthogonal direct sum of rank-one
+projections and defines a bounded projection on $\ell^2(\mathbb Z)$.
+
+Define the unit vector
+\begin{equation}
+\psi_*=\sum_{j\in\mathbb Z}\lambda_j e_j\otimes e_j
+\in\ell^2(\mathbb Z)\otimes\ell^2(\mathbb Z).      \label{eq:spatialState}
+\end{equation}
+This gives a normal vector state.  For the finite-band real matrices $M,N$
+used here,
+\[
+\langle\psi_*,M\otimes N\,\psi_*\rangle
+=\sum_{r,s}\lambda_r\lambda_s M_{rs}N_{rs}.
+\]
+In the present two-banded case all diagonal sums are dominated by
+$\sum_j\lambda_j^2$, while the neighbor sums converge absolutely by
+Cauchy--Schwarz.  Direct expansion of \eqref{eq:bell} and
+\eqref{eq:spatialBlocks} therefore gives
+\begin{align}
+\langle\psi_*,\B\psi_*\rangle
+&=\sum_j d(c_j,c_{j+1})\lambda_j^2
+  +\sum_j\sqrt{1-c_j^2}\,\lambda_{j-1}\lambda_j \notag\\
+&=\langle\lambda,H(c)\lambda\rangle=q_* .          \label{eq:spatialValue}
+\end{align}
+The first identity is independently guarded both on exact-rational open and
+endpoint-free fixtures and by a symbolic periodic reconstruction.  The last
+identity is \eqref{eq:wallEigen}.  Thus the correlation belongs to $C_{qs}$
+and attains the certified wall; finite-dimensional nonattainment places it
+outside $C_q$.
 
 \section{Geometric symmetrization}
 
@@ -372,7 +447,10 @@ function; and square-summable domain-wall tails whose finite truncations
 approach $q_*$.  Every computer-assisted item was also reconstructed with a
 separate \texttt{mpmath.iv} implementation and locally written complex
 intervals, without importing the Arb/FLINT production modules.  All gates pass
-and its enclosure overlaps the production result.  The certificate map and
+and its enclosure overlaps the production result.  The spatial block identity
+has two further independent guards: exact rational fixtures, including
+endpoint-free controls, and a symbolic polynomial reconstruction.  The
+certificate map and
 technical supplement give every script, margin, failed guard, and the exact
 independence contract.
 
@@ -380,10 +458,13 @@ independence contract.
 
 Theorem~\ref{thm:main} concerns one Bell functional.  It does not assert an
 elementary closed form for $q_*$, spatiality of arbitrary commuting
-correlations, or experimental accessibility of the limiting wall.  The proof
-is independent of any broader foundational interpretation.  The observed
-finite-carrier gaps are exponentially consistent with the plateau multiplier,
-but no quantitative device-independent dimension lower bound is claimed.
+correlations, uniqueness or self-testing of the maximizer, or experimental
+accessibility of the limiting wall.  It separates $C_q$ from $C_{qs}$ at this
+correlation but does not separate $C_{qs}$ from $C_{qa}$ or $C_{qa}$ from
+$C_{qc}$.  The proof is independent of any broader foundational
+interpretation.  The observed finite-carrier gaps are exponentially
+consistent with the plateau multiplier, but no quantitative device-independent
+dimension lower bound is claimed.
 
 \paragraph{Computational disclosure.}
 Frontier language models were used extensively for proof discovery,

@@ -11,12 +11,20 @@ q* = 0.250875384513976536...
 q* in [0.250875384513976535514, 0.250875384513976536486].
 ```
 
-Neither model has a finite-dimensional maximizer.
+Neither model has a finite-dimensional maximizer. The certified bi-infinite
+wall nevertheless defines an explicit normal vector-state maximizer on
+`ell^2(Z) tensor ell^2(Z)` through the alternating Pal--Vertesi projectors.
 
-Consequently, the finite-dimensional quantum correlation set
-`C_q(3,3;2,2)` is not closed. A separate Jordan-decomposition argument proves
-that every binary scenario with at most two inputs on either side is compact,
-so the three-input-per-party scenario is minimal by input counts.
+Consequently,
+
+```text
+C_q(3,3;2,2) != C_qs(3,3;2,2),
+```
+
+and `C_q(3,3;2,2)` is not closed. A separate Jordan-decomposition argument
+proves that every binary scenario with at most two inputs on either side has
+`C_q=C_qs` and is compact, so the three-input-per-party scenario is minimal by
+input counts for both phenomena.
 
 Archival identifiers: concept DOI
 [`10.5281/zenodo.21782008`](https://doi.org/10.5281/zenodo.21782008); frozen
@@ -26,9 +34,10 @@ Archival identifiers: concept DOI
 [`10.5281/zenodo.21782009`](https://doi.org/10.5281/zenodo.21782009).
 
 The result resolves the conjectural value and finite-dimensional
-nonattainment reported by Pal and Vertesi in 2010. It is not a claim of
-priority for general non-closure or finite/infinite-dimensional separation,
-which are known in other Bell scenarios.
+nonattainment reported by Pal and Vertesi in 2010, and certifies their
+infinite alternating construction as a spatial maximizer. It is not a claim
+of priority for that construction or for general finite/infinite-dimensional
+separation, which are known from earlier work.
 
 Mghirbi's July 2026 release
 [`10.5281/zenodo.21477901`](https://doi.org/10.5281/zenodo.21477901)
@@ -39,6 +48,7 @@ not the first exact certified bound for I3322.
 ## Paper
 
 - [Main manuscript](paper/manuscript.pdf)
+- [v1.2.0 release notes](paper/RELEASE-NOTES-v1.2.0.md)
 - [v1.1.0 release notes](paper/RELEASE-NOTES-v1.1.0.md)
 - [Technical supplement](paper/technical-supplement.pdf)
 - [Readable manuscript source](paper/MANUSCRIPT.md)

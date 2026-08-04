@@ -1,0 +1,14 @@
+{
+  "status": "symbolic endpoint-free I3322 spatial-carrier guard",
+  "carrier_sites": 4,
+  "contains_both_matching_parities": true,
+  "bell_minus_jacobi_remainder": "0",
+  "all_six_projection_remainders_zero": true,
+  "all_gates_pass": true,
+  "relations_used": [
+    "s0^2+c0^2-1=0",
+    "s1^2+c1^2-1=0",
+    "s2^2+c2^2-1=0",
+    "s3^2+c3^2-1=0"
+  ]
+}

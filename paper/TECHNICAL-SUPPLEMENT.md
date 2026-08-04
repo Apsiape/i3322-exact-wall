@@ -5,9 +5,9 @@
 [apsiape@gmail.com](mailto:apsiape@gmail.com)
 
 This supplement states the computer-assisted input used by *A rigorously
-characterized I3322 quantum wall and finite-dimensional nonattainment* at a
+characterized I3322 quantum wall, spatial attainment, and finite-dimensional nonattainment* at a
 level suitable for reproduction. The analytic operator certificate and the
-finite-support contradiction are in the main manuscript. No foundational
+finite-support contradiction and spatial construction are in the main manuscript. No foundational
 interpretation from the surrounding repository is used.
 
 ## S1. Arithmetic model and theorem boundary
@@ -255,6 +255,15 @@ The nonattainment proof separately has two exact symbolic implementations.
 This is method-independent internal reconstruction, not evidence about
 physical enactment or a claim that implementation diversity proves a theorem
 without the analytic arguments stated in the paper.
+
+The square-summable wall also defines a normal spatial attainer when installed
+directly in the Pal--Vertesi alternating blocks on `ell^2(Z)`. The local
+Bell-to-Jacobi identity has two additional guards: 24 exact-rational open and
+endpoint-free fixtures with wrong-matching controls, and an independent
+symbolic periodic reconstruction reduced only by the unit-circle relations.
+Both pass. Absolute convergence of the infinite expectation is analytic:
+diagonal terms are controlled by `||lambda||_2^2` and neighbor terms by
+Cauchy--Schwarz.
 
 The numerical finite-carrier sequence is consistent with
 `q_*-Q_n = Theta(R^{-n})`, with the fitted asymptotic exponent agreeing with

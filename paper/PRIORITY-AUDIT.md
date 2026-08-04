@@ -33,7 +33,9 @@ three-setting/two-outcome I3322 functional, that
 - Coladangelo and Stark (2018),
   [arXiv:1804.05116](https://arxiv.org/abs/1804.05116), prove an unconditional
   finite/infinite-dimensional separation by another construction and still
-  describe the corresponding I3322 property as conjectural.
+  describe the corresponding I3322 property as conjectural. Their notation
+  places finite-dimensional correlations in `C_q` and arbitrary spatial
+  tensor-product correlations in `C_qs`.
 - Slofstra (2017), [arXiv:1703.08618](https://arxiv.org/abs/1703.08618), proves
   general non-closure using a linear-system game. This establishes the general
   phenomenon, not the I3322 value or its finite-dimensional nonattainment.
@@ -89,11 +91,20 @@ evidence, but it does not turn a negative search into a priority theorem.
 
 ## Adjudication
 
-The package appears to close the Pal--Vertesi I3322 conjecture in a particularly
-small, canonical Bell scenario. It is not the first exact proof-carrying I3322
-enclosure; Mghirbi has that priority. Its distinct content is the matching true
-supremum, tensor--commuting equality for this functional, and
-finite-dimensional nonattainment. The likely value is therefore
+The package closes the Pal--Vertesi I3322 conjecture in a particularly small,
+canonical Bell scenario. Version 1.2 makes explicit a consequence latent in
+their construction and in this package's wall certificate: the geometrically
+decaying bi-infinite Schmidt vector and alternating projectors form a normal
+spatial maximizer. Together with nonattainment this gives an I3322 witness in
+`C_qs(3,3;2,2) \ C_q(3,3;2,2)`. The alternating construction is due to Pal and
+Vertesi, and the general separation `C_q != C_qs` is due to Coladangelo and
+Stark; neither is claimed as new here.
+
+The package is not the first exact proof-carrying I3322 enclosure; Mghirbi has
+that priority. Its distinct content is the matching true supremum,
+tensor--commuting equality for this functional, finite-dimensional
+nonattainment, and the resulting canonical minimal-input spatial separation.
+The likely value is therefore
 **canonicality and exact resolution**, not priority for exact bounding or for
 the general nonclosure phenomenon.
 

@@ -8,7 +8,7 @@
 \author{Seth Douglas\\
 \small \href{mailto:apsiape@gmail.com}{apsiape@gmail.com}\quad
 \href{https://orcid.org/0009-0007-4708-3252}{ORCID: 0009-0007-4708-3252}}
-\date{3 August 2026}
+\date{4 August 2026}
 
 \begin{document}
 \maketitle
@@ -17,7 +17,8 @@
 This supplement specifies the computer-assisted input to the exact $I_{3322}$
 wall theorem.  It records the characteristic map, hyperbolic plateau, analytic
 unstable-manifold enclosure, Miranda shooting box, exact contact covariance,
-global graph covers, boundary and exterior exclusions, and the boundary
+global graph covers, boundary and exterior exclusions, the spatial-realization
+guards, and the boundary
 between certified theorem and numerical conjecture.  All inequalities that
 carry the theorem are interval-certified; symbolic identities are exact.
 \end{abstract}
@@ -221,6 +222,31 @@ displayed 18-place value.  Its analytic-tail allowance is
 $2.2592334301979876\times10^{-25}$, only $1.020883\ldots$ times the production
 allowance.  This is method-independent internal reconstruction, not a claim
 about physical enactment or a substitute for the analytic proof.
+
+\section{Spatial realization audit}
+
+The sharpness certificate reconstructs one bi-infinite profile $c_j$ and a
+positive geometrically decaying eigenvector
+$\lambda\in\ell^2(\mathbb Z)$ satisfying $H(c)\lambda=q_*\lambda$.  This is
+stronger than the finite truncation statement used in the original release.
+Installing the P\'al--V\'ertesi alternating rank-one blocks directly on the two
+perfect matchings of $\mathbb Z$, and using
+\[
+ \psi=\sum_{j\in\mathbb Z}\lambda_j e_j\otimes e_j,
+\]
+produces a normal spatial strategy with Bell value
+$\langle\lambda,H(c)\lambda\rangle=q_*$.  The expansion is absolutely
+convergent: diagonal terms are controlled by $\|\lambda\|_2^2$ and neighbor
+terms by Cauchy--Schwarz.
+
+The local Bell-to-Jacobi identity has two new guards.  The production guard
+uses exact rational unit-circle points on twelve open and twelve endpoint-free
+fixtures; all identities vanish, while deleting one alternating receiver
+produces a nonzero residual in every control.  The independent guard expands
+the smallest periodic carrier containing both matching parities and computes
+the polynomial remainder modulo only $s_j^2+c_j^2-1$; the Bell residual and
+all projection residuals are zero.  Neither engine imports the interval or
+nonattainment implementation.
 
 \section{Dimension-rate boundary}
 

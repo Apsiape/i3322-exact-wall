@@ -1,0 +1,179 @@
+{
+  "status": "exact independent block-to-Jacobi spatial-realization guard",
+  "arithmetic": "fractions.Fraction only",
+  "open_fixtures": [
+    {
+      "dimension": 5,
+      "offset": 0,
+      "all_six_exact_projections": true,
+      "bell_minus_jacobi": "0",
+      "wrong_matching_residual_nonzero": "-10/119"
+    },
+    {
+      "dimension": 5,
+      "offset": 2,
+      "all_six_exact_projections": true,
+      "bell_minus_jacobi": "0",
+      "wrong_matching_residual_nonzero": "-5395/61642"
+    },
+    {
+      "dimension": 5,
+      "offset": 5,
+      "all_six_exact_projections": true,
+      "bell_minus_jacobi": "0",
+      "wrong_matching_residual_nonzero": "-299/980"
+    },
+    {
+      "dimension": 7,
+      "offset": 0,
+      "all_six_exact_projections": true,
+      "bell_minus_jacobi": "0",
+      "wrong_matching_residual_nonzero": "-46884/531505"
+    },
+    {
+      "dimension": 7,
+      "offset": 2,
+      "all_six_exact_projections": true,
+      "bell_minus_jacobi": "0",
+      "wrong_matching_residual_nonzero": "-5276/40885"
+    },
+    {
+      "dimension": 7,
+      "offset": 5,
+      "all_six_exact_projections": true,
+      "bell_minus_jacobi": "0",
+      "wrong_matching_residual_nonzero": "-1907/8788"
+    },
+    {
+      "dimension": 9,
+      "offset": 0,
+      "all_six_exact_projections": true,
+      "bell_minus_jacobi": "0",
+      "wrong_matching_residual_nonzero": "-10690/92463"
+    },
+    {
+      "dimension": 9,
+      "offset": 2,
+      "all_six_exact_projections": true,
+      "bell_minus_jacobi": "0",
+      "wrong_matching_residual_nonzero": "-4022/27195"
+    },
+    {
+      "dimension": 9,
+      "offset": 5,
+      "all_six_exact_projections": true,
+      "bell_minus_jacobi": "0",
+      "wrong_matching_residual_nonzero": "-1259/5460"
+    },
+    {
+      "dimension": 11,
+      "offset": 0,
+      "all_six_exact_projections": true,
+      "bell_minus_jacobi": "0",
+      "wrong_matching_residual_nonzero": "-84182/604469"
+    },
+    {
+      "dimension": 11,
+      "offset": 2,
+      "all_six_exact_projections": true,
+      "bell_minus_jacobi": "0",
+      "wrong_matching_residual_nonzero": "-934887/6044690"
+    },
+    {
+      "dimension": 11,
+      "offset": 5,
+      "all_six_exact_projections": true,
+      "bell_minus_jacobi": "0",
+      "wrong_matching_residual_nonzero": "-15036/62465"
+    }
+  ],
+  "no_endpoint_cyclic_fixtures": [
+    {
+      "dimension": 4,
+      "offset": 0,
+      "all_six_exact_projections": true,
+      "bell_minus_jacobi": "0",
+      "wrong_matching_residual_nonzero": "-932/2645"
+    },
+    {
+      "dimension": 4,
+      "offset": 3,
+      "all_six_exact_projections": true,
+      "bell_minus_jacobi": "0",
+      "wrong_matching_residual_nonzero": "-95924/332741"
+    },
+    {
+      "dimension": 4,
+      "offset": 6,
+      "all_six_exact_projections": true,
+      "bell_minus_jacobi": "0",
+      "wrong_matching_residual_nonzero": "-8272/13225"
+    },
+    {
+      "dimension": 6,
+      "offset": 0,
+      "all_six_exact_projections": true,
+      "bell_minus_jacobi": "0",
+      "wrong_matching_residual_nonzero": "-7156/24037"
+    },
+    {
+      "dimension": 6,
+      "offset": 3,
+      "all_six_exact_projections": true,
+      "bell_minus_jacobi": "0",
+      "wrong_matching_residual_nonzero": "-28699/68413"
+    },
+    {
+      "dimension": 6,
+      "offset": 6,
+      "all_six_exact_projections": true,
+      "bell_minus_jacobi": "0",
+      "wrong_matching_residual_nonzero": "-76912/157165"
+    },
+    {
+      "dimension": 8,
+      "offset": 0,
+      "all_six_exact_projections": true,
+      "bell_minus_jacobi": "0",
+      "wrong_matching_residual_nonzero": "-409992/1638325"
+    },
+    {
+      "dimension": 8,
+      "offset": 3,
+      "all_six_exact_projections": true,
+      "bell_minus_jacobi": "0",
+      "wrong_matching_residual_nonzero": "-6510744/15853945"
+    },
+    {
+      "dimension": 8,
+      "offset": 6,
+      "all_six_exact_projections": true,
+      "bell_minus_jacobi": "0",
+      "wrong_matching_residual_nonzero": "-30160128/79269725"
+    },
+    {
+      "dimension": 10,
+      "offset": 0,
+      "all_six_exact_projections": true,
+      "bell_minus_jacobi": "0",
+      "wrong_matching_residual_nonzero": "-202316/744185"
+    },
+    {
+      "dimension": 10,
+      "offset": 3,
+      "all_six_exact_projections": true,
+      "bell_minus_jacobi": "0",
+      "wrong_matching_residual_nonzero": "-2706287/7201421"
+    },
+    {
+      "dimension": 10,
+      "offset": 6,
+      "all_six_exact_projections": true,
+      "bell_minus_jacobi": "0",
+      "wrong_matching_residual_nonzero": "-73849112/180035525"
+    }
+  ],
+  "fixture_count": 24,
+  "all_gates_pass": true,
+  "claim_boundary": "This guards the local projector and Bell-to-Jacobi identities. The certified bi-infinite profile, ell2 tail, and eigen-equation remain analytic inputs from Sprint 1195."
+}

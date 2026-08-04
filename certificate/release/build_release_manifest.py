@@ -33,7 +33,9 @@ def published_files() -> list[Path]:
         path for path in files
         if path.name not in EXCLUDED_NAMES
         and not any(part in EXCLUDED_PARTS for part in path.parts)
-        and path.suffix.lower() not in {".pyc", ".aux", ".bbl", ".blg", ".log", ".out"}
+        and path.suffix.lower() not in {
+            ".pyc", ".aux", ".bbl", ".blg", ".log", ".out", ".fls", ".fdb_latexmk"
+        }
     )
 
 

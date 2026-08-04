@@ -1,5 +1,5 @@
 {
-  "title": "A rigorously characterized I3322 quantum wall and finite-dimensional nonattainment",
+  "title": "A rigorously characterized I3322 quantum wall, spatial attainment, and finite-dimensional nonattainment",
   "upload_type": "publication",
   "publication_type": "preprint",
   "access_right": "open",
@@ -10,7 +10,7 @@
       "orcid": "0009-0007-4708-3252"
     }
   ],
-  "description": "The tensor-product and commuting-operator suprema of the canonical I3322 Bell functional are identified with a rigorously characterized domain-wall constant, and neither model has a finite-dimensional maximizer. Consequently C_q(3,3;2,2) is nonclosed. A separate Jordan--Schmidt--Caratheodory argument proves that every bipartite binary-output scenario with at most two inputs on either side is compact, making the 3-by-3 scenario minimal by input counts. The release includes two independently implemented interval reconstructions and exact analytic audits.",
+  "description": "The tensor-product and commuting-operator suprema of the canonical I3322 Bell functional are identified with a rigorously characterized domain-wall constant. A normal spatial strategy on ell^2(Z) tensor ell^2(Z) attains the value, while no finite-dimensional strategy does, proving C_q(3,3;2,2) != C_qs(3,3;2,2) and nonclosure of C_q. A Jordan--Schmidt--Caratheodory argument makes the 3-by-3 scenario minimal by bipartite binary input counts. The release includes independent interval and symbolic reconstructions.",
   "keywords": [
     "Bell inequalities",
     "I3322",
@@ -18,6 +18,8 @@
     "commuting operators",
     "computer-assisted proof",
     "nonattainment",
+    "quantum spatial correlations",
+    "Cq versus Cqs",
     "nonclosed quantum correlations",
     "minimal Bell scenario"
   ],

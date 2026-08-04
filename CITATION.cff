@@ -1,23 +1,23 @@
 cff-version: 1.2.0
 message: "If you use this theorem package or its certificates, please cite this work."
-title: "A rigorously characterized I3322 quantum wall and finite-dimensional nonattainment"
+title: "A rigorously characterized I3322 quantum wall, spatial attainment, and finite-dimensional nonattainment"
 type: article
 authors:
   - given-names: Seth
     family-names: Douglas
     email: apsiape@gmail.com
     orcid: "https://orcid.org/0009-0007-4708-3252"
-version: 1.1.0
-doi: 10.5281/zenodo.21782527
+version: 1.2.0
+doi: 10.5281/zenodo.21782008
 license: CC-BY-4.0
 repository-code: "https://github.com/Apsiape/i3322-exact-wall"
-url: "https://doi.org/10.5281/zenodo.21782527"
+url: "https://doi.org/10.5281/zenodo.21782008"
 abstract: >-
   The tensor-product and commuting-operator suprema of the canonical I3322
   Bell functional are identified with a rigorously characterized domain-wall
-  constant, and neither model has a finite-dimensional maximizer. Consequently,
-  C_q(3,3;2,2) is nonclosed and is minimal by input counts among bipartite
-  binary-output scenarios where nonclosure can occur.
+  constant. A normal spatial strategy attains the value, while no
+  finite-dimensional strategy does. Consequently C_q(3,3;2,2) differs from
+  C_qs(3,3;2,2), and the scenario is minimal by bipartite binary input counts.
 keywords:
   - Bell inequalities
   - I3322
@@ -25,14 +25,16 @@ keywords:
   - commuting operators
   - computer-assisted proof
   - nonattainment
+  - quantum spatial correlations
+  - Cq versus Cqs
   - nonclosed quantum correlations
   - minimal Bell scenario
 preferred-citation:
   type: article
-  title: "A rigorously characterized I3322 quantum wall and finite-dimensional nonattainment"
+  title: "A rigorously characterized I3322 quantum wall, spatial attainment, and finite-dimensional nonattainment"
   authors:
     - given-names: Seth
       family-names: Douglas
       orcid: "https://orcid.org/0009-0007-4708-3252"
   year: 2026
-  doi: 10.5281/zenodo.21782527
+  doi: 10.5281/zenodo.21782008
