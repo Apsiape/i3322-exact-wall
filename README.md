@@ -110,8 +110,14 @@ differ by `0.25235` against a `0.005` allowance because nearby trajectories
 spend different numbers of iterates at a locally expanding negative
 bottleneck.  The weighted-norm route is therefore unresolved, not viable, and
 the next gate is to distinguish a true parabolic contact from a strict transit
-gap in a higher-resolution continuous reconstruction.  No sampled contraction
-is promoted to a theorem. The
+gap in a higher-resolution continuous reconstruction.  A memory-safe ordered
+lower-envelope engine now matches the dense operator to `8.9e-16` and extends
+the ladder to 12,801 nodes.  The negative transit gap falls to `5.46e-5` while
+the local multiplier remains `1.162`, meeting a preregistered
+parabolic-contact-consistent classification.  This is evidence that the
+contraction architecture is structurally obstructed, but neither the limiting
+contact nor the obstruction is claimed without interval certification.  No
+sampled contraction is promoted to a theorem. The
 conditional constant ledger is retained as an open proof
 campaign, but this repository
 does **not** presently claim

@@ -115,6 +115,8 @@ def reconstruct(node_count: int) -> dict:
         "iterations": iteration,
         "final_delta": delta,
         "sample": sample,
+        "grid": grid,
+        "F_values": f,
         "K": K,
         "chi": chi,
         "D": D,
@@ -153,7 +155,8 @@ def public(row: dict) -> dict:
     return {
         key: value for key, value in row.items()
         if key not in {
-            "sample", "K", "chi", "D", "F_callable", "P_callable", "P_profile"
+            "sample", "grid", "F_values", "K", "chi", "D", "F_callable",
+            "P_callable", "P_profile"
         }
     }
 

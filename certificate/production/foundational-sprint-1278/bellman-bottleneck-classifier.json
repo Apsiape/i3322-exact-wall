@@ -1,0 +1,45 @@
+{
+  "status": "memory-safe high-resolution Bellman bottleneck classifier",
+  "dense_hull_agreement": {
+    "maximum_F_disagreement": 8.881784197001252e-16,
+    "discrete_owner_disagreements": 0
+  },
+  "resolutions": [
+    {
+      "nodes": 3201,
+      "iterations": 148,
+      "final_delta": 9.131806422146838e-12,
+      "minimum_gap": 0.0003370124346769865,
+      "minimum_gap_coordinate": -0.8780240685551174,
+      "predecessor_at_minimum": -0.8776870561204404,
+      "bottleneck_multiplier": 1.159060257691851
+    },
+    {
+      "nodes": 6401,
+      "iterations": 146,
+      "final_delta": 8.927747430220734e-12,
+      "minimum_gap": 0.00037044488060711256,
+      "minimum_gap_coordinate": -0.877990102644616,
+      "predecessor_at_minimum": -0.8776196577640089,
+      "bottleneck_multiplier": 1.1586938175613413
+    },
+    {
+      "nodes": 12801,
+      "iterations": 149,
+      "final_delta": 9.833911462919787e-12,
+      "minimum_gap": 5.4616959234254914e-05,
+      "minimum_gap_coordinate": -0.8782315597783554,
+      "predecessor_at_minimum": -0.8781769428191212,
+      "bottleneck_multiplier": 1.161752882528735
+    }
+  ],
+  "gap_12801_over_gap_6401": 0.14743612908010656,
+  "classification": "parabolic-contact consistent",
+  "gates": {
+    "hull_reproduces_dense_fixed_point": true,
+    "all_measured_transit_gaps_positive": true,
+    "all_bottleneck_multipliers_above_one_point_one": true
+  },
+  "all_instrument_gates_pass": true,
+  "claim_boundary": "The hull equivalence is a floating-point implementation check. The bottleneck classification is numerical evidence only and is not a continuum Bellman theorem."
+}

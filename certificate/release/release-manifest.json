@@ -2032,9 +2032,9 @@
     },
     {
       "path": "certificate/production/foundational-sprint-1272/normalization_defect_geometry_scout.py",
-      "canonical_bytes": 7173,
+      "canonical_bytes": 7250,
       "hash_mode": "canonical-lf",
-      "sha256": "8e76ac8422967424dac829931689363a1f072b82d1f23e2893ccedded82049bd"
+      "sha256": "9a1a90cdb8cabee834417085273e7bd025c6ed6112c8826b5bbd79c8215cbee2"
     },
     {
       "path": "certificate/production/foundational-sprint-1272/PRE-REGISTRATION.md",
@@ -2163,6 +2163,30 @@
       "sha256": "65ec059014ffa084b12df6a2fafbcf5f530149b4b3884a3eefe222b17aac330d"
     },
     {
+      "path": "certificate/production/foundational-sprint-1278/bellman-bottleneck-classifier.json",
+      "canonical_bytes": 1626,
+      "hash_mode": "canonical-lf",
+      "sha256": "f20bdb7a7b1913ace151d89b31f00a4b4dbf9105c0b26d1e337228388c14385f"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1278/BELLMAN-BOTTLENECK-CLASSIFIER.md",
+      "canonical_bytes": 2635,
+      "hash_mode": "canonical-lf",
+      "sha256": "118e59c35f54f6b9753b0d4397426b341eeda47d5e39fb6a1c1a4d6c9071d3e8"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1278/bellman_bottleneck_classifier.py",
+      "canonical_bytes": 6876,
+      "hash_mode": "canonical-lf",
+      "sha256": "963a70afbd42cdcf44f45c2b029b34a7ea8d07d6c5dc421104fd3772f1ebd580"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1278/PRE-REGISTRATION.md",
+      "canonical_bytes": 1619,
+      "hash_mode": "canonical-lf",
+      "sha256": "f4f9eb93f6c3529a391005ff37e49f5718a7115c79923073fd796758a5dbf666"
+    },
+    {
       "path": "certificate/release/build_release_manifest.py",
       "canonical_bytes": 2437,
       "hash_mode": "canonical-lf",
@@ -2212,9 +2236,9 @@
     },
     {
       "path": "certificate/release/verify_release.py",
-      "canonical_bytes": 20477,
+      "canonical_bytes": 21089,
       "hash_mode": "canonical-lf",
-      "sha256": "6109df8e8995372dc32e0766014437448042360ecfc58d4bbab56a79c31372bf"
+      "sha256": "9758370a9f594653fb6cab453682ed61ddff3dc59f4c5d367b7d3584c9582206"
     },
     {
       "path": "CITATION.cff",
@@ -2338,9 +2362,9 @@
     },
     {
       "path": "README.md",
-      "canonical_bytes": 11531,
+      "canonical_bytes": 11994,
       "hash_mode": "canonical-lf",
-      "sha256": "d09e40565999d05f440a3cb61ff00338064c89e8ca4162537b50c08596aa11e3"
+      "sha256": "5942c6fd9698934961df717d740ea37dbd4005a5d33fee91b8adc6ccf6e2a2c2"
     },
     {
       "path": "requirements.txt",
@@ -2386,9 +2410,9 @@
     },
     {
       "path": "review/OPERATOR-FLAG-CAMPAIGN.md",
-      "canonical_bytes": 17302,
+      "canonical_bytes": 18272,
       "hash_mode": "canonical-lf",
-      "sha256": "bfc9f49b4140509aa84da880ac0f4c05ad575a1c7d8a22b20a0b8c015958ba62"
+      "sha256": "b2e97acae6b154a053ae62644243b3dd5dd5fe7a784f2a784724492820651f2c"
     },
     {
       "path": "review/POST-ADJUDICATION-COUPLED-SECTOR.md",
@@ -2403,6 +2427,6 @@
       "sha256": "a405ef962afdfc120b5c3f2901ca58e95e2ab3963e642fa73dc2022f2d280cfa"
     }
   ],
-  "file_count": 400,
+  "file_count": 404,
   "scope": "Custody manifest for selected published files. Analytic dependency closure is checked separately by verify_release.py and is not inferred from file enumeration alone."
 }

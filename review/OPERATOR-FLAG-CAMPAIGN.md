@@ -208,6 +208,16 @@ The replacement campaign deliberately starts before packetization.
     downgrades the weighted-norm route from viable to unresolved until a
     memory-safe continuous reconstruction decides whether the limiting map
     has a parabolic contact or a strictly positive transit gap.
+37. **Negative bottleneck classifier (Sprint 1278).** A monotone convex-hull
+    engine exploits the Bellman candidates' ordered affine slopes and matches
+    the old dense 3201-node fixed point to `8.9e-16` with zero owner
+    disagreements.  It then reaches 12,801 nodes without a quadratic memory
+    matrix.  The negative transit gap falls from `3.70e-4` at 6,401 nodes to
+    `5.46e-5` at 12,801, a ratio of `0.147`, while the bottleneck multiplier
+    stays above `1.158`.  This satisfies the preregistered
+    parabolic-contact-consistent horn.  It is numerical evidence, not a
+    continuum fixed-point theorem; if certified, it would obstruct every
+    bounded positive weighted-sup contraction on the one-point orbit.
 
 ## What is and is not new
 
@@ -276,4 +286,7 @@ Sprint 1276 identifies a possible norm—a Lyapunov-weighted sup norm built from
 predecessor history rather than a constant-width barrier—but Sprint 1277
 shows that its canonical continuous candidate is resolution-unstable near the
 negative bottleneck.  The next proof gate is therefore the bottleneck itself,
-not intervalization of the unstable weight.
+not intervalization of the unstable weight.  Sprint 1278's higher-resolution
+ladder selects the parabolic-contact-consistent horn, so the immediate task is
+an independent refinement attack followed by interval contact certification;
+the contraction route must remain demoted meanwhile.

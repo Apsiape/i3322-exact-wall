@@ -101,6 +101,7 @@ REPLAY = [
     f"{PROD}/foundational-sprint-1275/morse_filtered_characteristic_atlas.py",
     f"{PROD}/foundational-sprint-1276/weighted_bellman_contraction_scout.py",
     f"{PROD}/foundational-sprint-1277/continuous_predecessor_debt_scout.py",
+    f"{PROD}/foundational-sprint-1278/bellman_bottleneck_classifier.py",
     f"{PROD}/foundational-sprint-1231/dimension_bound_algebra_verify.py",
     f"{PROD}/foundational-sprint-1233/master_ledger_verify.py",
     f"{REL}/normalization_concordance_verify.py",
@@ -275,6 +276,9 @@ def check_semantics() -> None:
     predecessor_debt = load(
         f"{PROD}/foundational-sprint-1277/continuous-predecessor-debt-scout.json"
     )
+    bottleneck = load(
+        f"{PROD}/foundational-sprint-1278/bellman-bottleneck-classifier.json"
+    )
     assert coupled["terminal_near_entry_closed"] is False
     assert coupled["universal_dimension_lower_bound_proved"] is False
     assert terminal["scalar_terminal_commonization_proved"] is False
@@ -304,6 +308,12 @@ def check_semantics() -> None:
         "coarse_fine_h_uniform_disagreement_below_five_e_minus_three"
     ] is False
     assert predecessor_debt["maximum_coarse_fine_h_disagreement"] > 0.25
+    assert bottleneck["all_instrument_gates_pass"] is True
+    assert bottleneck["classification"] == "parabolic-contact consistent"
+    assert bottleneck["dense_hull_agreement"]["maximum_F_disagreement"] < 1e-14
+    assert bottleneck["dense_hull_agreement"]["discrete_owner_disagreements"] == 0
+    assert bottleneck["resolutions"][-1]["minimum_gap"] < 1e-4
+    assert bottleneck["resolutions"][-1]["bottleneck_multiplier"] > 1.16
     assert weighted_contraction["gates"]["cycle_radius_below_point_nine"] is True
     assert weighted_contraction["gates"]["weight_range_below_ten"] is True
 
