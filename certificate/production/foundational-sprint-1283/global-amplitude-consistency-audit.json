@@ -1,0 +1,61 @@
+{
+  "status": "global Bellman amplitude consistency audit",
+  "orders": [
+    {
+      "series_order": 12,
+      "charts": 18,
+      "transitions_checked": 42806,
+      "maximum_raw_local_Bellman_residual": 3.885780586188048e-16,
+      "maximum_target_overlap_spread": 1.1657341758564144e-15,
+      "maximum_global_source_mismatch": 0.00016248590950707076,
+      "maximum_mismatch_source": -0.008645241611309307,
+      "maximum_mismatch_target": -0.6368936077177108,
+      "maximum_mismatch_chart_kind": "reflected",
+      "local_source_value_at_maximum": 0.5010499328227755,
+      "assembled_source_value_at_maximum": 0.5012124187322826,
+      "mismatch_ninety_ninth_percentile": 0.00015176174148788223,
+      "mismatch_median": 1.1962653090336062e-13
+    },
+    {
+      "series_order": 14,
+      "charts": 18,
+      "transitions_checked": 42806,
+      "maximum_raw_local_Bellman_residual": 3.885780586188048e-16,
+      "maximum_target_overlap_spread": 1.1657341758564144e-15,
+      "maximum_global_source_mismatch": 0.00016248590950707076,
+      "maximum_mismatch_source": -0.008645241611309307,
+      "maximum_mismatch_target": -0.6368936077177108,
+      "maximum_mismatch_chart_kind": "reflected",
+      "local_source_value_at_maximum": 0.5010499328227755,
+      "assembled_source_value_at_maximum": 0.5012124187322826,
+      "mismatch_ninety_ninth_percentile": 0.00015176174148788223,
+      "mismatch_median": 1.1962653090336062e-13
+    },
+    {
+      "series_order": 16,
+      "charts": 18,
+      "transitions_checked": 42806,
+      "maximum_raw_local_Bellman_residual": 3.885780586188048e-16,
+      "maximum_target_overlap_spread": 1.1657341758564144e-15,
+      "maximum_global_source_mismatch": 0.00016248590950707076,
+      "maximum_mismatch_source": -0.008645241611309307,
+      "maximum_mismatch_target": -0.6368936077177108,
+      "maximum_mismatch_chart_kind": "reflected",
+      "local_source_value_at_maximum": 0.5010499328227755,
+      "assembled_source_value_at_maximum": 0.5012124187322826,
+      "mismatch_ninety_ninth_percentile": 0.00015176174148788223,
+      "mismatch_median": 1.1962653090336062e-13
+    }
+  ],
+  "maximum_mismatch_ratios": [
+    1.0,
+    1.0
+  ],
+  "classification": "persistent global mismatch",
+  "gates": {
+    "all_raw_local_Bellman_residuals_below_one_e_minus_twelve": true,
+    "all_target_overlap_spreads_below_one_e_minus_twelve": true
+  },
+  "all_instrument_gates_pass": true,
+  "claim_boundary": "This is a multi-order floating-point persistence audit. A theorem gap requires an Arb interval exclusion of zero at a typed transition."
+}

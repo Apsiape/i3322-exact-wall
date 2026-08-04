@@ -257,6 +257,16 @@ The replacement campaign deliberately starts before packetization.
     reversal and global Bellman normalization are different data types.  The
     interval campaign must carry chart normalization transitions explicitly;
     local reversible amplitudes cannot be inserted into the global drift.
+42. **Global amplitude consistency audit (Sprint 1283).** Across
+    parameterization orders 12, 14, and 16, 42,806 raw transitions satisfy
+    local Bellman equality to `3.9e-16` and target overlaps agree to
+    `1.2e-15`, yet reflected source amplitudes disagree with the assembled
+    global target profile by `1.624859e-4` at every order.  The registered
+    persistent-mismatch horn lands exactly.  This identifies an unchecked,
+    potentially load-bearing normalization gate in the aligned-wall theorem
+    assembly.  No public theorem is retracted on floating evidence alone; an
+    Arb matched-coordinate exclusion is now mandatory and precedes all drift
+    work.
 
 ## What is and is not new
 
@@ -342,3 +352,7 @@ the graph alone is insufficient because its local reversible amplitude is not
 the globally selected Bellman normalization.  The next construction is a
 globally anchored interval atlas with explicit scalar transition constants,
 checked against Bellman contact before any zero count.
+Sprint 1283 shows that this is not optional bookkeeping: the existing local
+assembly has a stable `1.62e-4` source/target amplitude defect.  The immediate
+critical path is an Arb adjudication of that defect, not construction of the
+normalization atlas under an unverified premise.

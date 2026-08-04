@@ -139,7 +139,12 @@ differ by `1.15e-3`, shifting the outer drift root by `1.77e-3`.  The local
 atlas also misses Bellman contact by `1.62e-4`, versus `2.97e-8` for the global
 iteration.  Thus the exact graph must be equipped with explicitly certified
 global normalization transitions before it can support the interval root
-count; reversible local amplitudes are not enough. The
+count; reversible local amplitudes are not enough.  A three-order consistency
+audit then finds a persistent `1.624859e-4` reflected source/target amplitude
+mismatch despite `3.9e-16` raw Bellman residuals and `1.2e-15` target overlap
+agreement.  This exposes an unchecked normalization gate in the aligned-wall
+certificate stack.  It is not yet a theorem retraction: an Arb
+matched-coordinate exclusion is the immediate adjudication gate. The
 conditional constant ledger is retained as an open proof
 campaign, but this repository
 does **not** presently claim

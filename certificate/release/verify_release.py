@@ -106,6 +106,7 @@ REPLAY = [
     f"{PROD}/foundational-sprint-1280/algebraic_bellman_contact_verify.py",
     f"{PROD}/foundational-sprint-1281/reversed_plateau_obstruction_verify.py",
     f"{PROD}/foundational-sprint-1282/bellman_selector_collision.py",
+    f"{PROD}/foundational-sprint-1283/global_amplitude_consistency_audit.py",
     f"{PROD}/foundational-sprint-1231/dimension_bound_algebra_verify.py",
     f"{PROD}/foundational-sprint-1233/master_ledger_verify.py",
     f"{REL}/normalization_concordance_verify.py",
@@ -295,6 +296,9 @@ def check_semantics() -> None:
     selector_collision = load(
         f"{PROD}/foundational-sprint-1282/bellman-selector-collision.json"
     )
+    amplitude_audit = load(
+        f"{PROD}/foundational-sprint-1283/global-amplitude-consistency-audit.json"
+    )
     assert coupled["terminal_near_entry_closed"] is False
     assert coupled["universal_dimension_lower_bound_proved"] is False
     assert terminal["scalar_terminal_commonization_proved"] is False
@@ -363,6 +367,15 @@ def check_semantics() -> None:
     assert selector_collision["boundary_iteration"]["post_hoc_contact_residual"][
         "maximum_absolute_residual"
     ] < 3e-8
+    assert amplitude_audit["all_instrument_gates_pass"] is True
+    assert amplitude_audit["classification"] == "persistent global mismatch"
+    assert min(
+        row["maximum_global_source_mismatch"] for row in amplitude_audit["orders"]
+    ) > 1.6e-4
+    assert max(amplitude_audit["maximum_mismatch_ratios"]) == 1.0
+    assert max(
+        row["maximum_raw_local_Bellman_residual"] for row in amplitude_audit["orders"]
+    ) < 4e-16
     assert weighted_contraction["gates"]["cycle_radius_below_point_nine"] is True
     assert weighted_contraction["gates"]["weight_range_below_ten"] is True
 
