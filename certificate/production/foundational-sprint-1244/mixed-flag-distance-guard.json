@@ -1,0 +1,9 @@
+{
+  "status": "exact mixed-flag/Wasserstein distance guard",
+  "permutation_fixtures": 20000,
+  "stochastic_fixtures": 30000,
+  "minimum_nonzero_over_two_min_weight": "1",
+  "marginal_volume_doppelganger_distance": "8",
+  "all_gates_pass": true,
+  "claim_boundary": "This proves the finite permutation identity and independently checks the one-dimensional stochastic Wasserstein formula. It does not derive response kernels or a Bell-deficit bound."
+}

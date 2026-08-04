@@ -1251,6 +1251,150 @@
       "sha256": "bd9850da6df6d9fe96feeaa73edbac456e189f20d696852dc2826949cc171582"
     },
     {
+      "path": "certificate/production/foundational-sprint-1240/PRE-REGISTRATION.md",
+      "canonical_bytes": 2139,
+      "hash_mode": "canonical-lf",
+      "sha256": "3fa35bd153017424a48f91dc5afa9599186a5834d8446a475d1a499548cac122"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1240/schmidt-correspondence-guard.json",
+      "canonical_bytes": 846,
+      "hash_mode": "canonical-lf",
+      "sha256": "25aeadc84de4b18bf735ba511f7194ae27fc1f2e00cee202c3fb25616e011440"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1240/SCHMIDT-CORRESPONDENCE-THEOREM.md",
+      "canonical_bytes": 4401,
+      "hash_mode": "canonical-lf",
+      "sha256": "b8e60ce4a2f481c35e62ab3e2dbcc5a6243751deb0961540bb5752a0216def6d"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1240/schmidt_correspondence_verify.py",
+      "canonical_bytes": 6543,
+      "hash_mode": "canonical-lf",
+      "sha256": "100070b8e5399ff021e286d64822fa07fd3cf97265d7009dda314b3911c13b93"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1241/MARGINAL-VOLUME-NO-GO.md",
+      "canonical_bytes": 2113,
+      "hash_mode": "canonical-lf",
+      "sha256": "249993a9933eca6b3056642237fbe5ad03f7d76219cfb567016d5f653fb56f1b"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1241/marginal-volume-nogo.json",
+      "canonical_bytes": 933,
+      "hash_mode": "canonical-lf",
+      "sha256": "a2951a1a77238a3ab631b649105cc629c2911053c268f4c19d202bcf0f356271"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1241/marginal_volume_nogo_verify.py",
+      "canonical_bytes": 3121,
+      "hash_mode": "canonical-lf",
+      "sha256": "d084e2404e2d7e483739b2805296e3ed83c4fc736a21b3e6dd00326169837338"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1241/PRE-REGISTRATION.md",
+      "canonical_bytes": 1190,
+      "hash_mode": "canonical-lf",
+      "sha256": "fa87ce82b6cef83e1ea5acbbf689afa8f974c56ebd173d079db01512346cdafd"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1242/PRE-REGISTRATION.md",
+      "canonical_bytes": 1223,
+      "hash_mode": "canonical-lf",
+      "sha256": "a806e5589fbf47c73b90ac312ccefe89941871b3d50c2b168ab4004f31113e98"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1242/regularized-schmidt-flag-guard.json",
+      "canonical_bytes": 672,
+      "hash_mode": "canonical-lf",
+      "sha256": "2554ff538cd6fc62b51f0f5e60c1ee76703acd3fbf69de2f77d464782f7b4344"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1242/REGULARIZED-SCHMIDT-FLAG-THEOREM.md",
+      "canonical_bytes": 3000,
+      "hash_mode": "canonical-lf",
+      "sha256": "df094535fedffc5b4184cf89b8edeae27fe14d1af271aa423d913f80ee55ccdd"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1242/regularized_schmidt_flag_verify.py",
+      "canonical_bytes": 4843,
+      "hash_mode": "canonical-lf",
+      "sha256": "6d93f39643e3112a62a9adf496ab25bd124d9511e98fad9a002b78f0a05592fd"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1243/grid-free-contact-flag-guard.json",
+      "canonical_bytes": 457,
+      "hash_mode": "canonical-lf",
+      "sha256": "96509cde028f8e3c9f063c0dc946ffa1d1e90742336449259db276346aeac8f4"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1243/GRID-FREE-CONTACT-FLAG-THEOREM.md",
+      "canonical_bytes": 2443,
+      "hash_mode": "canonical-lf",
+      "sha256": "9cb57b63287df5275ee9785eacbd54bb6b2e62d11fd4e5f8e144f2926263d3ac"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1243/grid_free_contact_flag_verify.py",
+      "canonical_bytes": 3217,
+      "hash_mode": "canonical-lf",
+      "sha256": "c654039e830db8c453be6fb5250061989296f54b6306e3563441ce7cba4ffbac"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1243/PRE-REGISTRATION.md",
+      "canonical_bytes": 1182,
+      "hash_mode": "canonical-lf",
+      "sha256": "b5fe5d6e9bff6ebb0be6854e9a1efe6bfda0abfdbdb6116b7fa7e76e170e3292"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1244/mixed-flag-distance-guard.json",
+      "canonical_bytes": 452,
+      "hash_mode": "canonical-lf",
+      "sha256": "1c36142097abfb5fde8c2be96f1193e1dde6aa9af3bc2d0a971eb967aef6cb68"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1244/MIXED-FLAG-DISTANCE-THEOREM.md",
+      "canonical_bytes": 2492,
+      "hash_mode": "canonical-lf",
+      "sha256": "3f1ebf7febf1f352500fc96c13c84d96c3830b4c3fb7b54737d3aec5b442afe7"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1244/mixed_flag_distance_verify.py",
+      "canonical_bytes": 4170,
+      "hash_mode": "canonical-lf",
+      "sha256": "3679dccea17f81e9d2f8577a2405c9bd5a718f398727ffe33921480034ac7254"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1244/PRE-REGISTRATION.md",
+      "canonical_bytes": 1199,
+      "hash_mode": "canonical-lf",
+      "sha256": "4b9fc9ee82ede0a5f0168d60817d95f6976bc0f7425a39768451c7b53867557b"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1245/PRE-REGISTRATION.md",
+      "canonical_bytes": 1389,
+      "hash_mode": "canonical-lf",
+      "sha256": "fa60f6c79b78c6ee0f1cc2a97832ad2d6c983ac620d07c2488f9af72df683d29"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1245/resolution-scale-lift-guard.json",
+      "canonical_bytes": 501,
+      "hash_mode": "canonical-lf",
+      "sha256": "efe5ffa20d0d485b7eaf1c95bb8295c9912648914a5a480b1d080137defe3c1a"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1245/RESOLUTION-SCALE-LIFT-THEOREM.md",
+      "canonical_bytes": 2976,
+      "hash_mode": "canonical-lf",
+      "sha256": "99cc2db109e3e08b84b6258201ab152f2be0f518198d4d2c08a40b6a64343559"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1245/resolution_scale_lift_verify.py",
+      "canonical_bytes": 3082,
+      "hash_mode": "canonical-lf",
+      "sha256": "31151a5c9260c62012ce633097a94706ac5ff75b6522af3f320253053bb84d35"
+    },
+    {
       "path": "certificate/release/build_release_manifest.py",
       "canonical_bytes": 2437,
       "hash_mode": "canonical-lf",
@@ -1300,9 +1444,9 @@
     },
     {
       "path": "certificate/release/verify_release.py",
-      "canonical_bytes": 13144,
+      "canonical_bytes": 13578,
       "hash_mode": "canonical-lf",
-      "sha256": "b74f594c2bd9c3427866e966ceadee1b5356ff31b819930f6adf1e3649183424"
+      "sha256": "7e13b5d5441bf70d63f453b94b905667a032861edc9b475367e01dfe510330d5"
     },
     {
       "path": "CITATION.cff",
@@ -1330,15 +1474,15 @@
     },
     {
       "path": "paper/CERTIFICATE-MAP.md",
-      "canonical_bytes": 10430,
+      "canonical_bytes": 11612,
       "hash_mode": "canonical-lf",
-      "sha256": "158eb9fe8d3bd3e5ba10ec0b56b6fdf8702207d68a77243514c1887abaff8dcc"
+      "sha256": "f6246f1fb40df12a010c2b8f6b188260e3294bccf190fd232bb210a7d9874c61"
     },
     {
       "path": "paper/DIMENSION-GAP-STATUS.md",
-      "canonical_bytes": 4578,
+      "canonical_bytes": 6104,
       "hash_mode": "canonical-lf",
-      "sha256": "13d85b9597919448c44d8b71cd8581fc83dbf1ad1e153878aba80708833003d9"
+      "sha256": "c2389240803c9222ffb66336d08976d4b7ca0e2145f9e3818c20ff79326c665d"
     },
     {
       "path": "paper/MANUSCRIPT.md",
@@ -1426,9 +1570,9 @@
     },
     {
       "path": "README.md",
-      "canonical_bytes": 5586,
+      "canonical_bytes": 6161,
       "hash_mode": "canonical-lf",
-      "sha256": "f1ab48fb6357eed1bba23485791bf24bc5ea52a66b7e751690247e59b169f0d6"
+      "sha256": "e80e945f96da18244513a2abd5813c2603510c60559f9c4e7650dedd463fca2a"
     },
     {
       "path": "requirements.txt",
@@ -1438,9 +1582,9 @@
     },
     {
       "path": "review/ADJUDICATION.md",
-      "canonical_bytes": 4543,
+      "canonical_bytes": 5234,
       "hash_mode": "canonical-lf",
-      "sha256": "0dfc13aac879371823423d17bb62476774cc20127dc4ec83dc264b7d716f083d"
+      "sha256": "a737dc029302a468294592e0286b08f6e8c906c1b1322843f92dc18b0db8150f"
     },
     {
       "path": "review/LOCALIZATION-NO-GO.md",
@@ -1473,6 +1617,12 @@
       "sha256": "c325b3043060e0b8f3c098a013b678afb6f982d649b698dfb754783f89d6e62f"
     },
     {
+      "path": "review/OPERATOR-FLAG-CAMPAIGN.md",
+      "canonical_bytes": 3820,
+      "hash_mode": "canonical-lf",
+      "sha256": "9c0b7b6595de05e3aa153d0ff401337d29700768bf418cd9f6c1429744a3a0e5"
+    },
+    {
       "path": "review/POST-ADJUDICATION-COUPLED-SECTOR.md",
       "canonical_bytes": 2145,
       "hash_mode": "canonical-lf",
@@ -1480,11 +1630,11 @@
     },
     {
       "path": "review/README.md",
-      "canonical_bytes": 1103,
+      "canonical_bytes": 1176,
       "hash_mode": "canonical-lf",
-      "sha256": "cd23c1a85d84c058daa635246647e8356d57c5877d367bf0c7f0a80b76661601"
+      "sha256": "a405ef962afdfc120b5c3f2901ca58e95e2ab3963e642fa73dc2022f2d280cfa"
     }
   ],
-  "file_count": 247,
+  "file_count": 272,
   "scope": "Custody manifest for selected published files. Analytic dependency closure is checked separately by verify_release.py and is not inferred from file enumeration alone."
 }

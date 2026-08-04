@@ -1,0 +1,15 @@
+{
+  "status": "regularized Schmidt-flag guard",
+  "random_fixtures": 10000,
+  "maximum_soft_support_intertwining_residual": 1.0424908301812829e-14,
+  "maximum_left_right_trace_residual": 1.0658141036401503e-12,
+  "minimum_contact_flag_bound_slack": -8.966346955923941e-13,
+  "minimum_resolvent_stability_slack": 0.003739876988872376,
+  "ordered_flag_doppelganger_separation": 8.0,
+  "exact_contact_fixture": {
+    "intertwiner_residual": 0.0,
+    "soft_flag_mass_residual": 0.0
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "This verifies the soft-support identities and hostile inequalities. It does not prove uniform I3322 flag transport or finite-rank closure."
+}

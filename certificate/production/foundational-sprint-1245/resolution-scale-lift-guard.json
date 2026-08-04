@@ -1,0 +1,10 @@
+{
+  "status": "resolution-scale lift guard",
+  "symbolic_scale_orientation_residual": "0",
+  "symbolic_i3322_cocycle_residual": "0",
+  "random_fixtures": 10000,
+  "maximum_block_scale_residual": 5.087681048627601e-16,
+  "maximum_unitary_covariance_residual": 3.1401849173675503e-16,
+  "all_gates_pass": true,
+  "claim_boundary": "This certifies the scale orientation, response covariance, and I3322 cocycle composition. Near-contact commutators and the finite-rank boundary inequality remain open."
+}

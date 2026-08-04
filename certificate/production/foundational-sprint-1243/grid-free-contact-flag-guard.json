@@ -1,0 +1,13 @@
+{
+  "status": "exact-rational grid-free contact-flag guard",
+  "random_fixtures": 20000,
+  "maximum_layer_cake_residual": "0",
+  "minimum_cauchy_slack": "0",
+  "endpoint_integrals": [
+    "2",
+    "2",
+    "0"
+  ],
+  "all_gates_pass": true,
+  "claim_boundary": "This guards the layer-cake identity and exact-rational coercive implication. The global I3322 coefficient 1/40 is owned by Sprint 1232; response transport and finite-rank closure remain open."
+}

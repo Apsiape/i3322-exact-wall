@@ -1,0 +1,19 @@
+{
+  "status": "Schmidt-correspondence and regularized-volume guard",
+  "random_fixtures": 5000,
+  "maximum_matrix_factorization_residual": 2.187742343931188e-14,
+  "minimum_mirsky_slack": 0.05571694496840052,
+  "minimum_soft_volume_lipschitz_slack": 0.013412802455537779,
+  "exact_cocycle_fixture": {
+    "correspondence_residual": 0.0,
+    "log_volume": 0.0
+  },
+  "scalar_null": {
+    "frobenius_mass_residual": 0.0,
+    "singular_spectrum_separation": 0.36918382256502896
+  },
+  "maximum_boundary_telescope_residual": 1.7763568394002505e-15,
+  "symbolic_boundary_telescope_residual": "0",
+  "all_gates_pass": true,
+  "claim_boundary": "This certifies the matrix ordering, singular-spectrum control, soft-volume Lipschitz bound on hostile fixtures, and exact open-shift telescope. It does not prove the Bellman-contact-to-rank boundary law."
+}

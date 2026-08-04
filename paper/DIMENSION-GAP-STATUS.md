@@ -105,6 +105,53 @@ Any future necessity proof must use a stronger contact-dependent rigidity
 theorem or an operator/PSD/Gram-valued transport. The former scalar
 common-packet completion is closed as a route under the current hypotheses.
 
+## Operator-valued restart
+
+Sprints 1240--1245 replace scalar packets by the coefficient operator `D` of
+the bipartite state. The two response remainders control the complete matrix
+correspondences
+
+```text
+J_A D S_B^T ~= C_A D,
+S_A D J_B^T ~= D C_B^T.
+```
+
+This controls every singular value. The regularized support
+
+```text
+W_A,t=D(tI+D^*D)^(-1)D^*,
+W_B,t=D^*(tI+DD^*)^(-1)D
+```
+
+interpolates between state mass and Schmidt rank. For cumulative contact
+flags `E_s=1_{Y(X)<=s}` and `F_s=1_{U<=s}`, the global contact coercivity gives
+the grid-free theorem
+
+```text
+integral ||E_sD-D F_s^T||_HS^2 ds <= sqrt(40 epsilon_0).
+```
+
+Marginal singular/volume balances do not close the proof: an exact finite
+doppelganger preserves all of them while using two different target
+involutions. The relative invariant is the mixed cumulative-flag distance,
+which is a weighted permutation footrule and extends to rowwise
+Wasserstein-1 distance for branch-mixing kernels.
+
+At exact contact, the response multiplier `C=c(X)` acts on regularized support
+by
+
+```text
+W_t(CD)=W_(t/c^2)(D)
+```
+
+on each contact block. Thus the known amplitude cocycle is canonically a
+translation of `log t`, not an artifact of the discarded packet model.
+
+The remaining gate is now a robust finite-rank theorem: two approximately
+decreasing transports of the same nested soft flag, with nontrivial resolution
+drift, must either glue or pay a boundary. No universal deficit lower bound is
+claimed until that theorem is proved and independently reconstructed.
+
 ## Numerical illustration of the constructive sequence
 
 | local dimension | value | gap to `q_*` |

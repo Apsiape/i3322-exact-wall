@@ -18,4 +18,5 @@ referee access; it is not claimed to remove model-family correlation.
 
 See `MODEL-REVIEW-PROTOCOL.md` for the adjudication rule, `model-audits/` for
 the three lane reports, `LOCALIZATION-NO-GO.md` for the decisive reconstruction,
-and `ADJUDICATION.md` for the reproduced findings and current release decision.
+`ADJUDICATION.md` for the reproduced findings and current release decision,
+and `OPERATOR-FLAG-CAMPAIGN.md` for the post-adjudication replacement route.

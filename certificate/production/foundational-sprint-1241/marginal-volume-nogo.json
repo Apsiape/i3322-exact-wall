@@ -1,0 +1,52 @@
+{
+  "status": "exact marginal-volume doppelganger",
+  "schmidt_diagonal": [
+    "1",
+    "2",
+    "5",
+    "11"
+  ],
+  "first_involution": [
+    3,
+    2,
+    1,
+    0
+  ],
+  "second_involution": [
+    1,
+    0,
+    3,
+    2
+  ],
+  "first_multiplier": [
+    "11",
+    "5/2",
+    "2/5",
+    "1/11"
+  ],
+  "second_multiplier": [
+    "2",
+    "1/2",
+    "11/5",
+    "5/11"
+  ],
+  "first_reciprocal_products": [
+    "1",
+    "1",
+    "1",
+    "1"
+  ],
+  "second_reciprocal_products": [
+    "1",
+    "1",
+    "1",
+    "1"
+  ],
+  "first_determinant": "1",
+  "second_determinant": "1",
+  "characteristic_residual_first": "0",
+  "characteristic_residual_second": "0",
+  "target_mismatch_squared": "194",
+  "all_gates_pass": true,
+  "claim_boundary": "This disproves closure from marginal singular/volume data alone. The second permutation is not globally decreasing, so the result motivates rather than disproves an ordered-flag theorem."
+}

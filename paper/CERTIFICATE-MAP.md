@@ -100,6 +100,14 @@ only after the independent verdict was assembled.
 - `certificate/production/foundational-sprint-1231/RESULT-001-EXPONENTIAL-DIMENSION-NECESSITY.md`
 - `certificate/production/foundational-sprint-1233/RESULT-001-MASTER-DISCARD-LEDGER.md`
 - `certificate/production/foundational-sprint-1235/RESULT-001-CANONICAL-PACKET-PATHS.md`
+- `certificate/production/foundational-sprint-1238/COUPLED-SECTOR-CLOSURE.md`
+- `certificate/production/foundational-sprint-1239/TERMINAL-FORK-NO-GO.md`
+- `certificate/production/foundational-sprint-1240/SCHMIDT-CORRESPONDENCE-THEOREM.md`
+- `certificate/production/foundational-sprint-1241/MARGINAL-VOLUME-NO-GO.md`
+- `certificate/production/foundational-sprint-1242/REGULARIZED-SCHMIDT-FLAG-THEOREM.md`
+- `certificate/production/foundational-sprint-1243/GRID-FREE-CONTACT-FLAG-THEOREM.md`
+- `certificate/production/foundational-sprint-1244/MIXED-FLAG-DISTANCE-THEOREM.md`
+- `certificate/production/foundational-sprint-1245/RESOLUTION-SCALE-LIFT-THEOREM.md`
 - `certificate/independent/dimension-necessity/BLIND-DIMENSION-RECONSTRUCTION.md`
 - `certificate/independent/dimension-necessity/POST-BLIND-ACCEPTANCE.md`
 - `certificate/release/v13-claim-contract.json`
@@ -142,6 +150,12 @@ python certificate/production/foundational-sprint-1200/independent_nonattainment
 python certificate/production/foundational-sprint-1200/dependency_audit.py
 python certificate/production/foundational-sprint-1206/spatial_realization_verify.py
 python certificate/production/foundational-sprint-1207/truncation_flux_verify.py
+python certificate/production/foundational-sprint-1240/schmidt_correspondence_verify.py
+python certificate/production/foundational-sprint-1241/marginal_volume_nogo_verify.py
+python certificate/production/foundational-sprint-1242/regularized_schmidt_flag_verify.py
+python certificate/production/foundational-sprint-1243/grid_free_contact_flag_verify.py
+python certificate/production/foundational-sprint-1244/mixed_flag_distance_verify.py
+python certificate/production/foundational-sprint-1245/resolution_scale_lift_verify.py
 python certificate/release/normalization_concordance_verify.py
 python certificate/release/dimension_gap_audit.py
 python certificate/independent/arithmetic_selftest.py

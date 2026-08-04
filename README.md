@@ -29,8 +29,17 @@ matching universal lower bound was blocked by adversarial review: its
 near-fixed packet step lacks a localized-response/commutator estimate. The
 subsequent coupled-sector repair forces a fixed amount of drift mass, but an
 exact shared-factor countermodel shows that scalar packet norms lose the
-multiplicity provenance needed at terminal near-entry. Any continuation must
-be operator/Gram-valued or prove stronger contact rigidity. The conditional
+multiplicity provenance needed at terminal near-entry.
+
+Sprints 1240--1245 now provide an operator-valued restart. The response
+remainders have been lifted to two-sided correspondences of the complete
+Schmidt coefficient operator. Regularized Schmidt support gives a nested
+ordered-flag filtration; Bellman contact controls its averaged left/right
+mismatch without grids; and the amplitude cocycle acts exactly by translating
+the logarithmic resolution scale. A hostile doppelganger proves that marginal
+singular spectra alone remain insufficient, so a mixed flag/Wasserstein
+distance records the relative gluing of the two responses. The remaining gate
+is a robust finite-rank order-and-scale boundary theorem. The conditional
 constant ledger is retained as an open proof campaign, but this repository
 does **not** presently claim
 `D(epsilon)=Theta(log(1/epsilon))`.
