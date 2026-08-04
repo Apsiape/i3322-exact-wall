@@ -31,7 +31,7 @@ subsequent coupled-sector repair forces a fixed amount of drift mass, but an
 exact shared-factor countermodel shows that scalar packet norms lose the
 multiplicity provenance needed at terminal near-entry.
 
-Sprints 1240--1267 now provide an operator-valued restart. The response
+Sprints 1240--1268 now provide an operator-valued restart. The response
 remainders have been lifted to two-sided correspondences of the complete
 Schmidt coefficient operator. Regularized Schmidt support gives a nested
 ordered-flag filtration; Bellman contact controls its averaged left/right
@@ -71,7 +71,12 @@ differencing before localization now proves exactly that: address-bad mass
 has a window-length cost independent of the number of cells.  The remaining
 gate is to absorb that explicit window-weighted address bill, together with
 the already controlled response and flux terms, into one final deficit
-inequality. The
+inequality.  A two-resolution Bellman scout now identifies a sharper possible
+replacement: the intrinsic diagonal drift appears to have exactly three
+simple zeros, producing four sign chambers whose boundary points are uniformly
+separated from horizontal coalescence.  This would replace the fine grid by a
+constant-complexity partition, but the zero count is not claimed until a
+full-domain interval certificate lands. The
 conditional constant ledger is retained as an open proof
 campaign, but this repository
 does **not** presently claim

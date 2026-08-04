@@ -135,6 +135,11 @@ The replacement campaign deliberately starts before packetization.
     carrier is restricted.  The exact four-term telescope then charges every
     address-bad event at most twice at source and twice at output.  Its cost is
     `4W M_bad`, independent of the number of grid cells.
+27. **Intrinsic drift-chamber scout (Sprint 1268).** Independent 1601- and
+    3201-node Bellman reconstructions find exactly three simple zeros of
+    `chi=q-p` in the registered boxes.  Every root is numerically separated
+    from horizontal coalescence by more than `1/20`.  This is a numerical
+    target, not a theorem; interval zero exclusion is the live gate.
 
 ## What is and is not new
 
@@ -185,3 +190,9 @@ finite cut-window length.  That term contains the horizontal output mismatch
 from Sprint 1265 and must be absorbed without forcing a superlinear cut depth.
 Until the complete parameter ledger or a bounded-complexity sign partition is
 proved and independently replayed, the public theorem boundary is unchanged.
+
+The bounded-complexity option is now concrete: Sprint 1268 predicts four
+intrinsic drift chambers.  Certifying exactly three roots and their horizontal
+separation would replace the artificial fine grid by three fixed response
+prefixes.  No use of that scout is permitted in a theorem before the interval
+certificate lands.

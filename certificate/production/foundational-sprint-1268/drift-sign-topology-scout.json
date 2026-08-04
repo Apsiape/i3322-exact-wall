@@ -1,0 +1,59 @@
+{
+  "status": "two-resolution numerical intrinsic-drift scout",
+  "discarded_resolution_note": "The initial 801/1601 pair missed the unregistered 5e-4 root-agreement guard by 1.2e-4; the guard was held fixed and both resolutions doubled.",
+  "coarse": {
+    "nodes": 1601,
+    "iterations": 144,
+    "final_delta": 9.109490939351872e-12,
+    "minimum_F": 0.053014883571106675,
+    "predecessor_min_increment": 2.9950004098888705e-05,
+    "roots": [
+      -0.8662673988836372,
+      -0.37695235360527557,
+      0.7998836279998212
+    ],
+    "horizontal_separations": [
+      0.3900245018099499,
+      1.1457426066690342,
+      0.07648486068979976
+    ],
+    "root_slope_magnitudes": [
+      133.56938018969817,
+      0.6886005989088783,
+      2.607537949787103
+    ]
+  },
+  "fine": {
+    "nodes": 3201,
+    "iterations": 148,
+    "final_delta": 9.133083178625157e-12,
+    "minimum_F": 0.05300694578083898,
+    "predecessor_min_increment": 2.5342535039829528e-05,
+    "roots": [
+      -0.8660799622164113,
+      -0.37693687789581193,
+      0.7999949210929129
+    ],
+    "horizontal_separations": [
+      0.38457026515980547,
+      1.1457096421871016,
+      0.07637312848213063
+    ],
+    "root_slope_magnitudes": [
+      7.206585519643412,
+      0.6085123992402575,
+      2.7703232004506333
+    ]
+  },
+  "maximum_root_disagreement": 0.00018743666722598196,
+  "gates": {
+    "three_roots_at_both_resolutions": true,
+    "fine_roots_in_registered_boxes": true,
+    "two_resolution_root_agreement": true,
+    "registered_horizontal_separation": true,
+    "numerically_simple_roots": true,
+    "monotone_predecessor_scout": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "This is a floating-point Bellman/PCHIP scout, not a zero-count proof. Full-domain interval exclusion and simple-root certificates remain required."
+}
