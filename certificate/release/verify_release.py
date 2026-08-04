@@ -102,6 +102,7 @@ REPLAY = [
     f"{PROD}/foundational-sprint-1276/weighted_bellman_contraction_scout.py",
     f"{PROD}/foundational-sprint-1277/continuous_predecessor_debt_scout.py",
     f"{PROD}/foundational-sprint-1278/bellman_bottleneck_classifier.py",
+    f"{PROD}/foundational-sprint-1279/bellman_grid_phase_attack.py",
     f"{PROD}/foundational-sprint-1231/dimension_bound_algebra_verify.py",
     f"{PROD}/foundational-sprint-1233/master_ledger_verify.py",
     f"{REL}/normalization_concordance_verify.py",
@@ -279,6 +280,9 @@ def check_semantics() -> None:
     bottleneck = load(
         f"{PROD}/foundational-sprint-1278/bellman-bottleneck-classifier.json"
     )
+    phase_attack = load(
+        f"{PROD}/foundational-sprint-1279/bellman-grid-phase-attack.json"
+    )
     assert coupled["terminal_near_entry_closed"] is False
     assert coupled["universal_dimension_lower_bound_proved"] is False
     assert terminal["scalar_terminal_commonization_proved"] is False
@@ -314,6 +318,11 @@ def check_semantics() -> None:
     assert bottleneck["dense_hull_agreement"]["discrete_owner_disagreements"] == 0
     assert bottleneck["resolutions"][-1]["minimum_gap"] < 1e-4
     assert bottleneck["resolutions"][-1]["bottleneck_multiplier"] > 1.16
+    assert phase_attack["all_instrument_gates_pass"] is True
+    assert phase_attack["classification"] == "phase-robust parabolic signal"
+    assert phase_attack["phase_gap_range"][1] < 2.5e-4
+    assert phase_attack["deep_gap_range"][1] < 1.5e-4
+    assert phase_attack["deep_refinement"][-1]["minimum_gap"] < 2.2e-5
     assert weighted_contraction["gates"]["cycle_radius_below_point_nine"] is True
     assert weighted_contraction["gates"]["weight_range_below_ten"] is True
 

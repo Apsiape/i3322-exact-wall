@@ -117,7 +117,14 @@ the local multiplier remains `1.162`, meeting a preregistered
 parabolic-contact-consistent classification.  This is evidence that the
 contraction architecture is structurally obstructed, but neither the limiting
 contact nor the obstruction is claimed without interval certification.  No
-sampled contraction is promoted to a theorem. The
+sampled contraction is promoted to a theorem.  A hostile grid-phase attack
+then keeps all nine nearby-resolution gaps below `1.23e-4`, and deeper
+25,601/51,201-node runs give `6.95e-5`/`2.18e-5`, with multiplier above
+`1.1616`.  After that preregistered run, Bellman equality and envelope
+stationarity exposed the conditional algebraic contact equation
+`4x^4-(4q+5)x^2+(q+2)=0`; its outer negative root is
+`-0.87827294518`.  Certifying that the global minimizer realizes this root is
+now the exact gate. The
 conditional constant ledger is retained as an open proof
 campaign, but this repository
 does **not** presently claim

@@ -218,6 +218,15 @@ The replacement campaign deliberately starts before packetization.
     parabolic-contact-consistent horn.  It is numerical evidence, not a
     continuum fixed-point theorem; if certified, it would obstruct every
     bounded positive weighted-sup contraction on the one-point orbit.
+38. **Grid-phase and deep-refinement attack (Sprint 1279).** Nine neighboring
+    node counts around 12,801 all keep the gap below `1.23e-4`; 25,601 and
+    51,201 nodes give `6.95e-5` and `2.18e-5`.  Every coordinate remains near
+    `-0.8782` and every multiplier exceeds `1.1616`, satisfying the
+    preregistered phase-robust parabolic-signal classification.  After the
+    run, Bellman equality plus envelope stationarity exposed an algebraic
+    candidate equation `4x^4-(4q+5)x^2+(q+2)=0`, whose outer negative root is
+    `-0.87827294518`.  The equation is presently a conditional local normal
+    form; global minimizer realization remains the proof gate.
 
 ## What is and is not new
 
@@ -288,5 +297,7 @@ shows that its canonical continuous candidate is resolution-unstable near the
 negative bottleneck.  The next proof gate is therefore the bottleneck itself,
 not intervalization of the unstable weight.  Sprint 1278's higher-resolution
 ladder selects the parabolic-contact-consistent horn, so the immediate task is
-an independent refinement attack followed by interval contact certification;
-the contraction route must remain demoted meanwhile.
+an independent refinement attack followed by interval contact certification.
+Sprint 1279 completes the first: the signal is stable under grid phase and
+51,201-node refinement, and a post-run algebraic contact candidate now supplies
+the exact interval target.  The contraction route must remain demoted.

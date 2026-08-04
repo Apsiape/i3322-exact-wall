@@ -1,0 +1,144 @@
+{
+  "status": "grid-phase and deep-refinement Bellman bottleneck attack",
+  "phase_ensemble": [
+    {
+      "nodes": 12797,
+      "iterations": 148,
+      "final_delta": 8.618439295560165e-12,
+      "hull_lines": 11361,
+      "minimum_gap": 0.00011798690219921859,
+      "minimum_gap_coordinate": -0.878282850598611,
+      "predecessor_at_minimum": -0.8781648636964118,
+      "bottleneck_multiplier": 1.1616856816612744,
+      "elapsed_seconds": 1.5164465999987442
+    },
+    {
+      "nodes": 12798,
+      "iterations": 147,
+      "final_delta": 9.978906589935832e-12,
+      "hull_lines": 11328,
+      "minimum_gap": 0.00012221807423518083,
+      "minimum_gap_coordinate": -0.878277759492909,
+      "predecessor_at_minimum": -0.8781555414186738,
+      "bottleneck_multiplier": 1.1616343817673738,
+      "elapsed_seconds": 1.957517899980303
+    },
+    {
+      "nodes": 12799,
+      "iterations": 149,
+      "final_delta": 9.907852316359822e-12,
+      "hull_lines": 11339,
+      "minimum_gap": 9.478960079845056e-05,
+      "minimum_gap_coordinate": -0.8782502211602775,
+      "predecessor_at_minimum": -0.8781554315594791,
+      "bottleneck_multiplier": 1.161634040409708,
+      "elapsed_seconds": 2.4245904999843333
+    },
+    {
+      "nodes": 12800,
+      "iterations": 149,
+      "final_delta": 9.869660644312717e-12,
+      "hull_lines": 11351,
+      "minimum_gap": 7.069416677862872e-05,
+      "minimum_gap_coordinate": -0.8782379201688187,
+      "predecessor_at_minimum": -0.8781672260020401,
+      "bottleneck_multiplier": 1.1616992593525164,
+      "elapsed_seconds": 2.411199800000759
+    },
+    {
+      "nodes": 12801,
+      "iterations": 149,
+      "final_delta": 9.833911462919787e-12,
+      "hull_lines": 11322,
+      "minimum_gap": 5.4616959234254914e-05,
+      "minimum_gap_coordinate": -0.8782315597783554,
+      "predecessor_at_minimum": -0.8781769428191212,
+      "bottleneck_multiplier": 1.161752882528735,
+      "elapsed_seconds": 2.4012233999965247
+    },
+    {
+      "nodes": 12802,
+      "iterations": 149,
+      "final_delta": 9.793721389428356e-12,
+      "hull_lines": 11360,
+      "minimum_gap": 4.022802347447563e-05,
+      "minimum_gap_coordinate": -0.8782263869599553,
+      "predecessor_at_minimum": -0.8781861589364808,
+      "bottleneck_multiplier": 1.1618037419018235,
+      "elapsed_seconds": 2.429147600021679
+    },
+    {
+      "nodes": 12803,
+      "iterations": 149,
+      "final_delta": 9.754419494356625e-12,
+      "hull_lines": 11350,
+      "minimum_gap": 2.9768485661274546e-05,
+      "minimum_gap_coordinate": -0.8782239075140656,
+      "predecessor_at_minimum": -0.8781941390284044,
+      "bottleneck_multiplier": 1.161847737674797,
+      "elapsed_seconds": 2.36115339997923
+    },
+    {
+      "nodes": 12804,
+      "iterations": 149,
+      "final_delta": 9.713785331655345e-12,
+      "hull_lines": 11331,
+      "minimum_gap": 2.5045436016002398e-05,
+      "minimum_gap_coordinate": -0.8782252415750147,
+      "predecessor_at_minimum": -0.8782001961389987,
+      "bottleneck_multiplier": 1.1618810440223684,
+      "elapsed_seconds": 2.4582646999915596
+    },
+    {
+      "nodes": 12805,
+      "iterations": 149,
+      "final_delta": 9.672707079744214e-12,
+      "hull_lines": 11351,
+      "minimum_gap": 2.3024638154178767e-05,
+      "minimum_gap_coordinate": -0.8782282402317195,
+      "predecessor_at_minimum": -0.8782052155935653,
+      "bottleneck_multiplier": 1.1619086079343284,
+      "elapsed_seconds": 2.5112147000036202
+    }
+  ],
+  "deep_refinement": [
+    {
+      "nodes": 25601,
+      "iterations": 149,
+      "final_delta": 9.817924251365184e-12,
+      "hull_lines": 22714,
+      "minimum_gap": 6.950664177485244e-05,
+      "minimum_gap_coordinate": -0.8783041732834651,
+      "predecessor_at_minimum": -0.8782346666416903,
+      "bottleneck_multiplier": 1.1620710439781494,
+      "elapsed_seconds": 4.2800590000115335
+    },
+    {
+      "nodes": 51201,
+      "iterations": 153,
+      "final_delta": 9.82613990174741e-12,
+      "hull_lines": 45332,
+      "minimum_gap": 2.1793908595135747e-05,
+      "minimum_gap_coordinate": -0.8782756093933272,
+      "predecessor_at_minimum": -0.878253815484732,
+      "bottleneck_multiplier": 1.162176885314512,
+      "elapsed_seconds": 7.99826269998448
+    }
+  ],
+  "phase_gap_range": [
+    2.3024638154178767e-05,
+    0.00012221807423518083
+  ],
+  "deep_gap_range": [
+    2.1793908595135747e-05,
+    6.950664177485244e-05
+  ],
+  "classification": "phase-robust parabolic signal",
+  "gates": {
+    "all_gaps_positive": true,
+    "all_coordinates_near_registered_bottleneck": true,
+    "all_multipliers_above_one_point_one_five": true
+  },
+  "all_instrument_gates_pass": true,
+  "claim_boundary": "This is a floating-point grid-phase and refinement attack. It does not certify a zero transit gap or a continuum parabolic contact."
+}
