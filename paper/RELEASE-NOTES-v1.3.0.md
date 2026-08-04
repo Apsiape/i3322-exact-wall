@@ -87,6 +87,12 @@ the manuscript does not use "first" language.
 - release-level replay and semantic gates for both receipts.
 - a hostile public-claim contract covering the POVM quantifier, asymptotic
   scope, literature placement, and prospective-release metadata.
+- a canonical joint order--resolution coupling, charged common-cell descent,
+  and exact coarse stability law for the pointwise quarter wall;
+- hostile transport controls rejecting total variation on moving atoms and
+  ordinary provenance-forgetting Wasserstein transport; and
+- an exact synchronized-prefix theorem recovering the vertical fibre bill,
+  while leaving its I3322 operator-receipt comparison explicitly open.
 
 ## Claim boundary
 

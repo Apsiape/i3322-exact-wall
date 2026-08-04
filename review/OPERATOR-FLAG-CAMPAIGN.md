@@ -82,7 +82,25 @@ The replacement campaign deliberately starts before packetization.
 14. **Finite monotone skew flow (Sprint 1255).** A finite decreasing two-flow
     decomposes into paths and fixed points.  Paths pay an endpoint; fixed
     points pay a vertical translation.  For at most `d` source atoms, the
-    abstract core-mass bill is explicit and polynomial in `d`.
+   abstract core-mass bill is explicit and polynomial in `d`.
+15. **Charged common-cell descent (Sprint 1256).** Averaging the actual
+    canonical joint measure over shifted order grids retains a common-cell
+    core.  Every rejected event is billed by the integrated quadratic contact
+    defect; no Hilbert vector or unpriced complement is localized.
+16. **Stable coarse wall (Sprint 1257).** The sharper quarter-wall coefficients
+    survive a common cell with exact diameter tax `41769 h/50`.  At
+    `h<=25m_0/41769`, every retained event still owes half the wall margin in
+    actual horizontal response displacement or log-resolution translation.
+17. **Transport-type collider (Sprint 1258).** Total variation on moving atoms
+    is discontinuous, while ordinary joint Wasserstein can swap two nearby
+    fibres and erase a fixed vertical debt.  Monotone-fibre transport retains
+    the complete ordered-flag address and exactly equals the integrated
+    horizontal-plus-vertical response bill.
+18. **Synchronized-prefix recovery (Sprint 1259).** Complete cumulative tails
+    recover the vertical fibre bill with coefficient `2d`, independent of
+    atom spacing and multiplicity.  This isolates one remaining analytic
+    receipt: control of synchronized Alice/Bob prefixes on the canonical
+    carrier.
 
 ## What is and is not new
 
@@ -112,18 +130,20 @@ theorem.
 
 ## Exact remaining gate
 
-The abstract finite-measure theorem is now proved.  The remaining typed gate
-is its descent from the continuous joint contact coupling:
+The source descent and pointwise coarse wall are now proved.  A direct descent
+to the Sprint-1255 total-variation flow is rejected because that topology is
+discontinuous under output motion.  The replacement gate is:
 
 ```text
 canonical Alice--Bob order--resolution coupling
 + controlled off-diagonal contact cost
-+ two response rectangle bounds
-=> one common finite decreasing coarse flow
-   with every rounding/interface term charged.
++ two operator response-rectangle bounds
+=> one synchronized-prefix bound on the same ordered carrier
+=> controlled monotone-fibre transport.
 ```
 
-Only after that descent is combined with the Sprint-1255 flow bill can a
-universal lower bound on `q_*-Q_d` be restored.  The present work closes the
-scalar, provenance, and abstract rank gates; it does not change the public
-theorem boundary.
+Sprint 1259 proves that this single prefix receipt, together with the existing
+horizontal monotone cost, would close the integrated quarter wall. It does not
+prove that the present marginal rectangle estimates supply that receipt.
+Until the common-carrier comparison is derived and independently replayed, the
+public theorem boundary is unchanged.

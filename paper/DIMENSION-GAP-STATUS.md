@@ -147,10 +147,22 @@ W_t(CD)=W_(t/c^2)(D)
 on each contact block. Thus the known amplitude cocycle is canonically a
 translation of `log t`, not an artifact of the discarded packet model.
 
-The remaining gate is now a robust finite-rank theorem: two approximately
-decreasing transports of the same nested soft flag, with nontrivial resolution
-drift, must either glue or pay a boundary. No universal deficit lower bound is
-claimed until that theorem is proved and independently reconstructed.
+Sprints 1246--1259 sharpen this further. Logarithmic differentiation turns the
+soft flag into a positive order--resolution measure of total mass equal to
+Schmidt rank, and the state coefficient operator supplies a canonical positive
+coupling of the Alice and Bob measures. A shifted grid buys a common coarse
+source with every rejected event charged to contact debt, and the pointwise
+quarter wall survives the cell diameter.
+
+The output topology is now part of the theorem rather than a bookkeeping
+choice. Total variation on rounded atoms is discontinuous, and ordinary joint
+Wasserstein transport can erase a fixed resolution mismatch by swapping
+nearby fibres. The complete ordered flag instead defines monotone-fibre
+transport. Its vertical cost is recovered exactly from synchronized prefix
+tails with only a linear rank factor. The remaining gate is to prove that the
+two I3322 operator response receipts control those synchronized prefixes on
+the canonical carrier. No universal deficit lower bound is claimed until that
+common-carrier receipt is proved and independently reconstructed.
 
 ## Numerical illustration of the constructive sequence
 

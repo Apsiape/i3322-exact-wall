@@ -1,0 +1,14 @@
+{
+  "status": "exact-rational synchronized-prefix recovery guard",
+  "fixtures": 1500,
+  "minimum_total_slack": "0",
+  "maximum_native_to_prefix_bound_ratio": "1/2",
+  "master_prefix_coefficient": "169/50",
+  "gates": {
+    "translation_area": true,
+    "prefix_differencing": true,
+    "master_coefficient": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "Abstract prefix recovery is proved. The I3322 operator receipts have not yet been shown to control synchronized prefixes."
+}

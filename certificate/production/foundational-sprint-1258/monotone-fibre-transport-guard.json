@@ -1,0 +1,47 @@
+{
+  "status": "exact monotone-fibre transport guard",
+  "monotone_assignment_fixtures": 2100,
+  "vertical_translation_fixtures": 20000,
+  "minimum_assignment_slack": "0",
+  "minimum_translation_slack": "0",
+  "ordinary_wasserstein_swap_attack": [
+    {
+      "delta": "1/2",
+      "native_vertical_cost": "4",
+      "ordinary_joint_w1_upper": "1"
+    },
+    {
+      "delta": "1/5",
+      "native_vertical_cost": "4",
+      "ordinary_joint_w1_upper": "2/5"
+    },
+    {
+      "delta": "1/10",
+      "native_vertical_cost": "4",
+      "ordinary_joint_w1_upper": "1/5"
+    },
+    {
+      "delta": "1/100",
+      "native_vertical_cost": "4",
+      "ordinary_joint_w1_upper": "1/50"
+    },
+    {
+      "delta": "1/1000",
+      "native_vertical_cost": "4",
+      "ordinary_joint_w1_upper": "1/500"
+    },
+    {
+      "delta": "1/1000000",
+      "native_vertical_cost": "4",
+      "ordinary_joint_w1_upper": "1/500000"
+    }
+  ],
+  "gates": {
+    "monotone_assignment_exact": true,
+    "ordinary_wasserstein_swap_kill": true,
+    "vertical_translation_exact": true,
+    "tv_moving_atom_obstruction": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "The matching transport type is identified and guarded. Control of it by I3322 response receipts remains unproved."
+}

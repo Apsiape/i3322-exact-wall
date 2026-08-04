@@ -118,6 +118,10 @@ only after the independent verdict was assembled.
 - `certificate/production/foundational-sprint-1253/ORDER-RESOLUTION-DICHOTOMY.md`
 - `certificate/production/foundational-sprint-1254/JOINT-ORDER-RESOLUTION-COUPLING.md`
 - `certificate/production/foundational-sprint-1255/FINITE-MONOTONE-SKEW-FLOW.md`
+- `certificate/production/foundational-sprint-1256/CHARGED-COMMON-CELL-DESCENT.md`
+- `certificate/production/foundational-sprint-1257/COMMON-CELL-QUARTER-WALL.md`
+- `certificate/production/foundational-sprint-1258/MONOTONE-FIBRE-TRANSPORT.md`
+- `certificate/production/foundational-sprint-1259/SYNCHRONIZED-PREFIX-RECOVERY.md`
 - `certificate/independent/dimension-necessity/BLIND-DIMENSION-RECONSTRUCTION.md`
 - `certificate/independent/dimension-necessity/POST-BLIND-ACCEPTANCE.md`
 - `certificate/release/v13-claim-contract.json`
@@ -176,6 +180,10 @@ python certificate/production/foundational-sprint-1252/order_coalescence_verify.
 python certificate/production/foundational-sprint-1253/order_resolution_dichotomy_verify.py
 python certificate/production/foundational-sprint-1254/joint_order_resolution_verify.py
 python certificate/production/foundational-sprint-1255/finite_monotone_skew_flow_verify.py
+python certificate/production/foundational-sprint-1256/charged_common_cell_verify.py
+python certificate/production/foundational-sprint-1257/common_cell_quarter_wall_verify.py
+python certificate/production/foundational-sprint-1258/monotone_fibre_transport_verify.py
+python certificate/production/foundational-sprint-1259/synchronized_prefix_verify.py
 python certificate/release/normalization_concordance_verify.py
 python certificate/release/dimension_gap_audit.py
 python certificate/independent/arithmetic_selftest.py

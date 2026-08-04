@@ -1,0 +1,19 @@
+{
+  "status": "exact-rational common-cell quarter-wall guard",
+  "fixtures": 100000,
+  "order_coefficient": "182/5",
+  "vertical_coefficient": "169/100",
+  "cell_diameter_tax": "41769/50",
+  "half_gap_width_coefficient": "25/41769",
+  "minimum_order_substitution_slack": "152813/800000",
+  "minimum_resolution_substitution_slack": "1353943/7000000",
+  "gates": {
+    "vertical_coefficient": true,
+    "cell_diameter_tax": true,
+    "half_gap_cutoff": true,
+    "order_substitution": true,
+    "resolution_substitution": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "The pointwise wall survives a common cell. Response-flow total variation and the universal dimension lower bound remain open."
+}

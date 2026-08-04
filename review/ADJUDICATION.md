@@ -111,7 +111,7 @@ theorem. The release decision remains **HOLD**.
 
 ## Operator-valued replacement update
 
-Sprints 1240--1255 implement the first option without restoring the claim.
+Sprints 1240--1259 implement the first option without restoring the claim.
 They retain the full Schmidt coefficient operator, replace arbitrary cells by
 the complete nested contact flag, and identify the response cocycle with an
 exact translation of regularization scale. An exact doppelganger kills
@@ -130,9 +130,14 @@ longer selected by hand.  An abstract finite monotone-flow theorem also
 closes the rank-only combinatorial gate: paths pay endpoints and fixed points
 pay resolution translations.
 
-The remaining theorem is the charged coarse descent from that continuous
-joint coupling to one finite decreasing flow.  It must bound every
-off-diagonal contact and rounding/interface term; it may not reinstate the
-retracted localized-response premise.
+The charged source descent and coarse quarter wall are now proved. Two hostile
+controls reject a direct total-variation or ordinary-Wasserstein completion:
+the former is discontinuous on moving atoms and the latter can swap nearby
+multiplicity fibres. The complete ordered flag supplies the correctly typed
+replacement, and synchronized prefixes recover the entire vertical
+translation bill with a linear rank factor. The remaining theorem must show
+that the I3322 operator response receipts control those synchronized prefixes
+on the canonical joint carrier; it may not infer that fact from marginal
+rectangle data or reinstate the retracted localized-response premise.
 Until it is proved and independently reconstructed, the release decision and
 the maximal public statement are unchanged.

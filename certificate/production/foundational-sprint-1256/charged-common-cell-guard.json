@@ -1,0 +1,15 @@
+{
+  "status": "exact-rational charged common-cell guard",
+  "fixtures": 10000,
+  "shift_lattice_size": 97,
+  "minimum_average_bound_slack": "0",
+  "minimum_selected_shift_slack": "0",
+  "integrated_contact_coefficient": "120",
+  "gates": {
+    "shift_average": true,
+    "deterministic_shift_selection": true,
+    "contact_integral_constant": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "The source commonization bill is guarded. Response-output descent and a dimension lower bound are not asserted."
+}

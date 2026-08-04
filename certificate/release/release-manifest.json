@@ -1635,6 +1635,102 @@
       "sha256": "b56876d0185ef26222a4fda6d9173efec446dc457bc18b7e9d6bb67d5283fa89"
     },
     {
+      "path": "certificate/production/foundational-sprint-1256/CHARGED-COMMON-CELL-DESCENT.md",
+      "canonical_bytes": 2514,
+      "hash_mode": "canonical-lf",
+      "sha256": "0acf0ecb034c9fed7bf882048df5bef26dd94e4c6a9f03ecb294c707437da2ad"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1256/charged-common-cell-guard.json",
+      "canonical_bytes": 515,
+      "hash_mode": "canonical-lf",
+      "sha256": "f58d4f5f6e81d1b4fbfb4474288cc466def4dc45e176344b1628ac34a1222014"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1256/charged_common_cell_verify.py",
+      "canonical_bytes": 3162,
+      "hash_mode": "canonical-lf",
+      "sha256": "843f78b916e33e9b2fe93ba1e22839fb564d3e1db0afa8d3ba840857e691984d"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1256/PRE-REGISTRATION.md",
+      "canonical_bytes": 847,
+      "hash_mode": "canonical-lf",
+      "sha256": "56369fdb2f9c3dfa947ce63d3aa00de91d347f9d9589aa835adab140b556cfe9"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1257/common-cell-quarter-wall-guard.json",
+      "canonical_bytes": 706,
+      "hash_mode": "canonical-lf",
+      "sha256": "1662ffcf28832a740acbf32b7ddfffd8ca713c0c418cce190eb31e811a30c421"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1257/COMMON-CELL-QUARTER-WALL.md",
+      "canonical_bytes": 2437,
+      "hash_mode": "canonical-lf",
+      "sha256": "3eea88bb843f36c06e91d5bac36433dad48e440560e5757e64249caa3cf240c5"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1257/common_cell_quarter_wall_verify.py",
+      "canonical_bytes": 3900,
+      "hash_mode": "canonical-lf",
+      "sha256": "22ae7968a871c2ca6d3a471a746c4b256ded10db5fbc62608e8e60b845c3474a"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1257/PRE-REGISTRATION.md",
+      "canonical_bytes": 865,
+      "hash_mode": "canonical-lf",
+      "sha256": "e30b9a7dcecc26af923a305024ad95229aa7a90e39c4a755c9f4821f0e86eeaf"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1258/monotone-fibre-transport-guard.json",
+      "canonical_bytes": 1267,
+      "hash_mode": "canonical-lf",
+      "sha256": "8addc17a85118308bd4405087d8e557a348ec9da1d6950299af2f1d0cdd48e53"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1258/MONOTONE-FIBRE-TRANSPORT.md",
+      "canonical_bytes": 3716,
+      "hash_mode": "canonical-lf",
+      "sha256": "30bf605017574d8a5c5a3680aecd9cf854a79627f367605a6de84485c574cabb"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1258/monotone_fibre_transport_verify.py",
+      "canonical_bytes": 3964,
+      "hash_mode": "canonical-lf",
+      "sha256": "835cc1f01d069abcafdb354f0b403e3f153d758b5a41930eea51f51a16228cf2"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1258/PRE-REGISTRATION.md",
+      "canonical_bytes": 963,
+      "hash_mode": "canonical-lf",
+      "sha256": "20d0072bce2f12f3b7534c2af6eaefcdb7346ea2b963afa10bc83b753656ac9f"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1259/PRE-REGISTRATION.md",
+      "canonical_bytes": 681,
+      "hash_mode": "canonical-lf",
+      "sha256": "7b43ae989c6c1c37d87aa5fc4703e3f39bd22b36ca1749bc60538c609aaaa38f"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1259/synchronized-prefix-recovery-guard.json",
+      "canonical_bytes": 491,
+      "hash_mode": "canonical-lf",
+      "sha256": "51e0783d51374b93af210e27b57c8090ac06e29322775ad39673bf06f1ce6d32"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1259/SYNCHRONIZED-PREFIX-RECOVERY.md",
+      "canonical_bytes": 2582,
+      "hash_mode": "canonical-lf",
+      "sha256": "4d67fcc741db84dac7fb3c129c4652c6c35ff49acfaabe66a6bea814d96a81bf"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1259/synchronized_prefix_verify.py",
+      "canonical_bytes": 3816,
+      "hash_mode": "canonical-lf",
+      "sha256": "8dd83a951943fec0b3f761510a9350dede759bcef180e0731381c7333b29cfb7"
+    },
+    {
       "path": "certificate/release/build_release_manifest.py",
       "canonical_bytes": 2437,
       "hash_mode": "canonical-lf",
@@ -1684,9 +1780,9 @@
     },
     {
       "path": "certificate/release/verify_release.py",
-      "canonical_bytes": 14872,
+      "canonical_bytes": 15553,
       "hash_mode": "canonical-lf",
-      "sha256": "49489435839eebb780f509ce953e8e175b75bc0ac393e0eed76bb9e8224d4323"
+      "sha256": "d6300874b69e39dc9a5c774713d70b2b0a7e09bb680916405500980517b6e6ed"
     },
     {
       "path": "CITATION.cff",
@@ -1714,15 +1810,15 @@
     },
     {
       "path": "paper/CERTIFICATE-MAP.md",
-      "canonical_bytes": 13335,
+      "canonical_bytes": 14012,
       "hash_mode": "canonical-lf",
-      "sha256": "54732b1a8cb025b03bf6b90462047395d4f6c31146d7224a8553ef3bd08d3d70"
+      "sha256": "d6f0a72da6fea60ece6a0cbc9d21550654fa5f711d670cb791893f327fe97630"
     },
     {
       "path": "paper/DIMENSION-GAP-STATUS.md",
-      "canonical_bytes": 6104,
+      "canonical_bytes": 6897,
       "hash_mode": "canonical-lf",
-      "sha256": "c2389240803c9222ffb66336d08976d4b7ca0e2145f9e3818c20ff79326c665d"
+      "sha256": "9487fcc5a0532ccad8cf6f29a33092913ce2f7962a47b104c34607239f4972c7"
     },
     {
       "path": "paper/MANUSCRIPT.md",
@@ -1786,9 +1882,9 @@
     },
     {
       "path": "paper/RELEASE-NOTES-v1.3.0.md",
-      "canonical_bytes": 4393,
+      "canonical_bytes": 4816,
       "hash_mode": "canonical-lf",
-      "sha256": "6c0a1c1dac862f5b3edf2aa15d94a1f13a72be9720692c271ed1a59574fb4d7b"
+      "sha256": "db3f437bf16cb49af3dd602eb97a7e5b4e389d4af8feb78203065fc6499f1042"
     },
     {
       "path": "paper/TECHNICAL-SUPPLEMENT.md",
@@ -1810,9 +1906,9 @@
     },
     {
       "path": "README.md",
-      "canonical_bytes": 7011,
+      "canonical_bytes": 7494,
       "hash_mode": "canonical-lf",
-      "sha256": "119d562c450e409a1c574385af4f1a961484ff513d6321590faea28953eeea8d"
+      "sha256": "c5d7e5837e1ae4a8c5e6af687e47c0a52918486a4d8d5757e231b9bfdcaf3e29"
     },
     {
       "path": "requirements.txt",
@@ -1822,9 +1918,9 @@
     },
     {
       "path": "review/ADJUDICATION.md",
-      "canonical_bytes": 6112,
+      "canonical_bytes": 6530,
       "hash_mode": "canonical-lf",
-      "sha256": "832abe861af96aea7fa85235312a654e21f904d75a51890bebcc925af5c7d8c6"
+      "sha256": "d83b0237745fec0abb084b94a1f37032ea7f4e6ae3eb906e7c763077e9dd1992"
     },
     {
       "path": "review/LOCALIZATION-NO-GO.md",
@@ -1858,9 +1954,9 @@
     },
     {
       "path": "review/OPERATOR-FLAG-CAMPAIGN.md",
-      "canonical_bytes": 6452,
+      "canonical_bytes": 7908,
       "hash_mode": "canonical-lf",
-      "sha256": "deadee0214b89aa6407751d902415e9ae76be83d962a95e366af120aaade3c63"
+      "sha256": "4e2f5ab30b8ca71cf688b183301ca5ec81c61716b540fd52e7e3d58c97ed4251"
     },
     {
       "path": "review/POST-ADJUDICATION-COUPLED-SECTOR.md",
@@ -1875,6 +1971,6 @@
       "sha256": "a405ef962afdfc120b5c3f2901ca58e95e2ab3963e642fa73dc2022f2d280cfa"
     }
   ],
-  "file_count": 312,
+  "file_count": 328,
   "scope": "Custody manifest for selected published files. Analytic dependency closure is checked separately by verify_release.py and is not inferred from file enumeration alone."
 }

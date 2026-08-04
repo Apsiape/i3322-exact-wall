@@ -31,7 +31,7 @@ subsequent coupled-sector repair forces a fixed amount of drift mass, but an
 exact shared-factor countermodel shows that scalar packet norms lose the
 multiplicity provenance needed at terminal near-entry.
 
-Sprints 1240--1255 now provide an operator-valued restart. The response
+Sprints 1240--1259 now provide an operator-valued restart. The response
 remainders have been lifted to two-sided correspondences of the complete
 Schmidt coefficient operator. Regularized Schmidt support gives a nested
 ordered-flag filtration; Bellman contact controls its averaged left/right
@@ -49,8 +49,15 @@ averaging charges the boundary flux; and the quarter wall has been rewritten
 as a pointwise order-or-resolution displacement.  A new canonical positive
 joint lift retains the complete Alice/Bob multiplicity provenance, and an
 abstract finite monotone-flow theorem proves that rank-limited flows pay a
-path endpoint or a fixed-point translation.  The remaining gate is a charged
-coarse descent from the continuous joint coupling to that finite flow. The
+path endpoint or a fixed-point translation.  A charged shifted-grid theorem
+now buys a common coarse source from the canonical joint coupling, and the
+quarter wall survives that descent with an explicit diameter tax.  Hostile
+transport controls show why neither total variation on rounded atoms nor
+ordinary joint Wasserstein distance has the right information type.  The
+complete ordered flag instead recovers the vertical translation bill from
+synchronized prefix tails with only a linear rank factor.  The remaining gate
+is to prove that the I3322 operator receipts control those synchronized
+prefixes on the canonical carrier. The
 conditional constant ledger is retained as an open proof
 campaign, but this repository
 does **not** presently claim
