@@ -31,7 +31,7 @@ subsequent coupled-sector repair forces a fixed amount of drift mass, but an
 exact shared-factor countermodel shows that scalar packet norms lose the
 multiplicity provenance needed at terminal near-entry.
 
-Sprints 1240--1266 now provide an operator-valued restart. The response
+Sprints 1240--1267 now provide an operator-valued restart. The response
 remainders have been lifted to two-sided correspondences of the complete
 Schmidt coefficient operator. Regularized Schmidt support gives a nested
 ordered-flag filtration; Bellman contact controls its averaged left/right
@@ -66,8 +66,12 @@ multiplicity can no longer cancel the resolution debt.  A one-sided prefix
 theorem now shows that the lower response flux is paid before, rather than
 after, the linear rank cost of prefix recovery.  The remaining gate is to
 localize the full operator response rectangles to the address-good carrier
-while preserving their four-term telescoping cancellation, and then integrate
-that receipt into one final deficit inequality. The
+while preserving their four-term telescoping cancellation.  Finite
+differencing before localization now proves exactly that: address-bad mass
+has a window-length cost independent of the number of cells.  The remaining
+gate is to absorb that explicit window-weighted address bill, together with
+the already controlled response and flux terms, into one final deficit
+inequality. The
 conditional constant ledger is retained as an open proof
 campaign, but this repository
 does **not** presently claim

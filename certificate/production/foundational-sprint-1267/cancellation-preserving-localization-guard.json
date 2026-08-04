@@ -1,0 +1,15 @@
+{
+  "status": "exact-rational cancellation-preserving localization guard",
+  "fixtures": 500,
+  "maximum_cell_count": 12,
+  "minimum_master_slack": "1",
+  "bad_mass_window_constant": 4,
+  "gates": {
+    "random_exact_fixtures": true,
+    "multi_cell_branch_exercised": true,
+    "bad_mass_constant_independent_of_cell_count": true,
+    "finite_difference_precedes_localization": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "Full response prefixes localize with cell-count-free bad-mass cost. The final I3322 parameter absorption remains open."
+}

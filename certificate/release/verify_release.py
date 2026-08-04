@@ -90,6 +90,7 @@ REPLAY = [
     f"{PROD}/foundational-sprint-1264/output_cell_sign_verify.py",
     f"{PROD}/foundational-sprint-1265/one_grid_four_coordinate_verify.py",
     f"{PROD}/foundational-sprint-1266/one_sided_prefix_flux_verify.py",
+    f"{PROD}/foundational-sprint-1267/cancellation_preserving_localization_verify.py",
     f"{PROD}/foundational-sprint-1231/dimension_bound_algebra_verify.py",
     f"{PROD}/foundational-sprint-1233/master_ledger_verify.py",
     f"{REL}/normalization_concordance_verify.py",
@@ -206,6 +207,7 @@ def check_semantics() -> None:
         f"{PROD}/foundational-sprint-1264/output-cell-sign-coherence-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1265/one-grid-four-coordinate-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1266/one-sided-prefix-flux-guard.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1267/cancellation-preserving-localization-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1238/coupled-sector-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1239/terminal-fork-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1232/inactive-quadratic-interval.json": "all_gates_pass",
@@ -289,7 +291,7 @@ def main() -> None:
             "independent symbolic spatial-carrier/truncation reconstruction, "
             "plus a separately written 21-source conditional dimension-necessity "
             "reconstruction; the original chronology is not externally time-sealed "
-            "and the localization gap is disclosed"
+            "and the remaining parameter-absorption gap is disclosed"
         ),
     }, indent=2))
 
