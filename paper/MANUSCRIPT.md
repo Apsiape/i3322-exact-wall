@@ -6,8 +6,8 @@
 [apsiape@gmail.com](mailto:apsiape@gmail.com)
 
 **Prospective Version 1.3 revision — quantitative spatial truncation
-independently reconstructed; priority boundaries are recorded in
-`PRIORITY-AUDIT.md`.**
+independently reconstructed; a proposed converse was retracted after
+adversarial review; priority boundaries are recorded in `PRIORITY-AUDIT.md`.**
 
 ## Abstract
 
@@ -42,19 +42,18 @@ meaning is the unique validated zero of an explicit domain-wall shooting
 problem, enclosed by interval arithmetic.
 
 The same wall has an exact finite-section flux law. If (Q_d) denotes the
-optimum over strategies of local dimension at most (d), with binary POVMs
-allowed, then
+optimum over strategies of local dimension at most (d), with arbitrary mixed
+states and binary POVMs allowed, then the explicit centered truncations prove
 
 \[
-\kappa d^{-4}\Gamma^{-d}\le q_*-Q_d
-\le \exp[-d\log R+O(1)],
+0<q_*-Q_d\le \exp[-d\log R+O(1)],
 \]
 
-where (R=1.07809205080209208\ldots),
-(\Gamma=312^4=9{,}475{,}854{,}336), and one explicit admissible
-(\kappa) is approximately (4.294654614331446\times10^{-52}). Thus the
-minimum local dimension for deficit (\varepsilon) is
-(\Theta(\log(1/\varepsilon))). The constants are not claimed sharp.
+where (R=1.07809205080209208\ldots). Thus
+(\log(1/\varepsilon)/\log R+O(1)) local dimension is sufficient. An
+adversarial reconstruction of a prospective converse found a missing
+localized-response/commutator estimate, so no matching universal dimension
+lower bound or (\Theta(\log(1/\varepsilon))) conclusion is claimed.
 
 As a corollary, the finite-dimensional quantum correlation set in the
 three-input binary scenario is not closed; this is the minimal bipartite
@@ -297,45 +296,33 @@ endpoint-free fixtures and by a symbolic periodic reconstruction. Thus this
 normal spatial correlation lies in (C_{qs}) and attains the wall; the
 finite-dimensional nonattainment theorem places it outside (C_q).
 
-## 2B. Quantitative finite-dimensional dimension law
+## 2B. Quantitative finite-section convergence
 
 Let (Q_d) be the supremum of (\mathcal B_{3322}) over tensor-product
 strategies whose two local Hilbert spaces have dimension at most (d), allowing
-binary POVMs. Let (D(\varepsilon)) be the least (d) for which
+arbitrary mixed states and binary POVMs. Let (D(\varepsilon)) be the least (d) for which
 (q_*-Q_d\le\varepsilon).
 
 Dimension-constrained noncommutative hierarchies provide convergent numerical
 bounds at fixed local dimension, including applications to I3322 [6]. Much
 stronger quantitative dimension blowups are known for purpose-built nonlocal
 games with larger question or answer sets [7]. The statement here has a
-different scope: it gives the asymptotic order, from both sides, for the
-canonical three-setting binary functional itself.
+different scope: it gives an exact finite-section identity and an exponential
+achievability rate for the canonical three-setting binary functional itself.
 
-**Dimension-law theorem.** There is an explicit universal constant
-(\kappa>0) such that, for every (d\ge1),
-
-\[
-\kappa d^{-4}\Gamma^{-d}\le q_*-Q_d
-\le\exp[-d\log R+O(1)],
-\qquad \Gamma=312^4=9{,}475{,}854{,}336.          \tag{2.9}
-\]
-
-One admissible exact (\kappa) is defined in the supplement and satisfies
+**Finite-section convergence theorem.** For every (d\ge1),
 
 \[
-\kappa=4.2946546143314459987\ldots\times10^{-52}.
+0<q_*-Q_d\le\exp[-d\log R+O(1)].                  \tag{2.9}
 \]
 
 Consequently,
 
 \[
-\frac{\log(1/\varepsilon)-O(\log\log(1/\varepsilon))}{\log\Gamma}
-\le D(\varepsilon)
-\le\frac{\log(1/\varepsilon)}{\log R}+O(1),
+D(\varepsilon)\le\frac{\log(1/\varepsilon)}{\log R}+O(1).
 \]
 
-so, as (\varepsilon\downarrow0),
-(D(\varepsilon)=\Theta(\log(1/\varepsilon))).
+No matching lower order for (D(\varepsilon)) is presently proved.
 
 For the constructive half, for (L\ge0), put (I_L=\{-L,\ldots,L\}),
 (S_L=\sum_{j\in I_L}\lambda_j^2), and (d=2L+1). Compress the six spatial
@@ -357,7 +344,16 @@ principal Jacobi quadratic form. The two displayed edges are the only terms
 lost at the boundary. Positivity of the wall makes the deficit strictly
 positive.
 
-The certified analytic tails satisfy
+The analytic unstable-manifold conjugacy gives summable ratio errors. Thus
+there are constants (C_\pm>0) and (0<\rho<1) such that
+
+\[
+\lambda_j=C_+R^{-j}(1+O(\rho^j)),\qquad
+\lambda_{-j}=C_-R^{-j}(1+O(\rho^j))
+\quad(j\to+\infty).
+\]
+
+In particular, the certified analytic tails satisfy
 
 \[
 \frac{\lambda_{j+1}}{\lambda_j}\longrightarrow R^{-1}
@@ -380,11 +376,12 @@ The boundary coefficients tend to positive constants and (S_L\to1), so
 \frac{-\log(q_*-v_L)}{2L+1}=\log R.               \tag{2.11}
 \]
 
-Consequently, along odd dimensions,
+Consequently, for a dimension-independent constant (C<\infty), along odd
+dimensions,
 
 \[
 0<q_*-Q_d\le q_*-v_{(d-1)/2}
-=\exp[-d\log R+O(1)],                             \tag{2.12}
+\le C R^{-d}=\exp[-d\log R+O(1)],                 \tag{2.12}
 \]
 
 and even dimensions follow by padding with an unused summand. Therefore
@@ -398,36 +395,14 @@ is sufficient to achieve deficit at most (\varepsilon). The exact identity
 and plateau exponent have separate production and independent
 symbolic/interval reconstructions.
 
-For the converse half, compactness and multilinear extremality first replace
-an optimizer by a pure state and six projective effects on the same local
-spaces; no dilation is used. Robust contact coercivity localizes the three
-positive certificate remainders. A shifted moving grid follows canonical
-source--target packets through the response maps while charging every
-near-fixed, inactive-tail, contact, stopped-frame, and reuse loss. Each packet
-has one predecessor and at most one successor. Each retained chain visits
-disjoint spectral projections of one local (d)-dimensional operator and
-therefore has length at most (d).
-
-The resulting energy ledger gives
-
-\[
-E_{\rm exit}+E_{\rm rec}
-\le A d\varepsilon+B C_F20^{2d}\sqrt\varepsilon,
-\]
-
-and
-
-\[
-E_{\rm exit}+E_{\rm rec}
-\ge \frac{W_D}{(d+1)(78/5)^{2d}},
-\qquad W_D\ge1-C_I20^{2d}\sqrt\varepsilon,
-\]
-
-where (A=5616), (B=200772/25), and all other constants are explicit and
-dimension-independent. The resulting case split yields the lower half of the
-dimension law. The certificate contains the complete debt ledger. A sealed
-19-source blind reconstruction independently reproduced (\Gamma), (A), (B),
-and (\kappa), followed by a separate exact SymPy audit.
+For completeness, the certificate preserves a prospective converse campaign.
+Its scalar closure, inactive-tail, recurrence, and finite-rank pieces are
+valid, and its conditional ledger yields (\Gamma=312^4) and an explicit
+prefactor. The load-bearing near-fixed step is not proved: common pullback
+packets do not localize the global response defect, and restricting the state
+introduces an uncontrolled commutator/interface term. A two-dimensional
+countermodel to the disputed inference is recorded in the review
+adjudication. These conditional constants are therefore not theorem claims.
 
 ## 3. Geometric symmetrization
 
@@ -774,10 +749,9 @@ maximizer, or experimental accessibility of the limiting value. It separates
 (C_{qa}) or (C_{qa}) from (C_{qc}). It has no dependence on the broader
 foundational interpretation of the repository. General finite/infinite-
 dimensional separations are already known; the value here is the exact
-resolution of the canonical three-setting binary functional. The dimension
-lower bound is device-independent only inside the standard bipartite
-tensor-product model with no communication and both local dimensions bounded
-by (d). The optimal necessity exponent and prefactor remain open.
+resolution of the canonical three-setting binary functional. The truncation
+rate is an achievability statement, not a device-independent dimension lower
+bound. Quantitative necessity remains open.
 
 **Computational disclosure.** Frontier language models were used extensively
 for proof discovery, implementation, adversarial auditing, and editorial

@@ -6,8 +6,10 @@
   exclusion, and theorem receipt semantics;
 - `--full`: additionally regenerate every production and independent receipt
   in dependency order, including the independently reconstructed spatial
-  truncation theorem, robust dimension-necessity chain, and sealed blind
-  reconstruction, then recheck the theorem semantics.
+  truncation theorem, robust dimension-necessity chain, and separately written
+  reconstruction, then recheck the theorem semantics.  The reconstruction's
+  original chronology was not externally time-sealed and is not represented
+  as cryptographic evidence of blindness.
 
 The prospective v1.3 claim boundary has an additional publication guard:
 

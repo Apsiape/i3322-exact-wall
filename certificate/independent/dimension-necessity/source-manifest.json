@@ -1,7 +1,7 @@
 {
-  "status": "sealed blind-reconstruction source boundary",
-  "packet_version": 2,
-  "source_count": 19,
+  "status": "review-adjudicated 21-source conditional reconstruction packet",
+  "packet_version": 3,
+  "source_count": 21,
   "excluded_production_sprints": [1231, 1233, 1234, 1235],
   "sources": [
     {"path": "certificate/production/foundational-sprint-1195/EXACT-ALIGNED-WALL-THEOREM.md", "bytes": 6107, "sha256": "7de35f4968713216b51e435063c1cb3e9b0a39480b3bbcd1abbe3ce8a62471b1"},
@@ -18,11 +18,12 @@
     {"path": "certificate/production/foundational-sprint-1223/MOVING-DIHEDRAL-PARTITIONS.md", "bytes": 4291, "sha256": "be12d6aa989fa4e036b79b646fd06f226dedfffdedfdbd551b560d122debdacc"},
     {"path": "certificate/production/foundational-sprint-1224/ORDERED-TEMPORAL-RANK.md", "bytes": 3502, "sha256": "42fc21c4b9d845ea7076a32bb506d8e3360a213bea5d8d48cb93baac0b8043fb"},
     {"path": "certificate/production/foundational-sprint-1225/EXACT-MOVING-FRAME-TRANSPORT.md", "bytes": 3870, "sha256": "79a63b71f51d208665a8a5ec2221a05c2f5f4c26814c6a43f6210093e859a93e"},
+    {"path": "certificate/production/foundational-sprint-1226/WEIGHTED-CLOSURE-COERCIVITY.md", "bytes": 2399, "sha256": "a8683987729151f6f5a59027e29ed5152a8b1144a37973b5a1f70f36c9404b18"},
+    {"path": "certificate/production/foundational-sprint-1227/NEAR-FIXED-PULLBACK-PAIRING.md", "bytes": 2813, "sha256": "1218ab207076f1acaf58c2c261fe243cb1a21ce81a13e8f8476a75062290df6c"},
     {"path": "certificate/production/foundational-sprint-1228/RESULT-001-COMMON-TARGET-RMS-PAIRING.md", "bytes": 5059, "sha256": "2604af8da81faae698e7f558d8bf6081674f06c6c0397f95e43efeafcc8ff9c5"},
-    {"path": "certificate/production/foundational-sprint-1229/RESULT-001-NEAR-FIXED-MASS-GAP.md", "bytes": 4115, "sha256": "fd12feb47d76e54442d13b65838a4e9842f091cc8443f8b992791a76774cd58d"},
+    {"path": "certificate/production/foundational-sprint-1229/RESULT-001-NEAR-FIXED-MASS-GAP.md", "bytes": 4609, "sha256": "0e1f9ee1b1724a4494a2ad6223f7e2d2af53540c1ce4172d39c5dddbd6fe8a33"},
     {"path": "certificate/production/foundational-sprint-1230/RESULT-001-FINITE-RANK-EXIT-THEOREM.md", "bytes": 3304, "sha256": "2bc3b0732739d509d44c448275c2f239591e2bacb8ec22f1f29556a5a590e44f"},
     {"path": "certificate/production/foundational-sprint-1232/RESULT-001-SATURATED-CONTACT-COERCIVITY.md", "bytes": 3271, "sha256": "55382b934d8ffce96f29c599a659bdcc0b2db8dd40c13d8ec379aacd8cb34bd8"},
     {"path": "certificate/production/foundational-sprint-1237/RESULT-001-SAME-DIMENSION-REDUCTION.md", "bytes": 2935, "sha256": "94474379e16357dff58deecfedf4eeaa1f350409de04f284a6711989f8265f7d"}
   ]
 }
-

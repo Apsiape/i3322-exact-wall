@@ -52,6 +52,8 @@ REPLAY = [
     f"{PROD}/foundational-sprint-1223/moving_partition_verify.py",
     f"{PROD}/foundational-sprint-1224/ordered_temporal_rank_verify.py",
     f"{PROD}/foundational-sprint-1225/two_frame_packet_verify.py",
+    f"{PROD}/foundational-sprint-1226/weighted_closure_verify.py",
+    f"{PROD}/foundational-sprint-1227/pullback_pairing_verify.py",
     f"{PROD}/foundational-sprint-1228/common_target_rms_verify.py",
     f"{PROD}/foundational-sprint-1229/near_fixed_gap_verify.py",
     f"{PROD}/foundational-sprint-1230/finite_rank_exit_verify.py",
@@ -101,7 +103,6 @@ def custody_bytes(path: Path, mode: str) -> bytes:
 def check_hashes() -> tuple[int, set[str]]:
     manifest = load(f"{REL}/release-manifest.json")
     assert manifest["schema"] == 3
-    assert manifest["complete_dependency_closure"] is True
     frozen = set()
     for entry in manifest["files"]:
         relative = entry["path"]
@@ -157,6 +158,8 @@ def check_semantics() -> None:
         f"{PROD}/foundational-sprint-1223/moving-partition-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1224/ordered-temporal-rank-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1225/two-frame-packet-guard.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1226/weighted-closure-guard.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1227/pullback-pairing-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1232/inactive-quadratic-interval.json": "all_gates_pass",
         f"{REL}/normalization-concordance.json": "all_gates_pass",
         f"{REL}/dimension-gap-audit.json": "all_data_gates_pass",
@@ -175,6 +178,19 @@ def check_semantics() -> None:
     assert outer["left_outer_contacts_excluded_by_reflection"] is True
     audit = load(f"{PROD}/foundational-sprint-1200/dependency-audit.json")
     assert float(audit["q_lower_minus_quarter"]) > 0
+    source_manifest = load(f"{IND}/dimension-necessity/source-manifest.json")
+    assert source_manifest["source_count"] == 21
+    source_paths = {entry["path"] for entry in source_manifest["sources"]}
+    assert f"{PROD}/foundational-sprint-1226/WEIGHTED-CLOSURE-COERCIVITY.md" in source_paths
+    assert f"{PROD}/foundational-sprint-1227/NEAR-FIXED-PULLBACK-PAIRING.md" in source_paths
+    near_fixed = (
+        ROOT / f"{PROD}/foundational-sprint-1229/RESULT-001-NEAR-FIXED-MASS-GAP.md"
+    ).read_text(encoding="utf-8")
+    packets = (
+        ROOT / f"{PROD}/foundational-sprint-1235/RESULT-001-CANONICAL-PACKET-PATHS.md"
+    ).read_text(encoding="utf-8")
+    assert "<=48 epsilon_0" in near_fixed
+    assert "Y^-1(g_k I_i)" in packets
 
 
 def replay() -> None:
@@ -203,15 +219,23 @@ def main() -> None:
         replay()
         normalize_generated_receipts()
         check_semantics()
+        post_count, post_frozen = check_hashes()
+        assert post_count == count
+        assert post_frozen == frozen
+        check_private_exclusion(post_frozen)
     print(json.dumps({
         "status": "PASS",
         "frozen_files_checked": count,
         "deterministic_replay_completed": args.full,
-        "private_corpus_dependency": False,
+        "private_path_exclusion_checked": True,
+        "constructive_dimension_rate_checked": True,
+        "conditional_lower_bound_ledger_replayed_but_not_promoted": True,
         "independence_boundary": (
             "production Arb stack plus separate mpmath.iv reconstruction and "
             "independent symbolic spatial-carrier/truncation reconstruction, "
-            "plus a sealed-source blind dimension-necessity reconstruction"
+            "plus a separately written 21-source conditional dimension-necessity "
+            "reconstruction; the original chronology is not externally time-sealed "
+            "and the localization gap is disclosed"
         ),
     }, indent=2))
 

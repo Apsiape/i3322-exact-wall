@@ -21,7 +21,7 @@ This file separates analytic claims from computer-assisted inputs.
 | Wall-truncation exponent `log R` | Sprint 1207 | certified analytic tails plus independent interval enclosure |
 | Logarithmic-dimensional achievability | Sprint 1207 | analytic consequence of the preceding two rows |
 
-## Quantitative dimension-necessity chain
+## Conditional dimension-necessity campaign
 
 | Claim | Owner | Verification |
 |---|---|---|
@@ -32,23 +32,25 @@ This file separates analytic claims from computer-assisted inputs.
 | Contact coercivity | Sprints 1217/1232/1234 | Arb derivative certificates plus exact affine dominance |
 | RMS packet compression | Sprint 1218 | analytic inequality plus exact-rational guard |
 | Shifted moving frames and temporal rank | Sprints 1222--1225 | exact combinatorial/transport guards |
-| Common-target composition and near-fixed gap | Sprints 1228--1229 | analytic theorems plus hostile finite models |
+| Weighted closure and pullback addresses | Sprints 1226--1229 | scalar closure and set-theoretic overlap valid; global response localization **unproved** |
 | Finite-rank reverse endpoint estimate | Sprint 1230 | analytic theorem plus exact model guard |
 | Canonical one-predecessor packet ancestry | Sprint 1235 | functional-analytic proof plus 100,000 hostile path systems |
-| Production dimension lower bound | Sprints 1231/1233 | complete ownership ledger and exact final algebra |
-| Blind dimension lower-bound reconstruction | independent dimension-necessity lane | sealed 19-source packet, preregistered derivation, complete independent ledger |
-| Post-blind constants and multiplicities | independent dimension-necessity lane | exact SymPy audit of `A`, `B`, `Gamma`, and `kappa` |
+| Conditional production lower-bound ledger | Sprints 1231/1233 | exact final algebra conditional on the missing localization premise |
+| Retracted lower-bound reconstruction | independent dimension-necessity lane | 21-source packet; reproduced the same unsupported localization implication |
+| Conditional constants and multiplicities | independent dimension-necessity lane | exact SymPy audit of `A`, `B`, `Gamma`, and `kappa`; arithmetic only |
 
-The resulting bound is
+If a future no-inbound/no-outbound-flux or commutator theorem supplies the
+missing localization estimate, the existing ledger would yield
 
 ```text
 q_*-Q_d >= kappa d^-4 Gamma^-d,
 Gamma=312^4=9,475,854,336,
-kappa=4.2946546143314459987...e-52.
+kappa=4.2946546143271441824...e-52.
 ```
 
-Together with Sprint 1207, this proves that the minimum local dimension for
-deficit `epsilon` is `Theta(log(1/epsilon))`.
+This implication is currently conditional. The proved Sprint 1207 result is
+the one-sided sufficiency bound
+`D(epsilon)<=log(1/epsilon)/log R+O(1)`.
 
 ## Spatial-separation and nonclosure chain
 
@@ -93,6 +95,8 @@ only after the independent verdict was assembled.
 - `certificate/independent/spatial-symbolic-guard.json`
 - `certificate/production/foundational-sprint-1207/truncation-flux-guard.json`
 - `certificate/independent/truncation-flux-independent.json`
+- `certificate/production/foundational-sprint-1226/WEIGHTED-CLOSURE-COERCIVITY.md`
+- `certificate/production/foundational-sprint-1227/NEAR-FIXED-PULLBACK-PAIRING.md`
 - `certificate/production/foundational-sprint-1231/RESULT-001-EXPONENTIAL-DIMENSION-NECESSITY.md`
 - `certificate/production/foundational-sprint-1233/RESULT-001-MASTER-DISCARD-LEDGER.md`
 - `certificate/production/foundational-sprint-1235/RESULT-001-CANONICAL-PACKET-PATHS.md`

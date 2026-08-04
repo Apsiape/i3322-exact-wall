@@ -2,10 +2,18 @@
 
 ## Source boundary
 
-Use only the 19 production theorem sources frozen in `source-manifest.json`,
-the standard mathematical facts named in the preregistration, and newly
-written code.  Do not inspect the production dimension-bound assembly in
-foundational sprints 1231, 1233, 1234, or 1235 before adjudication.
+The original reconstruction used 19 production theorem sources. Pre-release
+review found that two theorem owners invoked by those sources had been omitted
+from the packet. The review-repaired packet contains 21 frozen sources in
+`source-manifest.json`, together with the standard mathematical facts named
+in the preregistration. The public Git history does not externally time-seal
+the original chronology; this document records the intended information
+boundary, not a cryptographic proof of it.
+
+The reconstruction verdict was later withdrawn. The packet does not control
+the full coarse omissions created when the global response estimate is
+restricted to the near-fixed sector. This brief is retained as the historical
+challenge specification, not as evidence that its target was achieved.
 
 ## Target
 
@@ -28,4 +36,3 @@ density, global orbit disintegration, fibre partial isometry, simultaneous
 top-`d` selection, fixed positive gap on the whole inactive sliver, a bound on
 the sum of all chain lengths, a coarse-to-fine amplitude identification, or a
 multiplicity-free all-frame sum.
-

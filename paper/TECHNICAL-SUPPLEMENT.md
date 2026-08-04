@@ -283,14 +283,18 @@ R in [1.078092050802091, 1.078092050802094],
 log R in [0.07519285919570098, 0.07519285919570368].
 ```
 
-Together with the certified analytic tails, this proves
-`-log(q_*-v_L)/(2L+1) -> log R`, and hence the unrestricted optimum with
-binary POVMs obeys `q_*-Q_d <= exp[-d log R+O(1)]`. This is an achievability
+The analytic unstable-manifold conjugacy gives summable ratio errors and hence
+`lambda_+/-j=C_+/- R^-j(1+O(rho^j))` for some `0<rho<1`. Together with the
+exact flux identity, this proves `-log(q_*-v_L)/(2L+1) -> log R`, and the
+unrestricted optimum with mixed states and binary POVMs obeys
+`q_*-Q_d <= C R^-d = exp[-d log R+O(1)]` for a dimension-independent `C`.
+This is an achievability
 upper bound on required dimension. The exact reversal proof alone remains
-quantitatively discontinuous; the converse uses a separate robust packet
-argument.
+quantitatively discontinuous. A proposed robust packet converse is retained
+below as a conditional ledger; adversarial review found that its localization
+premise is not supplied by the present certificate.
 
-## S12. Quantitative dimension necessity
+## S12. Conditional dimension-necessity campaign
 
 Let `Q_d` allow mixed states and binary POVMs on local spaces of dimension at
 most `d`. Compactness and successive affine maximization replace an optimizer,
@@ -310,15 +314,21 @@ theta=mu^2/(16H),
 Delta=theta h_0/160.
 ```
 
-Saturated quadratic coercivity and the near-fixed closure theorem give
+Conditional on a localized-response theorem that controls the near-fixed
+restriction and its commutator/interface terms, saturated quadratic
+coercivity and the packet closure ledger would give
 
 ```text
 m_out <= C_out sqrt(epsilon_0),
 m_N   <= C_N sqrt(epsilon),
 C_out = 400*10^12/1883^2,
 C_0   = 100 sqrt(40)/h_0,
-C_N   = (4/mu^2)(24+6K+H C_0).
+C_N   = (4/mu^2)(48+6K+H C_0).
 ```
+
+The coefficient `48` retains the worst-case double use of contact energy by
+the source and target packet families. Each family is orthogonal internally;
+mutual source-target orthogonality is not assumed.
 
 On the retained drift sector, the mesh is `h_d=Delta/(4*20^d)`. The exact
 sum over all `d+1` principal and `d` intermediate frames is
@@ -344,7 +354,7 @@ retained chain, successive local spectral projections occupy pairwise disjoint
 cells, so the chain has length at most `d`. The proof does not bound the number
 of chains or their total length.
 
-The complete upper and lower energy ledger is
+The resulting conditional upper and lower energy ledger is
 
 ```text
 E_exit+E_rec <= A d epsilon+B C_F 20^(2d) sqrt(epsilon),
@@ -363,20 +373,27 @@ kappa=min(1, 1/(4C_I^2), 1/(8A), 1/(64B^2C_F^2)).
 Exact arithmetic proves that the fourth candidate is the minimum and
 
 ```text
-kappa = 4.294654614331445998753374519792940851...e-52.
+kappa = 4.294654614327144182412697296233929416...e-52.
 ```
 
-Splitting first on whether the retained loss is at least `1/2`, and then on
-which upper-energy term is large, yields for every `d>=1`
+If the missing localization premise is supplied, splitting first on whether
+the retained loss is at least `1/2`, and then on which upper-energy term is
+large, would yield for every `d>=1`
 
 ```text
 q_*-Q_d >= kappa d^-4 Gamma^-d.
 ```
 
-The production chain has executable guards for each local lemma. A separately
-preregistered reconstruction used only a sealed 19-source snapshot and
-recovered the complete ledger and the same `Gamma`. A third exact SymPy pass
-reconstructed `A`, `B`, `Gamma`, and the minimum defining `kappa`.
+The production chain has executable guards for each local lemma, but not for
+the implication that localizes the global response defect to the common
+near-fixed packets. The two-frame theorem retains full complement terms, and
+the shifted pullback estimate controls only omissions after restriction. A
+two-dimensional countermodel shows that global response invariance does not
+control this localized error without an additional commutator/flux premise.
+The separately written reconstruction reproduced the conditional ledger and
+thereby propagated the same missing premise; it was not externally time-sealed.
+The exact `48` coefficient, `Gamma`, and `kappa` are preserved as the audited
+constants of the conditional route, not as a proved universal lower bound.
 
 ## S13. Reproduction
 

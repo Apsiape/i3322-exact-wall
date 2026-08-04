@@ -17,21 +17,19 @@ wall nevertheless defines an explicit normal vector-state maximizer on
 
 Its centered finite sections obey an exact boundary-flux identity. If `Q_d`
 is the unrestricted tensor-product optimum in local dimension at most `d`,
-allowing binary POVMs, then the wall obeys the two-sided dimension law
+allowing binary POVMs, then the explicit wall truncations prove
 
 ```text
-κ d^-4 Γ^-d <= q* - Q_d <= exp[-d log(R) + O(1)],
+0 < q* - Q_d <= exp[-d log(R) + O(1)],
 R = 1.07809205080209208....
-Γ = 312^4 = 9,475,854,336,
-κ = 4.2946546143314459987...e-52.
 ```
 
-The upper estimate is achieved by explicit centered truncations. The lower
-estimate applies to every tensor-product strategy of the stated local
-dimension, including mixed states and binary POVMs. Consequently the minimum
-local dimension required for deficit `epsilon` is
-`Theta(log(1/epsilon))`. The constants are deliberately nonsharp; no matching
-exponential rate is claimed.
+Thus `log(1/epsilon)/log(R)+O(1)` local dimension is sufficient. A prospective
+matching universal lower bound was blocked by adversarial review: its
+near-fixed packet step lacks a localized-response/commutator estimate. The
+conditional constant ledger is retained as an open proof campaign, but this
+repository does **not** presently claim
+`D(epsilon)=Theta(log(1/epsilon))`.
 
 Consequently,
 
@@ -75,6 +73,7 @@ not the first exact certified bound for I3322.
 - [Readable manuscript source](paper/MANUSCRIPT.md)
 - [Claim-to-certificate map](paper/CERTIFICATE-MAP.md)
 - [Priority audit](paper/PRIORITY-AUDIT.md)
+- [Independent frontier-model review and adjudication](review/README.md)
 
 ## Reproduce the certificate
 
@@ -108,7 +107,8 @@ production Arb/FLINT module.
 ## Repository structure
 
 - `paper/`: manuscript, supplement, normalization, scope, and priority record;
-- `certificate/production/`: complete Arb/SymPy/NumPy proof dependency closure;
+- `certificate/production/`: Arb/SymPy/NumPy proof dependencies and explicitly
+  marked conditional lower-bound research;
 - `certificate/independent/`: separate interval reconstruction;
 - `certificate/release/`: manifest, replay entry point, and release audits.
 

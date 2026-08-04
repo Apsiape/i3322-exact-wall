@@ -1,0 +1,9 @@
+{
+  "status": "exact-rational near-fixed pullback-pairing guard",
+  "hostile_weighted_measures": 5000,
+  "unpaired_mass_coefficient": "20*Delta/h",
+  "common_projection_formula_recorded": true,
+  "mutual_source_target_orthogonality_claimed": false,
+  "all_gates_pass": true,
+  "claim_boundary": "The set-theoretic pullback and shifted separation theorem are guarded; no pointwise fibre identification is claimed."
+}

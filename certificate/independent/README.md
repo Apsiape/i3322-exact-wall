@@ -26,8 +26,9 @@ identity and the finite-section boundary-flux law. The truncation engine also
 derives and interval-encloses the plateau exponent without importing a
 production module.
 
-The subdirectory `dimension-necessity/` is a separate blind reconstruction of
-the quantitative lower bound. It freezes the literal 19-source packet seen by
-the reconstructing agent, its preregistration and full proof, and a subsequent
-exact-arithmetic hostile audit. It neither imports nor paraphrases the
-production dimension-bound assembly.
+The subdirectory `dimension-necessity/` preserves a separately written but
+retracted reconstruction of a quantitative lower bound. Pre-release review
+expanded its incomplete 19-source packet to 21 sources and then found a
+missing localized-response/commutator premise. The exact arithmetic remains a
+conditional ledger. The public history does not externally time-seal the
+original chronology.

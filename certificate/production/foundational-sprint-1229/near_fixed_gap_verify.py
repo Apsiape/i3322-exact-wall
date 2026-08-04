@@ -12,10 +12,12 @@ C_A = F(1344)
 C_B = F(672)
 C_0 = F(54)
 C_H = 6 * C_0 * C_0 + F(291, 25) * (C_A * C_A + C_B * C_B)
+CONTACT_FAMILY_MULTIPLICITY = 2
 
 
 def exact_constants() -> int:
     assert C_H == F(131498424, 5)
+    assert CONTACT_FAMILY_MULTIPLICITY == 2
     assert C_H * H0 * H0 < MU * MU / 2
     theta = F(1, 10**12)
     delta = theta * H0 / 20
@@ -37,7 +39,7 @@ def hostile_scalar_fixtures(seed: int = 1229, trials: int = 20000) -> int:
         h = H0 * F(rng.randrange(0, 1001), 1000)
         w = z * z + zp * zp
 
-        rhs = 24 * eps0 + F(4656, 25) * (ea * ea + eb * eb) + C_H * h * h * w
+        rhs = 48 * eps0 + F(4656, 25) * (ea * ea + eb * eb) + C_H * h * h * w
         assert rhs >= 0
         # This guard checks the absorption arithmetic independently of the
         # pointwise closure theorem already guarded in Sprint 1226.

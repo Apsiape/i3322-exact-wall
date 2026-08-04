@@ -18,9 +18,10 @@ This supplement specifies the computer-assisted input to the exact $I_{3322}$
 wall theorem.  It records the characteristic map, hyperbolic plateau, analytic
 unstable-manifold enclosure, Miranda shooting box, exact contact covariance,
 global graph covers, boundary and exterior exclusions, the spatial-realization
-guards, the two-sided dimension law and its blind reconstruction, and the boundary
-between certified theorem and numerical conjecture.  All inequalities that
-carry the theorem are interval-certified; symbolic identities are exact.
+guards, the proved finite-section convergence law, and the retracted
+dimension-necessity reconstruction. It separates the certified theorem from
+the conditional lower-bound ledger. All inequalities that carry the released
+theorem are interval-certified; symbolic identities are exact.
 \end{abstract}
 
 \section{Arithmetic model and theorem boundary}
@@ -267,13 +268,20 @@ R&\in[1.078092050802091,1.078092050802094],\\
 \log R&\in[0.07519285919570098,0.07519285919570368].
 \end{aligned}
 \]
-Together with the certified analytic tails, this proves
+The analytic unstable-manifold conjugacy makes the ratio error exponentially
+small. Hence there are $C_\pm>0$ and $0<\rho<1$ with
+\[
+ \lambda_j=C_+R^{-j}(1+O(\rho^j)),\qquad
+ \lambda_{-j}=C_-R^{-j}(1+O(\rho^j)).
+\]
+Together with the exact flux identity, this proves
 \[
 \lim_{L\to\infty}\frac{-\log(q_*-v_L)}{2L+1}=\log R
 \]
-and therefore, for the unrestricted optimum $Q_d$ allowing binary POVMs,
+and, for some dimension-independent $C<\infty$, the unrestricted optimum
+$Q_d$ allowing arbitrary mixed states and binary POVMs obeys
 \[
-0<q_*-Q_d\leq \exp[-d\log R+O(1)].
+0<q_*-Q_d\leq C R^{-d}=\exp[-d\log R+O(1)].
 \]
 This is an achievability upper bound on the dimension needed for a specified
 accuracy.  It is not a device-independent dimension lower bound.
@@ -289,10 +297,11 @@ $31$, $63$, $127$, $191$, and $255$, the gaps are respectively approximately
 Their successive exponential rates converge to $0.07519366\ldots$, while the
 proved exponent is $\log R=0.07519286\ldots$.  These values illustrate the
 theorem and were not used to infer its exponent.  The exact finite-support
-reversal alone remains unstable quantitatively; the necessity proof instead
-uses robust remainder localization and finite-rank packet transport.
+reversal alone remains unstable quantitatively. A proposed robust packet
+converse is retained below as a conditional ledger; adversarial review found
+that its localization premise is not supplied by the present certificate.
 
-\section{Quantitative dimension necessity}
+\section{Conditional dimension-necessity campaign}
 
 Let $Q_d$ allow arbitrary mixed states and binary POVMs on local spaces of
 dimension at most $d$.  Compactness gives an optimizer.  Maximizing successively
@@ -322,13 +331,17 @@ Saturated quadratic coercivity gives the far-tail charge
  m_{\rm out}\le C_{\rm out}\sqrt{\varepsilon_0},
  \qquad C_{\rm out}=\frac{400\cdot10^{12}}{1883^2}.
 \]
-The near-fixed closure estimate, including all four source/target omissions,
-is
+Conditional on a localized-response theorem that controls the near-fixed
+restriction and its commutator/interface terms, the proposed closure estimate
+would be
 \[
  m_N\le C_N\sqrt\varepsilon,\qquad
- C_N=\frac4{\mu^2}\left(24+6K+HC_0\right),\qquad
+ C_N=\frac4{\mu^2}\left(48+6K+HC_0\right),\qquad
  C_0=100\sqrt{40}\,h_0^{-1}.
 \]
+The coefficient $48$ retains the worst-case double use of contact energy by
+the source and target packet families. Each family is orthogonal internally,
+but mutual source--target orthogonality is neither assumed nor needed.
 
 On the retained drift sector use the shifted mesh
 $h_d=\Delta/(4\cdot20^d)$.  There are exactly $d+1$ principal and $d$
@@ -337,8 +350,7 @@ intermediate frames, with full distortion sum
  \sum_{k=0}^{d}20^k+\sum_{k=0}^{d-1}20^k
  =\frac{21\cdot20^d-2}{19}.
 \]
-After contact, exit, and repeated near/far charges are included, the complete
-frame discard satisfies
+Under the same missing premise, the proposed frame discard would satisfy
 \[
  F_d\le C_F20^{2d}\sqrt\varepsilon,
 \]
@@ -382,10 +394,11 @@ and
 \]
 Exact arithmetic shows that the fourth entry is the minimum and
 \[
- \kappa=4.294654614331445998753374519792940851\ldots\times10^{-52}.
+ \kappa=4.294654614327144182412697296233929416\ldots\times10^{-52}.
 \]
-If the loss in $W_D$ is at least $1/2$, it directly gives the required
-exponential bound.  Otherwise $W_D\ge1/2$, and at least one of the two terms in
+If the missing localization premise is supplied, then a loss in $W_D$ of at
+least $1/2$ directly gives the proposed exponential bound. Otherwise
+$W_D\ge1/2$, and at least one of the two terms in
 the energy upper bound is half the recurrence lower bound.  The first gives a
 stronger $d^{-2}M^{-2d}$ estimate; squaring the second and using
 $(d+1)^2\le4d^2$ gives, uniformly for every $d\ge1$,
@@ -393,12 +406,16 @@ $(d+1)^2\le4d^2$ gives, uniformly for every $d\ge1$,
  q_*-Q_d\ge\kappa d^{-4}\Gamma^{-d}.
 \]
 
-The production proof is guarded at every local lemma and at the final algebra.
-A second reconstruction was preregistered against a sealed 19-source packet,
-rebuilt the complete mass and multiplicity ledger without access to the
-production assembly, and returned the same $\Gamma$.  A third exact SymPy pass
-reconstructed $A$, $B$, $\Gamma$, and the minimum defining $\kappa$.  The
-certificate retains the source snapshots and all three routes.
+The production chain is guarded at its local lemmas and final algebra, but not
+at the implication that localizes the global response defect to the common
+near-fixed packets. The two-frame theorem retains full complement terms, and
+the shifted pullback estimate controls only omissions after restriction. A
+two-dimensional countermodel shows that global response invariance does not
+control this localized error without an additional commutator/flux premise.
+The separately written reconstruction reproduced the conditional ledger and
+thereby propagated the same missing premise; it was not externally time-sealed.
+The exact coefficient $48$, $\Gamma$, and $\kappa$ are preserved as audited
+constants of the conditional route, not as a proved universal lower bound.
 
 \section{Reproduction}
 

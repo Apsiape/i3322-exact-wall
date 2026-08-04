@@ -1,16 +1,18 @@
-# The blind quantitative reconstruction is accepted
+# Retraction of the blind quantitative reconstruction
 
-Status: **post-verdict hostile audit passed**
+Status: **former acceptance withdrawn after independent localization audit**
 
 Sprint 1238 independently returned
 
 ```text
 PASS: q_*-Q_d >= c d^-4 Gamma^-d,
 Gamma=312^4=9,475,854,336,
-c=4.294654614331445998753374519792940851...e-52.       (1)
+c=4.294654614327144182412697296233929416...e-52.       (1)
 ```
 
-The post-blind audit accepts that verdict.
+The former post-blind audit accepted that verdict. This acceptance is now
+withdrawn: the audit checked constants and multiplicities but failed to test
+the localization of the global response defect used in equation (16).
 
 ## Gate 1 -- quantifier
 
@@ -18,7 +20,7 @@ Sprint 1238 begins from Sprint 1237's fixed-dimension optimizer theorem.  It
 uses a pure state and projective effects on the original local spaces, not a
 Naimark dilation.  The POVM-defined `Q_d` is therefore the correct target.
 
-Verdict: **pass**.
+Verdict at the time: **pass**.
 
 ## Gate 2 -- geometry
 
@@ -33,7 +35,9 @@ The proof separately charges:
 
 Only finite positive joint spectral measures are used.  No density appears.
 
-Verdict: **pass**.
+Verdict after re-audit: **fail**. Common pullback addresses do not control the
+full two-frame complement terms, and restricting to the near-fixed sector
+introduces an uncharged commutator/flux term.
 
 ## Gate 3 -- ancestry
 
@@ -43,7 +47,7 @@ source.  Distinct labels are orthogonal at fixed time.  Quantitative drift
 makes the successive local `U` cells of each individual chain disjoint, so
 `n_i<=d`.  The proof never asserts `sum_i n_i<=d`.
 
-Verdict: **pass**.
+Verdict at the time: **pass, conditional on the failed geometry gate**.
 
 ## Gate 4 -- multiplicity
 
@@ -57,7 +61,7 @@ The ledger exposes every reuse:
 
 No number-of-packets or number-of-cells factor is hidden.
 
-Verdict: **pass**.
+Verdict at the time: **pass, conditional on the failed geometry gate**.
 
 ## Gate 5 -- arithmetic
 
@@ -80,18 +84,24 @@ c=1/(64 B^2 C_F^2)
 is the minimum of the four registered prefactors.  Its exact numerical
 evaluation agrees with Sprint 1238.
 
-Verdict: **pass**.
+Verdict: **pass as arithmetic for a conditional ledger, not as proof of the
+lower bound**.
 
-## Isolation and scope
+## Procedural history and scope
 
-The isolated agent registered its route before derivation, reported all 19
-source hashes matched, created only Sprint 1238, and did not modify existing
-sprints, final-push, git history, or the standalone repository.  Filesystem
-logs cannot prove a negative fact about every read, but the preregistered route
-and independently different constant assembly provide positive procedural
-evidence that this was not a copied synthesis.
+The reconstruction was reported as registered before derivation and used a
+frozen theorem packet.  Its preregistration, source packet, result, and
+acceptance first entered the public Git history together, however, so the
+chronology is not externally time-sealed and source-after-verdict access cannot
+be excluded from public evidence.  The lane is evidence of a separately
+written end-to-end assembly, not a cryptographically proved blind experiment.
 
-The accepted result is a mathematical quantitative dimension lower bound for
-I3322.  It is not a physical or foundational-theory claim.  Public integration
-is now scientifically authorized but remains a separate repository and
-release action.
+The original 19-source packet also omitted the load-bearing theorem owners in
+Sprints 1226 and 1227.  The review-repaired packet contains 21 sources and the
+standalone release now exposes those proofs.  The displayed constant has been
+recomputed with the safe two-family contact multiplicity.
+
+The quantitative dimension lower bound is not presently accepted. Public
+integration as a theorem is not authorized. The reconstruction remains useful
+as a precise map of the conditional algebra and the single missing
+localized-response theorem.

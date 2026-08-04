@@ -1,7 +1,7 @@
 # The quantitative proof has one owner per debt
 
-Status: **second analytic reconstruction; master algebra exact; blind
-independent proof still required for public promotion**
+Status: **abstract ledger algebra exact; concrete ownership map conditional on
+the unresolved near-fixed localization premise**
 
 ## 1. Abstract ledger theorem
 
@@ -89,15 +89,14 @@ The mapping uses only direct-sum inequalities:
 5. Sprint 1223's summed moving loss already includes every visited frame; it
    is not multiplied by `d` again in `L_d`.
 
-These rules reproduce equations (1)--(5) without an unowned term. The second
-reconstruction therefore agrees with Sprint 1231 after the two corrections:
-near-fixed `O(sqrt(epsilon))` and saturated inactive-tail coercivity.
+These rules reproduce equations (1)--(5) only if near-fixed mass has already
+been charged. The asserted `O(sqrt(epsilon))` near-fixed charge is not supplied
+by the current response estimates: the coarse complement/commutator debt is
+unowned. The abstract ledger remains valid as a conditional theorem.
 
 ## Verdict
 
-The internal analytic proof is complete. The public promotion gate is now
-procedural but mandatory: a blind reconstruction must rebuild the
-concrete-to-abstract map without reading Sprints 1231 or 1233, then compare
-term by term. A failure changes the theorem; a pass ports it to the standalone
-I3322 repository.
-
+The internal analytic proof is incomplete at the near-fixed localization
+arrow. The separately written reconstruction repeated the same premise and
+has been retracted as a proof. Public promotion is blocked until a new
+localized-response/flux theorem lands and survives a fresh isolated audit.

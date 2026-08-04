@@ -1,5 +1,5 @@
 {
-  "status": "sealed blind source snapshots verified",
-  "source_count": 19,
+  "status": "review-adjudicated conditional source snapshots verified",
+  "source_count": 21,
   "all_gates_pass": true
 }

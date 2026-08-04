@@ -52,33 +52,33 @@
     },
     {
       "path": "certificate/independent/dimension-necessity/BLIND-DIMENSION-RECONSTRUCTION.md",
-      "canonical_bytes": 16818,
+      "canonical_bytes": 18476,
       "hash_mode": "canonical-lf",
-      "sha256": "5862e13e70fc40f359e60ac307b8d5132a05d2a84b6eae5608adc562327f11f3"
+      "sha256": "c71d4f3b4870e74ae6bad69bd867be5388aaa7d366391d2f0bfca70d167f894d"
     },
     {
       "path": "certificate/independent/dimension-necessity/BLIND-RECONSTRUCTION-BRIEF.md",
-      "canonical_bytes": 1254,
+      "canonical_bytes": 1757,
       "hash_mode": "canonical-lf",
-      "sha256": "ef5aed4e4fde77a7c7decf553b4c193b6e9de6dd76b68e6ec172d4051b20298a"
+      "sha256": "38b100d4d217e45f1726882f4ae0f8c4717cbdb93a05f116f7d197c4db84f392"
     },
     {
       "path": "certificate/independent/dimension-necessity/POST-BLIND-ACCEPTANCE.md",
-      "canonical_bytes": 3086,
+      "canonical_bytes": 3995,
       "hash_mode": "canonical-lf",
-      "sha256": "0f3c4b2078f5035a4ac5ad6b5f58aac0d3f935ec708c1efdaddfa75a2c8c2942"
+      "sha256": "b9bfd120a35c6860eb9cab053702c5659bbd54707979dc8ea1cd95a406787f35"
     },
     {
       "path": "certificate/independent/dimension-necessity/post-blind-exact-audit.json",
-      "canonical_bytes": 297,
+      "canonical_bytes": 426,
       "hash_mode": "canonical-lf",
-      "sha256": "e774e85ad9e84d7914e223ae271deb21ac077fb77b05176cbbddc8d2146b9a2e"
+      "sha256": "3d3dcaf7717d4a1289b76d0998ff37a280eed8d122ef667b147f09c8f903dbdf"
     },
     {
       "path": "certificate/independent/dimension-necessity/post_blind_exact_verify.py",
-      "canonical_bytes": 2580,
+      "canonical_bytes": 2722,
       "hash_mode": "canonical-lf",
-      "sha256": "e6bc126a957b176bb66a1a8338bf24baac62b5c5a2720fea87ee5c3b5abfef8d"
+      "sha256": "d9ce5dbf3811da54d7942f9a386ccc2eb723cef91f223b27289b4103e890681b"
     },
     {
       "path": "certificate/independent/dimension-necessity/PRE-REGISTRATION.md",
@@ -88,21 +88,21 @@
     },
     {
       "path": "certificate/independent/dimension-necessity/README.md",
-      "canonical_bytes": 1478,
+      "canonical_bytes": 1650,
       "hash_mode": "canonical-lf",
-      "sha256": "7506130751bc0403b023f8e467d69cc1b00ad8e62b319e2f5edb6104e904f663"
+      "sha256": "15bd8dd7d18a8d9e171d9196a741bf13198af5e69ff928cc5dd180bfa3c36aa5"
     },
     {
       "path": "certificate/independent/dimension-necessity/source-manifest-audit.json",
-      "canonical_bytes": 105,
+      "canonical_bytes": 123,
       "hash_mode": "canonical-lf",
-      "sha256": "1f770c9f0187eef8db8ef0eb3424d1b06d6521322482250ef092ef06467a4569"
+      "sha256": "557bf42e98853d9fb7d9a71c4bd011fb803df14fcf7e31ee162b8beead30acda"
     },
     {
       "path": "certificate/independent/dimension-necessity/source-manifest.json",
-      "canonical_bytes": 3800,
+      "canonical_bytes": 4196,
       "hash_mode": "canonical-lf",
-      "sha256": "ce7ce226f2b250f878e8ad5b12bf3fe3556bb66abd818ae12694af633ab42c28"
+      "sha256": "a2fb9a8b900d2002b494997539927f7cd5ac81c8b2d6fb284f8420a91af659b9"
     },
     {
       "path": "certificate/independent/dimension-necessity/source-snapshots/foundational-sprint-1195/EXACT-ALIGNED-WALL-THEOREM.md",
@@ -189,6 +189,18 @@
       "sha256": "79a63b71f51d208665a8a5ec2221a05c2f5f4c26814c6a43f6210093e859a93e"
     },
     {
+      "path": "certificate/independent/dimension-necessity/source-snapshots/foundational-sprint-1226/WEIGHTED-CLOSURE-COERCIVITY.md",
+      "canonical_bytes": 2399,
+      "hash_mode": "canonical-lf",
+      "sha256": "a8683987729151f6f5a59027e29ed5152a8b1144a37973b5a1f70f36c9404b18"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/source-snapshots/foundational-sprint-1227/NEAR-FIXED-PULLBACK-PAIRING.md",
+      "canonical_bytes": 2813,
+      "hash_mode": "canonical-lf",
+      "sha256": "1218ab207076f1acaf58c2c261fe243cb1a21ce81a13e8f8476a75062290df6c"
+    },
+    {
       "path": "certificate/independent/dimension-necessity/source-snapshots/foundational-sprint-1228/RESULT-001-COMMON-TARGET-RMS-PAIRING.md",
       "canonical_bytes": 5059,
       "hash_mode": "canonical-lf",
@@ -196,9 +208,9 @@
     },
     {
       "path": "certificate/independent/dimension-necessity/source-snapshots/foundational-sprint-1229/RESULT-001-NEAR-FIXED-MASS-GAP.md",
-      "canonical_bytes": 4115,
+      "canonical_bytes": 4609,
       "hash_mode": "canonical-lf",
-      "sha256": "fd12feb47d76e54442d13b65838a4e9842f091cc8443f8b992791a76774cd58d"
+      "sha256": "0e1f9ee1b1724a4494a2ad6223f7e2d2af53540c1ce4172d39c5dddbd6fe8a33"
     },
     {
       "path": "certificate/independent/dimension-necessity/source-snapshots/foundational-sprint-1230/RESULT-001-FINITE-RANK-EXIT-THEOREM.md",
@@ -222,13 +234,13 @@
       "path": "certificate/independent/dimension-necessity/verify_constants.py",
       "canonical_bytes": 1734,
       "hash_mode": "canonical-lf",
-      "sha256": "958963ffbfb869df1af78da8decb43995a27ea0f2d5dad70fb86acbbfd98fc2a"
+      "sha256": "61ac47a60588fedd4d5cf62795b0635184e3f1bd0784eeba34f0e79700c6a264"
     },
     {
       "path": "certificate/independent/dimension-necessity/verify_source_manifest.py",
-      "canonical_bytes": 1325,
+      "canonical_bytes": 2097,
       "hash_mode": "canonical-lf",
-      "sha256": "b4a1a806e049977ad1f42af5fccc0277753ff73a2a0a1a338059150a2863e900"
+      "sha256": "9a24e22816f909b17891b987204513d040c5e89ade9026d923e7e1b0a2b24b79"
     },
     {
       "path": "certificate/independent/global-graph-mpmath.json",
@@ -280,9 +292,9 @@
     },
     {
       "path": "certificate/independent/README.md",
-      "canonical_bytes": 1565,
+      "canonical_bytes": 1616,
       "hash_mode": "canonical-lf",
-      "sha256": "3ea0b15344f720c325407a695dc37ea3585e6f4543780059dfea82c265cb6a6f"
+      "sha256": "b129507b93e2597db4289844626883d2a15be231f19e719bddc5cd955760e2ba"
     },
     {
       "path": "certificate/independent/shooting-miranda-mpmath.json",
@@ -987,6 +999,42 @@
       "sha256": "ebe9156dd82fe50abec310ffee97cb5af602c95310bd39c5ac0b6e3ae4a377dd"
     },
     {
+      "path": "certificate/production/foundational-sprint-1226/WEIGHTED-CLOSURE-COERCIVITY.md",
+      "canonical_bytes": 2399,
+      "hash_mode": "canonical-lf",
+      "sha256": "a8683987729151f6f5a59027e29ed5152a8b1144a37973b5a1f70f36c9404b18"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1226/weighted-closure-guard.json",
+      "canonical_bytes": 703,
+      "hash_mode": "canonical-lf",
+      "sha256": "5b35f7f4bcc37736e3f45aa10183308f0a177aa2dc62d19117c48a9d7b6c0039"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1226/weighted_closure_verify.py",
+      "canonical_bytes": 2551,
+      "hash_mode": "canonical-lf",
+      "sha256": "0cf6600658a64c94e244569549dd796dfbf5d10a270065d3f063f3d60a4d0a14"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1227/NEAR-FIXED-PULLBACK-PAIRING.md",
+      "canonical_bytes": 2813,
+      "hash_mode": "canonical-lf",
+      "sha256": "1218ab207076f1acaf58c2c261fe243cb1a21ce81a13e8f8476a75062290df6c"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1227/pullback-pairing-guard.json",
+      "canonical_bytes": 416,
+      "hash_mode": "canonical-lf",
+      "sha256": "c30ebfef3ee2a930e3c8b4bab450d7784c1680ab646289ffcc32109ac61a32f8"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1227/pullback_pairing_verify.py",
+      "canonical_bytes": 3211,
+      "hash_mode": "canonical-lf",
+      "sha256": "b97145ebe8c64bb8832fe343713f55ca48beb8811c710faeee7cc4449b5f03c2"
+    },
+    {
       "path": "certificate/production/foundational-sprint-1228/common_target_rms_verify.py",
       "canonical_bytes": 2416,
       "hash_mode": "canonical-lf",
@@ -1006,9 +1054,9 @@
     },
     {
       "path": "certificate/production/foundational-sprint-1229/near_fixed_gap_verify.py",
-      "canonical_bytes": 1784,
+      "canonical_bytes": 1860,
       "hash_mode": "canonical-lf",
-      "sha256": "a5c34c140dd5ca09a7bf1059d6efb59c83e7c7bfa9aeeb90740743e086a8b654"
+      "sha256": "c83e5f335e44c820a41340caed94b3adfa008d0aff95dd9a1eacb8982e19ecf4"
     },
     {
       "path": "certificate/production/foundational-sprint-1229/PRE-REGISTRATION.md",
@@ -1018,9 +1066,9 @@
     },
     {
       "path": "certificate/production/foundational-sprint-1229/RESULT-001-NEAR-FIXED-MASS-GAP.md",
-      "canonical_bytes": 4115,
+      "canonical_bytes": 4609,
       "hash_mode": "canonical-lf",
-      "sha256": "fd12feb47d76e54442d13b65838a4e9842f091cc8443f8b992791a76774cd58d"
+      "sha256": "0e1f9ee1b1724a4494a2ad6223f7e2d2af53540c1ce4172d39c5dddbd6fe8a33"
     },
     {
       "path": "certificate/production/foundational-sprint-1230/finite_rank_exit_verify.py",
@@ -1054,9 +1102,9 @@
     },
     {
       "path": "certificate/production/foundational-sprint-1231/RESULT-001-EXPONENTIAL-DIMENSION-NECESSITY.md",
-      "canonical_bytes": 7601,
+      "canonical_bytes": 8162,
       "hash_mode": "canonical-lf",
-      "sha256": "c40016b289ff7a66099ce75ce84dc02a61c76a90dbbc83c6b860a2bd1f2b2d6b"
+      "sha256": "33a7464eb4caf684c01a0ae47314dc4a1ca360fd32ac65b68b6c710060aaa0cd"
     },
     {
       "path": "certificate/production/foundational-sprint-1232/inactive-quadratic-interval.json",
@@ -1096,9 +1144,9 @@
     },
     {
       "path": "certificate/production/foundational-sprint-1233/RESULT-001-MASTER-DISCARD-LEDGER.md",
-      "canonical_bytes": 3356,
+      "canonical_bytes": 3417,
       "hash_mode": "canonical-lf",
-      "sha256": "4b422c42d824a7296994d19f9b571a643cff54a15843ec3f5afa7410347d2f48"
+      "sha256": "a961aaacb41be0b74bb38f905c48367d00beea84b2996124a425d551910487d5"
     },
     {
       "path": "certificate/production/foundational-sprint-1234/outer_affine_dominance_verify.py",
@@ -1132,9 +1180,9 @@
     },
     {
       "path": "certificate/production/foundational-sprint-1235/RESULT-001-CANONICAL-PACKET-PATHS.md",
-      "canonical_bytes": 4082,
+      "canonical_bytes": 4246,
       "hash_mode": "canonical-lf",
-      "sha256": "91860ab027a5216e259fc2baa223a14099da2d63796fa6896b3abbd904d4e9bf"
+      "sha256": "a2ff848f42defdf94416ef859a06f75aa0df893e5e7937f4c97945acff125190"
     },
     {
       "path": "certificate/production/foundational-sprint-1237/PRE-REGISTRATION.md",
@@ -1156,21 +1204,21 @@
     },
     {
       "path": "certificate/release/build_release_manifest.py",
-      "canonical_bytes": 2201,
+      "canonical_bytes": 2437,
       "hash_mode": "canonical-lf",
-      "sha256": "e2e1532a1aae34099a3a7c05011ec9c847642841db78ab5886b4e5460960c8ad"
+      "sha256": "e41071b6c4b885633a9ef48dfaae40dc7eac9b66ca734dda74918bd3e3ff2bb4"
     },
     {
       "path": "certificate/release/dimension-gap-audit.json",
-      "canonical_bytes": 1741,
+      "canonical_bytes": 1822,
       "hash_mode": "canonical-lf",
-      "sha256": "0835fbff4fd473fcb28e8fb20528b378a3737a603d3ed1cb12fb5b23fc4e41bf"
+      "sha256": "0d28080d0b0286649674e513d256997c7d7a2e215ec605c72bbacbf1806ce1a8"
     },
     {
       "path": "certificate/release/dimension_gap_audit.py",
-      "canonical_bytes": 2700,
+      "canonical_bytes": 2795,
       "hash_mode": "canonical-lf",
-      "sha256": "af8421850acb1c89f0d37cab2600e24ec3c9887cda370a946eda47772c5e9d2b"
+      "sha256": "462747945230700702c2409b8c66c7ed54d7594f260370c141c87e512cf68fb1"
     },
     {
       "path": "certificate/release/normalization-concordance.json",
@@ -1186,27 +1234,27 @@
     },
     {
       "path": "certificate/release/README.md",
-      "canonical_bytes": 1103,
+      "canonical_bytes": 1249,
       "hash_mode": "canonical-lf",
-      "sha256": "cdef267a935a76477c0f154918f1aaf624f9228a0ea17cd36f08620dea5bab08"
+      "sha256": "2898fe5e6c919ae60894d1e066904d248e488e955dfd98a664438f9c702cc45d"
     },
     {
       "path": "certificate/release/v13-claim-contract.json",
-      "canonical_bytes": 795,
+      "canonical_bytes": 1075,
       "hash_mode": "canonical-lf",
-      "sha256": "7d9d13f7f99024e7d9d74262fef5f3edadcd226f6ecbeed1a5ba077aa5d7879b"
+      "sha256": "2a1dd215d21ff541cb15b6c181b8528d8dbc4cee93b94d871dd85ca226e08f1d"
     },
     {
       "path": "certificate/release/v13_claim_contract_verify.py",
-      "canonical_bytes": 3323,
+      "canonical_bytes": 4922,
       "hash_mode": "canonical-lf",
-      "sha256": "6262465cb4f51c49f507bd8fa85df4914fe83d42bfe542a88e05de923f8af613"
+      "sha256": "edff949fc0768bc203c373d01612cb3c8c293e1b6e6b4fb88989b0a706bd1dc2"
     },
     {
       "path": "certificate/release/verify_release.py",
-      "canonical_bytes": 10986,
+      "canonical_bytes": 12424,
       "hash_mode": "canonical-lf",
-      "sha256": "49b38f0e0bcfdddbafd65a12e2b6c6b3debc959590f09a8e9f6df4dc6ef2f415"
+      "sha256": "9124f6f3cedf48807b8b6e6611de7766f9fa3cd428a5c133841805429a34cfa2"
     },
     {
       "path": "CITATION.cff",
@@ -1234,33 +1282,33 @@
     },
     {
       "path": "paper/CERTIFICATE-MAP.md",
-      "canonical_bytes": 10045,
+      "canonical_bytes": 10430,
       "hash_mode": "canonical-lf",
-      "sha256": "6c78952ac5f857e5d5bdadc90cc5e1c7324add609ce1addf8a08ed85f83f3b58"
+      "sha256": "158eb9fe8d3bd3e5ba10ec0b56b6fdf8702207d68a77243514c1887abaff8dcc"
     },
     {
       "path": "paper/DIMENSION-GAP-STATUS.md",
-      "canonical_bytes": 3271,
+      "canonical_bytes": 3445,
       "hash_mode": "canonical-lf",
-      "sha256": "c08980d5bdc0c3419f09ec98fe2f6ec17d568bf07b2ebc5b7ca1be951d87728d"
+      "sha256": "f11c279b8523520ee3f3aacba0aaf5ce67ff930376df227cb3a4d54ac5783da6"
     },
     {
       "path": "paper/MANUSCRIPT.md",
-      "canonical_bytes": 25983,
+      "canonical_bytes": 25424,
       "hash_mode": "canonical-lf",
-      "sha256": "5c06f1a66b10bbbfd93c1aa7a544f286818db2d9d6596bffba7c1d600543b7c9"
+      "sha256": "e7095c6b4cd2840b3485fedf183c02d9e05964268376d13f5e72e212665fd79a"
     },
     {
       "path": "paper/manuscript.pdf",
-      "canonical_bytes": 345224,
+      "canonical_bytes": 339258,
       "hash_mode": "raw",
-      "sha256": "c881da4b03b27ae251ce109d8aa9e2aadf0bf197441c1f5d2b985a27d6936b6d"
+      "sha256": "ade41b117a05af8fcbe7ce92b05cd6adee65796850af78f2ad999b3ca3b0c6bd"
     },
     {
       "path": "paper/manuscript.tex",
-      "canonical_bytes": 25268,
+      "canonical_bytes": 23924,
       "hash_mode": "canonical-lf",
-      "sha256": "ac32debe68cbfc6dd5c8072b571fefb3d8553af3f81ca6f01db1bf01e63accf4"
+      "sha256": "b7112b2552cfa7f3526bf92530ed88dc66bc1b07cbc92655d7385e21aabc7409"
     },
     {
       "path": "paper/NORMALIZATION-CONCORDANCE.md",
@@ -1270,15 +1318,15 @@
     },
     {
       "path": "paper/PRE-RELEASE-AUDIT-v1.3.0.md",
-      "canonical_bytes": 4418,
+      "canonical_bytes": 5140,
       "hash_mode": "canonical-lf",
-      "sha256": "d617019a37a9426cc726e027385b8f5e18ca941687eae5dc665ebc6a022dabc7"
+      "sha256": "1d1f3e6c4c5c43199cc8a3fc9a43708b44d47142ee8eaa587f2a85ba22692d5a"
     },
     {
       "path": "paper/PRIORITY-AUDIT.md",
-      "canonical_bytes": 8225,
+      "canonical_bytes": 8439,
       "hash_mode": "canonical-lf",
-      "sha256": "9b7a8d9e7ae969aa197eb0e331c6b8ffde46c62e61ed2d6c90cf4b1c9eceb0be"
+      "sha256": "1dd17bc3935b75bda374744bb16f102253bb8019715e02d64a3400c374a5172d"
     },
     {
       "path": "paper/PRIORITY-SEARCH-RECEIPT.json",
@@ -1306,41 +1354,83 @@
     },
     {
       "path": "paper/RELEASE-NOTES-v1.3.0.md",
-      "canonical_bytes": 2978,
+      "canonical_bytes": 4393,
       "hash_mode": "canonical-lf",
-      "sha256": "ef9d05146d9e4ea7dbef88deb83eb1961a2f586d64502dbdb029c560b75fa9cf"
+      "sha256": "6c0a1c1dac862f5b3edf2aa15d94a1f13a72be9720692c271ed1a59574fb4d7b"
     },
     {
       "path": "paper/TECHNICAL-SUPPLEMENT.md",
-      "canonical_bytes": 13914,
+      "canonical_bytes": 15091,
       "hash_mode": "canonical-lf",
-      "sha256": "ba27b8f72c507e13aaba110895e952c652ff2c3a994f2505fcd8f6856fbae4f1"
+      "sha256": "56973aa2804cb2539e774745e0f417a3644ab555988ef322d79a4be03cbbdf58"
     },
     {
       "path": "paper/technical-supplement.pdf",
-      "canonical_bytes": 219540,
+      "canonical_bytes": 222341,
       "hash_mode": "raw",
-      "sha256": "e7be56a4bf7625f7300650f71609a336f3e82fb1140bc9f77f4c5d7cd6371b09"
+      "sha256": "79d773b437e1e38027f8be18ec927a8d8d956b7e6b2210d2cde557066d35f79d"
     },
     {
       "path": "paper/technical-supplement.tex",
-      "canonical_bytes": 15803,
+      "canonical_bytes": 16864,
       "hash_mode": "canonical-lf",
-      "sha256": "428b995f71f22c25533bb2eda71b7da06e4a0e21087543dafb633df83f083211"
+      "sha256": "46a2caed21d13625e8afcd11d881abf88c60c1848fffff79657b47ce11ba04a9"
     },
     {
       "path": "README.md",
-      "canonical_bytes": 5266,
+      "canonical_bytes": 5295,
       "hash_mode": "canonical-lf",
-      "sha256": "547b782e365bbc71e597cc9ba0374cc1c5c7025321ec133957ffb738a7f94d40"
+      "sha256": "b330af32c3b80048b5e087dcacb9e8b4179eac2fef099f00f505e56b356af8e8"
     },
     {
       "path": "requirements.txt",
       "canonical_bytes": 61,
       "hash_mode": "canonical-lf",
       "sha256": "6b1e7e7d24ae3170ee31f6757ea4a750faa356f73dd0ff9ea7d1918027f10dc9"
+    },
+    {
+      "path": "review/ADJUDICATION.md",
+      "canonical_bytes": 3721,
+      "hash_mode": "canonical-lf",
+      "sha256": "0d78c2e3d5fb37603f48e932285e312687333daf89c05c931437f2cc810dafdd"
+    },
+    {
+      "path": "review/LOCALIZATION-NO-GO.md",
+      "canonical_bytes": 2509,
+      "hash_mode": "canonical-lf",
+      "sha256": "bbeb7ef6119a193886ac21fac5cea8b2bb290d294ad0f928e1d3dcb0261e4397"
+    },
+    {
+      "path": "review/model-audits/INDEPENDENCE-AUDIT.md",
+      "canonical_bytes": 2703,
+      "hash_mode": "canonical-lf",
+      "sha256": "f0e78bae195681de00085a65f3b56d6f78419d3cee66a481f2a4a75ddc4e38b1"
+    },
+    {
+      "path": "review/model-audits/PACKET-AUDIT.md",
+      "canonical_bytes": 2800,
+      "hash_mode": "canonical-lf",
+      "sha256": "d9637ecc278463b274b3983b5007fc2fa4d1f871995630a4c2bf85a72d879dfa"
+    },
+    {
+      "path": "review/model-audits/QUANTIFIER-AUDIT.md",
+      "canonical_bytes": 2305,
+      "hash_mode": "canonical-lf",
+      "sha256": "193dff55e8f15ffaa9530e3e0d0c9f520787ef17875dc9da82768642f7db9611"
+    },
+    {
+      "path": "review/MODEL-REVIEW-PROTOCOL.md",
+      "canonical_bytes": 3747,
+      "hash_mode": "canonical-lf",
+      "sha256": "c325b3043060e0b8f3c098a013b678afb6f982d649b698dfb754783f89d6e62f"
+    },
+    {
+      "path": "review/README.md",
+      "canonical_bytes": 1103,
+      "hash_mode": "canonical-lf",
+      "sha256": "cd23c1a85d84c058daa635246647e8356d57c5877d367bf0c7f0a80b76661601"
     }
   ],
-  "file_count": 223,
-  "complete_dependency_closure": true
+  "file_count": 238,
+  "scope": "Custody manifest for selected published files. Analytic dependency closure is checked separately by verify_release.py and is not inferred from file enumeration alone."
 }

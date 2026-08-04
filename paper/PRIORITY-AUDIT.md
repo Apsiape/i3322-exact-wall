@@ -78,9 +78,9 @@ three-setting/two-outcome I3322 functional, that
   work, but not an I3322 result and not a theorem in the canonical binary
   three-setting scenario.
 
-## Quantitative-dimension extension checked for prospective v1.3
+## Withdrawn quantitative-dimension extension checked for prospective v1.3
 
-The added claim is
+The initially proposed claim was
 
 ```text
 kappa d^-4 Gamma^-d <= q_*-Q_d <= exp[-d log R+O(1)],
@@ -93,8 +93,11 @@ dimension witness`, and combinations with `epsilon`, `nonattainment`, and the
 exact wall decimal.  Pal--Vertesi supply the numerical finite-carrier family;
 Navascues et al. supply convergent fixed-dimension machinery.  Neither proves
 the displayed lower bound for arbitrary dimension-`d` strategies or the
-two-sided asymptotic order.  No matching theorem was found.  This remains a
-negative search, not a proof of priority.
+two-sided asymptotic order. No matching theorem was found, but adversarial
+review then found that our own lower-bound derivation was incomplete. The
+current prospective claim is only the exact boundary-flux identity and
+constructive exponent `log R`. This remains a negative search, not a proof of
+priority.
 
 ## Search receipt and limitations
 

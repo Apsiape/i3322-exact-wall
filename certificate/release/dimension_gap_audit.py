@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Separate the numerical truncation illustration from the dimension theorem."""
+"""Audit the truncation data and keep the failed converse explicitly typed."""
 
 from __future__ import annotations
 
@@ -41,7 +41,7 @@ def main() -> None:
     assert necessity["all_gates_pass"] is True
     assert necessity["Gamma"] == "9475854336"
     output = {
-        "status": "numerical truncation audit separated from analytic dimension law",
+        "status": "numerical truncation audit separated from conditional necessity ledger",
         "q_star": Q_STAR,
         "data": [
             {"dimension": int(dim), "value": value, "gap": Q_STAR - value}
@@ -53,18 +53,20 @@ def main() -> None:
         },
         "successive_log_gap_rates": asymptotic_slopes,
         "plateau_log_ratio": math.log(PLATEAU_RATIO),
-        "analytic_necessity": {
+        "conditional_necessity_ledger": {
             "Gamma": necessity["Gamma"],
             "kappa_decimal_80": necessity["c_decimal_80"],
             "form": "q_*-Q_d >= kappa d^-4 Gamma^-d",
+            "proved": False,
+            "blocker": "uncontrolled near-fixed response localization/commutator term",
         },
         "observed_reading": "The centered aligned sequence illustrates the independently proved wall-truncation exponent log(R).",
         "theorem_boundary": [
             "The table itself does not bound arbitrary dimension-d strategies.",
-            "The lower bound comes from the separate robust certificate proof, not a fit to these data.",
+            "No universal lower bound is presently proved by the packet campaign.",
             "The exact reversal proof alone remains quantitatively unstable.",
         ],
-        "open_problem": "Close the gap between the constructive exponent log(R) and the conservative necessity exponent log(Gamma).",
+        "open_problem": "Prove a localized-response/flux theorem or find a different quantitative necessity argument.",
         "all_data_gates_pass": True,
     }
     (HERE / "dimension-gap-audit.json").write_text(

@@ -1,6 +1,28 @@
 # Result 001 -- blind reconstruction of quantitative I3322 dimension necessity
 
-Status: **complete implication from the sealed packet**
+Status: **retracted as a proof; retained as a conditional reconstruction with
+the failure localized at equation (16)**
+
+## Correction notice
+
+Adversarial review found that equation (16) is not implied by the packet. The
+two-frame theorem applied to `w=L_sigma psi` contains omissions on the full
+vector. Equation (15) controls pullback omissions only inside the selected
+near-fixed occurrences. It does not control the coarse complement or the
+commutator created by first restricting `w` to the near-fixed sector.
+
+The maximal valid localized sub-PVM estimate is
+
+```text
+D^2 <= 3[||E'(K w-w)||^2
+          +||(E-G)w||^2+||(E'-G')w||^2].
+```
+
+The last two terms cannot be replaced by occurrence-internal near-fixed
+omissions under the stated hypotheses. Consequently equations (20) and all
+later uses of `m_N<=C_N sqrt(epsilon)` are conditional. The arithmetic below
+is retained to make the exact downstream consequence of a future flux lemma
+reproducible; it is not a theorem proof.
 
 ## 1. Theorem and fixed constants
 
@@ -22,7 +44,7 @@ The positive constant `c`, independent of `d`, is displayed exactly in
 Section 11. Its arithmetic value is approximately
 
 ```text
-c = 4.2946546143314460... * 10^-52.                 (3)
+c = 4.2946546143271442... * 10^-52.                 (3)
 ```
 
 No optimization of `c` or `Gamma` is claimed.
@@ -180,6 +202,12 @@ D_A^2+D_B^2
  <=6(epsilon_A+epsilon_B)+(39/10)delta_N.           (16)
 ```
 
+**This is the invalid step.** The valid right side contains the four actual
+coarse omissions `nu(E_sigma-G)+nu(E'_sigma-G')`. The shifted estimate (15)
+does not bound them; they may include order-one mass outside the near-fixed
+restriction. A quantitative no-inbound/no-outbound-flux or commutator estimate
+is required.
+
 Indeed, each response defect contributes `3*2 epsilon_sigma`, and the sum
 of all weighted source/target omissions is at most `(13/10)delta_N` before
 the factor `3`.
@@ -191,17 +219,22 @@ omission is one of the terms already in (15), so
 W>=m_N-delta_N.                                     (17)
 ```
 
-Sprint 1229's absorbed closure inequality says
+Sprint 1229's repaired absorbed closure inequality says
 
 ```text
-(mu^2/2)W<=24 epsilon_0+K(D_A^2+D_B^2).             (18)
+(mu^2/2)W<=48 epsilon_0+K(D_A^2+D_B^2).             (18)
 ```
+
+The coefficient `48` retains the source/target contact multiplicity.  Each
+family is internally orthogonal, but the two families need not be mutually
+orthogonal, so their combined contact energy is bounded by `2 epsilon_0`, not
+by `epsilon_0`.
 
 Combining (15)--(18) gives
 
 ```text
 (mu^2/2)m_N
- <=24epsilon_0+6K(epsilon_A+epsilon_B)+H delta_N.
+ <=48epsilon_0+6K(epsilon_A+epsilon_B)+H delta_N.
 ```
 
 The choice of `theta` makes
@@ -216,7 +249,7 @@ For `epsilon<=1`, absorption and
 ```text
 m_N<=C_N sqrt(epsilon),                             (20)
 
-C_N=(4/mu^2)[24+6K+H C_0].                         (21)
+C_N=(4/mu^2)[48+6K+H C_0].                         (21)
 ```
 
 This accounts for near-fixed capture, all four source/target omissions, both
@@ -472,7 +505,7 @@ c=min(c_0,c_1,c_2,c_3).                             (45)
 
 Every entry is explicit in (8), (11), (21), (27), (31), (40), and (42).
 The independent arithmetic guard `verify_constants.py` finds
-`c=c_3=4.2946546143314460...*10^-52`.
+`c=c_3=4.2946546143271442...*10^-52`.
 
 If `epsilon>=1`, (1) follows from `c<=1`, `d^-4<=1`, and `Gamma^-d<=1`.
 Assume henceforth `epsilon<1`.
@@ -510,7 +543,8 @@ epsilon
  >=c_3 d^-4 Gamma^-d.                               (49)
 ```
 
-Equations (46), (48), and (49) exhaust all cases and prove (1).
+Conditional on the missing localization estimate, equations (46), (48), and
+(49) exhaust the algebraic cases and would prove (1).
 
 ## 12. Multiplicity and prohibited-shortcut audit
 
@@ -547,4 +581,5 @@ references are:
 - G. B. Folland, *Real Analysis*, 2nd ed., Wiley, 1999, chapters on integration
   (Tonelli and integral inequalities).
 
-No additional mathematical assumption is introduced.
+The reconstruction implicitly introduced the missing localization premise at
+equation (16). No such premise is present in the frozen sources.

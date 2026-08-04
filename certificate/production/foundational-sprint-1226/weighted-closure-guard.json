@@ -1,0 +1,11 @@
+{
+  "status": "100-digit weighted closure-coercivity guard",
+  "hostile_fixtures": 10000,
+  "certified_margin_lower_bound": "0.000875384513976535514",
+  "minimum_sampled_eigenvalue_slack": "0.0001965848678706292344922181661920705541677800377620804840456947844944640478053608335745663307308109",
+  "minimum_sampled_quadratic_slack": "0.000004853803846514439204926439917567095466848754010109332582474811024271066341035557923574406187250908000",
+  "endpoint_amplitude_division_used": false,
+  "global_contact_family_multiplicity": 2,
+  "all_gates_pass": true,
+  "claim_boundary": "The analytic matrix inequality is exact. The fixture guard is not a substitute for the Sprint 1227--1229 packet assembly."
+}

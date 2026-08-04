@@ -1,0 +1,93 @@
+# Adjudication of the prospective v1.3 model review
+
+**Date:** 2026-08-04  
+**Decision:** **HOLD -- do not tag, publish, or mint v1.3**
+
+## Review posture
+
+Human referee access is unavailable.  The project therefore uses isolated
+frontier-model reconstructions as its accepted adversarial review mechanism.
+The three lanes were separated by packet and attack surface, but they share a
+broad model lineage.  Their reports are evidence only to the extent that the
+underlying arguments can be reproduced.
+
+## Reproduced findings
+
+### Quantifiers and asymptotics -- repaired
+
+- `Q_d` now explicitly ranges over arbitrary mixed states and binary POVMs.
+- Same-dimension pure/projective reduction is stated without Naimark dilation.
+- The constructive bound is *witnessed* by truncations, not said to be
+  attained by them.
+- The tail argument now uses the analytic unstable-manifold asymptotic
+  `lambda_j=C_+R^{-j}(1+O(rho^j))`; a ratio limit alone was insufficient for a
+  dimension-independent prefactor.
+
+### Packet and constant audit -- partly repaired, one blocker remains
+
+- The omitted scalar closure and pullback-address sources are now included as
+  Sprints 1226 and 1227.
+- The canonical packet uses the saturated preimage `Y^{-1}(gI)`, not the
+  unsaturated `P(gI)` expression.
+- Source and target contact families are each orthogonal but are not jointly
+  orthogonal.  Conditional on a valid localization lemma, the safe coefficient
+  is therefore `48 epsilon_0`, not `24 epsilon_0`.  This changes the conditional
+  prefactor but not `Gamma=312^4`.
+- **Unresolved load-bearing gap:** the common near-fixed projections do not by
+  themselves localize the global response defect.  The two-frame theorem
+  includes complement terms
+
+  ```text
+  ||(I-sum G_j)L_sigma psi||,
+  ||(I-sum G'_j)L_sigma psi||,
+  ```
+
+  while the pullback estimate controls only the unpaired part of a restricted
+  near-fixed measure.  It does not control all mass omitted by those sums.
+  A localized-response/commutator estimate or a genuine packet-completion
+  intertwiner is still required.
+
+The finite-dimensional countermodel
+
+```text
+H=C^2,  w=(e1+e2)/sqrt(2),  K e1=e2,  K e2=e1,
+G=G'=|e1><e1|
+```
+
+has zero global response defect but unit fine-packet error.  It does not
+refute a future I3322-specific localization theorem; it refutes the inference
+currently used to obtain one.
+
+### Custody and replay -- repairable after the theorem boundary is settled
+
+- The original reconstruction chronology is not externally time-sealed.
+- The release verifier now rechecks hashes after full replay and no longer
+  claims complete dependency closure or cryptographically sealed blindness.
+- The release manifest is intentionally left stale while the mathematical
+  claim boundary is under adjudication.  It must be regenerated only after
+  the theorem is either repaired or narrowed, and it must include this review
+  directory if the review is shipped as part of the release.
+
+## Maximal presently supported statement
+
+The prospective v1.3 package presently supports the constructive upper bound
+
+```text
+q_* - Q_d <= exp[-d log R + O(1)]
+```
+
+with a dimension-independent `O(1)` term and the documented truncation
+witnesses.  The matching universal lower bound and hence
+`D(epsilon)=Theta(log(1/epsilon))` remain conditional on the unresolved
+near-fixed localization lemma.
+
+## Exit rule
+
+There are only two honest exits:
+
+1. prove the missing localized-response theorem, subject it to a fresh
+   isolated reconstruction, and then restore the two-sided claim; or
+2. narrow v1.3 to the constructive upper bound and publish the failed
+   lower-bound route as an explicit open problem.
+
+Until one exit is completed, v1.3 remains prospective.

@@ -1,15 +1,15 @@
 # Quantitative dimension necessity at the exact I3322 wall
 
-Status: **analytic theorem assembled from certified upstream inputs;
-independent reconstruction still required before public promotion**
+Status: **conditional algebraic consequence; near-fixed response localization
+is unproved and the theorem claim is withdrawn**
 
-## Theorem
+## Conditional theorem
 
 Let `Q_d` be the largest value of the normalized I3322 functional among
 tensor-product quantum strategies whose two local Hilbert spaces have
 dimension at most `d`. Let `q_*` be the exact validated supremum of Sprint
-1197. There is a computable universal constant `c_*>0` such that, for every
-`d>=1`,
+1197. If the missing localized-response estimate described below holds, there
+is a computable universal constant `c_*>0` such that, for every `d>=1`,
 
 ```text
 q_*-Q_d
@@ -25,9 +25,8 @@ Consequently every strategy with Bell deficit `epsilon` requires
 d >= [log(1/epsilon)-O(log log(1/epsilon))]/log Gamma. (2)
 ```
 
-The exponent is intentionally crude. This theorem proves logarithmic
-device-independent dimension necessity; it does not claim the sharp wall
-exponent `log R`.
+The exponent is intentionally crude. The displayed implication is not
+presently a proved device-independent dimension bound.
 
 ## 1. Fixed constants and sectors
 
@@ -83,11 +82,15 @@ Apply the common-source/common-target construction of Sprint 1228 with mesh
 
 ```text
 (mu^2/2)W_c
- <=24 epsilon_0,c
+ <=48 epsilon_0,c
    +(4656/25)(E_A,c^2+E_B,c^2).                     (8)
 ```
 
-The two-frame theorem gives
+The coefficient `48` includes the possible double use of global contact mass
+by the internally orthogonal source and target packet families; mutual
+source--target orthogonality is not assumed.
+
+The original assembly asserted that the two-frame theorem gives
 
 ```text
 E_A,c^2+E_B,c^2
@@ -95,7 +98,11 @@ E_A,c^2+E_B,c^2
 ```
 
 where `Gamma_c` is the sum of the four weighted source/target discard
-masses. Fixed-width shifted contact rounding is proportional to
+masses. This is the unresolved step: the shifted pullback estimate controls
+near-fixed occurrence omissions but not the full coarse complements in the
+two-frame theorem. Restricting the response vector introduces an uncharged
+commutator/flux term. Conditional on a new theorem controlling that term,
+fixed-width shifted contact rounding would be proportional to
 `sqrt(epsilon_0)/h_0`; with fixed `h_0`, and using the saturated coercivity
 (7), every non-pullback
 part is bounded by `C_c sqrt(epsilon)`. The pullback separation contributes

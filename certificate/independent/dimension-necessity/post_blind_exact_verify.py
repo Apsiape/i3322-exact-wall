@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent exact rational/surd audit of Sprint 1238's constants."""
+"""Exact rational/surd audit of the conditional lower-bound ledger."""
 
 from __future__ import annotations
 
@@ -20,7 +20,7 @@ near_width = theta * h0 / 20
 drift_gap = near_width / 8
 C0 = 100 * s40 / h0
 Cout = Q(400 * 1_000_000**2, 1883**2)
-CN = (4 / mu**2) * (24 + 6 * K + H * C0)
+CN = (4 / mu**2) * (48 + 6 * K + H * C0)
 CI = Cout + CN + 4 * s40 / drift_gap
 KR = 84 * s40 / (19 * drift_gap)
 CF = KR + 3 * (Cout + CN)
@@ -59,23 +59,25 @@ def main() -> None:
     printed = sp.N(c3, 80)
     # Sprint 1238 advertises only the displayed 16 significant digits.  Its
     # Decimal helper is not treated as an exact source beyond that display.
-    expected = sp.Float("4.294654614331446e-52", 80)
+    expected = sp.Float("4.294654614327144e-52", 80)
     relative = abs((printed - expected) / expected)
     assert relative < sp.Float("1e-15", 80)
 
-    print("==== SPRINT 1239 POST-BLIND EXACT AUDIT ====")
+    print("==== CONDITIONAL LOWER-BOUND LEDGER AUDIT ====")
     print(f"PASS A = {A}")
     print(f"PASS B = {B}")
     print(f"PASS Gamma = {Gamma}")
     print(f"PASS c = {printed}")
     print("PASS c is the exact minimum of the four registered candidates")
     report = {
-        "status": "post-blind exact dimension-necessity audit",
+        "status": "exact arithmetic audit of conditional dimension-necessity ledger",
         "A": str(A),
         "B": str(B),
         "Gamma": str(Gamma),
         "c_decimal_80": str(printed),
         "candidate_four_is_exact_minimum": True,
+        "universal_lower_bound_proved": False,
+        "blocker": "near-fixed localized-response/commutator estimate",
         "all_gates_pass": True,
     }
     (HERE / "post-blind-exact-audit.json").write_text(

@@ -9,10 +9,13 @@ Let `Q={I_i}` be the initial predecessor partition.  At every moved frame
 `g_k`, define
 
 ```text
-G_(k,i)=1_(P(g_k I_i))(X) 1_(g_k I_i)(U).           (1)
+G_(k,i)=1_(Y^-1(g_k I_i))(X) 1_(g_k I_i)(U).        (1)
 ```
 
-The factors commute because `X` and `U` act on opposite tensor factors.
+Here `Y` is Sprint 1232's saturated predecessor coordinate.  The former
+formula `P(g_k I_i)` was valid only on the active chart and omitted the
+inactive sliver; it is withdrawn.  The factors in the corrected formula
+commute because `X` and `U` act on opposite tensor factors.
 They therefore define one canonical joint projection rather than a choice of
 fibre coordinates.
 
@@ -39,8 +42,7 @@ transport-closed amplitude path.
 ## 2. Horizontal ownership
 
 For fixed `k`, the sets `g_k(I_i)` are pairwise disjoint because `g_k` is a
-Borel bijection.  Their `P` images are pairwise disjoint because `P` is
-monotone.  Hence
+Borel bijection. Their `Y^-1` preimages are pairwise disjoint. Hence
 
 ```text
 G_(k,i)G_(k,j)=0,       i!=j.                       (3)
@@ -99,7 +101,7 @@ functional-analytic reconstruction.
 ## Boundary
 
 This sprint does not rederive the Bell certificate, contact coercivity,
-moving-grid loss, coefficient bounds, or near-fixed closure estimate.  It is
-also not epistemically blind: it was written after inspecting the disputed
-upstream chain.  The public repository remains unchanged until a genuinely
-independent reconstruction checks the entire proof package.
+moving-grid loss, coefficient bounds, or near-fixed closure estimate. In
+particular, it does not control the coarse complement/commutator term found by
+the later review. It is also not epistemically blind: it was written after
+inspecting the disputed upstream chain.

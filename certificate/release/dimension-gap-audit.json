@@ -1,5 +1,5 @@
 {
-  "status": "numerical truncation audit separated from analytic dimension law",
+  "status": "numerical truncation audit separated from conditional necessity ledger",
   "q_star": 0.25087538451397656,
   "data": [
     {
@@ -39,17 +39,19 @@
     0.07519366109631946
   ],
   "plateau_log_ratio": 0.07519285919570202,
-  "analytic_necessity": {
+  "conditional_necessity_ledger": {
     "Gamma": "9475854336",
-    "kappa_decimal_80": "4.2946546143314459987533745197929408511613187617537397268603285846815029056115185e-52",
-    "form": "q_*-Q_d >= kappa d^-4 Gamma^-d"
+    "kappa_decimal_80": "4.2946546143271441824126972962339294158778092471229379783067816419064764194371040e-52",
+    "form": "q_*-Q_d >= kappa d^-4 Gamma^-d",
+    "proved": false,
+    "blocker": "uncontrolled near-fixed response localization/commutator term"
   },
   "observed_reading": "The centered aligned sequence illustrates the independently proved wall-truncation exponent log(R).",
   "theorem_boundary": [
     "The table itself does not bound arbitrary dimension-d strategies.",
-    "The lower bound comes from the separate robust certificate proof, not a fit to these data.",
+    "No universal lower bound is presently proved by the packet campaign.",
     "The exact reversal proof alone remains quantitatively unstable."
   ],
-  "open_problem": "Close the gap between the constructive exponent log(R) and the conservative necessity exponent log(Gamma).",
+  "open_problem": "Prove a localized-response/flux theorem or find a different quantitative necessity argument.",
   "all_data_gates_pass": true
 }

@@ -1,4 +1,4 @@
-# Quantitative dimension law at the I3322 wall
+# Quantitative convergence and the open dimension lower bound
 
 ## Definition
 
@@ -38,51 +38,47 @@ Since `Q_d>=v_L`, this proves
 
 Thus `log(1/epsilon)/log R+O(1)` local dimension is sufficient.
 
-## Universal lower bound on the deficit
+## Conditional lower-bound campaign
 
-The robust equality-certificate argument supplies explicit constants
+The attempted robust equality-certificate argument produces the conditional
+constants
 
 ```text
 Gamma = (20*78/5)^4 = 312^4 = 9,475,854,336,
-kappa = 4.294654614331445998753374519792940851...e-52
+kappa = 4.294654614327144182412697296233929416...e-52
 ```
 
-such that, for every `d>=1`,
+and would imply, for every `d>=1`,
 
 ```text
 q_*-Q_d >= kappa d^-4 Gamma^-d.
 ```
 
-The proof localizes the three positive certificate remainders, charges the
-near-fixed and inactive-tail sectors, follows canonical packets through a
-finite sequence of moving spectral frames, and compares the resulting upper
-energy ledger with a finite-rank reverse-endpoint lower bound. Every frame,
-exit-time, and response-debt multiplicity is explicit.
+The finite-rank, recurrence, inactive-tail, and scalar-closure pieces are
+explicit. The missing implication is the localization of the global response
+defect to the common near-fixed packets. The two-frame estimate contains full
+complement terms, whereas the shifted pullback estimate controls only
+unpaired mass after restriction. No existing certificate bounds the resulting
+commutator/interface term.
 
-The proof was reconstructed blindly from a sealed 19-source packet and then
-audited in a separate exact-arithmetic pass. The public certificate retains
-both routes.
+The written ledger was separately reconstructed from a theorem packet and
+then audited in exact arithmetic. A subsequent hostile reconstruction found
+the missing localization premise. The corrected `48 epsilon_0` coefficient
+and `kappa` remain meaningful only conditional on a future localization
+theorem. The original chronology was not externally time-sealed.
 
-## Complexity consequence
+## Present complexity consequence
 
 Let `D(epsilon)` be the least `d` for which some allowed strategy has deficit
-at most `epsilon`. The two inequalities imply
+at most `epsilon`. The proved construction implies only
 
 ```text
-[log(1/epsilon)-O(log log(1/epsilon))]/log Gamma
-    <= D(epsilon)
-    <= log(1/epsilon)/log R+O(1).
+D(epsilon) <= log(1/epsilon)/log R+O(1).
 ```
 
-Therefore
-
-```text
-D(epsilon) = Theta(log(1/epsilon)).
-```
-
-This is the asymptotic-order statement. The large gap between `log Gamma` and
-`log R` remains open, so the optimal exponential rate and prefactor are not
-known.
+The matching lower order remains open. In particular, neither
+`D(epsilon)=Theta(log(1/epsilon))` nor an optimal necessity exponent is
+currently claimed.
 
 ## Numerical illustration of the constructive sequence
 
@@ -97,10 +93,10 @@ known.
 The table illustrates the upper construction only; no fit from these values
 enters either theorem.
 
-## Scope
+## Scope and release status
 
-The necessity theorem is device-independent within the standard bipartite
-tensor-product model with no communication and both local dimensions bounded
-by `d`. It does not establish a dimension witness under signaling, network
-resources, postselection, or an alternative operator-algebraic notion of
-dimension. It also does not prove that the centered truncations attain `Q_d`.
+The constructive estimate is valid for the unrestricted tensor-product
+optimum because the explicit truncations are admissible strategies. It does
+not prove that those truncations attain `Q_d`. The proposed device-independent
+necessity theorem is on hold pending the missing localization lemma; no v1.3
+tag or DOI should be created from the conditional argument.

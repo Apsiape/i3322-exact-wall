@@ -1,7 +1,7 @@
 # The near-fixed sector has an explicit packet-mass gap
 
-Status: **exact conditional packet theorem with explicit active-box
-constants; capture/discard and global drift assembly remain open**
+Status: **exact inequality for already captured common packets; promotion to
+the full near-fixed sector remains conditional on a localization lemma**
 
 ## 1. Certified derivative bounds
 
@@ -87,7 +87,7 @@ transport-error energy `E_A^2+E_B^2`,
 
 ```text
 mu^2 W
- <=24 epsilon_0
+ <=48 epsilon_0
    +(4656/25)(E_A^2+E_B^2)
    +C_h h^2 W,                                      (9)
 
@@ -96,8 +96,11 @@ C_h=6(54)^2+(291/25)[(1344)^2+(672)^2]
    =131498424/5.                                    (10)
 ```
 
-Indeed, the contact terms contribute at most
-`6*4 epsilon_0+6(54h)^2W`. The two response terms contribute at most
+Indeed, the source and target packet families are each internally
+orthogonal, but need not be mutually orthogonal.  Their combined contact
+energy is therefore at most `2 epsilon_0`.  The contact terms consequently
+contribute at most `6*4*(2 epsilon_0)+6(54h)^2W`. The two response terms
+contribute at most
 
 ```text
 (291/50)*32(E_A^2+E_B^2)
@@ -122,12 +125,13 @@ Therefore
 
 ```text
 (mu^2/2)W
- <=24 epsilon_0+(4656/25)(E_A^2+E_B^2).             (13)
+ <=48 epsilon_0+(4656/25)(E_A^2+E_B^2).             (13)
 ```
 
-The near-fixed packet mass is now charged by certificate-owned energy with a
-fully explicit, dimension-independent constant. No fibre isometry, amplitude
-ratio division at zero, or packet-count factor occurs.
+An already captured common packet family is charged by certificate-owned
+energy with a fully explicit, dimension-independent constant. No fibre
+isometry, amplitude-ratio division at zero, or packet-count factor occurs in
+this conditional inequality.
 
 ## 4. Geometric capture
 
@@ -137,10 +141,12 @@ Sprint 1227's shifted pullback theorem leaves at most
 theta=20 Delta/h_0                                   (14)
 ```
 
-of the near-fixed mass unpaired. This loss re-enters the right side of (13)
-through the two-frame target/source discard, multiplied by the response
-constant. It must therefore be chosen relative to `mu^2`, not merely made a
-visually small fraction. The final assembly must choose a fixed
+of the near-fixed mass unpaired. This loss would re-enter the right side of
+(13) through the two-frame target/source discard, multiplied by the response
+constant, **provided** a localized-response theorem first controls the
+restriction and its interface. The shifted overlap estimate alone does not
+supply that theorem. Conditional on such a result, the final assembly would
+choose a fixed
 `theta<<mu^2` and set
 
 ```text
@@ -153,9 +159,11 @@ arbitrarily small. But `Delta_0=h_0/320`, which gives only `theta=1/16`, is
 
 ## Scope
 
-This theorem closes the coefficient/fibre issue only on the certified active
-box. It does not yet:
+This theorem closes coefficient oscillation only after a valid common packet
+capture has been supplied. It does not yet:
 
+- localize the global response defect to the near-fixed restriction or charge
+  the resulting commutator/interface terms;
 - construct the global layered path decomposition on the drift sector;
 - charge all source/target discards in one displayed inequality;
 - remove the inactive predecessor strip; or

@@ -20,7 +20,13 @@ ROOT_FILES = {
     ROOT / "README.md",
     ROOT / "requirements.txt",
 }
-TREES = [ROOT / ".github", ROOT / "LICENSES", ROOT / "paper", ROOT / "certificate"]
+TREES = [
+    ROOT / ".github",
+    ROOT / "LICENSES",
+    ROOT / "paper",
+    ROOT / "certificate",
+    ROOT / "review",
+]
 EXCLUDED_NAMES = {"release-manifest.json"}
 EXCLUDED_PARTS = {".git", ".venv", "__pycache__", ".pytest_cache"}
 
@@ -63,7 +69,11 @@ def main() -> None:
         "schema": 3,
         "files": files,
         "file_count": len(files),
-        "complete_dependency_closure": True,
+        "scope": (
+            "Custody manifest for selected published files. Analytic dependency "
+            "closure is checked separately by verify_release.py and is not "
+            "inferred from file enumeration alone."
+        ),
     }
     MANIFEST.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
     print(f"wrote {MANIFEST} with {len(files)} files")

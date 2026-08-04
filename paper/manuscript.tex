@@ -47,18 +47,16 @@ quantum correlation set in the three-input binary scenario is not closed; this
 is the minimal bipartite binary-output scenario by input counts where
 nonclosure and finite/spatial separation can occur.
 The wall's principal sections also obey an exact boundary-flux law.  If $Q_d$
-allows binary POVMs on local dimension at most $d$, then
+allows arbitrary mixed states and binary POVMs on local dimension at most
+$d$, then
 \[
- \kappa d^{-4}\Gamma^{-d}\le q_*-Q_d
- \le \exp[-d\log R+O(1)],
+  0<q_*-Q_d\le \exp[-d\log R+O(1)],
 \]
-where $R=1.07809205080209208\ldots$,
-$\Gamma=312^4=9{,}475{,}854{,}336$, and one explicit admissible
-$\kappa$ is approximately $4.294654614331446\times10^{-52}$.
-The upper estimate is attained by explicit truncations and the lower estimate
-holds for every strategy in the stated dimension class.  Hence the minimum
-local dimension for deficit $\varepsilon$ is
-$\Theta(\log(1/\varepsilon))$; the constants are not claimed sharp.
+where $R=1.07809205080209208\ldots$. Thus
+$\log(1/\varepsilon)/\log R+O(1)$ local dimension is sufficient. An
+adversarial reconstruction of a prospective converse found a missing
+localized-response/commutator estimate, so no matching universal dimension
+lower bound or $\Theta(\log(1/\varepsilon))$ conclusion is claimed.
 \end{abstract}
 
 \section{Statement of the result}
@@ -264,11 +262,12 @@ identity is \eqref{eq:wallEigen}.  Thus the correlation belongs to $C_{qs}$
 and attains the certified wall; finite-dimensional nonattainment places it
 outside $C_q$.
 
-\section{Quantitative finite-dimensional dimension law}
+\section{Quantitative finite-section convergence}
 \label{sec:dimension-rate}
 
 Let $Q_d$ be the supremum of $\B$ over tensor-product strategies whose two
-local Hilbert spaces have dimension at most $d$, allowing binary POVMs.  For
+local Hilbert spaces have dimension at most $d$, allowing arbitrary mixed
+states and binary POVMs.  For
 later use, let $D(\varepsilon)$ be the least $d$ for which
 $q_*-Q_d\leq\varepsilon$.
 
@@ -277,32 +276,21 @@ bounds at fixed local dimension, including applications to I3322
 \cite{NavascuesEtAl2015}.  Quantitative dimension blowups substantially
 stronger than the one below are known for purpose-built nonlocal games with
 larger question or answer sets \cite{Coladangelo2020}.  Our statement has a
-different scope: it gives the asymptotic order, from both sides, for the
-canonical three-setting binary functional itself.
+different scope: it gives an exact finite-section identity and an exponential
+achievability rate for the canonical three-setting binary functional itself.
 
-\begin{theorem}[Dimension law]\label{thm:dimension-law}
-There is an explicit universal constant $\kappa>0$ such that, for every
-$d\geq1$,
+\begin{theorem}[Finite-section convergence]\label{thm:dimension-law}
+For every $d\geq1$,
 \begin{equation}
- \kappa d^{-4}\Gamma^{-d}\leq q_*-Q_d
- \leq \exp[-d\log R+O(1)],
- \qquad \Gamma=312^4=9{,}475{,}854{,}336,
+ 0<q_*-Q_d\leq \exp[-d\log R+O(1)],
 \label{eq:dimensionLaw}
 \end{equation}
-where $R$ is given in \eqref{eq:plateauRate}.  One admissible exact $\kappa$
-is defined in the supplement and satisfies
-\[
- \kappa=4.2946546143314459987\ldots\times10^{-52}.
-\]
-Consequently,
+where $R$ is given in \eqref{eq:plateauRate}. Consequently,
 \begin{equation}
- \frac{\log(1/\varepsilon)-O(\log\log(1/\varepsilon))}{\log\Gamma}
- \leq D(\varepsilon)
- \leq \frac{\log(1/\varepsilon)}{\log R}+O(1),
+ D(\varepsilon)\leq \frac{\log(1/\varepsilon)}{\log R}+O(1).
 \label{eq:dimensionTheta}
 \end{equation}
-and, as $\varepsilon\downarrow0$,
-$D(\varepsilon)=\Theta(\log(1/\varepsilon))$.
+No matching lower order for $D(\varepsilon)$ is presently proved.
 \end{theorem}
 
 For the constructive half, for
@@ -325,7 +313,14 @@ Every diagonal and internal nearest-neighbor term occurs in the principal
 Jacobi quadratic form; the two displayed edges are the only omitted terms.
 Positivity of the wall makes the deficit strictly positive.
 
-The certified analytic tails satisfy
+The analytic unstable-manifold conjugacy gives summable ratio errors.  Thus
+there are constants $C_\pm>0$ and $0<\rho<1$ such that
+\[
+ \lambda_j=C_+R^{-j}(1+O(\rho^j)),\qquad
+ \lambda_{-j}=C_-R^{-j}(1+O(\rho^j))
+ \quad(j\to+\infty).
+\]
+In particular, the certified analytic tails satisfy
 \[
 \frac{\lambda_{j+1}}{\lambda_j}\longrightarrow R^{-1}
 \quad(j\to+\infty),\qquad
@@ -344,10 +339,11 @@ The boundary coefficients tend to positive constants and $S_L\to1$, hence
 \frac{-\log(q_*-v_L)}{2L+1}=\log R.
 \label{eq:dimensionExponent}
 \end{equation}
-Consequently, along odd dimensions,
+Consequently there is a dimension-independent constant $C<\infty$ such that,
+along odd dimensions,
 \begin{equation}
 0<q_*-Q_d\le q_*-v_{(d-1)/2}
-=\exp[-d\log R+O(1)],
+\le C R^{-d}=\exp[-d\log R+O(1)],
 \label{eq:dimensionUpper}
 \end{equation}
 and even dimensions follow by padding with an unused summand.  Thus deficit
@@ -360,39 +356,14 @@ d\leq\frac{\log(1/\varepsilon)}{\log R}+O(1),
 The flux identity and plateau exponent have separate production and
 independent symbolic/interval reconstructions.
 
-For the converse half, compactness and multilinear extremality first replace
-an optimizer by a pure state and six projective effects on the same local
-spaces; no dilation is used.  Writing the Bell deficit as the sum of the three
-positive certificate remainders, robust contact coercivity localizes their
-joint spectral mass.  A shifted moving grid follows canonical source--target
-packets through the two response maps.  Near-fixed, inactive-tail, contact,
-and stopped-frame losses are each charged with their full reuse multiplicity.
-On the retained drift sector every packet has one predecessor and at most one
-successor, while each individual chain visits disjoint spectral projections
-of one local $d$-dimensional operator and hence has length at most $d$.
-
-The resulting terminal-plus-recurrence energy satisfies both
-\[
- E_{\rm exit}+E_{\rm rec}
- \leq A d\varepsilon+B C_F20^{2d}\sqrt\varepsilon
-\]
-and
-\[
- E_{\rm exit}+E_{\rm rec}
- \geq \frac{W_D}{(d+1)(78/5)^{2d}},
- \qquad W_D\geq1-C_I20^{2d}\sqrt\varepsilon,
-\]
-with explicit dimension-independent constants $A=5616$,
-$B=200772/25$, $C_F$, and $C_I$.  Splitting according to whether the retained
-mass is at least $1/2$, and then according to which upper-energy term is
-large, gives
-\[
- \varepsilon\geq\kappa d^{-4}(20\cdot78/5)^{-4d},
-\]
-which is the lower half of \eqref{eq:dimensionLaw}.  The supplement gives the
-complete constant ledger and prohibited-shortcut audit.  A sealed-source
-blind reconstruction independently reproduced $\Gamma$, $A$, $B$, and
-$\kappa$, followed by a separate exact SymPy audit.
+For completeness, the certificate preserves a prospective converse campaign.
+Its scalar closure, inactive-tail, recurrence, and finite-rank pieces are
+valid, and its conditional ledger yields $\Gamma=312^4$ and an explicit
+prefactor. The load-bearing near-fixed step is not proved: common pullback
+packets do not localize the global response defect, and restricting the state
+introduces an uncontrolled commutator/interface term. A two-dimensional
+countermodel to the disputed inference is recorded in the review
+adjudication. These conditional constants are therefore not theorem claims.
 
 \section{Geometric symmetrization}
 
@@ -605,12 +576,9 @@ correlations, uniqueness or self-testing of the maximizer, or experimental
 accessibility of the limiting wall.  It separates $C_q$ from $C_{qs}$ at this
 correlation but does not separate $C_{qs}$ from $C_{qa}$ or $C_{qa}$ from
 $C_{qc}$.  The proof is independent of any broader foundational
-interpretation.  The observed finite-carrier gaps are exponentially
-controlled above and below, but the optimal exponential necessity rate and
-prefactor remain unknown.  The lower bound is device-independent only within
-the standard bipartite tensor-product model with no communication and both
-local dimensions bounded by $d$; it does not cover signaling, postselection,
-network resources, or alternative notions of operator-algebraic dimension.
+interpretation. The truncation rate is an achievability statement, not a
+device-independent dimension lower bound. Quantitative necessity remains
+open.
 
 \paragraph{Computational disclosure.}
 Frontier language models were used extensively for proof discovery,
