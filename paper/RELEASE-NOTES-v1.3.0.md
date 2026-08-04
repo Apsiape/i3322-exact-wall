@@ -7,11 +7,12 @@ tagged archival release; DOI and citation metadata remain those of v1.2.0.
 ## Release blocked by Bellman normalization audit
 
 Sprint 1285 proves an exact nonzero global-amplitude mismatch in the
-load-bearing Bellman assembly. Therefore no `v1.3.0` release may be tagged
-until a corrected globally normalized Bellman construction or an independent
-upper bound is certified. The finite-section flux and tail calculations may
-remain exact statements about the explicit wall, but they cannot currently be
-promoted as deficits from the true I3322 optimum.
+load-bearing Bellman assembly. Sprint 1287 subsequently certifies the separate
+exact upper bound `omega_c<=0.250876384514`, but it does not prove equality at
+the historical wall value. Therefore no `v1.3.0` release may be tagged as the
+historical exact-optimum/nonattainment theorem. The finite-section flux and
+tail calculations may remain exact statements about the explicit wall, but
+they cannot currently be promoted as deficits from the true I3322 optimum.
 
 ## New theorem
 

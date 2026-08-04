@@ -1,0 +1,47 @@
+{
+  "status": "exact rational piecewise-linear Bellman subsolution",
+  "q_hat": "125438192257/500000000000",
+  "q_hat_decimal": 0.250876384514,
+  "nodes": 6401,
+  "candidate_iterations": 176,
+  "candidate_final_delta": 9.992007221626409e-14,
+  "rational_digits_after_decimal": 18,
+  "candidate_profile_sha256": "113f12a7b7212a8c1f9e651e7527d682d8ab0123087a3d3a9439e55a40496f69",
+  "minimum_rational_knot": "530062927518089/10000000000000000",
+  "upper_envelope_lines_retained": 5140,
+  "common_intervals_checked": 10902,
+  "minimum_quadratic_numerator": "135655437485737999093532062544142506000661225846773637/188730299472837603759765625000000000000000000000000000000000",
+  "global_residual_lower_bound": "135655437485737999093532062544142506000661225846773637/152585378463848045768764394314910196051595150000000000000000",
+  "global_residual_lower_bound_float": 8.890461120944086e-07,
+  "worst_interval_receipt": {
+    "interval": [
+      "-1743774414061/1953125000000",
+      "-13945521874541/15625000000000"
+    ],
+    "F_segment": 343,
+    "envelope_owner": 29,
+    "quadratic_coefficients": [
+      "92764716796889139/25000000000000000",
+      "1293862635577657234025261310717/195312500000000000000000000000",
+      "1847964321073427865515503310079837/625000000000000000000000000000000"
+    ],
+    "minimizer": "-431287545192552411341753770239/483149566650464265625000000000",
+    "minimum_numerator": "135655437485737999093532062544142506000661225846773637/188730299472837603759765625000000000000000000000000000000000",
+    "maximum_four_F": "98691862854238772529691631/122070312500000000000000000",
+    "residual_lower_bound": "135655437485737999093532062544142506000661225846773637/152585378463848045768764394314910196051595150000000000000000"
+  },
+  "gates": {
+    "candidate_iteration_converged": true,
+    "candidate_witness_hash_matches": true,
+    "candidate_shape_and_domain_exact": true,
+    "all_rational_knots_positive": true,
+    "upper_envelope_covers_domain": true,
+    "all_piece_denominators_positive": true,
+    "all_exact_quadratic_minima_positive": true,
+    "global_residual_bound_above_five_e_minus_seven": true
+  },
+  "all_gates_pass": true,
+  "theorem": "The exact rational piecewise-linear G satisfies the global Bellman inequality at q_hat on [-1,1]^2.",
+  "claim_boundary": "This certifies a near-exact commuting/tensor-product upper bound. It does not restore equality at q_*, nonattainment, or nonclosure.",
+  "proof_runtime": "Python standard library only; all theorem-stage arithmetic is exact Fraction arithmetic."
+}

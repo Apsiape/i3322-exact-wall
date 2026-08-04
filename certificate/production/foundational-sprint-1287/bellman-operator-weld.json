@@ -1,0 +1,21 @@
+{
+  "status": "exact abstract Bellman-to-I3322 operator weld",
+  "gates": {
+    "reflected_cost_identity_exact": true,
+    "cauchy_identity_exact": true,
+    "potential_product_identity_exact": true,
+    "local_response_determinant_exact": true,
+    "operator_remainder_cancellation_exact": true
+  },
+  "all_gates_pass": true,
+  "input_contract": "Any positive G on [-1,1] satisfying p(x)+G(u)<=q-d(x,u), with p(x)=(1-x^2)/(4G(x)).",
+  "output_theorem": "Every standard commuting-projective I3322 strategy has value at most q.",
+  "excluded_dependencies": [
+    "Bellman fixed-point equality",
+    "concavity",
+    "unique contact or predecessor map",
+    "shooting-chart amplitude normalization",
+    "domain-wall lower-bound construction"
+  ],
+  "claim_boundary": "The script checks the exact algebraic weld. Positivity follows from the scalar input contract, Cauchy, joint functional calculus, and the displayed 2x2 determinant with |z|<=1/2."
+}

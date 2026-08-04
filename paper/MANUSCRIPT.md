@@ -5,7 +5,9 @@
 > found a nonzero global-amplitude mismatch in its load-bearing Bellman datum.
 > See `CERTIFICATE-STATUS-ALERT.md`. Until that normalization gap is repaired,
 > the headline upper bound and its nonattainment/nonclosure corollaries are not
-> certified by this repository.
+> certified by this repository. Sprint 1287 separately proves the exact
+> rational upper bound `omega_c <= 0.250876384514`; it does not restore the
+> historical equality or those corollaries.
 
 **Seth Douglas**
 

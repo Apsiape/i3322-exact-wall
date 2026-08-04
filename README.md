@@ -14,6 +14,20 @@
 > exclusion. Frozen DOI releases are preserved as historical records while the
 > proof is repaired.
 
+**Rigorous partial repair at repository HEAD.** Sprint 1287 now proves, from a
+committed 6,401-knot rational Bellman subsolution and an exact abstract
+operator weld,
+
+```text
+omega_tensor <= omega_commuting <= 0.250876384514
+```
+
+with the upper endpoint interpreted as an exact decimal. This is about
+`1.000000023e-6` above the historical wall candidate. It is an unconditional
+upper bound, but it does not restore exact equality, nonattainment, spatial
+separation, or nonclosure. See
+[`EXACT-NEAR-OPTIMAL-UPPER-BOUND.md`](certificate/production/foundational-sprint-1287/EXACT-NEAR-OPTIMAL-UPPER-BOUND.md).
+
 The historical release claimed a computer-assisted proof that the tensor-product and
 commuting-operator suprema of the canonical three-setting, two-outcome
 `I3322` Bell functional equal the rigorously characterized constant

@@ -41,7 +41,31 @@ an independent upper bound is certified, repository HEAD does not certify:
 
 Exact local shooting, spatial-wall, boundary-flux, and algebraic receipts are
 retained.  Their valid conditional content is not erased by the failed weld.
-No replacement theorem is claimed yet.
+## Rigorous partial repair
+
+Sprint 1287 supplies an independent global normalization route. A committed
+6,401-knot rational piecewise-linear function is checked using
+standard-library `Fraction` arithmetic over every common interval of the
+function and its exact support-line envelope. The certified Bellman residual
+is globally positive, with rational lower bound approximately
+
+```text
+8.890461120944086e-7.
+```
+
+The exact geometric-reflection/operator weld uses no fixed-point identity,
+concavity, contact uniqueness, wall orbit, or shooting-chart amplitude. It
+therefore proves the unconditional bound
+
+```text
+omega_tensor <= omega_commuting <= 0.250876384514.
+```
+
+This is a real theorem repair, but it is deliberately narrower than the frozen
+headline. It does not identify the exact optimum and does not restore
+nonattainment, `C_qs \ C_q`, or nonclosure. The upper endpoint lies about
+`1.000000023e-6` above the historical wall candidate; that numerical proximity
+is not used as a lower-bound theorem.
 
 ## Repair signal, not yet a repair
 
@@ -53,6 +77,7 @@ The two finest zero-offset profile minima agree within `6.53e-7`.
 
 This suggests that the same scalar may be independently characterized as the
 global Bellman positivity threshold. It is a numerical, preregistered signal,
-not an interval proof and not a restoration of the headline theorem. The
-repair target is now a direct globally normalized Bellman subsolution, with no
-use of the failed reflected-chart amplitude identification.
+not an interval proof and not a restoration of the headline theorem. Sprint
+1287 completes the first direct globally normalized subsolution above that
+threshold; closing the remaining approximately `1e-6` gap requires a limiting
+or adaptive exact certificate, or a separate certified lower strategy.

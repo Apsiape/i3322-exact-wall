@@ -2,6 +2,19 @@
 
 This file separates analytic claims from computer-assisted inputs.
 
+## Current unconditional upper bound
+
+| Claim | Owner | Verification |
+|---|---|---|
+| Positive rational PL Bellman subsolution at `q_hat=0.250876384514` | Sprint 1287 | standard-library `Fraction` proof over 10,902 exact common intervals |
+| Bellman-to-I3322 implication for arbitrary positive subsolutions | Sprint 1287 | exact symbolic reflection, product, determinant, and cancellation weld |
+| `omega_tensor <= omega_commuting <= q_hat` | Sprint 1287 | preceding two rows plus commuting joint functional calculus |
+
+The candidate builder is not a theorem owner. It merely emits the committed
+rational knot list. `exact_rational_bellman_subsolution.py` and
+`bellman_operator_weld_verify.py` own the proof. This upper bound does not
+restore the historical equality/nonattainment chain below.
+
 ## Main analytic chain
 
 | Claim | Owner | Verification |
@@ -85,6 +98,8 @@ row is presently **open**, despite its internal gates passing. See
 | Independent amplitude-gap reconstruction | `certificate/independent/amplitude-gap/amplitude_gap_mpmath.py` |
 | Post-verdict two-engine concordance | `certificate/independent/amplitude-gap/amplitude_gap_concordance.py` |
 | Numerical global-Bellman criticality scout | `certificate/production/foundational-sprint-1286/global_bellman_criticality_scout.py` (**not a theorem input**) |
+| Exact rational Bellman subsolution | `certificate/production/foundational-sprint-1287/exact_rational_bellman_subsolution.py` |
+| Exact abstract operator weld | `certificate/production/foundational-sprint-1287/bellman_operator_weld_verify.py` |
 
 ### Independent interval reconstruction
 

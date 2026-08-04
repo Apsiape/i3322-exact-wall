@@ -110,6 +110,9 @@ REPLAY = [
     f"{PROD}/foundational-sprint-1284/arb_matched_amplitude_adjudication.py",
     f"{PROD}/foundational-sprint-1285/wide_bracket_amplitude_exclusion.py",
     f"{PROD}/foundational-sprint-1286/global_bellman_criticality_scout.py",
+    f"{PROD}/foundational-sprint-1287/build_bellman_subsolution_candidate.py",
+    f"{PROD}/foundational-sprint-1287/exact_rational_bellman_subsolution.py",
+    f"{PROD}/foundational-sprint-1287/bellman_operator_weld_verify.py",
     f"{PROD}/foundational-sprint-1231/dimension_bound_algebra_verify.py",
     f"{PROD}/foundational-sprint-1233/master_ledger_verify.py",
     f"{REL}/normalization_concordance_verify.py",
@@ -233,6 +236,8 @@ def check_semantics() -> None:
         f"{PROD}/foundational-sprint-1270/exact-reverser-and-atlas-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1271/reciprocal-bellman-negative.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1273/log-free-drift-guard.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1287/exact-rational-bellman-subsolution.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1287/bellman-operator-weld.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1238/coupled-sector-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1239/terminal-fork-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1232/inactive-quadratic-interval.json": "all_gates_pass",
@@ -319,6 +324,12 @@ def check_semantics() -> None:
     )
     bellman_criticality = load(
         f"{PROD}/foundational-sprint-1286/global-bellman-criticality-scout.json"
+    )
+    exact_subsolution = load(
+        f"{PROD}/foundational-sprint-1287/exact-rational-bellman-subsolution.json"
+    )
+    operator_weld = load(
+        f"{PROD}/foundational-sprint-1287/bellman-operator-weld.json"
     )
     independent_amplitude = load(
         f"{IND}/amplitude-gap/amplitude-gap-mpmath.json"
@@ -426,6 +437,15 @@ def check_semantics() -> None:
     assert bellman_criticality[
         "zero_offset_fine_minimum_disagreement"
     ] < 1e-6
+    assert exact_subsolution["all_gates_pass"] is True
+    assert exact_subsolution["q_hat"] == "125438192257/500000000000"
+    assert exact_subsolution["nodes"] == 6401
+    assert exact_subsolution["common_intervals_checked"] == 10902
+    assert exact_subsolution["global_residual_lower_bound_float"] > 8.8e-7
+    assert exact_subsolution["gates"]["candidate_shape_and_domain_exact"] is True
+    assert exact_subsolution["gates"]["candidate_witness_hash_matches"] is True
+    assert operator_weld["all_gates_pass"] is True
+    assert len(operator_weld["excluded_dependencies"]) == 5
     assert independent_amplitude["all_gates_pass"] is True
     assert independent_amplitude["imports_production_engine"] is False
     assert independent_amplitude["largest_y_derivative_upper"] < -285
@@ -469,13 +489,16 @@ def main() -> None:
         assert post_frozen == frozen
         check_private_exclusion(post_frozen)
     print(json.dumps({
-        "status": "CUSTODY_PASS_THEOREM_GAP",
+        "status": "CUSTODY_PASS_RIGOROUS_UPPER_HEADLINE_GAP",
         "frozen_files_checked": count,
         "deterministic_replay_completed": args.full,
         "private_path_exclusion_checked": True,
         "constructive_dimension_rate_checked": True,
         "conditional_lower_bound_ledger_replayed_but_not_promoted": True,
         "headline_theorem_certificate_closed": False,
+        "rigorous_commuting_upper_bound": "125438192257/500000000000",
+        "rigorous_upper_bound_certificate_closed": True,
+        "exact_optimum_identified": False,
         "load_bearing_gap": (
             "Sprint 1285 and an independent mpmath.iv reconstruction exactly "
             "exclude global amplitude compatibility in the current Bellman assembly"

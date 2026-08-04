@@ -3,11 +3,12 @@
 `verify_release.py` has two modes:
 
 At repository HEAD, a successful custody run reports
-`CUSTODY_PASS_THEOREM_GAP`, not `PASS`: the files and registered negative
-receipt are internally reproducible, while Sprint 1285 leaves the headline
-Bellman theorem certificate open. A zero process exit code means the audit
-completed and agreed with that disclosed status; it does not mean the
-historical theorem has been repaired.
+`CUSTODY_PASS_RIGOROUS_UPPER_HEADLINE_GAP`, not `PASS`: the files, registered
+negative receipt, and Sprint-1287 exact rational upper bound are internally
+reproducible, while Sprint 1285 leaves the historical exact-optimum headline
+open. A zero process exit code means the audit completed and agreed with that
+disclosed status; it does not mean equality, nonattainment, or nonclosure has
+been repaired.
 
 The full replay is byte-deterministic. Sprint 1279 previously serialized
 wall-clock timing into its scientific JSON; that non-mathematical field was
