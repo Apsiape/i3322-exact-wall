@@ -2,6 +2,13 @@
 
 `verify_release.py` has two modes:
 
+At repository HEAD, a successful custody run reports
+`CUSTODY_PASS_THEOREM_GAP`, not `PASS`: the files and registered negative
+receipt are internally reproducible, while Sprint 1285 leaves the headline
+Bellman theorem certificate open. A zero process exit code means the audit
+completed and agreed with that disclosed status; it does not mean the
+historical theorem has been repaired.
+
 - default: check manifest coverage, frozen SHA-256 custody, private-path
   exclusion, and theorem receipt semantics;
 - `--full`: additionally regenerate every production and independent receipt

@@ -1,0 +1,70 @@
+{
+  "status": "wide-bracket Arb amplitude exclusion",
+  "precision_bits": 400,
+  "c_box": "[0.8782729451808124521 +/- 4.86e-20]",
+  "t1": "0.0015293272133344497",
+  "complete_t2_bracket": [
+    "0.0015874649714962908",
+    "0.001588503145749181"
+  ],
+  "face_residuals": {
+    "left": {
+      "interval": "[0.000172285352 +/- 3.18e-13]",
+      "lower": 0.00017228535203345574,
+      "upper": 0.0001722853523175427,
+      "width_upper_bound": 2.840869599736722e-13,
+      "contains_zero": false
+    },
+    "right": {
+      "interval": "[-0.000127690474 +/- 3.26e-13]",
+      "lower": -0.00012769047432526488,
+      "upper": -0.0001276904740413009,
+      "width_upper_bound": 2.839639957772028e-13,
+      "contains_zero": false
+    }
+  },
+  "subdivision_tiles": 256,
+  "first_tile": {
+    "tile": 0,
+    "t_box": "[0.00158747 +/- 5.03e-9]",
+    "derivative_bound": "[42.146329449653211424352972970229275600200522223504285056593568291874581864971947768148598962186409160169847924885408794 +/- 5.17e-119]",
+    "difference": "[0.000140 +/- 4.47e-7]"
+  },
+  "last_tile": {
+    "tile": 255,
+    "t_box": "[0.00158850 +/- 3.15e-9]",
+    "derivative_bound": "[42.076777658321495360014631757151870124582580861913635508707046031941488315470707364100047089531741039842301654036992651 +/- 3.27e-118]",
+    "difference": "[0.000179 +/- 2.31e-7]"
+  },
+  "reflected_source_amplitude": {
+    "interval": "[0.501049932823 +/- 3.30e-13]",
+    "lower": 0.5010499328226706,
+    "upper": 0.5010499328228755,
+    "width_upper_bound": 2.0484555222663827e-13,
+    "contains_zero": false
+  },
+  "original_target_amplitude_over_complete_bracket": {
+    "interval": "[0.5012 +/- 2.89e-5]",
+    "lower": 0.5011902087483767,
+    "upper": 0.5012288732978695,
+    "width_upper_bound": 3.8664549492750666e-05,
+    "contains_zero": false
+  },
+  "amplitude_difference_over_complete_bracket": {
+    "interval": "[0.0002 +/- 5.98e-5]",
+    "lower": 0.00014027592551842303,
+    "upper": 0.00017894047518170395,
+    "width_upper_bound": 3.866454966328092e-05,
+    "contains_zero": false
+  },
+  "amplitude_difference_lower_absolute_bound": 0.00014027592551842303,
+  "gates": {
+    "exact_graph_monotonicity_loaded": true,
+    "bracket_faces_have_strict_opposite_signs": true,
+    "all_radicands_and_denominators_positive": true,
+    "wide_bracket_difference_excludes_zero_by_five_e_minus_five": true
+  },
+  "all_gates_pass": true,
+  "theorem": "The unique matched-coordinate root in the certified monotone four-step chart has a nonzero reflected-source/global-target amplitude mismatch.",
+  "claim_boundary": "This proves a normalization gap in the current aligned-wall certificate assembly. It does not determine whether the stated I3322 value can be recovered by a corrected normalization."
+}

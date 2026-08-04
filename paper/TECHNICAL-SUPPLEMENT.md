@@ -1,5 +1,11 @@
 # Technical supplement: the validated Bellman/domain-wall certificate
 
+> **Audit alert (2026-08-04).** Sprint 1285 proves that the local charts used
+> here do not satisfy the required global amplitude compatibility equation on
+> the unique matched-coordinate bracket. This supplement is retained as the
+> historical certificate specification, but its Bellman theorem assembly is
+> not presently closed. See `CERTIFICATE-STATUS-ALERT.md`.
+
 **Seth Douglas** ·
 [ORCID 0009-0007-4708-3252](https://orcid.org/0009-0007-4708-3252) ·
 [apsiape@gmail.com](mailto:apsiape@gmail.com)

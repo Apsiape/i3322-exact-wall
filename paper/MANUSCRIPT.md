@@ -1,5 +1,12 @@
 # A rigorously characterized (I_{3322}) quantum wall, spatial attainment, and finite-dimensional nonattainment
 
+> **Current certificate status (2026-08-04): under correction.** The theorem
+> below is the historical released statement. A subsequent exact Arb audit
+> found a nonzero global-amplitude mismatch in its load-bearing Bellman datum.
+> See `CERTIFICATE-STATUS-ALERT.md`. Until that normalization gap is repaired,
+> the headline upper bound and its nonattainment/nonclosure corollaries are not
+> certified by this repository.
+
 **Seth Douglas**
 
 [ORCID 0009-0007-4708-3252](https://orcid.org/0009-0007-4708-3252) ·

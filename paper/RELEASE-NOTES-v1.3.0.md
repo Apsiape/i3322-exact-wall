@@ -4,6 +4,15 @@ This prospective revision adds a quantitative convergence theorem for the
 explicit finite sections of the certified spatial wall. It is not yet a
 tagged archival release; DOI and citation metadata remain those of v1.2.0.
 
+## Release blocked by Bellman normalization audit
+
+Sprint 1285 proves an exact nonzero global-amplitude mismatch in the
+load-bearing Bellman assembly. Therefore no `v1.3.0` release may be tagged
+until a corrected globally normalized Bellman construction or an independent
+upper bound is certified. The finite-section flux and tail calculations may
+remain exact statements about the explicit wall, but they cannot currently be
+promoted as deficits from the true I3322 optimum.
+
 ## New theorem
 
 Compressing the normal spatial maximizer to the centered principal section of

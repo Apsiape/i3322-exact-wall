@@ -2,7 +2,18 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21782008.svg)](https://doi.org/10.5281/zenodo.21782008)
 
-This repository contains a computer-assisted proof that the tensor-product and
+> **Certificate status alert (2026-08-04).** A post-release exact Arb audit
+> found a load-bearing global-amplitude mismatch in the Bellman upper-bound
+> assembly. The complete unique-root bracket gives a mismatch in
+> `[0.00014027592551842303, 0.00017894047518170395]`, excluding zero. The
+> numerical candidate is not thereby disproved, but the headline optimum,
+> nonattainment, separation, and nonclosure claims are **not presently closed
+> by this certificate**. See
+> [`paper/CERTIFICATE-STATUS-ALERT.md`](paper/CERTIFICATE-STATUS-ALERT.md) and
+> Sprint 1285. Frozen DOI releases are preserved as historical records while
+> the proof is repaired.
+
+The historical release claimed a computer-assisted proof that the tensor-product and
 commuting-operator suprema of the canonical three-setting, two-outcome
 `I3322` Bell functional equal the rigorously characterized constant
 

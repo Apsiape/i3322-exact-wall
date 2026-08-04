@@ -108,6 +108,7 @@ REPLAY = [
     f"{PROD}/foundational-sprint-1282/bellman_selector_collision.py",
     f"{PROD}/foundational-sprint-1283/global_amplitude_consistency_audit.py",
     f"{PROD}/foundational-sprint-1284/arb_matched_amplitude_adjudication.py",
+    f"{PROD}/foundational-sprint-1285/wide_bracket_amplitude_exclusion.py",
     f"{PROD}/foundational-sprint-1231/dimension_bound_algebra_verify.py",
     f"{PROD}/foundational-sprint-1233/master_ledger_verify.py",
     f"{REL}/normalization_concordance_verify.py",
@@ -303,6 +304,9 @@ def check_semantics() -> None:
     arb_amplitude = load(
         f"{PROD}/foundational-sprint-1284/arb-matched-amplitude-adjudication.json"
     )
+    wide_amplitude = load(
+        f"{PROD}/foundational-sprint-1285/wide-bracket-amplitude-exclusion.json"
+    )
     assert coupled["terminal_near_entry_closed"] is False
     assert coupled["universal_dimension_lower_bound_proved"] is False
     assert terminal["scalar_terminal_commonization_proved"] is False
@@ -390,6 +394,12 @@ def check_semantics() -> None:
         "t2_bracket_width_below_one_e_minus_fifteen"
     ] is False
     assert arb_amplitude["gates"]["raw_local_Bellman_equality_certified"] is False
+    assert wide_amplitude["all_gates_pass"] is True
+    assert all(wide_amplitude["gates"].values())
+    assert wide_amplitude["amplitude_difference_lower_absolute_bound"] > 1.4e-4
+    assert wide_amplitude["amplitude_difference_over_complete_bracket"][
+        "contains_zero"
+    ] is False
     assert weighted_contraction["gates"]["cycle_radius_below_point_nine"] is True
     assert weighted_contraction["gates"]["weight_range_below_ten"] is True
 
@@ -425,12 +435,17 @@ def main() -> None:
         assert post_frozen == frozen
         check_private_exclusion(post_frozen)
     print(json.dumps({
-        "status": "PASS",
+        "status": "CUSTODY_PASS_THEOREM_GAP",
         "frozen_files_checked": count,
         "deterministic_replay_completed": args.full,
         "private_path_exclusion_checked": True,
         "constructive_dimension_rate_checked": True,
         "conditional_lower_bound_ledger_replayed_but_not_promoted": True,
+        "headline_theorem_certificate_closed": False,
+        "load_bearing_gap": (
+            "Sprint 1285 exactly excludes global amplitude compatibility in "
+            "the current Bellman assembly"
+        ),
         "independence_boundary": (
             "production Arb stack plus separate mpmath.iv reconstruction and "
             "independent symbolic spatial-carrier/truncation reconstruction, "

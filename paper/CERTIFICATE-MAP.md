@@ -64,6 +64,13 @@ Neither row adds a computer-assisted dependency beyond the main theorem.
 
 ## Computer-assisted Bellman input
 
+**Current status:** the following is the historical dependency map. Sprint
+1285 exactly excludes the missing global amplitude compatibility equation on
+the complete unique-root bracket. Accordingly, the “Bellman theorem assembly”
+row is presently **open**, despite its internal gates passing. See
+`paper/CERTIFICATE-STATUS-ALERT.md` and
+`certificate/production/foundational-sprint-1285/EXACT-GLOBAL-AMPLITUDE-GAP.md`.
+
 | Input | Receipt or engine |
 |---|---|
 | Hyperbolic algebraic plateau | `certificate/production/foundational-sprint-1115/plateau-hyperbolicity-certificate.json` |
@@ -73,16 +80,19 @@ Neither row adds a computer-assisted dependency beyond the main theorem.
 | Strict central graph | `certificate/production/foundational-sprint-1192/exact_invariant_graph_projection.py` |
 | Strict endpoint wings | `certificate/production/foundational-sprint-1193/exact_boundary_wing.py` |
 | Inactive predecessor exclusion | `certificate/production/foundational-sprint-1194/inactive_outer_guard.py` |
-| Bellman theorem assembly | `certificate/production/foundational-sprint-1195/theorem_assembly_verify.py` |
+| Bellman theorem assembly | **OPEN after Sprint 1285 audit**; historical engine: `certificate/production/foundational-sprint-1195/theorem_assembly_verify.py` |
+| Global-amplitude exclusion audit | `certificate/production/foundational-sprint-1285/wide_bracket_amplitude_exclusion.py` |
 
 ### Independent interval reconstruction
 
-The directory `certificate/independent/` reconstructs all of
-the preceding computer-assisted inputs using `mpmath.iv`, a locally written
+The directory `certificate/independent/` reconstructs the historical
+computer-assisted inputs using `mpmath.iv`, a locally written
 rectangular complex-interval class, and no imports from production Arb/FLINT
 modules. `independent-reconstruction.json` records eight passing gates and an
 exact directed-overlap check against the production `q_*` receipt performed
-only after the independent verdict was assembled.
+only after the independent verdict was assembled. Those reconstructions did
+not test the newly identified global-amplitude weld and therefore do not close
+the Sprint 1285 gap.
 
 ## End-to-end theorem receipts
 
