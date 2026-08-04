@@ -10,8 +10,9 @@
 > nonattainment, separation, and nonclosure claims are **not presently closed
 > by this certificate**. See
 > [`paper/CERTIFICATE-STATUS-ALERT.md`](paper/CERTIFICATE-STATUS-ALERT.md) and
-> Sprint 1285. Frozen DOI releases are preserved as historical records while
-> the proof is repaired.
+> Sprint 1285. A separate `mpmath.iv` engine independently reconstructs the
+> exclusion. Frozen DOI releases are preserved as historical records while the
+> proof is repaired.
 
 The historical release claimed a computer-assisted proof that the tensor-product and
 commuting-operator suprema of the canonical three-setting, two-outcome

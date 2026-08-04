@@ -118,6 +118,8 @@ REPLAY = [
     f"{IND}/analytic_tail_mpmath.py",
     f"{IND}/shooting_miranda_mpmath.py",
     f"{IND}/global_graph_mpmath.py",
+    f"{IND}/amplitude-gap/amplitude_gap_mpmath.py",
+    f"{IND}/amplitude-gap/amplitude_gap_concordance.py",
     f"{IND}/verify_independent_reconstruction.py",
     f"{IND}/spatial_symbolic_verify.py",
     f"{IND}/truncation_flux_mpmath.py",
@@ -235,7 +237,7 @@ def check_semantics() -> None:
         f"{PROD}/foundational-sprint-1232/inactive-quadratic-interval.json": "all_gates_pass",
         f"{REL}/normalization-concordance.json": "all_gates_pass",
         f"{REL}/dimension-gap-audit.json": "all_data_gates_pass",
-        f"{IND}/independent-reconstruction.json": "all_gates_pass",
+        f"{IND}/independent-reconstruction.json": "audit_consistent",
         f"{IND}/spatial-symbolic-guard.json": "all_gates_pass",
         f"{IND}/truncation-flux-independent.json": "all_gates_pass",
         f"{IND}/dimension-necessity/source-manifest-audit.json": "all_gates_pass",
@@ -306,6 +308,12 @@ def check_semantics() -> None:
     )
     wide_amplitude = load(
         f"{PROD}/foundational-sprint-1285/wide-bracket-amplitude-exclusion.json"
+    )
+    independent_amplitude = load(
+        f"{IND}/amplitude-gap/amplitude-gap-mpmath.json"
+    )
+    amplitude_concordance = load(
+        f"{IND}/amplitude-gap/amplitude-gap-concordance.json"
     )
     assert coupled["terminal_near_entry_closed"] is False
     assert coupled["universal_dimension_lower_bound_proved"] is False
@@ -400,6 +408,14 @@ def check_semantics() -> None:
     assert wide_amplitude["amplitude_difference_over_complete_bracket"][
         "contains_zero"
     ] is False
+    assert independent_amplitude["all_gates_pass"] is True
+    assert independent_amplitude["imports_production_engine"] is False
+    assert independent_amplitude["largest_y_derivative_upper"] < -285
+    assert independent_amplitude[
+        "amplitude_difference_lower_absolute_bound"
+    ] > 1.4e-4
+    assert amplitude_concordance["all_gates_pass"] is True
+    assert amplitude_concordance["gates"]["amplitude_intervals_overlap"] is True
     assert weighted_contraction["gates"]["cycle_radius_below_point_nine"] is True
     assert weighted_contraction["gates"]["weight_range_below_ten"] is True
 
@@ -443,15 +459,17 @@ def main() -> None:
         "conditional_lower_bound_ledger_replayed_but_not_promoted": True,
         "headline_theorem_certificate_closed": False,
         "load_bearing_gap": (
-            "Sprint 1285 exactly excludes global amplitude compatibility in "
-            "the current Bellman assembly"
+            "Sprint 1285 and an independent mpmath.iv reconstruction exactly "
+            "exclude global amplitude compatibility in the current Bellman assembly"
         ),
         "independence_boundary": (
             "production Arb stack plus separate mpmath.iv reconstruction and "
             "independent symbolic spatial-carrier/truncation reconstruction, "
             "plus a separately written 21-source conditional dimension-necessity "
-            "reconstruction; the original chronology is not externally time-sealed "
-            "and the remaining parameter-absorption gap is disclosed"
+            "reconstruction; the Bellman normalization gap is reproduced by "
+            "independent Arb and mpmath.iv engines; the original chronology is "
+            "not externally time-sealed and the remaining parameter-absorption "
+            "gap is disclosed"
         ),
     }, indent=2))
 

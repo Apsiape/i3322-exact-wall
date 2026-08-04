@@ -82,6 +82,8 @@ row is presently **open**, despite its internal gates passing. See
 | Inactive predecessor exclusion | `certificate/production/foundational-sprint-1194/inactive_outer_guard.py` |
 | Bellman theorem assembly | **OPEN after Sprint 1285 audit**; historical engine: `certificate/production/foundational-sprint-1195/theorem_assembly_verify.py` |
 | Global-amplitude exclusion audit | `certificate/production/foundational-sprint-1285/wide_bracket_amplitude_exclusion.py` |
+| Independent amplitude-gap reconstruction | `certificate/independent/amplitude-gap/amplitude_gap_mpmath.py` |
+| Post-verdict two-engine concordance | `certificate/independent/amplitude-gap/amplitude_gap_concordance.py` |
 
 ### Independent interval reconstruction
 
@@ -90,9 +92,9 @@ computer-assisted inputs using `mpmath.iv`, a locally written
 rectangular complex-interval class, and no imports from production Arb/FLINT
 modules. `independent-reconstruction.json` records eight passing gates and an
 exact directed-overlap check against the production `q_*` receipt performed
-only after the independent verdict was assembled. Those reconstructions did
-not test the newly identified global-amplitude weld and therefore do not close
-the Sprint 1285 gap.
+only after the independent local verdict was assembled. The independent
+amplitude-gap engine now tests the formerly omitted weld and certifies that it
+fails; the assembler therefore reports `headline_certificate_closed: false`.
 
 ## End-to-end theorem receipts
 

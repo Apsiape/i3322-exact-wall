@@ -1,0 +1,36 @@
+{
+  "status": "post-verdict amplitude-gap concordance",
+  "production_backend": "python-flint Arb",
+  "independent_backend": "mpmath.iv and independent iv_core",
+  "production_interval": {
+    "interval": "[0.0002 +/- 5.98e-5]",
+    "lower": 0.00014027592551842303,
+    "upper": 0.00017894047518170395,
+    "width_upper_bound": 3.866454966328092e-05,
+    "contains_zero": false
+  },
+  "independent_interval": {
+    "interval": [
+      "0.0001402759957979288209689241433897538955301575179002423633210675378509384120679247586116631498847099455",
+      "0.0001789404032342236322057114853490882670348722100400147406968081212683965746036334595781676138372529718"
+    ],
+    "lower": 0.0001402759957979288,
+    "upper": 0.00017894040323422362,
+    "contains_zero": false
+  },
+  "endpoint_disagreements": {
+    "lower": 7.027950576642301e-11,
+    "upper": 7.194748033565075e-11
+  },
+  "gates": {
+    "production_passed": true,
+    "independent_passed": true,
+    "production_excludes_zero": true,
+    "independent_excludes_zero": true,
+    "amplitude_intervals_overlap": true,
+    "lower_endpoints_agree_below_one_e_minus_nine": true,
+    "upper_endpoints_agree_below_one_e_minus_nine": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "Concordance confirms the diagnosed certificate gap across two interval implementations; it does not determine a corrected optimum."
+}

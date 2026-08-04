@@ -7,7 +7,6 @@ import importlib.util
 import json
 from pathlib import Path
 import sys
-import time
 
 import numpy as np
 from scipy.interpolate import PchipInterpolator
@@ -57,7 +56,6 @@ def affine_hull(grid: np.ndarray, f: np.ndarray) -> tuple[np.ndarray, np.ndarray
 
 
 def inspect(source, nodes: int) -> dict:
-    started = time.perf_counter()
     row = source.reconstruct_hull(nodes)
     grid = row["grid"]
     f = row["F_values"]
@@ -121,7 +119,6 @@ def inspect(source, nodes: int) -> dict:
         "minimum_gap_coordinate": x,
         "predecessor_at_minimum": p,
         "bottleneck_multiplier": float(coefficient),
-        "elapsed_seconds": time.perf_counter() - started,
     }
 
 

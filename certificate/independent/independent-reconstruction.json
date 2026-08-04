@@ -1,5 +1,5 @@
 {
-  "status": "independent reconstruction of the complete computer-assisted Bellman input",
+  "status": "independent local reconstruction with global Bellman gap",
   "independence_contract": {
     "interval_backend": "mpmath.iv",
     "complex_backend": "locally implemented rectangular intervals",
@@ -18,7 +18,10 @@
     "no_forbidden_interval_import": true
   },
   "gate_score": "8/8",
-  "all_gates_pass": true,
+  "historical_local_gates_pass": true,
+  "global_amplitude_gap_independently_certified": true,
+  "headline_certificate_closed": false,
+  "audit_consistent": true,
   "post_verdict_comparison": {
     "production_q_receipt": "[0.250875384513976536 +/- 4.86e-19]",
     "production_q_decimal_bounds": [
@@ -34,5 +37,5 @@
     "rounding_rule": "round-half-even to 18 digits after the decimal point",
     "analytic_correction_ratio_independent_over_production": 1.020883045322888
   },
-  "claim_boundary": "This is method-independent interval reconstruction of every computer-assisted Bellman gate. Analytic operator and nonattainment proofs remain exact-paper arguments with separate symbolic engines."
+  "claim_boundary": "The eight historical local gates reconstruct independently, but the separately reconstructed global amplitude gap prevents them from assembling a certified Bellman fixed point."
 }

@@ -9,8 +9,7 @@
       "minimum_gap": 0.00011798690219921859,
       "minimum_gap_coordinate": -0.878282850598611,
       "predecessor_at_minimum": -0.8781648636964118,
-      "bottleneck_multiplier": 1.1616856816612744,
-      "elapsed_seconds": 1.5164465999987442
+      "bottleneck_multiplier": 1.1616856816612744
     },
     {
       "nodes": 12798,
@@ -20,8 +19,7 @@
       "minimum_gap": 0.00012221807423518083,
       "minimum_gap_coordinate": -0.878277759492909,
       "predecessor_at_minimum": -0.8781555414186738,
-      "bottleneck_multiplier": 1.1616343817673738,
-      "elapsed_seconds": 1.957517899980303
+      "bottleneck_multiplier": 1.1616343817673738
     },
     {
       "nodes": 12799,
@@ -31,8 +29,7 @@
       "minimum_gap": 9.478960079845056e-05,
       "minimum_gap_coordinate": -0.8782502211602775,
       "predecessor_at_minimum": -0.8781554315594791,
-      "bottleneck_multiplier": 1.161634040409708,
-      "elapsed_seconds": 2.4245904999843333
+      "bottleneck_multiplier": 1.161634040409708
     },
     {
       "nodes": 12800,
@@ -42,8 +39,7 @@
       "minimum_gap": 7.069416677862872e-05,
       "minimum_gap_coordinate": -0.8782379201688187,
       "predecessor_at_minimum": -0.8781672260020401,
-      "bottleneck_multiplier": 1.1616992593525164,
-      "elapsed_seconds": 2.411199800000759
+      "bottleneck_multiplier": 1.1616992593525164
     },
     {
       "nodes": 12801,
@@ -53,8 +49,7 @@
       "minimum_gap": 5.4616959234254914e-05,
       "minimum_gap_coordinate": -0.8782315597783554,
       "predecessor_at_minimum": -0.8781769428191212,
-      "bottleneck_multiplier": 1.161752882528735,
-      "elapsed_seconds": 2.4012233999965247
+      "bottleneck_multiplier": 1.161752882528735
     },
     {
       "nodes": 12802,
@@ -64,8 +59,7 @@
       "minimum_gap": 4.022802347447563e-05,
       "minimum_gap_coordinate": -0.8782263869599553,
       "predecessor_at_minimum": -0.8781861589364808,
-      "bottleneck_multiplier": 1.1618037419018235,
-      "elapsed_seconds": 2.429147600021679
+      "bottleneck_multiplier": 1.1618037419018235
     },
     {
       "nodes": 12803,
@@ -75,8 +69,7 @@
       "minimum_gap": 2.9768485661274546e-05,
       "minimum_gap_coordinate": -0.8782239075140656,
       "predecessor_at_minimum": -0.8781941390284044,
-      "bottleneck_multiplier": 1.161847737674797,
-      "elapsed_seconds": 2.36115339997923
+      "bottleneck_multiplier": 1.161847737674797
     },
     {
       "nodes": 12804,
@@ -86,8 +79,7 @@
       "minimum_gap": 2.5045436016002398e-05,
       "minimum_gap_coordinate": -0.8782252415750147,
       "predecessor_at_minimum": -0.8782001961389987,
-      "bottleneck_multiplier": 1.1618810440223684,
-      "elapsed_seconds": 2.4582646999915596
+      "bottleneck_multiplier": 1.1618810440223684
     },
     {
       "nodes": 12805,
@@ -97,8 +89,7 @@
       "minimum_gap": 2.3024638154178767e-05,
       "minimum_gap_coordinate": -0.8782282402317195,
       "predecessor_at_minimum": -0.8782052155935653,
-      "bottleneck_multiplier": 1.1619086079343284,
-      "elapsed_seconds": 2.5112147000036202
+      "bottleneck_multiplier": 1.1619086079343284
     }
   ],
   "deep_refinement": [
@@ -110,8 +101,7 @@
       "minimum_gap": 6.950664177485244e-05,
       "minimum_gap_coordinate": -0.8783041732834651,
       "predecessor_at_minimum": -0.8782346666416903,
-      "bottleneck_multiplier": 1.1620710439781494,
-      "elapsed_seconds": 4.2800590000115335
+      "bottleneck_multiplier": 1.1620710439781494
     },
     {
       "nodes": 51201,
@@ -121,8 +111,7 @@
       "minimum_gap": 2.1793908595135747e-05,
       "minimum_gap_coordinate": -0.8782756093933272,
       "predecessor_at_minimum": -0.878253815484732,
-      "bottleneck_multiplier": 1.162176885314512,
-      "elapsed_seconds": 7.99826269998448
+      "bottleneck_multiplier": 1.162176885314512
     }
   ],
   "phase_gap_range": [

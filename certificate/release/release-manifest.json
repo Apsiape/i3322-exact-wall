@@ -27,6 +27,42 @@
       "sha256": "cf5452c9be4f727b054c1fd89c7e23d33ecd4f36dbc7f1fae74c2aebcc285d8f"
     },
     {
+      "path": "certificate/independent/amplitude-gap/amplitude-gap-concordance.json",
+      "canonical_bytes": 1371,
+      "hash_mode": "canonical-lf",
+      "sha256": "776d262d6019b92dc9b4cd5286e7b33d609e5a985398207351d15afb05b2b814"
+    },
+    {
+      "path": "certificate/independent/amplitude-gap/amplitude-gap-mpmath.json",
+      "canonical_bytes": 4432,
+      "hash_mode": "canonical-lf",
+      "sha256": "fc2b91ec7e08672001d9578b30389c3aca47fc3e79e0deac23c1cbbb338a147d"
+    },
+    {
+      "path": "certificate/independent/amplitude-gap/amplitude_gap_concordance.py",
+      "canonical_bytes": 2578,
+      "hash_mode": "canonical-lf",
+      "sha256": "afb7efdeb5109c526aae317b419e33321711391b7d02014230fe13592bb78012"
+    },
+    {
+      "path": "certificate/independent/amplitude-gap/amplitude_gap_mpmath.py",
+      "canonical_bytes": 6988,
+      "hash_mode": "canonical-lf",
+      "sha256": "814530a183b52eafdffb52a911c8f2906eea486dbe111d2ec04c755e9c4be67e"
+    },
+    {
+      "path": "certificate/independent/amplitude-gap/INDEPENDENT-AMPLITUDE-GAP.md",
+      "canonical_bytes": 1877,
+      "hash_mode": "canonical-lf",
+      "sha256": "de752ae88ef2033bb1e100c3791aeaccf2e3752269b0675b9f9a245807daa2ff"
+    },
+    {
+      "path": "certificate/independent/amplitude-gap/PRE-REGISTRATION.md",
+      "canonical_bytes": 1915,
+      "hash_mode": "canonical-lf",
+      "sha256": "8df78917f38fc4d4633edc9dab87ae37deeb79b03214cd4fd290732f45f77db6"
+    },
+    {
       "path": "certificate/independent/analytic-tail-mpmath.json",
       "canonical_bytes": 1111,
       "hash_mode": "canonical-lf",
@@ -256,9 +292,9 @@
     },
     {
       "path": "certificate/independent/independent-reconstruction.json",
-      "canonical_bytes": 1661,
+      "canonical_bytes": 1761,
       "hash_mode": "canonical-lf",
-      "sha256": "b85b2ad279ab6759c8fb695daafcb104cd51b529335d43426f41329a38a5bb19"
+      "sha256": "c4d60c07bdf422846021eef3126ca91bd7c9f8d2755ffe2bd39d5b8d313d1ec0"
     },
     {
       "path": "certificate/independent/iv_core.py",
@@ -292,9 +328,9 @@
     },
     {
       "path": "certificate/independent/README.md",
-      "canonical_bytes": 1616,
+      "canonical_bytes": 2093,
       "hash_mode": "canonical-lf",
-      "sha256": "b129507b93e2597db4289844626883d2a15be231f19e719bddc5cd955760e2ba"
+      "sha256": "d2f7652dcf2142a5ded1e51563ce7fcd00d4d70aa82dca5ffd3ee70489436af3"
     },
     {
       "path": "certificate/independent/shooting-miranda-mpmath.json",
@@ -334,9 +370,9 @@
     },
     {
       "path": "certificate/independent/verify_independent_reconstruction.py",
-      "canonical_bytes": 4685,
+      "canonical_bytes": 5154,
       "hash_mode": "canonical-lf",
-      "sha256": "0756a00ee96935e67d484611bd3cc843b96c4247f8cfc05e25187f928e83419a"
+      "sha256": "f4f93830dd13943502d7db54392d3ea1ea01352cb2d8e7631147aab104041ccb"
     },
     {
       "path": "certificate/production/foundational-sprint-1115/plateau-hyperbolicity-certificate.json",
@@ -2188,15 +2224,15 @@
     },
     {
       "path": "certificate/production/foundational-sprint-1279/bellman-grid-phase-attack.json",
-      "canonical_bytes": 4823,
+      "canonical_bytes": 4335,
       "hash_mode": "canonical-lf",
-      "sha256": "7ade2ea0192150c24d1d2cf816db2af3cfb024f7753762234d18a0de314c2e83"
+      "sha256": "0bfd86a0802f9cbfac0b6552c0ca48464d2fc6e8c355d6aa1bf106688a4d4393"
     },
     {
       "path": "certificate/production/foundational-sprint-1279/bellman_grid_phase_attack.py",
-      "canonical_bytes": 5862,
+      "canonical_bytes": 5758,
       "hash_mode": "canonical-lf",
-      "sha256": "0af8368c3c25f21be9fe9969da4c814c1d57126c7e43e7775ce10df5742b7ea9"
+      "sha256": "ae39c15af8db305c21f755f5f1e0df15dda4298bff3c32ea62a96ccdb5a02081"
     },
     {
       "path": "certificate/production/foundational-sprint-1279/GRID-PHASE-ROBUST-PARABOLIC-SIGNAL.md",
@@ -2386,9 +2422,9 @@
     },
     {
       "path": "certificate/release/README.md",
-      "canonical_bytes": 1635,
+      "canonical_bytes": 1853,
       "hash_mode": "canonical-lf",
-      "sha256": "b6fec2b9882568c070422546ba43064ffe117fa024ec3bcca4a863305168bc60"
+      "sha256": "52d6c089de802fe6a98bd0b2bdebeefbb3db970271c5e00140c87efee1b02e82"
     },
     {
       "path": "certificate/release/v13-claim-contract.json",
@@ -2404,9 +2440,9 @@
     },
     {
       "path": "certificate/release/verify_release.py",
-      "canonical_bytes": 25517,
+      "canonical_bytes": 26427,
       "hash_mode": "canonical-lf",
-      "sha256": "d0e88f6aa154a6929e777d0ad576107d2472825c7651581f9c6a3314cae1d1e5"
+      "sha256": "f4999c2fb754e940d67129fa967b42a43946ca5a154dd0bf5f1621e17f4f94f5"
     },
     {
       "path": "CITATION.cff",
@@ -2434,15 +2470,15 @@
     },
     {
       "path": "paper/CERTIFICATE-MAP.md",
-      "canonical_bytes": 15734,
+      "canonical_bytes": 16008,
       "hash_mode": "canonical-lf",
-      "sha256": "4f6bac2897f7873111762684eb6b286d9ccf039a4f4105becd15d6d14057a0d6"
+      "sha256": "5a085ef6f52c843b593c5ab134872006bbf1b0c3b55aa2ace6596a5ec2a2e5ff"
     },
     {
       "path": "paper/CERTIFICATE-STATUS-ALERT.md",
-      "canonical_bytes": 1524,
+      "canonical_bytes": 1930,
       "hash_mode": "canonical-lf",
-      "sha256": "4ae40f24e21fd98dca90a66285a9acedb2a38f5704c186106dd2ca6a41e864cd"
+      "sha256": "fdde7f247b97eceaad4701c09da5cd109e235c0f5e2c1a2f7d58962f56d1901d"
     },
     {
       "path": "paper/DIMENSION-GAP-STATUS.md",
@@ -2536,9 +2572,9 @@
     },
     {
       "path": "README.md",
-      "canonical_bytes": 14663,
+      "canonical_bytes": 14737,
       "hash_mode": "canonical-lf",
-      "sha256": "5ae49631fb2ee21f2fb0f2624fd15df5a45efb354a78c9e91ba43c9fb7aba5db"
+      "sha256": "2ff716685249c3a340354d87602505acd4cf2588810727233c954095e94076a2"
     },
     {
       "path": "requirements.txt",
@@ -2601,6 +2637,6 @@
       "sha256": "a405ef962afdfc120b5c3f2901ca58e95e2ab3963e642fa73dc2022f2d280cfa"
     }
   ],
-  "file_count": 433,
+  "file_count": 439,
   "scope": "Custody manifest for selected published files. Analytic dependency closure is checked separately by verify_release.py and is not inferred from file enumeration alone."
 }

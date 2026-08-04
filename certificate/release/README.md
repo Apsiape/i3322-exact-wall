@@ -9,6 +9,10 @@ Bellman theorem certificate open. A zero process exit code means the audit
 completed and agreed with that disclosed status; it does not mean the
 historical theorem has been repaired.
 
+The full replay is byte-deterministic. Sprint 1279 previously serialized
+wall-clock timing into its scientific JSON; that non-mathematical field was
+removed after the full replay correctly rejected the changing hash.
+
 - default: check manifest coverage, frozen SHA-256 custody, private-path
   exclusion, and theorem receipt semantics;
 - `--full`: additionally regenerate every production and independent receipt

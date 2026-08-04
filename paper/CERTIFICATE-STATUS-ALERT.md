@@ -18,6 +18,17 @@ the current Bellman upper-bound assembly.  The audit is reproducible from
 `certificate/production/foundational-sprint-1285/` and is incorporated into
 the release verifier at repository HEAD.
 
+A second engine in `certificate/independent/amplitude-gap/` independently
+reconstructs the degree-12 chart and map with `mpmath.iv`, proves strict
+monotonicity across the complete bracket, and encloses the same gap in
+
+```text
+[0.00014027599579792882, 0.00017894040323422364].
+```
+
+The two certified intervals overlap.  The negative audit therefore no longer
+depends on the production Arb implementation.
+
 This finding does **not** establish that the reported numerical constant is
 wrong.  It establishes that the present proof of the global Bellman upper
 bound is incomplete.  Consequently, until a corrected global normalization or

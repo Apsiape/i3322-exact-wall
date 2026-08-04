@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Assemble seven mathematical gates plus import hygiene, then compare."""
+"""Assemble historical local gates and the independent global-gap audit."""
 
 from __future__ import annotations
 
@@ -41,6 +41,7 @@ def main() -> None:
     analytic = load(HERE/"analytic-tail-mpmath.json")
     shooting = load(HERE/"shooting-miranda-mpmath.json")
     graph = load(HERE/"global-graph-mpmath.json")
+    amplitude_gap = load(HERE/"amplitude-gap/amplitude-gap-mpmath.json")
     forbidden = forbidden_imports()
 
     gates = {
@@ -72,8 +73,14 @@ def main() -> None:
         for value in independent_bounds
     ]
     q_decimal_agreement = independent_rounded == [displayed, displayed]
+    audit_consistent = (
+        independent_pass
+        and amplitude_gap["all_gates_pass"]
+        and q_decimal_agreement
+        and q_intervals_overlap
+    )
     result = {
-        "status": "independent reconstruction of the complete computer-assisted Bellman input",
+        "status": "independent local reconstruction with global Bellman gap",
         "independence_contract": {
             "interval_backend": "mpmath.iv",
             "complex_backend": "locally implemented rectangular intervals",
@@ -83,7 +90,12 @@ def main() -> None:
         },
         "gates": gates,
         "gate_score": f"{sum(gates.values())}/{len(gates)}",
-        "all_gates_pass": independent_pass,
+        "historical_local_gates_pass": independent_pass,
+        "global_amplitude_gap_independently_certified": amplitude_gap[
+            "all_gates_pass"
+        ],
+        "headline_certificate_closed": False,
+        "audit_consistent": audit_consistent,
         "post_verdict_comparison": {
             "production_q_receipt": production_q_text,
             "production_q_decimal_bounds": [str(value) for value in production_bounds],
@@ -93,11 +105,15 @@ def main() -> None:
             "rounding_rule": "round-half-even to 18 digits after the decimal point",
             "analytic_correction_ratio_independent_over_production": analytic["original_coordinate_correction_upper"]/2.213018857104665e-25,
         },
-        "claim_boundary": "This is method-independent interval reconstruction of every computer-assisted Bellman gate. Analytic operator and nonattainment proofs remain exact-paper arguments with separate symbolic engines.",
+        "claim_boundary": (
+            "The eight historical local gates reconstruct independently, but "
+            "the separately reconstructed global amplitude gap prevents them "
+            "from assembling a certified Bellman fixed point."
+        ),
     }
     (HERE/"independent-reconstruction.json").write_text(json.dumps(result, indent=2)+"\n", encoding="utf-8")
     print(json.dumps(result, indent=2))
-    assert independent_pass and q_decimal_agreement and q_intervals_overlap
+    assert audit_consistent and not result["headline_certificate_closed"]
 
 
 if __name__ == "__main__":
