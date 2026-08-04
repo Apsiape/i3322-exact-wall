@@ -80,6 +80,31 @@ The matching lower order remains open. In particular, neither
 `D(epsilon)=Theta(log(1/epsilon))` nor an optimal necessity exponent is
 currently claimed.
 
+## Post-review structural result
+
+Keeping the four coarse omissions rather than deleting their complementary
+parts yields a valid coupled-sector estimate
+
+```text
+m_near<=C_D(m_drift+m_out)+C_N sqrt(epsilon).
+```
+
+It follows that either the deficit exceeds an explicit fixed threshold or a
+dimension-independent amount of active drift mass is present. This removes
+the possibility that an almost-optimal finite strategy hides all of its mass
+in the near-fixed sector for free.
+
+It does not restore the dimension lower bound. An exact terminal-fork
+countermodel shows that the two response-specific images of one localized
+packet may occupy orthogonal multiplicity fibres under the same coarse
+spectral label, even when the response involutions have the shared I3322
+factor types and exact sign relations. Scalar packet norms therefore lose the
+branch provenance needed to charge entry into the near-fixed sector.
+
+Any future necessity proof must use a stronger contact-dependent rigidity
+theorem or an operator/PSD/Gram-valued transport. The former scalar
+common-packet completion is closed as a route under the current hypotheses.
+
 ## Numerical illustration of the constructive sequence
 
 | local dimension | value | gap to `q_*` |

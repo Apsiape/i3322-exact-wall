@@ -1,0 +1,15 @@
+{
+  "status": "exact coupled near/drift sector guard",
+  "hostile_measure_fixtures": 100000,
+  "absorption_identity": "4*H*theta=mu^2/4",
+  "coarse_complement_coefficient": "4 occurrences",
+  "C_N_numerator_digits": 22,
+  "C_D": "743768064000/49",
+  "C_T_numerator_digits": 28,
+  "w0": "49/1487536128098",
+  "forced_alternative": "epsilon>=1/(4*C_T^2) or m_D>=w0",
+  "terminal_near_entry_closed": false,
+  "universal_dimension_lower_bound_proved": false,
+  "all_gates_pass": true,
+  "claim_boundary": "This proves the global omission split and coupled-sector algebra. It does not charge terminal near-entry packets and therefore does not prove the dimension lower bound."
+}

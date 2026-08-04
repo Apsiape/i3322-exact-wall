@@ -27,8 +27,12 @@ R = 1.07809205080209208....
 Thus `log(1/epsilon)/log(R)+O(1)` local dimension is sufficient. A prospective
 matching universal lower bound was blocked by adversarial review: its
 near-fixed packet step lacks a localized-response/commutator estimate. The
-conditional constant ledger is retained as an open proof campaign, but this
-repository does **not** presently claim
+subsequent coupled-sector repair forces a fixed amount of drift mass, but an
+exact shared-factor countermodel shows that scalar packet norms lose the
+multiplicity provenance needed at terminal near-entry. Any continuation must
+be operator/Gram-valued or prove stronger contact rigidity. The conditional
+constant ledger is retained as an open proof campaign, but this repository
+does **not** presently claim
 `D(epsilon)=Theta(log(1/epsilon))`.
 
 Consequently,

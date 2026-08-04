@@ -91,3 +91,20 @@ There are only two honest exits:
    lower-bound route as an explicit open problem.
 
 Until one exit is completed, v1.3 remains prospective.
+
+## Post-adjudication update
+
+Sprints 1238--1239 tested the first exit rather than assuming it.
+
+- Sprint 1238 proves a weaker coupled-sector theorem: near-fixed mass forces
+  either Bell deficit or a fixed amount of complementary drift mass. It keeps
+  all four coarse omissions and uses no localized response vector.
+- Sprint 1239 kills the proposed terminal shortcut. Even with the I3322
+  shared-factor forms and exact coarse sign relations, two zero-error
+  response branches can occupy orthogonal multiplicity fibres inside one
+  coarse target block.
+
+Consequently the scalar packet architecture is not a path to the missing
+theorem under the current hypotheses. A future attempt must retain
+operator/Gram provenance or establish a stronger contact-dependent rigidity
+theorem. The release decision remains **HOLD**.

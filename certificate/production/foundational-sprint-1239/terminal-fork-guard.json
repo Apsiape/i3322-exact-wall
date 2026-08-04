@@ -1,0 +1,24 @@
+{
+  "status": "exact terminal common-fork countermodel",
+  "dimension": 3,
+  "both_response_involutions_self_adjoint": true,
+  "both_global_response_defects_zero": true,
+  "both_response_specific_packet_errors_zero": true,
+  "fine_targets_orthogonal_inside_one_coarse_block": true,
+  "common_coarse_target_error_squared": [
+    1,
+    1
+  ],
+  "complement_cancellation_exact": true,
+  "shared_factor_tensor_realization_dimension": [
+    4,
+    4
+  ],
+  "shared_factor_forms_exact": true,
+  "coarse_sign_relations_exact": true,
+  "tensor_targets_share_joint_coarse_label": "(-1,-1)",
+  "tensor_targets_orthogonal": true,
+  "scalar_terminal_commonization_proved": false,
+  "all_gates_pass": true,
+  "claim_boundary": "This kills terminal commonization from the abstract packet hypotheses, including shared-factor and coarse sign typing. A stronger contact identity or PSD/Gram-valued transport remains possible."
+}

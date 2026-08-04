@@ -61,6 +61,8 @@ REPLAY = [
     f"{PROD}/foundational-sprint-1234/outer_affine_dominance_verify.py",
     f"{PROD}/foundational-sprint-1235/packet_path_ownership_verify.py",
     f"{PROD}/foundational-sprint-1237/same_dimension_extreme_verify.py",
+    f"{PROD}/foundational-sprint-1238/coupled_sector_verify.py",
+    f"{PROD}/foundational-sprint-1239/terminal_fork_verify.py",
     f"{PROD}/foundational-sprint-1231/dimension_bound_algebra_verify.py",
     f"{PROD}/foundational-sprint-1233/master_ledger_verify.py",
     f"{REL}/normalization_concordance_verify.py",
@@ -160,6 +162,8 @@ def check_semantics() -> None:
         f"{PROD}/foundational-sprint-1225/two-frame-packet-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1226/weighted-closure-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1227/pullback-pairing-guard.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1238/coupled-sector-guard.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1239/terminal-fork-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1232/inactive-quadratic-interval.json": "all_gates_pass",
         f"{REL}/normalization-concordance.json": "all_gates_pass",
         f"{REL}/dimension-gap-audit.json": "all_data_gates_pass",
@@ -191,6 +195,12 @@ def check_semantics() -> None:
     ).read_text(encoding="utf-8")
     assert "<=48 epsilon_0" in near_fixed
     assert "Y^-1(g_k I_i)" in packets
+    coupled = load(f"{PROD}/foundational-sprint-1238/coupled-sector-guard.json")
+    terminal = load(f"{PROD}/foundational-sprint-1239/terminal-fork-guard.json")
+    assert coupled["terminal_near_entry_closed"] is False
+    assert coupled["universal_dimension_lower_bound_proved"] is False
+    assert terminal["scalar_terminal_commonization_proved"] is False
+    assert terminal["shared_factor_forms_exact"] is True
 
 
 def replay() -> None:
