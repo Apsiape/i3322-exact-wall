@@ -1,0 +1,11 @@
+{
+  "status": "exact-rational moving-dihedral-partition guard",
+  "fixtures": 10000,
+  "exact_partition_transport_failures": 0,
+  "maximum_lipschitz_violation": "0",
+  "certified_active_chart_generator_bound": "20",
+  "distinct_reduced_frames_at_zero_a": 2,
+  "maximum_distinct_reduced_frames_per_positive_a_count": 4,
+  "all_gates_pass": true,
+  "claim_boundary": "Moving partitions remove reflection rounding and the guard checks the per-frame distortion only. Multi-frame multiplicity must be counted separately; final assembly remains open."
+}

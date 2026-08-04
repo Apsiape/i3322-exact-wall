@@ -1,0 +1,37 @@
+{
+  "status": "certificate-derived global Bellman/response-weight box",
+  "ancestry_gates": {
+    "central_complete": true,
+    "wing_complete": true,
+    "outer_complete": true,
+    "theorem_assembly": true,
+    "active_F_above_one_fifth": true,
+    "outer_F_above_one_fifth": true,
+    "q_below_0_251": true,
+    "predecessor_inside_0_9": true
+  },
+  "minimum_saved_active_pivot_lower": "0.25647373006374524",
+  "minimum_saved_outer_F_lower": "0.21039994329695993",
+  "validated_q_upper": "0.250875384513976536486",
+  "terminal_predecessor_upper": "0.89811648239403900625",
+  "legacy_float_serialization_tax": "1E-12",
+  "global_F_box": [
+    "1/5",
+    "13/10"
+  ],
+  "contact_coordinate_cutoff": "9/10",
+  "b_min_squared": "19/400",
+  "response_min_squared_raw": "19/2600",
+  "response_max_squared_raw": "13/8",
+  "safe_response_weight_box": [
+    "1/12",
+    "13/10"
+  ],
+  "recurrence_energy_constants_A_B": [
+    "24",
+    "1872/5"
+  ],
+  "cocycle_amplitude_max": "13/2",
+  "all_gates_pass": true,
+  "claim_boundary": "This reuses the validated Bellman ancestry to certify conservative global weight and cocycle constants. It does not certify the off-contact r0 coercivity or final dimension inequality."
+}

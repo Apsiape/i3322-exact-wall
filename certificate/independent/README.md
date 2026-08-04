@@ -25,3 +25,9 @@ The final two commands separately reconstruct the spatial Bell-to-Jacobi
 identity and the finite-section boundary-flux law. The truncation engine also
 derives and interval-encloses the plateau exponent without importing a
 production module.
+
+The subdirectory `dimension-necessity/` is a separate blind reconstruction of
+the quantitative lower bound. It freezes the literal 19-source packet seen by
+the reconstructing agent, its preregistration and full proof, and a subsequent
+exact-arithmetic hostile audit. It neither imports nor paraphrases the
+production dimension-bound assembly.

@@ -1,0 +1,14 @@
+{
+  "status": "exact neutral-cycle identities plus 80-digit hostile guard",
+  "sum_identity_residual": "0",
+  "difference_identity_residual": "0",
+  "S0_square_residual": "0",
+  "scalar_square_residual_mod_unit_circles": "0",
+  "order_identity_residual_mod_unit_circles": "0",
+  "certified_lower_margin": "437692256988267757/500000000000000000000",
+  "high_precision_checks": 5005,
+  "maximum_detected_violation": "0.0",
+  "minimum_closure_margin_seen": "0.000875384513976535514",
+  "all_gates_pass": true,
+  "claim_boundary": "This proves and guards the scalar neutral-cycle margin. It does not yet transfer arbitrary operator deficit to a cycle decomposition or prove a dimension lower bound."
+}

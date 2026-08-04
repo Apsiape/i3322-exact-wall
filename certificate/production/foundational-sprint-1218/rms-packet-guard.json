@@ -1,0 +1,9 @@
+{
+  "status": "100-digit RMS packet-compression guard",
+  "high_precision_fixtures": 3000,
+  "maximum_detected_reverse_triangle_violation": "0.0",
+  "safe_grouped_amplitude_cocycle": "78/5",
+  "pointwise_contact_cocycle_bound": "13/2",
+  "all_gates_pass": true,
+  "claim_boundary": "This verifies RMS compression and the safe grouped constant. It does not construct the common matched packet family or prove the final dimension inequality."
+}

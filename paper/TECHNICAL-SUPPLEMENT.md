@@ -286,11 +286,99 @@ log R in [0.07519285919570098, 0.07519285919570368].
 Together with the certified analytic tails, this proves
 `-log(q_*-v_L)/(2L+1) -> log R`, and hence the unrestricted optimum with
 binary POVMs obeys `q_*-Q_d <= exp[-d log R+O(1)]`. This is an achievability
-upper bound on required dimension. The current exact reversal proof remains
-discontinuous and does not give the opposite, device-independent dimension
-lower bound.
+upper bound on required dimension. The exact reversal proof alone remains
+quantitatively discontinuous; the converse uses a separate robust packet
+argument.
 
-## S12. Reproduction
+## S12. Quantitative dimension necessity
+
+Let `Q_d` allow mixed states and binary POVMs on local spaces of dimension at
+most `d`. Compactness and successive affine maximization replace an optimizer,
+without changing dimension, by a pure state and six projections. Write the
+deficit as the sum of the three positive certificate debts:
+
+```text
+epsilon = q_*-Q_d = epsilon_0+epsilon_A+epsilon_B.
+```
+
+The proof uses
+
+```text
+mu=7/8000,  h_0=10^-7,  K=4656/25,  M=78/5,
+H=(39/10)K+mu^2/2,
+theta=mu^2/(16H),
+Delta=theta h_0/160.
+```
+
+Saturated quadratic coercivity and the near-fixed closure theorem give
+
+```text
+m_out <= C_out sqrt(epsilon_0),
+m_N   <= C_N sqrt(epsilon),
+C_out = 400*10^12/1883^2,
+C_0   = 100 sqrt(40)/h_0,
+C_N   = (4/mu^2)(24+6K+H C_0).
+```
+
+On the retained drift sector, the mesh is `h_d=Delta/(4*20^d)`. The exact
+sum over all `d+1` principal and `d` intermediate frames is
+
+```text
+sum_(k=0)^d 20^k + sum_(k=0)^(d-1) 20^k
+  = (21*20^d-2)/19.
+```
+
+After all contact, exit, and repeated near/far charges,
+
+```text
+F_d <= C_F 20^(2d) sqrt(epsilon),
+W_D >= 1-C_I 20^(2d) sqrt(epsilon),
+K_R = 84 sqrt(40)/(19 Delta),
+C_F = K_R+3(C_out+C_N),
+C_I = C_out+C_N+4 sqrt(40)/Delta.
+```
+
+Canonical joint spectral packets make each intermediate target literally the
+next source. At one time distinct packet labels are orthogonal. Along one
+retained chain, successive local spectral projections occupy pairwise disjoint
+cells, so the chain has length at most `d`. The proof does not bound the number
+of chains or their total length.
+
+The complete upper and lower energy ledger is
+
+```text
+E_exit+E_rec <= A d epsilon+B C_F 20^(2d) sqrt(epsilon),
+E_exit+E_rec >= W_D/[(d+1)M^(2d)],
+A=5616,
+B=200772/25.
+```
+
+Set
+
+```text
+Gamma=(20M)^4=312^4=9,475,854,336,
+kappa=min(1, 1/(4C_I^2), 1/(8A), 1/(64B^2C_F^2)).
+```
+
+Exact arithmetic proves that the fourth candidate is the minimum and
+
+```text
+kappa = 4.294654614331445998753374519792940851...e-52.
+```
+
+Splitting first on whether the retained loss is at least `1/2`, and then on
+which upper-energy term is large, yields for every `d>=1`
+
+```text
+q_*-Q_d >= kappa d^-4 Gamma^-d.
+```
+
+The production chain has executable guards for each local lemma. A separately
+preregistered reconstruction used only a sealed 19-source snapshot and
+recovered the complete ledger and the same `Gamma`. A third exact SymPy pass
+reconstructed `A`, `B`, `Gamma`, and the minimum defining `kappa`.
+
+## S13. Reproduction
 
 From the repository root:
 

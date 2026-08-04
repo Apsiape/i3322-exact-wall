@@ -1,0 +1,10 @@
+{
+  "status": "exact-rational square-root cocycle composition guard",
+  "random_fixtures": 3000,
+  "minimum_energy_slack": "0",
+  "balanced_A_ratio_square_residual": "0",
+  "balanced_B_ratio_square_residual": "0",
+  "i3322_cocycle_orientation_residual": "0",
+  "all_gates_pass": true,
+  "claim_boundary": "This proves the packet-amplitude composition and its dimension-free energy estimate. It does not supply global contact moduli, the local-dimension packet budget, or the final quantitative lower bound."
+}

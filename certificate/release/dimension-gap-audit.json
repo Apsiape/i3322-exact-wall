@@ -1,5 +1,5 @@
 {
-  "status": "numerical convergence audit; no device-independent dimension lower bound",
+  "status": "numerical truncation audit separated from analytic dimension law",
   "q_star": 0.25087538451397656,
   "data": [
     {
@@ -39,12 +39,17 @@
     0.07519366109631946
   ],
   "plateau_log_ratio": 0.07519285919570202,
+  "analytic_necessity": {
+    "Gamma": "9475854336",
+    "kappa_decimal_80": "4.2946546143314459987533745197929408511613187617537397268603285846815029056115185e-52",
+    "form": "q_*-Q_d >= kappa d^-4 Gamma^-d"
+  },
   "observed_reading": "The centered aligned sequence illustrates the independently proved wall-truncation exponent log(R).",
   "theorem_boundary": [
-    "The data do not upper-bound arbitrary dimension-d strategies.",
-    "The nonattainment proof uses exact finite support reversal and is not quantitatively stable as written.",
-    "No device-independent lower bound on dimension is claimed."
+    "The table itself does not bound arbitrary dimension-d strategies.",
+    "The lower bound comes from the separate robust certificate proof, not a fit to these data.",
+    "The exact reversal proof alone remains quantitatively unstable."
   ],
-  "next_lemma": "Prove a robust finite-support reversal theorem or a dimension-d defect bound for the three PSD remainders.",
+  "open_problem": "Close the gap between the constructive exponent log(R) and the conservative necessity exponent log(Gamma).",
   "all_data_gates_pass": true
 }

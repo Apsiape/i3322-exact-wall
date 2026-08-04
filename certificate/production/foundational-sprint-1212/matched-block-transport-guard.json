@@ -1,0 +1,9 @@
+{
+  "status": "exact-rational matched-block transport guard",
+  "random_fixtures": 1000,
+  "equality_fixtures": 9,
+  "minimum_quadratic_slack": "0",
+  "minimum_mass_bound_squared_slack": "0",
+  "all_gates_pass": true,
+  "claim_boundary": "This verifies the dimension-free packet theorem on exact rational signed-permutation fixtures. It does not construct the common adaptive I3322 partition or prove a dimension lower bound."
+}

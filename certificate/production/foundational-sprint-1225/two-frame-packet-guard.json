@@ -1,0 +1,8 @@
+{
+  "status": "exact-rational two-frame packet-transport guard",
+  "hostile_fixtures": 10000,
+  "maximum_squared_bound_violation": "0",
+  "coordinate_step_error_required": false,
+  "all_gates_pass": true,
+  "claim_boundary": "Exact addresses and packet-energy transport are certified. Near-fixed charging and final constant assembly remain open."
+}

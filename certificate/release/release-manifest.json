@@ -16,9 +16,9 @@
     },
     {
       "path": ".gitignore",
-      "canonical_bytes": 88,
+      "canonical_bytes": 114,
       "hash_mode": "canonical-lf",
-      "sha256": "06522e79744411f0261c33c729ffd56ab96f802962c03561755ef043a16d8f6b"
+      "sha256": "2e8bd73f580c197cfa8c2dfd37385c7c42efed4b21127bd5d24ac495d8a47741"
     },
     {
       "path": ".zenodo.json",
@@ -49,6 +49,186 @@
       "canonical_bytes": 2396,
       "hash_mode": "canonical-lf",
       "sha256": "04c62cc07629028d5bee5a4b43c92ac4a92f61e899a919fc12295916c5c69f1c"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/BLIND-DIMENSION-RECONSTRUCTION.md",
+      "canonical_bytes": 16818,
+      "hash_mode": "canonical-lf",
+      "sha256": "5862e13e70fc40f359e60ac307b8d5132a05d2a84b6eae5608adc562327f11f3"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/BLIND-RECONSTRUCTION-BRIEF.md",
+      "canonical_bytes": 1254,
+      "hash_mode": "canonical-lf",
+      "sha256": "ef5aed4e4fde77a7c7decf553b4c193b6e9de6dd76b68e6ec172d4051b20298a"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/POST-BLIND-ACCEPTANCE.md",
+      "canonical_bytes": 3086,
+      "hash_mode": "canonical-lf",
+      "sha256": "0f3c4b2078f5035a4ac5ad6b5f58aac0d3f935ec708c1efdaddfa75a2c8c2942"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/post-blind-exact-audit.json",
+      "canonical_bytes": 297,
+      "hash_mode": "canonical-lf",
+      "sha256": "e774e85ad9e84d7914e223ae271deb21ac077fb77b05176cbbddc8d2146b9a2e"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/post_blind_exact_verify.py",
+      "canonical_bytes": 2580,
+      "hash_mode": "canonical-lf",
+      "sha256": "e6bc126a957b176bb66a1a8338bf24baac62b5c5a2720fea87ee5c3b5abfef8d"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/PRE-REGISTRATION.md",
+      "canonical_bytes": 2253,
+      "hash_mode": "canonical-lf",
+      "sha256": "87e30149c972fd5d9ce558844429e6ebf1c7ed4977496eb22c3bc26e0c27d9fb"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/README.md",
+      "canonical_bytes": 1478,
+      "hash_mode": "canonical-lf",
+      "sha256": "7506130751bc0403b023f8e467d69cc1b00ad8e62b319e2f5edb6104e904f663"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/source-manifest-audit.json",
+      "canonical_bytes": 105,
+      "hash_mode": "canonical-lf",
+      "sha256": "1f770c9f0187eef8db8ef0eb3424d1b06d6521322482250ef092ef06467a4569"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/source-manifest.json",
+      "canonical_bytes": 3800,
+      "hash_mode": "canonical-lf",
+      "sha256": "ce7ce226f2b250f878e8ad5b12bf3fe3556bb66abd818ae12694af633ab42c28"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/source-snapshots/foundational-sprint-1195/EXACT-ALIGNED-WALL-THEOREM.md",
+      "canonical_bytes": 6107,
+      "hash_mode": "canonical-lf",
+      "sha256": "7de35f4968713216b51e435063c1cb3e9b0a39480b3bbcd1abbe3ce8a62471b1"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/source-snapshots/foundational-sprint-1197/EXACT-I3322-QUANTUM-SUPREMUM.md",
+      "canonical_bytes": 5774,
+      "hash_mode": "canonical-lf",
+      "sha256": "79a23a5b91be1805b365a1de05e5d77227abafaefd636aca1ac9cdf77e5e1e54"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/source-snapshots/foundational-sprint-1208/ROBUST-REMAINDER-LOCALIZATION.md",
+      "canonical_bytes": 3736,
+      "hash_mode": "canonical-lf",
+      "sha256": "e749ce41dc9fe2fc7f2a1292f1ce0941ab4bca4e918876c0a022ba296470e2fd"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/source-snapshots/foundational-sprint-1209/RESPONSE-MEASURE-THEOREM.md",
+      "canonical_bytes": 2922,
+      "hash_mode": "canonical-lf",
+      "sha256": "41bfef7a8d1dd07c6263b7b0e41ce0b2e1883a51e95410c4aab1760c73185b32"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/source-snapshots/foundational-sprint-1211/NEUTRAL-CYCLE-MARGIN-THEOREM.md",
+      "canonical_bytes": 2651,
+      "hash_mode": "canonical-lf",
+      "sha256": "cea7ed40db35f298521958c3f6fa8e227924714fe34acf557288aabff9d2b3a1"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/source-snapshots/foundational-sprint-1212/MATCHED-BLOCK-TRANSPORT-THEOREM.md",
+      "canonical_bytes": 3611,
+      "hash_mode": "canonical-lf",
+      "sha256": "712c69f58a2fc258df85401dffbb4c7d26c3b8fe58a93971852b7376993fad66"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/source-snapshots/foundational-sprint-1214/SQUARE-ROOT-COCYCLE-THEOREM.md",
+      "canonical_bytes": 4281,
+      "hash_mode": "canonical-lf",
+      "sha256": "9c75667760791a2d63b9766d9bf40fb242e8e92d9b2551e4c2b57ee810b1c1fb"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/source-snapshots/foundational-sprint-1216/CERTIFIED-WEIGHT-BOX.md",
+      "canonical_bytes": 3901,
+      "hash_mode": "canonical-lf",
+      "sha256": "5906e7271b279dd69f6e33d11590ea1c41bafe1fca23a99b8c59ae8e5d71b55c"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/source-snapshots/foundational-sprint-1217/BELLMAN-CONTACT-COERCIVITY.md",
+      "canonical_bytes": 3471,
+      "hash_mode": "canonical-lf",
+      "sha256": "9823d056c0121b0770b6d939b710e614f87e445323b5bdc9b4c72b90820ddb10"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/source-snapshots/foundational-sprint-1218/RMS-PACKET-COMPRESSION.md",
+      "canonical_bytes": 2802,
+      "hash_mode": "canonical-lf",
+      "sha256": "72963c1c1a1d426de336c048861a9257c8bf39a081ddb0e4bb68d48d7b60aa8a"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/source-snapshots/foundational-sprint-1222/SHIFTED-MONOTONE-ROUNDING.md",
+      "canonical_bytes": 3241,
+      "hash_mode": "canonical-lf",
+      "sha256": "e07a09539135bc1a74204644ade9c080b35b2671d3732e5bbfe6837ec8a4c8a3"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/source-snapshots/foundational-sprint-1223/MOVING-DIHEDRAL-PARTITIONS.md",
+      "canonical_bytes": 4291,
+      "hash_mode": "canonical-lf",
+      "sha256": "be12d6aa989fa4e036b79b646fd06f226dedfffdedfdbd551b560d122debdacc"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/source-snapshots/foundational-sprint-1224/ORDERED-TEMPORAL-RANK.md",
+      "canonical_bytes": 3502,
+      "hash_mode": "canonical-lf",
+      "sha256": "42fc21c4b9d845ea7076a32bb506d8e3360a213bea5d8d48cb93baac0b8043fb"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/source-snapshots/foundational-sprint-1225/EXACT-MOVING-FRAME-TRANSPORT.md",
+      "canonical_bytes": 3870,
+      "hash_mode": "canonical-lf",
+      "sha256": "79a63b71f51d208665a8a5ec2221a05c2f5f4c26814c6a43f6210093e859a93e"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/source-snapshots/foundational-sprint-1228/RESULT-001-COMMON-TARGET-RMS-PAIRING.md",
+      "canonical_bytes": 5059,
+      "hash_mode": "canonical-lf",
+      "sha256": "2604af8da81faae698e7f558d8bf6081674f06c6c0397f95e43efeafcc8ff9c5"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/source-snapshots/foundational-sprint-1229/RESULT-001-NEAR-FIXED-MASS-GAP.md",
+      "canonical_bytes": 4115,
+      "hash_mode": "canonical-lf",
+      "sha256": "fd12feb47d76e54442d13b65838a4e9842f091cc8443f8b992791a76774cd58d"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/source-snapshots/foundational-sprint-1230/RESULT-001-FINITE-RANK-EXIT-THEOREM.md",
+      "canonical_bytes": 3304,
+      "hash_mode": "canonical-lf",
+      "sha256": "2bc3b0732739d509d44c448275c2f239591e2bacb8ec22f1f29556a5a590e44f"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/source-snapshots/foundational-sprint-1232/RESULT-001-SATURATED-CONTACT-COERCIVITY.md",
+      "canonical_bytes": 3271,
+      "hash_mode": "canonical-lf",
+      "sha256": "55382b934d8ffce96f29c599a659bdcc0b2db8dd40c13d8ec379aacd8cb34bd8"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/source-snapshots/foundational-sprint-1237/RESULT-001-SAME-DIMENSION-REDUCTION.md",
+      "canonical_bytes": 2935,
+      "hash_mode": "canonical-lf",
+      "sha256": "94474379e16357dff58deecfedf4eeaa1f350409de04f284a6711989f8265f7d"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/verify_constants.py",
+      "canonical_bytes": 1734,
+      "hash_mode": "canonical-lf",
+      "sha256": "958963ffbfb869df1af78da8decb43995a27ea0f2d5dad70fb86acbbfd98fc2a"
+    },
+    {
+      "path": "certificate/independent/dimension-necessity/verify_source_manifest.py",
+      "canonical_bytes": 1325,
+      "hash_mode": "canonical-lf",
+      "sha256": "b4a1a806e049977ad1f42af5fccc0277753ff73a2a0a1a338059150a2863e900"
     },
     {
       "path": "certificate/independent/global-graph-mpmath.json",
@@ -100,9 +280,9 @@
     },
     {
       "path": "certificate/independent/README.md",
-      "canonical_bytes": 1221,
+      "canonical_bytes": 1565,
       "hash_mode": "canonical-lf",
-      "sha256": "a7bf0ca61cb9e2b79dc38581f009b61d8ef41d1e2075cb0c01ac3778c674ac62"
+      "sha256": "3ea0b15344f720c325407a695dc37ea3585e6f4543780059dfea82c265cb6a6f"
     },
     {
       "path": "certificate/independent/shooting-miranda-mpmath.json",
@@ -501,6 +681,480 @@
       "sha256": "165913aae26227f55eda92b909039c3fe6bd264d64afecc6b5d14c5bf598f391"
     },
     {
+      "path": "certificate/production/foundational-sprint-1208/PRE-REGISTRATION.md",
+      "canonical_bytes": 1645,
+      "hash_mode": "canonical-lf",
+      "sha256": "608eda3e05d3de9e4b56025b9cc970405173df9ca2c3fd061715ce44efae1ea1"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1208/ROBUST-REMAINDER-LOCALIZATION.md",
+      "canonical_bytes": 3736,
+      "hash_mode": "canonical-lf",
+      "sha256": "e749ce41dc9fe2fc7f2a1292f1ce0941ab4bca4e918876c0a022ba296470e2fd"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1208/robust-response-factorization.json",
+      "canonical_bytes": 741,
+      "hash_mode": "canonical-lf",
+      "sha256": "56bbfabe88844058598d4da08d36f86082dec07a495b8c9826ad1e7a82bef8a3"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1208/robust_response_factorization_verify.py",
+      "canonical_bytes": 2621,
+      "hash_mode": "canonical-lf",
+      "sha256": "08c4ee6189fa14b45e21a4a7ffe045410e693f9120ebe7e038d21f836648d66e"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1209/PRE-REGISTRATION.md",
+      "canonical_bytes": 1534,
+      "hash_mode": "canonical-lf",
+      "sha256": "83d93cdb1677a8d9569e79fbc7b842480bf25adcd0923ad33ae291c4162052cf"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1209/response-measure-guard.json",
+      "canonical_bytes": 706,
+      "hash_mode": "canonical-lf",
+      "sha256": "14e3777c9b2203952b6d768570505903e72f3a5e7a6663b1f54c16c09931a0a5"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1209/RESPONSE-MEASURE-THEOREM.md",
+      "canonical_bytes": 2922,
+      "hash_mode": "canonical-lf",
+      "sha256": "41bfef7a8d1dd07c6263b7b0e41ce0b2e1883a51e95410c4aab1760c73185b32"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1209/response_measure_verify.py",
+      "canonical_bytes": 3104,
+      "hash_mode": "canonical-lf",
+      "sha256": "6b415596bb8a79a701f21409789bcf3a82e086e4916f0682837560c092381414"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1211/neutral-cycle-margin-guard.json",
+      "canonical_bytes": 698,
+      "hash_mode": "canonical-lf",
+      "sha256": "0af8ef1afbcaf5f279168fdc66e5274603d6a872f201e7394f3a7ff3f48b166e"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1211/NEUTRAL-CYCLE-MARGIN-THEOREM.md",
+      "canonical_bytes": 2651,
+      "hash_mode": "canonical-lf",
+      "sha256": "cea7ed40db35f298521958c3f6fa8e227924714fe34acf557288aabff9d2b3a1"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1211/neutral_cycle_margin_verify.py",
+      "canonical_bytes": 4413,
+      "hash_mode": "canonical-lf",
+      "sha256": "b29973dc86fcc5c480311dc3dd3b5d7cbef68b3d416b63e07f5bf6211cdf0632"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1211/PRE-REGISTRATION.md",
+      "canonical_bytes": 1092,
+      "hash_mode": "canonical-lf",
+      "sha256": "3593cac4a4c86e49c955ada0f23cf326bba47247356ac3f4dc4fd6799054f989"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1212/matched-block-transport-guard.json",
+      "canonical_bytes": 429,
+      "hash_mode": "canonical-lf",
+      "sha256": "701399b24da1866554e3ffbf548100c4e400fbab8a9760e0dd37be4164bfd27e"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1212/MATCHED-BLOCK-TRANSPORT-THEOREM.md",
+      "canonical_bytes": 3611,
+      "hash_mode": "canonical-lf",
+      "sha256": "712c69f58a2fc258df85401dffbb4c7d26c3b8fe58a93971852b7376993fad66"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1212/matched_block_transport_verify.py",
+      "canonical_bytes": 4823,
+      "hash_mode": "canonical-lf",
+      "sha256": "fec665141906bad6252b3ffa132c8ac1af3e4252d58d8bcfddacf4cbb98a904a"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1212/PRE-REGISTRATION.md",
+      "canonical_bytes": 1969,
+      "hash_mode": "canonical-lf",
+      "sha256": "8ccc8e9e6f10cfa6be396c6ea56970c665631a761fe1b998104397b6ce827e69"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1214/CORRECTION.md",
+      "canonical_bytes": 739,
+      "hash_mode": "canonical-lf",
+      "sha256": "d999d1459f1f98d406a4f57ead3232ebb3be5ace7eedcaf2ed9f7bc356b292a4"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1214/PRE-REGISTRATION.md",
+      "canonical_bytes": 1391,
+      "hash_mode": "canonical-lf",
+      "sha256": "9edbd0e8dea85394e43e42acf0d3d3d5c63ecf583a181152e1a92443b04b28df"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1214/square-root-cocycle-guard.json",
+      "canonical_bytes": 510,
+      "hash_mode": "canonical-lf",
+      "sha256": "725e1ac4c960f6ac2e05757c35f8cdc3eec3905c09c9efa5929e451622ca3a92"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1214/SQUARE-ROOT-COCYCLE-THEOREM.md",
+      "canonical_bytes": 4281,
+      "hash_mode": "canonical-lf",
+      "sha256": "9c75667760791a2d63b9766d9bf40fb242e8e92d9b2551e4c2b57ee810b1c1fb"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1214/square_root_cocycle_verify.py",
+      "canonical_bytes": 4170,
+      "hash_mode": "canonical-lf",
+      "sha256": "900bd510c3803bfdb6948ed7e23bb983ef3bb106a3cd5071a060832cf7c29e5c"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1216/certified-weight-box-guard.json",
+      "canonical_bytes": 1214,
+      "hash_mode": "canonical-lf",
+      "sha256": "ccbde00b4b1eacd83a0a11bcbe98d6f2fac2932f4d4a3b9b2f763b676f770fb9"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1216/CERTIFIED-WEIGHT-BOX.md",
+      "canonical_bytes": 3901,
+      "hash_mode": "canonical-lf",
+      "sha256": "5906e7271b279dd69f6e33d11590ea1c41bafe1fca23a99b8c59ae8e5d71b55c"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1216/certified_weight_box_verify.py",
+      "canonical_bytes": 4920,
+      "hash_mode": "canonical-lf",
+      "sha256": "466afc1108b5ef21ec5eed9fcbfa800aa08ed1b105eea44602031eeab1e372d0"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1216/PRE-REGISTRATION.md",
+      "canonical_bytes": 1444,
+      "hash_mode": "canonical-lf",
+      "sha256": "d8e4e298938aaa089a99e41ba8a317b265f4711c51dc317205e92e8d20f9629c"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1217/BELLMAN-CONTACT-COERCIVITY.md",
+      "canonical_bytes": 3471,
+      "hash_mode": "canonical-lf",
+      "sha256": "9823d056c0121b0770b6d939b710e614f87e445323b5bdc9b4c72b90820ddb10"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1217/coercivity-algebra-guard.json",
+      "canonical_bytes": 378,
+      "hash_mode": "canonical-lf",
+      "sha256": "88f4e0cd4dbed08c49d767172a0aecff451f6b7f16254f7418fddcc788e49472"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1217/coercivity_algebra_verify.py",
+      "canonical_bytes": 2515,
+      "hash_mode": "canonical-lf",
+      "sha256": "af1419da27a5d72e7b617657e8633d2dc64d262de27160869ce1e264dfec706c"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1217/PRE-REGISTRATION.md",
+      "canonical_bytes": 1259,
+      "hash_mode": "canonical-lf",
+      "sha256": "b99a56d9881618a525cc25b76ef6226ae99164d34402165e7d7a842f3e30101d"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1217/predecessor-derivative-interval.json",
+      "canonical_bytes": 795,
+      "hash_mode": "canonical-lf",
+      "sha256": "344e9c8f115e7da181863f3361cb6e5fc8daa0902f938b87de2f4538fd263589"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1217/predecessor_derivative_interval.py",
+      "canonical_bytes": 6514,
+      "hash_mode": "canonical-lf",
+      "sha256": "191c6bfd3f8ba6cc91fce53d8a290fb23735b26c5157d8a10071a1485be44eee"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1218/PRE-REGISTRATION.md",
+      "canonical_bytes": 1483,
+      "hash_mode": "canonical-lf",
+      "sha256": "52bb7894747a0e3688efcacccf762672ad8e7848d820f12b394963bdfbb80c88"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1218/RMS-PACKET-COMPRESSION.md",
+      "canonical_bytes": 2802,
+      "hash_mode": "canonical-lf",
+      "sha256": "72963c1c1a1d426de336c048861a9257c8bf39a081ddb0e4bb68d48d7b60aa8a"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1218/rms-packet-guard.json",
+      "canonical_bytes": 443,
+      "hash_mode": "canonical-lf",
+      "sha256": "0979cccd5031eb49340f45c1f7c3d57cc6bff430982d08ec12c7cd9c30668a2a"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1218/rms_packet_verify.py",
+      "canonical_bytes": 2809,
+      "hash_mode": "canonical-lf",
+      "sha256": "c533e53e0d0b7a1f4d0810c7ca11a12471c55f45a2efd578077c7dffdc3a26a3"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1222/PRE-REGISTRATION.md",
+      "canonical_bytes": 1387,
+      "hash_mode": "canonical-lf",
+      "sha256": "6cbfbac0ada7f47bace3cd598859001970b659ce437437da840010ea779c085d"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1222/SHIFTED-MONOTONE-ROUNDING.md",
+      "canonical_bytes": 3241,
+      "hash_mode": "canonical-lf",
+      "sha256": "e07a09539135bc1a74204644ade9c080b35b2671d3732e5bbfe6837ec8a4c8a3"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1222/shifted-rounding-guard.json",
+      "canonical_bytes": 399,
+      "hash_mode": "canonical-lf",
+      "sha256": "a5143373245efbc80429473a8734b6772e32ab6bde435c76c1c1bd301110c0ca"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1222/shifted_rounding_verify.py",
+      "canonical_bytes": 3474,
+      "hash_mode": "canonical-lf",
+      "sha256": "2a5f075c947ad2098d62f9efa4c12d0895674b0e47dbded78e1c18c0b44a8b33"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1223/MOVING-DIHEDRAL-PARTITIONS.md",
+      "canonical_bytes": 4291,
+      "hash_mode": "canonical-lf",
+      "sha256": "be12d6aa989fa4e036b79b646fd06f226dedfffdedfdbd551b560d122debdacc"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1223/moving-partition-guard.json",
+      "canonical_bytes": 548,
+      "hash_mode": "canonical-lf",
+      "sha256": "644238f174c5e756fa60c39c5dfbab3f905eadf95bf549cb61469ffc9e448c8c"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1223/moving_partition_verify.py",
+      "canonical_bytes": 3968,
+      "hash_mode": "canonical-lf",
+      "sha256": "f6b306203c53a36c3c95227464bb4111f3fd859f2a11a5cd9977be23a5925be8"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1223/PRE-REGISTRATION.md",
+      "canonical_bytes": 1287,
+      "hash_mode": "canonical-lf",
+      "sha256": "55626ce07b23e6a01814b57038455747259f8eb872921784609285f7b7358dc0"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1224/ordered-temporal-rank-guard.json",
+      "canonical_bytes": 432,
+      "hash_mode": "canonical-lf",
+      "sha256": "cf18bc1142b7e98a8327a3752071be0afb4f0e4af5efe1c4faeede5d06883edb"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1224/ORDERED-TEMPORAL-RANK.md",
+      "canonical_bytes": 3502,
+      "hash_mode": "canonical-lf",
+      "sha256": "42fc21c4b9d845ea7076a32bb506d8e3360a213bea5d8d48cb93baac0b8043fb"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1224/ordered_temporal_rank_verify.py",
+      "canonical_bytes": 2604,
+      "hash_mode": "canonical-lf",
+      "sha256": "2e6be6aab6842961fa2c912ca68bbfb40cc0fadb9905afe91d01ce37b990382b"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1224/PRE-REGISTRATION.md",
+      "canonical_bytes": 1551,
+      "hash_mode": "canonical-lf",
+      "sha256": "76555371e14008e9e3b713f4ac461fe81bd15d17e75a566518e784bce153eda4"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1225/EXACT-MOVING-FRAME-TRANSPORT.md",
+      "canonical_bytes": 3870,
+      "hash_mode": "canonical-lf",
+      "sha256": "79a63b71f51d208665a8a5ec2221a05c2f5f4c26814c6a43f6210093e859a93e"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1225/PRE-REGISTRATION.md",
+      "canonical_bytes": 1333,
+      "hash_mode": "canonical-lf",
+      "sha256": "3c8f7ad377ff3cc9ec5a0502a1cd289a86a8911b3e040312b431f0f2ed01edd0"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1225/two-frame-packet-guard.json",
+      "canonical_bytes": 349,
+      "hash_mode": "canonical-lf",
+      "sha256": "caa9ea6bbd8e8e8d6fb27d3a350f37a3b7b3c7dde13aed4fc6049f94623ca079"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1225/two_frame_packet_verify.py",
+      "canonical_bytes": 3240,
+      "hash_mode": "canonical-lf",
+      "sha256": "ebe9156dd82fe50abec310ffee97cb5af602c95310bd39c5ac0b6e3ae4a377dd"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1228/common_target_rms_verify.py",
+      "canonical_bytes": 2416,
+      "hash_mode": "canonical-lf",
+      "sha256": "97c3a8f6c18b673341eb9e077a2c57d237ac8745a273f96e34d30ff20d1bcee2"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1228/PRE-REGISTRATION.md",
+      "canonical_bytes": 605,
+      "hash_mode": "canonical-lf",
+      "sha256": "57a2e76e2e99eed344c5ffbfb8ebf576cce67b2bf8901fb4f3e31de8a6f6e79f"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1228/RESULT-001-COMMON-TARGET-RMS-PAIRING.md",
+      "canonical_bytes": 5059,
+      "hash_mode": "canonical-lf",
+      "sha256": "2604af8da81faae698e7f558d8bf6081674f06c6c0397f95e43efeafcc8ff9c5"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1229/near_fixed_gap_verify.py",
+      "canonical_bytes": 1784,
+      "hash_mode": "canonical-lf",
+      "sha256": "a5c34c140dd5ca09a7bf1059d6efb59c83e7c7bfa9aeeb90740743e086a8b654"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1229/PRE-REGISTRATION.md",
+      "canonical_bytes": 408,
+      "hash_mode": "canonical-lf",
+      "sha256": "cf19ebf1a313f60a69b96d64ab299a0d9bd41df3452b63e286e5fbfa5ba95da7"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1229/RESULT-001-NEAR-FIXED-MASS-GAP.md",
+      "canonical_bytes": 4115,
+      "hash_mode": "canonical-lf",
+      "sha256": "fd12feb47d76e54442d13b65838a4e9842f091cc8443f8b992791a76774cd58d"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1230/finite_rank_exit_verify.py",
+      "canonical_bytes": 1490,
+      "hash_mode": "canonical-lf",
+      "sha256": "6a9966f2e02c2abd71fbeedc3fbc4fe587c2ba705e66f893bb4a387a332aaa6d"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1230/PRE-REGISTRATION.md",
+      "canonical_bytes": 367,
+      "hash_mode": "canonical-lf",
+      "sha256": "2c9437754bf98988ca1d73438fb36f9e4a480fecfbdad7d40c94d50e2e26dc63"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1230/RESULT-001-FINITE-RANK-EXIT-THEOREM.md",
+      "canonical_bytes": 3304,
+      "hash_mode": "canonical-lf",
+      "sha256": "2bc3b0732739d509d44c448275c2f239591e2bacb8ec22f1f29556a5a590e44f"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1231/dimension_bound_algebra_verify.py",
+      "canonical_bytes": 1524,
+      "hash_mode": "canonical-lf",
+      "sha256": "69f175ea532fef291351dddc44fa40a4041d4fa69bf21e1d5724899089836205"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1231/PRE-REGISTRATION.md",
+      "canonical_bytes": 552,
+      "hash_mode": "canonical-lf",
+      "sha256": "a44f818d333a79a0ee4dd0c14f02e0866aaed42ccdd4f7be30fc3bc1b1446ff6"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1231/RESULT-001-EXPONENTIAL-DIMENSION-NECESSITY.md",
+      "canonical_bytes": 7601,
+      "hash_mode": "canonical-lf",
+      "sha256": "c40016b289ff7a66099ce75ce84dc02a61c76a90dbbc83c6b860a2bd1f2b2d6b"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1232/inactive-quadratic-interval.json",
+      "canonical_bytes": 602,
+      "hash_mode": "canonical-lf",
+      "sha256": "22beab4c99f5246b05931b9ed5c03f026ed0a2c8b142d542bd4f52f5879e3968"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1232/inactive_quadratic_interval.py",
+      "canonical_bytes": 4709,
+      "hash_mode": "canonical-lf",
+      "sha256": "9eff407476b6de6884c5a0aaee05a8ea092ae7074bf6068f5f41f96a4c67d282"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1232/PRE-REGISTRATION.md",
+      "canonical_bytes": 363,
+      "hash_mode": "canonical-lf",
+      "sha256": "89e815747966761b9796b27e1da2f1b0349fa5289e9d57c688502ca975f0aa6b"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1232/RESULT-001-SATURATED-CONTACT-COERCIVITY.md",
+      "canonical_bytes": 3271,
+      "hash_mode": "canonical-lf",
+      "sha256": "55382b934d8ffce96f29c599a659bdcc0b2db8dd40c13d8ec379aacd8cb34bd8"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1233/master_ledger_verify.py",
+      "canonical_bytes": 1456,
+      "hash_mode": "canonical-lf",
+      "sha256": "e191088b410622efbafd64fe1060179043cd74391ae22c93a8b5cbd72b556a67"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1233/PRE-REGISTRATION.md",
+      "canonical_bytes": 427,
+      "hash_mode": "canonical-lf",
+      "sha256": "f0c2e1d94e9fb376b6f58f613b829ae9ccb4dbe13550089bf8a99eb8fb74410d"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1233/RESULT-001-MASTER-DISCARD-LEDGER.md",
+      "canonical_bytes": 3356,
+      "hash_mode": "canonical-lf",
+      "sha256": "4b422c42d824a7296994d19f9b571a643cff54a15843ec3f5afa7410347d2f48"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1234/outer_affine_dominance_verify.py",
+      "canonical_bytes": 1989,
+      "hash_mode": "canonical-lf",
+      "sha256": "01d3aca62c59756ad19c1689d3cea46023fdc64f258628af41734e1ff1e8adfb"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1234/PRE-REGISTRATION.md",
+      "canonical_bytes": 700,
+      "hash_mode": "canonical-lf",
+      "sha256": "c4312bfd1006cdee5df5695b81d434568222a5271ecfb8048b5dbe4d846e7b4a"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1234/RESULT-001-OUTER-AFFINE-DOMINANCE.md",
+      "canonical_bytes": 1603,
+      "hash_mode": "canonical-lf",
+      "sha256": "9a30efa171e89318cd7fa637f3baf2eded9cf32f19693afdf372f49e0ccce982"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1235/packet_path_ownership_verify.py",
+      "canonical_bytes": 4341,
+      "hash_mode": "canonical-lf",
+      "sha256": "9a2479be4e10e1b0145d74519e358c98188f4d35f0d16c7b30fb8e3bed25ee73"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1235/PRE-REGISTRATION.md",
+      "canonical_bytes": 1533,
+      "hash_mode": "canonical-lf",
+      "sha256": "d9a52e53bcea6da149530521cea71fbb7b96039e9a58927217a649eff77b73d2"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1235/RESULT-001-CANONICAL-PACKET-PATHS.md",
+      "canonical_bytes": 4082,
+      "hash_mode": "canonical-lf",
+      "sha256": "91860ab027a5216e259fc2baa223a14099da2d63796fa6896b3abbd904d4e9bf"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1237/PRE-REGISTRATION.md",
+      "canonical_bytes": 879,
+      "hash_mode": "canonical-lf",
+      "sha256": "83b0ad52b2fc7e882ee51ce6038320f913759ea8e650ad963e3123e88525c43e"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1237/RESULT-001-SAME-DIMENSION-REDUCTION.md",
+      "canonical_bytes": 2935,
+      "hash_mode": "canonical-lf",
+      "sha256": "94474379e16357dff58deecfedf4eeaa1f350409de04f284a6711989f8265f7d"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1237/same_dimension_extreme_verify.py",
+      "canonical_bytes": 2361,
+      "hash_mode": "canonical-lf",
+      "sha256": "29b43ed30653bb7c9cd3861b50bf06b82ae481a07f6c1dba70ad11855b1b8eba"
+    },
+    {
       "path": "certificate/release/build_release_manifest.py",
       "canonical_bytes": 2201,
       "hash_mode": "canonical-lf",
@@ -508,15 +1162,15 @@
     },
     {
       "path": "certificate/release/dimension-gap-audit.json",
-      "canonical_bytes": 1535,
+      "canonical_bytes": 1741,
       "hash_mode": "canonical-lf",
-      "sha256": "bf4bfb7ae6beefda39e9836d289444153e935d5b2b68b219735cdc121b77c39f"
+      "sha256": "0835fbff4fd473fcb28e8fb20528b378a3737a603d3ed1cb12fb5b23fc4e41bf"
     },
     {
       "path": "certificate/release/dimension_gap_audit.py",
-      "canonical_bytes": 2231,
+      "canonical_bytes": 2700,
       "hash_mode": "canonical-lf",
-      "sha256": "b40b05323fef6f91dd676e2827c867172fbe43019b11478f6c987ef11b112453"
+      "sha256": "af8421850acb1c89f0d37cab2600e24ec3c9887cda370a946eda47772c5e9d2b"
     },
     {
       "path": "certificate/release/normalization-concordance.json",
@@ -532,15 +1186,15 @@
     },
     {
       "path": "certificate/release/README.md",
-      "canonical_bytes": 594,
+      "canonical_bytes": 663,
       "hash_mode": "canonical-lf",
-      "sha256": "683d5fe598f6ae2182d21281c4726fab46bcdebfd62d93e813697fac790cfd36"
+      "sha256": "a7010ba57a0e9f73ec2aa6d2934cf116651a4ec20d34243947c749d69ad220b5"
     },
     {
       "path": "certificate/release/verify_release.py",
-      "canonical_bytes": 7629,
+      "canonical_bytes": 10883,
       "hash_mode": "canonical-lf",
-      "sha256": "559b9e9c3696e9dcace5c4b5ea3bc1e9a2b7706fbf12a925ad3021f46bef0d25"
+      "sha256": "29e63e7e7dd711a43049e9f7c66380eb45ac0f6df33eaa67df0f6e111b39944f"
     },
     {
       "path": "CITATION.cff",
@@ -568,33 +1222,33 @@
     },
     {
       "path": "paper/CERTIFICATE-MAP.md",
-      "canonical_bytes": 7358,
+      "canonical_bytes": 9903,
       "hash_mode": "canonical-lf",
-      "sha256": "f74cd94c42a62efa10dc05e0df9253b494d4401925a6a64714accd3a63ef8d84"
+      "sha256": "13398cf258174ca23994718e1ab87ecdf87f76f3690e733ef8e1b76dee756579"
     },
     {
       "path": "paper/DIMENSION-GAP-STATUS.md",
-      "canonical_bytes": 2947,
+      "canonical_bytes": 3271,
       "hash_mode": "canonical-lf",
-      "sha256": "0acafbfbf2cd4d734dc6513c4c2e9220b2bad7f930183acbd915213648353e27"
+      "sha256": "c08980d5bdc0c3419f09ec98fe2f6ec17d568bf07b2ebc5b7ca1be951d87728d"
     },
     {
       "path": "paper/MANUSCRIPT.md",
-      "canonical_bytes": 23080,
+      "canonical_bytes": 25063,
       "hash_mode": "canonical-lf",
-      "sha256": "bc2f88aa8390cb011390ea3957ade03ffea701b3b2000c2ac17a34c599389a26"
+      "sha256": "130338a1ded2831d7d861c4adbee5003a90013fc69aa013f654523f885697e84"
     },
     {
       "path": "paper/manuscript.pdf",
-      "canonical_bytes": 334455,
+      "canonical_bytes": 343459,
       "hash_mode": "raw",
-      "sha256": "0f088ca6c1895ca9bd930c615abe372d25d0a8381056095aca1e995477b65bf2"
+      "sha256": "3394d5ffdde433b07caa5720b526e5e5bc10f86f3116c8358ae5283795562177"
     },
     {
       "path": "paper/manuscript.tex",
-      "canonical_bytes": 21848,
+      "canonical_bytes": 24747,
       "hash_mode": "canonical-lf",
-      "sha256": "e61b8e2173a023ea41fea0d040d9fa24ab268aa37884b8fd2ace619cd538e5e2"
+      "sha256": "3d168e2dc704b6d3578e27a4483b9647c4675e0c1a34500831e8f211679852e3"
     },
     {
       "path": "paper/NORMALIZATION-CONCORDANCE.md",
@@ -634,33 +1288,33 @@
     },
     {
       "path": "paper/RELEASE-NOTES-v1.3.0.md",
-      "canonical_bytes": 1255,
+      "canonical_bytes": 2277,
       "hash_mode": "canonical-lf",
-      "sha256": "f47032ee425571cbe5a15a5f961c494be649ca9c3a1ca81838e060e31ad490f8"
+      "sha256": "cbd34e634b6d4044438bdcf0352f44531938d23b6deb1e545488169aa303f8c0"
     },
     {
       "path": "paper/TECHNICAL-SUPPLEMENT.md",
-      "canonical_bytes": 11495,
+      "canonical_bytes": 13914,
       "hash_mode": "canonical-lf",
-      "sha256": "acf2c3a285d5f5b6385735d20901c4770e65460e58fd6f202b13a499a8edc42c"
+      "sha256": "ba27b8f72c507e13aaba110895e952c652ff2c3a994f2505fcd8f6856fbae4f1"
     },
     {
       "path": "paper/technical-supplement.pdf",
-      "canonical_bytes": 205157,
+      "canonical_bytes": 219540,
       "hash_mode": "raw",
-      "sha256": "c16fd60bd42b16971033befe16b60d85ec6a43ed2ccb1fc7adbd26eb6f989ac4"
+      "sha256": "e7be56a4bf7625f7300650f71609a336f3e82fb1140bc9f77f4c5d7cd6371b09"
     },
     {
       "path": "paper/technical-supplement.tex",
-      "canonical_bytes": 12017,
+      "canonical_bytes": 15803,
       "hash_mode": "canonical-lf",
-      "sha256": "90e8fb6301e98059df91cf06e1d91c07c550a7ca963776b8da73b57fbdcf61eb"
+      "sha256": "428b995f71f22c25533bb2eda71b7da06e4a0e21087543dafb633df83f083211"
     },
     {
       "path": "README.md",
-      "canonical_bytes": 4929,
+      "canonical_bytes": 5266,
       "hash_mode": "canonical-lf",
-      "sha256": "a783d6f8f1730db63958115a68f1601748e07f85fbeb8c07e4fe65df22f27a45"
+      "sha256": "547b782e365bbc71e597cc9ba0374cc1c5c7025321ec133957ffb738a7f94d40"
     },
     {
       "path": "requirements.txt",
@@ -669,6 +1323,6 @@
       "sha256": "6b1e7e7d24ae3170ee31f6757ea4a750faa356f73dd0ff9ea7d1918027f10dc9"
     }
   ],
-  "file_count": 111,
+  "file_count": 220,
   "complete_dependency_closure": true
 }

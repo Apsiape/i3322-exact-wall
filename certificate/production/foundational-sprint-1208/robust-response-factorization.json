@@ -1,0 +1,37 @@
+{
+  "status": "exact symbolic robust response-factorization guard",
+  "factorization_residual": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ]
+  ],
+  "involution_residual_mod_sign_squared": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ]
+  ],
+  "squared_norm_residual_mod_sign_squared": "0",
+  "wrong_sign_control": [
+    [
+      "0",
+      "2*l_minus*l_plus*sign"
+    ],
+    [
+      "2*l_minus*l_plus*sign",
+      "0"
+    ]
+  ],
+  "wrong_sign_detected": true,
+  "all_gates_pass": true,
+  "claim_boundary": "This proves the local algebra and squared-norm identity. The spectral cutoff, transport localization, orbit rounding, and dimension bound are analytic statements with separate ownership."
+}

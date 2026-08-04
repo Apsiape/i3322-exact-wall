@@ -1,0 +1,28 @@
+{
+  "status": "sealed blind-reconstruction source boundary",
+  "packet_version": 2,
+  "source_count": 19,
+  "excluded_production_sprints": [1231, 1233, 1234, 1235],
+  "sources": [
+    {"path": "certificate/production/foundational-sprint-1195/EXACT-ALIGNED-WALL-THEOREM.md", "bytes": 6107, "sha256": "7de35f4968713216b51e435063c1cb3e9b0a39480b3bbcd1abbe3ce8a62471b1"},
+    {"path": "certificate/production/foundational-sprint-1197/EXACT-I3322-QUANTUM-SUPREMUM.md", "bytes": 5774, "sha256": "79a23a5b91be1805b365a1de05e5d77227abafaefd636aca1ac9cdf77e5e1e54"},
+    {"path": "certificate/production/foundational-sprint-1208/ROBUST-REMAINDER-LOCALIZATION.md", "bytes": 3736, "sha256": "e749ce41dc9fe2fc7f2a1292f1ce0941ab4bca4e918876c0a022ba296470e2fd"},
+    {"path": "certificate/production/foundational-sprint-1209/RESPONSE-MEASURE-THEOREM.md", "bytes": 2922, "sha256": "41bfef7a8d1dd07c6263b7b0e41ce0b2e1883a51e95410c4aab1760c73185b32"},
+    {"path": "certificate/production/foundational-sprint-1211/NEUTRAL-CYCLE-MARGIN-THEOREM.md", "bytes": 2651, "sha256": "cea7ed40db35f298521958c3f6fa8e227924714fe34acf557288aabff9d2b3a1"},
+    {"path": "certificate/production/foundational-sprint-1212/MATCHED-BLOCK-TRANSPORT-THEOREM.md", "bytes": 3611, "sha256": "712c69f58a2fc258df85401dffbb4c7d26c3b8fe58a93971852b7376993fad66"},
+    {"path": "certificate/production/foundational-sprint-1214/SQUARE-ROOT-COCYCLE-THEOREM.md", "bytes": 4281, "sha256": "9c75667760791a2d63b9766d9bf40fb242e8e92d9b2551e4c2b57ee810b1c1fb"},
+    {"path": "certificate/production/foundational-sprint-1216/CERTIFIED-WEIGHT-BOX.md", "bytes": 3901, "sha256": "5906e7271b279dd69f6e33d11590ea1c41bafe1fca23a99b8c59ae8e5d71b55c"},
+    {"path": "certificate/production/foundational-sprint-1217/BELLMAN-CONTACT-COERCIVITY.md", "bytes": 3471, "sha256": "9823d056c0121b0770b6d939b710e614f87e445323b5bdc9b4c72b90820ddb10"},
+    {"path": "certificate/production/foundational-sprint-1218/RMS-PACKET-COMPRESSION.md", "bytes": 2802, "sha256": "72963c1c1a1d426de336c048861a9257c8bf39a081ddb0e4bb68d48d7b60aa8a"},
+    {"path": "certificate/production/foundational-sprint-1222/SHIFTED-MONOTONE-ROUNDING.md", "bytes": 3241, "sha256": "e07a09539135bc1a74204644ade9c080b35b2671d3732e5bbfe6837ec8a4c8a3"},
+    {"path": "certificate/production/foundational-sprint-1223/MOVING-DIHEDRAL-PARTITIONS.md", "bytes": 4291, "sha256": "be12d6aa989fa4e036b79b646fd06f226dedfffdedfdbd551b560d122debdacc"},
+    {"path": "certificate/production/foundational-sprint-1224/ORDERED-TEMPORAL-RANK.md", "bytes": 3502, "sha256": "42fc21c4b9d845ea7076a32bb506d8e3360a213bea5d8d48cb93baac0b8043fb"},
+    {"path": "certificate/production/foundational-sprint-1225/EXACT-MOVING-FRAME-TRANSPORT.md", "bytes": 3870, "sha256": "79a63b71f51d208665a8a5ec2221a05c2f5f4c26814c6a43f6210093e859a93e"},
+    {"path": "certificate/production/foundational-sprint-1228/RESULT-001-COMMON-TARGET-RMS-PAIRING.md", "bytes": 5059, "sha256": "2604af8da81faae698e7f558d8bf6081674f06c6c0397f95e43efeafcc8ff9c5"},
+    {"path": "certificate/production/foundational-sprint-1229/RESULT-001-NEAR-FIXED-MASS-GAP.md", "bytes": 4115, "sha256": "fd12feb47d76e54442d13b65838a4e9842f091cc8443f8b992791a76774cd58d"},
+    {"path": "certificate/production/foundational-sprint-1230/RESULT-001-FINITE-RANK-EXIT-THEOREM.md", "bytes": 3304, "sha256": "2bc3b0732739d509d44c448275c2f239591e2bacb8ec22f1f29556a5a590e44f"},
+    {"path": "certificate/production/foundational-sprint-1232/RESULT-001-SATURATED-CONTACT-COERCIVITY.md", "bytes": 3271, "sha256": "55382b934d8ffce96f29c599a659bdcc0b2db8dd40c13d8ec379aacd8cb34bd8"},
+    {"path": "certificate/production/foundational-sprint-1237/RESULT-001-SAME-DIMENSION-REDUCTION.md", "bytes": 2935, "sha256": "94474379e16357dff58deecfedf4eeaa1f350409de04f284a6711989f8265f7d"}
+  ]
+}
+

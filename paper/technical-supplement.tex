@@ -18,7 +18,7 @@ This supplement specifies the computer-assisted input to the exact $I_{3322}$
 wall theorem.  It records the characteristic map, hyperbolic plateau, analytic
 unstable-manifold enclosure, Miranda shooting box, exact contact covariance,
 global graph covers, boundary and exterior exclusions, the spatial-realization
-guards, and the boundary
+guards, the two-sided dimension law and its blind reconstruction, and the boundary
 between certified theorem and numerical conjecture.  All inequalities that
 carry the theorem are interval-certified; symbolic identities are exact.
 \end{abstract}
@@ -289,7 +289,116 @@ $31$, $63$, $127$, $191$, and $255$, the gaps are respectively approximately
 Their successive exponential rates converge to $0.07519366\ldots$, while the
 proved exponent is $\log R=0.07519286\ldots$.  These values illustrate the
 theorem and were not used to infer its exponent.  The exact finite-support
-reversal remains unstable as written, so necessity is still open.
+reversal alone remains unstable quantitatively; the necessity proof instead
+uses robust remainder localization and finite-rank packet transport.
+
+\section{Quantitative dimension necessity}
+
+Let $Q_d$ allow arbitrary mixed states and binary POVMs on local spaces of
+dimension at most $d$.  Compactness gives an optimizer.  Maximizing successively
+over the state and each effect replaces it, without changing dimension, by a
+pure state and six projections.  Thus it suffices to treat a pure projective
+optimizer with deficit
+\[
+ \varepsilon=q_*-Q_d=\varepsilon_0+\varepsilon_A+\varepsilon_B,
+\]
+where the three terms are the expectations of the positive certificate
+remainders.
+
+The proof uses the fixed rational constants
+\[
+ \mu=\frac7{8000},\quad h_0=10^{-7},\quad K=\frac{4656}{25},
+ \quad M=\frac{78}{5},
+\]
+and
+\[
+ H=\frac{39}{10}K+\frac{\mu^2}{2},\qquad
+ \theta=\frac{\mu^2}{16H},\qquad
+ \Delta=\frac{\theta h_0}{160}.
+\]
+The certified contact coordinate has Lipschitz distortion at most $20$.
+Saturated quadratic coercivity gives the far-tail charge
+\[
+ m_{\rm out}\le C_{\rm out}\sqrt{\varepsilon_0},
+ \qquad C_{\rm out}=\frac{400\cdot10^{12}}{1883^2}.
+\]
+The near-fixed closure estimate, including all four source/target omissions,
+is
+\[
+ m_N\le C_N\sqrt\varepsilon,\qquad
+ C_N=\frac4{\mu^2}\left(24+6K+HC_0\right),\qquad
+ C_0=100\sqrt{40}\,h_0^{-1}.
+\]
+
+On the retained drift sector use the shifted mesh
+$h_d=\Delta/(4\cdot20^d)$.  There are exactly $d+1$ principal and $d$
+intermediate frames, with full distortion sum
+\[
+ \sum_{k=0}^{d}20^k+\sum_{k=0}^{d-1}20^k
+ =\frac{21\cdot20^d-2}{19}.
+\]
+After contact, exit, and repeated near/far charges are included, the complete
+frame discard satisfies
+\[
+ F_d\le C_F20^{2d}\sqrt\varepsilon,
+\]
+where
+\[
+ K_R=\frac{84\sqrt{40}}{19\Delta},\qquad
+ C_F=K_R+3(C_{\rm out}+C_N).
+\]
+The initial retained drift mass therefore obeys
+\[
+ W_D\ge1-C_I20^{2d}\sqrt\varepsilon,\qquad
+ C_I=C_{\rm out}+C_N+\frac{4\sqrt{40}}{\Delta}.
+\]
+
+Canonical joint spectral packets make the intermediate target of one response
+literally the source of the next.  At fixed time distinct packet labels are
+orthogonal.  Along each retained chain, quantitative drift places successive
+local spectral projections in pairwise disjoint cells, so the chain length is
+at most $d$.  No bound on the number of chains or the sum of their lengths is
+used.  The full recurrence and terminal ledger gives
+\[
+ E_{\rm exit}+E_{\rm rec}
+ \le A d\varepsilon+B C_F20^{2d}\sqrt\varepsilon,
+ \qquad A=5616,\quad B=\frac{200772}{25}.
+\]
+The reverse endpoint estimate, summed over arbitrarily many chains, gives
+\[
+ E_{\rm exit}+E_{\rm rec}
+ \ge \frac{W_D}{(d+1)M^{2d}}.
+\]
+
+Define
+\[
+ \Gamma=(20M)^4=312^4=9{,}475{,}854{,}336
+\]
+and
+\[
+ \kappa=\min\left\{
+ 1,\frac1{4C_I^2},\frac1{8A},\frac1{64B^2C_F^2}
+ \right\}.
+\]
+Exact arithmetic shows that the fourth entry is the minimum and
+\[
+ \kappa=4.294654614331445998753374519792940851\ldots\times10^{-52}.
+\]
+If the loss in $W_D$ is at least $1/2$, it directly gives the required
+exponential bound.  Otherwise $W_D\ge1/2$, and at least one of the two terms in
+the energy upper bound is half the recurrence lower bound.  The first gives a
+stronger $d^{-2}M^{-2d}$ estimate; squaring the second and using
+$(d+1)^2\le4d^2$ gives, uniformly for every $d\ge1$,
+\[
+ q_*-Q_d\ge\kappa d^{-4}\Gamma^{-d}.
+\]
+
+The production proof is guarded at every local lemma and at the final algebra.
+A second reconstruction was preregistered against a sealed 19-source packet,
+rebuilt the complete mass and multiplicity ledger without access to the
+production assembly, and returned the same $\Gamma$.  A third exact SymPy pass
+reconstructed $A$, $B$, $\Gamma$, and the minimum defining $\kappa$.  The
+certificate retains the source snapshots and all three routes.
 
 \section{Reproduction}
 

@@ -17,16 +17,21 @@ wall nevertheless defines an explicit normal vector-state maximizer on
 
 Its centered finite sections obey an exact boundary-flux identity. If `Q_d`
 is the unrestricted tensor-product optimum in local dimension at most `d`,
-allowing binary POVMs, then
+allowing binary POVMs, then the wall obeys the two-sided dimension law
 
 ```text
-0 < q* - Q_d <= exp[-d log(R) + O(1)],
+κ d^-4 Γ^-d <= q* - Q_d <= exp[-d log(R) + O(1)],
 R = 1.07809205080209208....
+Γ = 312^4 = 9,475,854,336,
+κ = 4.2946546143314459987...e-52.
 ```
 
-Thus logarithmic dimension is sufficient for accuracy `epsilon`. This is not
-a device-independent lower bound on the dimension required by arbitrary
-strategies.
+The upper estimate is achieved by explicit centered truncations. The lower
+estimate applies to every tensor-product strategy of the stated local
+dimension, including mixed states and binary POVMs. Consequently the minimum
+local dimension required for deficit `epsilon` is
+`Theta(log(1/epsilon))`. The constants are deliberately nonsharp; no matching
+exponential rate is claimed.
 
 Consequently,
 

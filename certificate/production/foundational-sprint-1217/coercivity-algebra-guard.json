@@ -1,0 +1,9 @@
+{
+  "status": "exact-rational Bellman coercivity algebra guard",
+  "cauchy_gap_checks": 5000,
+  "strong_concavity_checks": 1000,
+  "one_gap_contact_constant": "1/80",
+  "r0_two_contact_constant": "1/160",
+  "all_gates_pass": true,
+  "claim_boundary": "This verifies the algebra and constants. The derivative bounds are owned separately by predecessor_derivative_interval.py."
+}

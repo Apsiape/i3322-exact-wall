@@ -1,0 +1,9 @@
+{
+  "status": "exact-rational shifted monotone-rounding guard",
+  "hostile_weighted_measures": 5000,
+  "maximum_average_formula_violation": "0",
+  "maximum_existence_violation": "0",
+  "certified_i3322_coefficient": "40*sqrt(10)/h",
+  "all_gates_pass": true,
+  "claim_boundary": "This certifies paired contact rounding. Dihedral reflection closure and the final dimension inequality remain open."
+}

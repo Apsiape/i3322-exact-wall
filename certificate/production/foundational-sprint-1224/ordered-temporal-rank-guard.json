@@ -1,0 +1,10 @@
+{
+  "status": "exact-rational ordered temporal-rank guard",
+  "hostile_drift_chains": 10000,
+  "positive_orientation_fixtures": 5000,
+  "negative_orientation_fixtures": 5000,
+  "moving_frame_depths_checked": 33,
+  "minimum_registered_gap_slack": "77/2000",
+  "all_gates_pass": true,
+  "claim_boundary": "The temporal rank theorem is conditional on drift and step-error bounds. Near-fixed charging and final assembly remain open."
+}

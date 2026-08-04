@@ -46,13 +46,15 @@ optimum over strategies of local dimension at most (d), with binary POVMs
 allowed, then
 
 \[
-0<q_*-Q_d\le \exp[-d\log R+O(1)],
-\qquad R=1.07809205080209208\ldots .
+\kappa d^{-4}\Gamma^{-d}\le q_*-Q_d
+\le \exp[-d\log R+O(1)],
 \]
 
-Thus accuracy (\varepsilon) is achievable with
-(d\le \log(1/\varepsilon)/\log R+O(1)). This is an achievability theorem,
-not a device-independent dimension lower bound.
+where (R=1.07809205080209208\ldots),
+(\Gamma=312^4=9{,}475{,}854{,}336), and one explicit admissible
+(\kappa) is approximately (4.294654614331446\times10^{-52}). Thus the
+minimum local dimension for deficit (\varepsilon) is
+(\Theta(\log(1/\varepsilon))). The constants are not claimed sharp.
 
 As a corollary, the finite-dimensional quantum correlation set in the
 three-input binary scenario is not closed; this is the minimal bipartite
@@ -295,11 +297,39 @@ endpoint-free fixtures and by a symbolic periodic reconstruction. Thus this
 normal spatial correlation lies in (C_{qs}) and attains the wall; the
 finite-dimensional nonattainment theorem places it outside (C_q).
 
-## 2B. Quantitative finite-dimensional approximation
+## 2B. Quantitative finite-dimensional dimension law
 
 Let (Q_d) be the supremum of (\mathcal B_{3322}) over tensor-product
 strategies whose two local Hilbert spaces have dimension at most (d), allowing
-binary POVMs. For (L\ge0), put (I_L=\{-L,\ldots,L\}),
+binary POVMs. Let (D(\varepsilon)) be the least (d) for which
+(q_*-Q_d\le\varepsilon).
+
+**Dimension-law theorem.** There is an explicit universal constant
+(\kappa>0) such that, for every (d\ge1),
+
+\[
+\kappa d^{-4}\Gamma^{-d}\le q_*-Q_d
+\le\exp[-d\log R+O(1)],
+\qquad \Gamma=312^4=9{,}475{,}854{,}336.          \tag{2.9}
+\]
+
+One admissible exact (\kappa) is defined in the supplement and satisfies
+
+\[
+\kappa=4.2946546143314459987\ldots\times10^{-52}.
+\]
+
+Consequently,
+
+\[
+\frac{\log(1/\varepsilon)-O(\log\log(1/\varepsilon))}{\log\Gamma}
+\le D(\varepsilon)
+\le\frac{\log(1/\varepsilon)}{\log R}+O(1),
+\]
+
+so (D(\varepsilon)=\Theta(\log(1/\varepsilon))).
+
+For the constructive half, for (L\ge0), put (I_L=\{-L,\ldots,L\}),
 (S_L=\sum_{j\in I_L}\lambda_j^2), and (d=2L+1). Compress the six spatial
 measurements from Section 2A to (\operatorname{span}\{e_j:j\in I_L\}). A
 compressed projection is a positive contraction, hence a valid binary effect.
@@ -356,11 +386,40 @@ d\le \frac{\log(1/\varepsilon)}{\log R}+O(1),
 \qquad \frac1{\log R}=13.2991351931\ldots,        \tag{2.13}
 \]
 
-is sufficient to achieve deficit at most (\varepsilon). The implication is
-only one-way: (2.12) supplies explicit finite-dimensional strategies and does
-not prove that every (\varepsilon)-optimal strategy needs logarithmic
-dimension. The exact identity and plateau exponent have separate production
-and independent symbolic/interval reconstructions.
+is sufficient to achieve deficit at most (\varepsilon). The exact identity
+and plateau exponent have separate production and independent
+symbolic/interval reconstructions.
+
+For the converse half, compactness and multilinear extremality first replace
+an optimizer by a pure state and six projective effects on the same local
+spaces; no dilation is used. Robust contact coercivity localizes the three
+positive certificate remainders. A shifted moving grid follows canonical
+source--target packets through the response maps while charging every
+near-fixed, inactive-tail, contact, stopped-frame, and reuse loss. Each packet
+has one predecessor and at most one successor. Each retained chain visits
+disjoint spectral projections of one local (d)-dimensional operator and
+therefore has length at most (d).
+
+The resulting energy ledger gives
+
+\[
+E_{\rm exit}+E_{\rm rec}
+\le A d\varepsilon+B C_F20^{2d}\sqrt\varepsilon,
+\]
+
+and
+
+\[
+E_{\rm exit}+E_{\rm rec}
+\ge \frac{W_D}{(d+1)(78/5)^{2d}},
+\qquad W_D\ge1-C_I20^{2d}\sqrt\varepsilon,
+\]
+
+where (A=5616), (B=200772/25), and all other constants are explicit and
+dimension-independent. The resulting case split yields the lower half of the
+dimension law. The certificate contains the complete debt ledger. A sealed
+19-source blind reconstruction independently reproduced (\Gamma), (A), (B),
+and (\kappa), followed by a separate exact SymPy audit.
 
 ## 3. Geometric symmetrization
 
@@ -707,8 +766,10 @@ maximizer, or experimental accessibility of the limiting value. It separates
 (C_{qa}) or (C_{qa}) from (C_{qc}). It has no dependence on the broader
 foundational interpretation of the repository. General finite/infinite-
 dimensional separations are already known; the value here is the exact
-resolution of the canonical three-setting binary functional. No quantitative
-device-independent dimension bound is claimed.
+resolution of the canonical three-setting binary functional. The dimension
+lower bound is device-independent only inside the standard bipartite
+tensor-product model with no communication and both local dimensions bounded
+by (d). The optimal necessity exponent and prefactor remain open.
 
 **Computational disclosure.** Frontier language models were used extensively
 for proof discovery, implementation, adversarial auditing, and editorial

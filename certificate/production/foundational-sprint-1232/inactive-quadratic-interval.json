@@ -1,0 +1,14 @@
+{
+  "status": "300-bit Arb inactive-tail quadratic coercivity certificate",
+  "precision_bits": 300,
+  "tiles": 32768,
+  "registered_dS_dx_lower": "1/100",
+  "smallest_dS_dx_lower": 6.427794009447098,
+  "largest_dS_dx_upper": 11.39308476448059,
+  "failure_count": 0,
+  "first_failures": [],
+  "right_tail_pass": true,
+  "left_tail_by_reflection": true,
+  "all_gates_pass": true,
+  "claim_boundary": "This certifies dS/dx>1/100 on the complete inactive outer tail. Together with S(x_*)=1 it yields an endpoint support gap at least (x-x_*)^2/200. The Bellman-to-r_0 assembly is analytic and separate."
+}

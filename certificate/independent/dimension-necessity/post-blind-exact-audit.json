@@ -1,0 +1,9 @@
+{
+  "status": "post-blind exact dimension-necessity audit",
+  "A": "5616",
+  "B": "200772/25",
+  "Gamma": "9475854336",
+  "c_decimal_80": "4.2946546143314459987533745197929408511613187617537397268603285846815029056115185e-52",
+  "candidate_four_is_exact_minimum": true,
+  "all_gates_pass": true
+}

@@ -48,9 +48,17 @@ is the minimal bipartite binary-output scenario by input counts where
 nonclosure and finite/spatial separation can occur.
 The wall's principal sections also obey an exact boundary-flux law.  If $Q_d$
 allows binary POVMs on local dimension at most $d$, then
-$0<q_*-Q_d\le \exp[-d\log R+O(1)]$, where
-$R=1.07809205080209208\ldots$.  This is quantitative achievability, not a
-device-independent dimension lower bound.
+\[
+ \kappa d^{-4}\Gamma^{-d}\le q_*-Q_d
+ \le \exp[-d\log R+O(1)],
+\]
+where $R=1.07809205080209208\ldots$,
+$\Gamma=312^4=9{,}475{,}854{,}336$, and one explicit admissible
+$\kappa$ is approximately $4.294654614331446\times10^{-52}$.
+The upper estimate is attained by explicit truncations and the lower estimate
+holds for every strategy in the stated dimension class.  Hence the minimum
+local dimension for deficit $\varepsilon$ is
+$\Theta(\log(1/\varepsilon))$; the constants are not claimed sharp.
 \end{abstract}
 
 \section{Statement of the result}
@@ -256,11 +264,39 @@ identity is \eqref{eq:wallEigen}.  Thus the correlation belongs to $C_{qs}$
 and attains the certified wall; finite-dimensional nonattainment places it
 outside $C_q$.
 
-\section{Quantitative finite-dimensional approximation}
+\section{Quantitative finite-dimensional dimension law}
 \label{sec:dimension-rate}
 
 Let $Q_d$ be the supremum of $\B$ over tensor-product strategies whose two
 local Hilbert spaces have dimension at most $d$, allowing binary POVMs.  For
+later use, let $D(\varepsilon)$ be the least $d$ for which
+$q_*-Q_d\leq\varepsilon$.
+
+\begin{theorem}[Dimension law]\label{thm:dimension-law}
+There is an explicit universal constant $\kappa>0$ such that, for every
+$d\geq1$,
+\begin{equation}
+ \kappa d^{-4}\Gamma^{-d}\leq q_*-Q_d
+ \leq \exp[-d\log R+O(1)],
+ \qquad \Gamma=312^4=9{,}475{,}854{,}336,
+\label{eq:dimensionLaw}
+\end{equation}
+where $R$ is given in \eqref{eq:plateauRate}.  One admissible exact $\kappa$
+is defined in the supplement and satisfies
+\[
+ \kappa=4.2946546143314459987\ldots\times10^{-52}.
+\]
+Consequently,
+\begin{equation}
+ \frac{\log(1/\varepsilon)-O(\log\log(1/\varepsilon))}{\log\Gamma}
+ \leq D(\varepsilon)
+ \leq \frac{\log(1/\varepsilon)}{\log R}+O(1),
+\label{eq:dimensionTheta}
+\end{equation}
+and $D(\varepsilon)=\Theta(\log(1/\varepsilon))$.
+\end{theorem}
+
+For the constructive half, for
 $L\geq0$, put $I_L=\{-L,\ldots,L\}$,
 $S_L=\sum_{j\in I_L}\lambda_j^2$, and $d=2L+1$.  Compress the six spatial
 measurements from Section~\ref{sec:spatial} to
@@ -289,7 +325,7 @@ The certified analytic tails satisfy
 \]
 where
 \begin{equation}
-R=1.07809205080209208\ldots,qquad
+R=1.07809205080209208\ldots,\qquad
 \log R=0.07519285919570202\ldots .
 \label{eq:plateauRate}
 \end{equation}
@@ -312,10 +348,42 @@ d\leq\frac{\log(1/\varepsilon)}{\log R}+O(1),
 \qquad \frac1{\log R}=13.2991351931\ldots .
 \label{eq:dimensionSufficient}
 \end{equation}
-This implication is one-way: it constructs efficient finite-dimensional
-approximants but proves no dimension lower bound for arbitrary strategies.
 The flux identity and plateau exponent have separate production and
 independent symbolic/interval reconstructions.
+
+For the converse half, compactness and multilinear extremality first replace
+an optimizer by a pure state and six projective effects on the same local
+spaces; no dilation is used.  Writing the Bell deficit as the sum of the three
+positive certificate remainders, robust contact coercivity localizes their
+joint spectral mass.  A shifted moving grid follows canonical source--target
+packets through the two response maps.  Near-fixed, inactive-tail, contact,
+and stopped-frame losses are each charged with their full reuse multiplicity.
+On the retained drift sector every packet has one predecessor and at most one
+successor, while each individual chain visits disjoint spectral projections
+of one local $d$-dimensional operator and hence has length at most $d$.
+
+The resulting terminal-plus-recurrence energy satisfies both
+\[
+ E_{\rm exit}+E_{\rm rec}
+ \leq A d\varepsilon+B C_F20^{2d}\sqrt\varepsilon
+\]
+and
+\[
+ E_{\rm exit}+E_{\rm rec}
+ \geq \frac{W_D}{(d+1)(78/5)^{2d}},
+ \qquad W_D\geq1-C_I20^{2d}\sqrt\varepsilon,
+\]
+with explicit dimension-independent constants $A=5616$,
+$B=200772/25$, $C_F$, and $C_I$.  Splitting according to whether the retained
+mass is at least $1/2$, and then according to which upper-energy term is
+large, gives
+\[
+ \varepsilon\geq\kappa d^{-4}(20\cdot78/5)^{-4d},
+\]
+which is the lower half of \eqref{eq:dimensionLaw}.  The supplement gives the
+complete constant ledger and prohibited-shortcut audit.  A sealed-source
+blind reconstruction independently reproduced $\Gamma$, $A$, $B$, and
+$\kappa$, followed by a separate exact SymPy audit.
 
 \section{Geometric symmetrization}
 
@@ -529,8 +597,11 @@ accessibility of the limiting wall.  It separates $C_q$ from $C_{qs}$ at this
 correlation but does not separate $C_{qs}$ from $C_{qa}$ or $C_{qa}$ from
 $C_{qc}$.  The proof is independent of any broader foundational
 interpretation.  The observed finite-carrier gaps are exponentially
-consistent with the plateau multiplier, but no quantitative device-independent
-dimension lower bound is claimed.
+controlled above and below, but the optimal exponential necessity rate and
+prefactor remain unknown.  The lower bound is device-independent only within
+the standard bipartite tensor-product model with no communication and both
+local dimensions bounded by $d$; it does not cover signaling, postselection,
+network resources, or alternative notions of operator-algebraic dimension.
 
 \paragraph{Computational disclosure.}
 Frontier language models were used extensively for proof discovery,

@@ -39,6 +39,28 @@ REPLAY = [
     f"{PROD}/foundational-sprint-1200/dependency_audit.py",
     f"{PROD}/foundational-sprint-1206/spatial_realization_verify.py",
     f"{PROD}/foundational-sprint-1207/truncation_flux_verify.py",
+    f"{PROD}/foundational-sprint-1208/robust_response_factorization_verify.py",
+    f"{PROD}/foundational-sprint-1209/response_measure_verify.py",
+    f"{PROD}/foundational-sprint-1211/neutral_cycle_margin_verify.py",
+    f"{PROD}/foundational-sprint-1212/matched_block_transport_verify.py",
+    f"{PROD}/foundational-sprint-1214/square_root_cocycle_verify.py",
+    f"{PROD}/foundational-sprint-1216/certified_weight_box_verify.py",
+    f"{PROD}/foundational-sprint-1217/predecessor_derivative_interval.py",
+    f"{PROD}/foundational-sprint-1217/coercivity_algebra_verify.py",
+    f"{PROD}/foundational-sprint-1218/rms_packet_verify.py",
+    f"{PROD}/foundational-sprint-1222/shifted_rounding_verify.py",
+    f"{PROD}/foundational-sprint-1223/moving_partition_verify.py",
+    f"{PROD}/foundational-sprint-1224/ordered_temporal_rank_verify.py",
+    f"{PROD}/foundational-sprint-1225/two_frame_packet_verify.py",
+    f"{PROD}/foundational-sprint-1228/common_target_rms_verify.py",
+    f"{PROD}/foundational-sprint-1229/near_fixed_gap_verify.py",
+    f"{PROD}/foundational-sprint-1230/finite_rank_exit_verify.py",
+    f"{PROD}/foundational-sprint-1232/inactive_quadratic_interval.py",
+    f"{PROD}/foundational-sprint-1234/outer_affine_dominance_verify.py",
+    f"{PROD}/foundational-sprint-1235/packet_path_ownership_verify.py",
+    f"{PROD}/foundational-sprint-1237/same_dimension_extreme_verify.py",
+    f"{PROD}/foundational-sprint-1231/dimension_bound_algebra_verify.py",
+    f"{PROD}/foundational-sprint-1233/master_ledger_verify.py",
     f"{REL}/normalization_concordance_verify.py",
     f"{REL}/dimension_gap_audit.py",
     f"{IND}/arithmetic_selftest.py",
@@ -49,6 +71,9 @@ REPLAY = [
     f"{IND}/verify_independent_reconstruction.py",
     f"{IND}/spatial_symbolic_verify.py",
     f"{IND}/truncation_flux_mpmath.py",
+    f"{IND}/dimension-necessity/verify_source_manifest.py",
+    f"{IND}/dimension-necessity/verify_constants.py",
+    f"{IND}/dimension-necessity/post_blind_exact_verify.py",
 ]
 
 PRIVATE_MARKERS = [
@@ -118,11 +143,27 @@ def check_semantics() -> None:
         f"{PROD}/foundational-sprint-1200/independent-nonattainment.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1206/spatial-realization-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1207/truncation-flux-guard.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1208/robust-response-factorization.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1209/response-measure-guard.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1211/neutral-cycle-margin-guard.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1212/matched-block-transport-guard.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1214/square-root-cocycle-guard.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1216/certified-weight-box-guard.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1217/predecessor-derivative-interval.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1217/coercivity-algebra-guard.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1218/rms-packet-guard.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1222/shifted-rounding-guard.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1223/moving-partition-guard.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1224/ordered-temporal-rank-guard.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1225/two-frame-packet-guard.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1232/inactive-quadratic-interval.json": "all_gates_pass",
         f"{REL}/normalization-concordance.json": "all_gates_pass",
         f"{REL}/dimension-gap-audit.json": "all_data_gates_pass",
         f"{IND}/independent-reconstruction.json": "all_gates_pass",
         f"{IND}/spatial-symbolic-guard.json": "all_gates_pass",
         f"{IND}/truncation-flux-independent.json": "all_gates_pass",
+        f"{IND}/dimension-necessity/source-manifest-audit.json": "all_gates_pass",
+        f"{IND}/dimension-necessity/post-blind-exact-audit.json": "all_gates_pass",
     }
     for relative, field in true_fields.items():
         assert load(relative)[field] is True, f"{relative}: {field}"
@@ -167,7 +208,8 @@ def main() -> None:
         "private_corpus_dependency": False,
         "independence_boundary": (
             "production Arb stack plus separate mpmath.iv reconstruction and "
-            "independent symbolic spatial-carrier and truncation reconstruction"
+            "independent symbolic spatial-carrier/truncation reconstruction, "
+            "plus a sealed-source blind dimension-necessity reconstruction"
         ),
     }, indent=2))
 

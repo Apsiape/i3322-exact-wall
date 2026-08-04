@@ -1,0 +1,21 @@
+{
+  "status": "300-bit Arb predecessor-derivative interval certificate",
+  "precision_bits": 300,
+  "tiles_per_main_chart": 32768,
+  "ratio_checks": 204800,
+  "registered_ratio_box": [
+    "1/10",
+    "2"
+  ],
+  "smallest_ratio_lower": 0.15502852969802916,
+  "largest_ratio_upper": 1.1127851121127605,
+  "registered_lower_bound_pass": true,
+  "registered_upper_bound_pass": true,
+  "registered_predictions_passed": 2,
+  "registered_predictions_total": 2,
+  "failure_count": 0,
+  "upper_failure_count": 0,
+  "first_failures": [],
+  "all_gates_pass": true,
+  "claim_boundary": "This certifies the registered derivative box on the complete active predecessor chart with inherited analytic-tail enlargements. Reflection supplies the symmetric pieces. It does not price the inactive outer sliver."
+}

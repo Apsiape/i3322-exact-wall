@@ -1,0 +1,29 @@
+{
+  "status": "exact reflected-measure identity and rational TV-bound guard",
+  "conjugacy_residual": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ]
+  ],
+  "polarization_residual": "0",
+  "wrong_reflection_control": [
+    [
+      "f_minus - f_plus",
+      "0"
+    ],
+    [
+      "0",
+      "-f_minus + f_plus"
+    ]
+  ],
+  "wrong_reflection_detected": true,
+  "rational_inequality_checks": 500,
+  "all_rational_checks_pass": true,
+  "all_gates_pass": true,
+  "claim_boundary": "This verifies the reflection/polarization algebra and exact rational instances of the norm bound. Contact coupling, cocycle composition, finite-chain extraction, and dimension necessity remain separate."
+}
