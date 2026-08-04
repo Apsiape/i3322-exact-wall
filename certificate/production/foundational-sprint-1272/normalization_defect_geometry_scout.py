@@ -79,6 +79,7 @@ def reconstruct(node_count: int) -> dict:
     bsq = (1.0-sample*sample)/4.0
     K = fs*fminus/bsq
     P = np.asarray([predecessor(float(x)) for x in sample])
+    P_profile = PchipInterpolator(sample, P)
     Fp = F(P)
     Fmp = F(-P)
     bp2 = (1.0-P*P)/4.0
@@ -119,6 +120,7 @@ def reconstruct(node_count: int) -> dict:
         "D": D,
         "F_callable": F,
         "P_callable": predecessor,
+        "P_profile": P_profile,
         "K_minimum": float(np.min(K)),
         "K_maximum": float(np.max(K)),
         "K_at_zero": float(K[len(K)//2]),
@@ -150,7 +152,9 @@ def reconstruct(node_count: int) -> dict:
 def public(row: dict) -> dict:
     return {
         key: value for key, value in row.items()
-        if key not in {"sample", "K", "chi", "D", "F_callable", "P_callable"}
+        if key not in {
+            "sample", "K", "chi", "D", "F_callable", "P_callable", "P_profile"
+        }
     }
 
 

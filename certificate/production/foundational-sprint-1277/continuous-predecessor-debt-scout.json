@@ -1,0 +1,53 @@
+{
+  "status": "two-resolution continuous predecessor-debt Lyapunov scout",
+  "registered_kappa": 0.9,
+  "coarse": {
+    "bellman_nodes": 1601,
+    "carrier_points": 7201,
+    "horizon": 200,
+    "maximum_weighted_multiplier": 0.9000000000000005,
+    "maximum_weighted_multiplier_coordinate": -0.89625,
+    "minimum_weighted_multiplier": 0.8451403904831475,
+    "weight_dynamic_range": 5.216413109758645,
+    "maximum_h": 1.6518100219786964,
+    "maximum_h_coordinate": -0.9,
+    "latest_maximizing_step": 10,
+    "maximum_increment_steps_181_through_200": -0.04555231766170617,
+    "predecessor_range": [
+      -0.8813804881734432,
+      0.8819416810807915
+    ]
+  },
+  "fine": {
+    "bellman_nodes": 3201,
+    "carrier_points": 7201,
+    "horizon": 200,
+    "maximum_weighted_multiplier": 0.9000000000000004,
+    "maximum_weighted_multiplier_coordinate": -0.898,
+    "minimum_weighted_multiplier": 0.8451632469475296,
+    "weight_dynamic_range": 5.226839570847937,
+    "maximum_h": 1.6538068068641134,
+    "maximum_h_coordinate": -0.9,
+    "latest_maximizing_step": 10,
+    "maximum_increment_steps_181_through_200": -0.04490784985765961,
+    "predecessor_range": [
+      -0.8813839866838471,
+      0.8819400175037813
+    ]
+  },
+  "maximum_coarse_fine_h_disagreement": 0.2523504999592485,
+  "maximum_h_disagreement_coordinate": -0.8875000000000001,
+  "coarse_h_at_maximum_disagreement": 1.3900059675073635,
+  "fine_h_at_maximum_disagreement": 1.642356467466612,
+  "gates": {
+    "weighted_multiplier_at_most_registered_kappa": true,
+    "weight_dynamic_range_below_ten": true,
+    "maximizers_before_step_one_hundred": true,
+    "late_increments_strictly_negative": true,
+    "coarse_fine_h_uniform_disagreement_below_five_e_minus_three": false
+  },
+  "gates_passed": 4,
+  "gates_total": 5,
+  "all_gates_pass": false,
+  "claim_boundary": "This certifies only two finite-resolution, finite-horizon floating-point reconstructions. A continuous theorem requires interval orbit trapping, a certified negative tail, and cellwise interval evaluation."
+}

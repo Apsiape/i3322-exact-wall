@@ -100,6 +100,7 @@ REPLAY = [
     f"{PROD}/foundational-sprint-1274/lower_envelope_characteristic_atlas.py",
     f"{PROD}/foundational-sprint-1275/morse_filtered_characteristic_atlas.py",
     f"{PROD}/foundational-sprint-1276/weighted_bellman_contraction_scout.py",
+    f"{PROD}/foundational-sprint-1277/continuous_predecessor_debt_scout.py",
     f"{PROD}/foundational-sprint-1231/dimension_bound_algebra_verify.py",
     f"{PROD}/foundational-sprint-1233/master_ledger_verify.py",
     f"{REL}/normalization_concordance_verify.py",
@@ -271,6 +272,9 @@ def check_semantics() -> None:
     weighted_contraction = load(
         f"{PROD}/foundational-sprint-1276/weighted-bellman-contraction-scout.json"
     )
+    predecessor_debt = load(
+        f"{PROD}/foundational-sprint-1277/continuous-predecessor-debt-scout.json"
+    )
     assert coupled["terminal_near_entry_closed"] is False
     assert coupled["universal_dimension_lower_bound_proved"] is False
     assert terminal["scalar_terminal_commonization_proved"] is False
@@ -293,6 +297,13 @@ def check_semantics() -> None:
     assert weighted_contraction["all_gates_pass"] is False
     assert weighted_contraction["gates"]["one_cycle_each"] is False
     assert weighted_contraction["gates"]["weighted_contraction"] is True
+    assert predecessor_debt["all_gates_pass"] is False
+    assert predecessor_debt["gates_passed"] == 4
+    assert predecessor_debt["gates_total"] == 5
+    assert predecessor_debt["gates"][
+        "coarse_fine_h_uniform_disagreement_below_five_e_minus_three"
+    ] is False
+    assert predecessor_debt["maximum_coarse_fine_h_disagreement"] > 0.25
     assert weighted_contraction["gates"]["cycle_radius_below_point_nine"] is True
     assert weighted_contraction["gates"]["weight_range_below_ten"] is True
 

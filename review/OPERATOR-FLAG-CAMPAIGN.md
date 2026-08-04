@@ -198,6 +198,16 @@ The replacement campaign deliberately starts before packetization.
     plateau self-loops, both below `0.861`; those vertices are not merged by
     hand.  The weighted contraction is a viable continuous proof architecture,
     while the discrete graph does not certify continuous orbit topology.
+36. **Continuous predecessor-debt instability (Sprint 1277).** The canonical
+    accumulated-expansion potential makes each tested continuous-interpolant
+    reconstruction exactly `0.9`-contractive with weight range below `5.23`,
+    but the preregistered resolution-stability gate fails: the two potentials
+    disagree by `0.25235` at `u=-0.8875` against a `0.005` allowance.  The
+    trajectories differ initially by only `4.64e-5` and then spend different
+    numbers of iterates near the locally expanding negative bottleneck.  This
+    downgrades the weighted-norm route from viable to unresolved until a
+    memory-safe continuous reconstruction decides whether the limiting map
+    has a parabolic contact or a strictly positive transit gap.
 
 ## What is and is not new
 
@@ -262,5 +272,8 @@ zero set for the drift zero set.  Sprint 1273 selects the latter route and
 removes logarithms from the remaining interval problem.  Sprints 1274--1275
 close the local-characteristic shortcut, leaving direct interval
 sub/supersolutions for the global Bellman fixed point as the honest route.
-Sprint 1276 identifies the required norm: a Lyapunov-weighted sup norm built
-from predecessor history, not a constant-width barrier.
+Sprint 1276 identifies a possible norm—a Lyapunov-weighted sup norm built from
+predecessor history rather than a constant-width barrier—but Sprint 1277
+shows that its canonical continuous candidate is resolution-unstable near the
+negative bottleneck.  The next proof gate is therefore the bottleneck itself,
+not intervalization of the unstable weight.
