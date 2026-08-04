@@ -42,3 +42,17 @@ an independent upper bound is certified, repository HEAD does not certify:
 Exact local shooting, spatial-wall, boundary-flux, and algebraic receipts are
 retained.  Their valid conditional content is not erased by the failed weld.
 No replacement theorem is claimed yet.
+
+## Repair signal, not yet a repair
+
+Sprint 1286 directly iterates the globally selected Bellman operator without
+a positivity floor. Across four resolutions, all tested offsets at or below
+`q_*-10^-6` collapse when the offset is negative, while the displayed
+shooting value and all tested positive offsets converge to positive profiles.
+The two finest zero-offset profile minima agree within `6.53e-7`.
+
+This suggests that the same scalar may be independently characterized as the
+global Bellman positivity threshold. It is a numerical, preregistered signal,
+not an interval proof and not a restoration of the headline theorem. The
+repair target is now a direct globally normalized Bellman subsolution, with no
+use of the failed reflected-chart amplitude identification.

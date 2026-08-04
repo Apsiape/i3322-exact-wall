@@ -1,0 +1,315 @@
+{
+  "status": "global Bellman positivity criticality scout",
+  "q_center": 0.25087538451397656,
+  "resolutions": [
+    801,
+    1601,
+    3201,
+    6401
+  ],
+  "offsets": [
+    -0.0001,
+    -1e-05,
+    -1e-06,
+    0.0,
+    1e-06,
+    1e-05,
+    0.0001
+  ],
+  "tolerance": 1e-11,
+  "maximum_iterations": 5000,
+  "runs": [
+    {
+      "nodes": 801,
+      "offset": -0.0001,
+      "q": 0.2507753845139766,
+      "classification": "collapsed",
+      "iterations": 45,
+      "minimum_F": -0.0022548975417227,
+      "maximum_F": 0.5152470157059139,
+      "final_delta": 0.02061889144881346
+    },
+    {
+      "nodes": 801,
+      "offset": -1e-05,
+      "q": 0.25086538451397655,
+      "classification": "collapsed",
+      "iterations": 76,
+      "minimum_F": -0.03916537035933665,
+      "maximum_F": 0.5163792420858233,
+      "final_delta": 0.04553158740971064
+    },
+    {
+      "nodes": 801,
+      "offset": -1e-06,
+      "q": 0.2508743845139766,
+      "classification": "collapsed",
+      "iterations": 129,
+      "minimum_F": -0.016978261520958826,
+      "maximum_F": 0.516494740737186,
+      "final_delta": 0.029628039732275235
+    },
+    {
+      "nodes": 801,
+      "offset": 0.0,
+      "q": 0.25087538451397656,
+      "classification": "fixed",
+      "iterations": 146,
+      "minimum_F": 0.05303204290282526,
+      "maximum_F": 0.5165075941760809,
+      "final_delta": 9.070966200397379e-12
+    },
+    {
+      "nodes": 801,
+      "offset": 1e-06,
+      "q": 0.25087638451397654,
+      "classification": "fixed",
+      "iterations": 144,
+      "minimum_F": 0.053062459670925044,
+      "maximum_F": 0.516520442780259,
+      "final_delta": 8.990364008809593e-12
+    },
+    {
+      "nodes": 801,
+      "offset": 1e-05,
+      "q": 0.2508853845139766,
+      "classification": "fixed",
+      "iterations": 143,
+      "minimum_F": 0.05329122690582233,
+      "maximum_F": 0.5166358566108059,
+      "final_delta": 9.600098493933729e-12
+    },
+    {
+      "nodes": 801,
+      "offset": 0.0001,
+      "q": 0.25097538451397655,
+      "classification": "fixed",
+      "iterations": 128,
+      "minimum_F": 0.05504125306686669,
+      "maximum_F": 0.5177485053036868,
+      "final_delta": 8.696376951888851e-12
+    },
+    {
+      "nodes": 1601,
+      "offset": -0.0001,
+      "q": 0.2507753845139766,
+      "classification": "collapsed",
+      "iterations": 45,
+      "minimum_F": -0.005445691689820897,
+      "maximum_F": 0.5152407455471437,
+      "final_delta": 0.02246426762941045
+    },
+    {
+      "nodes": 1601,
+      "offset": -1e-05,
+      "q": 0.25086538451397655,
+      "classification": "collapsed",
+      "iterations": 74,
+      "minimum_F": -0.005505311962757942,
+      "maximum_F": 0.5163717356609319,
+      "final_delta": 0.022460053558890358
+    },
+    {
+      "nodes": 1601,
+      "offset": -1e-06,
+      "q": 0.2508743845139766,
+      "classification": "collapsed",
+      "iterations": 109,
+      "minimum_F": -0.016201704735947287,
+      "maximum_F": 0.5164843947405907,
+      "final_delta": 0.029118010445293052
+    },
+    {
+      "nodes": 1601,
+      "offset": 0.0,
+      "q": 0.25087538451397656,
+      "classification": "fixed",
+      "iterations": 144,
+      "minimum_F": 0.0530148835711064,
+      "maximum_F": 0.5164969327237913,
+      "final_delta": 9.109601961654334e-12
+    },
+    {
+      "nodes": 1601,
+      "offset": 1e-06,
+      "q": 0.25087638451397654,
+      "classification": "fixed",
+      "iterations": 142,
+      "minimum_F": 0.05304577604853922,
+      "maximum_F": 0.5165094680237603,
+      "final_delta": 9.036327242029074e-12
+    },
+    {
+      "nodes": 1601,
+      "offset": 1e-05,
+      "q": 0.2508853845139766,
+      "classification": "fixed",
+      "iterations": 139,
+      "minimum_F": 0.05327567340187733,
+      "maximum_F": 0.5166220816785316,
+      "final_delta": 9.874767670225992e-12
+    },
+    {
+      "nodes": 1601,
+      "offset": 0.0001,
+      "q": 0.25097538451397655,
+      "classification": "fixed",
+      "iterations": 131,
+      "minimum_F": 0.05502492282093607,
+      "maximum_F": 0.5177259206705662,
+      "final_delta": 9.652278976091111e-12
+    },
+    {
+      "nodes": 3201,
+      "offset": -0.0001,
+      "q": 0.2507753845139766,
+      "classification": "collapsed",
+      "iterations": 45,
+      "minimum_F": -0.006648923669522189,
+      "maximum_F": 0.5152397928190445,
+      "final_delta": 0.023176705434005074
+    },
+    {
+      "nodes": 3201,
+      "offset": -1e-05,
+      "q": 0.25086538451397655,
+      "classification": "collapsed",
+      "iterations": 74,
+      "minimum_F": -0.010718914100645627,
+      "maximum_F": 0.5163661524062604,
+      "final_delta": 0.02562239780850617
+    },
+    {
+      "nodes": 3201,
+      "offset": -1e-06,
+      "q": 0.2508743845139766,
+      "classification": "collapsed",
+      "iterations": 105,
+      "minimum_F": -0.011689472034596138,
+      "maximum_F": 0.5164803851105086,
+      "final_delta": 0.02622542358488089
+    },
+    {
+      "nodes": 3201,
+      "offset": 0.0,
+      "q": 0.25087538451397656,
+      "classification": "fixed",
+      "iterations": 148,
+      "minimum_F": 0.053006945780839754,
+      "maximum_F": 0.5164930890145947,
+      "final_delta": 9.131806422146838e-12
+    },
+    {
+      "nodes": 3201,
+      "offset": 1e-06,
+      "q": 0.25087638451397654,
+      "classification": "fixed",
+      "iterations": 144,
+      "minimum_F": 0.05303902161751162,
+      "maximum_F": 0.5165057873662358,
+      "final_delta": 9.050538096744276e-12
+    },
+    {
+      "nodes": 3201,
+      "offset": 1e-05,
+      "q": 0.2508853845139766,
+      "classification": "fixed",
+      "iterations": 141,
+      "minimum_F": 0.05327264305128554,
+      "maximum_F": 0.5166193545049853,
+      "final_delta": 9.64339719189411e-12
+    },
+    {
+      "nodes": 3201,
+      "offset": 0.0001,
+      "q": 0.25097538451397655,
+      "classification": "fixed",
+      "iterations": 131,
+      "minimum_F": 0.055023772506072266,
+      "maximum_F": 0.5177258087304181,
+      "final_delta": 9.5705665614787e-12
+    },
+    {
+      "nodes": 6401,
+      "offset": -0.0001,
+      "q": 0.2507753845139766,
+      "classification": "collapsed",
+      "iterations": 45,
+      "minimum_F": -0.006931942329725382,
+      "maximum_F": 0.5152390324350672,
+      "final_delta": 0.023347022296897668
+    },
+    {
+      "nodes": 6401,
+      "offset": -1e-05,
+      "q": 0.25086538451397655,
+      "classification": "collapsed",
+      "iterations": 74,
+      "minimum_F": -0.014659992831565827,
+      "maximum_F": 0.516365619121598,
+      "final_delta": 0.028121472318932028
+    },
+    {
+      "nodes": 6401,
+      "offset": -1e-06,
+      "q": 0.2508743845139766,
+      "classification": "collapsed",
+      "iterations": 105,
+      "minimum_F": -0.03605887204851976,
+      "maximum_F": 0.5164795116261375,
+      "final_delta": 0.04315463984573831
+    },
+    {
+      "nodes": 6401,
+      "offset": 0.0,
+      "q": 0.25087538451397656,
+      "classification": "fixed",
+      "iterations": 146,
+      "minimum_F": 0.053006292806481614,
+      "maximum_F": 0.516492189554389,
+      "final_delta": 8.927747430220734e-12
+    },
+    {
+      "nodes": 6401,
+      "offset": 1e-06,
+      "q": 0.25087638451397654,
+      "classification": "fixed",
+      "iterations": 144,
+      "minimum_F": 0.05303855479884856,
+      "maximum_F": 0.5165048669911503,
+      "final_delta": 8.772760295983062e-12
+    },
+    {
+      "nodes": 6401,
+      "offset": 1e-05,
+      "q": 0.2508853845139766,
+      "classification": "fixed",
+      "iterations": 140,
+      "minimum_F": 0.05327089542854235,
+      "maximum_F": 0.516618326249797,
+      "final_delta": 9.767520126047202e-12
+    },
+    {
+      "nodes": 6401,
+      "offset": 0.0001,
+      "q": 0.25097538451397655,
+      "classification": "fixed",
+      "iterations": 130,
+      "minimum_F": 0.055022942625647,
+      "maximum_F": 0.5177247050674401,
+      "final_delta": 9.86322135076989e-12
+    }
+  ],
+  "zero_offset_fine_minimum_disagreement": 6.529743581396019e-07,
+  "gates": {
+    "all_negative_offsets_collapse": true,
+    "all_zero_offsets_converge_positive": true,
+    "all_positive_offsets_converge_positive": true,
+    "zero_offset_minimum_above_point_zero_four": true,
+    "fine_zero_offset_minima_agree_below_five_e_minus_five": true,
+    "no_unresolved_runs": true
+  },
+  "all_gates_pass": true,
+  "classification": "resolution-robust numerical critical point",
+  "claim_boundary": "This is a floating-point ordered-hull iteration scout. It does not certify exact Bellman criticality or restore the I3322 theorem."
+}

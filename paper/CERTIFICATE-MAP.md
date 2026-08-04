@@ -84,6 +84,7 @@ row is presently **open**, despite its internal gates passing. See
 | Global-amplitude exclusion audit | `certificate/production/foundational-sprint-1285/wide_bracket_amplitude_exclusion.py` |
 | Independent amplitude-gap reconstruction | `certificate/independent/amplitude-gap/amplitude_gap_mpmath.py` |
 | Post-verdict two-engine concordance | `certificate/independent/amplitude-gap/amplitude_gap_concordance.py` |
+| Numerical global-Bellman criticality scout | `certificate/production/foundational-sprint-1286/global_bellman_criticality_scout.py` (**not a theorem input**) |
 
 ### Independent interval reconstruction
 

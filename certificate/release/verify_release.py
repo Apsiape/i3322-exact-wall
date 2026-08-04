@@ -109,6 +109,7 @@ REPLAY = [
     f"{PROD}/foundational-sprint-1283/global_amplitude_consistency_audit.py",
     f"{PROD}/foundational-sprint-1284/arb_matched_amplitude_adjudication.py",
     f"{PROD}/foundational-sprint-1285/wide_bracket_amplitude_exclusion.py",
+    f"{PROD}/foundational-sprint-1286/global_bellman_criticality_scout.py",
     f"{PROD}/foundational-sprint-1231/dimension_bound_algebra_verify.py",
     f"{PROD}/foundational-sprint-1233/master_ledger_verify.py",
     f"{REL}/normalization_concordance_verify.py",
@@ -316,6 +317,9 @@ def check_semantics() -> None:
     wide_amplitude = load(
         f"{PROD}/foundational-sprint-1285/wide-bracket-amplitude-exclusion.json"
     )
+    bellman_criticality = load(
+        f"{PROD}/foundational-sprint-1286/global-bellman-criticality-scout.json"
+    )
     independent_amplitude = load(
         f"{IND}/amplitude-gap/amplitude-gap-mpmath.json"
     )
@@ -415,6 +419,13 @@ def check_semantics() -> None:
     assert wide_amplitude["amplitude_difference_over_complete_bracket"][
         "contains_zero"
     ] is False
+    assert bellman_criticality["all_gates_pass"] is True
+    assert bellman_criticality["classification"] == (
+        "resolution-robust numerical critical point"
+    )
+    assert bellman_criticality[
+        "zero_offset_fine_minimum_disagreement"
+    ] < 1e-6
     assert independent_amplitude["all_gates_pass"] is True
     assert independent_amplitude["imports_production_engine"] is False
     assert independent_amplitude["largest_y_derivative_upper"] < -285
