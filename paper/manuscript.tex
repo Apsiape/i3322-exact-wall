@@ -38,7 +38,10 @@ two local decreasing transports to coincide.  Their amplitude compatibility
 then bounds every putative finite attaining component by $1/4$.  Since
 $q_*>1/4$, no finite-dimensional tensor-product or commuting-operator strategy
 attains the supremum.  The displayed decimal is a validated shooting zero,
-not an asserted elementary closed form.
+not an asserted elementary closed form.  As a corollary, the finite-dimensional
+quantum correlation set in the three-input binary scenario is not closed; this
+is the minimal bipartite binary-output scenario by input counts where
+nonclosure can occur.
 \end{abstract}
 
 \section{Statement of the result}
@@ -81,9 +84,63 @@ limiting domain-wall recursion.  Infinite-versus-finite dimensional
 separations and non-closure are known in larger Bell scenarios
 \cite{Slofstra2017,ColadangeloStark2018}; the point here is the exact resolution
 of the canonical three-setting binary functional.
+Mghirbi previously gave proof-carrying exact rational upper and lower
+certificates enclosing the value to width below $10^{-9}$
+\cite{Mghirbi2026}
+(\href{https://doi.org/10.5281/zenodo.21477901}{doi:10.5281/zenodo.21477901}).
+That important antecedent explicitly left the exact
+supremum, finite-dimensional attainment, and tensor--commuting equality open.
 Very recent budgeted moment-selection work continues to use $I_{3322}$ as a
 hard NPA benchmark rather than supplying an exact theorem
 \cite{FloraEtAl2026}.
+
+\subsection{Minimal binary nonclosure}
+
+Let $C_q(m_A,m_B;2,2)$ denote the set of finite-dimensional bipartite quantum
+correlations with $m_A$ and $m_B$ binary measurements.  We allow POVMs; this
+is equivalent to the finite-dimensional PVM convention.
+
+\begin{theorem}[Minimal binary nonclosure]\label{thm:nonclosure}
+The set $C_q(3,3;2,2)$ is not closed.  If either $m_A\leq2$ or $m_B\leq2$,
+then $C_q(m_A,m_B;2,2)$ is compact.  Hence $(3,3;2,2)$ is minimal, under the
+coordinatewise ordering of input counts, among bipartite binary-output
+scenarios with nonclosed finite-dimensional quantum correlation sets.
+\end{theorem}
+
+\begin{proof}
+The certified Bellman datum supplies finite-dimensional correlations $p_n$
+whose $I_{3322}$ values converge to $q_*$.  The probability vectors lie in a
+fixed compact cube, so a subsequence converges to some $p_\infty$ in
+$\overline{C_q(3,3;2,2)}$.  Continuity gives
+$I_{3322}(p_\infty)=q_*$.  Theorem~\ref{thm:main} excludes every
+finite-dimensional attainer, so $p_\infty\notin C_q(3,3;2,2)$.  This proves
+nonclosure.  The implication from I3322 nonattainment to this statement was
+explicitly anticipated by Dykema, Paulsen, and Prakash
+\cite{DykemaPaulsenPrakash2018}.
+
+For minimality, consider $p\in C_q(2,m;2,2)$.  Simultaneously dilate Alice's
+two binary POVMs to two projections.  Jordan's lemma decomposes their common
+finite-dimensional space into invariant blocks of dimension at most two.
+Alice's block-diagonal measurements make $p$ a convex mixture of the
+corresponding block correlations.  After purifying each block state into
+Bob's system, Schmidt compression reduces Bob's support to dimension at most
+two without changing any probability.  Thus
+\[
+C_q(2,m;2,2)=\operatorname{conv}(K_m),
+\]
+where $K_m$ is the compact set of qubit--qubit behaviors with the prescribed
+measurements.  The convex hull of a compact subset of a finite-dimensional
+space is compact.  More explicitly, the no-signaling affine dimension is
+$3m+2$, so Carath\'eodory reduces every behavior to at most $3m+3$ qubit
+blocks, giving local dimensions at most $6m+6$.  The argument with the parties
+interchanged proves the other case.  Related recent dimension bounds appear
+in \cite{Masanes2005,PanahiEtAl2025}.
+\end{proof}
+
+The theorem is only a binary-output, bipartite setting-count statement.  It
+does not compare scenarios with more outputs, more parties, communication, or
+network causal structure.  It also does not decide whether an
+infinite-dimensional spatial strategy attains $q_*$.
 
 \section{Certified Bellman datum}
 

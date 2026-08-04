@@ -13,6 +13,11 @@ q* in [0.250875384513976535514, 0.250875384513976536486].
 
 Neither model has a finite-dimensional maximizer.
 
+Consequently, the finite-dimensional quantum correlation set
+`C_q(3,3;2,2)` is not closed. A separate Jordan-decomposition argument proves
+that every binary scenario with at most two inputs on either side is compact,
+so the three-input-per-party scenario is minimal by input counts.
+
 Archival identifiers: concept DOI
 [`10.5281/zenodo.21782008`](https://doi.org/10.5281/zenodo.21782008); frozen
 `v1.0.0` DOI
@@ -23,9 +28,16 @@ nonattainment reported by Pal and Vertesi in 2010. It is not a claim of
 priority for general non-closure or finite/infinite-dimensional separation,
 which are known in other Bell scenarios.
 
+Mghirbi's July 2026 release
+[`10.5281/zenodo.21477901`](https://doi.org/10.5281/zenodo.21477901)
+previously gave a proof-carrying exact enclosure of width below `10^-9`. The
+present result closes that remaining interval and proves nonattainment; it is
+not the first exact certified bound for I3322.
+
 ## Paper
 
 - [Main manuscript](paper/manuscript.pdf)
+- [v1.1.0 release notes](paper/RELEASE-NOTES-v1.1.0.md)
 - [Technical supplement](paper/technical-supplement.pdf)
 - [Readable manuscript source](paper/MANUSCRIPT.md)
 - [Claim-to-certificate map](paper/CERTIFICATE-MAP.md)

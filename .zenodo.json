@@ -10,14 +10,16 @@
       "orcid": "0009-0007-4708-3252"
     }
   ],
-  "description": "The tensor-product and commuting-operator suprema of the canonical I3322 Bell functional are identified with a rigorously characterized domain-wall constant, and neither model has a finite-dimensional maximizer. The release includes two independently implemented interval reconstructions and exact analytic audits.",
+  "description": "The tensor-product and commuting-operator suprema of the canonical I3322 Bell functional are identified with a rigorously characterized domain-wall constant, and neither model has a finite-dimensional maximizer. Consequently C_q(3,3;2,2) is nonclosed. A separate Jordan--Schmidt--Caratheodory argument proves that every bipartite binary-output scenario with at most two inputs on either side is compact, making the 3-by-3 scenario minimal by input counts. The release includes two independently implemented interval reconstructions and exact analytic audits.",
   "keywords": [
     "Bell inequalities",
     "I3322",
     "quantum correlations",
     "commuting operators",
     "computer-assisted proof",
-    "nonattainment"
+    "nonattainment",
+    "nonclosed quantum correlations",
+    "minimal Bell scenario"
   ],
   "related_identifiers": [
     {

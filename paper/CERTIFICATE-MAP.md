@@ -14,6 +14,15 @@ This file separates analytic claims from computer-assisted inputs.
 | Amplitude elimination (6.1)–(6.5) | Sprints 1198/1200 | two independent symbolic scripts |
 | Quarter ceiling (6.6)–(6.8) | Sprints 1198/1200 | exact polynomial identities and paper proof |
 
+## Nonclosure corollary chain
+
+| Claim | Owner | Verification |
+|---|---|---|
+| `C_q(3,3;2,2)` nonclosure | Corollary to main theorem | compact subsequence plus continuity |
+| Binary input-count minimality | Jordan/Schmidt argument | self-contained analytic proof in manuscript |
+
+Neither row adds a computer-assisted dependency beyond the main theorem.
+
 ## Computer-assisted Bellman input
 
 | Input | Receipt or engine |

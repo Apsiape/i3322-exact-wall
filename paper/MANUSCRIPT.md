@@ -37,6 +37,10 @@ The decimal above is not asserted to have an elementary closed form. Its
 meaning is the unique validated zero of an explicit domain-wall shooting
 problem, enclosed by interval arithmetic.
 
+As a corollary, the finite-dimensional quantum correlation set in the
+three-input binary scenario is not closed; this is the minimal bipartite
+binary-output scenario by input counts where nonclosure can occur.
+
 ## 1. The Bell functional
 
 Let (A_1,A_2,A_3) and (B_1,B_2,B_3) be projections. In the commuting model
@@ -105,6 +109,56 @@ numerical bounds for this problem. Very recent budgeted moment-selection work
 still uses (I_{3322}) as a hard NPA benchmark rather than supplying an exact
 theorem. Our proof instead extracts an exact operator certificate from the
 limiting domain-wall recursion.
+
+Mghirbi previously gave proof-carrying exact rational upper and lower
+certificates enclosing the value to width below (10^{-9}). That important
+antecedent explicitly left the exact supremum, finite-dimensional attainment,
+and tensor--commuting equality open.
+
+### Minimal binary nonclosure
+
+Let (C_q(m_A,m_B;2,2)) denote the set of finite-dimensional bipartite quantum
+correlations with (m_A) and (m_B) binary measurements. We allow POVMs; this is
+equivalent to the finite-dimensional PVM convention.
+
+**Theorem.** The set (C_q(3,3;2,2)) is not closed. If either (m_A\le2) or
+(m_B\le2), then (C_q(m_A,m_B;2,2)) is compact. Hence ((3,3;2,2)) is minimal,
+under the coordinatewise ordering of input counts, among bipartite
+binary-output scenarios with nonclosed finite-dimensional quantum correlation
+sets.
+
+**Proof.** The certified Bellman datum supplies finite-dimensional
+correlations (p_n) whose (I_{3322}) values converge to (q_*). The probability
+vectors lie in a fixed compact cube, so a subsequence converges to some
+(p_\infty) in the closure of (C_q(3,3;2,2)). Continuity gives
+(I_{3322}(p_\infty)=q_*). The main theorem excludes every finite-dimensional
+attainer, so (p_\infty\notin C_q(3,3;2,2)). This proves nonclosure. The
+implication from I3322 nonattainment was explicitly anticipated by Dykema,
+Paulsen, and Prakash in 2018.
+
+For minimality, consider (p\in C_q(2,m;2,2)). Simultaneously dilate Alice's
+two binary POVMs to two projections. Jordan's lemma decomposes their common
+finite-dimensional space into invariant blocks of dimension at most two.
+Alice's block-diagonal measurements make (p) a convex mixture of the
+corresponding block correlations. After purifying each block state into Bob's
+system, Schmidt compression reduces Bob's support to dimension at most two
+without changing any probability. Thus
+
+\[
+C_q(2,m;2,2)=\operatorname{conv}(K_m),
+\]
+
+where (K_m) is the compact set of qubit--qubit behaviors with the prescribed
+measurements. The convex hull of a compact subset of a finite-dimensional
+space is compact. More explicitly, the no-signaling affine dimension is
+(3m+2), so Caratheodory reduces every behavior to at most (3m+3) qubit blocks,
+giving local dimensions at most (6m+6). The argument with the parties
+interchanged proves the other case. QED.
+
+This is only a binary-output, bipartite setting-count statement. It does not
+compare scenarios with more outputs, more parties, communication, or network
+causal structure. It also does not decide whether an infinite-dimensional
+spatial strategy attains (q_*).
 
 ## 2. The certified Bellman datum
 
