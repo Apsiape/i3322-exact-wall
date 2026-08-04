@@ -47,8 +47,9 @@ graph and Bellman fixed-point receipts in Sprints 1192--1195 already certify
 that this fixed characteristic belongs to the global wall.
 
 Thus the numerical argmin failure in Sprint 1280 was not missing existence.
-It was the expected ill-conditioning of sampling an already exact parabolic
-fixed characteristic.
+It was ill-conditioning while sampling an already exact fixed
+characteristic.  The stronger technical claim that the predecessor contact is
+parabolic remains numerical rather than part of this theorem.
 
 ## Exact contraction no-go
 

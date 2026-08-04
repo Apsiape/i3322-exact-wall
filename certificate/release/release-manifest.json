@@ -2236,9 +2236,9 @@
     },
     {
       "path": "certificate/production/foundational-sprint-1281/EXACT-REVERSED-PLATEAU-OBSTRUCTION.md",
-      "canonical_bytes": 2650,
+      "canonical_bytes": 2754,
       "hash_mode": "canonical-lf",
-      "sha256": "806769a0437bd3117ec45b84449389a800722ef802026d925f176fcdba38f188"
+      "sha256": "1dd9e4f38fcc982867b3f1f5e29d11bce061682d539d0f41d5c2f1304dd3f2e0"
     },
     {
       "path": "certificate/production/foundational-sprint-1281/PRE-REGISTRATION.md",
