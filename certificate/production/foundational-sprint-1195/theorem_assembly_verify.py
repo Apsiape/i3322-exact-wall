@@ -1,4 +1,4 @@
-"""Audit the machine-readable prerequisites of the exact aligned-wall theorem."""
+"""Audit the historical local prerequisites and current global-gap status."""
 
 from __future__ import annotations
 
@@ -21,6 +21,7 @@ def main() -> None:
     wing = read(1193, "exact-boundary-wing.json")
     outer = read(1194, "inactive-outer-guard.json")
     hyperbolic = read(1115, "plateau-hyperbolicity-certificate.json")
+    amplitude_gap = read(1285, "wide-bracket-amplitude-exclusion.json")
 
     gates = {
         "exact_contact_covariance": contact["all_exact_checks_zero"],
@@ -35,20 +36,27 @@ def main() -> None:
         "positive_pivots_central": all(piece["minimum_pivot_lower"] > 0 for piece in graph["pieces"]),
         "positive_pivots_wing": all(piece["minimum_pivot_lower"] > 0 for piece in wing["pieces"]),
     }
+    local_pass = all(gates.values())
     report = {
-        "status": "machine-readable prerequisite audit for exact aligned wall",
+        "status": "historical local aligned-wall gates with global amplitude gap",
         "gates": gates,
-        "all_gates_pass": all(gates.values()),
+        "all_gates_pass": local_pass,
+        "historical_local_gates_pass": local_pass,
+        "global_amplitude_compatibility": False,
+        "headline_assembly_closed": False,
+        "gap_receipt_passes": amplitude_gap["all_gates_pass"],
         "q_interval_from_validated_connection": connection["rectangle"]["Q"],
         "claim_boundary": (
-            "These gates support the continuous Bellman fixed-point and finite aligned open Jacobi theorem. "
-            "They do not prove alignment of arbitrary I3322 strategies or the unrestricted quantum value."
+            "These historical gates certify local chart geometry only. Sprint "
+            "1285 proves that their global amplitude compatibility equation "
+            "fails, so they do not presently assemble a continuous Bellman "
+            "fixed point or certify the unrestricted quantum value."
         ),
     }
     output = HERE / "theorem-assembly.json"
     output.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, indent=2))
-    if not report["all_gates_pass"]:
+    if not (report["historical_local_gates_pass"] and report["gap_receipt_passes"]):
         raise SystemExit(1)
 
 

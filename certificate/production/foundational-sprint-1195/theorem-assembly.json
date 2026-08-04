@@ -1,5 +1,5 @@
 {
-  "status": "machine-readable prerequisite audit for exact aligned wall",
+  "status": "historical local aligned-wall gates with global amplitude gap",
   "gates": {
     "exact_contact_covariance": true,
     "exact_connection_miranda_faces": true,
@@ -12,6 +12,10 @@
     "positive_pivots_wing": true
   },
   "all_gates_pass": true,
+  "historical_local_gates_pass": true,
+  "global_amplitude_compatibility": false,
+  "headline_assembly_closed": false,
+  "gap_receipt_passes": true,
   "q_interval_from_validated_connection": "[0.250875384513976536 +/- 4.86e-19]",
-  "claim_boundary": "These gates support the continuous Bellman fixed-point and finite aligned open Jacobi theorem. They do not prove alignment of arbitrary I3322 strategies or the unrestricted quantum value."
+  "claim_boundary": "These historical gates certify local chart geometry only. Sprint 1285 proves that their global amplitude compatibility equation fails, so they do not presently assemble a continuous Bellman fixed point or certify the unrestricted quantum value."
 }

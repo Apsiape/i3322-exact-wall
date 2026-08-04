@@ -484,15 +484,15 @@
     },
     {
       "path": "certificate/production/foundational-sprint-1195/theorem-assembly.json",
-      "canonical_bytes": 764,
+      "canonical_bytes": 973,
       "hash_mode": "canonical-lf",
-      "sha256": "e8e0613f1ef2ced16bee5519b81e6fc5d694da7ae07ce6bada7fababcccaa94a"
+      "sha256": "2345aff1157d2a5de1556be7b722255e03bd0ec3cba10399272fb66daa2cba92"
     },
     {
       "path": "certificate/production/foundational-sprint-1195/theorem_assembly_verify.py",
-      "canonical_bytes": 2581,
+      "canonical_bytes": 3021,
       "hash_mode": "canonical-lf",
-      "sha256": "d2d2beaa3e04e604764b9d80b7e2ea532d942d790a99567852ebf09b14d1a697"
+      "sha256": "bf5ad244ae4744ed528afd1440071e66ec6828114ce5bcc4ba5d0707f883444b"
     },
     {
       "path": "certificate/production/foundational-sprint-1196/cyclic-sos.json",
@@ -2038,9 +2038,9 @@
     },
     {
       "path": "certificate/production/foundational-sprint-1271/RECIPROCAL-BELLMAN-AND-DRIFT-FACTORIZATION.md",
-      "canonical_bytes": 3314,
+      "canonical_bytes": 3565,
       "hash_mode": "canonical-lf",
-      "sha256": "97a52966d5b40d0c42a9e12f95bfd811a163d078865c56ee7e49c318cb61d0d6"
+      "sha256": "a6885e7621c6739d0693442e4cc72a02819aee7722a3c331c48676a0be7ed5b9"
     },
     {
       "path": "certificate/production/foundational-sprint-1271/reciprocal-bellman-negative.json",
@@ -2440,9 +2440,9 @@
     },
     {
       "path": "certificate/release/verify_release.py",
-      "canonical_bytes": 26427,
+      "canonical_bytes": 26803,
       "hash_mode": "canonical-lf",
-      "sha256": "f4999c2fb754e940d67129fa967b42a43946ca5a154dd0bf5f1621e17f4f94f5"
+      "sha256": "fff49371055305d9b1f67f6a2b66bb0c372788aa67d583cd92880901c8881d46"
     },
     {
       "path": "CITATION.cff",

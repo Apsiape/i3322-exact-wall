@@ -250,6 +250,13 @@ def check_semantics() -> None:
     assert outer["successor_monotonicity_repair"] is True
     assert outer["right_outer_contacts_excluded"] is True
     assert outer["left_outer_contacts_excluded_by_reflection"] is True
+    historical_assembly = load(
+        f"{PROD}/foundational-sprint-1195/theorem-assembly.json"
+    )
+    assert historical_assembly["historical_local_gates_pass"] is True
+    assert historical_assembly["global_amplitude_compatibility"] is False
+    assert historical_assembly["headline_assembly_closed"] is False
+    assert historical_assembly["gap_receipt_passes"] is True
     audit = load(f"{PROD}/foundational-sprint-1200/dependency-audit.json")
     assert float(audit["q_lower_minus_quarter"]) > 0
     source_manifest = load(f"{IND}/dimension-necessity/source-manifest.json")

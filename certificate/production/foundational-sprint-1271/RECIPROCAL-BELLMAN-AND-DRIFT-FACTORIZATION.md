@@ -104,4 +104,8 @@ Neither reciprocal normalization, the balanced-weight collapse, nor
 `chi=2 log(uv)` is claimed.  The defect-corrected identities (7)--(10) are
 exact algebra.  The three-root interval campaign must certify `K` together
 with the characteristic ratios, or directly interval-evaluate the globally
-normalized `F` and `P`.  The public I3322 theorem is unchanged.
+normalized `F` and `P`.  The final sentence of the historical Sprint 1271
+version said the public theorem was unchanged. Sprint 1285 later proved that
+this normalization defect is load-bearing for the Bellman assembly; the
+public theorem is now under correction as described in
+`paper/CERTIFICATE-STATUS-ALERT.md`.
