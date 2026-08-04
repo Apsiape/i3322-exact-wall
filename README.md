@@ -20,6 +20,8 @@ so the three-input-per-party scenario is minimal by input counts.
 
 Archival identifiers: concept DOI
 [`10.5281/zenodo.21782008`](https://doi.org/10.5281/zenodo.21782008); frozen
+`v1.1.0` DOI
+[`10.5281/zenodo.21782527`](https://doi.org/10.5281/zenodo.21782527); frozen
 `v1.0.0` DOI
 [`10.5281/zenodo.21782009`](https://doi.org/10.5281/zenodo.21782009).
 

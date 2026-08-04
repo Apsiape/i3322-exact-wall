@@ -460,9 +460,9 @@
     },
     {
       "path": "CITATION.cff",
-      "canonical_bytes": 1355,
+      "canonical_bytes": 1384,
       "hash_mode": "canonical-lf",
-      "sha256": "5f3e3ad4eae70ad3325cd1344b93721b9efa795de638b52a5728d3bd12a2965f"
+      "sha256": "3f9679960a4ae1616606498c5ab6073d9ce8f319a53111fed727f373d2e7a048"
     },
     {
       "path": "LICENSE.md",
@@ -562,9 +562,9 @@
     },
     {
       "path": "README.md",
-      "canonical_bytes": 3908,
+      "canonical_bytes": 3998,
       "hash_mode": "canonical-lf",
-      "sha256": "28427f9ac412e7c7dd4f7b83916b6c0a46432afc8b16a77a5bbc66ab7e349d97"
+      "sha256": "c4d8d50645045f858bf807f4157572e97268291753f71572582dbb89d37a53d4"
     },
     {
       "path": "requirements.txt",
