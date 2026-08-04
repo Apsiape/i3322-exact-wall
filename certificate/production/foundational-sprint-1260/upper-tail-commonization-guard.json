@@ -1,0 +1,18 @@
+{
+  "status": "exact-rational upper-tail commonization guard",
+  "pointwise_contact_coefficient": "360",
+  "deep_integrated_coefficient": "120",
+  "high_integrated_coefficient": "360",
+  "combined_formula": "120*epsilon_0*(exp(3*K)+2)",
+  "minimum_high_resolution_slack": "0",
+  "sample_cut_cover_K": "35/6",
+  "gates": {
+    "deep_integral_constant": true,
+    "high_integral_constant": true,
+    "combined_offset": true,
+    "high_resolution_resolvent": true,
+    "all_shifted_cuts_covered": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "One grid covers every queried upper tail. Synchronized response prefix control and the universal dimension lower bound remain open."
+}

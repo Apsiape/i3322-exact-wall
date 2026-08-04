@@ -1,0 +1,17 @@
+{
+  "status": "exact-rational one-grid four-coordinate guard",
+  "fixtures": 2000,
+  "shift_lattice_size": 101,
+  "prefix_identity_checks": 12692,
+  "minimum_average_slack": "750/3737",
+  "minimum_selected_slack": "0",
+  "shared_width_for_safe_m0": "1/4434560",
+  "gates": {
+    "one_shift_average": true,
+    "deterministic_shift": true,
+    "common_prefix_identities": true,
+    "shared_width_refines_source_width": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "One numerical grid supplies both original and response prefix identities. Final operator-error integration remains open."
+}

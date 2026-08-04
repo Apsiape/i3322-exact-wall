@@ -31,7 +31,7 @@ subsequent coupled-sector repair forces a fixed amount of drift mass, but an
 exact shared-factor countermodel shows that scalar packet norms lose the
 multiplicity provenance needed at terminal near-entry.
 
-Sprints 1240--1259 now provide an operator-valued restart. The response
+Sprints 1240--1265 now provide an operator-valued restart. The response
 remainders have been lifted to two-sided correspondences of the complete
 Schmidt coefficient operator. Regularized Schmidt support gives a nested
 ordered-flag filtration; Bellman contact controls its averaged left/right
@@ -57,7 +57,14 @@ ordinary joint Wasserstein distance has the right information type.  The
 complete ordered flag instead recovers the vertical translation bill from
 synchronized prefix tails with only a linear rank factor.  The remaining gate
 is to prove that the I3322 operator receipts control those synchronized
-prefixes on the canonical carrier. The
+prefixes on the canonical carrier.  The canonical carrier is now covered over
+every queried upper tail; trace normalization prices the upper vertical cap;
+and one shared shifted grid gives common prefixes simultaneously to the two
+original order coordinates and the two response outputs.  Lipschitz geometry
+forces one vertical orientation inside every retained output cell, so hidden
+multiplicity can no longer cancel the resolution debt.  The remaining gate is
+the explicit integration of the operator response errors and the already
+billed grid/band interfaces into one final deficit inequality. The
 conditional constant ledger is retained as an open proof
 campaign, but this repository
 does **not** presently claim

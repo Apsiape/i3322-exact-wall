@@ -1,0 +1,15 @@
+{
+  "status": "exact-rational trace-normalized upper-cap guard",
+  "fixtures": 100000,
+  "minimum_scalar_slack": "0",
+  "minimum_trace_slack": "161013585359000371387121204471237991160773206348540907973/7797244285061755118055373922193840347024776768651794878365548996480",
+  "upper_tail_formula": "mu(zeta>=S)<=exp(-S)",
+  "one_response_crossing_formula": "exp(B-S)",
+  "gates": {
+    "scalar_functional_bound": true,
+    "trace_normalized_bound": true,
+    "crossing_support_inclusion": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "The upper band interface is dimension-free. Common output-prefix control and the universal dimension lower bound remain open."
+}

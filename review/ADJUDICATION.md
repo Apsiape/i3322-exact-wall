@@ -111,7 +111,7 @@ theorem. The release decision remains **HOLD**.
 
 ## Operator-valued replacement update
 
-Sprints 1240--1259 implement the first option without restoring the claim.
+Sprints 1240--1265 implement the first option without restoring the claim.
 They retain the full Schmidt coefficient operator, replace arbitrary cells by
 the complete nested contact flag, and identify the response cocycle with an
 exact translation of regularization scale. An exact doppelganger kills
@@ -141,3 +141,12 @@ on the canonical joint carrier; it may not infer that fact from marginal
 rectangle data or reinstate the retracted localized-response premise.
 Until it is proved and independently reconstructed, the release decision and
 the maximal public statement are unchanged.
+
+The common-carrier subgate is now closed geometrically. An upper-tail contact
+bound covers every queried resolution, trace normalization controls the upper
+band interface, and one shared shifted grid gives identical numerical
+prefixes for `y,u,a(y),-u`. Source- and output-cell Lipschitz bounds prevent
+vertical sign cancellation. The remaining work is the explicit integration
+of the already certified response-rectangle errors and all grid/band bills
+into a final deficit inequality. The release decision remains unchanged until
+that inequality and a fresh independent reconstruction land.

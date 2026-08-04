@@ -93,6 +93,13 @@ the manuscript does not use "first" language.
   ordinary provenance-forgetting Wasserstein transport; and
 - an exact synchronized-prefix theorem recovering the vertical fibre bill,
   while leaving its I3322 operator-receipt comparison explicitly open.
+- an upper-tail contact integral and trace-normalized upper cap, eliminating
+  hidden lower-spectrum and rank dependence at the two vertical interfaces;
+- sign-coherence theorems on source and output cells, blocking cancellation
+  by unresolved multiplicity; and
+- a one-grid four-coordinate theorem supplying the same numerical prefixes
+  before and after both responses. The final integrated deficit ledger is
+  still open and no lower-bound claim is promoted.
 
 ## Claim boundary
 

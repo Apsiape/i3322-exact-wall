@@ -122,6 +122,12 @@ only after the independent verdict was assembled.
 - `certificate/production/foundational-sprint-1257/COMMON-CELL-QUARTER-WALL.md`
 - `certificate/production/foundational-sprint-1258/MONOTONE-FIBRE-TRANSPORT.md`
 - `certificate/production/foundational-sprint-1259/SYNCHRONIZED-PREFIX-RECOVERY.md`
+- `certificate/production/foundational-sprint-1260/UPPER-TAIL-COMMONIZATION.md`
+- `certificate/production/foundational-sprint-1261/SIGN-COHERENT-VERTICAL-CELLS.md`
+- `certificate/production/foundational-sprint-1262/TRACE-NORMALIZED-UPPER-CAP.md`
+- `certificate/production/foundational-sprint-1263/TWO-STAGE-COMMON-ADDRESS.md`
+- `certificate/production/foundational-sprint-1264/OUTPUT-CELL-SIGN-COHERENCE.md`
+- `certificate/production/foundational-sprint-1265/ONE-GRID-FOUR-COORDINATE-ADDRESS.md`
 - `certificate/independent/dimension-necessity/BLIND-DIMENSION-RECONSTRUCTION.md`
 - `certificate/independent/dimension-necessity/POST-BLIND-ACCEPTANCE.md`
 - `certificate/release/v13-claim-contract.json`
@@ -184,6 +190,12 @@ python certificate/production/foundational-sprint-1256/charged_common_cell_verif
 python certificate/production/foundational-sprint-1257/common_cell_quarter_wall_verify.py
 python certificate/production/foundational-sprint-1258/monotone_fibre_transport_verify.py
 python certificate/production/foundational-sprint-1259/synchronized_prefix_verify.py
+python certificate/production/foundational-sprint-1260/upper_tail_commonization_verify.py
+python certificate/production/foundational-sprint-1261/sign_coherent_cells_verify.py
+python certificate/production/foundational-sprint-1262/upper_cap_verify.py
+python certificate/production/foundational-sprint-1263/two_stage_address_verify.py
+python certificate/production/foundational-sprint-1264/output_cell_sign_verify.py
+python certificate/production/foundational-sprint-1265/one_grid_four_coordinate_verify.py
 python certificate/release/normalization_concordance_verify.py
 python certificate/release/dimension_gap_audit.py
 python certificate/independent/arithmetic_selftest.py

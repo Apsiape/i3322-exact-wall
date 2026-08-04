@@ -1,0 +1,13 @@
+{
+  "status": "exact-rational two-stage common-address guard",
+  "fixtures": 5000,
+  "shift_lattice_size": 53,
+  "minimum_additive_bill_slack": "72/1537",
+  "gates": {
+    "source_shift_selection": true,
+    "output_shift_after_restriction": true,
+    "additive_positive_measure_bill": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "Common source and output addresses are purchased by explicit first-moment bills. The operator prefix assembly remains open."
+}

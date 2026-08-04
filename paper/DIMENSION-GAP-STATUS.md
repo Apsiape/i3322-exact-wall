@@ -164,6 +164,17 @@ two I3322 operator response receipts control those synchronized prefixes on
 the canonical carrier. No universal deficit lower bound is claimed until that
 common-carrier receipt is proved and independently reconstructed.
 
+Sprints 1260--1265 subsequently close the geometric part of that receipt.
+The contact coupling is integrable on the complete upper tail needed by the
+flow, the event measure has a rank-independent exponential upper cap, and one
+shared shifted grid supplies identical original-order and response-output
+prefixes. The I3322 derivative box also makes the vertical translation sign
+coherent inside each retained output cell. Thus the remaining gate is no
+longer a choice of carrier or fibre: it is the explicit integration of the
+Sprint-1249 response errors and the charged source/output/band complements.
+No universal deficit lower bound is claimed before that ledger is completed
+and independently audited.
+
 ## Numerical illustration of the constructive sequence
 
 | local dimension | value | gap to `q_*` |

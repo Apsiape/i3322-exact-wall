@@ -1,0 +1,20 @@
+{
+  "status": "exact-rational sign-coherent vertical-cell guard",
+  "fixtures": 50000,
+  "safe_margin_m0": "7/8000",
+  "horizontal_threshold": "1/166400",
+  "vertical_gap": "7/54080",
+  "certified_cell_width": "1/1909440",
+  "cell_oscillation": "7/318240",
+  "minimum_wall_split_slack": "0",
+  "minimum_cancellation_slack": "0",
+  "gates": {
+    "horizontal_threshold": true,
+    "vertical_gap": true,
+    "cell_oscillation_below_gap": true,
+    "hostile_wall_split": true,
+    "large_event_cancellation_billed": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "Cellwise vertical cancellation is blocked after billing large horizontal events. Common output-prefix control remains open."
+}

@@ -101,6 +101,29 @@ The replacement campaign deliberately starts before packetization.
     atom spacing and multiplicity.  This isolates one remaining analytic
     receipt: control of synchronized Alice/Bob prefixes on the canonical
     carrier.
+19. **Upper-tail commonization (Sprint 1260).** The contact coupling is
+    integrable above resolution zero as well as below it. One shifted source
+    grid therefore covers every tail queried by the flow, with bill
+    `120 epsilon_0[exp(3K)+2]` before Cauchy--Schwarz.
+20. **Sign-coherent source cells (Sprint 1261).** Horizontally near-matched
+    events have a fixed vertical gap. The certified source width is small
+    enough that its sign cannot change inside a cell; horizontally large
+    events and their possible cancellation are explicitly billed.
+21. **Trace-normalized upper cap (Sprint 1262).** The event mass above `S` is
+    at most `exp(-S)`, independent of rank. This prices the upper band
+    interface, while logarithmic averaging owns the lower one.
+22. **Two-stage address (Sprint 1263).** Independent shifted source/output
+    grids buy both addresses with additive first-moment bills. This theorem is
+    valid but not by itself sufficient for the response triangle, which needs
+    one numerical prefix.
+23. **Output-cell sign coherence (Sprint 1264).** The Alice reversal has
+    inverse Lipschitz constant `20`; the vertical shift oscillates by at most
+    `574 delta` in a common output cell. The registered width therefore
+    prevents cross-source cancellation inside one output address.
+24. **One-grid correction (Sprint 1265).** One shared grid applied to
+    `y,u,a(y),-u` supplies the same prefix before and after both responses,
+    losing at most the sum of source-contact and horizontal-response first
+    moments divided by the grid width.
 
 ## What is and is not new
 
@@ -142,8 +165,9 @@ canonical Alice--Bob order--resolution coupling
 => controlled monotone-fibre transport.
 ```
 
-Sprint 1259 proves that this single prefix receipt, together with the existing
-horizontal monotone cost, would close the integrated quarter wall. It does not
-prove that the present marginal rectangle estimates supply that receipt.
-Until the common-carrier comparison is derived and independently replayed, the
-public theorem boundary is unchanged.
+Sprints 1260--1265 now construct the common carrier and remove cellwise
+cancellation. For every shared prefix the Alice and Bob response triangles
+have the same numerical middle set. What remains is an explicit finite-window
+integration of the Sprint-1249 response errors together with the source/output
+bad mass and the two vertical boundary bills. Until that ledger is derived and
+independently replayed, the public theorem boundary is unchanged.
