@@ -172,6 +172,14 @@ The replacement campaign deliberately starts before packetization.
     distinct axes.  This sprint also corrects the typing of Sprint 1270's much
     smaller reciprocal diagnostic: that number belongs to the local
     reversible atlas, not the globally normalized Bellman profile.
+32. **Log-free drift discriminant (Sprint 1273).** Positivity gives the exact
+    sign/root equivalence between the logarithmic drift and
+    `D(x)=F(x)F(P(x))-F(-x)F(-P(x))`.  Symbolic residuals vanish; 1601- and
+    3201-node reconstructions have zero sign disagreements and match all three
+    roots within `3.3e-9`.  An initial separate-interpolation implementation
+    missed the preregistered `1e-8` gate; continuous evaluation repaired the
+    instrument without moving the gate.  `D` is now the interval target, but
+    the numerical three-root census is still not a theorem.
 
 ## What is and is not new
 
@@ -232,4 +240,5 @@ permitted in a theorem before the interval certificate lands.  Sprint 1271
 also rules out certifying the roots from `uv-1` alone: the interval engine must
 carry the normalization defect `K` or evaluate the global Bellman profiles
 directly.  Sprint 1272 further rules out substituting the symmetrization-tariff
-zero set for the drift zero set.
+zero set for the drift zero set.  Sprint 1273 selects the latter route and
+removes logarithms from the remaining interval problem.

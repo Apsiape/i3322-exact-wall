@@ -1,0 +1,50 @@
+{
+  "status": "exact log-free drift discriminant and numerical ancestry guard",
+  "exact": {
+    "exponential_minus_one_residual": "0",
+    "characteristic_defect_residual": "0",
+    "all_exact_residuals_zero": true,
+    "positive_denominator_consequence": "sign(chi)=sign(exp(chi)-1)=sign(D); chi=0 iff D=0"
+  },
+  "coarse": {
+    "nodes": 1601,
+    "sign_comparison_points": 3601,
+    "sign_disagreements": 0,
+    "chi_roots": [
+      -0.8662673988850289,
+      -0.37695235293831686,
+      0.7998836280086901
+    ],
+    "D_roots": [
+      -0.866267398885046,
+      -0.3769523497362471,
+      0.7998836280105798
+    ],
+    "maximum_root_difference": 3.2020697759982397e-09,
+    "three_matched_roots": true
+  },
+  "fine": {
+    "nodes": 3201,
+    "sign_comparison_points": 3601,
+    "sign_disagreements": 0,
+    "chi_roots": [
+      -0.8660799605473982,
+      -0.37693687363944306,
+      0.799994921077448
+    ],
+    "D_roots": [
+      -0.8660799607393308,
+      -0.3769368733479468,
+      0.7999949210990365
+    ],
+    "maximum_root_difference": 2.914962715649949e-10,
+    "three_matched_roots": true
+  },
+  "gates": {
+    "exact_factorization": true,
+    "no_sign_disagreement": true,
+    "same_three_roots": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "The algebraic sign/root equivalence is exact. The three-root count is still numerical; the next gate is full-domain Arb exclusion."
+}

@@ -2032,15 +2032,39 @@
     },
     {
       "path": "certificate/production/foundational-sprint-1272/normalization_defect_geometry_scout.py",
-      "canonical_bytes": 6878,
+      "canonical_bytes": 7061,
       "hash_mode": "canonical-lf",
-      "sha256": "769450348127ae85706cfc0213c5bd02a07d14da24b280bea7fefac79e5332a5"
+      "sha256": "1b0f303b15228c3179335d94947911db854667059f675fd304e6945351b5d8bf"
     },
     {
       "path": "certificate/production/foundational-sprint-1272/PRE-REGISTRATION.md",
       "canonical_bytes": 1279,
       "hash_mode": "canonical-lf",
       "sha256": "19f507d25ae117ee768fd9ac9eedc1054e34b16bd7462cf4b25ddb99874e82ea"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1273/log-free-drift-guard.json",
+      "canonical_bytes": 1402,
+      "hash_mode": "canonical-lf",
+      "sha256": "3bd1aaf145aaecd290b4463e12e1d04aababdf25f75f4ce259746968bd049971"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1273/LOG-FREE-GLOBAL-DRIFT-DISCRIMINANT.md",
+      "canonical_bytes": 1716,
+      "hash_mode": "canonical-lf",
+      "sha256": "5f0dfc65fc46b505151f643882139c9918dff282dfa8bf3127ea39795dac3aa0"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1273/log_free_drift_verify.py",
+      "canonical_bytes": 4319,
+      "hash_mode": "canonical-lf",
+      "sha256": "904aa7c4fad02db89ad18cf5feec06406c3826d33d860ff616678934ada55725"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1273/PRE-REGISTRATION.md",
+      "canonical_bytes": 1167,
+      "hash_mode": "canonical-lf",
+      "sha256": "2de82cbe4956fc6f25997f0f86607ce0383a62161becbb0a6400abfb2816e6e3"
     },
     {
       "path": "certificate/release/build_release_manifest.py",
@@ -2092,9 +2116,9 @@
     },
     {
       "path": "certificate/release/verify_release.py",
-      "canonical_bytes": 18406,
+      "canonical_bytes": 18559,
       "hash_mode": "canonical-lf",
-      "sha256": "a4546ef09d5325cab3fde3281f7555f34c0330f9d6acac17cc21287e486d50ea"
+      "sha256": "71e362b864870c0a092dce7d45becef10d8346d5bc2c7404090f3414aae4c382"
     },
     {
       "path": "CITATION.cff",
@@ -2218,9 +2242,9 @@
     },
     {
       "path": "README.md",
-      "canonical_bytes": 10050,
+      "canonical_bytes": 10327,
       "hash_mode": "canonical-lf",
-      "sha256": "5cb9a95d119adcf2b5876843a5c84fdc8c9a8fe2cd1daa056898e991f2f99fe6"
+      "sha256": "a56de018134d029bafec2cd5cd95629723a00347d1404d3860d2fd9f5dbdba4d"
     },
     {
       "path": "requirements.txt",
@@ -2266,9 +2290,9 @@
     },
     {
       "path": "review/OPERATOR-FLAG-CAMPAIGN.md",
-      "canonical_bytes": 14021,
+      "canonical_bytes": 14703,
       "hash_mode": "canonical-lf",
-      "sha256": "22a367d8581f8287cbe3596a57c331732ff5f500244aef38b7beef4ace640646"
+      "sha256": "64c0499ad2479d6bedce44b3e0b22f46f0a88ddd584865fd4806b765061057ab"
     },
     {
       "path": "review/POST-ADJUDICATION-COUPLED-SECTOR.md",
@@ -2283,6 +2307,6 @@
       "sha256": "a405ef962afdfc120b5c3f2901ca58e95e2ab3963e642fa73dc2022f2d280cfa"
     }
   ],
-  "file_count": 380,
+  "file_count": 384,
   "scope": "Custody manifest for selected published files. Analytic dependency closure is checked separately by verify_release.py and is not inferred from file enumeration alone."
 }

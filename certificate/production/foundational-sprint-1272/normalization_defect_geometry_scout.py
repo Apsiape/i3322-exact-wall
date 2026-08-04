@@ -94,6 +94,7 @@ def reconstruct(node_count: int) -> dict:
     H = np.log(fs/fminus)
     Hp = np.log(Fp/Fmp)
     chi = H+Hp
+    D = fs*Fp-fminus*Fmp
 
     roots = []
     for i in range(len(sample)-1):
@@ -114,6 +115,10 @@ def reconstruct(node_count: int) -> dict:
         "final_delta": delta,
         "sample": sample,
         "K": K,
+        "chi": chi,
+        "D": D,
+        "F_callable": F,
+        "P_callable": predecessor,
         "K_minimum": float(np.min(K)),
         "K_maximum": float(np.max(K)),
         "K_at_zero": float(K[len(K)//2]),
@@ -143,7 +148,10 @@ def reconstruct(node_count: int) -> dict:
 
 
 def public(row: dict) -> dict:
-    return {key: value for key, value in row.items() if key not in {"sample", "K"}}
+    return {
+        key: value for key, value in row.items()
+        if key not in {"sample", "K", "chi", "D", "F_callable", "P_callable"}
+    }
 
 
 def main() -> None:

@@ -91,7 +91,11 @@ algebra identifies `K` as the tariff in both geometric symmetrization and the
 reflected Bellman comparison.  A two-resolution hostile scout then separates
 that tariff from the cocycle drift: its zeros do not coincide with the two
 outer drift walls.  Thus the interval campaign must carry both structures;
-neither is a reparameterization of the other. The
+neither is a reparameterization of the other.  The resulting proof target is
+now log-free: the drift has the exact sign and zeros of
+`D(x)=F(x)F(P(x))-F(-x)F(-P(x))`.  Two independent numerical resolutions
+recover the same three roots with no sign disagreement, but the full-domain
+Arb zero-count certificate remains open. The
 conditional constant ledger is retained as an open proof
 campaign, but this repository
 does **not** presently claim
