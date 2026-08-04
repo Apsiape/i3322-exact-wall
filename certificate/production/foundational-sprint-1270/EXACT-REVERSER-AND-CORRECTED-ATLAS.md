@@ -42,3 +42,8 @@ the registered boxes.
 The reverser identities are exact.  The reconstructed root count remains a
 floating-point cross-check; Sprint 1268's interval zero-count gate is still
 open.
+
+The atlas also records, but does not gate on, the reciprocal-normalization
+diagnostic `F(x)F(-x)-b(x)^2`.  Sprint 1271 uses its nonzero value to reject
+the inference that the exact characteristic reverser automatically preserves
+the globally assembled Bellman amplitude normalization.

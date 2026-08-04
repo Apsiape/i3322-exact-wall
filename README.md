@@ -81,7 +81,12 @@ failure is retained as a negative receipt.  The exact reverser
 `R(x,y,u)=(-y,-x,1/v)` now repairs the ancestry: all three symbolic reverser
 residuals vanish, and the corrected 18-chart numerical atlas independently
 recovers the same three roots on the symmetric active carrier.  The root count
-is still not claimed until a full-domain interval certificate lands. The
+is still not claimed until a full-domain interval certificate lands.  A
+hostile normalization audit then killed the tempting shortcut
+`F(x)F(-x)=b(x)^2`: the exact characteristic reverser does not transport the
+global Bellman normalization for free.  The corrected exact accounting uses
+the positive defect `K(x)=F(x)F(-x)/b(x)^2`, so the drift contains an explicit
+branch-gluing term rather than being the raw reflection residual. The
 conditional constant ledger is retained as an open proof
 campaign, but this repository
 does **not** presently claim

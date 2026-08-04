@@ -155,6 +155,14 @@ The replacement campaign deliberately starts before packetization.
     the same three roots to the registered tolerance.  The numerical atlas is
     only an ancestry check.  The inactive outer sliver is separately typed by
     Sprint 1217, and interval root exclusion remains open.
+30. **Normalization-defect audit (Sprint 1271).** The exact reverser suggested
+    `F(x)F(-x)=b(x)^2`, which would collapse the balanced response weights and
+    make the drift a raw reflection-section residual.  The preregistered atlas
+    guard rejects that identification: chart overlaps agree to `1.2e-15`, but
+    the reciprocal residual reaches `8.1e-5` at the origin.  Defining
+    `K(x)=F(x)F(-x)/b(x)^2` gives the corrected exact law
+    `chi=2 log(uv)-log K(x)-log K(P(x))`.  Thus the missing datum is a
+    branch-gluing normalization field, not another root of the local map.
 
 ## What is and is not new
 
@@ -211,4 +219,7 @@ intrinsic drift chambers by two independent numerical constructions, while
 the second construction's reversibility is exact.  Certifying exactly three
 roots and their horizontal separation would replace the artificial fine grid
 by three fixed response prefixes.  No use of the numerical zero census is
-permitted in a theorem before the interval certificate lands.
+permitted in a theorem before the interval certificate lands.  Sprint 1271
+also rules out certifying the roots from `uv-1` alone: the interval engine must
+carry the normalization defect `K` or evaluate the global Bellman profiles
+directly.

@@ -124,6 +124,9 @@ def atlas() -> dict:
         fs.append(np.median(fv)); ps.append(np.median(pv))
         if len(fv)>1: spreads.append(max(fv)-min(fv))
     fs=np.asarray(fs); ps=np.asarray(ps)
+    reciprocal_residual=float(np.max(np.abs(fs*fs[::-1]-(1-sample*sample)/4)))
+    reciprocal_ratio=fs*fs[::-1]/((1-sample*sample)/4)
+    reciprocal_worst=int(np.argmax(np.abs(fs*fs[::-1]-(1-sample*sample)/4)))
     F=PchipInterpolator(sample,fs); P=PchipInterpolator(sample,ps)
     order=np.argsort(ps); px=ps[order]; py=sample[order]
     keep=np.concatenate(([True],np.diff(px)>1e-12)); Pinv=PchipInterpolator(px[keep],py[keep])
@@ -140,6 +143,11 @@ def atlas() -> dict:
         "symmetric_active_carrier": [-active_radius, active_radius],
         "maximum_F_overlap_spread": float(max(spreads)),
         "predecessor_min_increment": float(np.min(np.diff(ps))),
+        "maximum_reciprocal_normalization_residual": reciprocal_residual,
+        "reciprocal_normalization_ratio_range": [
+            float(np.min(reciprocal_ratio)), float(np.max(reciprocal_ratio))
+        ],
+        "reciprocal_worst_coordinate": float(sample[reciprocal_worst]),
         "roots": roots,
         "maximum_root_difference": error,
         "horizontal_separations": sep,

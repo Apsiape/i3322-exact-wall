@@ -1972,27 +1972,51 @@
     },
     {
       "path": "certificate/production/foundational-sprint-1270/exact-reverser-and-atlas-guard.json",
-      "canonical_bytes": 1021,
+      "canonical_bytes": 1237,
       "hash_mode": "canonical-lf",
-      "sha256": "ce624decdb96079fcf8dd10c7b898cab36fd03ea1f414948e8c6656da77c6ad3"
+      "sha256": "e2210968a5da0166bdb7341ee4b3f518b60d40e99d3a0144bcfb3e0dd4bc1805"
     },
     {
       "path": "certificate/production/foundational-sprint-1270/EXACT-REVERSER-AND-CORRECTED-ATLAS.md",
-      "canonical_bytes": 1500,
+      "canonical_bytes": 1786,
       "hash_mode": "canonical-lf",
-      "sha256": "9e40deb9659c41f5c2d7c1a059c9919e36994c4e8d8d79d11640ee3e37bda586"
+      "sha256": "23f9f1496275b9ae4d081219175a5edc18de478ee674e7094079ddf1aeee5e30"
     },
     {
       "path": "certificate/production/foundational-sprint-1270/exact_reverser_and_atlas_verify.py",
-      "canonical_bytes": 6833,
+      "canonical_bytes": 7328,
       "hash_mode": "canonical-lf",
-      "sha256": "da3116bd69aacf0607423d0da1cad2d5f2d76c0d4253b370d68709a6bbaa8d93"
+      "sha256": "b00579aabea2bbcf2eb460201bbd0494124bd4a2bce7dc1823537c00cca45d3e"
     },
     {
       "path": "certificate/production/foundational-sprint-1270/PRE-REGISTRATION.md",
       "canonical_bytes": 861,
       "hash_mode": "canonical-lf",
       "sha256": "e81724b0d2914c30c21137a2495011800a2f0209fc40b4c0e7cc9b694306bdc4"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1271/PRE-REGISTRATION.md",
+      "canonical_bytes": 1507,
+      "hash_mode": "canonical-lf",
+      "sha256": "456d9610629c9ea4018011bc43bd352ecd712c998a66cfa6cf1837a455910856"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1271/RECIPROCAL-BELLMAN-AND-DRIFT-FACTORIZATION.md",
+      "canonical_bytes": 3135,
+      "hash_mode": "canonical-lf",
+      "sha256": "c401e9bbe43473c216d9880ac095dc00b6c8e9279fa3fa47d597d86b68b4d290"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1271/reciprocal-bellman-negative.json",
+      "canonical_bytes": 2090,
+      "hash_mode": "canonical-lf",
+      "sha256": "508da0d7bfcc4ddef9d6e23e4608b2b5d990e7a83fe3e6d7b4d716194d4b3c4e"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1271/reciprocal_bellman_verify.py",
+      "canonical_bytes": 6270,
+      "hash_mode": "canonical-lf",
+      "sha256": "1628b0e0beb51d0d7025cb934c4f75dec9ec229b0993ceac0567ad206de204f8"
     },
     {
       "path": "certificate/release/build_release_manifest.py",
@@ -2044,9 +2068,9 @@
     },
     {
       "path": "certificate/release/verify_release.py",
-      "canonical_bytes": 17573,
+      "canonical_bytes": 17737,
       "hash_mode": "canonical-lf",
-      "sha256": "2a5252e6ffda35bb1029732a92e21c6eb19d8ebf183a3c6caeed56635a6635f2"
+      "sha256": "ec0ad4b6ef92762a0aaedad4ad630ea7d96518e0aeb949b01195649b950e11c0"
     },
     {
       "path": "CITATION.cff",
@@ -2170,9 +2194,9 @@
     },
     {
       "path": "README.md",
-      "canonical_bytes": 9329,
+      "canonical_bytes": 9692,
       "hash_mode": "canonical-lf",
-      "sha256": "2f509febad665622df26db76ff35881a8b5b8ff64d3509f6c2d14a925b7d0686"
+      "sha256": "c386e056a63bfaae609d073c80138ed6afc367cc66031afcbdf95ca708b0fffe"
     },
     {
       "path": "requirements.txt",
@@ -2218,9 +2242,9 @@
     },
     {
       "path": "review/OPERATOR-FLAG-CAMPAIGN.md",
-      "canonical_bytes": 12479,
+      "canonical_bytes": 13245,
       "hash_mode": "canonical-lf",
-      "sha256": "755e2ac9d07f0066a00a130abb934de67d52f68f596643cec4c7893d9c263474"
+      "sha256": "47ab87ab627de66b345a32f30822500bb4bd677736e1e38c29f723812f0e01b0"
     },
     {
       "path": "review/POST-ADJUDICATION-COUPLED-SECTOR.md",
@@ -2235,6 +2259,6 @@
       "sha256": "a405ef962afdfc120b5c3f2901ca58e95e2ab3963e642fa73dc2022f2d280cfa"
     }
   ],
-  "file_count": 372,
+  "file_count": 376,
   "scope": "Custody manifest for selected published files. Analytic dependency closure is checked separately by verify_release.py and is not inferred from file enumeration alone."
 }

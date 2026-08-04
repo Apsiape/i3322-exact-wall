@@ -14,6 +14,12 @@
     ],
     "maximum_F_overlap_spread": 1.1657341758564144e-15,
     "predecessor_min_increment": 4.2035058511191714e-05,
+    "maximum_reciprocal_normalization_residual": 8.116236310062863e-05,
+    "reciprocal_normalization_ratio_range": [
+      0.9999999999919168,
+      1.0003246494524025
+    ],
+    "reciprocal_worst_coordinate": 0.0,
     "roots": [
       -0.8643911578940383,
       -0.37698914694690155,

@@ -1,0 +1,53 @@
+{
+  "status": "reciprocal candidate rejected; exact defect factorization",
+  "exact": {
+    "residuals": {
+      "reciprocal_x": "0",
+      "reciprocal_z": "0",
+      "p_x_minus_F_minus_x": "0",
+      "p_minus_x_minus_F_x": "0",
+      "balanced_A_minus_F_minus_x": "0",
+      "balanced_B_minus_F_x": "0",
+      "H_x_exponential_residual": "0",
+      "H_z_exponential_residual": "0",
+      "chi_exponential_residual": "0"
+    },
+    "all_symbolic_residuals_zero": true,
+    "positive_log_consequence": "chi=2*log(u*v), hence chi=0 iff u*v=1",
+    "corrected_residuals": {
+      "K_x_definition": "0",
+      "K_z_definition": "0",
+      "p_x_minus_F_minus_x_over_K": "0",
+      "balanced_A_minus_F_minus_x_over_sqrt_K": "0",
+      "balanced_B_minus_F_x_over_sqrt_K": "0",
+      "H_x_exponential_with_K": "0",
+      "H_z_exponential_with_K": "0",
+      "chi_exponential_with_K": "0"
+    },
+    "all_corrected_residuals_zero": true,
+    "corrected_positive_log_consequence": "chi=2*log(u*v)-log(K_x)-log(K_z); chi=0 iff (u*v)^2=K_x*K_z"
+  },
+  "ancestry": {
+    "central_branch_uses_exact_reflection": true,
+    "boundary_wing_and_reflection_complete": true,
+    "global_bellman_graph_assembled": true,
+    "same_normalized_F_on_reflected_branch": false
+  },
+  "numerical": {
+    "maximum_reciprocal_normalization_residual": 8.116236310062863e-05,
+    "registered_atlas_tolerance": 1e-12,
+    "reciprocity_candidate_rejected": true,
+    "reciprocal_normalization_ratio_range": [
+      0.9999999999919168,
+      1.0003246494524025
+    ]
+  },
+  "gates": {
+    "conditional_local_symbolics": true,
+    "corrected_defect_factorization": true,
+    "certified_graph_ancestry_loaded": true,
+    "global_normalization_identification_rejected": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "The characteristic reverser is exact, but it does not identify the local reflected amplitude with the globally normalized Bellman F. Therefore neither reciprocal normalization nor chi=2 log(uv) is promoted. With K(x)=F(x)F(-x)/b(x)^2, the corrected exact law is chi=2 log(uv)-log K(x)-log K(P(x))."
+}
