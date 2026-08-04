@@ -115,6 +115,8 @@ REPLAY = [
     f"{PROD}/foundational-sprint-1287/bellman_operator_weld_verify.py",
     f"{PROD}/foundational-sprint-1288/build_finite_strategy_candidate.py",
     f"{PROD}/foundational-sprint-1288/exact_finite_strategy_lower_bound.py",
+    f"{PROD}/foundational-sprint-1289/bellman_hellinger_flow_verify.py",
+    f"{PROD}/foundational-sprint-1290/exact_fixed_witness_threshold.py",
     f"{PROD}/foundational-sprint-1231/dimension_bound_algebra_verify.py",
     f"{PROD}/foundational-sprint-1233/master_ledger_verify.py",
     f"{REL}/normalization_concordance_verify.py",
@@ -242,6 +244,8 @@ def check_semantics() -> None:
         f"{PROD}/foundational-sprint-1287/exact-rational-bellman-subsolution.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1287/bellman-operator-weld.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1288/exact-finite-strategy-lower-bound.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1289/bellman-hellinger-flow.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1290/exact-fixed-witness-threshold.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1238/coupled-sector-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1239/terminal-fork-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1232/inactive-quadratic-interval.json": "all_gates_pass",
@@ -338,6 +342,12 @@ def check_semantics() -> None:
     )
     finite_lower = load(
         f"{PROD}/foundational-sprint-1288/exact-finite-strategy-lower-bound.json"
+    )
+    flow_duality = load(
+        f"{PROD}/foundational-sprint-1289/bellman-hellinger-flow.json"
+    )
+    sharpened_upper = load(
+        f"{PROD}/foundational-sprint-1290/exact-fixed-witness-threshold.json"
     )
     independent_amplitude = load(
         f"{IND}/amplitude-gap/amplitude-gap-mpmath.json"
@@ -463,6 +473,17 @@ def check_semantics() -> None:
     assert finite_lower["rigorous_upper"] == "125438192257/500000000000"
     assert finite_lower["rigorous_window_width_decimal"] < 1.189e-6
     assert finite_lower["gates"]["all_square_root_floors_certified"] is True
+    assert flow_duality["all_gates_pass"] is True
+    assert flow_duality["path_embedding"]["identity_exact"] is True
+    assert flow_duality["contact_without_balance"][
+        "contact_does_not_force_balance"
+    ] is True
+    assert sharpened_upper["all_gates_pass"] is True
+    assert sharpened_upper["q_pass"] == "50175098917669/200000000000000"
+    assert sharpened_upper["q_fail_predecessor"] == (
+        "31359436823543/125000000000000"
+    )
+    assert sharpened_upper["rigorous_window_width_decimal"] < 2.988e-7
     assert independent_amplitude["all_gates_pass"] is True
     assert independent_amplitude["imports_production_engine"] is False
     assert independent_amplitude["largest_y_derivative_upper"] < -285
@@ -507,6 +528,9 @@ def main() -> None:
     finite_lower = load(
         f"{PROD}/foundational-sprint-1288/exact-finite-strategy-lower-bound.json"
     )
+    sharpened_upper = load(
+        f"{PROD}/foundational-sprint-1290/exact-fixed-witness-threshold.json"
+    )
     if args.full:
         replay()
         normalize_generated_receipts()
@@ -523,10 +547,10 @@ def main() -> None:
         "constructive_dimension_rate_checked": True,
         "conditional_lower_bound_ledger_replayed_but_not_promoted": True,
         "headline_theorem_certificate_closed": False,
-        "rigorous_commuting_upper_bound": "125438192257/500000000000",
+        "rigorous_commuting_upper_bound": sharpened_upper["q_pass"],
         "rigorous_upper_bound_certificate_closed": True,
         "rigorous_tensor_lower_bound": finite_lower["certified_value_lower"],
-        "rigorous_value_window_width": finite_lower["rigorous_window_width"],
+        "rigorous_value_window_width": sharpened_upper["rigorous_window_width"],
         "rigorous_two_sided_window_certificate_closed": True,
         "exact_optimum_identified": False,
         "load_bearing_gap": (

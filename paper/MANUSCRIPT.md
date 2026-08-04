@@ -6,10 +6,10 @@
 > See `CERTIFICATE-STATUS-ALERT.md`. Until that normalization gap is repaired,
 > the headline upper bound and its nonattainment/nonclosure corollaries are not
 > certified by this repository. Sprint 1287 separately proves the exact
-> rational upper bound `omega_c <= 0.250876384514`; it does not restore the
+> rational upper bound `omega_c <= 0.250875494588345`; it does not restore the
 > historical equality or those corollaries. Sprint 1288 adds a direct finite
 > lower strategy, giving the unconditional window
-> `0.25087519579012 < omega_tensor <= omega_c <= 0.250876384514`.
+> `0.25087519579012 < omega_tensor <= omega_c <= 0.250875494588345`.
 
 **Seth Douglas**
 

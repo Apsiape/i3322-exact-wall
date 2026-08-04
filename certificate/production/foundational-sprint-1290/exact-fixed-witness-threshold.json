@@ -1,0 +1,64 @@
+{
+  "status": "exact fixed-witness Bellman threshold on the 10^-15 grid",
+  "q_pass": "50175098917669/200000000000000",
+  "q_pass_decimal": 0.250875494588345,
+  "q_fail_predecessor": "31359436823543/125000000000000",
+  "q_fail_predecessor_decimal": 0.250875494588344,
+  "threshold_resolution": "1/1000000000000000",
+  "exact_threshold_evaluations": 34,
+  "piecewise_linear_knots": 6401,
+  "upper_envelope_lines_retained": 5140,
+  "common_intervals_checked_per_evaluation": 10902,
+  "pass_minimum_numerator": "13446446156219295849191700843087654021074253/47182574868209400939941406250000000000000000000000000000000",
+  "fail_minimum_numerator": "-295947400710992978204464438637500570770530689/566190898418512811279296875000000000000000000000000000000000",
+  "pass_worst_receipt": {
+    "interval": [
+      "-1743774414061/1953125000000",
+      "-13945521874541/15625000000000"
+    ],
+    "F_segment": 343,
+    "envelope_owner": 29,
+    "minimizer": "-215643612651548905222465610557/241574783325232132812500000000",
+    "quadratic_coefficients": [
+      "92764716796889139/25000000000000000",
+      "646930837954646715667396831671/97656250000000000000000000000",
+      "461990282634479100978271632086553/156250000000000000000000000000000"
+    ],
+    "minimum_numerator": "13446446156219295849191700843087654021074253/47182574868209400939941406250000000000000000000000000000000"
+  },
+  "fail_worst_receipt": {
+    "interval": [
+      "-1743774414061/1953125000000",
+      "-13945521874541/15625000000000"
+    ],
+    "F_segment": 343,
+    "envelope_owner": 29,
+    "minimizer": "-1293861675909292352965653038117/1449448699951392796875000000000",
+    "quadratic_coefficients": [
+      "92764716796889139/25000000000000000",
+      "1293861675909292352965653038117/195312500000000000000000000000",
+      "1847961130537912818742242721621237/625000000000000000000000000000000"
+    ],
+    "minimum_numerator": "-295947400710992978204464438637500570770530689/566190898418512811279296875000000000000000000000000000000000"
+  },
+  "finite_tensor_lower": "12543759789506110612298899972337267226579686749153092291074262435566245661191728498315730882404009/49999999999999997269998467282792711398000000000000000000000000000000000000000000000000000000000000",
+  "rigorous_window_width": "14939911138702810615280293440178487671650303217708925737564433754338808271501684269117595991/49999999999999997269998467282792711398000000000000000000000000000000000000000000000000000000000000",
+  "rigorous_window_width_decimal": 2.9879822277405625e-07,
+  "improvement_over_sprint_1287_upper": "177985131/200000000000000",
+  "gates": {
+    "fixed_candidate_hash_matches": true,
+    "all_fixed_witness_knots_positive": true,
+    "registered_lower_grid_point_fails": true,
+    "returned_grid_point_passes": true,
+    "adjacent_grid_points": true,
+    "upper_endpoint_below_point_2508756": true,
+    "historical_source_region_not_certified": true,
+    "rigorous_window_below_four_e_minus_seven": true,
+    "pass_minimum_nonnegative": true,
+    "fail_minimum_negative": true
+  },
+  "all_gates_pass": true,
+  "theorem": "The fixed rational Sprint 1287 witness certifies the displayed commuting-projective I3322 upper bound.",
+  "proof_runtime": "Python standard library only; all threshold decisions, envelope breakpoints, and quadratic minima use exact Fraction arithmetic.",
+  "claim_boundary": "This is sharp only on the registered 10^-15 grid for this fixed piecewise-linear witness; it does not identify the exact optimum."
+}

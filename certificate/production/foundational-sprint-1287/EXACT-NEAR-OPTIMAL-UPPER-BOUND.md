@@ -1,5 +1,10 @@
 # Exact rational I3322 upper bound near the historical candidate
 
+> **Superseded numerical endpoint.** Sprint 1290 keeps this witness and this
+> operator weld fixed and sharpens its exact certified endpoint to
+> `0.250875494588345`. The theorem below remains valid but is no longer the
+> strongest bound at repository HEAD.
+
 Status: **rigorous theorem; exact rational witness and exact operator weld**
 
 ## Theorem

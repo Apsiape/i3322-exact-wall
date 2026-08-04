@@ -14,19 +14,20 @@
 > exclusion. Frozen DOI releases are preserved as historical records while the
 > proof is repaired.
 
-**Rigorous partial repair at repository HEAD.** Sprint 1287 now proves, from a
+**Rigorous partial repair at repository HEAD.** Sprints 1287 and 1290 prove, from a
 committed 6,401-knot rational Bellman subsolution and an exact abstract
 operator weld,
 
 ```text
-omega_tensor <= omega_commuting <= 0.250876384514
+omega_tensor <= omega_commuting <= 0.250875494588345
 ```
 
-with the upper endpoint interpreted as an exact decimal. This is about
-`1.000000023e-6` above the historical wall candidate. It is an unconditional
+with the upper endpoint interpreted as an exact decimal. Sprint 1290 obtains
+this sharper value by exactly optimizing the already committed witness on a
+`10^-15` grid. It is an unconditional
 upper bound, but it does not restore exact equality, nonattainment, spatial
 separation, or nonclosure. See
-[`EXACT-NEAR-OPTIMAL-UPPER-BOUND.md`](certificate/production/foundational-sprint-1287/EXACT-NEAR-OPTIMAL-UPPER-BOUND.md).
+[`SHARPENED-RIGOROUS-I3322-WINDOW.md`](certificate/production/foundational-sprint-1290/SHARPENED-RIGOROUS-I3322-WINDOW.md).
 
 Sprint 1288 independently installs one explicit 127-dimensional strategy and
 certifies its value from below using rational square-root floors. Together the
@@ -34,11 +35,11 @@ two new certificates give the unconditional window
 
 ```text
 0.25087519579012 < omega_tensor
-                   <= omega_commuting <= 0.250876384514,
+                   <= omega_commuting <= 0.250875494588345,
 ```
 
-of width below `1.189e-6`. See
-[`RIGOROUS-I3322-WINDOW.md`](certificate/production/foundational-sprint-1288/RIGOROUS-I3322-WINDOW.md).
+of width below `2.988e-7`. See
+[`SHARPENED-RIGOROUS-I3322-WINDOW.md`](certificate/production/foundational-sprint-1290/SHARPENED-RIGOROUS-I3322-WINDOW.md).
 
 The historical release claimed a computer-assisted proof that the tensor-product and
 commuting-operator suprema of the canonical three-setting, two-outcome

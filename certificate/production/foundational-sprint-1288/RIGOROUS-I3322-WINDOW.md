@@ -1,5 +1,9 @@
 # A rigorous unconditional I3322 value window
 
+> **Superseded window.** Sprint 1290 sharpens the upper endpoint for the same
+> fixed rational witness, reducing the rigorous width to below `2.988e-7`.
+> The lower certificate in this document remains current.
+
 Status: **exact finite lower strategy plus exact commuting upper certificate**
 
 ## Theorem

@@ -10,12 +10,15 @@ This file separates analytic claims from computer-assisted inputs.
 | Bellman-to-I3322 implication for arbitrary positive subsolutions | Sprint 1287 | exact symbolic reflection, product, determinant, and cancellation weld |
 | `omega_tensor <= omega_commuting <= q_hat` | Sprint 1287 | preceding two rows plus commuting joint functional calculus |
 | Explicit 127-dimensional tensor lower strategy | Sprint 1288 | exact rational profile/state plus certified rational square-root floors |
-| Unconditional two-sided window of width below `1.189e-6` | Sprints 1287/1288 | exact lower quotient and exact commuting upper bound |
+| Bellman--Hellinger flow duality and exact path embedding | Sprint 1289 | finite convex duality proof plus exact symbolic/rational guards |
+| Sharp `10^-15`-grid threshold for the fixed rational witness | Sprint 1290 | standard-library exact binary search over all 10,902 common intervals |
+| Unconditional two-sided window of width below `2.988e-7` | Sprints 1288/1290 | exact lower quotient and exact commuting upper bound |
 | Independent finite-strategy reconstruction | independent lane | direct 160-digit `mpmath.iv` evaluation, no production engine import |
 
 The candidate builder is not a theorem owner. It merely emits the committed
 rational knot list. `exact_rational_bellman_subsolution.py` and
-`bellman_operator_weld_verify.py` own the proof. This upper bound does not
+`bellman_operator_weld_verify.py` own the generic proof; Sprint 1290 tightens
+the admissible rational endpoint for that same fixed witness. This upper bound does not
 restore the historical equality/nonattainment chain below.
 
 ## Main analytic chain
