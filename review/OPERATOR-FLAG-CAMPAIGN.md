@@ -163,6 +163,15 @@ The replacement campaign deliberately starts before packetization.
     `K(x)=F(x)F(-x)/b(x)^2` gives the corrected exact law
     `chi=2 log(uv)-log K(x)-log K(P(x))`.  Thus the missing datum is a
     branch-gluing normalization field, not another root of the local map.
+31. **Defect-geometry separation (Sprint 1272).** Exact algebra writes the
+    symmetrization and reflected-Bellman tariffs directly in terms of `K`.
+    Two-resolution min-plus reconstruction passes only two of five registered
+    predictions.  The global sampled `K` reaches about `1.00733` at the outer
+    boundary rather than peaking at zero, and its tariff is nonzero at both
+    outer drift walls.  Normalization gluing and cocycle drift are therefore
+    distinct axes.  This sprint also corrects the typing of Sprint 1270's much
+    smaller reciprocal diagnostic: that number belongs to the local
+    reversible atlas, not the globally normalized Bellman profile.
 
 ## What is and is not new
 
@@ -222,4 +231,5 @@ by three fixed response prefixes.  No use of the numerical zero census is
 permitted in a theorem before the interval certificate lands.  Sprint 1271
 also rules out certifying the roots from `uv-1` alone: the interval engine must
 carry the normalization defect `K` or evaluate the global Bellman profiles
-directly.
+directly.  Sprint 1272 further rules out substituting the symmetrization-tariff
+zero set for the drift zero set.

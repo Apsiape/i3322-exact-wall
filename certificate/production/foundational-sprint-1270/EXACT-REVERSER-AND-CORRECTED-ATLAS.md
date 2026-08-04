@@ -46,4 +46,6 @@ open.
 The atlas also records, but does not gate on, the reciprocal-normalization
 diagnostic `F(x)F(-x)-b(x)^2`.  Sprint 1271 uses its nonzero value to reject
 the inference that the exact characteristic reverser automatically preserves
-the globally assembled Bellman amplitude normalization.
+the globally assembled Bellman amplitude normalization.  Sprint 1272 further
+clarifies that this atlas diagnostic is local: it must not be quoted as the
+global Bellman normalization-defect profile.

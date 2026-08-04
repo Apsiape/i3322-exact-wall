@@ -95,6 +95,7 @@ REPLAY = [
     f"{PROD}/foundational-sprint-1269/shooting_atlas_drift_reconstruction.py",
     f"{PROD}/foundational-sprint-1270/exact_reverser_and_atlas_verify.py",
     f"{PROD}/foundational-sprint-1271/reciprocal_bellman_verify.py",
+    f"{PROD}/foundational-sprint-1272/normalization_defect_geometry_scout.py",
     f"{PROD}/foundational-sprint-1231/dimension_bound_algebra_verify.py",
     f"{PROD}/foundational-sprint-1233/master_ledger_verify.py",
     f"{REL}/normalization_concordance_verify.py",
@@ -253,12 +254,21 @@ def check_semantics() -> None:
     rejected_atlas = load(
         f"{PROD}/foundational-sprint-1269/shooting-atlas-drift-reconstruction.json"
     )
+    normalization_scout = load(
+        f"{PROD}/foundational-sprint-1272/normalization-defect-geometry-scout.json"
+    )
     assert coupled["terminal_near_entry_closed"] is False
     assert coupled["universal_dimension_lower_bound_proved"] is False
     assert terminal["scalar_terminal_commonization_proved"] is False
     assert terminal["shared_factor_forms_exact"] is True
     assert rejected_atlas["naive_atlas_rejected"] is True
     assert rejected_atlas["failure_matches_known_wrong_chart"] is True
+    assert normalization_scout["exact"]["all_exact_residuals_zero"] is True
+    assert normalization_scout["predictions_passed"] == 2
+    assert normalization_scout["predictions_total"] == 5
+    assert normalization_scout["predictions"]["unique_numerical_maximum_at_zero"] is False
+    assert normalization_scout["predictions"]["registered_half_q_excess_bound"] is False
+    assert normalization_scout["predictions"]["tariff_zeros_coincide_with_drift_roots"] is False
 
 
 def replay() -> None:

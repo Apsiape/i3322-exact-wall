@@ -1978,9 +1978,9 @@
     },
     {
       "path": "certificate/production/foundational-sprint-1270/EXACT-REVERSER-AND-CORRECTED-ATLAS.md",
-      "canonical_bytes": 1786,
+      "canonical_bytes": 1928,
       "hash_mode": "canonical-lf",
-      "sha256": "23f9f1496275b9ae4d081219175a5edc18de478ee674e7094079ddf1aeee5e30"
+      "sha256": "89b22e316160ce4e9383bd145bf9bd83fb689d00d5aaa67a5dbfbbb49d10ebc1"
     },
     {
       "path": "certificate/production/foundational-sprint-1270/exact_reverser_and_atlas_verify.py",
@@ -2002,9 +2002,9 @@
     },
     {
       "path": "certificate/production/foundational-sprint-1271/RECIPROCAL-BELLMAN-AND-DRIFT-FACTORIZATION.md",
-      "canonical_bytes": 3135,
+      "canonical_bytes": 3314,
       "hash_mode": "canonical-lf",
-      "sha256": "c401e9bbe43473c216d9880ac095dc00b6c8e9279fa3fa47d597d86b68b4d290"
+      "sha256": "97a52966d5b40d0c42a9e12f95bfd811a163d078865c56ee7e49c318cb61d0d6"
     },
     {
       "path": "certificate/production/foundational-sprint-1271/reciprocal-bellman-negative.json",
@@ -2017,6 +2017,30 @@
       "canonical_bytes": 6270,
       "hash_mode": "canonical-lf",
       "sha256": "1628b0e0beb51d0d7025cb934c4f75dec9ec229b0993ceac0567ad206de204f8"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1272/normalization-defect-geometry-scout.json",
+      "canonical_bytes": 3627,
+      "hash_mode": "canonical-lf",
+      "sha256": "dab7837ef8432807b8455cfe5877739a9d9c5b76da8bbf3d766e667360dc338a"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1272/NORMALIZATION-DEFECT-GEOMETRY.md",
+      "canonical_bytes": 2823,
+      "hash_mode": "canonical-lf",
+      "sha256": "d136cd4148018d04aa8cd9508637a4958997d603659bb4f8a1ccc4b3ea8756e7"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1272/normalization_defect_geometry_scout.py",
+      "canonical_bytes": 6878,
+      "hash_mode": "canonical-lf",
+      "sha256": "769450348127ae85706cfc0213c5bd02a07d14da24b280bea7fefac79e5332a5"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1272/PRE-REGISTRATION.md",
+      "canonical_bytes": 1279,
+      "hash_mode": "canonical-lf",
+      "sha256": "19f507d25ae117ee768fd9ac9eedc1054e34b16bd7462cf4b25ddb99874e82ea"
     },
     {
       "path": "certificate/release/build_release_manifest.py",
@@ -2068,9 +2092,9 @@
     },
     {
       "path": "certificate/release/verify_release.py",
-      "canonical_bytes": 17737,
+      "canonical_bytes": 18406,
       "hash_mode": "canonical-lf",
-      "sha256": "ec0ad4b6ef92762a0aaedad4ad630ea7d96518e0aeb949b01195649b950e11c0"
+      "sha256": "a4546ef09d5325cab3fde3281f7555f34c0330f9d6acac17cc21287e486d50ea"
     },
     {
       "path": "CITATION.cff",
@@ -2194,9 +2218,9 @@
     },
     {
       "path": "README.md",
-      "canonical_bytes": 9692,
+      "canonical_bytes": 10050,
       "hash_mode": "canonical-lf",
-      "sha256": "c386e056a63bfaae609d073c80138ed6afc367cc66031afcbdf95ca708b0fffe"
+      "sha256": "5cb9a95d119adcf2b5876843a5c84fdc8c9a8fe2cd1daa056898e991f2f99fe6"
     },
     {
       "path": "requirements.txt",
@@ -2242,9 +2266,9 @@
     },
     {
       "path": "review/OPERATOR-FLAG-CAMPAIGN.md",
-      "canonical_bytes": 13245,
+      "canonical_bytes": 14021,
       "hash_mode": "canonical-lf",
-      "sha256": "47ab87ab627de66b345a32f30822500bb4bd677736e1e38c29f723812f0e01b0"
+      "sha256": "22a367d8581f8287cbe3596a57c331732ff5f500244aef38b7beef4ace640646"
     },
     {
       "path": "review/POST-ADJUDICATION-COUPLED-SECTOR.md",
@@ -2259,6 +2283,6 @@
       "sha256": "a405ef962afdfc120b5c3f2901ca58e95e2ab3963e642fa73dc2022f2d280cfa"
     }
   ],
-  "file_count": 376,
+  "file_count": 380,
   "scope": "Custody manifest for selected published files. Analytic dependency closure is checked separately by verify_release.py and is not inferred from file enumeration alone."
 }

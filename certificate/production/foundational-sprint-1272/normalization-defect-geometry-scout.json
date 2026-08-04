@@ -1,0 +1,104 @@
+{
+  "status": "two-resolution normalization-defect geometry scout",
+  "exact": {
+    "residuals": {
+      "symmetrization_tariff": "0",
+      "reflected_bellman_tariff": "0"
+    },
+    "all_exact_residuals_zero": true,
+    "K_is_even_by_definition": true
+  },
+  "coarse": {
+    "nodes": 1601,
+    "iterations": 144,
+    "final_delta": 9.109490939351872e-12,
+    "K_minimum": 1.0000158977406715,
+    "K_maximum": 1.007374442159642,
+    "K_at_zero": 1.000345474343918,
+    "K_maximum_coordinate": -0.9,
+    "positive_half_largest_increment": 0.00036751359136766304,
+    "active_K_minimum": 1.0000158977406715,
+    "active_K_maximum": 1.0059704314111315,
+    "active_K_maximum_coordinate": -0.898,
+    "exterior_K_minimum": 1.006304965728423,
+    "exterior_K_maximum": 1.007374442159642,
+    "K_boundary_probes": {
+      "0.0": 1.000345474343918,
+      "0.8": 1.0001731522987625,
+      "0.89": 1.0019904251742884,
+      "0.895": 1.0041908822990029,
+      "0.898": 1.0059704314111315,
+      "0.898116482394039": 1.0060473751028678,
+      "0.899": 1.0066503773567197,
+      "0.9": 1.0073744421596422
+    },
+    "tariff_formula_maximum_residual": 3.330533548603909e-16,
+    "drift_roots": [
+      -0.8661782804676803,
+      -0.3769523562987625,
+      0.7998836680103968
+    ],
+    "symmetrization_tariff_at_drift_roots": [
+      8.06690536402589e-06,
+      1.173980268195058e-09,
+      7.03241500401624e-06
+    ],
+    "symmetrization_tariff_minimum": -5.839740505331203e-07,
+    "symmetrization_tariff_maximum": 0.0008915049875860559,
+    "reflected_tariff_minimum": -1.1680403458613764e-06,
+    "reflected_tariff_maximum": 0.0017796526156705628
+  },
+  "fine": {
+    "nodes": 3201,
+    "iterations": 148,
+    "final_delta": 9.133083178625157e-12,
+    "K_minimum": 1.0000021588557326,
+    "K_maximum": 1.0073341376083624,
+    "K_at_zero": 1.000326429020271,
+    "K_maximum_coordinate": -0.9,
+    "positive_half_largest_increment": 0.00036734719034647867,
+    "active_K_minimum": 1.0000021588557326,
+    "active_K_maximum": 1.0059334650125418,
+    "active_K_maximum_coordinate": -0.898,
+    "exterior_K_minimum": 1.006266668400497,
+    "exterior_K_maximum": 1.0073341376083624,
+    "K_boundary_probes": {
+      "0.0": 1.000326429020271,
+      "0.8": 1.00014931130496,
+      "0.89": 1.0019561912366544,
+      "0.895": 1.0041500411871735,
+      "0.898": 1.0059334650125418,
+      "0.898116482394039": 1.0060101160397372,
+      "0.899": 1.0066110140423137,
+      "0.9": 1.0073341376083624
+    },
+    "tariff_formula_maximum_residual": 3.674090112010253e-16,
+    "drift_roots": [
+      -0.8662660733949304,
+      -0.37694561125618514,
+      0.7999949591672686
+    ],
+    "symmetrization_tariff_at_drift_roots": [
+      9.057624447449727e-06,
+      3.433485536186733e-09,
+      6.942902076391497e-06
+    ],
+    "symmetrization_tariff_minimum": -1.1403814442756399e-07,
+    "symmetrization_tariff_maximum": 0.0008898412407299383,
+    "reflected_tariff_minimum": -2.2889771666978476e-07,
+    "reflected_tariff_maximum": 0.0017763621989082268
+  },
+  "maximum_K_disagreement": 4.0908216038415546e-05,
+  "q_star_minus_quarter": 0.0008753845139765626,
+  "predictions": {
+    "K_at_least_one_with_resolution_allowance": true,
+    "unique_numerical_maximum_at_zero": false,
+    "registered_half_q_excess_bound": false,
+    "exact_tariff_formulas": true,
+    "tariff_zeros_coincide_with_drift_roots": false
+  },
+  "predictions_passed": 2,
+  "predictions_total": 5,
+  "all_predictions_pass": false,
+  "claim_boundary": "The tariff identities are exact. K topology and all zero-set comparisons are floating-point scouts and are not theorem claims."
+}

@@ -90,11 +90,13 @@ Therefore the correct section equation is
 chi(x)=0  iff  (uv)^2=K(x)K(P(x)).                 (10)
 ```
 
-The atlas sees `K` between approximately `1` and `1.000325` on the sampled
-symmetric carrier, with its largest reciprocal-law discrepancy at the origin.
-That numerical range is not yet interval-certified.  Conceptually, `K` is the
-precise price of gluing the local reflected characteristic to the globally
-normalized Bellman envelope.
+The local reversible atlas sees a gluing discrepancy up to about `1.000325`
+on its sampled symmetric carrier.  Sprint 1272 corrects the typing of that
+number: it is a local-chart normalization diagnostic, not the global Bellman
+`K` range.  A separate min-plus reconstruction finds the global sampled range
+reaching about `1.00733` near `|x|=0.9`.  Neither range is interval-certified.
+Conceptually, `K` is the precise price of gluing the local reflected
+characteristic to the globally normalized Bellman envelope.
 
 ## Boundary
 
