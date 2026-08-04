@@ -247,6 +247,16 @@ The replacement campaign deliberately starts before packetization.
     has derivative norm at least `R^2` on this one-point orbit.  The global
     contraction route is now ruled out exactly; the prior sampled contraction
     was a discretization artifact.
+41. **Bellman selector collision (Sprint 1282).** The local shooting atlas and
+    51,201-node boundary iteration both match the exact plateau values and
+    produce three simple roots, yet their profiles differ by `1.15e-3` and
+    their outer roots by `1.77e-3`, meeting the preregistered distinct-selector
+    horn.  A post-run contact audit blocks the two-fixed-point overread: the
+    boundary profile misses Bellman contact by only `2.97e-8`, while the local
+    atlas misses by `1.62e-4` away from its edges.  Exact characteristic
+    reversal and global Bellman normalization are different data types.  The
+    interval campaign must carry chart normalization transitions explicitly;
+    local reversible amplitudes cannot be inserted into the global drift.
 
 ## What is and is not new
 
@@ -327,4 +337,8 @@ point, but Sprint 1281 closes it by ancestry: the point is the already
 certified reversed plateau.  This makes the contraction route not merely
 demoted but exactly impossible in every bounded positive weighted sup norm.
 The drift zero count must now be run directly on the certified characteristic
-graph by interval sign/degree methods.
+graph by interval sign/degree methods.  Sprint 1282 adds the missing typing:
+the graph alone is insufficient because its local reversible amplitude is not
+the globally selected Bellman normalization.  The next construction is a
+globally anchored interval atlas with explicit scalar transition constants,
+checked against Bellman contact before any zero count.

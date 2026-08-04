@@ -1,0 +1,71 @@
+{
+  "status": "Bellman selector collision",
+  "shooting": {
+    "charts": 18,
+    "maximum_overlap_spread": 1.1657341758564144e-15,
+    "minimum_F": 0.19339897220764635,
+    "drift": {
+      "roots": [
+        -0.864391461919785,
+        -0.3769892165679687,
+        0.7999047938100546
+      ],
+      "slope_magnitudes": [
+        1.0832106185527934,
+        0.16933821702716512,
+        0.1984356116643132
+      ]
+    },
+    "post_hoc_contact_residual": {
+      "comparison_points": 7135,
+      "maximum_absolute_residual": 0.0001624858810553298,
+      "maximum_residual_coordinate": -0.6288494444444445,
+      "ninety_ninth_percentile_residual": 0.0001615986814610526
+    }
+  },
+  "boundary_iteration": {
+    "nodes": 51201,
+    "iterations": 153,
+    "final_delta": 9.82613990174741e-12,
+    "minimum_F": 0.19454455054954892,
+    "drift": {
+      "roots": [
+        -0.8661596746107418,
+        -0.376980520736214,
+        0.8000018685789644
+      ],
+      "slope_magnitudes": [
+        0.7926867841588635,
+        0.16951114762547848,
+        0.19876951278391394
+      ]
+    },
+    "post_hoc_contact_residual": {
+      "comparison_points": 7201,
+      "maximum_absolute_residual": 2.9709893989426917e-08,
+      "maximum_residual_coordinate": -0.8762983333333334,
+      "ninety_ninth_percentile_residual": 1.2138252625248924e-09
+    }
+  },
+  "plateau_errors": {
+    "shooting": 1.4100109968495644e-12,
+    "boundary_iteration": 2.2329414983701668e-09
+  },
+  "maximum_profile_discrepancy": 0.00114557834190257,
+  "maximum_profile_discrepancy_coordinate": -0.898,
+  "paired_root_differences": [
+    0.0017682126909568385,
+    8.695831754668149e-06,
+    9.707476890974398e-05
+  ],
+  "classification": "distinct selector consistent",
+  "post_hoc_adjudication": "The local shooting atlas is not the globally normalized Bellman profile: its sampled contact residual is orders of magnitude larger than the boundary-iteration residual. The registered distinction therefore does not evidence two exact Bellman fixed points.",
+  "gates": {
+    "shooting_overlap_below_one_e_minus_twelve": true,
+    "both_profiles_positive": true,
+    "both_have_three_simple_roots": true,
+    "both_match_exact_plateaux": true
+  },
+  "all_instrument_gates_pass": true,
+  "claim_boundary": "This compares two floating reconstructions with distinct ancestry. It does not prove multiplicity of exact Bellman fixed points."
+}

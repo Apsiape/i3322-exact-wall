@@ -2259,6 +2259,30 @@
       "sha256": "61b3d1ad5fe8cbf5b7fd5f7ebb03bd523850e482da558aaef4112bebb9f3d5e2"
     },
     {
+      "path": "certificate/production/foundational-sprint-1282/bellman-selector-collision.json",
+      "canonical_bytes": 2399,
+      "hash_mode": "canonical-lf",
+      "sha256": "ee9d118896349235c0571f05737d735b8487bc654f78d53075fd9f000a982e38"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1282/BELLMAN-SELECTOR-COLLISION.md",
+      "canonical_bytes": 2521,
+      "hash_mode": "canonical-lf",
+      "sha256": "1385e8ddbbe9c10151269678d86eb8fc5ff95e6a782e88fb4c3312aae882ef41"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1282/bellman_selector_collision.py",
+      "canonical_bytes": 12007,
+      "hash_mode": "canonical-lf",
+      "sha256": "3761346a8e6e5a573c43f4793cfdfb1447262722dbcabacb2383e942ef5e7759"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1282/PRE-REGISTRATION.md",
+      "canonical_bytes": 1528,
+      "hash_mode": "canonical-lf",
+      "sha256": "85d660ea9f6e88fe07f9da74b1064675a8b3431fec091790db143f775cfc1e63"
+    },
+    {
       "path": "certificate/release/build_release_manifest.py",
       "canonical_bytes": 2437,
       "hash_mode": "canonical-lf",
@@ -2308,9 +2332,9 @@
     },
     {
       "path": "certificate/release/verify_release.py",
-      "canonical_bytes": 22767,
+      "canonical_bytes": 23487,
       "hash_mode": "canonical-lf",
-      "sha256": "9680247743335416b15b7558ace23adfb7e1d89c35a5dfe9dcad959cf175f9a6"
+      "sha256": "70ae1b3c480b08213db2ec25a2487293cda48e7faa3836f61f750143259f2c63"
     },
     {
       "path": "CITATION.cff",
@@ -2434,9 +2458,9 @@
     },
     {
       "path": "README.md",
-      "canonical_bytes": 13154,
+      "canonical_bytes": 13615,
       "hash_mode": "canonical-lf",
-      "sha256": "0e9fbdccd539f0700eb9ef4d0ce4818dcadfcd112c13841453863f4208fa64d1"
+      "sha256": "ac5bb328cbb933bd2d96e668794f2560534620c5032164257d7446785c364403"
     },
     {
       "path": "requirements.txt",
@@ -2482,9 +2506,9 @@
     },
     {
       "path": "review/OPERATOR-FLAG-CAMPAIGN.md",
-      "canonical_bytes": 21019,
+      "canonical_bytes": 22105,
       "hash_mode": "canonical-lf",
-      "sha256": "fc577f400f114cd708d8c7cc4e2666c84c9b67c1bd7df8f7172c3db2a055c901"
+      "sha256": "41355de3cc76b5f4acd2ebc46d9821d0ce7c7e08c517a0a7c47043ecbd7911c0"
     },
     {
       "path": "review/POST-ADJUDICATION-COUPLED-SECTOR.md",
@@ -2499,6 +2523,6 @@
       "sha256": "a405ef962afdfc120b5c3f2901ca58e95e2ab3963e642fa73dc2022f2d280cfa"
     }
   ],
-  "file_count": 416,
+  "file_count": 420,
   "scope": "Custody manifest for selected published files. Analytic dependency closure is checked separately by verify_release.py and is not inferred from file enumeration alone."
 }

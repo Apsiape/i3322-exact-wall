@@ -105,6 +105,7 @@ REPLAY = [
     f"{PROD}/foundational-sprint-1279/bellman_grid_phase_attack.py",
     f"{PROD}/foundational-sprint-1280/algebraic_bellman_contact_verify.py",
     f"{PROD}/foundational-sprint-1281/reversed_plateau_obstruction_verify.py",
+    f"{PROD}/foundational-sprint-1282/bellman_selector_collision.py",
     f"{PROD}/foundational-sprint-1231/dimension_bound_algebra_verify.py",
     f"{PROD}/foundational-sprint-1233/master_ledger_verify.py",
     f"{REL}/normalization_concordance_verify.py",
@@ -291,6 +292,9 @@ def check_semantics() -> None:
     reversed_plateau = load(
         f"{PROD}/foundational-sprint-1281/reversed-plateau-obstruction.json"
     )
+    selector_collision = load(
+        f"{PROD}/foundational-sprint-1282/bellman-selector-collision.json"
+    )
     assert coupled["terminal_near_entry_closed"] is False
     assert coupled["universal_dimension_lower_bound_proved"] is False
     assert terminal["scalar_terminal_commonization_proved"] is False
@@ -349,6 +353,16 @@ def check_semantics() -> None:
     assert reversed_plateau["gates"][
         "multiplier_strictly_above_one_on_branch"
     ] is True
+    assert selector_collision["all_instrument_gates_pass"] is True
+    assert selector_collision["classification"] == "distinct selector consistent"
+    assert selector_collision["maximum_profile_discrepancy"] > 1e-3
+    assert max(selector_collision["paired_root_differences"]) > 1e-3
+    assert selector_collision["shooting"]["post_hoc_contact_residual"][
+        "maximum_absolute_residual"
+    ] > 1e-4
+    assert selector_collision["boundary_iteration"]["post_hoc_contact_residual"][
+        "maximum_absolute_residual"
+    ] < 3e-8
     assert weighted_contraction["gates"]["cycle_radius_below_point_nine"] is True
     assert weighted_contraction["gates"]["weight_range_below_ten"] is True
 

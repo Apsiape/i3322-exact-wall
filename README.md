@@ -133,7 +133,13 @@ plateau `(C,C,R)`.  Its derivative multiplier is exactly `R^2>1`, so no
 bounded positive weighted sup norm can make the global Bellman derivative a
 contraction.  The sampled contractions were discretization artifacts.  The
 remaining three-root campaign must evaluate the certified characteristic
-graph directly by interval sign or degree methods. The
+graph directly by interval sign or degree methods.  A selector collision then
+shows that the local shooting amplitude and global boundary-iteration profile
+differ by `1.15e-3`, shifting the outer drift root by `1.77e-3`.  The local
+atlas also misses Bellman contact by `1.62e-4`, versus `2.97e-8` for the global
+iteration.  Thus the exact graph must be equipped with explicitly certified
+global normalization transitions before it can support the interval root
+count; reversible local amplitudes are not enough. The
 conditional constant ledger is retained as an open proof
 campaign, but this repository
 does **not** presently claim
