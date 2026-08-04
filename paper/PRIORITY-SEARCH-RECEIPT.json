@@ -1,6 +1,6 @@
 {
-  "search_date": "2026-08-03",
-  "claim": "For canonical I3322, the tensor-product and commuting-operator suprema equal the certified domain-wall constant 0.250875384513976536..., and neither model has a finite-dimensional maximizer.",
+  "search_date": "2026-08-04",
+  "claim": "For canonical I3322, the tensor-product and commuting-operator suprema equal the certified domain-wall constant 0.250875384513976536..., neither model has a finite-dimensional maximizer, and the finite-dimensional tensor optimum obeys a two-sided law implying D(epsilon)=Theta(log(1/epsilon)).",
   "status": "No matching theorem found; priority remains provisional until archival timestamp.",
   "databases": [
     "arXiv",
@@ -17,7 +17,11 @@
     "I3322 exact quantum value",
     "I3322 commuting operator maximum",
     "forward and backward citations of Pal-Vertesi 2010",
-    "forward and backward citations of Araujo et al. 2026"
+    "forward and backward citations of Araujo et al. 2026",
+    "I3322 quantitative dimension",
+    "I3322 dimension lower bound",
+    "I3322 finite-dimensional approximation",
+    "I3322 dimension witness epsilon"
   ],
   "current_context": [
     {
@@ -35,6 +39,14 @@
     {
       "work": "Flora et al. 2026, arXiv:2607.14755",
       "finding": "Uses I3322 as a hard NPA benchmark; does not prove the exact value or nonattainment."
+    },
+    {
+      "work": "Navascues, Feix, Araujo, and Vertesi 2015, arXiv:1507.07521",
+      "finding": "Provides convergent dimension-constrained hierarchies and numerical I3322 applications, but no analytic asymptotic law for q_*-Q_d."
+    },
+    {
+      "work": "Coladangelo 2020, DOI 10.22331/q-2020-06-18-282",
+      "finding": "Proves much stronger quantitative dimension growth for a purpose-built larger two-player game, not for canonical I3322."
     }
   ],
   "known_blind_spots": [

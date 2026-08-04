@@ -304,6 +304,13 @@ strategies whose two local Hilbert spaces have dimension at most (d), allowing
 binary POVMs. Let (D(\varepsilon)) be the least (d) for which
 (q_*-Q_d\le\varepsilon).
 
+Dimension-constrained noncommutative hierarchies provide convergent numerical
+bounds at fixed local dimension, including applications to I3322 [6]. Much
+stronger quantitative dimension blowups are known for purpose-built nonlocal
+games with larger question or answer sets [7]. The statement here has a
+different scope: it gives the asymptotic order, from both sides, for the
+canonical three-setting binary functional itself.
+
 **Dimension-law theorem.** There is an explicit universal constant
 (\kappa>0) such that, for every (d\ge1),
 
@@ -327,7 +334,8 @@ Consequently,
 \le\frac{\log(1/\varepsilon)}{\log R}+O(1),
 \]
 
-so (D(\varepsilon)=\Theta(\log(1/\varepsilon))).
+so, as (\varepsilon\downarrow0),
+(D(\varepsilon)=\Theta(\log(1/\varepsilon))).
 
 For the constructive half, for (L\ge0), put (I_L=\{-L,\ldots,L\}),
 (S_L=\sum_{j\in I_L}\lambda_j^2), and (d=2L+1). Compress the six spatial
@@ -799,3 +807,10 @@ reconstruction are at
 5. F. Flora, L. Matos, T. Kriváchy, A. Garriga, and A. Acín,
    *Moment Optimization in the Navascués–Pironio–Acín Hierarchy* (2026),
    [arXiv:2607.14755](https://arxiv.org/abs/2607.14755).
+6. M. Navascués, A. Feix, M. Araújo, and T. Vértesi, *Characterizing
+   finite-dimensional quantum behavior*, Phys. Rev. A 92 (2015), 042117,
+   [arXiv:1507.07521](https://arxiv.org/abs/1507.07521).
+7. A. Coladangelo, *A two-player dimension witness based on embezzlement, and
+   an elementary proof of the non-closure of the set of quantum correlations*,
+   Quantum 4 (2020), 282,
+   [doi:10.22331/q-2020-06-18-282](https://doi.org/10.22331/q-2020-06-18-282).

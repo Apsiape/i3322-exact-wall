@@ -1,0 +1,14 @@
+{
+  "status": "prospective v1.3 public claim contract",
+  "two_boundary_flux_independently_guarded": true,
+  "constructive_rate_strictly_positive": true,
+  "same_dimension_povm_quantifier_closed_without_dilation": true,
+  "blind_lower_bound_constants_exactly_reconstructed": true,
+  "Gamma": "9475854336",
+  "kappa_decimal_80": "4.2946546143314459987533745197929408511613187617537397268603285846815029056115185e-52",
+  "asymptotic_theta_scoped_to_epsilon_down_to_zero": true,
+  "literature_scope_distinguishes_canonical_i3322_from_general_dimension_witnesses": true,
+  "prospective_metadata_remains_at_v1_2": true,
+  "all_gates_pass": true,
+  "claim_boundary": "This is a custody and public-quantifier guard. It does not replace the analytic packet proof or establish bibliographic priority."
+}

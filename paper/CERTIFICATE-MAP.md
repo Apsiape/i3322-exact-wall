@@ -98,6 +98,8 @@ only after the independent verdict was assembled.
 - `certificate/production/foundational-sprint-1235/RESULT-001-CANONICAL-PACKET-PATHS.md`
 - `certificate/independent/dimension-necessity/BLIND-DIMENSION-RECONSTRUCTION.md`
 - `certificate/independent/dimension-necessity/POST-BLIND-ACCEPTANCE.md`
+- `certificate/release/v13-claim-contract.json`
+- `paper/PRE-RELEASE-AUDIT-v1.3.0.md`
 
 ## Reproduction commands
 
@@ -149,6 +151,7 @@ python certificate/independent/truncation_flux_mpmath.py
 python certificate/independent/dimension-necessity/verify_source_manifest.py
 python certificate/independent/dimension-necessity/verify_constants.py
 python certificate/independent/dimension-necessity/post_blind_exact_verify.py
+python certificate/release/v13_claim_contract_verify.py
 ```
 
 The production graph covers take approximately one minute in total and the

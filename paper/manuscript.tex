@@ -272,6 +272,14 @@ local Hilbert spaces have dimension at most $d$, allowing binary POVMs.  For
 later use, let $D(\varepsilon)$ be the least $d$ for which
 $q_*-Q_d\leq\varepsilon$.
 
+Dimension-constrained noncommutative hierarchies provide convergent numerical
+bounds at fixed local dimension, including applications to I3322
+\cite{NavascuesEtAl2015}.  Quantitative dimension blowups substantially
+stronger than the one below are known for purpose-built nonlocal games with
+larger question or answer sets \cite{Coladangelo2020}.  Our statement has a
+different scope: it gives the asymptotic order, from both sides, for the
+canonical three-setting binary functional itself.
+
 \begin{theorem}[Dimension law]\label{thm:dimension-law}
 There is an explicit universal constant $\kappa>0$ such that, for every
 $d\geq1$,
@@ -293,7 +301,8 @@ Consequently,
  \leq \frac{\log(1/\varepsilon)}{\log R}+O(1),
 \label{eq:dimensionTheta}
 \end{equation}
-and $D(\varepsilon)=\Theta(\log(1/\varepsilon))$.
+and, as $\varepsilon\downarrow0$,
+$D(\varepsilon)=\Theta(\log(1/\varepsilon))$.
 \end{theorem}
 
 For the constructive half, for

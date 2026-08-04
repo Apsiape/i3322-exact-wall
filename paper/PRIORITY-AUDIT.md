@@ -1,6 +1,6 @@
 # Priority audit for the exact I3322 wall
 
-**Search date:** 2026-08-03
+**Search dates:** 2026-08-03 and 2026-08-04
 
 **Status:** archived theorem with a corrected literature record. The original
 v1.0.0 sweep missed a prior Zenodo-only exact-enclosure release; the omission
@@ -66,6 +66,35 @@ three-setting/two-outcome I3322 functional, that
   state that conjectured I3322 nonattainment would imply nonclosure of
   `C_q(3,2)`. The nonclosure implication is therefore prior recognized; the
   present corollary closes its previously conjectural premise.
+- Navascues, Feix, Araujo, and Vertesi (2015),
+  [arXiv:1507.07521](https://arxiv.org/abs/1507.07521), construct convergent
+  dimension-constrained noncommutative optimization hierarchies and apply
+  them numerically to I3322.  They do not prove an analytic asymptotic law for
+  `q_*-Q_d`.
+- Coladangelo (2020),
+  [DOI 10.22331/q-2020-06-18-282](https://doi.org/10.22331/q-2020-06-18-282),
+  proves a much stronger near-optimal dimension requirement for a
+  purpose-built two-player game.  This is prior quantitative dimension-witness
+  work, but not an I3322 result and not a theorem in the canonical binary
+  three-setting scenario.
+
+## Quantitative-dimension extension checked for prospective v1.3
+
+The added claim is
+
+```text
+kappa d^-4 Gamma^-d <= q_*-Q_d <= exp[-d log R+O(1)],
+and therefore D(epsilon)=Theta(log(1/epsilon)).
+```
+
+The second search sweep included `I3322 quantitative dimension`, `I3322
+dimension lower bound`, `I3322 finite-dimensional approximation`, `I3322
+dimension witness`, and combinations with `epsilon`, `nonattainment`, and the
+exact wall decimal.  Pal--Vertesi supply the numerical finite-carrier family;
+Navascues et al. supply convergent fixed-dimension machinery.  Neither proves
+the displayed lower bound for arbitrary dimension-`d` strategies or the
+two-sided asymptotic order.  No matching theorem was found.  This remains a
+negative search, not a proof of priority.
 
 ## Search receipt and limitations
 

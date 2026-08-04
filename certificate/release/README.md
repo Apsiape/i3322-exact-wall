@@ -9,6 +9,17 @@
   truncation theorem, robust dimension-necessity chain, and sealed blind
   reconstruction, then recheck the theorem semantics.
 
+The prospective v1.3 claim boundary has an additional publication guard:
+
+```powershell
+python certificate/release/v13_claim_contract_verify.py
+```
+
+It checks that the public theorem still quantifies over same-dimensional
+POVM strategies, that both truncation boundaries and both asymptotic rates
+have independent receipts, that the literature language is scoped, and that
+v1.3 has not been represented as an archival release prematurely.
+
 Regenerate the manifest only after an intentional release change:
 
 ```powershell

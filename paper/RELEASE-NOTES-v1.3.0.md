@@ -37,7 +37,18 @@ kappa = 4.2946546143314459987...e-52.
 
 The prefactor and exponential base are explicit but intentionally crude.
 Combining necessity and achievability shows that the minimum local dimension
-required for deficit `epsilon` is `Theta(log(1/epsilon))`.
+required for deficit `epsilon` is `Theta(log(1/epsilon))` as `epsilon` tends
+to zero.
+
+## Literature placement
+
+Pal--Vertesi numerically identified the approaching finite-dimensional family.
+Navascues--Feix--Araujo--Vertesi developed convergent fixed-dimension
+hierarchies and applied them to I3322.  Coladangelo proved substantially
+stronger dimension growth for a purpose-built larger nonlocal game.  The new
+claim here is narrower: a two-sided asymptotic order for canonical I3322.  No
+matching prior theorem was found, but the priority statement remains
+provisional and the manuscript does not use "first" language.
 
 ## Verification added
 
@@ -50,6 +61,8 @@ required for deficit `epsilon` is `Theta(log(1/epsilon))`.
 - a sealed 19-source blind reconstruction of the lower bound;
 - a post-verdict exact SymPy audit of every final constant and absorption;
 - release-level replay and semantic gates for both receipts.
+- a hostile public-claim contract covering the POVM quantifier, asymptotic
+  scope, literature placement, and prospective-release metadata.
 
 ## Claim boundary
 

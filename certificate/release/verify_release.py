@@ -74,6 +74,7 @@ REPLAY = [
     f"{IND}/dimension-necessity/verify_source_manifest.py",
     f"{IND}/dimension-necessity/verify_constants.py",
     f"{IND}/dimension-necessity/post_blind_exact_verify.py",
+    f"{REL}/v13_claim_contract_verify.py",
 ]
 
 PRIVATE_MARKERS = [
@@ -164,6 +165,7 @@ def check_semantics() -> None:
         f"{IND}/truncation-flux-independent.json": "all_gates_pass",
         f"{IND}/dimension-necessity/source-manifest-audit.json": "all_gates_pass",
         f"{IND}/dimension-necessity/post-blind-exact-audit.json": "all_gates_pass",
+        f"{REL}/v13-claim-contract.json": "all_gates_pass",
     }
     for relative, field in true_fields.items():
         assert load(relative)[field] is True, f"{relative}: {field}"
