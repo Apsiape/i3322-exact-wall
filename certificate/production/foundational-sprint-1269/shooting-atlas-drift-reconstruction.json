@@ -1,0 +1,46 @@
+{
+  "status": "registered naive shooting-atlas failure",
+  "shooting_charts": 13,
+  "maximum_F_overlap_spread": 0.19510293413957208,
+  "composite_predecessor_min_increment": -0.09336724628221704,
+  "roots": [
+    -0.8612852935598937,
+    -0.8610359879380411,
+    -0.8603110107749442,
+    -0.8601711479246522,
+    -0.8593527303014117,
+    -0.8592189775889206,
+    -0.8580266889261767,
+    -0.857959543257373,
+    -0.8567682206884227,
+    -0.3769893687371612,
+    0.8005238486020931
+  ],
+  "maximum_root_difference_from_sprint_1268": Infinity,
+  "horizontal_separations": [
+    0.38958321096622234,
+    0.3418630545825905,
+    0.4076445637377518,
+    0.3946214993331123,
+    0.3390410087640151,
+    0.36118911867418324,
+    0.3096750523660071,
+    0.3088993630572102,
+    0.2961702006351561,
+    1.1458100668827667,
+    0.0793785089332848
+  ],
+  "registered_targets": {
+    "shooting_charts_cover_active_box": true,
+    "registered_overlap_spread": false,
+    "three_roots": false,
+    "agrees_with_bellman_scout": false,
+    "horizontal_root_separation": false,
+    "composite_predecessor_near_monotone": false
+  },
+  "registered_predictions_passed": 1,
+  "registered_predictions_total": 6,
+  "naive_atlas_rejected": true,
+  "failure_matches_known_wrong_chart": true,
+  "claim_boundary": "This is a floating-point reconstruction from shooting charts, not an interval zero-count certificate."
+}
