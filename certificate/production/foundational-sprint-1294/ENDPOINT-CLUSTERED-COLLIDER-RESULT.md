@@ -52,6 +52,7 @@ retaining adequate resolution at its interior partner.
 
 This is a stronger fixed-witness upper theorem, not an exact-value theorem.
 The performance miss blocks any claim that the registered blended mesh is
-optimal or that an `h^2` continuum estimate has been proved.  Independent
-reconstruction is required before this bound replaces Sprint 1293 in the
+optimal or that an `h^2` continuum estimate has been proved.  A separately
+implemented exact engine has now reconstructed the nonuniform hull, partition,
+and both endpoint receipts; this bound therefore replaces Sprint 1293 in the
 public packet.

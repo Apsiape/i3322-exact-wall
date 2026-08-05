@@ -5,12 +5,12 @@
 > found a nonzero global-amplitude mismatch in its load-bearing Bellman datum.
 > See `CERTIFICATE-STATUS-ALERT.md`. Until that normalization gap is repaired,
 > the headline upper bound and its nonattainment/nonclosure corollaries are not
-> certified by this repository. Sprint 1293 separately proves the exact
-> rational upper bound `omega_c <= 0.250875391558130`; an independent exact
-> engine reconstructs that fixed-witness certificate. It does not restore the
+> certified by this repository. Sprint 1294 separately proves the exact
+> rational upper bound `omega_c <= 0.250875388108398`; an independent exact
+> engine reconstructs that nonuniform fixed-witness certificate. It does not restore the
 > historical equality or those corollaries. Sprint 1292 supplies the direct
 > dimension-255 lower strategy, giving the unconditional window
-> `0.2508753845015185 < omega_tensor <= omega_c <= 0.250875391558130`.
+> `0.2508753845015185 < omega_tensor <= omega_c <= 0.250875388108398`.
 
 **Seth Douglas**
 

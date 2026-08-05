@@ -16,11 +16,13 @@ This file separates analytic claims from computer-assisted inputs.
 | Independent dimension-255 reconstruction | independent lane | direct 160-digit `mpmath.iv` evaluation, no production engine import |
 | Sharp `10^-15`-grid threshold for the 25,601-knot rational witness | Sprint 1293 | exact hull and 45,465 exact common intervals |
 | Independent refined-upper reconstruction | independent lane | separately implemented exact hull and two-pointer partition merge, no production engine import |
-| Unconditional two-sided window of width below `7.057e-9` | Sprints 1292/1293 | exact lower quotient and exact commuting upper bound |
+| Endpoint-clustered 25,601-knot threshold | Sprint 1294 | exact nonuniform hull and 46,458 exact common intervals; performance wager separately failed |
+| Independent endpoint-clustered reconstruction | independent lane | exact two-pointer nonuniform partition merge, no production engine import |
+| Unconditional two-sided window of width below `3.607e-9` | Sprints 1292/1294 | exact lower quotient and exact commuting upper bound |
 
 The candidate builder is not a theorem owner. It merely emits the committed
 rational knot lists. `exact_rational_bellman_subsolution.py` and
-`bellman_operator_weld_verify.py` own the generic proof; Sprint 1293 supplies
+`bellman_operator_weld_verify.py` own the generic proof; Sprint 1294 supplies
 the strongest current fixed-witness endpoint. This upper bound does not
 restore the historical equality/nonattainment chain below.
 
@@ -235,6 +237,7 @@ python certificate/production/foundational-sprint-1264/output_cell_sign_verify.p
 python certificate/production/foundational-sprint-1265/one_grid_four_coordinate_verify.py
 python certificate/production/foundational-sprint-1292/exact_dimension_255_lower_bound.py
 python certificate/production/foundational-sprint-1293/exact_refined_witness_threshold.py
+python certificate/production/foundational-sprint-1294/exact_endpoint_clustered_threshold.py
 python certificate/release/normalization_concordance_verify.py
 python certificate/release/dimension_gap_audit.py
 python certificate/independent/arithmetic_selftest.py
@@ -250,6 +253,7 @@ python certificate/independent/dimension-necessity/verify_constants.py
 python certificate/independent/dimension-necessity/post_blind_exact_verify.py
 python certificate/independent/dimension-255/dimension_255_mpmath.py
 python certificate/independent/refined-upper/refined_upper_exact.py
+python certificate/independent/endpoint-clustered/endpoint_clustered_exact.py
 python certificate/release/v13_claim_contract_verify.py
 ```
 

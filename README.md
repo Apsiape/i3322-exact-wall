@@ -14,21 +14,23 @@
 > exclusion. Frozen DOI releases are preserved as historical records while the
 > proof is repaired.
 
-**Rigorous partial repair at repository HEAD.** Sprints 1287, 1290, and 1293
+**Rigorous partial repair at repository HEAD.** Sprints 1287--1294
 prove, from committed rational Bellman subsolutions and an exact abstract
 operator weld,
 
 ```text
-omega_tensor <= omega_commuting <= 0.250875391558130
+omega_tensor <= omega_commuting <= 0.250875388108398
 ```
 
-with the upper endpoint interpreted as an exact decimal. Sprint 1293 commits a
-25,601-knot witness and exactly optimizes it on a `10^-15` grid. A separately
-written standard-library engine reconstructs its hull, all 45,465 common
-intervals, and both endpoint receipts without importing the production
-verifier. It is an unconditional upper bound, but it does not restore exact
-equality, nonattainment, spatial separation, or nonclosure. See
-[`REFINED-RIGOROUS-I3322-UPPER.md`](certificate/production/foundational-sprint-1293/REFINED-RIGOROUS-I3322-UPPER.md).
+with the upper endpoint interpreted as an exact decimal. Sprint 1294 commits a
+symmetric endpoint-clustered 25,601-knot witness and exactly optimizes it on a
+`10^-15` grid. A separately written standard-library engine reconstructs its
+nonuniform hull, all 46,458 common intervals, and both endpoint receipts
+without importing the production verifier. The bound is unconditional. The
+registered target of a window below `3e-9` failed and remains recorded; the
+exact theorem is stronger than Sprint 1293 but does not restore equality,
+nonattainment, spatial separation, or nonclosure. See
+[`ENDPOINT-CLUSTERED-COLLIDER-RESULT.md`](certificate/production/foundational-sprint-1294/ENDPOINT-CLUSTERED-COLLIDER-RESULT.md).
 
 Sprint 1292 installs an explicit 255-dimensional strategy, certifies it with
 rational square-root floors, and independently reconstructs it at 160-digit
@@ -36,10 +38,10 @@ interval precision. Together the certificates give the unconditional window
 
 ```text
 0.2508753845015185 < omega_tensor
-                   <= omega_commuting <= 0.250875391558130,
+                   <= omega_commuting <= 0.250875388108398,
 ```
 
-of width below `7.057e-9`. See
+of width below `3.607e-9`. See
 [`RIGOROUS-DIMENSION-255-LOWER.md`](certificate/production/foundational-sprint-1292/RIGOROUS-DIMENSION-255-LOWER.md).
 
 The historical release claimed a computer-assisted proof that the tensor-product and

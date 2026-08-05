@@ -46,25 +46,27 @@ retained.  Their valid conditional content is not erased by the failed weld.
 Sprint 1287 supplies an independent global normalization route. Its committed
 rational piecewise-linear function is checked using standard-library
 `Fraction` arithmetic over every common interval of the function and its
-exact support-line envelope. Sprint 1293 repeats that construction at 25,601
-knots and exactly locates the fixed-witness threshold on a `10^-15` grid.
+exact support-line envelope. Sprint 1294 repeats that construction on a
+symmetric endpoint-clustered 25,601-knot grid and exactly locates the
+fixed-witness threshold on a `10^-15` grid.
 
 The exact geometric-reflection/operator weld uses no fixed-point identity,
 concavity, contact uniqueness, wall orbit, or shooting-chart amplitude. It
 therefore proves the unconditional bound
 
 ```text
-omega_tensor <= omega_commuting <= 0.250875391558130.
+omega_tensor <= omega_commuting <= 0.250875388108398.
 ```
 
 This is a real theorem repair, but it is deliberately narrower than the frozen
 headline. It does not identify the exact optimum and does not restore
-nonattainment, `C_qs \ C_q`, or nonclosure. At the Sprint 1293 endpoint the
+nonattainment, `C_qs \ C_q`, or nonclosure. At the Sprint 1294 endpoint the
 exact global minimum is positive, while its immediate `10^-15` predecessor
-fails. A separately written exact engine reconstructs the hull, all 45,465
+fails. A separately written exact engine reconstructs the hull, all 46,458
 common intervals, and both endpoint receipts without importing the production
-verifier. Proximity to the historical wall candidate is not used as an
-equality theorem.
+verifier. Its preregistered performance target failed and is retained in the
+receipt. Proximity to the historical wall candidate is not used as an equality
+theorem.
 
 Sprint 1292 supplies the strongest current lower side: a committed
 255-dimensional finite tensor-product strategy evaluated with exact rational
@@ -73,10 +75,10 @@ arithmetic. Repository HEAD therefore proves the unconditional window
 
 ```text
 0.2508753845015185 < omega_tensor
-                   <= omega_commuting <= 0.250875391558130,
+                   <= omega_commuting <= 0.250875388108398,
 ```
 
-whose exact certified width is approximately `7.056611488552207e-9`. This
+whose exact certified width is approximately `3.606879488552207e-9`. This
 still does not identify the exact optimum or restore any nonattainment or
 correlation-set separation claim.
 

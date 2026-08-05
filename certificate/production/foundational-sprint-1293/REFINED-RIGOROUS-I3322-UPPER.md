@@ -1,5 +1,9 @@
 # Refined rigorous I3322 upper certificate
 
+> **Superseded upper endpoint.** Sprint 1294 replaces this uniform-grid bound
+> with the independently reconstructed nonuniform-grid bound
+> `0.250875388108398`. The theorem below remains valid historically.
+
 Status: **exact 25,601-knot rational Bellman theorem**
 
 ## Theorem

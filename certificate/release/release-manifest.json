@@ -297,6 +297,24 @@
       "sha256": "9a24e22816f909b17891b987204513d040c5e89ade9026d923e7e1b0a2b24b79"
     },
     {
+      "path": "certificate/independent/endpoint-clustered/endpoint-clustered-exact.json",
+      "canonical_bytes": 3397,
+      "hash_mode": "canonical-lf",
+      "sha256": "191a775cd4a2467592fb54974d7e2db602aac5fadb3071857a10be654ccba3a6"
+    },
+    {
+      "path": "certificate/independent/endpoint-clustered/endpoint_clustered_exact.py",
+      "canonical_bytes": 7880,
+      "hash_mode": "canonical-lf",
+      "sha256": "dc4370eced3857be0562e8d9cd24f6b647622ba8764d87a17449011a7611a38a"
+    },
+    {
+      "path": "certificate/independent/endpoint-clustered/PRE-REGISTRATION.md",
+      "canonical_bytes": 1276,
+      "hash_mode": "canonical-lf",
+      "sha256": "ae5b51f4de09d91c2abc2181ed4f4372975210a6ed4ffd8dd01de169c763b722"
+    },
+    {
       "path": "certificate/independent/finite-strategy/finite-strategy-mpmath.json",
       "canonical_bytes": 1577,
       "hash_mode": "canonical-lf",
@@ -2658,7 +2676,7 @@
       "path": "certificate/production/foundational-sprint-1292/RIGOROUS-DIMENSION-255-LOWER.md",
       "canonical_bytes": 2040,
       "hash_mode": "canonical-lf",
-      "sha256": "75fcc5a8a128aa2d5650eb5b91c47f4e534e5496e77552d5afd5571e428989b5"
+      "sha256": "514242545b32040e34f0d879dfe8bd745b8a0d24341b071ff93e901763351195"
     },
     {
       "path": "certificate/production/foundational-sprint-1293/build_refined_bellman_candidate.py",
@@ -2692,9 +2710,45 @@
     },
     {
       "path": "certificate/production/foundational-sprint-1293/REFINED-RIGOROUS-I3322-UPPER.md",
-      "canonical_bytes": 2361,
+      "canonical_bytes": 2570,
       "hash_mode": "canonical-lf",
-      "sha256": "b1321d5d04e3e033d51bb70054376192ce4ef212f553e529f9cf879189298094"
+      "sha256": "adba0730f1db5ad7c296980663965c07e6945dc9c4ee3909ee6437cd16f1a521"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1294/build_endpoint_clustered_candidate.py",
+      "canonical_bytes": 4201,
+      "hash_mode": "canonical-lf",
+      "sha256": "2f4ad8c05c465f74878598d472a4a52b77e66408e0f10ea38bae51f2a08a68ff"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1294/endpoint-clustered-candidate.json",
+      "canonical_bytes": 1447243,
+      "hash_mode": "canonical-lf",
+      "sha256": "1813ada6f1275cd409fe0a9ac97f414ee12ad849b68a3f943163ebd26a56c5cf"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1294/ENDPOINT-CLUSTERED-COLLIDER-RESULT.md",
+      "canonical_bytes": 2150,
+      "hash_mode": "canonical-lf",
+      "sha256": "966756f06173e925352499a32e47cad07a9de5be1a30b9a6839072f85bac923c"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1294/exact-endpoint-clustered-threshold.json",
+      "canonical_bytes": 3992,
+      "hash_mode": "canonical-lf",
+      "sha256": "06b980efa7e0e593e104f66b4bd75a885fcfd4ac2d9d88cc5602c62df2d9e455"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1294/exact_endpoint_clustered_threshold.py",
+      "canonical_bytes": 8480,
+      "hash_mode": "canonical-lf",
+      "sha256": "01e1f9dc9801598830cf16056e2013664638a3f464e027d5eb2d565d789a3d91"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1294/PRE-REGISTRATION.md",
+      "canonical_bytes": 2417,
+      "hash_mode": "canonical-lf",
+      "sha256": "b248e45e558b797281c0b3d68afeaad7f234f3025d9e50e4b35c98b2fe20e902"
     },
     {
       "path": "certificate/release/build_release_manifest.py",
@@ -2728,9 +2782,9 @@
     },
     {
       "path": "certificate/release/README.md",
-      "canonical_bytes": 2498,
+      "canonical_bytes": 2520,
       "hash_mode": "canonical-lf",
-      "sha256": "797410937b18d2a987a46d46f210c9fa10e5f4642940aa69360e2678d9cf3e11"
+      "sha256": "d01130fc7e732e6d93a8659d9626e6d806a0f9ea268221721492da43b4b21237"
     },
     {
       "path": "certificate/release/v13-claim-contract.json",
@@ -2746,9 +2800,9 @@
     },
     {
       "path": "certificate/release/verify_release.py",
-      "canonical_bytes": 34876,
+      "canonical_bytes": 36946,
       "hash_mode": "canonical-lf",
-      "sha256": "da709ec6be795f5b5aa7e52bc206434721c654d89445a01c6dc6a8eb762e28d2"
+      "sha256": "e1596ae1af692244866eaaa9c4724ce81ac49bb08e8e8b117dadc76417d88f91"
     },
     {
       "path": "CITATION.cff",
@@ -2776,15 +2830,15 @@
     },
     {
       "path": "paper/CERTIFICATE-MAP.md",
-      "canonical_bytes": 18743,
+      "canonical_bytes": 19213,
       "hash_mode": "canonical-lf",
-      "sha256": "9e03c0e64241c406d7d82dd0cb122479bad64c317a5e3ba1697a329803530b2e"
+      "sha256": "dc7826ca90dfaf54d85e16de756b2aef7e9c5b1a2e9951e65eb8b91ef080ea69"
     },
     {
       "path": "paper/CERTIFICATE-STATUS-ALERT.md",
-      "canonical_bytes": 4532,
+      "canonical_bytes": 4643,
       "hash_mode": "canonical-lf",
-      "sha256": "2a52a41157d08d0c8d188e0ec500482677840267abd99d4b9256571cb03145d8"
+      "sha256": "9cbfab05e6d20bd5dfa8c68ecb4390512844bd6004c1a90a060084cabdcffd04"
     },
     {
       "path": "paper/DIMENSION-GAP-STATUS.md",
@@ -2794,9 +2848,9 @@
     },
     {
       "path": "paper/MANUSCRIPT.md",
-      "canonical_bytes": 26252,
+      "canonical_bytes": 26263,
       "hash_mode": "canonical-lf",
-      "sha256": "719035163ed4d9f10c82e7c44efcc36ea46c68fcd1eb50d5a2747309023668b7"
+      "sha256": "000852697577886cf1e96b1aa83ae9f3778497563fefbc55ff85da3501704539"
     },
     {
       "path": "paper/manuscript.pdf",
@@ -2854,15 +2908,15 @@
     },
     {
       "path": "paper/RELEASE-NOTES-v1.3.0.md",
-      "canonical_bytes": 6049,
+      "canonical_bytes": 6129,
       "hash_mode": "canonical-lf",
-      "sha256": "01b5a38493e6207e704aade21302b7f5433893aa37ba6bc1821905df6deb6f15"
+      "sha256": "c0f09059b3908a658c94cb48aaa7011d8ac325ac58038bcf7025834836bef366"
     },
     {
       "path": "paper/TECHNICAL-SUPPLEMENT.md",
       "canonical_bytes": 15740,
       "hash_mode": "canonical-lf",
-      "sha256": "80882f0309e52cd2c38526e970e88218d0477a92dacc4b73a43aadadb32a5fea"
+      "sha256": "4c5ed0ea157c82d2dd25915e1fb1c694a316814c705a84e89a7d20894184f420"
     },
     {
       "path": "paper/technical-supplement.pdf",
@@ -2878,9 +2932,9 @@
     },
     {
       "path": "README.md",
-      "canonical_bytes": 16017,
+      "canonical_bytes": 16165,
       "hash_mode": "canonical-lf",
-      "sha256": "7866788a61cc352785b062d4c2c89734574dcb28cf9791722e22c9a5de54884b"
+      "sha256": "cc062658f4ad52f85841e8d91e453c83137e66b9a5f20d6e462f38471765f076"
     },
     {
       "path": "requirements.txt",
@@ -2943,6 +2997,6 @@
       "sha256": "a405ef962afdfc120b5c3f2901ca58e95e2ab3963e642fa73dc2022f2d280cfa"
     }
   ],
-  "file_count": 490,
+  "file_count": 499,
   "scope": "Custody manifest for selected published files. Analytic dependency closure is checked separately by verify_release.py and is not inferred from file enumeration alone."
 }

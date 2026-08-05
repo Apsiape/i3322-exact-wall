@@ -122,6 +122,8 @@ REPLAY = [
     f"{PROD}/foundational-sprint-1292/exact_dimension_255_lower_bound.py",
     f"{PROD}/foundational-sprint-1293/build_refined_bellman_candidate.py",
     f"{PROD}/foundational-sprint-1293/exact_refined_witness_threshold.py",
+    f"{PROD}/foundational-sprint-1294/build_endpoint_clustered_candidate.py",
+    f"{PROD}/foundational-sprint-1294/exact_endpoint_clustered_threshold.py",
     f"{PROD}/foundational-sprint-1231/dimension_bound_algebra_verify.py",
     f"{PROD}/foundational-sprint-1233/master_ledger_verify.py",
     f"{REL}/normalization_concordance_verify.py",
@@ -136,6 +138,7 @@ REPLAY = [
     f"{IND}/finite-strategy/finite_strategy_mpmath.py",
     f"{IND}/dimension-255/dimension_255_mpmath.py",
     f"{IND}/refined-upper/refined_upper_exact.py",
+    f"{IND}/endpoint-clustered/endpoint_clustered_exact.py",
     f"{IND}/verify_independent_reconstruction.py",
     f"{IND}/spatial_symbolic_verify.py",
     f"{IND}/truncation_flux_mpmath.py",
@@ -267,6 +270,7 @@ def check_semantics() -> None:
         f"{IND}/finite-strategy/finite-strategy-mpmath.json": "all_gates_pass",
         f"{IND}/dimension-255/dimension-255-mpmath.json": "all_gates_pass",
         f"{IND}/refined-upper/refined-upper-exact.json": "all_gates_pass",
+        f"{IND}/endpoint-clustered/endpoint-clustered-exact.json": "all_gates_pass",
         f"{IND}/dimension-necessity/source-manifest-audit.json": "all_gates_pass",
         f"{IND}/dimension-necessity/post-blind-exact-audit.json": "all_gates_pass",
         f"{REL}/v13-claim-contract.json": "all_gates_pass",
@@ -370,6 +374,9 @@ def check_semantics() -> None:
     refined_upper = load(
         f"{PROD}/foundational-sprint-1293/exact-refined-witness-threshold.json"
     )
+    clustered_upper = load(
+        f"{PROD}/foundational-sprint-1294/exact-endpoint-clustered-threshold.json"
+    )
     independent_amplitude = load(
         f"{IND}/amplitude-gap/amplitude-gap-mpmath.json"
     )
@@ -384,6 +391,9 @@ def check_semantics() -> None:
     )
     independent_refined_upper = load(
         f"{IND}/refined-upper/refined-upper-exact.json"
+    )
+    independent_clustered_upper = load(
+        f"{IND}/endpoint-clustered/endpoint-clustered-exact.json"
     )
     assert coupled["terminal_near_entry_closed"] is False
     assert coupled["universal_dimension_lower_bound_proved"] is False
@@ -526,6 +536,23 @@ def check_semantics() -> None:
     assert refined_upper["upper_envelope_lines_retained"] == 20758
     assert refined_upper["common_intervals_checked_per_evaluation"] == 45465
     assert refined_upper["rigorous_window_width_decimal"] < 7.057e-9
+    assert clustered_upper["certificate_closed"] is True
+    assert clustered_upper["all_registered_predictions_pass"] is False
+    assert clustered_upper["all_gates_pass"] is False
+    assert clustered_upper["q_pass"] == "125437694054199/500000000000000"
+    assert clustered_upper["q_fail_predecessor"] == (
+        "250875388108397/1000000000000000"
+    )
+    assert clustered_upper["nodes"] == 25601
+    assert clustered_upper["upper_envelope_lines_retained"] == 20859
+    assert clustered_upper["common_intervals_checked_per_evaluation"] == 46458
+    assert clustered_upper["rigorous_window_width_decimal"] < 3.607e-9
+    assert clustered_upper["registered_prediction_gates"][
+        "registered_upper_target"
+    ] is False
+    assert clustered_upper["registered_prediction_gates"][
+        "registered_window_target"
+    ] is False
     assert independent_amplitude["all_gates_pass"] is True
     assert independent_amplitude["imports_production_engine"] is False
     assert independent_amplitude["largest_y_derivative_upper"] < -285
@@ -558,6 +585,19 @@ def check_semantics() -> None:
     assert independent_refined_upper["fail_worst_receipt"] == (
         refined_upper["fail_worst_receipt"]
     )
+    assert independent_clustered_upper["all_gates_pass"] is True
+    assert independent_clustered_upper["q_pass"] == clustered_upper["q_pass"]
+    assert independent_clustered_upper["q_fail_predecessor"] == (
+        clustered_upper["q_fail_predecessor"]
+    )
+    assert independent_clustered_upper["upper_envelope_lines"] == 20859
+    assert independent_clustered_upper["merged_partition_cells"] == 46458
+    assert independent_clustered_upper["pass_worst_receipt"] == (
+        clustered_upper["pass_worst_receipt"]
+    )
+    assert independent_clustered_upper["fail_worst_receipt"] == (
+        clustered_upper["fail_worst_receipt"]
+    )
     assert weighted_contraction["gates"]["cycle_radius_below_point_nine"] is True
     assert weighted_contraction["gates"]["weight_range_below_ten"] is True
 
@@ -587,8 +627,8 @@ def main() -> None:
     finite_lower = load(
         f"{PROD}/foundational-sprint-1292/exact-dimension-255-lower-bound.json"
     )
-    refined_upper = load(
-        f"{PROD}/foundational-sprint-1293/exact-refined-witness-threshold.json"
+    clustered_upper = load(
+        f"{PROD}/foundational-sprint-1294/exact-endpoint-clustered-threshold.json"
     )
     if args.full:
         replay()
@@ -606,10 +646,10 @@ def main() -> None:
         "constructive_dimension_rate_checked": True,
         "conditional_lower_bound_ledger_replayed_but_not_promoted": True,
         "headline_theorem_certificate_closed": False,
-        "rigorous_commuting_upper_bound": refined_upper["q_pass"],
+        "rigorous_commuting_upper_bound": clustered_upper["q_pass"],
         "rigorous_upper_bound_certificate_closed": True,
         "rigorous_tensor_lower_bound": finite_lower["certified_value_lower"],
-        "rigorous_value_window_width": refined_upper["rigorous_window_width"],
+        "rigorous_value_window_width": clustered_upper["rigorous_window_width"],
         "rigorous_two_sided_window_certificate_closed": True,
         "exact_optimum_identified": False,
         "load_bearing_gap": (
@@ -620,8 +660,9 @@ def main() -> None:
             "production Arb stack plus separate mpmath.iv reconstruction and "
             "independent symbolic spatial-carrier/truncation reconstruction, "
             "plus independent 160-digit evaluations of the dimension-127 and "
-            "dimension-255 finite strategies, plus a separately implemented "
-            "exact reconstruction of the 25,601-knot upper witness, and a "
+            "dimension-255 finite strategies, plus separately implemented "
+            "exact reconstructions of the uniform and endpoint-clustered "
+            "25,601-knot upper witnesses, and a "
             "separately written 21-source conditional dimension-necessity "
             "reconstruction; the Bellman normalization gap is reproduced by "
             "independent Arb and mpmath.iv engines; the original chronology is "

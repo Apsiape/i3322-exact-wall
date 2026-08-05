@@ -8,9 +8,10 @@ tagged archival release; DOI and citation metadata remain those of v1.2.0.
 
 Sprint 1285 proves an exact nonzero global-amplitude mismatch in the
 load-bearing Bellman assembly. Sprint 1287 subsequently certifies a separate
-exact upper bound, refined in Sprint 1293 to
-`omega_c<=0.250875391558130` and independently reconstructed with exact
-arithmetic. It still does not prove equality at the historical wall value.
+exact upper bound, refined in Sprint 1294 to
+`omega_c<=0.250875388108398` and independently reconstructed with exact
+arithmetic. The Sprint 1294 performance target failed even though its exact
+bound improved. It still does not prove equality at the historical wall value.
 Sprint 1292 adds the independently reconstructed finite lower bound
 `omega_tensor>0.2508753845015185`. Therefore no `v1.3.0`
 release may be tagged as the
