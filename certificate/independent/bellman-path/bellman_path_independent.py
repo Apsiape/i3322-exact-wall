@@ -226,50 +226,69 @@ def bell(lam: list[F], a: list[list[list[F]]], b: list[list[list[F]]]) -> F:
     return value
 
 
-def carrier_attack() -> dict[str, object]:
-    # A 3-dimensional arbitrary word embedded at indices 1..3 of a 5D open
-    # endpoint-constrained Pal--Vertesi carrier.
-    points = [unit_point(k) for k in (1, 3, 5, 7)]
-    internal_c = [point[0] for point in points]
-    internal_s = [point[1] for point in points]
-    c = [F(1)] + internal_c + [F(-1)]
-    s = [F(0)] + internal_s + [F(0)]
-    lam_inner = [F(2, 7), F(3, 11), F(5, 13)]
-    lam = [F(0)] + lam_inner + [F(0)]
-    a, b = open_blocks(c, s)
-    direct = bell(lam, a, b)
-    jacobi = sum(
+def jacobi_value(c: list[F], s: list[F], lam: list[F]) -> F:
+    return sum(
         (
             (c[k] * c[k + 1] + (c[k] - c[k + 1]) / 2 - 1) * lam[k] ** 2
-            for k in range(5)
-        ),
-        F(0),
-    ) + sum((s[k] * lam[k - 1] * lam[k] for k in range(1, 5)), F(0))
-    inner = sum(
-        (
-            (
-                internal_c[k] * internal_c[k + 1]
-                + (internal_c[k] - internal_c[k + 1]) / 2
-                - 1
-            )
-            * lam_inner[k] ** 2
-            for k in range(3)
+            for k in range(len(lam))
         ),
         F(0),
     ) + sum(
-        (
-            internal_s[k] * lam_inner[k - 1] * lam_inner[k]
-            for k in range(1, 3)
-        ),
-        F(0),
+        (s[k] * lam[k - 1] * lam[k] for k in range(1, len(lam))), F(0)
     )
+
+
+def carrier_attack() -> dict[str, object]:
+    # Exercise both parity branches of the general embedding.  A word with n
+    # Jacobi coordinates uses n+1 labels.  Prepending +1 and appending -1
+    # gives open carrier dimension n+2; when that is even, insert one dummy
+    # label and give its coordinate zero weight.
+    records = []
+    all_direct = True
+    all_principal = True
+    for word_dimension in range(1, 9):
+        for offset in range(3):
+            points = [
+                unit_point(2 + offset + 2 * k) for k in range(word_dimension + 1)
+            ]
+            word_c = [point[0] for point in points]
+            word_s = [point[1] for point in points]
+            lam_inner = [
+                F((k + 2) * (word_dimension + 1 - k) + offset, 19 + 3 * k)
+                for k in range(word_dimension)
+            ]
+            needs_dummy = word_dimension % 2 == 0
+            dummy = unit_point(31 + offset + word_dimension)
+            c = [F(1)] + word_c + ([dummy[0]] if needs_dummy else []) + [F(-1)]
+            s = [F(0)] + word_s + ([dummy[1]] if needs_dummy else []) + [F(0)]
+            lam = [F(0)] + lam_inner + [F(0)] * (1 + int(needs_dummy))
+            a, b = open_blocks(c, s)
+            direct = bell(lam, a, b)
+            padded = jacobi_value(c, s, lam)
+            inner = jacobi_value(word_c, word_s, lam_inner)
+            direct_ok = direct == padded
+            principal_ok = padded == inner
+            all_direct &= direct_ok
+            all_principal &= principal_ok
+            records.append(
+                {
+                    "word_dimension": word_dimension,
+                    "carrier_dimension": len(lam),
+                    "dummy_inserted": needs_dummy,
+                    "direct_equals_padded": direct_ok,
+                    "padded_equals_inner": principal_ok,
+                }
+            )
     return {
-        "carrier_dimension": 5,
-        "direct_bell_value": str(direct),
-        "padded_jacobi_value": str(jacobi),
-        "inner_word_value": str(inner),
-        "direct_equals_padded": direct == jacobi,
-        "padded_equals_inner": jacobi == inner,
+        "exact_rational_fixtures": len(records),
+        "word_dimension_range": [1, 8],
+        "both_parity_branches_exercised": {
+            "without_dummy": any(not row["dummy_inserted"] for row in records),
+            "with_dummy": any(row["dummy_inserted"] for row in records),
+        },
+        "all_direct_bell_values_equal_padded_jacobi_values": all_direct,
+        "all_padded_values_equal_inner_word_values": all_principal,
+        "fixtures": records,
     }
 
 
@@ -303,8 +322,12 @@ def main() -> None:
         "wrong_index_orientation_detected": orientation["wrong_orientation_detections"] > 0,
         "young_remainder_nonnegative": F(orientation["minimum_correct_remainder"]) >= 0,
         "no_pivot_floor_counterexample": not pivots["failures"],
-        "carrier_direct_block_identity": carrier["direct_equals_padded"],
-        "carrier_principal_embedding_exact": carrier["padded_equals_inner"],
+        "carrier_direct_block_identity": carrier[
+            "all_direct_bell_values_equal_padded_jacobi_values"
+        ],
+        "carrier_principal_embedding_exact": carrier[
+            "all_padded_values_equal_inner_word_values"
+        ],
         "weld_receipt_valid": weld["receipt_all_gates_pass"],
         "weld_accepts_arbitrary_positive_storage": weld["input_contract_is_any_positive_G"],
         "weld_excludes_failed_wall_dependencies": weld["all_hidden_dependencies_excluded"],

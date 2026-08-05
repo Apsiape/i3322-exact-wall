@@ -44,10 +44,10 @@ one-sided infimum comparisons.  Thus the constructed storage is continuous.
 - The fully branching two-label graph with all four edges in contact has
   Bellman value three, while constant finite paths approach three by the exact
   values `3-2/n`.  Branching creates no value premium.
-- A separately reconstructed five-dimensional endpoint-constrained
-  Pal--Vertesi carrier contains an arbitrary three-dimensional word as a
-  principal block.  Direct Bell value, padded Jacobi value, and inner word
-  value agree exactly.
+- 24 separately reconstructed endpoint-constrained Pal--Vertesi carriers
+  cover word dimensions one through eight and both parity branches.  Direct
+  Bell value, padded Jacobi value, and inner word value agree exactly in every
+  rational fixture.
 
 ## I3322 verdict
 

@@ -136,9 +136,8 @@ omega_commuting(I3322) <= q.                                   (11)
 Every finite path matrix from (10) occurs as a principal block of an open
 Pal--Vertesi path with endpoints `1,-1`: prepend `1`, append `-1`, and, if
 needed, add one dummy internal label to obtain the required odd carrier.
-Padding a Rayleigh vector by zeros preserves its quotient exactly.  Internal
-endpoint labels may equivalently be moved inward and recovered by continuity.
-The exact block-to-Jacobi identity therefore gives
+Padding a Rayleigh vector by zeros preserves its quotient exactly.  The exact
+block-to-Jacobi identity therefore gives
 
 ```text
 omega_tensor(I3322) >= S.                                      (12)
@@ -170,3 +169,10 @@ Still open:
 
 No statement about those questions is inherited from the failed amplitude
 assembly.
+
+## 7. Literature posture
+
+The proof is a specialized synthesis of ground-state positivity,
+Riccati--Schur recursion, and path-uniform storage.  The scoped search and
+claim boundary are recorded in `LITERATURE-PLACEMENT.md`.  No priority claim
+for a new general spectral principle is made.

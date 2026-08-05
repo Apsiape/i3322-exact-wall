@@ -19,12 +19,16 @@ This file separates analytic claims from computer-assisted inputs.
 | Endpoint-clustered 25,601-knot threshold | Sprint 1294 | exact nonuniform hull and 46,458 exact common intervals; performance wager separately failed |
 | Independent endpoint-clustered reconstruction | independent lane | exact two-pointer nonuniform partition merge, no production engine import |
 | Unconditional two-sided window of width below `3.607e-9` | Sprints 1292/1294 | exact lower quotient and exact commuting upper bound |
+| Universal Bellman storage equals finite-path spectral value | Sprint 1295 | analytic Young/Schur/compactness proof plus exact hostile guards |
+| Independent Bellman--path reconstruction | independent lane | 500 index fixtures, 2,000 pivot fixtures, and 24 exact carrier embeddings; no Sprint 1295 import |
+| `omega_tensor(I3322)=omega_commuting(I3322)` as a common variational value | Sprint 1295 | universal theorem + Sprint 1287 weld + exact Pal--Vertesi principal-block embedding |
 
 The candidate builder is not a theorem owner. It merely emits the committed
 rational knot lists. `exact_rational_bellman_subsolution.py` and
 `bellman_operator_weld_verify.py` own the generic proof; Sprint 1294 supplies
-the strongest current fixed-witness endpoint. This upper bound does not
-restore the historical equality/nonattainment chain below.
+the strongest current fixed-witness endpoint. Sprint 1295 independently
+repairs equality of the tensor and commuting **values**, but does not restore
+the historical decimal/nonattainment chain below.
 
 ## Main analytic chain
 
