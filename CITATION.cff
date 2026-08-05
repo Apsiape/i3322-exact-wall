@@ -1,13 +1,13 @@
 cff-version: 1.2.0
 message: "If you use this theorem package or its certificates, please cite this work."
-title: "A rigorously characterized I3322 quantum wall, spatial attainment, and finite-dimensional nonattainment"
+title: "The I3322 quantum value: a certified two-sided window and correction record"
 type: article
 authors:
   - given-names: Seth
     family-names: Douglas
     email: apsiape@gmail.com
     orcid: "https://orcid.org/0009-0007-4708-3252"
-version: 1.2.0
+version: 2.0.0
 doi: 10.5281/zenodo.21782750
 license: CC-BY-4.0
 repository-code: "https://github.com/Apsiape/i3322-exact-wall"
@@ -31,7 +31,7 @@ keywords:
   - minimal Bell scenario
 preferred-citation:
   type: article
-  title: "A rigorously characterized I3322 quantum wall, spatial attainment, and finite-dimensional nonattainment"
+  title: "The I3322 quantum value: a certified two-sided window and correction record"
   authors:
     - given-names: Seth
       family-names: Douglas
