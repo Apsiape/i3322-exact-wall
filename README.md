@@ -205,6 +205,8 @@ input counts for both phenomena.
 
 Archival identifiers: concept DOI
 [`10.5281/zenodo.21782008`](https://doi.org/10.5281/zenodo.21782008); frozen
+`v2.0.0` correction-release DOI
+[`10.5281/zenodo.21799071`](https://doi.org/10.5281/zenodo.21799071); frozen
 `v1.2.0` DOI
 [`10.5281/zenodo.21782750`](https://doi.org/10.5281/zenodo.21782750); frozen
 `v1.1.0` DOI
