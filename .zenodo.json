@@ -1,5 +1,5 @@
 {
-  "title": "The I3322 quantum value: certified window, finite-dimensional nonattainment, and nonclosure of Cq(3,3;2,2)",
+  "title": "The I3322 quantum value: certified window, spatial attainment, finite-dimensional nonattainment, and the Cqs/Cq separation",
   "upload_type": "publication",
   "publication_type": "preprint",
   "access_right": "open",
@@ -10,7 +10,7 @@
       "orcid": "0009-0007-4708-3252"
     }
   ],
-  "description": "Certified two-sided window for the I3322 quantum supremum S, tensor/commuting value equality, and (v3.0.0) restoration of finite-dimensional nonattainment of S and nonclosure of C_q(3,3;2,2) by an independent proof route that survived three rounds of refutation-first adversarial review. The exact optimum beyond the certified 3.61e-9 window and spatial attainment at S remain open. Complete correction record preserved.",
+  "description": "Certified two-sided window for the I3322 quantum supremum S, tensor/commuting value equality, finite-dimensional nonattainment of S, nonclosure of C_q(3,3;2,2), and (v3.1.0) normal spatial attainment of S giving a nonempty separation C_qs \\ C_q - each established by routes that survived independent refutation-first adversarial review, with the full review records and correction history shipped in-repository. The exact optimum beyond the certified 3.61e-9 window and the dimension-necessity lower bound remain open.",
   "keywords": [
     "Bell inequalities",
     "I3322",
@@ -31,5 +31,5 @@
       "scheme": "url"
     }
   ],
-  "version": "3.0.0"
+  "version": "3.1.0"
 }

@@ -294,3 +294,26 @@ python certificate/production/theorem-N-four-receipts-at-S/artifacts/four_receip
 python certificate/production/theorem-N-four-receipts-at-S/artifacts/convex_envelope_algebraic_guards.py
 python certificate/production/theorem-N-four-receipts-at-S/artifacts/critical_zero_set_algebraic_guards.py
 ```
+
+## v3.1.0 addition: Theorem (S) spatial-attainment chain (2026-08-05)
+
+`certificate/production/theorem-S-spatial-attainment-at-S/` establishes
+normal spatial attainment of `S` and, with Theorem (N), the nonempty
+separation `C_qs(3,3;2,2) \ C_q(3,3;2,2)`. Chain: maximizing commuting
+state (weak-* compactness) -> GNS kernel equations via the exact
+transport blocks `W = Y(B_3-I/2)`, `W_B = (A_3-I/2)V` (no global CS
+involution assumed) -> scalar Radon-Nikodym transport laws -> null
+fixed-point set (quarter-ceiling comparison) -> Borel transversal and
+orbit disintegration -> interleaved `l^2` weights (normalization
+inherited from the conditional probability measure) -> exact Jacobi
+eigenpair `H lambda = S lambda` via Bellman contact equality -> finite
+no-endpoint Pal-Vertesi block identity (Sprint 1206 SS2-4 only).
+All Sprint-1195 objects are on the explicit not-used list. Review
+record: `review/SPATIAL-ATTAINMENT-S1-REFEREE-VERDICT.md`. Scripts are
+smoke tests only:
+
+```text
+python certificate/production/theorem-S-spatial-attainment-at-S/artifacts/validate_spatial_attainment_v2_package.py
+python certificate/production/theorem-S-spatial-attainment-at-S/artifacts/theorem_S_algebraic_smoke_tests.py
+python certificate/production/theorem-S-spatial-attainment-at-S/artifacts/theorem_S_finite_synthetic_controls.py
+```

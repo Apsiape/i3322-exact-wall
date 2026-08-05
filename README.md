@@ -12,9 +12,16 @@
 > dependency list. See
 > [`certificate/production/theorem-N-four-receipts-at-S/`](certificate/production/theorem-N-four-receipts-at-S/)
 > (signed statement, complete proof documents, review record, and
-> algebraic/exact-arithmetic guards). The exact optimum (identification of
-> `S` beyond its certified `3.61e-9` window) and current spatial attainment
-> (`C_qs \ C_q`) remain **open** and are not claimed. Frozen DOI releases
+> algebraic/exact-arithmetic guards). As of **v3.1.0**, a second
+> independently reviewed theorem establishes **normal spatial attainment of
+> `S`** on `ell^2(Z) tensor ell^2(Z)`, hence
+> **`C_qs(3,3;2,2) \ C_q(3,3;2,2)` is nonempty**; see
+> [`certificate/production/theorem-S-spatial-attainment-at-S/`](certificate/production/theorem-S-spatial-attainment-at-S/).
+> The decertified historical amplitude route is not repaired but dissolved:
+> amplitudes are read off an existing conditional spectral measure, so the
+> failed compatibility equation is never posed. The exact optimum
+> (identification of `S` beyond its certified `3.61e-9` window) and the
+> dimension-necessity lower bound remain **open** and are not claimed. Frozen DOI releases
 > are preserved as historical records; the correction history is part of the
 > record.
 
@@ -64,7 +71,8 @@ This does not identify that value with the historical shooting decimal.
 Finite-dimensional nonattainment and nonclosure at the common value are now
 restored by the independent route in
 [`certificate/production/theorem-N-four-receipts-at-S/`](certificate/production/theorem-N-four-receipts-at-S/);
-spatial attainment at the current value remains open.
+spatial attainment at the current value is established in v3.1.0
+(see the theorem-S certificate directory).
 See
 [`BELLMAN-PATH-EQUIVALENCE-THEOREM.md`](certificate/production/foundational-sprint-1295/BELLMAN-PATH-EQUIVALENCE-THEOREM.md).
 

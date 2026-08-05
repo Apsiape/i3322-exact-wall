@@ -1,0 +1,5 @@
+{
+  "theorem_S_algebraic_smoke_tests.py": "PASS: strengthened algebraic smoke tests\nSCOPE: no measure-theoretic or infinite-dimensional step is certified",
+  "theorem_S_finite_synthetic_controls.py": "PASS: 20,000 finite synthetic controls\nSCOPE: orbit consistency, disintegration and Fatou are not tested",
+  "validate_spatial_attainment_v2_package.py": "PASS: V1\u2013V9 wording, scope and status controls"
+}

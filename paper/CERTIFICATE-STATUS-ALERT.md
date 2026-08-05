@@ -144,3 +144,25 @@ with the certificate. See
 Still open, and still not claimed: identification of `S` beyond the
 certified window; spatial attainment at `S`; the `C_qs \ C_q` separation;
 and the dimension-necessity lower bound.
+
+
+## Spatial attainment restored (2026-08-05, v3.1.0)
+
+A second independently reviewed theorem establishes that the common value
+`S` is attained by a normal spatial strategy on `ell^2(Z) tensor ell^2(Z)`,
+built from a maximizing commuting state by scalar spectral disintegration,
+orbit interleaving, and the finite (no-endpoint) Pal--Vertesi block
+identity. Combined with Theorem (N):
+
+- **`C_qs(3,3;2,2) \ C_q(3,3;2,2)` is nonempty.**
+
+The decertified Sprint-1195 amplitude-compatibility equation is dissolved,
+not re-solved: amplitudes are read off an existing conditional probability
+measure, so consistency, normalization, and `l^2` summability are inherited
+rather than imposed. The referee's signed verdict, dependency list (with
+all Sprint-1195 objects explicitly excluded), and the retired first
+candidate ship with the certificate. See
+`certificate/production/theorem-S-spatial-attainment-at-S/`.
+
+Still open: identification of `S` beyond the certified window; the
+dimension-necessity lower bound.

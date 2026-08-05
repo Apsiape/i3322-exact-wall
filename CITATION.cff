@@ -1,13 +1,13 @@
 cff-version: 1.2.0
 message: "If you use this theorem package or its certificates, please cite this work."
-title: "The I3322 quantum value: certified window, finite-dimensional nonattainment, and nonclosure of Cq(3,3;2,2)"
+title: "The I3322 quantum value: certified window, spatial attainment, finite-dimensional nonattainment, and the Cqs/Cq separation"
 type: article
 authors:
   - given-names: Seth
     family-names: Douglas
     email: apsiape@gmail.com
     orcid: "https://orcid.org/0009-0007-4708-3252"
-version: 3.0.0
+version: 3.1.0
 doi: 10.5281/zenodo.21782750
 license: CC-BY-4.0
 repository-code: "https://github.com/Apsiape/i3322-exact-wall"
@@ -31,7 +31,7 @@ keywords:
   - minimal Bell scenario
 preferred-citation:
   type: article
-  title: "The I3322 quantum value: certified window, finite-dimensional nonattainment, and nonclosure of Cq(3,3;2,2)"
+  title: "The I3322 quantum value: certified window, spatial attainment, finite-dimensional nonattainment, and the Cqs/Cq separation"
   authors:
     - given-names: Seth
       family-names: Douglas

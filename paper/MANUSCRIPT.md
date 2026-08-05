@@ -12,8 +12,11 @@
 > three rounds of adversarial review — **finite-dimensional nonattainment of
 > `S` and nonclosure of `C_q(3,3;2,2)`**. See
 > `certificate/production/theorem-N-four-receipts-at-S/` for the signed
-> statement, proof documents, and review record. Spatial attainment at `S`
-> (`C_qs \ C_q`) remains open.
+> statement, proof documents, and review record. As of v3.1.0, spatial
+> attainment at `S` is also established by a new reviewed route
+> (`certificate/production/theorem-S-spatial-attainment-at-S/`), so
+> **`C_qs \ C_q` is nonempty**; the historical spatial construction below
+> remains decertified and is superseded by that route.
 
 **Seth Douglas**
 

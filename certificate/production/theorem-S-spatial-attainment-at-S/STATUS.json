@@ -1,0 +1,22 @@
+{
+  "status": "PROMOTION_CANDIDATE_REPAIRED_AFTER_S1_REFEREE",
+  "public_claim": "Theorem (S)",
+  "claim": "normal spatial attainment at current certified S",
+  "separation": "C_qs(3,3;2,2) minus C_q(3,3;2,2) is nonempty",
+  "theorem_N_dependency_for_separation": true,
+  "repairs_executed": [
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6",
+    "V7",
+    "V8",
+    "V9"
+  ],
+  "historical_route_reused": false,
+  "sprint_1206_scope": "sections 2-4 no-endpoint local identity only",
+  "artifact_scope": "smoke tests and package controls only",
+  "referee_verdict": "PROMOTE conditional on repairs"
+}

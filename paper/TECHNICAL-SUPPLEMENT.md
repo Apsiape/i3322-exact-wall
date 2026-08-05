@@ -11,8 +11,10 @@
 > `omega_tensor > 0.2508753845015185`. As of v3.0.0 (2026-08-05),
 > finite-dimensional nonattainment and nonclosure are restored at the common
 > value `S` by an independent route that does not use this supplement's
-> fixed-point assembly; see
-> `certificate/production/theorem-N-four-receipts-at-S/`.
+> fixed-point assembly (`certificate/production/theorem-N-four-receipts-at-S/`);
+> as of v3.1.0, normal spatial attainment of `S` and the nonempty separation
+> `C_qs \ C_q` are likewise established independently of this supplement
+> (`certificate/production/theorem-S-spatial-attainment-at-S/`).
 
 **Seth Douglas** ·
 [ORCID 0009-0007-4708-3252](https://orcid.org/0009-0007-4708-3252) ·
