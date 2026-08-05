@@ -87,6 +87,30 @@
       "sha256": "04c62cc07629028d5bee5a4b43c92ac4a92f61e899a919fc12295916c5c69f1c"
     },
     {
+      "path": "certificate/independent/bellman-path/bellman-path-independent.json",
+      "canonical_bytes": 6261,
+      "hash_mode": "canonical-lf",
+      "sha256": "3f5368018911b994933eb3223ab465decda6e93875d8c22003ad5137652ca2d4"
+    },
+    {
+      "path": "certificate/independent/bellman-path/bellman_path_independent.py",
+      "canonical_bytes": 13509,
+      "hash_mode": "canonical-lf",
+      "sha256": "c66ff1ab51ef8ff25394b079c68d5a1dd8f3801bd4c0483a6b8b00830473c7cd"
+    },
+    {
+      "path": "certificate/independent/bellman-path/INDEPENDENT-BELLMAN-PATH-AUDIT.md",
+      "canonical_bytes": 2612,
+      "hash_mode": "canonical-lf",
+      "sha256": "0e82589cb9d04526fc6ae5262f14f46344e050ca40de6f6ad2641afba6789f21"
+    },
+    {
+      "path": "certificate/independent/bellman-path/PRE-REGISTRATION.md",
+      "canonical_bytes": 1834,
+      "hash_mode": "canonical-lf",
+      "sha256": "929d1b8d5be9cf2895c862e31aadcfe4b8ad3340a69735c5af0b12fc44d6649d"
+    },
+    {
       "path": "certificate/independent/dimension-255/dimension-255-mpmath.json",
       "canonical_bytes": 1991,
       "hash_mode": "canonical-lf",
@@ -2751,6 +2775,36 @@
       "sha256": "b248e45e558b797281c0b3d68afeaad7f234f3025d9e50e4b35c98b2fe20e902"
     },
     {
+      "path": "certificate/production/foundational-sprint-1295/BELLMAN-PATH-EQUIVALENCE-THEOREM.md",
+      "canonical_bytes": 5321,
+      "hash_mode": "canonical-lf",
+      "sha256": "0f43b89c1535d77810ebf2154a03182f5b586a9fbb3ea0c1d05c2f3886bd2a16"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1295/bellman-path-equivalence.json",
+      "canonical_bytes": 5862,
+      "hash_mode": "canonical-lf",
+      "sha256": "5da87bd8b74175739dba4d6374091e15e892e2f5d9195aff17e7d8a00eb564ae"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1295/bellman_path_equivalence_verify.py",
+      "canonical_bytes": 7286,
+      "hash_mode": "canonical-lf",
+      "sha256": "6af404a826ddf367ad7cd78912ba44e96553e949250ef2b32d1271adc02d6a5c"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1295/LITERATURE-PLACEMENT.md",
+      "canonical_bytes": 3218,
+      "hash_mode": "canonical-lf",
+      "sha256": "c5f17a52287103c8476285687f74646b5cda2b1ab8daa48bbaec4898740334aa"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1295/PRE-REGISTRATION.md",
+      "canonical_bytes": 2616,
+      "hash_mode": "canonical-lf",
+      "sha256": "342a8e107d81ebf9d535fff5bb08f9372c31f0d34249314f87a02243290d93c9"
+    },
+    {
       "path": "certificate/release/build_release_manifest.py",
       "canonical_bytes": 2437,
       "hash_mode": "canonical-lf",
@@ -2782,9 +2836,9 @@
     },
     {
       "path": "certificate/release/README.md",
-      "canonical_bytes": 2520,
+      "canonical_bytes": 2927,
       "hash_mode": "canonical-lf",
-      "sha256": "d01130fc7e732e6d93a8659d9626e6d806a0f9ea268221721492da43b4b21237"
+      "sha256": "d8646390dcc1420bce41a36c0b4bbc22d8225c85d333b96086f87a9e94b2bfee"
     },
     {
       "path": "certificate/release/v13-claim-contract.json",
@@ -2800,9 +2854,9 @@
     },
     {
       "path": "certificate/release/verify_release.py",
-      "canonical_bytes": 36946,
+      "canonical_bytes": 38457,
       "hash_mode": "canonical-lf",
-      "sha256": "e1596ae1af692244866eaaa9c4724ce81ac49bb08e8e8b117dadc76417d88f91"
+      "sha256": "f27c63aca35a54505b26127baf9ceaecf8372fd41ba2f264129bccd6e4d71c9e"
     },
     {
       "path": "CITATION.cff",
@@ -2830,15 +2884,15 @@
     },
     {
       "path": "paper/CERTIFICATE-MAP.md",
-      "canonical_bytes": 19213,
+      "canonical_bytes": 19769,
       "hash_mode": "canonical-lf",
-      "sha256": "dc7826ca90dfaf54d85e16de756b2aef7e9c5b1a2e9951e65eb8b91ef080ea69"
+      "sha256": "f7e454c980beb582ca7807642c646437216423651431079fcc591aed5ffbfce6"
     },
     {
       "path": "paper/CERTIFICATE-STATUS-ALERT.md",
-      "canonical_bytes": 4643,
+      "canonical_bytes": 5455,
       "hash_mode": "canonical-lf",
-      "sha256": "9cbfab05e6d20bd5dfa8c68ecb4390512844bd6004c1a90a060084cabdcffd04"
+      "sha256": "150b8686611a931f6c51da3f494c5e0744b1a87fdd2d67840bd53ef5a3cfb596"
     },
     {
       "path": "paper/DIMENSION-GAP-STATUS.md",
@@ -2932,9 +2986,9 @@
     },
     {
       "path": "README.md",
-      "canonical_bytes": 16165,
+      "canonical_bytes": 17008,
       "hash_mode": "canonical-lf",
-      "sha256": "cc062658f4ad52f85841e8d91e453c83137e66b9a5f20d6e462f38471765f076"
+      "sha256": "453c27e03472fcc36ba05ac9cc1889052729e2e3075b0cccfaf4a5938e2501af"
     },
     {
       "path": "requirements.txt",
@@ -2997,6 +3051,6 @@
       "sha256": "a405ef962afdfc120b5c3f2901ca58e95e2ab3963e642fa73dc2022f2d280cfa"
     }
   ],
-  "file_count": 499,
+  "file_count": 508,
   "scope": "Custody manifest for selected published files. Analytic dependency closure is checked separately by verify_release.py and is not inferred from file enumeration alone."
 }

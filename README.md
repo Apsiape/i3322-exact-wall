@@ -28,8 +28,8 @@ symmetric endpoint-clustered 25,601-knot witness and exactly optimizes it on a
 nonuniform hull, all 46,458 common intervals, and both endpoint receipts
 without importing the production verifier. The bound is unconditional. The
 registered target of a window below `3e-9` failed and remains recorded; the
-exact theorem is stronger than Sprint 1293 but does not restore equality,
-nonattainment, spatial separation, or nonclosure. See
+exact theorem is stronger than Sprint 1293 but did not by itself restore
+equality, nonattainment, spatial separation, or nonclosure. See
 [`ENDPOINT-CLUSTERED-COLLIDER-RESULT.md`](certificate/production/foundational-sprint-1294/ENDPOINT-CLUSTERED-COLLIDER-RESULT.md).
 
 Sprint 1292 installs an explicit 255-dimensional strategy, certifies it with
@@ -43,6 +43,23 @@ interval precision. Together the certificates give the unconditional window
 
 of width below `3.607e-9`. See
 [`RIGOROUS-DIMENSION-255-LOWER.md`](certificate/production/foundational-sprint-1292/RIGOROUS-DIMENSION-255-LOWER.md).
+
+**Model-value equality repaired.** Sprint 1295 proves a universal
+Bellman--path variational theorem and applies it to the exact Pal--Vertesi
+carrier. An independently written exact-rational audit reconstructs the
+source/target orientation, Schur-pivot floor, continuity argument, old
+operator-weld contract, and 24 carrier embeddings across both parity branches.
+Consequently the numerical window now brackets one common value:
+
+```text
+omega_tensor(I3322) = omega_commuting(I3322)
+                    = the common Bellman/path variational value.
+```
+
+This does not identify that value with the historical shooting decimal or
+restore finite-dimensional nonattainment, spatial attainment, or nonclosure.
+See
+[`BELLMAN-PATH-EQUIVALENCE-THEOREM.md`](certificate/production/foundational-sprint-1295/BELLMAN-PATH-EQUIVALENCE-THEOREM.md).
 
 The historical release claimed a computer-assisted proof that the tensor-product and
 commuting-operator suprema of the canonical three-setting, two-outcome

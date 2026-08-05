@@ -1,0 +1,221 @@
+{
+  "status": "independent exact audit of Bellman--path equivalence",
+  "imports_sprint_1295_verifier": false,
+  "index_orientation_attack": {
+    "fixtures": 500,
+    "exact_square_residuals": 500,
+    "wrong_orientation_detections": 475,
+    "minimum_correct_remainder": "0"
+  },
+  "pivot_floor_attack": {
+    "exact_rational_fixtures": 2000,
+    "minimum_pivot_minus_gershgorin_floor": "0",
+    "failures": []
+  },
+  "carrier_attack": {
+    "exact_rational_fixtures": 24,
+    "word_dimension_range": [
+      1,
+      8
+    ],
+    "both_parity_branches_exercised": {
+      "without_dummy": true,
+      "with_dummy": true
+    },
+    "all_direct_bell_values_equal_padded_jacobi_values": true,
+    "all_padded_values_equal_inner_word_values": true,
+    "fixtures": [
+      {
+        "word_dimension": 1,
+        "carrier_dimension": 3,
+        "dummy_inserted": false,
+        "direct_equals_padded": true,
+        "padded_equals_inner": true
+      },
+      {
+        "word_dimension": 1,
+        "carrier_dimension": 3,
+        "dummy_inserted": false,
+        "direct_equals_padded": true,
+        "padded_equals_inner": true
+      },
+      {
+        "word_dimension": 1,
+        "carrier_dimension": 3,
+        "dummy_inserted": false,
+        "direct_equals_padded": true,
+        "padded_equals_inner": true
+      },
+      {
+        "word_dimension": 2,
+        "carrier_dimension": 5,
+        "dummy_inserted": true,
+        "direct_equals_padded": true,
+        "padded_equals_inner": true
+      },
+      {
+        "word_dimension": 2,
+        "carrier_dimension": 5,
+        "dummy_inserted": true,
+        "direct_equals_padded": true,
+        "padded_equals_inner": true
+      },
+      {
+        "word_dimension": 2,
+        "carrier_dimension": 5,
+        "dummy_inserted": true,
+        "direct_equals_padded": true,
+        "padded_equals_inner": true
+      },
+      {
+        "word_dimension": 3,
+        "carrier_dimension": 5,
+        "dummy_inserted": false,
+        "direct_equals_padded": true,
+        "padded_equals_inner": true
+      },
+      {
+        "word_dimension": 3,
+        "carrier_dimension": 5,
+        "dummy_inserted": false,
+        "direct_equals_padded": true,
+        "padded_equals_inner": true
+      },
+      {
+        "word_dimension": 3,
+        "carrier_dimension": 5,
+        "dummy_inserted": false,
+        "direct_equals_padded": true,
+        "padded_equals_inner": true
+      },
+      {
+        "word_dimension": 4,
+        "carrier_dimension": 7,
+        "dummy_inserted": true,
+        "direct_equals_padded": true,
+        "padded_equals_inner": true
+      },
+      {
+        "word_dimension": 4,
+        "carrier_dimension": 7,
+        "dummy_inserted": true,
+        "direct_equals_padded": true,
+        "padded_equals_inner": true
+      },
+      {
+        "word_dimension": 4,
+        "carrier_dimension": 7,
+        "dummy_inserted": true,
+        "direct_equals_padded": true,
+        "padded_equals_inner": true
+      },
+      {
+        "word_dimension": 5,
+        "carrier_dimension": 7,
+        "dummy_inserted": false,
+        "direct_equals_padded": true,
+        "padded_equals_inner": true
+      },
+      {
+        "word_dimension": 5,
+        "carrier_dimension": 7,
+        "dummy_inserted": false,
+        "direct_equals_padded": true,
+        "padded_equals_inner": true
+      },
+      {
+        "word_dimension": 5,
+        "carrier_dimension": 7,
+        "dummy_inserted": false,
+        "direct_equals_padded": true,
+        "padded_equals_inner": true
+      },
+      {
+        "word_dimension": 6,
+        "carrier_dimension": 9,
+        "dummy_inserted": true,
+        "direct_equals_padded": true,
+        "padded_equals_inner": true
+      },
+      {
+        "word_dimension": 6,
+        "carrier_dimension": 9,
+        "dummy_inserted": true,
+        "direct_equals_padded": true,
+        "padded_equals_inner": true
+      },
+      {
+        "word_dimension": 6,
+        "carrier_dimension": 9,
+        "dummy_inserted": true,
+        "direct_equals_padded": true,
+        "padded_equals_inner": true
+      },
+      {
+        "word_dimension": 7,
+        "carrier_dimension": 9,
+        "dummy_inserted": false,
+        "direct_equals_padded": true,
+        "padded_equals_inner": true
+      },
+      {
+        "word_dimension": 7,
+        "carrier_dimension": 9,
+        "dummy_inserted": false,
+        "direct_equals_padded": true,
+        "padded_equals_inner": true
+      },
+      {
+        "word_dimension": 7,
+        "carrier_dimension": 9,
+        "dummy_inserted": false,
+        "direct_equals_padded": true,
+        "padded_equals_inner": true
+      },
+      {
+        "word_dimension": 8,
+        "carrier_dimension": 11,
+        "dummy_inserted": true,
+        "direct_equals_padded": true,
+        "padded_equals_inner": true
+      },
+      {
+        "word_dimension": 8,
+        "carrier_dimension": 11,
+        "dummy_inserted": true,
+        "direct_equals_padded": true,
+        "padded_equals_inner": true
+      },
+      {
+        "word_dimension": 8,
+        "carrier_dimension": 11,
+        "dummy_inserted": true,
+        "direct_equals_padded": true,
+        "padded_equals_inner": true
+      }
+    ]
+  },
+  "weld_typing_audit": {
+    "source_sha256": "5d9f117092196a99203d92d3af990d05fb6dcb3453fa86081083bb4d04af3fc0",
+    "receipt_all_gates_pass": true,
+    "input_contract_is_any_positive_G": true,
+    "all_hidden_dependencies_excluded": true,
+    "source_does_not_import_wall_candidate": true
+  },
+  "gates": {
+    "all_index_fixtures_exact": true,
+    "wrong_index_orientation_detected": true,
+    "young_remainder_nonnegative": true,
+    "no_pivot_floor_counterexample": true,
+    "carrier_direct_block_identity": true,
+    "carrier_principal_embedding_exact": true,
+    "weld_receipt_valid": true,
+    "weld_accepts_arbitrary_positive_storage": true,
+    "weld_excludes_failed_wall_dependencies": true,
+    "weld_source_has_no_candidate_import": true
+  },
+  "all_gates_pass": true,
+  "abstract_proof_verdict": "accept",
+  "i3322_consequence_verdict": "accept",
+  "claim_boundary": "Accepts equality of tensor and commuting values as the common Bellman/path variational constant only; historical decimal and attainment/nonclosure claims remain open."
+}

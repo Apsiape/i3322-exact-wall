@@ -82,6 +82,24 @@ whose exact certified width is approximately `3.606879488552207e-9`. This
 still does not identify the exact optimum or restore any nonattainment or
 correlation-set separation claim.
 
+## Model-value equality repair
+
+Sprint 1295 proves a separate universal Bellman--path equivalence.  Combined
+with the arbitrary-positive-storage operator weld from Sprint 1287 and the
+exact Pal--Vertesi principal-block carrier, it gives
+
+```text
+omega_tensor(I3322) = omega_commuting(I3322)
+                    = the common Bellman/path variational value.
+```
+
+The proof neither imports nor repairs the failed shooting-amplitude assembly.
+It is independently reconstructed by exact source/target, Schur-pivot, weld,
+and carrier attacks.  Thus the shrinking numerical window brackets one common
+value, not two potentially different values.  The common value is not yet
+identified with the historical decimal, so finite-dimensional nonattainment,
+spatial attainment at the true value, and nonclosure remain open.
+
 ## Repair signal, not yet a repair
 
 Sprint 1286 directly iterates the globally selected Bellman operator without

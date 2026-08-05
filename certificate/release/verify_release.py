@@ -124,6 +124,7 @@ REPLAY = [
     f"{PROD}/foundational-sprint-1293/exact_refined_witness_threshold.py",
     f"{PROD}/foundational-sprint-1294/build_endpoint_clustered_candidate.py",
     f"{PROD}/foundational-sprint-1294/exact_endpoint_clustered_threshold.py",
+    f"{PROD}/foundational-sprint-1295/bellman_path_equivalence_verify.py",
     f"{PROD}/foundational-sprint-1231/dimension_bound_algebra_verify.py",
     f"{PROD}/foundational-sprint-1233/master_ledger_verify.py",
     f"{REL}/normalization_concordance_verify.py",
@@ -139,6 +140,7 @@ REPLAY = [
     f"{IND}/dimension-255/dimension_255_mpmath.py",
     f"{IND}/refined-upper/refined_upper_exact.py",
     f"{IND}/endpoint-clustered/endpoint_clustered_exact.py",
+    f"{IND}/bellman-path/bellman_path_independent.py",
     f"{IND}/verify_independent_reconstruction.py",
     f"{IND}/spatial_symbolic_verify.py",
     f"{IND}/truncation_flux_mpmath.py",
@@ -259,6 +261,7 @@ def check_semantics() -> None:
         f"{PROD}/foundational-sprint-1291/rigorous-bellman-gap-anatomy.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1292/exact-dimension-255-lower-bound.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1293/exact-refined-witness-threshold.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1295/bellman-path-equivalence.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1238/coupled-sector-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1239/terminal-fork-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1232/inactive-quadratic-interval.json": "all_gates_pass",
@@ -271,6 +274,7 @@ def check_semantics() -> None:
         f"{IND}/dimension-255/dimension-255-mpmath.json": "all_gates_pass",
         f"{IND}/refined-upper/refined-upper-exact.json": "all_gates_pass",
         f"{IND}/endpoint-clustered/endpoint-clustered-exact.json": "all_gates_pass",
+        f"{IND}/bellman-path/bellman-path-independent.json": "all_gates_pass",
         f"{IND}/dimension-necessity/source-manifest-audit.json": "all_gates_pass",
         f"{IND}/dimension-necessity/post-blind-exact-audit.json": "all_gates_pass",
         f"{REL}/v13-claim-contract.json": "all_gates_pass",
@@ -377,6 +381,9 @@ def check_semantics() -> None:
     clustered_upper = load(
         f"{PROD}/foundational-sprint-1294/exact-endpoint-clustered-threshold.json"
     )
+    bellman_path = load(
+        f"{PROD}/foundational-sprint-1295/bellman-path-equivalence.json"
+    )
     independent_amplitude = load(
         f"{IND}/amplitude-gap/amplitude-gap-mpmath.json"
     )
@@ -394,6 +401,9 @@ def check_semantics() -> None:
     )
     independent_clustered_upper = load(
         f"{IND}/endpoint-clustered/endpoint-clustered-exact.json"
+    )
+    independent_bellman_path = load(
+        f"{IND}/bellman-path/bellman-path-independent.json"
     )
     assert coupled["terminal_near_entry_closed"] is False
     assert coupled["universal_dimension_lower_bound_proved"] is False
@@ -598,6 +608,20 @@ def check_semantics() -> None:
     assert independent_clustered_upper["fail_worst_receipt"] == (
         clustered_upper["fail_worst_receipt"]
     )
+    assert bellman_path["all_gates_pass"] is True
+    assert bellman_path["i3322_consequence"] == (
+        "omega_tensor(I3322)=omega_commuting(I3322)=the common Bellman/path value"
+    )
+    assert independent_bellman_path["all_gates_pass"] is True
+    assert independent_bellman_path["imports_sprint_1295_verifier"] is False
+    assert independent_bellman_path["abstract_proof_verdict"] == "accept"
+    assert independent_bellman_path["i3322_consequence_verdict"] == "accept"
+    assert independent_bellman_path["carrier_attack"][
+        "all_direct_bell_values_equal_padded_jacobi_values"
+    ] is True
+    assert independent_bellman_path["carrier_attack"][
+        "all_padded_values_equal_inner_word_values"
+    ] is True
     assert weighted_contraction["gates"]["cycle_radius_below_point_nine"] is True
     assert weighted_contraction["gates"]["weight_range_below_ten"] is True
 
@@ -639,13 +663,15 @@ def main() -> None:
         assert post_frozen == frozen
         check_private_exclusion(post_frozen)
     print(json.dumps({
-        "status": "CUSTODY_PASS_RIGOROUS_WINDOW_HEADLINE_GAP",
+        "status": "CUSTODY_PASS_COMMON_VALUE_HISTORICAL_HEADLINE_GAP",
         "frozen_files_checked": count,
         "deterministic_replay_completed": args.full,
         "private_path_exclusion_checked": True,
         "constructive_dimension_rate_checked": True,
         "conditional_lower_bound_ledger_replayed_but_not_promoted": True,
         "headline_theorem_certificate_closed": False,
+        "tensor_commuting_value_equality_closed": True,
+        "common_value_variationally_characterized": True,
         "rigorous_commuting_upper_bound": clustered_upper["q_pass"],
         "rigorous_upper_bound_certificate_closed": True,
         "rigorous_tensor_lower_bound": finite_lower["certified_value_lower"],
@@ -663,6 +689,8 @@ def main() -> None:
             "dimension-255 finite strategies, plus separately implemented "
             "exact reconstructions of the uniform and endpoint-clustered "
             "25,601-knot upper witnesses, and a "
+            "separately reconstructed Bellman--path equality theorem with "
+            "24 exact carrier fixtures across both parity branches, and a "
             "separately written 21-source conditional dimension-necessity "
             "reconstruction; the Bellman normalization gap is reproduced by "
             "independent Arb and mpmath.iv engines; the original chronology is "
