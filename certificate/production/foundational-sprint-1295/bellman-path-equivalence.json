@@ -1,0 +1,220 @@
+{
+  "status": "exact guards for universal Bellman--path equivalence",
+  "weighted_young_remainder": "(b*right - g*left)**2/g",
+  "schur_floor_remainder": "delta*norm_x_sq",
+  "hostile_branching_fixture": {
+    "all_four_edges_in_bellman_contact": true,
+    "path_receipts": [
+      {
+        "dimension": 1,
+        "terminal_pivot": "2",
+        "expected_terminal_pivot": "2",
+        "all_ones_rayleigh": "1",
+        "gap_to_three": "2"
+      },
+      {
+        "dimension": 2,
+        "terminal_pivot": "3/2",
+        "expected_terminal_pivot": "3/2",
+        "all_ones_rayleigh": "2",
+        "gap_to_three": "1"
+      },
+      {
+        "dimension": 3,
+        "terminal_pivot": "4/3",
+        "expected_terminal_pivot": "4/3",
+        "all_ones_rayleigh": "7/3",
+        "gap_to_three": "2/3"
+      },
+      {
+        "dimension": 4,
+        "terminal_pivot": "5/4",
+        "expected_terminal_pivot": "5/4",
+        "all_ones_rayleigh": "5/2",
+        "gap_to_three": "1/2"
+      },
+      {
+        "dimension": 5,
+        "terminal_pivot": "6/5",
+        "expected_terminal_pivot": "6/5",
+        "all_ones_rayleigh": "13/5",
+        "gap_to_three": "2/5"
+      },
+      {
+        "dimension": 6,
+        "terminal_pivot": "7/6",
+        "expected_terminal_pivot": "7/6",
+        "all_ones_rayleigh": "8/3",
+        "gap_to_three": "1/3"
+      },
+      {
+        "dimension": 7,
+        "terminal_pivot": "8/7",
+        "expected_terminal_pivot": "8/7",
+        "all_ones_rayleigh": "19/7",
+        "gap_to_three": "2/7"
+      },
+      {
+        "dimension": 8,
+        "terminal_pivot": "9/8",
+        "expected_terminal_pivot": "9/8",
+        "all_ones_rayleigh": "11/4",
+        "gap_to_three": "1/4"
+      },
+      {
+        "dimension": 9,
+        "terminal_pivot": "10/9",
+        "expected_terminal_pivot": "10/9",
+        "all_ones_rayleigh": "25/9",
+        "gap_to_three": "2/9"
+      },
+      {
+        "dimension": 10,
+        "terminal_pivot": "11/10",
+        "expected_terminal_pivot": "11/10",
+        "all_ones_rayleigh": "14/5",
+        "gap_to_three": "1/5"
+      },
+      {
+        "dimension": 11,
+        "terminal_pivot": "12/11",
+        "expected_terminal_pivot": "12/11",
+        "all_ones_rayleigh": "31/11",
+        "gap_to_three": "2/11"
+      },
+      {
+        "dimension": 12,
+        "terminal_pivot": "13/12",
+        "expected_terminal_pivot": "13/12",
+        "all_ones_rayleigh": "17/6",
+        "gap_to_three": "1/6"
+      },
+      {
+        "dimension": 13,
+        "terminal_pivot": "14/13",
+        "expected_terminal_pivot": "14/13",
+        "all_ones_rayleigh": "37/13",
+        "gap_to_three": "2/13"
+      },
+      {
+        "dimension": 14,
+        "terminal_pivot": "15/14",
+        "expected_terminal_pivot": "15/14",
+        "all_ones_rayleigh": "20/7",
+        "gap_to_three": "1/7"
+      },
+      {
+        "dimension": 15,
+        "terminal_pivot": "16/15",
+        "expected_terminal_pivot": "16/15",
+        "all_ones_rayleigh": "43/15",
+        "gap_to_three": "2/15"
+      },
+      {
+        "dimension": 16,
+        "terminal_pivot": "17/16",
+        "expected_terminal_pivot": "17/16",
+        "all_ones_rayleigh": "23/8",
+        "gap_to_three": "1/8"
+      }
+    ],
+    "all_pivot_formulas_exact": true,
+    "path_lower_values_strictly_increase": true,
+    "path_gap_formula_exact": true
+  },
+  "finite_horizon_orientation_fixture": {
+    "levels": [
+      {
+        "history_edges": 1,
+        "terminal_infima": [
+          "34/9",
+          "25/7",
+          "39/11"
+        ]
+      },
+      {
+        "history_edges": 2,
+        "terminal_infima": [
+          "5869/1575",
+          "10499/2975",
+          "6726/1925"
+        ]
+      },
+      {
+        "history_edges": 3,
+        "terminal_infima": [
+          "2464337/661437",
+          "144961/41083",
+          "2824152/808423"
+        ]
+      },
+      {
+        "history_edges": 4,
+        "terminal_infima": [
+          "34025329/9132543",
+          "1521690389/431258975",
+          "38993322/11161997"
+        ]
+      },
+      {
+        "history_edges": 5,
+        "terminal_infima": [
+          "357172030157/95866494507",
+          "21010119421/5954432575",
+          "409322242122/117170159953"
+        ]
+      },
+      {
+        "history_edges": 6,
+        "terminal_infima": [
+          "4931507130973/1323637523523",
+          "220548257001929/62505105277475",
+          "5651549912658/1617779195417"
+        ]
+      }
+    ],
+    "all_enumerated_pivots_positive": true,
+    "extension_infimum_orientation_exact": true
+  },
+  "endpoint_padding_fixture": {
+    "original_labels": [
+      "-2/3",
+      "1/5",
+      "4/7",
+      "-1/4"
+    ],
+    "padded_labels": [
+      "1",
+      "-2/3",
+      "1/5",
+      "4/7",
+      "-1/4",
+      "-1"
+    ],
+    "padded_amplitudes": [
+      "0",
+      "2/7",
+      "-3/8",
+      "5/9",
+      "0"
+    ],
+    "original_quadratic_form": "-251065307/363242880",
+    "padded_quadratic_form": "-251065307/363242880",
+    "principal_block_value_preserved": true
+  },
+  "gates": {
+    "weighted_young_square_exact": true,
+    "schur_floor_symbolic_nonnegative": true,
+    "branching_all_edges_contact": true,
+    "branching_pivot_formula_exact": true,
+    "branching_path_values_increase": true,
+    "branching_gap_to_value_exact": true,
+    "hostile_pivots_positive": true,
+    "terminal_infimum_orientation_exact": true,
+    "endpoint_padding_preserves_value": true
+  },
+  "all_gates_pass": true,
+  "theorem": "For compact metric X and continuous d,b>=0, the Bellman storage infimum equals the supremum of all finite Jacobi path spectra.",
+  "i3322_consequence": "omega_tensor(I3322)=omega_commuting(I3322)=the common Bellman/path value",
+  "claim_boundary": "Does not identify the historical decimal, prove attainment or nonattainment, or restore nonclosure/correlation-set separation."
+}
