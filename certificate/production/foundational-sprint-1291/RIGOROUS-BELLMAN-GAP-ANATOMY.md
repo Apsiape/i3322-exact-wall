@@ -1,5 +1,10 @@
 # Rigorous Bellman-gap anatomy
 
+> **Certificate-specific historical anatomy.** This decomposition concerns
+> the Sprint 1288 dimension-127 path. Sprint 1292 now supplies the stronger
+> public lower endpoint. The general gap identity remains current; the
+> percentages below are not the anatomy of the new window.
+
 Status: **certified identity and certificate-specific quantitative diagnosis**
 
 ## The identity

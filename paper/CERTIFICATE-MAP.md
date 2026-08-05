@@ -12,7 +12,9 @@ This file separates analytic claims from computer-assisted inputs.
 | Explicit 127-dimensional tensor lower strategy | Sprint 1288 | exact rational profile/state plus certified rational square-root floors |
 | Bellman--Hellinger flow duality and exact path embedding | Sprint 1289 | finite convex duality proof plus exact symbolic/rational guards |
 | Sharp `10^-15`-grid threshold for the fixed rational witness | Sprint 1290 | standard-library exact binary search over all 10,902 common intervals |
-| Unconditional two-sided window of width below `2.988e-7` | Sprints 1288/1290 | exact lower quotient and exact commuting upper bound |
+| Explicit 255-dimensional tensor lower strategy | Sprint 1292 | exact rational profile/state plus certified rational square-root floors |
+| Independent dimension-255 reconstruction | independent lane | direct 160-digit `mpmath.iv` evaluation, no production engine import |
+| Unconditional two-sided window of width below `1.101e-7` | Sprints 1290/1292 | exact lower quotient and exact commuting upper bound |
 | Independent finite-strategy reconstruction | independent lane | direct 160-digit `mpmath.iv` evaluation, no production engine import |
 
 The candidate builder is not a theorem owner. It merely emits the committed

@@ -117,6 +117,9 @@ REPLAY = [
     f"{PROD}/foundational-sprint-1288/exact_finite_strategy_lower_bound.py",
     f"{PROD}/foundational-sprint-1289/bellman_hellinger_flow_verify.py",
     f"{PROD}/foundational-sprint-1290/exact_fixed_witness_threshold.py",
+    f"{PROD}/foundational-sprint-1291/rigorous_bellman_gap_anatomy.py",
+    f"{PROD}/foundational-sprint-1292/build_dimension_255_candidate.py",
+    f"{PROD}/foundational-sprint-1292/exact_dimension_255_lower_bound.py",
     f"{PROD}/foundational-sprint-1231/dimension_bound_algebra_verify.py",
     f"{PROD}/foundational-sprint-1233/master_ledger_verify.py",
     f"{REL}/normalization_concordance_verify.py",
@@ -129,6 +132,7 @@ REPLAY = [
     f"{IND}/amplitude-gap/amplitude_gap_mpmath.py",
     f"{IND}/amplitude-gap/amplitude_gap_concordance.py",
     f"{IND}/finite-strategy/finite_strategy_mpmath.py",
+    f"{IND}/dimension-255/dimension_255_mpmath.py",
     f"{IND}/verify_independent_reconstruction.py",
     f"{IND}/spatial_symbolic_verify.py",
     f"{IND}/truncation_flux_mpmath.py",
@@ -246,6 +250,8 @@ def check_semantics() -> None:
         f"{PROD}/foundational-sprint-1288/exact-finite-strategy-lower-bound.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1289/bellman-hellinger-flow.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1290/exact-fixed-witness-threshold.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1291/rigorous-bellman-gap-anatomy.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1292/exact-dimension-255-lower-bound.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1238/coupled-sector-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1239/terminal-fork-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1232/inactive-quadratic-interval.json": "all_gates_pass",
@@ -255,6 +261,7 @@ def check_semantics() -> None:
         f"{IND}/spatial-symbolic-guard.json": "all_gates_pass",
         f"{IND}/truncation-flux-independent.json": "all_gates_pass",
         f"{IND}/finite-strategy/finite-strategy-mpmath.json": "all_gates_pass",
+        f"{IND}/dimension-255/dimension-255-mpmath.json": "all_gates_pass",
         f"{IND}/dimension-necessity/source-manifest-audit.json": "all_gates_pass",
         f"{IND}/dimension-necessity/post-blind-exact-audit.json": "all_gates_pass",
         f"{REL}/v13-claim-contract.json": "all_gates_pass",
@@ -349,6 +356,12 @@ def check_semantics() -> None:
     sharpened_upper = load(
         f"{PROD}/foundational-sprint-1290/exact-fixed-witness-threshold.json"
     )
+    gap_anatomy = load(
+        f"{PROD}/foundational-sprint-1291/rigorous-bellman-gap-anatomy.json"
+    )
+    dimension_255 = load(
+        f"{PROD}/foundational-sprint-1292/exact-dimension-255-lower-bound.json"
+    )
     independent_amplitude = load(
         f"{IND}/amplitude-gap/amplitude-gap-mpmath.json"
     )
@@ -357,6 +370,9 @@ def check_semantics() -> None:
     )
     independent_finite = load(
         f"{IND}/finite-strategy/finite-strategy-mpmath.json"
+    )
+    independent_255 = load(
+        f"{IND}/dimension-255/dimension-255-mpmath.json"
     )
     assert coupled["terminal_near_entry_closed"] is False
     assert coupled["universal_dimension_lower_bound_proved"] is False
@@ -484,6 +500,12 @@ def check_semantics() -> None:
         "31359436823543/125000000000000"
     )
     assert sharpened_upper["rigorous_window_width_decimal"] < 2.988e-7
+    assert gap_anatomy["all_gates_pass"] is True
+    assert gap_anatomy["gates"]["four_way_ledger_closes"] is True
+    assert dimension_255["all_gates_pass"] is True
+    assert dimension_255["dimension"] == 255
+    assert dimension_255["certified_value_lower_decimal"] > 0.2508753844
+    assert dimension_255["rigorous_window_width_decimal"] < 1.101e-7
     assert independent_amplitude["all_gates_pass"] is True
     assert independent_amplitude["imports_production_engine"] is False
     assert independent_amplitude["largest_y_derivative_upper"] < -285
@@ -499,6 +521,10 @@ def check_semantics() -> None:
     assert independent_finite["gates"][
         "actual_interval_above_production_floor"
     ] is True
+    assert independent_255["all_gates_pass"] is True
+    assert independent_255["imports_production_engine"] is False
+    assert independent_255["dimension"] == 255
+    assert independent_255["interval_width_upper_float"] < 1e-100
     assert weighted_contraction["gates"]["cycle_radius_below_point_nine"] is True
     assert weighted_contraction["gates"]["weight_range_below_ten"] is True
 
@@ -526,7 +552,7 @@ def main() -> None:
     check_private_exclusion(frozen)
     check_semantics()
     finite_lower = load(
-        f"{PROD}/foundational-sprint-1288/exact-finite-strategy-lower-bound.json"
+        f"{PROD}/foundational-sprint-1292/exact-dimension-255-lower-bound.json"
     )
     sharpened_upper = load(
         f"{PROD}/foundational-sprint-1290/exact-fixed-witness-threshold.json"
@@ -550,7 +576,7 @@ def main() -> None:
         "rigorous_commuting_upper_bound": sharpened_upper["q_pass"],
         "rigorous_upper_bound_certificate_closed": True,
         "rigorous_tensor_lower_bound": finite_lower["certified_value_lower"],
-        "rigorous_value_window_width": sharpened_upper["rigorous_window_width"],
+        "rigorous_value_window_width": finite_lower["rigorous_window_width"],
         "rigorous_two_sided_window_certificate_closed": True,
         "exact_optimum_identified": False,
         "load_bearing_gap": (
@@ -560,7 +586,8 @@ def main() -> None:
         "independence_boundary": (
             "production Arb stack plus separate mpmath.iv reconstruction and "
             "independent symbolic spatial-carrier/truncation reconstruction, "
-            "plus an independent 160-digit finite-strategy evaluation and a "
+            "plus independent 160-digit evaluations of the dimension-127 and "
+            "dimension-255 finite strategies and a "
             "separately written 21-source conditional dimension-necessity "
             "reconstruction; the Bellman normalization gap is reproduced by "
             "independent Arb and mpmath.iv engines; the original chronology is "

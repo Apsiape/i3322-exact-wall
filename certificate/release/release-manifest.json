@@ -87,6 +87,24 @@
       "sha256": "04c62cc07629028d5bee5a4b43c92ac4a92f61e899a919fc12295916c5c69f1c"
     },
     {
+      "path": "certificate/independent/dimension-255/dimension-255-mpmath.json",
+      "canonical_bytes": 1991,
+      "hash_mode": "canonical-lf",
+      "sha256": "f2784d09cb6a684cca582a381377c3a3e3228cc52533066ce4ec985ffab61c65"
+    },
+    {
+      "path": "certificate/independent/dimension-255/dimension_255_mpmath.py",
+      "canonical_bytes": 4027,
+      "hash_mode": "canonical-lf",
+      "sha256": "2281215c4478bccb4e9ef599db42add19854bf56f224a5ed3ce8c429bcff5c24"
+    },
+    {
+      "path": "certificate/independent/dimension-255/PRE-REGISTRATION.md",
+      "canonical_bytes": 926,
+      "hash_mode": "canonical-lf",
+      "sha256": "1daf212858d441939cdcebc55018a6c8f2b4d48b9e5dbca7321c7dab2208a48d"
+    },
+    {
       "path": "certificate/independent/dimension-necessity/BLIND-DIMENSION-RECONSTRUCTION.md",
       "canonical_bytes": 18476,
       "hash_mode": "canonical-lf",
@@ -2560,9 +2578,69 @@
     },
     {
       "path": "certificate/production/foundational-sprint-1290/SHARPENED-RIGOROUS-I3322-WINDOW.md",
-      "canonical_bytes": 2121,
+      "canonical_bytes": 2391,
       "hash_mode": "canonical-lf",
-      "sha256": "100bfaed4a561dfcc57daedba1229669b2a77efab352c5374134c0ca2edad6b2"
+      "sha256": "92d60d9cc158cb1e3ff360ecb36b548b5b6b6d49309341a8e465287674898803"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1291/PRE-REGISTRATION.md",
+      "canonical_bytes": 1762,
+      "hash_mode": "canonical-lf",
+      "sha256": "dde2c133343f13eec753458680b64f3db4388d30b89e9bae293e09921cc19e1f"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1291/rigorous-bellman-gap-anatomy.json",
+      "canonical_bytes": 12166,
+      "hash_mode": "canonical-lf",
+      "sha256": "69941664a72dd3127c1f2de8378c8fa582ef974867d4d895366539d6dbd698da"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1291/RIGOROUS-BELLMAN-GAP-ANATOMY.md",
+      "canonical_bytes": 3193,
+      "hash_mode": "canonical-lf",
+      "sha256": "20ae07abcd0f53221e133e05c197dc12e3da12e81911cc05271061cea74bf936"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1291/rigorous_bellman_gap_anatomy.py",
+      "canonical_bytes": 8243,
+      "hash_mode": "canonical-lf",
+      "sha256": "a7438cdf228c86fee65d4666dceb1bd19139a7c2bfa7816f8e11c8e7622bc784"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1292/build_dimension_255_candidate.py",
+      "canonical_bytes": 3757,
+      "hash_mode": "canonical-lf",
+      "sha256": "ec5b663bcefe1f4034f9290c0a1e18cb6d2722270a5bd47ddc7a242777c7caf4"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1292/dimension-255-candidate.json",
+      "canonical_bytes": 21121,
+      "hash_mode": "canonical-lf",
+      "sha256": "9fa20f4da254ad556237a3e28018639ded4c3b23001eb7997dde0fdd0a98d793"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1292/exact-dimension-255-lower-bound.json",
+      "canonical_bytes": 2607,
+      "hash_mode": "canonical-lf",
+      "sha256": "87fe64a8fa59b92171b9f399ff6c82341bcbcd2aa805e11604de8ab01a15599a"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1292/exact_dimension_255_lower_bound.py",
+      "canonical_bytes": 5199,
+      "hash_mode": "canonical-lf",
+      "sha256": "216591f728e8e15b5c6047a16f85d0a62c10c9e4d725c19b11fa2b481061e028"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1292/PRE-REGISTRATION.md",
+      "canonical_bytes": 1655,
+      "hash_mode": "canonical-lf",
+      "sha256": "c59a3ff9aca121a8b54611eace14df4982813f8bc46eded709c8155bc5e20277"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1292/RIGOROUS-DIMENSION-255-LOWER.md",
+      "canonical_bytes": 1887,
+      "hash_mode": "canonical-lf",
+      "sha256": "497e9de46084ef759fa89c3c6cdd64c9f7a8a07e3d539bc00c46540cdc791229"
     },
     {
       "path": "certificate/release/build_release_manifest.py",
@@ -2596,9 +2674,9 @@
     },
     {
       "path": "certificate/release/README.md",
-      "canonical_bytes": 2264,
+      "canonical_bytes": 2287,
       "hash_mode": "canonical-lf",
-      "sha256": "b6bd577a3fb4c889d6268696d69436518eda0fca213301f7d7b14641069e8b47"
+      "sha256": "b77c605023e371788681b968d24b188344d2339b1478b72ce1ce776e6d360f1c"
     },
     {
       "path": "certificate/release/v13-claim-contract.json",
@@ -2614,9 +2692,9 @@
     },
     {
       "path": "certificate/release/verify_release.py",
-      "canonical_bytes": 31586,
+      "canonical_bytes": 33072,
       "hash_mode": "canonical-lf",
-      "sha256": "1d5087f5de6266fd744199f5f9851013e336dee4b4ba5f72d380948d0bf260f1"
+      "sha256": "322be214553656e5b5588d5d14fd4b0a92ed8d38acf021cc3b123a2de9fe8668"
     },
     {
       "path": "CITATION.cff",
@@ -2644,15 +2722,15 @@
     },
     {
       "path": "paper/CERTIFICATE-MAP.md",
-      "canonical_bytes": 18006,
+      "canonical_bytes": 18280,
       "hash_mode": "canonical-lf",
-      "sha256": "b17eb21677c4655e9460e6cea54e369319d6d6b93ddf0014569f5c7bd97d5bb5"
+      "sha256": "ad5c6d0e359cb9e6652d8dd23691419d8b26bb02579fbc7a298a33e1d390225b"
     },
     {
       "path": "paper/CERTIFICATE-STATUS-ALERT.md",
-      "canonical_bytes": 4375,
+      "canonical_bytes": 4437,
       "hash_mode": "canonical-lf",
-      "sha256": "7e28506910b8137dd38048a3857ff4b03da05a89f7137323f85b0116506a4135"
+      "sha256": "de4479f6617ee063960d23ec541d789e7cdd6faae3a72d62fdd3a1d118b015ba"
     },
     {
       "path": "paper/DIMENSION-GAP-STATUS.md",
@@ -2662,9 +2740,9 @@
     },
     {
       "path": "paper/MANUSCRIPT.md",
-      "canonical_bytes": 26162,
+      "canonical_bytes": 26171,
       "hash_mode": "canonical-lf",
-      "sha256": "9fbd2486a9240ae4942c109046f7045c2c26ca5d5149507c33a16bbb92798d2d"
+      "sha256": "fc9d54eef2bcc8f823d1296277f5a65b36772b964e25e085418081fc5f88ba05"
     },
     {
       "path": "paper/manuscript.pdf",
@@ -2722,15 +2800,15 @@
     },
     {
       "path": "paper/RELEASE-NOTES-v1.3.0.md",
-      "canonical_bytes": 5979,
+      "canonical_bytes": 5997,
       "hash_mode": "canonical-lf",
-      "sha256": "c97e775b2a85e8866e89a24dc1e51d391e390b9df618006d55d7a5a232cdae86"
+      "sha256": "d7648f91767981e879ebf8e675cb01dfdb95dfd5efcdf0515e861c1cd15ea436"
     },
     {
       "path": "paper/TECHNICAL-SUPPLEMENT.md",
-      "canonical_bytes": 15683,
+      "canonical_bytes": 15685,
       "hash_mode": "canonical-lf",
-      "sha256": "fd8fa02456ef835ee803c09e8bc696f3167428d8762b646d94565101d2934d3e"
+      "sha256": "461c0a3eb446be408bce3cdde325f78f0f55610fff7d31651bbc4e1ee0e97fc1"
     },
     {
       "path": "paper/technical-supplement.pdf",
@@ -2746,9 +2824,9 @@
     },
     {
       "path": "README.md",
-      "canonical_bytes": 15867,
+      "canonical_bytes": 15885,
       "hash_mode": "canonical-lf",
-      "sha256": "9468d56ed2632a72fd2a2a4548774b6737ecdd9ccb09dc335627f0828855c221"
+      "sha256": "0a5a3755f64775aecbe691a22c523920395f7222376a52de785f65d6a267fd2e"
     },
     {
       "path": "requirements.txt",
@@ -2811,6 +2889,6 @@
       "sha256": "a405ef962afdfc120b5c3f2901ca58e95e2ab3963e642fa73dc2022f2d280cfa"
     }
   ],
-  "file_count": 468,
+  "file_count": 481,
   "scope": "Custody manifest for selected published files. Analytic dependency closure is checked separately by verify_release.py and is not inferred from file enumeration alone."
 }

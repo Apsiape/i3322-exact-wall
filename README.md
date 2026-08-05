@@ -29,17 +29,17 @@ upper bound, but it does not restore exact equality, nonattainment, spatial
 separation, or nonclosure. See
 [`SHARPENED-RIGOROUS-I3322-WINDOW.md`](certificate/production/foundational-sprint-1290/SHARPENED-RIGOROUS-I3322-WINDOW.md).
 
-Sprint 1288 independently installs one explicit 127-dimensional strategy and
-certifies its value from below using rational square-root floors. Together the
-two new certificates give the unconditional window
+Sprint 1292 installs an explicit 255-dimensional strategy, certifies it with
+rational square-root floors, and independently reconstructs it at 160-digit
+interval precision. Together the certificates give the unconditional window
 
 ```text
-0.25087519579012 < omega_tensor
+0.2508753845015185 < omega_tensor
                    <= omega_commuting <= 0.250875494588345,
 ```
 
-of width below `2.988e-7`. See
-[`SHARPENED-RIGOROUS-I3322-WINDOW.md`](certificate/production/foundational-sprint-1290/SHARPENED-RIGOROUS-I3322-WINDOW.md).
+of width below `1.101e-7`. See
+[`RIGOROUS-DIMENSION-255-LOWER.md`](certificate/production/foundational-sprint-1292/RIGOROUS-DIMENSION-255-LOWER.md).
 
 The historical release claimed a computer-assisted proof that the tensor-product and
 commuting-operator suprema of the canonical three-setting, two-outcome

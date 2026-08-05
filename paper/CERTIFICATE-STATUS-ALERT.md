@@ -68,16 +68,17 @@ same fixed witness on the `10^-15` grid; its immediate predecessor fails while
 the displayed endpoint passes. That numerical proximity to the historical
 wall candidate is not used as an equality theorem.
 
-Sprint 1288 then supplies the missing independent lower side: a committed
-127-dimensional finite tensor-product strategy evaluated with exact rational
-square-root floors. Repository HEAD therefore proves the unconditional window
+Sprint 1292 supplies the strongest current lower side: a committed
+255-dimensional finite tensor-product strategy evaluated with exact rational
+square-root floors and reconstructed independently with 160-digit interval
+arithmetic. Repository HEAD therefore proves the unconditional window
 
 ```text
-0.25087519579012 < omega_tensor
+0.2508753845015185 < omega_tensor
                    <= omega_commuting <= 0.250875494588345,
 ```
 
-whose exact certified width is approximately `2.9879822277405625e-7`. This
+whose exact certified width is approximately `1.1008682648855221e-7`. This
 still does not identify the exact optimum or restore any nonattainment or
 correlation-set separation claim.
 
