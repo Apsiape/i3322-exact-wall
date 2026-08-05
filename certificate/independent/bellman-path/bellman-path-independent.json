@@ -1,0 +1,46 @@
+{
+  "status": "independent exact audit of Bellman--path equivalence",
+  "imports_sprint_1295_verifier": false,
+  "index_orientation_attack": {
+    "fixtures": 500,
+    "exact_square_residuals": 500,
+    "wrong_orientation_detections": 475,
+    "minimum_correct_remainder": "0"
+  },
+  "pivot_floor_attack": {
+    "exact_rational_fixtures": 2000,
+    "minimum_pivot_minus_gershgorin_floor": "0",
+    "failures": []
+  },
+  "carrier_attack": {
+    "carrier_dimension": 5,
+    "direct_bell_value": "-10163413852/101267231065",
+    "padded_jacobi_value": "-10163413852/101267231065",
+    "inner_word_value": "-10163413852/101267231065",
+    "direct_equals_padded": true,
+    "padded_equals_inner": true
+  },
+  "weld_typing_audit": {
+    "source_sha256": "5d9f117092196a99203d92d3af990d05fb6dcb3453fa86081083bb4d04af3fc0",
+    "receipt_all_gates_pass": true,
+    "input_contract_is_any_positive_G": true,
+    "all_hidden_dependencies_excluded": true,
+    "source_does_not_import_wall_candidate": true
+  },
+  "gates": {
+    "all_index_fixtures_exact": true,
+    "wrong_index_orientation_detected": true,
+    "young_remainder_nonnegative": true,
+    "no_pivot_floor_counterexample": true,
+    "carrier_direct_block_identity": true,
+    "carrier_principal_embedding_exact": true,
+    "weld_receipt_valid": true,
+    "weld_accepts_arbitrary_positive_storage": true,
+    "weld_excludes_failed_wall_dependencies": true,
+    "weld_source_has_no_candidate_import": true
+  },
+  "all_gates_pass": true,
+  "abstract_proof_verdict": "accept",
+  "i3322_consequence_verdict": "accept",
+  "claim_boundary": "Accepts equality of tensor and commuting values as the common Bellman/path variational constant only; historical decimal and attainment/nonclosure claims remain open."
+}
