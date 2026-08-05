@@ -1,0 +1,29 @@
+{
+  "status": "PROMOTED",
+  "promotion_record": {
+    "review": "three independent adversarial rounds",
+    "record": "review/ROUND3-VERDICT.md",
+    "receipts": "4/4"
+  },
+  "certified_window": {
+    "lower_open": "0.2508753845015185",
+    "upper_closed": "0.250875388108398"
+  },
+  "endpoint_receipts": {
+    "m_plus_exact": "23686917837403/3008753881083980",
+    "m_minus_exact": "274562305945801/4008753881083980",
+    "R0_right_gap_at_least": "23686917837403/6017507762167960",
+    "R0_left_gap_at_least": "274562305945801/8017507762167960"
+  },
+  "theorem": {
+    "finite_dimensional_attainment": false,
+    "Cq_nonclosed": true
+  },
+  "not_promoted": [
+    "current spatial attainment",
+    "C_qs minus C_q separation",
+    "historical exact value",
+    "dimension-necessity converse"
+  ],
+  "artifact_scope": "algebraic identities and exact arithmetic only"
+}

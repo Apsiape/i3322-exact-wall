@@ -1,0 +1,26 @@
+[
+  {
+    "script": "package_v5_integrity_verify.py",
+    "returncode": 0,
+    "stdout": "PASS: W1-W10 package controls and status consistency\n",
+    "stderr": ""
+  },
+  {
+    "script": "four_receipts_at_S_endpoint_exact.py",
+    "returncode": 0,
+    "stdout": "PASS: exact endpoint identities and margins only\nm_plus = 23686917837403/3008753881083980\nm_minus = 274562305945801/4008753881083980\n",
+    "stderr": ""
+  },
+  {
+    "script": "convex_envelope_algebraic_guards.py",
+    "returncode": 0,
+    "stdout": "PASS: algebraic identities only\nNOT VERIFIED: convex-minorant existence/maximality, no-kink proof, envelope binding\n",
+    "stderr": ""
+  },
+  {
+    "script": "critical_zero_set_algebraic_guards.py",
+    "returncode": 0,
+    "stdout": "PASS: zero-set algebraic identities only\nNOT VERIFIED: gluing construction, limiting passage, spectral support, operator closure\n",
+    "stderr": ""
+  }
+]

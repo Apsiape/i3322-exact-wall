@@ -2,17 +2,21 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21782008.svg)](https://doi.org/10.5281/zenodo.21782008)
 
-> **Certificate status alert (2026-08-04).** A post-release exact Arb audit
-> found a load-bearing global-amplitude mismatch in the Bellman upper-bound
-> assembly. The complete unique-root bracket gives a mismatch in
-> `[0.00014027592551842303, 0.00017894047518170395]`, excluding zero. The
-> numerical candidate is not thereby disproved, but the headline optimum,
-> nonattainment, separation, and nonclosure claims are **not presently closed
-> by this certificate**. See
-> [`paper/CERTIFICATE-STATUS-ALERT.md`](paper/CERTIFICATE-STATUS-ALERT.md) and
-> Sprint 1285. A separate `mpmath.iv` engine independently reconstructs the
-> exclusion. Frozen DOI releases are preserved as historical records while the
-> proof is repaired.
+> **Finite-dimensional nonattainment and nonclosure restored (v3.0.0,
+> 2026-08-05).** The Sprint-1285 audit that decertified the historical
+> headline stands. A new, independent proof route now re-establishes the two
+> corollaries at the current common value: **no finite-dimensional quantum
+> strategy attains the I3322 supremum `S`, and `C_q(3,3;2,2)` is not
+> closed.** The proof survived three rounds of independent refutation-first
+> adversarial review; the final round signed the statement and its exact
+> dependency list. See
+> [`certificate/production/theorem-N-four-receipts-at-S/`](certificate/production/theorem-N-four-receipts-at-S/)
+> (signed statement, complete proof documents, review record, and
+> algebraic/exact-arithmetic guards). The exact optimum (identification of
+> `S` beyond its certified `3.61e-9` window) and current spatial attainment
+> (`C_qs \ C_q`) remain **open** and are not claimed. Frozen DOI releases
+> are preserved as historical records; the correction history is part of the
+> record.
 
 **Rigorous partial repair at repository HEAD.** Sprints 1287--1294
 prove, from committed rational Bellman subsolutions and an exact abstract
@@ -56,8 +60,11 @@ omega_tensor(I3322) = omega_commuting(I3322)
                     = the common Bellman/path variational value.
 ```
 
-This does not identify that value with the historical shooting decimal or
-restore finite-dimensional nonattainment, spatial attainment, or nonclosure.
+This does not identify that value with the historical shooting decimal.
+Finite-dimensional nonattainment and nonclosure at the common value are now
+restored by the independent route in
+[`certificate/production/theorem-N-four-receipts-at-S/`](certificate/production/theorem-N-four-receipts-at-S/);
+spatial attainment at the current value remains open.
 See
 [`BELLMAN-PATH-EQUIVALENCE-THEOREM.md`](certificate/production/foundational-sprint-1295/BELLMAN-PATH-EQUIVALENCE-THEOREM.md).
 

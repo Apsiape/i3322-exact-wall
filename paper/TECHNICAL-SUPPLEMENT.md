@@ -8,7 +8,11 @@
 > rational subsolution proves `omega_c <= 0.250875388108398` without repairing
 > the fixed-point assembly; its exact arithmetic is independently
 > reconstructed. A direct 255-dimensional strategy supplies the lower bound
-> `omega_tensor > 0.2508753845015185`.
+> `omega_tensor > 0.2508753845015185`. As of v3.0.0 (2026-08-05),
+> finite-dimensional nonattainment and nonclosure are restored at the common
+> value `S` by an independent route that does not use this supplement's
+> fixed-point assembly; see
+> `certificate/production/theorem-N-four-receipts-at-S/`.
 
 **Seth Douglas** ·
 [ORCID 0009-0007-4708-3252](https://orcid.org/0009-0007-4708-3252) ·

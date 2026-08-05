@@ -114,3 +114,33 @@ not an interval proof and not a restoration of the headline theorem. Sprint
 1287 completes the first direct globally normalized subsolution above that
 threshold; closing the remaining approximately `1e-6` gap requires a limiting
 or adaptive exact certificate, or a separate certified lower strategy.
+
+## Nonattainment and nonclosure restored (2026-08-05, v3.0.0)
+
+A new proof route, independent of the decertified Sprint-1195 fixed point,
+restores the two corollaries at the current common value `S`:
+
+- **Theorem (N).** No finite-dimensional quantum strategy (any dimension,
+  pure or mixed states, projective or POVM measurements) attains `S`.
+- **Corollary.** `C_q(3,3;2,2)` is not closed.
+
+The route consumes only: the Sprint-1287 generic operator weld, the
+Sprint-1295 terminal-pivot storages and value equality, the Sprint-1292/1294
+window, the Sprint-1198 equality-kernel mechanism, the Sprint-1206 finite
+principal-block identity, and a new analytic package (limiting-weld
+substitute, exact rational endpoint receipts, storage concavity,
+reflection-gluing `K >= 1`, zero-set localization, strict Monge ordering,
+and an open-interval convex-envelope no-kink theorem). It explicitly does
+NOT use the decertified amplitude normalization, any reflected left wing,
+or the historical spatial construction.
+
+The proof survived three rounds of independent refutation-first adversarial
+review; round 1 refuted an earlier restoration attempt outright, round 2
+found only one of four required inputs certified, and round 3 signed the
+completed chain with a public claim boundary. The full review record ships
+with the certificate. See
+`certificate/production/theorem-N-four-receipts-at-S/`.
+
+Still open, and still not claimed: identification of `S` beyond the
+certified window; spatial attainment at `S`; the `C_qs \ C_q` separation;
+and the dimension-necessity lower bound.

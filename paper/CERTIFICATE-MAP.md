@@ -269,3 +269,28 @@ workstation. The remaining commands complete in seconds.
 dependency, and receipt hash. `paper/TECHNICAL-SUPPLEMENT.md` explains every numerical margin and also
 records two rejected instruments: the six-forward-piece graph convention and
 the endpoint line-derivative guard.
+
+## v3.0.0 addition: Theorem (N) restoration chain (2026-08-05)
+
+The finite-dimensional nonattainment theorem and nonclosure corollary are
+restored at the common value `S` by the certificate directory
+`certificate/production/theorem-N-four-receipts-at-S/`. The chain:
+
+| Component | Source | Verification |
+|---|---|---|
+| Limiting-weld substitute (equality module at `S` for a hypothetical finite maximizer) | `FOUR_RECEIPTS_AT_S_ASSEMBLY.md` | three-round adversarial review (shipped: `review/ROUND3-VERDICT.md`) |
+| Exact endpoint margins `m_+`, `m_-` and endpoint `R_0` gaps | same, Receipt (iii) | exact rational arithmetic; `artifacts/four_receipts_at_S_endpoint_exact.py` |
+| Storage concavity, reflection-gluing `K >= 1`, zero-set localization, strict Monge | `CRITICAL_ZERO_SET_REDUCTION_FOR_THEOREM_N.md` | review + `artifacts/critical_zero_set_algebraic_guards.py` |
+| Open-interval convex-envelope no-kink theorem, plateau exclusions, strict zero-locus graph | `CONVEX_ENVELOPE_PLATEAU_EXCLUSION_AND_THEOREM_N_COMPLETION.md` | review + `artifacts/convex_envelope_algebraic_guards.py` |
+| Equality-kernel mechanism (transports, closure, quarter ceiling) | Sprint 1198 | reviewed rounds 2-3 |
+| Inputs: generic weld, storages + equality, window, finite block identity | Sprints 1287, 1295, 1292/1294, 1206 | existing verifiers |
+
+The artifact scripts are algebraic/exact-arithmetic guards only; the
+logical steps are established in the reviewed documents. Verification:
+
+```text
+python certificate/production/theorem-N-four-receipts-at-S/artifacts/package_v5_integrity_verify.py
+python certificate/production/theorem-N-four-receipts-at-S/artifacts/four_receipts_at_S_endpoint_exact.py
+python certificate/production/theorem-N-four-receipts-at-S/artifacts/convex_envelope_algebraic_guards.py
+python certificate/production/theorem-N-four-receipts-at-S/artifacts/critical_zero_set_algebraic_guards.py
+```

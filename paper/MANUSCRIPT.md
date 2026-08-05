@@ -1,16 +1,19 @@
 # A rigorously characterized (I_{3322}) quantum wall, spatial attainment, and finite-dimensional nonattainment
 
-> **Current certificate status (2026-08-04): under correction.** The theorem
-> below is the historical released statement. A subsequent exact Arb audit
-> found a nonzero global-amplitude mismatch in its load-bearing Bellman datum.
-> See `CERTIFICATE-STATUS-ALERT.md`. Until that normalization gap is repaired,
-> the headline upper bound and its nonattainment/nonclosure corollaries are not
-> certified by this repository. Sprint 1294 separately proves the exact
-> rational upper bound `omega_c <= 0.250875388108398`; an independent exact
-> engine reconstructs that nonuniform fixed-witness certificate. It does not restore the
-> historical equality or those corollaries. Sprint 1292 supplies the direct
-> dimension-255 lower strategy, giving the unconditional window
-> `0.2508753845015185 < omega_tensor <= omega_c <= 0.250875388108398`.
+> **Current certificate status (2026-08-05, v3.0.0): corollaries restored,
+> exact optimum still open.** The theorem below is the historical released
+> statement, retained as a historical record. The Sprint-1285 audit that
+> decertified its load-bearing Bellman datum stands, so the historical exact
+> optimum `q*` and the spatial-attainment construction below are NOT
+> certified. What IS certified at repository HEAD: the unconditional window
+> `0.2508753845015185 < omega_tensor <= omega_c <= 0.250875388108398`
+> (Sprints 1292/1294), tensor/commuting value equality at one common value
+> `S` (Sprint 1295), and — by a new independent proof route that survived
+> three rounds of adversarial review — **finite-dimensional nonattainment of
+> `S` and nonclosure of `C_q(3,3;2,2)`**. See
+> `certificate/production/theorem-N-four-receipts-at-S/` for the signed
+> statement, proof documents, and review record. Spatial attainment at `S`
+> (`C_qs \ C_q`) remains open.
 
 **Seth Douglas**
 
@@ -661,7 +664,8 @@ Subtracting gives
 x-u=(b_x+b_u)(\rho^{-1}-\rho).                  \tag{6.4}
 \]
 
-Eliminating (ho) between (6.3) and (6.4) yields
+Eliminating (
+ho) between (6.3) and (6.4) yields
 
 \[
 q_*=xu-1+

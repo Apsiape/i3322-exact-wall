@@ -1,5 +1,5 @@
 {
-  "title": "The I3322 quantum value: a certified two-sided window and correction record",
+  "title": "The I3322 quantum value: certified window, finite-dimensional nonattainment, and nonclosure of Cq(3,3;2,2)",
   "upload_type": "publication",
   "publication_type": "preprint",
   "access_right": "open",
@@ -10,7 +10,7 @@
       "orcid": "0009-0007-4708-3252"
     }
   ],
-  "description": "A post-release exact-arithmetic audit found a load-bearing global-amplitude gap in the Bellman upper-bound assembly of the earlier releases (v1.0.0-v1.2.0). Those releases are preserved as historical records; their exact-optimum, nonattainment, spatial-separation, and nonclosure claims are under correction and are not asserted by this version. What this version rigorously and unconditionally certifies: 0.2508753845015185 < omega_tensor <= omega_commuting <= 0.250875388108398 (window width 3.61e-9), with the lower endpoint an explicit 255-dimensional rational tensor-product strategy verified in exact arithmetic and independently reconstructed at 160-digit interval precision, and the upper endpoint an exact rational Bellman subsolution with an endpoint-clustered 25,601-knot witness, independently reconstructed cell by cell. The certificate stack, the audit that found the gap, a structural explanation (Bellman contact versus amplitude-normalization duality), and one recorded failed quantitative prediction are all included. Every load-bearing claim maps to replayable source and a frozen receipt.",
+  "description": "Certified two-sided window for the I3322 quantum supremum S, tensor/commuting value equality, and (v3.0.0) restoration of finite-dimensional nonattainment of S and nonclosure of C_q(3,3;2,2) by an independent proof route that survived three rounds of refutation-first adversarial review. The exact optimum beyond the certified 3.61e-9 window and spatial attainment at S remain open. Complete correction record preserved.",
   "keywords": [
     "Bell inequalities",
     "I3322",
@@ -30,5 +30,6 @@
       "relation": "isSupplementTo",
       "scheme": "url"
     }
-  ]
+  ],
+  "version": "3.0.0"
 }
