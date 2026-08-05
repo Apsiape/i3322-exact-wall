@@ -1,9 +1,9 @@
 # Sharpened rigorous I3322 window
 
-> **Superseded lower endpoint.** Sprint 1292 replaces the dimension-127 lower
-> witness used here by an independently reconstructed dimension-255 strategy,
-> reducing the current rigorous width to below `1.101e-7`. The upper theorem
-> in this document remains current.
+> **Superseded endpoints.** Sprint 1292 replaces the dimension-127 lower
+> witness used here, and Sprint 1293 replaces this 6,401-knot upper endpoint
+> with the independently reconstructed bound `0.250875391558130`. The theorem
+> below remains a valid historical certificate but is no longer current.
 
 Status: **unconditional theorem; exact rational fixed-witness optimization**
 

@@ -120,6 +120,8 @@ REPLAY = [
     f"{PROD}/foundational-sprint-1291/rigorous_bellman_gap_anatomy.py",
     f"{PROD}/foundational-sprint-1292/build_dimension_255_candidate.py",
     f"{PROD}/foundational-sprint-1292/exact_dimension_255_lower_bound.py",
+    f"{PROD}/foundational-sprint-1293/build_refined_bellman_candidate.py",
+    f"{PROD}/foundational-sprint-1293/exact_refined_witness_threshold.py",
     f"{PROD}/foundational-sprint-1231/dimension_bound_algebra_verify.py",
     f"{PROD}/foundational-sprint-1233/master_ledger_verify.py",
     f"{REL}/normalization_concordance_verify.py",
@@ -133,6 +135,7 @@ REPLAY = [
     f"{IND}/amplitude-gap/amplitude_gap_concordance.py",
     f"{IND}/finite-strategy/finite_strategy_mpmath.py",
     f"{IND}/dimension-255/dimension_255_mpmath.py",
+    f"{IND}/refined-upper/refined_upper_exact.py",
     f"{IND}/verify_independent_reconstruction.py",
     f"{IND}/spatial_symbolic_verify.py",
     f"{IND}/truncation_flux_mpmath.py",
@@ -252,6 +255,7 @@ def check_semantics() -> None:
         f"{PROD}/foundational-sprint-1290/exact-fixed-witness-threshold.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1291/rigorous-bellman-gap-anatomy.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1292/exact-dimension-255-lower-bound.json": "all_gates_pass",
+        f"{PROD}/foundational-sprint-1293/exact-refined-witness-threshold.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1238/coupled-sector-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1239/terminal-fork-guard.json": "all_gates_pass",
         f"{PROD}/foundational-sprint-1232/inactive-quadratic-interval.json": "all_gates_pass",
@@ -262,6 +266,7 @@ def check_semantics() -> None:
         f"{IND}/truncation-flux-independent.json": "all_gates_pass",
         f"{IND}/finite-strategy/finite-strategy-mpmath.json": "all_gates_pass",
         f"{IND}/dimension-255/dimension-255-mpmath.json": "all_gates_pass",
+        f"{IND}/refined-upper/refined-upper-exact.json": "all_gates_pass",
         f"{IND}/dimension-necessity/source-manifest-audit.json": "all_gates_pass",
         f"{IND}/dimension-necessity/post-blind-exact-audit.json": "all_gates_pass",
         f"{REL}/v13-claim-contract.json": "all_gates_pass",
@@ -362,6 +367,9 @@ def check_semantics() -> None:
     dimension_255 = load(
         f"{PROD}/foundational-sprint-1292/exact-dimension-255-lower-bound.json"
     )
+    refined_upper = load(
+        f"{PROD}/foundational-sprint-1293/exact-refined-witness-threshold.json"
+    )
     independent_amplitude = load(
         f"{IND}/amplitude-gap/amplitude-gap-mpmath.json"
     )
@@ -373,6 +381,9 @@ def check_semantics() -> None:
     )
     independent_255 = load(
         f"{IND}/dimension-255/dimension-255-mpmath.json"
+    )
+    independent_refined_upper = load(
+        f"{IND}/refined-upper/refined-upper-exact.json"
     )
     assert coupled["terminal_near_entry_closed"] is False
     assert coupled["universal_dimension_lower_bound_proved"] is False
@@ -506,6 +517,15 @@ def check_semantics() -> None:
     assert dimension_255["dimension"] == 255
     assert dimension_255["certified_value_lower_decimal"] > 0.2508753844
     assert dimension_255["rigorous_window_width_decimal"] < 1.101e-7
+    assert refined_upper["all_gates_pass"] is True
+    assert refined_upper["q_pass"] == "25087539155813/100000000000000"
+    assert refined_upper["q_fail_predecessor"] == (
+        "250875391558129/1000000000000000"
+    )
+    assert refined_upper["piecewise_linear_knots"] == 25601
+    assert refined_upper["upper_envelope_lines_retained"] == 20758
+    assert refined_upper["common_intervals_checked_per_evaluation"] == 45465
+    assert refined_upper["rigorous_window_width_decimal"] < 7.057e-9
     assert independent_amplitude["all_gates_pass"] is True
     assert independent_amplitude["imports_production_engine"] is False
     assert independent_amplitude["largest_y_derivative_upper"] < -285
@@ -525,6 +545,19 @@ def check_semantics() -> None:
     assert independent_255["imports_production_engine"] is False
     assert independent_255["dimension"] == 255
     assert independent_255["interval_width_upper_float"] < 1e-100
+    assert independent_refined_upper["all_gates_pass"] is True
+    assert independent_refined_upper["q_pass"] == refined_upper["q_pass"]
+    assert independent_refined_upper["q_fail_predecessor"] == (
+        refined_upper["q_fail_predecessor"]
+    )
+    assert independent_refined_upper["upper_envelope_lines"] == 20758
+    assert independent_refined_upper["merged_partition_cells"] == 45465
+    assert independent_refined_upper["pass_worst_receipt"] == (
+        refined_upper["pass_worst_receipt"]
+    )
+    assert independent_refined_upper["fail_worst_receipt"] == (
+        refined_upper["fail_worst_receipt"]
+    )
     assert weighted_contraction["gates"]["cycle_radius_below_point_nine"] is True
     assert weighted_contraction["gates"]["weight_range_below_ten"] is True
 
@@ -554,8 +587,8 @@ def main() -> None:
     finite_lower = load(
         f"{PROD}/foundational-sprint-1292/exact-dimension-255-lower-bound.json"
     )
-    sharpened_upper = load(
-        f"{PROD}/foundational-sprint-1290/exact-fixed-witness-threshold.json"
+    refined_upper = load(
+        f"{PROD}/foundational-sprint-1293/exact-refined-witness-threshold.json"
     )
     if args.full:
         replay()
@@ -573,10 +606,10 @@ def main() -> None:
         "constructive_dimension_rate_checked": True,
         "conditional_lower_bound_ledger_replayed_but_not_promoted": True,
         "headline_theorem_certificate_closed": False,
-        "rigorous_commuting_upper_bound": sharpened_upper["q_pass"],
+        "rigorous_commuting_upper_bound": refined_upper["q_pass"],
         "rigorous_upper_bound_certificate_closed": True,
         "rigorous_tensor_lower_bound": finite_lower["certified_value_lower"],
-        "rigorous_value_window_width": finite_lower["rigorous_window_width"],
+        "rigorous_value_window_width": refined_upper["rigorous_window_width"],
         "rigorous_two_sided_window_certificate_closed": True,
         "exact_optimum_identified": False,
         "load_bearing_gap": (
@@ -587,7 +620,8 @@ def main() -> None:
             "production Arb stack plus separate mpmath.iv reconstruction and "
             "independent symbolic spatial-carrier/truncation reconstruction, "
             "plus independent 160-digit evaluations of the dimension-127 and "
-            "dimension-255 finite strategies and a "
+            "dimension-255 finite strategies, plus a separately implemented "
+            "exact reconstruction of the 25,601-knot upper witness, and a "
             "separately written 21-source conditional dimension-necessity "
             "reconstruction; the Bellman normalization gap is reproduced by "
             "independent Arb and mpmath.iv engines; the original chronology is "

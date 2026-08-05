@@ -14,17 +14,17 @@ More precisely, `exact-dimension-255-lower-bound.json` records the exact
 rational lower bound obtained by replacing every square root in the direct
 Jacobi quotient with a certified 60-place rational floor.
 
-Combined with the exact Sprint 1290 commuting upper bound,
+Combined with the exact Sprint 1293 commuting upper bound,
 
 ```text
 0.2508753845015185 < omega_tensor
-                     <= omega_commuting <= 0.250875494588345.
+                     <= omega_commuting <= 0.250875391558130.
 ```
 
 The resulting unconditional window is
 
 ```text
-1.1008682648855221e-7.
+7.056611488552207e-9.
 ```
 
 ## Search receipt
@@ -49,7 +49,10 @@ The verifier checks:
 - strict positivity of every committed amplitude;
 - every rational square-root lower enclosure;
 - the exact normalized diagonal and neighbor numerators;
-- the new upper/lower window against the Sprint 1290 exact fraction.
+- the lower endpoint against the then-current Sprint 1290 exact fraction.
+
+The lower certificate itself remains current. Sprint 1293 subsequently
+supersedes only the upper endpoint and window reported by the original JSON.
 
 ## Claim boundary
 

@@ -53,6 +53,12 @@ The passing point has a strictly positive exact minimum numerator; the failing
 predecessor has a strictly negative one. The abstract Bellman-to-I3322
 operator weld is unchanged.
 
+A separately written standard-library verifier in
+`certificate/independent/refined-upper/` imports no production engine. It
+reconstructs the support-line hull using its own implementation, intersects
+the two partitions by direct two-pointer traversal, and reproduces both exact
+endpoint receipts.
+
 ## What this resolves
 
 The former `1.10e-7` window was not stable under mesh refinement. A fourfold

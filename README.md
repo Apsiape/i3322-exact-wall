@@ -14,20 +14,21 @@
 > exclusion. Frozen DOI releases are preserved as historical records while the
 > proof is repaired.
 
-**Rigorous partial repair at repository HEAD.** Sprints 1287 and 1290 prove, from a
-committed 6,401-knot rational Bellman subsolution and an exact abstract
+**Rigorous partial repair at repository HEAD.** Sprints 1287, 1290, and 1293
+prove, from committed rational Bellman subsolutions and an exact abstract
 operator weld,
 
 ```text
-omega_tensor <= omega_commuting <= 0.250875494588345
+omega_tensor <= omega_commuting <= 0.250875391558130
 ```
 
-with the upper endpoint interpreted as an exact decimal. Sprint 1290 obtains
-this sharper value by exactly optimizing the already committed witness on a
-`10^-15` grid. It is an unconditional
-upper bound, but it does not restore exact equality, nonattainment, spatial
-separation, or nonclosure. See
-[`SHARPENED-RIGOROUS-I3322-WINDOW.md`](certificate/production/foundational-sprint-1290/SHARPENED-RIGOROUS-I3322-WINDOW.md).
+with the upper endpoint interpreted as an exact decimal. Sprint 1293 commits a
+25,601-knot witness and exactly optimizes it on a `10^-15` grid. A separately
+written standard-library engine reconstructs its hull, all 45,465 common
+intervals, and both endpoint receipts without importing the production
+verifier. It is an unconditional upper bound, but it does not restore exact
+equality, nonattainment, spatial separation, or nonclosure. See
+[`REFINED-RIGOROUS-I3322-UPPER.md`](certificate/production/foundational-sprint-1293/REFINED-RIGOROUS-I3322-UPPER.md).
 
 Sprint 1292 installs an explicit 255-dimensional strategy, certifies it with
 rational square-root floors, and independently reconstructs it at 160-digit
@@ -35,10 +36,10 @@ interval precision. Together the certificates give the unconditional window
 
 ```text
 0.2508753845015185 < omega_tensor
-                   <= omega_commuting <= 0.250875494588345,
+                   <= omega_commuting <= 0.250875391558130,
 ```
 
-of width below `1.101e-7`. See
+of width below `7.057e-9`. See
 [`RIGOROUS-DIMENSION-255-LOWER.md`](certificate/production/foundational-sprint-1292/RIGOROUS-DIMENSION-255-LOWER.md).
 
 The historical release claimed a computer-assisted proof that the tensor-product and

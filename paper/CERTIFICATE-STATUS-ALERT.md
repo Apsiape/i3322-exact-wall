@@ -43,30 +43,28 @@ Exact local shooting, spatial-wall, boundary-flux, and algebraic receipts are
 retained.  Their valid conditional content is not erased by the failed weld.
 ## Rigorous partial repair
 
-Sprint 1287 supplies an independent global normalization route. A committed
-6,401-knot rational piecewise-linear function is checked using
-standard-library `Fraction` arithmetic over every common interval of the
-function and its exact support-line envelope. The certified Bellman residual
-is globally positive, with rational lower bound approximately
-
-```text
-8.890461120944086e-7.
-```
+Sprint 1287 supplies an independent global normalization route. Its committed
+rational piecewise-linear function is checked using standard-library
+`Fraction` arithmetic over every common interval of the function and its
+exact support-line envelope. Sprint 1293 repeats that construction at 25,601
+knots and exactly locates the fixed-witness threshold on a `10^-15` grid.
 
 The exact geometric-reflection/operator weld uses no fixed-point identity,
 concavity, contact uniqueness, wall orbit, or shooting-chart amplitude. It
 therefore proves the unconditional bound
 
 ```text
-omega_tensor <= omega_commuting <= 0.250875494588345.
+omega_tensor <= omega_commuting <= 0.250875391558130.
 ```
 
 This is a real theorem repair, but it is deliberately narrower than the frozen
 headline. It does not identify the exact optimum and does not restore
-nonattainment, `C_qs \ C_q`, or nonclosure. Sprint 1290 exactly optimizes the
-same fixed witness on the `10^-15` grid; its immediate predecessor fails while
-the displayed endpoint passes. That numerical proximity to the historical
-wall candidate is not used as an equality theorem.
+nonattainment, `C_qs \ C_q`, or nonclosure. At the Sprint 1293 endpoint the
+exact global minimum is positive, while its immediate `10^-15` predecessor
+fails. A separately written exact engine reconstructs the hull, all 45,465
+common intervals, and both endpoint receipts without importing the production
+verifier. Proximity to the historical wall candidate is not used as an
+equality theorem.
 
 Sprint 1292 supplies the strongest current lower side: a committed
 255-dimensional finite tensor-product strategy evaluated with exact rational
@@ -75,10 +73,10 @@ arithmetic. Repository HEAD therefore proves the unconditional window
 
 ```text
 0.2508753845015185 < omega_tensor
-                   <= omega_commuting <= 0.250875494588345,
+                   <= omega_commuting <= 0.250875391558130,
 ```
 
-whose exact certified width is approximately `1.1008682648855221e-7`. This
+whose exact certified width is approximately `7.056611488552207e-9`. This
 still does not identify the exact optimum or restore any nonattainment or
 correlation-set separation claim.
 

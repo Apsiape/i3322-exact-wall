@@ -1,0 +1,63 @@
+{
+  "status": "independent exact reconstruction of refined I3322 upper witness",
+  "candidate": "certificate/production/foundational-sprint-1293/refined-bellman-candidate.json",
+  "candidate_sha256_newline_joined_knots": "920bcf40ea1ef92f262180a75aaeb9d7588d692011009ba8736e6d3e1b1612f1",
+  "knots": 25601,
+  "upper_envelope_lines": 20758,
+  "merged_partition_cells": 45465,
+  "strict_minimum_knot": "2650250245884067/50000000000000000",
+  "q_pass": "25087539155813/100000000000000",
+  "q_fail_predecessor": "250875391558129/1000000000000000",
+  "pass_minimum_numerator": "53711887724435784876511275635124712292711/138878709549463200569152832031250000000000000000000000000",
+  "fail_minimum_numerator": "-931034169039916380523871483692831404993449/2222059352791411209106445312500000000000000000000000000000",
+  "pass_worst_receipt": {
+    "interval": [
+      "-11431/12800",
+      "-2180100473383/2441406250000"
+    ],
+    "F_segment": 1369,
+    "envelope_owner": 76,
+    "minimizer": "-40638801315602763338639367909/45507775545168101562500000000",
+    "quadratic_coefficients": [
+      "5824995269781517/1562500000000000",
+      "40638801315602763338639367909/6103515625000000000000000000",
+      "232260921931265406493659365503909/78125000000000000000000000000000"
+    ],
+    "minimum_numerator": "53711887724435784876511275635124712292711/138878709549463200569152832031250000000000000000000000000"
+  },
+  "fail_worst_receipt": {
+    "interval": [
+      "-11431/12800",
+      "-2180100473383/2441406250000"
+    ],
+    "F_segment": 1369,
+    "envelope_owner": 76,
+    "minimizer": "-81277602631205459275392749393/91015551090336203125000000000",
+    "quadratic_coefficients": [
+      "5824995269781517/1562500000000000",
+      "81277602631205459275392749393/12207031250000000000000000000",
+      "116130460965632479162894460279567/39062500000000000000000000000000"
+    ],
+    "minimum_numerator": "-931034169039916380523871483692831404993449/2222059352791411209106445312500000000000000000000000000000"
+  },
+  "method": "standard-library-only exact Fraction arithmetic; independently reimplemented monotone hull and two-pointer partition merge",
+  "gates": {
+    "no_production_module_imported": true,
+    "candidate_has_25601_knots": true,
+    "candidate_hash_matches": true,
+    "mesh_covers_closed_unit_interval": true,
+    "all_knots_strictly_positive": true,
+    "envelope_has_published_line_count": true,
+    "merged_partition_has_published_cell_count": true,
+    "passing_endpoint_is_nonnegative": true,
+    "preceding_endpoint_is_negative": true,
+    "endpoints_are_adjacent_on_registered_grid": true,
+    "passing_receipt_matches_production": true,
+    "failing_receipt_matches_production": true,
+    "passing_minimum_matches_production": true,
+    "failing_minimum_matches_production": true,
+    "published_endpoints_match": true
+  },
+  "all_gates_pass": true,
+  "claim_boundary": "Independent arithmetic reconstruction for the shared committed witness; not an independent witness search or exact-optimum proof."
+}

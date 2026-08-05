@@ -369,6 +369,24 @@
       "sha256": "d2f7652dcf2142a5ded1e51563ce7fcd00d4d70aa82dca5ffd3ee70489436af3"
     },
     {
+      "path": "certificate/independent/refined-upper/PRE-REGISTRATION.md",
+      "canonical_bytes": 1092,
+      "hash_mode": "canonical-lf",
+      "sha256": "19dce0be8e24c2647f9c8f897b539d984ae2be1476e24c7494fee5ff4051b47c"
+    },
+    {
+      "path": "certificate/independent/refined-upper/refined-upper-exact.json",
+      "canonical_bytes": 3024,
+      "hash_mode": "canonical-lf",
+      "sha256": "1ceafe2a6939439ef54ef99b61e89bbe68bca89e90623de7dd32962601f95df7"
+    },
+    {
+      "path": "certificate/independent/refined-upper/refined_upper_exact.py",
+      "canonical_bytes": 8803,
+      "hash_mode": "canonical-lf",
+      "sha256": "d5f5ef49f59a8cfee95d03499501b53f3bf640d7e5efa66998f85edc55aa9532"
+    },
+    {
       "path": "certificate/independent/shooting-miranda-mpmath.json",
       "canonical_bytes": 3947,
       "hash_mode": "canonical-lf",
@@ -2578,9 +2596,9 @@
     },
     {
       "path": "certificate/production/foundational-sprint-1290/SHARPENED-RIGOROUS-I3322-WINDOW.md",
-      "canonical_bytes": 2391,
+      "canonical_bytes": 2423,
       "hash_mode": "canonical-lf",
-      "sha256": "92d60d9cc158cb1e3ff360ecb36b548b5b6b6d49309341a8e465287674898803"
+      "sha256": "c921ae9ec0d51f02d7132e0a78ca31bb8c8d54aecbfec3be3638db4ca5ecaa0d"
     },
     {
       "path": "certificate/production/foundational-sprint-1291/PRE-REGISTRATION.md",
@@ -2638,9 +2656,45 @@
     },
     {
       "path": "certificate/production/foundational-sprint-1292/RIGOROUS-DIMENSION-255-LOWER.md",
-      "canonical_bytes": 1887,
+      "canonical_bytes": 2040,
       "hash_mode": "canonical-lf",
-      "sha256": "497e9de46084ef759fa89c3c6cdd64c9f7a8a07e3d539bc00c46540cdc791229"
+      "sha256": "75fcc5a8a128aa2d5650eb5b91c47f4e534e5496e77552d5afd5571e428989b5"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1293/build_refined_bellman_candidate.py",
+      "canonical_bytes": 3068,
+      "hash_mode": "canonical-lf",
+      "sha256": "5ed3f9323dfab606aceb2667328ae8a46eea6888697c09f1c604fa98355384c7"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1293/exact-refined-witness-threshold.json",
+      "canonical_bytes": 3528,
+      "hash_mode": "canonical-lf",
+      "sha256": "ce1af4573ab1a9c29850f0dc625d565d1e044a33fab15d49a13bcaf9445c056d"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1293/exact_refined_witness_threshold.py",
+      "canonical_bytes": 5547,
+      "hash_mode": "canonical-lf",
+      "sha256": "2e570c955a5e2b746f2a2a814649c4e0e305c13ba6f495b7f3187fb45bedca9d"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1293/PRE-REGISTRATION.md",
+      "canonical_bytes": 1561,
+      "hash_mode": "canonical-lf",
+      "sha256": "8133e5be203ab8da9e7864bdd13c72ca102d8cce79af4bd7215f65680588a792"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1293/refined-bellman-candidate.json",
+      "canonical_bytes": 717435,
+      "hash_mode": "canonical-lf",
+      "sha256": "77e4303953c07297c6944bd2f42c19080f23fb25ac4bdd7ca2410e5fdce40785"
+    },
+    {
+      "path": "certificate/production/foundational-sprint-1293/REFINED-RIGOROUS-I3322-UPPER.md",
+      "canonical_bytes": 2361,
+      "hash_mode": "canonical-lf",
+      "sha256": "b1321d5d04e3e033d51bb70054376192ce4ef212f553e529f9cf879189298094"
     },
     {
       "path": "certificate/release/build_release_manifest.py",
@@ -2674,9 +2728,9 @@
     },
     {
       "path": "certificate/release/README.md",
-      "canonical_bytes": 2287,
+      "canonical_bytes": 2498,
       "hash_mode": "canonical-lf",
-      "sha256": "b77c605023e371788681b968d24b188344d2339b1478b72ce1ce776e6d360f1c"
+      "sha256": "797410937b18d2a987a46d46f210c9fa10e5f4642940aa69360e2678d9cf3e11"
     },
     {
       "path": "certificate/release/v13-claim-contract.json",
@@ -2692,9 +2746,9 @@
     },
     {
       "path": "certificate/release/verify_release.py",
-      "canonical_bytes": 33072,
+      "canonical_bytes": 34876,
       "hash_mode": "canonical-lf",
-      "sha256": "322be214553656e5b5588d5d14fd4b0a92ed8d38acf021cc3b123a2de9fe8668"
+      "sha256": "da709ec6be795f5b5aa7e52bc206434721c654d89445a01c6dc6a8eb762e28d2"
     },
     {
       "path": "CITATION.cff",
@@ -2722,15 +2776,15 @@
     },
     {
       "path": "paper/CERTIFICATE-MAP.md",
-      "canonical_bytes": 18280,
+      "canonical_bytes": 18743,
       "hash_mode": "canonical-lf",
-      "sha256": "ad5c6d0e359cb9e6652d8dd23691419d8b26bb02579fbc7a298a33e1d390225b"
+      "sha256": "9e03c0e64241c406d7d82dd0cb122479bad64c317a5e3ba1697a329803530b2e"
     },
     {
       "path": "paper/CERTIFICATE-STATUS-ALERT.md",
-      "canonical_bytes": 4437,
+      "canonical_bytes": 4532,
       "hash_mode": "canonical-lf",
-      "sha256": "de4479f6617ee063960d23ec541d789e7cdd6faae3a72d62fdd3a1d118b015ba"
+      "sha256": "2a52a41157d08d0c8d188e0ec500482677840267abd99d4b9256571cb03145d8"
     },
     {
       "path": "paper/DIMENSION-GAP-STATUS.md",
@@ -2740,9 +2794,9 @@
     },
     {
       "path": "paper/MANUSCRIPT.md",
-      "canonical_bytes": 26171,
+      "canonical_bytes": 26252,
       "hash_mode": "canonical-lf",
-      "sha256": "fc9d54eef2bcc8f823d1296277f5a65b36772b964e25e085418081fc5f88ba05"
+      "sha256": "719035163ed4d9f10c82e7c44efcc36ea46c68fcd1eb50d5a2747309023668b7"
     },
     {
       "path": "paper/manuscript.pdf",
@@ -2800,15 +2854,15 @@
     },
     {
       "path": "paper/RELEASE-NOTES-v1.3.0.md",
-      "canonical_bytes": 5997,
+      "canonical_bytes": 6049,
       "hash_mode": "canonical-lf",
-      "sha256": "d7648f91767981e879ebf8e675cb01dfdb95dfd5efcdf0515e861c1cd15ea436"
+      "sha256": "01b5a38493e6207e704aade21302b7f5433893aa37ba6bc1821905df6deb6f15"
     },
     {
       "path": "paper/TECHNICAL-SUPPLEMENT.md",
-      "canonical_bytes": 15685,
+      "canonical_bytes": 15740,
       "hash_mode": "canonical-lf",
-      "sha256": "461c0a3eb446be408bce3cdde325f78f0f55610fff7d31651bbc4e1ee0e97fc1"
+      "sha256": "80882f0309e52cd2c38526e970e88218d0477a92dacc4b73a43aadadb32a5fea"
     },
     {
       "path": "paper/technical-supplement.pdf",
@@ -2824,9 +2878,9 @@
     },
     {
       "path": "README.md",
-      "canonical_bytes": 15885,
+      "canonical_bytes": 16017,
       "hash_mode": "canonical-lf",
-      "sha256": "0a5a3755f64775aecbe691a22c523920395f7222376a52de785f65d6a267fd2e"
+      "sha256": "7866788a61cc352785b062d4c2c89734574dcb28cf9791722e22c9a5de54884b"
     },
     {
       "path": "requirements.txt",
@@ -2889,6 +2943,6 @@
       "sha256": "a405ef962afdfc120b5c3f2901ca58e95e2ab3963e642fa73dc2022f2d280cfa"
     }
   ],
-  "file_count": 481,
+  "file_count": 490,
   "scope": "Custody manifest for selected published files. Analytic dependency closure is checked separately by verify_release.py and is not inferred from file enumeration alone."
 }

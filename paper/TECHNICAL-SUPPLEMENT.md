@@ -5,9 +5,10 @@
 > the unique matched-coordinate bracket. This supplement is retained as the
 > historical certificate specification, but its Bellman theorem assembly is
 > not presently closed. See `CERTIFICATE-STATUS-ALERT.md`. A later, independent
-> rational subsolution proves `omega_c <= 0.250875494588345` without repairing the
-> fixed-point assembly; a direct 255-dimensional strategy supplies the lower
-> bound `omega_tensor > 0.2508753845015185`.
+> rational subsolution proves `omega_c <= 0.250875391558130` without repairing
+> the fixed-point assembly; its exact arithmetic is independently
+> reconstructed. A direct 255-dimensional strategy supplies the lower bound
+> `omega_tensor > 0.2508753845015185`.
 
 **Seth Douglas** ·
 [ORCID 0009-0007-4708-3252](https://orcid.org/0009-0007-4708-3252) ·

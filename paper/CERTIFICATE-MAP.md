@@ -11,16 +11,17 @@ This file separates analytic claims from computer-assisted inputs.
 | `omega_tensor <= omega_commuting <= q_hat` | Sprint 1287 | preceding two rows plus commuting joint functional calculus |
 | Explicit 127-dimensional tensor lower strategy | Sprint 1288 | exact rational profile/state plus certified rational square-root floors |
 | Bellman--Hellinger flow duality and exact path embedding | Sprint 1289 | finite convex duality proof plus exact symbolic/rational guards |
-| Sharp `10^-15`-grid threshold for the fixed rational witness | Sprint 1290 | standard-library exact binary search over all 10,902 common intervals |
+| Sharp `10^-15`-grid threshold for the 6,401-knot rational witness | Sprint 1290 | standard-library exact binary search over all 10,902 common intervals |
 | Explicit 255-dimensional tensor lower strategy | Sprint 1292 | exact rational profile/state plus certified rational square-root floors |
 | Independent dimension-255 reconstruction | independent lane | direct 160-digit `mpmath.iv` evaluation, no production engine import |
-| Unconditional two-sided window of width below `1.101e-7` | Sprints 1290/1292 | exact lower quotient and exact commuting upper bound |
-| Independent finite-strategy reconstruction | independent lane | direct 160-digit `mpmath.iv` evaluation, no production engine import |
+| Sharp `10^-15`-grid threshold for the 25,601-knot rational witness | Sprint 1293 | exact hull and 45,465 exact common intervals |
+| Independent refined-upper reconstruction | independent lane | separately implemented exact hull and two-pointer partition merge, no production engine import |
+| Unconditional two-sided window of width below `7.057e-9` | Sprints 1292/1293 | exact lower quotient and exact commuting upper bound |
 
 The candidate builder is not a theorem owner. It merely emits the committed
-rational knot list. `exact_rational_bellman_subsolution.py` and
-`bellman_operator_weld_verify.py` own the generic proof; Sprint 1290 tightens
-the admissible rational endpoint for that same fixed witness. This upper bound does not
+rational knot lists. `exact_rational_bellman_subsolution.py` and
+`bellman_operator_weld_verify.py` own the generic proof; Sprint 1293 supplies
+the strongest current fixed-witness endpoint. This upper bound does not
 restore the historical equality/nonattainment chain below.
 
 ## Main analytic chain
@@ -232,6 +233,8 @@ python certificate/production/foundational-sprint-1262/upper_cap_verify.py
 python certificate/production/foundational-sprint-1263/two_stage_address_verify.py
 python certificate/production/foundational-sprint-1264/output_cell_sign_verify.py
 python certificate/production/foundational-sprint-1265/one_grid_four_coordinate_verify.py
+python certificate/production/foundational-sprint-1292/exact_dimension_255_lower_bound.py
+python certificate/production/foundational-sprint-1293/exact_refined_witness_threshold.py
 python certificate/release/normalization_concordance_verify.py
 python certificate/release/dimension_gap_audit.py
 python certificate/independent/arithmetic_selftest.py
@@ -245,6 +248,8 @@ python certificate/independent/truncation_flux_mpmath.py
 python certificate/independent/dimension-necessity/verify_source_manifest.py
 python certificate/independent/dimension-necessity/verify_constants.py
 python certificate/independent/dimension-necessity/post_blind_exact_verify.py
+python certificate/independent/dimension-255/dimension_255_mpmath.py
+python certificate/independent/refined-upper/refined_upper_exact.py
 python certificate/release/v13_claim_contract_verify.py
 ```
 

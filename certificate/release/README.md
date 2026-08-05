@@ -4,17 +4,20 @@
 
 At repository HEAD, a successful custody run reports
 `CUSTODY_PASS_RIGOROUS_WINDOW_HEADLINE_GAP`, not `PASS`: the files, registered
-negative receipt, and the exact rational upper-bound chain through Sprint 1290 are internally
+negative receipt, and the exact rational upper-bound chain through Sprint 1293 are internally
 reproducible, while Sprint 1285 leaves the historical exact-optimum headline
 open. A zero process exit code means the audit completed and agreed with that
 disclosed status; it does not mean equality, nonattainment, or nonclosure has
 been repaired.
 
-Sprint 1292 adds the strongest exact finite-strategy lower bound. The verifier
-therefore also checks the unconditional interval
-`0.2508753845015185 < omega_tensor <= omega_commuting <= 0.250875494588345`.
+Sprint 1292 adds the strongest exact finite-strategy lower bound, and Sprint
+1293 adds the strongest exact Bellman upper bound. The verifier therefore also
+checks the unconditional interval
+`0.2508753845015185 < omega_tensor <= omega_commuting <= 0.250875391558130`.
 The 255-dimensional strategy is separately reconstructed with `mpmath.iv` at
-160 decimal digits without importing the production verifier.
+160 decimal digits. The refined upper certificate is separately reconstructed
+with exact `Fraction` arithmetic and a different partition traversal; neither
+independent engine imports its production counterpart.
 
 The full replay is byte-deterministic. Sprint 1279 previously serialized
 wall-clock timing into its scientific JSON; that non-mathematical field was
