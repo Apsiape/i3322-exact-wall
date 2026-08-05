@@ -1,0 +1,67 @@
+{
+  "status": "exact 25,601-knot Bellman threshold on the 10^-15 grid",
+  "q_pass": "25087539155813/100000000000000",
+  "q_pass_decimal": 0.25087539155813,
+  "q_fail_predecessor": "250875391558129/1000000000000000",
+  "q_fail_predecessor_decimal": 0.250875391558129,
+  "threshold_resolution": "1/1000000000000000",
+  "exact_threshold_evaluations": 31,
+  "piecewise_linear_knots": 25601,
+  "upper_envelope_lines_retained": 20758,
+  "common_intervals_checked_per_evaluation": 45465,
+  "pass_minimum_numerator": "53711887724435784876511275635124712292711/138878709549463200569152832031250000000000000000000000000",
+  "fail_minimum_numerator": "-931034169039916380523871483692831404993449/2222059352791411209106445312500000000000000000000000000000",
+  "pass_worst_receipt": {
+    "interval": [
+      "-11431/12800",
+      "-2180100473383/2441406250000"
+    ],
+    "F_segment": 1369,
+    "envelope_owner": 76,
+    "minimizer": "-40638801315602763338639367909/45507775545168101562500000000",
+    "quadratic_coefficients": [
+      "5824995269781517/1562500000000000",
+      "40638801315602763338639367909/6103515625000000000000000000",
+      "232260921931265406493659365503909/78125000000000000000000000000000"
+    ],
+    "minimum_numerator": "53711887724435784876511275635124712292711/138878709549463200569152832031250000000000000000000000000"
+  },
+  "fail_worst_receipt": {
+    "interval": [
+      "-11431/12800",
+      "-2180100473383/2441406250000"
+    ],
+    "F_segment": 1369,
+    "envelope_owner": 76,
+    "minimizer": "-81277602631205459275392749393/91015551090336203125000000000",
+    "quadratic_coefficients": [
+      "5824995269781517/1562500000000000",
+      "81277602631205459275392749393/12207031250000000000000000000",
+      "116130460965632479162894460279567/39062500000000000000000000000000"
+    ],
+    "minimum_numerator": "-931034169039916380523871483692831404993449/2222059352791411209106445312500000000000000000000000000000"
+  },
+  "finite_tensor_lower": "125437692250759260239483745803422479813728776632978820938281636219632289913363769735743791270397174411/500000000000000017999323590648875729575116125000000000000000000000000000000000000000000000000000000000",
+  "rigorous_window_width": "3528305744276103607782100638202695756044560616907968363780367710086636230264256208729602825589/500000000000000017999323590648875729575116125000000000000000000000000000000000000000000000000000000000",
+  "rigorous_window_width_decimal": 7.056611488552207e-09,
+  "improvement_over_6401_knot_upper": "20606043/200000000000000",
+  "exact_engine_reused": "certificate/production/foundational-sprint-1290/exact_fixed_witness_threshold.py",
+  "gates": {
+    "candidate_iteration_completed_before_cap": true,
+    "candidate_iteration_reached_tolerance": true,
+    "candidate_hash_matches": true,
+    "candidate_shape_exact": true,
+    "all_candidate_knots_positive": true,
+    "registered_lower_grid_point_fails": true,
+    "returned_grid_point_passes": true,
+    "adjacent_grid_points": true,
+    "upper_endpoint_below_point_25087542": true,
+    "rigorous_window_below_four_e_minus_eight": true,
+    "pass_minimum_nonnegative": true,
+    "fail_minimum_negative": true,
+    "abstract_operator_weld_unchanged_and_valid": true
+  },
+  "all_gates_pass": true,
+  "theorem": "The committed 25,601-knot rational witness certifies the displayed commuting-projective I3322 upper bound.",
+  "claim_boundary": "Sharp only on the 10^-15 grid for this fixed PL witness. Does not identify the exact optimum or restore historical corollaries."
+}
