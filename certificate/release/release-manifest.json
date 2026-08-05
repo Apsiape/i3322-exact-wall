@@ -22,9 +22,9 @@
     },
     {
       "path": ".zenodo.json",
-      "canonical_bytes": 1334,
+      "canonical_bytes": 1921,
       "hash_mode": "canonical-lf",
-      "sha256": "cf5452c9be4f727b054c1fd89c7e23d33ecd4f36dbc7f1fae74c2aebcc285d8f"
+      "sha256": "494d0f36414a3ac80981f6ee246c6daa1534e97362f30c0a786ddf88408bdfcf"
     },
     {
       "path": "certificate/independent/amplitude-gap/amplitude-gap-concordance.json",
@@ -2860,9 +2860,9 @@
     },
     {
       "path": "CITATION.cff",
-      "canonical_bytes": 1488,
+      "canonical_bytes": 1432,
       "hash_mode": "canonical-lf",
-      "sha256": "1ab91afa2eb63295167a6d3bc46b6c002d6e29f15a80e3eec6ae3f4fd3fb41fe"
+      "sha256": "08435e36aa78493d601502fc7193afe9fb23059bd4a06950060a63ef976510ec"
     },
     {
       "path": "LICENSE.md",
@@ -2967,6 +2967,12 @@
       "sha256": "c0f09059b3908a658c94cb48aaa7011d8ac325ac58038bcf7025834836bef366"
     },
     {
+      "path": "paper/RELEASE-NOTES-v2.0.0.md",
+      "canonical_bytes": 3430,
+      "hash_mode": "canonical-lf",
+      "sha256": "3f9626a0ee3c1f50db5894b2b4297d488a08a2916329af3ca06bf6b7052db16f"
+    },
+    {
       "path": "paper/TECHNICAL-SUPPLEMENT.md",
       "canonical_bytes": 15740,
       "hash_mode": "canonical-lf",
@@ -2986,9 +2992,9 @@
     },
     {
       "path": "README.md",
-      "canonical_bytes": 17008,
+      "canonical_bytes": 17117,
       "hash_mode": "canonical-lf",
-      "sha256": "453c27e03472fcc36ba05ac9cc1889052729e2e3075b0cccfaf4a5938e2501af"
+      "sha256": "f4b01a91c1acab94aa193414daf4236f7b954186ae0e7da44743bb2e3968cfc6"
     },
     {
       "path": "requirements.txt",
@@ -3051,6 +3057,6 @@
       "sha256": "a405ef962afdfc120b5c3f2901ca58e95e2ab3963e642fa73dc2022f2d280cfa"
     }
   ],
-  "file_count": 508,
+  "file_count": 509,
   "scope": "Custody manifest for selected published files. Analytic dependency closure is checked separately by verify_release.py and is not inferred from file enumeration alone."
 }
