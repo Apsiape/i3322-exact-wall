@@ -52,6 +52,18 @@ theorem mPlus_gt : (787 : ℚ) / 100000 < mPlus := by
 theorem mMinus_gt : (684 : ℚ) / 10000 < mMinus := by
   rw [mMinus_eq]; norm_num
 
+/-- Endpoint-positivity backbone (right): even at the window's upper
+    endpoint, the right endpoint-line bound `S − m₊` stays strictly below
+    `1/3` — the threshold that the Lipschitz/reflection-gluing argument
+    forces if the critical storage vanished at an endpoint. -/
+theorem window_sub_mPlus_lt_third : q - mPlus < 1 / 3 := by
+  rw [mPlus_eq]; norm_num [q]
+
+/-- Endpoint-positivity backbone (left): `S − m₋ < 1/3` at the window's
+    upper endpoint. -/
+theorem window_sub_mMinus_lt_third : q - mMinus < 1 / 3 := by
+  rw [mMinus_eq]; norm_num [q]
+
 /-- Right-margin formula as a function of the level. -/
 def mPlusAt (s : ℚ) : ℚ := r * ((2 - r) / (4 * s + 2 * r) - 3 / 2)
 

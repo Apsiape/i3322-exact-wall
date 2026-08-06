@@ -17,6 +17,8 @@ import I3322Kernel
 #print axioms I3322Kernel.mMinus_pos
 #print axioms I3322Kernel.mPlus_gt
 #print axioms I3322Kernel.mMinus_gt
+#print axioms I3322Kernel.window_sub_mPlus_lt_third
+#print axioms I3322Kernel.window_sub_mMinus_lt_third
 #print axioms I3322Kernel.mPlusAt_antitone
 #print axioms I3322Kernel.mMinusAt_antitone
 #print axioms I3322Kernel.strictMono_self_eq_id
