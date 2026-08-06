@@ -15,7 +15,7 @@
 \author{Seth Douglas\\
 \small ORCID \href{https://orcid.org/0009-0007-4708-3252}{0009-0007-4708-3252}
 \ $\cdot$\ \texttt{apsiape@gmail.com}}
-\date{August 2026 (v3.2.2)}
+\date{August 2026 (v3.2.3)}
 
 \begin{document}
 \maketitle
@@ -34,8 +34,8 @@ V\'ertesi (2010); (ii)~$S$ \textbf{is} attained by a normal spatial strategy
 on $\ell^2(\mathbb{Z})\otimes\ell^2(\mathbb{Z})$. Consequently
 $\Cq(3,3;2,2)$ is not closed --- the smallest scenario by input count, among
 two-outcome bipartite scenarios, in which nonclosure is known --- and
-$\Cqs(3,3;2,2)\setminus \Cq(3,3;2,2)\neq\emptyset$, discharging the premise of
-an implication recorded by Dykema, Paulsen, and Prakash. The nonattainment
+$\Cqs(3,3;2,2)\setminus \Cq(3,3;2,2)\neq\emptyset$, settling the $I_{3322}$
+attainment question explicitly raised by Dykema, Paulsen, and Prakash. The nonattainment
 proof runs through a concave critical Bellman storage, exact rational
 endpoint-exclusion certificates, a reflection-gluing inequality, and a
 convex-envelope theorem excluding contact plateaus; finiteness then forces the
@@ -71,7 +71,7 @@ local dimension below $12$ exceeds it, and posed the following, verbatim:
 ``Taking as a conjecture that our construction is optimal (in the sense that
 no finite dimension suffices to achieve the true quantum maximum for
 $I_{3322}$), to our knowledge this constitutes the first example of a
-[bipartite] Bell scenario [with a] finite number of measurements and
+[bipartite] Bell scenario concerning [a] finite number of measurements and
 outcomes, where measuring finite dimensional quantum systems is not enough to
 obtain exactly all quantum correlations. \dots\ We pose it as a challenge to
 provide an analytical proof of our conjecture.'' \cite{PalVertesi}
@@ -81,7 +81,9 @@ The conjecture has two parts: that no finite dimension attains the supremum,
 and that their particular construction is optimal. This paper proves the
 first part, in both directions of the attainment question; the optimality of
 the P\'al--V\'ertesi construction, and the exact identification of the value,
-remain open (Section~\ref{sec:discussion}). Coladangelo and Stark, in
+remain open (Section~\ref{sec:discussion}); as late as 2026, work
+coauthored by V\'ertesi still treats the $I_{3322}$ infinite-dimensional
+optimum as unresolved \cite{Araujo}. Coladangelo and Stark, in
 constructing the first explicit bipartite correlation attainable only in
 infinite dimension (on larger alphabets), wrote of the $I_{3322}$ case that
 ``an analytical proof has remained elusive'' \cite{ColadangeloStark} (we
@@ -108,8 +110,8 @@ $\langle\psi_S,\B_{3322}\,\psi_S\rangle=S$.
 \end{theorem}
 
 Here $\Cq$ denotes the set of bipartite correlations realizable with
-finite-dimensional tensor-product strategies, $\Cqs$ its infinite-dimensional
-tensor-product analogue, and $C_{qa}=\overline{\Cq}$; see
+finite-dimensional tensor-product strategies, $\Cqs$ its analogue allowing
+arbitrary separable Hilbert spaces, and $C_{qa}=\overline{\Cq}$; see
 \cite{Lupini,ColadangeloStark} for the standard taxonomy.
 
 \begin{corollary}\label{cor:nonclosure}
@@ -117,15 +119,17 @@ $\Cq(3,3;2,2)$ is not closed, and
 $\Cqs(3,3;2,2)\setminus \Cq(3,3;2,2)\neq\emptyset$.
 \end{corollary}
 
-Dykema, Paulsen, and Prakash observed in 2018 that conjectured $I_{3322}$
-nonattainment would imply nonclosure of $\Cq(3,2)$ \cite{DPPQIC}; the
-corollary discharges the premise of that previously recognized implication.
+The implication from $I_{3322}$ nonattainment to nonclosure of $\Cq(3,2)$
+is immediate from the general compactness remark of Dykema, Paulsen, and
+Prakash \cite{DPPQIC}, who explicitly raise the $I_{3322}$ attainment
+question; the corollary settles it.
 Among \emph{two-outcome bipartite} scenarios, $(3,3;2,2)$ is the smallest
 venue by input count in which nonclosure is known: the previously smallest
-examples are the $(5,5;2,2)$ synchronous construction of
+examples are Beigi's $(4,4;2,2)$ separation of $\Cq$ from $\Cqs$ (implying
+nonclosure of $\Cq$ there) together with his $(4,4;3,3)$ nonclosure of
+$\Cqs$ \cite{Beigi}, and the $(5,5;2,2)$ synchronous construction of
 Dykema--Paulsen--Prakash \cite{DPP} (with a simplified proof by
-Musat--R{\o}rdam \cite{MusatRordam}) and Beigi's $(4,4;2,2)$ separation of
-$\Cq$ from $\Cqs$ together with his $(4,4;3,3)$ nonclosure \cite{Beigi};
+Musat--R{\o}rdam \cite{MusatRordam});
 Coladangelo--Stark's correlation lives at $(4,5;3,3)$
 \cite{ColadangeloStark}, and the linear-system game of \cite{Slofstra2} has
 input sets of sizes $184$ and $235$ with output sets of sizes $8$ and $2$.
@@ -169,8 +173,9 @@ convention used throughout the repository is
 \;+\;A_2B_1+A_2B_2+A_2B_3
 \;-\;A_3B_1+A_3B_2 ,
 \end{equation}
-which coincides, with no scaling or additive shift, with Eqs.~(9)--(14) of
-P\'al--V\'ertesi \cite{PalVertesi}; a permutation of settings brings it to
+which coincides, with no scaling or additive shift, with Eq.~(3) of
+P\'al--V\'ertesi \cite{PalVertesi} (equivalently, it reproduces their
+optimality conditions (9)--(14)); a permutation of settings brings it to
 the standard Collins--Gisin table with local (classical deterministic) bound
 $0$ \cite{CollinsGisin}. The two-qubit maximum is exactly $1/4$
 \cite{PalVertesi}; P\'al--V\'ertesi further report, as a numerical finding of
@@ -360,8 +365,9 @@ nonattainment proof (Theorem~12 of arXiv:1804.05116) is an explicit
 no-return orbit argument on the Schmidt spectrum \cite{ColadangeloStark},
 and the P\'al--V\'ertesi family is a half-infinite Jacobi chain with offset
 $2\times2$ blockings \cite{PalVertesi} --- the same architecture, on smaller
-alphabets. Coladangelo and Stark suggested that the block structure of
-their construction makes $I_{3322}$ ``potentially amenable to ideas and
+alphabets. Coladangelo and Stark suggested that the block-diagonal form of
+the conjectured optimal $I_{3322}$ measurements, resembling that of their
+own construction, makes the inequality ``potentially amenable to ideas and
 techniques from our work''; Theorem~\ref{thm:N} may be read as an answer to
 that suggestion, reached by a transfer-operator route. Embezzlement-based
 nonattainment \cite{vanDamHayden,JLV,Coladangelo} is carried by the
@@ -373,9 +379,10 @@ not pursue here. Group-theoretic and type-based obstructions
 transport picture; Slofstra's undecidability of perfect-strategy existence
 for linear-system games \cite{Slofstra1}, the RE-completeness of
 approximating the quantum value \cite{MIPRE}, and the arithmetical-hierarchy
-separation of Mousavi--Nezhadi--Yuen \cite{MNY} --- exact quantum value
-$\Pi_2$-complete versus commuting value $\Pi_1$, precisely because the
-finite-dimensional supremum need not be attained --- imply that any general
+separation \cite{MNY} --- the exact quantum value is $\Pi_2$-complete
+(Mousavi--Nezhadi--Yuen), against the commuting value at $\Pi_1$ (Slofstra,
+as restated there), precisely because the finite-dimensional supremum need
+not be attained --- imply that any general
 structural criterion must be restricted to a subclass. Within the
 two-outcome bipartite class, where Jordan's lemma supplies the $2\times2$
 chain structure, we record the dichotomy as a conjecture:
@@ -387,10 +394,11 @@ note the marginal/correlator boundary: Tsirelson's theorem covers
 correlators only, and it is exactly the marginal terms through which
 $I_{3322}$ escapes it. Finally, two cautions from the literature, both
 concerning the \emph{hierarchy} sense of ``attain'' rather than the
-strategy sense used in this paper: non-saturation of finite NPA levels is
-not evidence of strategy-nonattainment (the doubly-tilted CHSH functionals
-are attained at $d=2$ yet NPA level~10 does not saturate them
-\cite{Pakhunov}), and the NPA hierarchy need not attain the commuting value
+strategy sense used in this paper: non-saturation of finite levels of the
+Navascu\'es--Pironio--Ac\'in hierarchy \cite{NPA} is not evidence of
+strategy-nonattainment (the doubly-tilted CHSH functionals are attained at
+$d=2$ yet NPA level~10 does not saturate them, as reported in
+\cite{Pakhunov} with the level-10 figure due to Gigena et al.), and the NPA hierarchy need not attain the commuting value
 at any finite level \cite{Fanizza} (whose headline result is the
 undecidability of deciding $\omega_{qc}>1/2$).
 
@@ -411,8 +419,8 @@ reproduced at $160$ digits). They ship as machine-checkable certificates in
 the public repository \cite{Repo}, with the complete correction record.
 Package guard scripts check algebraic identities and exact arithmetic only;
 the analytic steps are established in the reviewed proof documents, not by
-the scripts, and the abstract's phrase ``computer-assisted'' should be read
-accordingly.
+the scripts, and the term ``computer-assisted'' applied to this work should
+be read accordingly.
 
 \subsection*{AI disclosure and the nature of the adversarial review}
 Frontier large language models were used extensively throughout this work:
@@ -434,7 +442,8 @@ may share training priors. It is adopted because it is reproducible,
 auditable (the complete signed verdicts of the final rounds ship in the
 certificate directories \cite{Repo}), and stronger than no review; it is
 not equivalent to review by human experts, and no such review has yet taken
-place. Three repair steps in the audited chain were \emph{supplied by the
+place. Three repair steps in the audited chain (W1 for Theorem~1; V1 and V2 for
+Theorem~2, per the shipped review records) were \emph{supplied by the
 reviewing model} rather than the authors' track and, at this writing, have
 been verified within the same protocol but not by a fresh reviewer; they
 are identified in the certificate review records. The human author
@@ -446,7 +455,7 @@ this work.
 
 \subsection*{Data availability}
 Repository: \url{https://github.com/Apsiape/i3322-exact-wall} (release
-v3.2.2). Concept DOI (resolves to the current archived release, which
+v3.2.3). Concept DOI (resolves to the current archived release, which
 includes the certificate directories and review records):
 \href{https://doi.org/10.5281/zenodo.21782008}{10.5281/zenodo.21782008}.
 Certificate directories:
@@ -459,7 +468,7 @@ analysis defined the object and whose numerical family remains the guide to
 its structure; a debt of direction to A.~Coladangelo and J.~Stark, whose
 infinite-dimensional correlation and closing suggestion pointed at exactly
 the theorem proved here; and a citation of prior exact certification to
-H.~Mghirbi's independently replayable $I_{3322}$ enclosures.
+N.~Mghirbi's independently replayable $I_{3322}$ enclosures.
 
 \begin{thebibliography}{99}
 \bibitem{Froissart} M.~Froissart, \emph{Constructive generalization of
@@ -475,16 +484,17 @@ infinite-dimensional quantum systems}, Phys. Rev. A \textbf{82}, 022116
 infinite-dimensional quantum correlation}, Nat. Commun. \textbf{11}, 3335
 (2020); arXiv:1804.05116 (under the title \emph{Unconditional separation of
 finite and infinite-dimensional quantum correlations}).
-\bibitem{Mghirbi} H.~Mghirbi, \emph{Exact rational two-sided certificates
-for the $I_{3322}$ quantum value}, Zenodo (July 2026),
+\bibitem{Mghirbi} N.~Mghirbi, \emph{Proof-carrying exact quantum bounds
+for the I3322 Bell inequality}, Zenodo preprint (July 2026),
 DOI \href{https://doi.org/10.5281/zenodo.21477901}{10.5281/zenodo.21477901};
-proof objects at
+software: \emph{Proof-Carrying Exact Bounds for the I3322 Bell Inequality},
 DOI \href{https://doi.org/10.5281/zenodo.21462892}{10.5281/zenodo.21462892}.
 \bibitem{DPP} K.~Dykema, V.~I.~Paulsen, and J.~Prakash, \emph{Non-closure
 of the Set of Quantum Correlations via Graphs}, Commun. Math. Phys.
 \textbf{365}, 1125 (2019), arXiv:1709.05032.
-\bibitem{DPPQIC} K.~Dykema, V.~I.~Paulsen, and J.~Prakash, Quantum Inf.
-Comput. \textbf{18}, no.~7--8 (2018), DOI 10.26421/QIC18.7-8-5.
+\bibitem{DPPQIC} K.~Dykema, V.~I.~Paulsen, and J.~Prakash, \emph{The
+Delta game}, Quantum Inf. Comput. \textbf{18}, no.~7--8, 599--616 (2018),
+DOI 10.26421/QIC18.7-8-5, arXiv:1707.06186.
 \bibitem{MusatRordam} M.~Musat and M.~R{\o}rdam, \emph{Non-closure of
 quantum correlation matrices and factorizable channels that require
 infinite dimensional ancilla (With an Appendix by Narutaka Ozawa)},
@@ -524,8 +534,9 @@ embedding problem and Tsirelson's problem}, J. Math. Phys. \textbf{52},
 012102 (2011), arXiv:1008.1142.
 \bibitem{Lupini} M.~Lupini, L.~Man\v{c}inska, V.~I.~Paulsen,
 D.~E.~Roberson, G.~Scarpa, S.~Severini, I.~G.~Todorov, and A.~Winter,
-\emph{Perfect strategies for non-signalling games}, Math. Phys. Anal.
-Geom. \textbf{23}, 7 (2020), arXiv:1804.06151.
+\emph{Perfect Strategies for Non-Local Games}, Math. Phys. Anal.
+Geom. \textbf{23}, 7 (2020); arXiv:1804.06151 (under the title
+\emph{Perfect strategies for non-signalling games}).
 \bibitem{vanDamHayden} W.~van Dam and P.~Hayden, \emph{Universal
 entanglement transformations without communication}, Phys. Rev. A
 \textbf{67}, 060302(R) (2003), arXiv:quant-ph/0201041.
@@ -552,11 +563,11 @@ D.~Rochette, W.~Slofstra, and Y.~Zhao, \emph{The NPA hierarchy does not
 always attain the commuting operator value}, arXiv:2510.04943.
 \bibitem{Araujo} M.~Ara\'ujo, I.~Klep, A.~J.~P.~Garner, T.~V\'ertesi, and
 M.~Navascu\'es, \emph{First-order optimality conditions for
-noncommutative optimization problems}, Found. Comput. Math. (2026),
+non-commutative optimization problems}, Found. Comput. Math. (2026),
 DOI 10.1007/s10208-026-09761-x.
 \bibitem{Repo} S.~Douglas, \emph{Exact I3322 quantum wall: certificates,
 review records, and correction history}, GitHub repository
-\texttt{Apsiape/i3322-exact-wall}, releases v2.0.0--v3.2.2, concept DOI
+\texttt{Apsiape/i3322-exact-wall}, releases v2.0.0--v3.2.3, concept DOI
 10.5281/zenodo.21782008 (2026).
 \end{thebibliography}
 

@@ -24,7 +24,7 @@
       "path": ".zenodo.json",
       "canonical_bytes": 1555,
       "hash_mode": "canonical-lf",
-      "sha256": "645828ec8213e52069e5ddacbd025702fe7141bc8865c7fbe91dcb85cd3099d7"
+      "sha256": "5497328336f0c3181dc5568636b91f69491cb18a50fcfc7ddfcd423dbcc30053"
     },
     {
       "path": "certificate/independent/amplitude-gap/amplitude-gap-concordance.json",
@@ -3040,9 +3040,9 @@
     },
     {
       "path": "CITATION.cff",
-      "canonical_bytes": 1526,
+      "canonical_bytes": 1591,
       "hash_mode": "canonical-lf",
-      "sha256": "56444e99ff7e5f5d9094bd2acebe7ca0613c725292c79b1ffbf6db35966df023"
+      "sha256": "2fa6022c21938845beb6cd63b0238d321c1a66d3956ff9bf65a995f480dff488"
     },
     {
       "path": "LICENSE.md",
@@ -3177,16 +3177,22 @@
       "sha256": "356831fe2d24e5ec5b1c2d3253ed211059b243c4469fa48ad4ab3883c062669b"
     },
     {
+      "path": "paper/RELEASE-NOTES-v3.2.3.md",
+      "canonical_bytes": 2186,
+      "hash_mode": "canonical-lf",
+      "sha256": "8a4217ba7d3ce3db0b14f4e8ad3aef64b7f67c6b607602f36e8cde9490dc5d24"
+    },
+    {
       "path": "paper/resolution.pdf",
-      "canonical_bytes": 297304,
+      "canonical_bytes": 299049,
       "hash_mode": "raw",
-      "sha256": "b7a6e52093a82383276bc03738e92f2f39c839bffb787e0575b5bd4f5c6ec239"
+      "sha256": "315e0b2757b543b234cbe652b48fc70200bdbd6419ae161f7b6e5899ac5254bd"
     },
     {
       "path": "paper/resolution.tex",
-      "canonical_bytes": 33258,
+      "canonical_bytes": 34061,
       "hash_mode": "canonical-lf",
-      "sha256": "82e4cd0d8c335b7f1c1f75df98f9c40cccd36dc7818c1d741b06c2d5f9ceabb3"
+      "sha256": "22dd511d3a20325ba7147c75a41d903d6cba4aa71085ee241e3b81dea147bdd9"
     },
     {
       "path": "paper/TECHNICAL-SUPPLEMENT.md",
@@ -3208,9 +3214,9 @@
     },
     {
       "path": "README.md",
-      "canonical_bytes": 18374,
+      "canonical_bytes": 18539,
       "hash_mode": "canonical-lf",
-      "sha256": "7dcb8a7ac849effe4837437fb5844519a3198a0accee0db075da3774be397219"
+      "sha256": "a64a72685589384bef233e73a00a3b76902b74222b5dd291684e3570f52b80a8"
     },
     {
       "path": "requirements.txt",
@@ -3273,6 +3279,6 @@
       "sha256": "a405ef962afdfc120b5c3f2901ca58e95e2ab3963e642fa73dc2022f2d280cfa"
     }
   ],
-  "file_count": 545,
+  "file_count": 546,
   "scope": "Custody manifest for selected published files. Analytic dependency closure is checked separately by verify_release.py and is not inferred from file enumeration alone."
 }

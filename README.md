@@ -249,10 +249,12 @@ Archival identifiers: concept DOI
 `v1.0.0` DOI
 [`10.5281/zenodo.21782009`](https://doi.org/10.5281/zenodo.21782009).
 
-The result resolves the conjectural value and finite-dimensional
-nonattainment reported by Pal and Vertesi in 2010, and certifies their
-infinite alternating construction as a spatial maximizer. It is not a claim
-of priority for that construction or for general finite/infinite-dimensional
+The promoted results establish finite-dimensional nonattainment of the
+common value S and normal spatial attainment of S (the spatial strategy uses
+the alternating block FORM of Pal--Vertesi with labels and amplitudes derived
+independently; their construction is not certified as optimal, and the exact
+value beyond the certified window remains open). This is not a claim of
+priority for the block construction or for general finite/infinite-dimensional
 separation, which are known from earlier work.
 
 Mghirbi's July 2026 release
