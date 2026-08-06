@@ -85,7 +85,7 @@ the one-sided sufficiency bound
 | Claim | Owner | Verification |
 |---|---|---|
 | `C_q(3,3;2,2)` nonclosure | Corollary to main theorem | compact subsequence plus continuity |
-| `C_qs(3,3;2,2) \ C_q(3,3;2,2)` witness | Sprint 1206 | explicit normal vector state at `q_*` plus nonattainment |
+| `C_qs(3,3;2,2) \ C_q(3,3;2,2)` witness | theorem-S certificate (v3.1.0) | normal spatial strategy at the common value `S` (Sprint 1206 historical route decertified; retained as record) |
 | Binary input-count minimality | Jordan/Schmidt argument | self-contained analytic proof in manuscript |
 
 Neither row adds a computer-assisted dependency beyond the main theorem.

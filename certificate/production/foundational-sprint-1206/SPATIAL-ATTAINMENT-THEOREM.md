@@ -1,3 +1,12 @@
+> **RETIRED (2026-08-05).** This document's spatial-attainment claim rests on
+> the Sprint-1195 bi-infinite wall, whose amplitude datum was exactly
+> decertified by Sprint 1285. It is retained as a historical record only.
+> Current spatial attainment at the common value S is established
+> independently in
+> `certificate/production/theorem-S-spatial-attainment-at-S/`, which uses
+> only the FINITE block identity of this sprint (SS2-4) and none of the
+> decertified inputs.
+
 # The I3322 wall is spatially attained
 
 Status: analytic consequence of the certified bi-infinite wall plus an

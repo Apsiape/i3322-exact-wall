@@ -57,3 +57,15 @@ python certificate/release/build_release_manifest.py
 ```
 
 Do not regenerate the manifest to make a failed custody check disappear.
+
+
+## Status-string semantics (updated 2026-08-05)
+
+The custody status `CUSTODY_PASS_COMMON_VALUE_HISTORICAL_HEADLINE_GAP`
+refers to the HISTORICAL headline (identification of the exact optimum with
+the historical decimal), which remains open and disclosed. It does NOT refer
+to the promoted theorems: finite-dimensional nonattainment and spatial
+attainment at the common value `S` have their own certificate directories
+(`theorem-N-four-receipts-at-S/`, `theorem-S-spatial-attainment-at-S/`) with
+their own review records and status files, and are not gated by this
+verifier's historical-headline field.

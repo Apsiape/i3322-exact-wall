@@ -24,7 +24,7 @@
       "path": ".zenodo.json",
       "canonical_bytes": 1555,
       "hash_mode": "canonical-lf",
-      "sha256": "13ee9312387e3244b494efc686dec27100487de67cc36361647970db7b830e9e"
+      "sha256": "645828ec8213e52069e5ddacbd025702fe7141bc8865c7fbe91dcb85cd3099d7"
     },
     {
       "path": "certificate/independent/amplitude-gap/amplitude-gap-concordance.json",
@@ -784,9 +784,9 @@
     },
     {
       "path": "certificate/production/foundational-sprint-1206/SPATIAL-ATTAINMENT-THEOREM.md",
-      "canonical_bytes": 4678,
+      "canonical_bytes": 5154,
       "hash_mode": "canonical-lf",
-      "sha256": "c2810ed74b48332b23274f64c357a1583ecda034385fb90a3c9b049303c13a5c"
+      "sha256": "e97514040848634639f5d93477c62be2bc1b361c4fcaa0ea29f09695746a3a7a"
     },
     {
       "path": "certificate/production/foundational-sprint-1206/spatial-realization-guard.json",
@@ -2871,6 +2871,18 @@
       "sha256": "4a16474b6d8cc2cd857f44c0162f0071db349f02a1a52f3740afb22ea87c4583"
     },
     {
+      "path": "certificate/production/theorem-N-four-receipts-at-S/review/ROUND1-VERDICT.md",
+      "canonical_bytes": 21520,
+      "hash_mode": "canonical-lf",
+      "sha256": "275194d53ddb44dd6d2f6e798cbc23595d953e4185361ad2462c75aa81901565"
+    },
+    {
+      "path": "certificate/production/theorem-N-four-receipts-at-S/review/ROUND2-VERDICT.md",
+      "canonical_bytes": 28057,
+      "hash_mode": "canonical-lf",
+      "sha256": "aca11e90e4a8ef058194f238f50e4d3f01102f6a28063d2f3b16f8586977d17b"
+    },
+    {
       "path": "certificate/production/theorem-N-four-receipts-at-S/review/ROUND3-VERDICT.md",
       "canonical_bytes": 39262,
       "hash_mode": "canonical-lf",
@@ -3004,9 +3016,9 @@
     },
     {
       "path": "certificate/release/README.md",
-      "canonical_bytes": 2927,
+      "canonical_bytes": 3531,
       "hash_mode": "canonical-lf",
-      "sha256": "d8646390dcc1420bce41a36c0b4bbc22d8225c85d333b96086f87a9e94b2bfee"
+      "sha256": "1fe4da2bd417a88a9e0d79ae80c84789cea606754dd1c38ce8e26a30b2d2b94b"
     },
     {
       "path": "certificate/release/v13-claim-contract.json",
@@ -3030,7 +3042,7 @@
       "path": "CITATION.cff",
       "canonical_bytes": 1526,
       "hash_mode": "canonical-lf",
-      "sha256": "cb167161ee87f7bfd366ca6690232bca8ccf2e512da6f8fc16e96a587dd19a04"
+      "sha256": "56444e99ff7e5f5d9094bd2acebe7ca0613c725292c79b1ffbf6db35966df023"
     },
     {
       "path": "LICENSE.md",
@@ -3052,9 +3064,9 @@
     },
     {
       "path": "paper/CERTIFICATE-MAP.md",
-      "canonical_bytes": 23009,
+      "canonical_bytes": 23082,
       "hash_mode": "canonical-lf",
-      "sha256": "52caebc15db3f26c69b8d5c5b9eed8c2638bea33fee737a96d8e184db7fe851c"
+      "sha256": "5901935a430c5dfe4fddaf8c80e2385566fdcb9ab58c596c77f963c1a780ff6b"
     },
     {
       "path": "paper/CERTIFICATE-STATUS-ALERT.md",
@@ -3159,16 +3171,22 @@
       "sha256": "5de5cac821e1e1ab3af126cadf34ca3df630d7519d1e75dfd17285d835542bdc"
     },
     {
+      "path": "paper/RELEASE-NOTES-v3.2.2.md",
+      "canonical_bytes": 4255,
+      "hash_mode": "canonical-lf",
+      "sha256": "356831fe2d24e5ec5b1c2d3253ed211059b243c4469fa48ad4ab3883c062669b"
+    },
+    {
       "path": "paper/resolution.pdf",
-      "canonical_bytes": 285388,
+      "canonical_bytes": 297304,
       "hash_mode": "raw",
-      "sha256": "cebfb2c5f4be51e8334abc1f6fcac04df7487b9c8ac815797570d73f651c5899"
+      "sha256": "b7a6e52093a82383276bc03738e92f2f39c839bffb787e0575b5bd4f5c6ec239"
     },
     {
       "path": "paper/resolution.tex",
-      "canonical_bytes": 25851,
+      "canonical_bytes": 33258,
       "hash_mode": "canonical-lf",
-      "sha256": "cd6619bc70145b07ae4afb106bdfededd36d3d76c846e4d6a06550e1d1814016"
+      "sha256": "82e4cd0d8c335b7f1c1f75df98f9c40cccd36dc7818c1d741b06c2d5f9ceabb3"
     },
     {
       "path": "paper/TECHNICAL-SUPPLEMENT.md",
@@ -3255,6 +3273,6 @@
       "sha256": "a405ef962afdfc120b5c3f2901ca58e95e2ab3963e642fa73dc2022f2d280cfa"
     }
   ],
-  "file_count": 542,
+  "file_count": 545,
   "scope": "Custody manifest for selected published files. Analytic dependency closure is checked separately by verify_release.py and is not inferred from file enumeration alone."
 }
