@@ -22,9 +22,9 @@
     },
     {
       "path": ".zenodo.json",
-      "canonical_bytes": 1401,
+      "canonical_bytes": 1555,
       "hash_mode": "canonical-lf",
-      "sha256": "ea19d0a06b3e72c6f94483c95f1b5f7540197d4cd72bdb18e2f2e2004d30798c"
+      "sha256": "13ee9312387e3244b494efc686dec27100487de67cc36361647970db7b830e9e"
     },
     {
       "path": "certificate/independent/amplitude-gap/amplitude-gap-concordance.json",
@@ -3030,7 +3030,7 @@
       "path": "CITATION.cff",
       "canonical_bytes": 1526,
       "hash_mode": "canonical-lf",
-      "sha256": "9b1a7eb68be6f5a65c26036b8e5e0aba982930c445ae65072cefe35dd8ac5ce8"
+      "sha256": "cb167161ee87f7bfd366ca6690232bca8ccf2e512da6f8fc16e96a587dd19a04"
     },
     {
       "path": "LICENSE.md",
@@ -3190,9 +3190,9 @@
     },
     {
       "path": "README.md",
-      "canonical_bytes": 18188,
+      "canonical_bytes": 18374,
       "hash_mode": "canonical-lf",
-      "sha256": "0163a9f1c842fa9bc1b69220228594e767066bfed6e96318e587f23d5f8e1615"
+      "sha256": "7dcb8a7ac849effe4837437fb5844519a3198a0accee0db075da3774be397219"
     },
     {
       "path": "requirements.txt",

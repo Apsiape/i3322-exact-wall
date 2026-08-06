@@ -23,7 +23,10 @@
 > (identification of `S` beyond its certified `3.61e-9` window) and the
 > dimension-necessity lower bound remain **open** and are not claimed. Frozen DOI releases
 > are preserved as historical records; the correction history is part of the
-> record.
+> record. The resolution paper —
+> [paper/resolution.pdf](paper/resolution.pdf) — states both theorems with
+> proof architecture, correction history, review methodology, and full
+> citations.
 
 **Rigorous partial repair at repository HEAD.** Sprints 1287--1294
 prove, from committed rational Bellman subsolutions and an exact abstract

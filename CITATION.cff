@@ -7,7 +7,7 @@ authors:
     family-names: Douglas
     email: apsiape@gmail.com
     orcid: "https://orcid.org/0009-0007-4708-3252"
-version: 3.1.0
+version: 3.2.1
 doi: 10.5281/zenodo.21782750
 license: CC-BY-4.0
 repository-code: "https://github.com/Apsiape/i3322-exact-wall"
