@@ -1,0 +1,434 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1.1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Cq}{C_q}
+\newcommand{\Cqs}{C_{qs}}
+\newcommand{\B}{\mathcal{B}}
+
+\title{Resolution of the P\'al--V\'ertesi conjecture:\\
+the $I_{3322}$ quantum value is attained spatially\\ but not in finite dimension}
+\author{Seth Douglas\\
+\small ORCID \href{https://orcid.org/0009-0007-4708-3252}{0009-0007-4708-3252}
+\ $\cdot$\ \texttt{apsiape@gmail.com}}
+\date{August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Let $S=\omega_{\mathrm{tensor}}(I_{3322})=\omega_{\mathrm{commuting}}(I_{3322})$
+denote the quantum supremum of the $I_{3322}$ Bell functional in the
+Collins--Gisin normalization (classical bound $0$; qubit and qutrit maximum
+exactly $1/4$). We report a computer-assisted, exactly certified resolution of
+the attainment questions for $S$: (i)~$S$ lies in the certified window
+$(0.2508753845015185,\,0.250875388108398]$, and the tensor-product and
+commuting-operator suprema coincide at one common value; (ii)~\textbf{no
+finite-dimensional quantum strategy attains $S$} --- any dimension, pure or
+mixed states, projective or POVM measurements --- resolving the conjecture of
+P\'al and V\'ertesi (2010); (iii)~$S$ \textbf{is} attained by a normal spatial
+strategy on $\ell^2(\mathbb{Z})\otimes\ell^2(\mathbb{Z})$. Consequently
+$\Cq(3,3;2,2)$ is not closed --- the smallest scenario by input count in which
+nonclosure is known --- and $\Cqs(3,3;2,2)\setminus \Cq(3,3;2,2)\neq\emptyset$.
+The nonattainment proof runs through a canonical critical Bellman storage
+(concave, obtained as a greatest feasible fixed point), exact rational
+endpoint-exclusion certificates, a reflection-gluing inequality, and a
+convex-envelope theorem excluding contact plateaus; finiteness then forces the
+two equality transports of an exact maximizer to coincide, which caps its value
+at $1/4<S$. The attainment proof disintegrates the scalar spectral measure of a
+maximizing commuting state over the orbits of its response translation and
+reads off an $\ell^2$ Jacobi eigenvector, with normalizability inherited from
+the probability measure rather than imposed. Every load-bearing step was
+audited in refutation-first adversarial review whose complete records ship
+with the certificates, together with a full correction history: an earlier
+claimed proof by this program was publicly decertified after an exact audit,
+and nothing decertified re-enters the present chain. We discuss a structural
+dichotomy suggested by the results: across the known Bell-functional zoo,
+finite-dimensional attainment coincides with closed (finitely recurrent)
+optimal carriers, while every known transport-class nonattainment is carried
+by an infinite open chain.
+\end{abstract}
+
+\section{Introduction}
+
+The $I_{3322}$ inequality \cite{Froissart,CollinsGisin} is the best-known
+bipartite Bell functional beyond the Clauser--Horne--Shimony--Holt family: three
+binary measurements per party, and a facet of the local polytope inequivalent
+to CHSH. In 2010, P\'al and V\'ertesi \cite{PalVertesi} computed its quantum
+value numerically to high precision, exhibited a family of finite-dimensional
+strategies converging to $0.2508753845\ldots$, observed that qubit strategies
+reach exactly $1/4$ and that local dimension at least $12$ is needed to exceed
+it, and conjectured that \emph{no finite dimension suffices}: the supremum
+should be attained only in infinite dimension. The conjecture has stood since.
+Coladangelo and Stark, in constructing the first explicit bipartite correlation
+attainable only in infinite dimension (on larger alphabets: $4{\times}5$
+inputs, $3$ outputs), wrote of the $I_{3322}$ case that ``an analytical proof
+has remained elusive'' \cite{ColadangeloStark}.
+
+This paper reports that resolution, in both directions, by computer-assisted
+proof with exact certificates:
+
+\begin{theorem}[Nonattainment]\label{thm:N}
+In the Collins--Gisin normalization, let
+$S=\omega_{\mathrm{tensor}}(I_{3322})=\omega_{\mathrm{commuting}}(I_{3322})$
+be the quantum supremum, certified to lie in
+$(0.2508753845015185,\,0.250875388108398]$. Then no finite-dimensional quantum
+strategy attains $S$: for every finite dimension $d$, every (pure or mixed)
+state on $\mathbb{C}^d\otimes\mathbb{C}^d$ and every triple of binary
+measurements per party (projective or POVM),
+$\langle I_{3322}\rangle < S$.
+\end{theorem}
+
+\begin{theorem}[Spatial attainment]\label{thm:S}
+$S$ is attained by a normal spatial strategy: there is a unit vector
+$\psi_S\in\ell^2(\mathbb{Z})\otimes\ell^2(\mathbb{Z})$ and six projective
+binary measurements built from the alternating P\'al--V\'ertesi projector
+blocks with $\langle\psi_S,\B_{3322}\,\psi_S\rangle=S$.
+\end{theorem}
+
+\begin{corollary}\label{cor:nonclosure}
+$\Cq(3,3;2,2)$ is not closed, and
+$\Cqs(3,3;2,2)\setminus \Cq(3,3;2,2)\neq\emptyset$.
+\end{corollary}
+
+By input count, $(3,3;2,2)$ is the smallest scenario in which nonclosure of
+the finite-dimensional quantum correlation set is known: the previously
+smallest examples are the $(5,5;2,2)$ synchronous construction of
+Dykema--Paulsen--Prakash \cite{DPP}, the $(4,4;2,2)$ and $(4,4;3,3)$
+separations of Beigi \cite{Beigi}, the $(4,5;3,3)$ correlation of
+Coladangelo--Stark \cite{ColadangeloStark}, and Slofstra's original
+$184{\times}235$-input games \cite{Slofstra1,Slofstra2}. (In the $(2,2;2,2)$
+scenario every functional attains its maximum on two qubits by Jordan's lemma
+\cite{Masanes}, so three inputs is also the smallest possible venue for this
+phenomenon.)
+
+\subsection*{Correction history, stated first}
+
+This program previously released a claimed proof of the $I_{3322}$ headline
+(exact optimum, spatial attainment, nonattainment) whose load-bearing global
+amplitude datum was subsequently \emph{refuted by our own post-release exact
+audit}: the amplitude-compatibility equation of the original bi-infinite wall
+construction fails by an exactly certified margin (the mismatch lies in
+$[1.40\times10^{-4},1.79\times10^{-4}]$, excluding zero). The claims were
+publicly decertified within a day, and the repository's release history
+preserves the full correction record. The results announced here were then
+rebuilt on independent routes; the decertified fixed point, amplitude profile,
+and tail constants appear on explicit \emph{not-used} lists in the certificate
+dependency records, and the failed compatibility equation is not repaired
+anywhere in the present chain --- the new attainment route never poses it
+(Section~\ref{sec:S}). Every load-bearing theorem below then survived three
+rounds (Theorem~\ref{thm:N}) plus one round (Theorem~\ref{thm:S}) of
+independent, refutation-first adversarial review; the signed final review
+records ship with the certificates \cite{Repo}. We state this history first
+because computer-assisted claims are only as credible as their failure
+handling; the correction record is part of the result.
+
+\section{Setting and certified inputs}\label{sec:setup}
+
+We use the Collins--Gisin normalization of $I_{3322}$ \cite{CollinsGisin,
+PalVertesi}: the classical (local deterministic) bound is $0$; the maximum over
+two-qubit --- indeed, by \cite{PalVertesi}, over qubit and qutrit ---
+strategies is exactly $1/4$; P\'al--V\'ertesi report that local dimension
+$\ge 12$ is required to exceed $1/4$, with their strategy family converging to
+$0.250875384514\ldots$ \cite{PalVertesi}. Throughout, $S$ denotes the common
+quantum value of Theorem~\ref{thm:N}, identified \emph{only} by its certified
+window; we do not claim $S$ equals the historical decimal, nor that the
+P\'al--V\'ertesi family is optimal, though all certified data are consistent
+with both.
+
+The proofs consume the following exactly certified inputs, established in the
+public repository \cite{Repo} (certificate directories cited in
+Section~\ref{sec:methods}): (T0)~a Bellman/path variational theorem giving
+$\omega_{\mathrm{tensor}}=\omega_{\mathrm{commuting}}=S$, together with, for
+every level $q>S$, a terminal-pivot storage $g_q$ --- the infimum of terminal
+Schur pivots over finite histories --- which is positive, Bellman-feasible, and
+equicontinuous in $q$; (LB)~an exact $255$-dimensional strategy certifying
+$S>0.2508753845015185>1/4$ (rational square-root floors, independently
+reconstructed in $160$-digit interval arithmetic); (UB)~an exact rational
+$25{,}601$-knot Bellman witness certifying $S\le 0.250875388108398$; and
+(W)~a generic operator weld: any positive Bellman-feasible storage at level
+$q$ yields a positive decomposition $qI-\B=R_0+R_A+R_B$ with the local
+remainder structure of \cite{Repo} (sprint 1197). The finite
+P\'al--V\'ertesi block-to-Jacobi identity (\cite{Repo}, sprint 1206,
+\S\S2--4 only --- the finite, endpoint-free form) supplies the bridge between
+Jacobi data and Bell strategies; the adversarial review independently
+replicated it at machine precision.
+
+\section{Nonattainment}\label{sec:N}
+
+We sketch the architecture; complete proofs, with every constant exact, are in
+the certificate documents \cite{Repo}, directory
+\texttt{theorem-N-four-receipts-at-S}.
+
+\emph{The canonical critical storage.} The map $q\mapsto g_q$ is monotone:
+increasing the level by $\eta$ increases every terminal Schur pivot by at
+least $\eta$, whence $g_{q}\ge g_S+(q-S)$ for the decreasing limit
+$g_S=\inf_{q>S}g_q$, which is independent of the approximating sequence.
+Each terminal pivot is affine in the target label, so $g_S$ is
+\emph{concave}; and $g_S$ is the \emph{greatest} Bellman-feasible storage at
+level $S$, hence an exact fixed point of the Bellman operator. Concavity is
+elementary but decisive: it forces every corner of the contact intercept
+downward, which is what ultimately excludes contact plateaus.
+
+\emph{Exact endpoint exclusion.} Two-edge finite histories give exact rational
+margins: with $r=1/10$, the endpoint predecessor lines exceed the storage
+uniformly by
+$m_+=\tfrac{23686917837403}{3008753881083980}>0.0403$ and
+$m_-=\tfrac{274562305945801}{4008753881083980}>0.1978$,
+for every level in the certified window. Consequently the remainder $R_0$ has
+a uniform positive gap on all endpoint spectral sectors, so no exact or
+near-maximizing state carries endpoint mass, and $x=\pm1$ is never a Bellman
+predecessor at $S$. These are closed-form rational certificates; no branch
+geometry or reflected wing is used.
+
+\emph{The equality module of a hypothetical maximizer.} Suppose a
+finite-dimensional strategy attains $S$. (Purification is unnecessary:
+$\operatorname{Tr}(\rho R)=0$ with $R\succeq0$ gives $R\rho=0$ directly; POVMs
+are handled by a finite Naimark dilation preserving dimension, tensor
+structure, and value.) Applying the weld at levels $q_n\downarrow S$ and using
+$\sum_\nu\operatorname{Tr}(\rho R_{\nu,n})=q_n-S\to0$, the endpoint gaps kill
+boundary mass first; on the remaining interior finite spectrum the
+coefficients converge, and the limiting positive remainders annihilate
+$\rho$. Thus the maximizer carries an exact critical equality module at $S$
+--- \emph{without} any claim that the storage infimum is attained (the
+endpoint boundary layer is bypassed, not solved).
+
+\emph{Zero-set geometry.} On the equality module, the scalar remainder
+symbol vanishes. Reflected finite histories give the gluing inequality
+$g_S(x)\,g_S(-x)\ge b(x)^2$ with $b(x)^2=(1-x^2)/4$; full equality of the two
+Bellman inequalities and the Cauchy--Schwarz step forces
+$g_S(x)g_S(-x)=b(x)^2$ at every occupied pair, and a Monge (supermodularity)
+argument makes the full zero set monotone. The decisive step is a
+convex-envelope theorem: writing $C(x)=S+1-\tfrac{x}{2}-b(x)^2/g_S(x)$ on the
+open interval $(-1,1)$ --- where $C\ge g_S(0)>0$ by feasibility at the origin,
+so the greatest convex minorant $H$ exists --- concavity of $g_S$ makes every
+corner of $C$ point downward, while a kink of $H$ at a contact point would
+force an upward corner. Hence $H$ is differentiable, no source serves two
+targets, and (by an exact involution $(x,u)\mapsto(-u,-x)$ of the constraint
+system, which requires no symmetry of $g_S$ itself) no target is served by two
+sources. The occupied support of any maximizer is therefore a strictly
+increasing one-to-one graph.
+
+\emph{Finiteness forces closure; closure caps the value.} The equality module
+carries two unitary response transports implementing the decreasing
+involutions $a(u)=P^{-1}(-P(u))$ and $b(u)=-u$ on the occupied support; the
+graph property makes both total. A finite totally ordered set admits exactly
+one decreasing bijection, so $a=b$ on the support: every occupied pair has its
+reflected partner. The resulting amplitude-ratio elimination (multiplicity-%
+uniform: the transports are scalar multiples of unitaries between complete
+fibres) yields, for an occupied pair $(x,u)$,
+\[
+S \;=\; xu-1+\sqrt{(b_x+b_u)^2+\tfrac{(x-u)^2}{4}}
+\;\le\; -t+\sqrt{t}\;\le\;\tfrac14,\qquad t=1-xu,
+\]
+contradicting $S>1/4$. This proves Theorem~\ref{thm:N}. The nonclosure half of
+Corollary~\ref{cor:nonclosure} follows by compactness of the behavior space:
+finite-dimensional behaviors approach value $S$; a convergent subsequence has
+value exactly $S$; closedness of $\Cq$ would give a finite-dimensional
+realization attaining $S$.
+
+\begin{remark}
+The only role of finite dimension is the single sentence ``a finite ordered
+set has one decreasing bijection.'' Everything else holds for arbitrary
+maximizers, which is exactly why Theorem~\ref{thm:S} is possible.
+\end{remark}
+
+\section{Spatial attainment}\label{sec:S}
+
+The historical route to attainment constructed amplitudes along a bi-infinite
+wall and then demanded a global compatibility equation --- the equation whose
+exact failure decertified the original release. The present route
+\emph{dissolves} that obstruction rather than repairing it: no amplitude is
+ever constructed, and the equation is never posed.
+
+By weak-$*$ compactness a maximizing state $\Omega$ exists for the commuting
+model (whose value is always attained \cite{NPA}; nonattainment is strictly a
+tensor-model phenomenon). The limit passage of Section~\ref{sec:N} applies
+verbatim --- no finite spectral support is needed once the transports are
+expressed through the exact operator blocks $W=Y(B_3-\tfrac12 I)$ and
+$W_B=(A_3-\tfrac12 I)V$, which satisfy $W^2=b(X)^2$ and $WX=-XW$ as projector
+identities (no global spectral involution is assumed; it need not exist).
+These yield exact Radon--Nikodym transport laws for the scalar spectral
+measure $\mu$ of the commuting pair $(X,U)$. The fixed-point set of the
+response translation $\tau=a\circ b$ carries no mass (on it the two transport
+densities coincide, which fires the quarter-ceiling elimination against
+$S>1/4$), so $\mu$ disintegrates over the countable free orbits of $\tau$ via
+an explicit Borel transversal. Choosing one conditional orbit measure and
+interleaving the weights of $\{u_n\}$ and $\{-u_n\}$ produces amplitudes
+$\lambda_j=\sqrt{\mu_t(\{c_j\})}$ with, automatically,
+$1\le\sum_j\lambda_j^2\le2$: \emph{normalizability is inherited from the
+probability measure, not imposed} --- this is the precise point where the
+historical obstruction disappears. The transport laws then \emph{derive} the
+cocycle $\lambda_{j+1}/\lambda_j=g_S(c_j)/b(c_j)$, and the Bellman contact
+equality closes the Jacobi eigenvalue equation $H\lambda=S\lambda$ exactly.
+The finite P\'al--V\'ertesi block identity installs the normalized eigenpair
+as a spatial strategy with value $S$, proving Theorem~\ref{thm:S} and, with
+Theorem~\ref{thm:N}, the separation in Corollary~\ref{cor:nonclosure}.
+
+\begin{remark}[Asymmetry]
+Numerical reconnaissance stably locates the active predecessor range near
+$[-0.894,\,+0.898]$: the critical envelope appears genuinely asymmetric, and
+no step above obtains the left wing by reflection. This is compatible with the
+$u\mapsto-u$ symmetry that the closure argument forces on the \emph{occupied
+orbit} of a hypothetical finite maximizer: envelope and orbit are different
+objects. The historical construction's implicit reflection symmetry is,
+in retrospect, adjacent to the exact incompatibility that decertified it.
+\end{remark}
+
+\section{Discussion: attainment and open carriers}\label{sec:discussion}
+
+The two theorems exhibit a sharp mechanism: \emph{finiteness forces the
+equality transports to close (return), and closure caps the value strictly
+below $S$; the value above the closed ceiling is carried only by an infinite
+open chain}. It is natural to ask how general this picture is. A survey of
+the known zoo is suggestive. Every Bell functional with proven
+finite-dimensional attainment of its global supremum closes for an
+identifiable algebraic reason: bipartite correlator (XOR) functionals via
+Tsirelson's Clifford construction \cite{Tsirelson,CHTW} (anticommutation is
+two-step closure), all $(2,2;2,2)$ functionals via Jordan's lemma
+\cite{Masanes}, chained inequalities (rank-2 Gram), fixed CGLMP functionals
+(attained at local dimension exactly $d$; proven for $d=3,4$
+\cite{IoannouRosset}), and the SOS-certified families --- a sum-of-squares
+certificate being precisely a dimension-free algebraic closure of the
+optimum. Conversely, both known explicit transport-class nonattainment
+objects are infinite open ladders: the Coladangelo--Stark state is an exactly
+geometric ladder whose nonattainment proof is an explicit no-return orbit
+argument on the Schmidt spectrum \cite{ColadangeloStark}, and the
+P\'al--V\'ertesi family is a half-infinite Jacobi chain with offset $2\times2$
+blockings \cite{PalVertesi} --- the same architecture, on smaller alphabets,
+now with the conjecture it motivated resolved. (Coladangelo and Stark
+explicitly suggested their orbit technique might apply to $I_{3322}$;
+Theorem~\ref{thm:N} may be read as the answer to that suggestion, reached by
+a transfer-operator route.) Embezzlement-based nonattainment
+\cite{vanDamHayden,JLV,Coladangelo} is carried by the log-flat ladder
+$p_j\propto1/j$ --- open but null-recurrent rather than transient, matching
+its distinct operator-algebraic classification \cite{vLSWW}. Group-theoretic
+and type-based obstructions \cite{Slofstra1,DPP,MusatRordam,MIPRE} form a
+third family outside this transport picture, and Slofstra's undecidability
+results imply any general structural criterion must be restricted to a
+subclass. Within the two-outcome bipartite class, where Jordan's lemma
+supplies the $2\times2$ chain structure, we record the dichotomy as a
+conjecture: \emph{finite-dimensional attainment coincides with finite
+recurrence of the critical transport}. A concrete test: the
+Dykema--Paulsen--Prakash $(5,5;2,2)$ nonclosure \cite{DPP} is proved
+non-constructively; the conjecture predicts a forced-open orbit in its
+critical transport. We also note the marginal/correlator boundary: Tsirelson's
+theorem covers correlators only, and it is exactly the marginal terms through
+which $I_{3322}$ escapes it. Finally, two cautions from the literature: the
+commuting value is always attained \cite{NPA} (so nonattainment is a
+tensor-side phenomenon), and non-saturation of NPA levels is not evidence of
+nonattainment \cite{DTCHSH,NPAnonattain}.
+
+What remains open here: the exact identification of $S$ beyond the certified
+window (the window's width is $3.61\times10^{-9}$), and the matching
+dimension-necessity lower bound (how fast $S-S_d\to0$ from below); a
+constructive upper profile with logarithmic dimension sufficiency is part of
+ongoing work.
+
+\section{Methods and verification}\label{sec:methods}
+
+All load-bearing computations are exact (rational arithmetic or outward-%
+rounded interval arithmetic), two-engine where numerical (independent
+reconstructions in separate codebases; e.g.\ the $255$-dimensional lower
+strategy is verified in exact rationals and reproduced at $160$ digits), and
+shipped as machine-checkable certificates in the public repository
+\cite{Repo}, with the complete correction record. The proof texts themselves
+were audited by independent refutation-first adversarial review: three
+successive rounds for Theorem~\ref{thm:N} (the first round \emph{refuted} an
+earlier restoration attempt with an explicit countermodel; the third signed
+the theorem with a binding claim boundary that this paper follows), and a
+separate round for Theorem~\ref{thm:S} (which located and repaired two
+genuine gaps --- a circular fixed-point exclusion and a globally nonexistent
+spectral involution --- before signing). The complete signed verdicts ship in
+the certificate directories. Package guard scripts are algebraic and exact-%
+arithmetic checks only and are labeled as such; the analytic steps are
+established in the reviewed documents, not by the scripts.
+
+\subsection*{Data availability}
+Repository: \url{https://github.com/Apsiape/i3322-exact-wall} (release
+v3.2.0). Concept DOI: \href{https://doi.org/10.5281/zenodo.21782008}%
+{10.5281/zenodo.21782008}. Certificate directories:
+\texttt{certificate/production/theorem-N-four-receipts-at-S/} and
+\texttt{certificate/production/theorem-S-spatial-attainment-at-S/}, each
+including the full review records.
+
+\subsection*{Acknowledgments}
+This work owes its problem to K.~F.~P\'al and T.~V\'ertesi, whose 2010
+analysis defined the object and whose numerical family remains the guide to
+its structure, and a debt of direction to A.~Coladangelo and J.~Stark, whose
+infinite-dimensional correlation and closing suggestion pointed at exactly
+the theorem proved here.
+
+\begin{thebibliography}{99}
+\bibitem{Froissart} M.~Froissart, \emph{Constructive generalization of Bell's
+inequalities}, Nuovo Cimento B \textbf{64}, 241 (1981).
+\bibitem{CollinsGisin} D.~Collins and N.~Gisin, \emph{A relevant two-qubit
+Bell inequality inequivalent to the CHSH inequality}, J. Phys. A \textbf{37},
+1775 (2004).
+\bibitem{PalVertesi} K.~F.~P\'al and T.~V\'ertesi, \emph{Maximal violation of
+a bipartite three-setting, two-outcome Bell inequality using
+infinite-dimensional quantum systems}, Phys. Rev. A \textbf{82}, 022116
+(2010), arXiv:1006.3032.
+\bibitem{ColadangeloStark} A.~Coladangelo and J.~Stark, \emph{An inherently
+infinite-dimensional quantum correlation}, Nat. Commun. \textbf{11}, 3335
+(2020), arXiv:1804.05116.
+\bibitem{DPP} K.~Dykema, V.~I.~Paulsen, and J.~Prakash, \emph{Non-closure of
+the set of quantum correlations via graphs}, Commun. Math. Phys.
+\textbf{365}, 1125 (2019), arXiv:1709.05032.
+\bibitem{Beigi} S.~Beigi, \emph{Separation of quantum, spatial quantum, and
+approximate quantum correlations}, Quantum \textbf{5}, 389 (2021),
+arXiv:2004.11103.
+\bibitem{Slofstra1} W.~Slofstra, \emph{Tsirelson's problem and an embedding
+theorem for groups arising from non-local games}, J. Amer. Math. Soc.
+\textbf{33}, 1 (2020), arXiv:1606.03140.
+\bibitem{Slofstra2} W.~Slofstra, \emph{The set of quantum correlations is not
+closed}, Forum Math. Pi \textbf{7}, e1 (2019), arXiv:1703.08618.
+\bibitem{Masanes} L.~Masanes, \emph{Extremal quantum correlations for N
+parties with two dichotomic observables per site}, arXiv:quant-ph/0512100.
+\bibitem{Tsirelson} B.~S.~Tsirelson, \emph{Quantum generalizations of Bell's
+inequality}, Lett. Math. Phys. \textbf{4}, 93 (1980); \emph{Quantum analogues
+of the Bell inequalities. The case of two spatially separated domains},
+J. Soviet Math. \textbf{36}, 557 (1987).
+\bibitem{CHTW} R.~Cleve, P.~H{\o}yer, B.~Toner, and J.~Watrous,
+\emph{Consequences and limits of nonlocal strategies}, Proc. CCC 2004,
+arXiv:quant-ph/0404076.
+\bibitem{IoannouRosset} M.~Ioannou and D.~Rosset, \emph{Noncommutative
+polynomial optimization under symmetry}, arXiv:2112.10803.
+\bibitem{NPA} M.~Navascu\'es, S.~Pironio, and A.~Ac\'in, \emph{Bounding the
+set of quantum correlations}, Phys. Rev. Lett. \textbf{98}, 010401 (2007);
+\emph{A convergent hierarchy of semidefinite programs characterizing the set
+of quantum correlations}, New J. Phys. \textbf{10}, 073013 (2008).
+\bibitem{vanDamHayden} W.~van Dam and P.~Hayden, \emph{Universal entanglement
+transformations without communication}, Phys. Rev. A \textbf{67}, 060302(R)
+(2003), arXiv:quant-ph/0201041.
+\bibitem{JLV} Z.~Ji, D.~Leung, and T.~Vidick, \emph{A three-player coherent
+state embezzlement game}, Quantum \textbf{4}, 349 (2020), arXiv:1802.04926.
+\bibitem{Coladangelo} A.~Coladangelo, \emph{A two-player dimension witness
+based on embezzlement, and an elementary proof of the non-closure of the set
+of quantum correlations}, Quantum \textbf{4}, 282 (2020), arXiv:1904.02350.
+\bibitem{vLSWW} L.~van Luijk, A.~Stottmeister, R.~F.~Werner, and H.~Wilming,
+\emph{Embezzling entanglement from quantum fields}, arXiv:2401.07299.
+\bibitem{MusatRordam} M.~Musat and M.~R{\o}rdam, \emph{Non-closure of quantum
+correlation matrices and factorizable channels that require infinite
+dimensional ancilla}, Commun. Math. Phys. \textbf{375}, 1761 (2020),
+arXiv:1806.10242.
+\bibitem{MIPRE} Z.~Ji, A.~Natarajan, T.~Vidick, J.~Wright, and H.~Yuen,
+\emph{MIP*=RE}, arXiv:2001.04383; Commun. ACM \textbf{64}, 131 (2021).
+\bibitem{MNY} H.~Mousavi, S.~S.~Nezhadi, and H.~Yuen, \emph{Nonlocal games,
+compression theorems, and the arithmetical hierarchy}, arXiv:2110.04651.
+\bibitem{DTCHSH} \emph{A phase transition in the exactness of the NPA
+hierarchy at the critical doubly-tilted CHSH functional}, arXiv:2607.13774.
+\bibitem{NPAnonattain} J.~Fanizza et al., \emph{The NPA hierarchy does not
+always attain the commuting operator value}, arXiv:2510.04943.
+\bibitem{Repo} S.~Douglas, \emph{Exact I3322 quantum wall: certificates,
+review records, and correction history}, GitHub repository
+\texttt{Apsiape/i3322-exact-wall}, releases v2.0.0--v3.2.0, concept DOI
+10.5281/zenodo.21782008 (2026).
+\end{thebibliography}
+
+\end{document}

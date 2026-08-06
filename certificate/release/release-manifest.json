@@ -3153,6 +3153,24 @@
       "sha256": "02454c2b221a8ad629bfdbe4e54aebcc05fbd02b6cfe795ab9585287a79a84d6"
     },
     {
+      "path": "paper/RELEASE-NOTES-v3.2.0.md",
+      "canonical_bytes": 1363,
+      "hash_mode": "canonical-lf",
+      "sha256": "5de5cac821e1e1ab3af126cadf34ca3df630d7519d1e75dfd17285d835542bdc"
+    },
+    {
+      "path": "paper/resolution.pdf",
+      "canonical_bytes": 285388,
+      "hash_mode": "raw",
+      "sha256": "cebfb2c5f4be51e8334abc1f6fcac04df7487b9c8ac815797570d73f651c5899"
+    },
+    {
+      "path": "paper/resolution.tex",
+      "canonical_bytes": 25851,
+      "hash_mode": "canonical-lf",
+      "sha256": "cd6619bc70145b07ae4afb106bdfededd36d3d76c846e4d6a06550e1d1814016"
+    },
+    {
       "path": "paper/TECHNICAL-SUPPLEMENT.md",
       "canonical_bytes": 16212,
       "hash_mode": "canonical-lf",
@@ -3237,6 +3255,6 @@
       "sha256": "a405ef962afdfc120b5c3f2901ca58e95e2ab3963e642fa73dc2022f2d280cfa"
     }
   ],
-  "file_count": 539,
+  "file_count": 542,
   "scope": "Custody manifest for selected published files. Analytic dependency closure is checked separately by verify_release.py and is not inferred from file enumeration alone."
 }
