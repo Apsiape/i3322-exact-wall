@@ -304,13 +304,34 @@ workstation it takes several minutes. The independent path uses `mpmath.iv`
 and a locally implemented rectangular complex-interval layer; it imports no
 production Arb/FLINT module.
 
+## Machine-checked algebraic cores (Lean 4)
+
+`lean/I3322Kernel/` contains a Lean 4 + Mathlib formalization of the
+paper's displayed algebraic formulas: the quarter-ceiling
+amplitude-elimination chain, the exact endpoint margins (as exact
+rational identities, with antitonicity in the level), and the
+finite-closure lemma (two strictly antitone bijections of a finite
+linear order coincide). All theorems build with no `sorry` and report
+only the standard axioms under `#print axioms`. The claim boundary is
+stated in [lean/I3322Kernel/README.md](lean/I3322Kernel/README.md):
+these are the algebraic cores, not the full theorems — the
+measure-theoretic and operator-algebraic chains are not formalized.
+
+```powershell
+cd lean/I3322Kernel
+lake exe cache get
+lake build
+lake env lean AxiomCheck.lean
+```
+
 ## Repository structure
 
 - `paper/`: manuscript, supplement, normalization, scope, and priority record;
 - `certificate/production/`: Arb/SymPy/NumPy proof dependencies and explicitly
   marked conditional lower-bound research;
 - `certificate/independent/`: separate interval reconstruction;
-- `certificate/release/`: manifest, replay entry point, and release audits.
+- `certificate/release/`: manifest, replay entry point, and release audits;
+- `lean/I3322Kernel/`: machine-checked algebraic cores (Lean 4 + Mathlib).
 
 The repository is deliberately standalone. It contains no dependency on the
 broader private or public foundational-theory corpus from which the problem was
