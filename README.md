@@ -2,6 +2,56 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21782008.svg)](https://doi.org/10.5281/zenodo.21782008)
 
+## Start here
+
+**The paper: [paper/resolution.pdf](paper/resolution.pdf)** — *"The
+I3322 quantum value is attained spatially but not in finite dimension"*
+(v3.2.3, 10 pages). It states both theorems with proof architecture,
+claim boundaries, correction history, review methodology, and full
+citations.
+
+**What is proved.** Let `S` denote the common I3322 quantum value,
+certified unconditionally in the window
+`0.2508753845015185 < S <= 0.250875388108398` (width `3.607e-9`).
+
+1. **Theorem (N)** — no finite-dimensional quantum strategy (any local
+   dimensions, mixed states, POVMs) attains `S`. This is the
+   finite-dimensional half of the Pal–Vertesi conjecture (2010).
+2. **Theorem (S)** — `S` **is** attained by a normal spatial strategy
+   on `ell^2(Z) (x) ell^2(Z)`.
+3. **Corollaries** — the quantum correlation set `C_q(3,3;2,2)` is
+   **not closed**, and `C_qs \ C_q` is nonempty, at the smallest
+   two-outcome scenario where this is possible.
+
+**Where the evidence lives:**
+
+- [Theorem (N) certificate directory](certificate/production/theorem-N-four-receipts-at-S/)
+  — signed statement, proof documents, three rounds of adversarial
+  review, exact-arithmetic guards.
+- [Theorem (S) certificate directory](certificate/production/theorem-S-spatial-attainment-at-S/)
+  — proof documents and review record.
+- [Machine-checked cores (Lean 4 + Mathlib)](lean/I3322Kernel/) — the
+  paper's displayed formulas, no `sorry`, standard axioms only.
+- [Replayable window certificates](certificate/release/) — run
+  `python certificate/release/verify_release.py` (details below).
+- [Claim-to-certificate map](paper/CERTIFICATE-MAP.md) and
+  [independent review records](review/).
+
+**What is not claimed.** The exact value of `S` beyond its window, and
+the optimality of the Pal–Vertesi construction, remain open. Earlier
+releases of this repository claimed an exact identification; that
+claim was refuted by this project's own audit, publicly decertified,
+and the present theorems were rebuilt on independent routes. The full
+correction history is preserved below and in the frozen DOI releases —
+it is part of the record, not an embarrassment to be hidden.
+
+*The sections below preserve the complete provenance narrative
+(sprint-numbered, in chronological layers). New readers need only the
+links above; the layers exist so that every claim's history is
+auditable.*
+
+---
+
 > **Finite-dimensional nonattainment and nonclosure restored (v3.0.0,
 > 2026-08-05).** The Sprint-1285 audit that decertified the historical
 > headline stands. A new, independent proof route now re-establishes the two
@@ -265,15 +315,18 @@ not the first exact certified bound for I3322.
 
 ## Paper
 
-- [Main manuscript](paper/manuscript.pdf)
-- [Prospective v1.3.0 release notes](paper/RELEASE-NOTES-v1.3.0.md)
-- [v1.2.0 release notes](paper/RELEASE-NOTES-v1.2.0.md)
-- [v1.1.0 release notes](paper/RELEASE-NOTES-v1.1.0.md)
-- [Technical supplement](paper/technical-supplement.pdf)
-- [Readable manuscript source](paper/MANUSCRIPT.md)
+- **[Resolution paper — the current paper](paper/resolution.pdf)**
+  (v3.2.3; readable source in the paper/ directory)
 - [Claim-to-certificate map](paper/CERTIFICATE-MAP.md)
 - [Priority audit](paper/PRIORITY-AUDIT.md)
 - [Independent frontier-model review and adjudication](review/README.md)
+- Historical (superseded by the resolution paper; preserved for
+  provenance): [legacy manuscript](paper/manuscript.pdf),
+  [technical supplement](paper/technical-supplement.pdf),
+  [readable legacy source](paper/MANUSCRIPT.md), release notes
+  [v1.1.0](paper/RELEASE-NOTES-v1.1.0.md) /
+  [v1.2.0](paper/RELEASE-NOTES-v1.2.0.md) /
+  [v1.3.0](paper/RELEASE-NOTES-v1.3.0.md)
 
 ## Reproduce the certificate
 
