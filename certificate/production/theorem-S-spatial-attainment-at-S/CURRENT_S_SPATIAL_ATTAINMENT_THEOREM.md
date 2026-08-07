@@ -1,8 +1,14 @@
 # Spatial Attainment at the Current I3322 Supremum by Scalar-Orbit Extraction
 
 **Date:** 2026-08-05  
-**Status:** **PROMOTION CANDIDATE — referee-signed conditional on the V1–V9
-repairs executed in this package.**  
+**Status:** **PROMOTED (release v3.1.0, 2026-08-05).** The S1 referee verdict
+was "PROMOTE conditional on the V1–V9 repairs executed in this package"; the
+repairs were executed (see V1_V9_EXECUTION_LEDGER.md) and the theorem is
+stated as Theorem 2 of paper/resolution.pdf. This header previously retained
+the pre-promotion wording and was reconciled 2026-08-07, matching the
+STATUS.json reconciliation of the same date. Residual-risk note: Sections 6–9
+(conull invariant set, Borel transversal, uniqueness of disintegration) carry
+the residual proof risk and are scheduled for full expanded write-up.  
 **Scope:** current certified supremum \(S\); no historical amplitude profile is
 used.
 
