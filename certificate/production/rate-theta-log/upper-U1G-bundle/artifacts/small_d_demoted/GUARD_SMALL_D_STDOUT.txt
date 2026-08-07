@@ -1,0 +1,158 @@
+{
+  "status": "PASS \u2014 U1 endpoint-projector truncation mechanical guard",
+  "arithmetic": "exact Fraction algebra plus rational sqrt intervals at 140 decimal places",
+  "source_profile_separator_vector_sha256": "e43171241e1e1c464d2b1c1aec888d50407aa9f87f57adcf4eee39954127e093",
+  "dimensions_checked": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "rows": [
+    {
+      "dimension": 3,
+      "segment": [
+        129,
+        131
+      ],
+      "left_severed_pair": [
+        128,
+        129
+      ],
+      "right_severed_pair": [
+        131,
+        132
+      ],
+      "all_six_exact_block_projections": true,
+      "projection_interval_residual_contains_zero": true,
+      "projection_interval_residual_width_lt_1e-120": true,
+      "normalized_state_exact": true,
+      "local_dimension_equals_retained_interval": true,
+      "bell_lower": "0.156506179440900757333589947987095180617045195308344698995011",
+      "bell_upper": "0.156506179440900757333589947987095180617045195308344698995011",
+      "strictly_below_certified_window": true
+    },
+    {
+      "dimension": 4,
+      "segment": [
+        126,
+        129
+      ],
+      "left_severed_pair": [
+        125,
+        126
+      ],
+      "right_severed_pair": [
+        129,
+        130
+      ],
+      "all_six_exact_block_projections": true,
+      "projection_interval_residual_contains_zero": true,
+      "projection_interval_residual_width_lt_1e-120": true,
+      "normalized_state_exact": true,
+      "local_dimension_equals_retained_interval": true,
+      "bell_lower": "0.195907255496577173031682910392096987209605491112592382427360",
+      "bell_upper": "0.195907255496577173031682910392096987209605491112592382427360",
+      "strictly_below_certified_window": true
+    },
+    {
+      "dimension": 5,
+      "segment": [
+        122,
+        126
+      ],
+      "left_severed_pair": [
+        121,
+        122
+      ],
+      "right_severed_pair": [
+        126,
+        127
+      ],
+      "all_six_exact_block_projections": true,
+      "projection_interval_residual_contains_zero": true,
+      "projection_interval_residual_width_lt_1e-120": true,
+      "normalized_state_exact": true,
+      "local_dimension_equals_retained_interval": true,
+      "bell_lower": "0.190877856860953067265935900542173777927011480465037250509027",
+      "bell_upper": "0.190877856860953067265935900542173777927011480465037250509027",
+      "strictly_below_certified_window": true
+    },
+    {
+      "dimension": 6,
+      "segment": [
+        124,
+        129
+      ],
+      "left_severed_pair": [
+        123,
+        124
+      ],
+      "right_severed_pair": [
+        129,
+        130
+      ],
+      "all_six_exact_block_projections": true,
+      "projection_interval_residual_contains_zero": true,
+      "projection_interval_residual_width_lt_1e-120": true,
+      "normalized_state_exact": true,
+      "local_dimension_equals_retained_interval": true,
+      "bell_lower": "0.228432496068720110831836375422783334451446375208054251253325",
+      "bell_upper": "0.228432496068720110831836375422783334451446375208054251253325",
+      "strictly_below_certified_window": true
+    },
+    {
+      "dimension": 7,
+      "segment": [
+        120,
+        126
+      ],
+      "left_severed_pair": [
+        119,
+        120
+      ],
+      "right_severed_pair": [
+        126,
+        127
+      ],
+      "all_six_exact_block_projections": true,
+      "projection_interval_residual_contains_zero": true,
+      "projection_interval_residual_width_lt_1e-120": true,
+      "normalized_state_exact": true,
+      "local_dimension_equals_retained_interval": true,
+      "bell_lower": "0.205110557742757498071058365456587482092681030229583243268728",
+      "bell_upper": "0.205110557742757498071058365456587482092681030229583243268728",
+      "strictly_below_certified_window": true
+    },
+    {
+      "dimension": 8,
+      "segment": [
+        124,
+        131
+      ],
+      "left_severed_pair": [
+        123,
+        124
+      ],
+      "right_severed_pair": [
+        131,
+        132
+      ],
+      "all_six_exact_block_projections": true,
+      "projection_interval_residual_contains_zero": true,
+      "projection_interval_residual_width_lt_1e-120": true,
+      "normalized_state_exact": true,
+      "local_dimension_equals_retained_interval": true,
+      "bell_lower": "0.237281644442969736377224007578142681430863919183170390080358",
+      "bell_upper": "0.237281644442969736377224007578142681430863919183170390080358",
+      "strictly_below_certified_window": true
+    }
+  ],
+  "odd_parity_scores_rise_d3_d5_d7": true,
+  "even_parity_scores_rise_d4_d6_d8": true,
+  "all_scores_below_certified_window": true,
+  "all_gates_pass": true,
+  "claim_boundary": "Mechanical truncation guard only. The parity-resolved small-d rise is a smoke check, not a proof of asymptotic convergence or of the U1 rate. No numerical rate constant is verified."
+}

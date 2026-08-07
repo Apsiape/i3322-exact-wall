@@ -1,0 +1,590 @@
+--- a/README.md
++++ b/README.md
+@@ -1,10 +1,16 @@
+-# I3322 v28 Lower-Bound Closeout Bundle
++# I3322 v28.1 Lower-Bound Final-Fixes Bundle
+ 
+-This is the bounded writing/receipt closeout requested after the blind v27 audit. It contains **no new mathematical route**.
++This tree is the **v28.1 final-fixes layer** for the quantitative lower bound only:
++\[
++S-S_d\ge c(1+d)^{-K}e^{-Cd},
++\qquad
++D_{\rm lower}(\varepsilon)=\Omega(\log(1/\varepsilon)).
++\]
+ 
+-Live authority:
++**Route change:** none. **New receipt lemmas:** none. v28.1 is restricted to Commission v28.1 blockers B1--B3 and minors M1--M8.
+ 
+-- `new_docs/00_AUTHORITY_BANNER_V28.md`
++The authoritative comparison is `V28_TO_V28.1_DIFF.patch`, generated over the **entire tree**, not only `new_docs`. It must contain every changed file and nothing outside the commission scope. Expected changed files are:
++
+ - `new_docs/01_RAW_CELL_PARITY_EDGE_BUDGET_V28.md`
+ - `new_docs/02_CELL_RESPONSE_AND_BRIDGE_RECURRENCE_V28.md`
+ - `new_docs/03_REPEATED_CELL_CYCLE_EXACTIFICATION_V28.md`
+@@ -12,8 +18,15 @@
+ - `new_docs/05_EXPONENTIAL_LOWER_ASSEMBLY_V28.md`
+ - `new_docs/06_P4_RECEIPTS_AND_SYMBOL_HYGIENE_V28.md`
+ - `new_docs/07_CORRECTION_AND_SUPERSESSION_LEDGER_V28.md`
+-- `new_docs/08_P5_ARTIFACT_CLOSEOUT_V28.md`
+ - `new_docs/09_TERMINAL_EVENT_TABLE_V28.md`
+-- `new_docs/10_LOWER_BOUND_PROMOTION_AUDIT_COMMISSION_V28.md`
++- `guards/guard_live_authority_hygiene.py`
++- `guards/guard_return_hygiene.py`
++- `guards/GUARD_RESULTS.txt` (final v28.1 replay output)
++- `README.md`
++- `STATUS_V28.json`
+ 
+-The prior v27 authority docs are preserved under `historical/v27_authority_docs/` so the re-audit can be diff-scoped. The target is only the exponential finite-dimensional lower tail and `D_lower = Omega(log)`. Upper-rate artifacts are supplementary and cannot promote `D_upper` or `Theta(log)`.
++Doc 03 §2 is restored verbatim from the v27 historical authority. Hashing the complete section including its trailing newline before the next `##` heading gives SHA-256 `95b51d04aeaa15560e9b8b3fd8d8ded236ecedd8884ce65a3dd0105ff9ef7e91`. From v28.1 onward, any claim that inherited content is “unchanged” requires an explicit source hash or an explicit diff hunk.
++
++The diff artifact itself is necessarily not self-included; it covers every content/guard/status file changed relative to the sealed v28 archive.
++
++Constructive upper-bound artifacts remain supplementary and outside this lower-bound promotion rule.
+--- a/STATUS_V28.json
++++ b/STATUS_V28.json
+@@ -1,13 +1,15 @@
+ {
+   "date": "2026-08-06",
+-  "status": "LOWER_BOUND_CLOSEOUT_PENDING_DIFF_ONLY_REAUDIT",
++  "status": "LOWER_BOUND_V28_1_FINAL_FIXES_READY_FOR_CLEAN_VERIFICATION",
+   "target": "S-S_d >= c(1+d)^(-K) exp(-C d)",
+   "corollary_target": "D_lower(epsilon)=Omega(log(1/epsilon))",
+-  "supersedes_authority": "v27 lower-bound layer",
+-  "mathematics_changed": false,
++  "supersedes_authority": "v28 lower-bound closeout layer",
+   "blind_v27_verdict": "L3 PASS; L1/L2/L4/L5/L6/INTEGRITY PASS-WITH-CONDITIONS; zero kills",
+-  "promotion_rule": "L1-L6 PASS plus INTEGRITY PASS on Commission v28-L",
++  "promotion_rule": "Clean v28.1 verification protocol promotes D_lower(epsilon)=Omega(log(1/epsilon)) under frozen rule",
+   "upper_bound_in_scope": false,
+   "theta_log_in_scope": false,
+-  "qualitative_theorem_N_affected": false
++  "qualitative_theorem_N_affected": false,
++  "route_changed": false,
++  "new_receipt_lemmas": [],
++  "v28_1_scope": "B1-B3 and M1-M8 only; restores/cites existing receipts and fixes documentary/guard defects"
+ }
+--- a/guards/GUARD_RESULTS.txt
++++ b/guards/GUARD_RESULTS.txt
+@@ -32,11 +32,13 @@
+   margin_plus_decimal= 0.040397174799996806
+   margin_minus_decimal= 0.19786062268575816
+ === guard_return_hygiene.py ===
+-PASS v28 normalized two-fibre return guard
++PASS v28.1 normalized two-fibre return guard
+   multiplicities tested = 1,2,4,8
+   multiplier-law alpha=beta verified; raw-gain negative control verified
++  S_- - F(889/1000)= 16308643699893/1778000000000000000
++  rho<=1 => q_oriented=rho checked on 1000 rationals
+ === guard_live_authority_hygiene.py ===
+-PASS v28 live-authority hygiene
++PASS v28.1 live-authority hygiene
+   symbol families typed; killed items absent from live proof; R1/TOP_D/upper scope reconciled
+ === guard_historical_hashes.py ===
+ PASS v28 historical hash assertions
+--- a/guards/guard_live_authority_hygiene.py
++++ b/guards/guard_live_authority_hygiene.py
+@@ -1,7 +1,6 @@
+ #!/usr/bin/env python3
+-"""Enforce v28 live authority, symbol typing, and killed-item absence."""
++"""Enforce v28.1 live authority, symbol typing, and killed-item absence."""
+ from pathlib import Path
+-import re
+ root=Path(__file__).resolve().parents[1]
+ new=root/'new_docs'
+ required=[
+@@ -18,14 +17,14 @@
+  '10_LOWER_BOUND_PROMOTION_AUDIT_COMMISSION_V28.md',
+ ]
+ for n in required: assert (new/n).is_file(),n
+-proof='\n'.join((new/n).read_text() for n in required[1:6])
+-symbols=(new/'06_P4_RECEIPTS_AND_SYMBOL_HYGIENE_V28.md').read_text()
+-doc4=(new/'04_STATE_CARRYING_COMMON_RETURN_AND_NEUTRAL_GAIN_V28.md').read_text()
+-ledger=(new/'07_CORRECTION_AND_SUPERSESSION_LEDGER_V28.md').read_text()
+-index=(root/'DEPENDENCY_RECEIPT_INDEX.md').read_text()
+-r1=(root/'dependencies/PROJECTED_RETURN_MISMATCH_R1_V23.md').read_text()
+-upper=(root/'upper_artifacts/UPPER_SCOPE_NOTE.md').read_text()
+-rho=(root/'upper_artifacts/RHO_Q_IDENTIFICATION.md').read_text()
++proof='\n'.join((new/n).read_text(encoding='utf-8') for n in required[1:7])
++symbols=(new/'06_P4_RECEIPTS_AND_SYMBOL_HYGIENE_V28.md').read_text(encoding='utf-8')
++doc4=(new/'04_STATE_CARRYING_COMMON_RETURN_AND_NEUTRAL_GAIN_V28.md').read_text(encoding='utf-8')
++ledger=(new/'07_CORRECTION_AND_SUPERSESSION_LEDGER_V28.md').read_text(encoding='utf-8')
++index=(root/'DEPENDENCY_RECEIPT_INDEX.md').read_text(encoding='utf-8')
++r1=(root/'dependencies/PROJECTED_RETURN_MISMATCH_R1_V23.md').read_text(encoding='utf-8')
++upper=(root/'upper_artifacts/UPPER_SCOPE_NOTE.md').read_text(encoding='utf-8')
++rho=(root/'upper_artifacts/RHO_Q_IDENTIFICATION.md').read_text(encoding='utf-8')
+ 
+ # Required live typing.
+ for token in ['b_{\\rm amp}', '\\iota(t)=-t', 'K_A=Wb_{\\rm amp}(X)^{-1}', 'K_B=W_Bb_{\\rm amp}(U)^{-1}',
+@@ -35,7 +34,7 @@
+ assert 'K_A:=W\\,b_{\\rm amp}(X)^{-1}' in doc4
+ assert 'normalized gains' in doc4.lower() and 'raw gains' in doc4.lower()
+ assert 'Q=S' in doc4.replace(' ','')
+-assert 'R2 remains open and is not on the v28 critical path' in doc4
++assert 'R2 (formerly G2) remains OPEN and is not on the v28 critical path' in doc4
+ 
+ # Bare r_A/r_B are forbidden in live Docs 01--06: every literal r_A occurrence
+ # must be immediately typed with ^; r_{A,...} is a different string.
+@@ -69,5 +68,5 @@
+ assert '\\alpha_{\\rm end}' in rho and 'a_{+,\\rm end}' in rho
+ assert 'q_{\\rm ret,+}' in rho
+ 
+-print('PASS v28 live-authority hygiene')
++print('PASS v28.1 live-authority hygiene')
+ print('  symbol families typed; killed items absent from live proof; R1/TOP_D/upper scope reconciled')
+--- a/guards/guard_return_hygiene.py
++++ b/guards/guard_return_hygiene.py
+@@ -1,5 +1,5 @@
+ #!/usr/bin/env python3
+-"""Non-tautological v28 two-fibre normalization/multiplier guards."""
++"""Non-tautological v28.1 two-fibre normalization/multiplier guards."""
+ from fractions import Fraction as F
+ 
+ 
+@@ -21,6 +21,13 @@
+     n=len(A); m=len(B[0]); k=len(B)
+     return [[sum((A[i][t]*B[t][j] for t in range(k)),F(0)) for j in range(m)] for i in range(n)]
+ 
++def extract_gain(out,dest):
++    pairs=[(o,d) for o,d in zip(out,dest) if d!=0]
++    assert pairs
++    gain=pairs[0][0]/pairs[0][1]
++    assert all(o==gain*d for o,d in zip(out,dest))
++    return gain
++
+ bA=F(3,7); bB=F(2,5)
+ a=F(2); c=F(3)
+ alpha=a/c
+@@ -32,10 +39,6 @@
+     I2=ident(2*m)
+     assert compose(KA,KA)==I2 and compose(KB,KB)==I2
+     WA=scale(bA,KA); WB=scale(bB,KB)
+-    # normalization W/b recovers K exactly
+-    assert scale(F(1,1)/bA,WA)==KA
+-    assert scale(F(1,1)/bB,WB)==KB
+-
+     u=[F(1) for _ in range(m)]  # fixed by both I and reversal
+     psi=mul(a,u)+mul(c,u)
+     # full multiplier law: K psi = r(X/U) psi with reciprocal fibre multipliers
+@@ -50,8 +53,8 @@
+     outA=block_minus(matvec(KA,src),m)
+     outB=block_minus(matvec(KB,src),m)
+     assert eq(outA,mul(alpha,dest))
+-    assert eq(outB,mul(alpha,dest))
+-    beta=alpha
++    beta=extract_gain(outB,dest)
++    assert eq(outB,mul(beta,dest))
+     assert alpha==beta
+ 
+     # Raw W gains are NOT the F(q) gains when bA != bB.
+@@ -68,9 +71,23 @@
+         assert not eq(out_bad,mul(alpha,mul(c,e0)))
+     checks+=1
+ 
+-# Exact F(q) neutral member remains a scalar algebra guard.
++# Exact F(q) neutral member and the v27 service-gap receipt.
+ def Fq(q): return (1+q)**2/(16*q)
+ assert Fq(F(1))==F(1,4)
+-print('PASS v28 normalized two-fibre return guard')
++q0=F(889,1000)
++Slo=F(2508753845015185,10**16)
++gap=Slo-Fq(q0)
++assert gap == F(16308643699893,1778000000000000000) and gap>0
++
++# Exact rho<->q orientation receipt on 1000 rationals.
++for k in range(1,1001):
++    rho=F(k,1000)
++    q=min(rho,1/rho)
++    assert q==rho
++    assert (rho==1)==(q==1)
++
++print('PASS v28.1 normalized two-fibre return guard')
+ print('  multiplicities tested = 1,2,4,8')
+ print('  multiplier-law alpha=beta verified; raw-gain negative control verified')
++print('  S_- - F(889/1000)=', gap)
++print('  rho<=1 => q_oriented=rho checked on 1000 rationals')
+--- a/new_docs/01_RAW_CELL_PARITY_EDGE_BUDGET_V28.md
++++ b/new_docs/01_RAW_CELL_PARITY_EDGE_BUDGET_V28.md
+@@ -21,7 +21,7 @@
+ \[
+ C=S+1,\qquad F_X(x)=\frac x2+A(x),\qquad F_U(u)=B(u)-\frac u2.
+ \]
+-This form is the hypothesis needed below; no unnamed “state-anchored Monge theorem” is imported.
++The pointwise receipt for this form and for \(\phi_S\ge0\) at all four cross-points used below is `dependencies/CRITICAL_ZERO_SET_REDUCTION_FOR_THEOREM_N.md` §5. Thus no unnamed “state-anchored Monge theorem” is imported.
+ 
+ For any two spectral points \((x,u),(x',u')\), the cross-difference is exactly
+ \[
+@@ -80,12 +80,12 @@
+ 
+ ## 3. Strict grid-transfer lemma for the mixed-closure partition
+ 
+-Let \(I_p,I_{p'}\) be two v28 cells with \(p<p'\) and \(p'-p\ge2\). Their geometric endpoints are separated by at least one full cell width. Equality \(|x'-x|=\eta\) in the nearest case \(p'=p+2\) would require **simultaneously**
++Let \(I_p,I_{p'}\) be two v28 cells with \(p<p'\) and \(p'-p\ge2\). Their geometric endpoints are separated by at least one full cell width. For gaps \(p'-p\ge3\), strictness is immediate: the geometric separation exceeds one full cell width before endpoint ownership is considered. The only closure-sensitive case is the nearest gap \(p'=p+2\). Equality \(|x'-x|=\eta\) there would require **simultaneously**
+ 
+-- the right endpoint of \(I_p\) to belong to \(I_p\), and
+-- the left endpoint of \(I_{p+2}\) to belong to \(I_{p+2}\).
++- the right endpoint of the lower-index cell \(I_p\) to belong to \(I_p\), and
++- the left endpoint of the higher-index cell \(I_{p+2}\) to belong to \(I_{p+2}\).
+ 
+-The reflection-equivariant mixed-closure convention never assigns both facing endpoints in that way: on the left half the first endpoint is excluded, on the right half the second is excluded, and across the central cell one of the two remains excluded. Therefore
++The mixed convention forbids that simultaneous ownership. On the left half, cells are \([a_j,a_{j+1})\), so the **right** endpoint of the lower cell is excluded. On the right half, cells are \((a_j,a_{j+1}]\), so the **left** endpoint of the higher cell is excluded. In the cases meeting or crossing the closed central cell, at least one of those two facing endpoints is still excluded. Therefore
+ \[
+ \boxed{
+ |p-p'|\ge2\quad\Longrightarrow\quad |x-x'|>\eta.
+--- a/new_docs/02_CELL_RESPONSE_AND_BRIDGE_RECURRENCE_V28.md
++++ b/new_docs/02_CELL_RESPONSE_AND_BRIDGE_RECURRENCE_V28.md
+@@ -187,6 +187,13 @@
+ \]
+ The \(U\to X\) step uses the analogous destination column convention. No response intertwiner ever substitutes an \(X\)-projection for a \(U\)-projection; the marginal-family change occurs only through the actual joint state block.
+ 
++Put the total deletion mass used by this Pythagorean bridge receipt at
++\[
++\boxed{\beta_{\rm del}:=\beta_{\rm far}+\beta_{\rm end}\le\mathcal E.}
++\tag{4.4a}
++\]
++This symbol is distinct from the normalized Bob gain \(\beta\) in Doc 04.
++
+ The v20 Pythagorean identities underlying this collapse are
+ \[
+ (y_k^X)^2=w_k+r_k^{\rm del},
+@@ -195,14 +202,14 @@
+ \tag{4.4}
+ \]
+ \[
+-\sum_kr_k^{\rm del}\le\beta,
+-\qquad
+-\sum_kc_k^{\rm del}\le\beta,
++\sum_kr_k^{\rm del}\le\beta_{\rm del},
++\qquad
++\sum_kc_k^{\rm del}\le\beta_{\rm del},
+ \tag{4.5}
+ \]
+ and therefore
+ \[
+-\sum_k|y_k^X-y_k^U|^2\le4\beta.
++\sum_k|y_k^X-y_k^U|^2\le4\beta_{\rm del}.
+ \tag{4.6}
+ \]
+ 
+@@ -260,13 +267,14 @@
+ \[
+ P(0)=-P(0),
+ \]
+-so \(P(0)=0\) and \(z_+=z_-=(0,0)\). On that exact one-fibre return, positivity plus involutivity of both normalized transports gives
+-\[
+-\alpha^2=\beta^2=1,
+-\qquad
+-\boxed{\alpha=\beta=1,}
+-\]
+-which is exactly the neutral case killed by the quarter ceiling.
++so \(P(0)=0\) and \(z_+=z_-=(0,0)\). This case is killed directly by the exact critical component equation (Doc 04 (5.1)): at \(x_*=u_*=0\), (5.1) gives
++\[
++\boxed{
++S=d(0,0)+\frac12+\frac12=-1+\frac12+\frac12=0<\frac14.
++}
++\tag{7.1}
++\]
++No identification of the two limiting fibre vectors, and no separate inference \(\alpha^2=\beta^2=1\), is used.
+ 
+ ## 8. Sink service under the odd partition
+ 
+--- a/new_docs/03_REPEATED_CELL_CYCLE_EXACTIFICATION_V28.md
++++ b/new_docs/03_REPEATED_CELL_CYCLE_EXACTIFICATION_V28.md
+@@ -1,6 +1,6 @@
+ # Repeated Cell-Cycle Exactification — v28
+ 
+-This document keeps the blind-verified v27 actual-\(Z\) squeeze unchanged and adds only the requested provenance lines and evenness receipt.
++This document restores the blind-verified v27 §2 localization paragraph verbatim from `historical/v27_authority_docs/03_REPEATED_CELL_CYCLE_EXACTIFICATION_V27.md`. The restored §2 byte-content (from its heading through the paragraph before §3) has SHA-256 `95b51d04aeaa15560e9b8b3fd8d8ded236ecedd8884ce65a3dd0105ff9ef7e91`. Retention rule from v28.1 onward: any preamble claim that content is “unchanged” must be backed by an explicit source hash or an explicit diff hunk.
+ 
+ ## 1. Cycle normalization and evenness
+ 
+@@ -25,24 +25,55 @@
+ \tag{1.2}
+ \]
+ 
+-## 2. Finite near-maximizer \(R_0\) localization
++## 2. Finite near-maximizer R0 localization
+ 
+-The generic positive weld at \(q>S\), followed by \(q\downarrow S\), gives
++The generic weld at \(q>S\) gives
++\[
++qI-\mathcal B=R_{0,q}+R_{A,q}+R_{B,q},\qquad R_{\nu,q}\succeq0.
++\]
++For a strategy of value \(S-\varepsilon\),
++\[
++\langle R_{0,q}\rangle\le(q-S)+\varepsilon.
++\]
++G1 gives \(g_S\ge m_g>0\) and uniform \(g_q\to g_S\), hence uniform \(\phi_q\to\phi_S\). Sending \(q\downarrow S\),
+ \[
+ \boxed{\langle\psi,R_{0,S}\psi\rangle\le\varepsilon.}
+ \tag{2.1}
+ \]
+-Because \(R_{0,S}=\phi_S(X,U)\) is joint functional calculus of the commuting pair, each joint bridge projection \(Q_e\) commutes with it and
++Since
++\[
++R_{0,S}=\phi_S(X,U)
++\]
++is joint functional calculus of the commuting pair, every joint spectral bridge projection \(Q_e\) commutes with \(R_{0,S}\). Therefore
+ \[
+ \frac{\langle Q_e\psi,R_{0,S}Q_e\psi\rangle}{\|Q_e\psi\|^2}
+-\le\frac{\varepsilon}{m_C^2}\to0.
++\le
++\frac{\varepsilon}{m_C^2}\to0
+ \tag{2.2}
+ \]
+-Sublevel trimming and compactness therefore put every selected bridge within \(\delta_n\to0\) of an actual point of the compact strict zero graph
++uniformly around the cycle.
++
++Let \(Z=\phi_S^{-1}(0)\) inside the fixed G1 compact corridor. Define the sublevel localization modulus
+ \[
+-Z=\{(P(t),t):t\in D\}.
++\Omega(s):=
++\sup\{\operatorname{dist}(z,Z):z\text{ in the compact corridor},\ \phi_S(z)\le s\}.
++\]
++Compactness and continuity give
++\[
++\Omega(s)\downarrow0\quad(s\downarrow0).
+ \tag{2.3}
+ \]
++Choose \(s_n\downarrow0\) with
++\[
++\frac{\varepsilon_n}{s_nm_{C,n}^2}\to0.
++\tag{2.4}
++\]
++Trimming each selected bridge block to \(\{\phi_S\le s_n\}\) loses \(o(m_C)\) norm. Every surviving bridge cell is of diameter \(O(\eta_n)\), hence every point of its trimmed support lies within
++\[
++\delta_n:=C\bigl(\eta_n+\Omega(s_n)\bigr)\to0
++\tag{2.5}
++\]
++of an actual point of \(Z\), uniformly around the cycle.
+ 
+ ## 3. Four-line derivation of the two actual-\(Z\) relations
+ 
+@@ -71,7 +102,7 @@
+ 
+ Every occurrence of \(P\) in (3.4)--(3.5) is at an actual member of \(D=\operatorname{dom}P\).
+ 
+-## 4. Minimum-point actual-\(Z\) squeeze — unchanged
++## 4. Minimum-point actual-\(Z\) squeeze
+ 
+ Because \(Z\) is a compact one-to-one increasing graph, \(P\) is uniformly continuous on \(D\). Put
+ \[
+--- a/new_docs/04_STATE_CARRYING_COMMON_RETURN_AND_NEUTRAL_GAIN_V28.md
++++ b/new_docs/04_STATE_CARRYING_COMMON_RETURN_AND_NEUTRAL_GAIN_V28.md
+@@ -35,12 +35,19 @@
+ \tag{1.2}
+ \]
+ 
+-The symbols \(\alpha,\beta>0\) below are the **normalized gains of \(K_A,K_B\)**. They are exactly the variables in
++**Gain convention (pinned).** The symbols \(\alpha,\beta>0\) below are the **source-evaluated normalized multiplier gains**
++\[
++\boxed{\alpha:=r_{A,{\rm mult}}(x_*),\qquad \beta:=r_{B,{\rm mult}}(u_*).}
++\tag{1.3}
++\]
++They are exactly the variables consumed by
+ \[
+ F(q)=\frac{(1+q)^2}{16q},
+ \qquad q=\alpha/\beta.
+-\tag{1.3}
+-\]
++\tag{1.4}
++\]
++Because the normalized transports are involutive, \(r_{A,{\rm mult}}(t)r_{A,{\rm mult}}(-t)=r_{B,{\rm mult}}(t)r_{B,{\rm mult}}(-t)=1\). Therefore the **source-to-destination vector coefficient** seen after projecting to \(z_-\) is \(1/\alpha\) for Alice and \(1/\beta\) for Bob. This pins the previous \(\alpha\leftrightarrow1/\alpha\) ambiguity between §§2 and 5. Reversing the common-return orientation replaces \(q\) by \(1/q\), and the scalar ceiling is unchanged because \(F(q)=F(1/q)\).
++
+ The raw gains of \(W,W_B\) contain extra factors \(b_{\rm amp}(x_*),b_{\rm amp}(u_*)\). At normalized neutral gain the raw ratio can therefore be
+ \[
+ q_{\rm raw}=b_{\rm amp}(x_*)/b_{\rm amp}(u_*),
+@@ -63,15 +70,17 @@
+ &=E_{-x_*}^XK_AE_{x_*}^X\psi\\
+ &=E_{-x_*}^XK_A\psi\\
+ &=E_{-x_*}^Xr_{A,{\rm mult}}(X)\psi\\
+-&=r_{A,{\rm mult}}(-x_*)E_{z_-}\psi.
++&=r_{A,{\rm mult}}(-x_*)E_{z_-}\psi
++=\frac1\alpha E_{z_-}\psi.
+ \end{aligned}
+ \tag{2.2}
+ \]
+-Likewise strict U-graph uniqueness gives
++Likewise strict U-graph uniqueness and involutivity give
+ \[
+ \boxed{
+ E_{z_-}K_BE_{z_+}\psi
+-=r_{B,{\rm mult}}(-u_*)E_{z_-}\psi.
++=r_{B,{\rm mult}}(-u_*)E_{z_-}\psi
++=\frac1\beta E_{z_-}\psi.
+ }
+ \tag{2.3}
+ \]
+@@ -88,7 +97,7 @@
+ n_{+,n}\asymp n_{-,n}
+ \tag{3.1}
+ \]
+-with constants independent of \(d,n\). Divide both components once more by \(n_{+,n}\) (equivalently by their comparable common scale). The resulting two sequences are norm-bounded and both have nonzero ultraproduct limits
++with constants independent of \(d,n\). Choose the second common normalization scale as \(n_{+,n}:=\max(1,\|\widetilde v_{+,n}\|)\), where \(\widetilde v_{+,n}\) is the source component after the \(m_C\)-rescaling. Thus \(n_{+,n}\ge1\) **by construction**; the fixed multiplier pinching in (3.1) keeps the destination component comparable. Divide both components by this same \(n_{+,n}\). The resulting two sequences are norm-bounded and both have nonzero ultraproduct limits
+ \[
+ \boxed{v_+\ne0,\qquad v_-\ne0.}
+ \tag{3.2}
+@@ -103,12 +112,12 @@
+ (y_k^U)^2=w_k+c_k^{\rm del},
+ \]
+ \[
+-\sum r_k^{\rm del},\ \sum c_k^{\rm del}\le\beta,
+-\qquad
+-\sum|y_k^X-y_k^U|^2\le4\beta.
++\sum r_k^{\rm del},\ \sum c_k^{\rm del}\le\beta_{\rm del},
++\qquad
++\sum|y_k^X-y_k^U|^2\le4\beta_{\rm del}.
+ \tag{3.3}
+ \]
+-Since \(\beta/m_C^2\to0\), both marginals collapse onto the same selected joint component after rescaling. In scalar coordinates, strict graph uniqueness gives both a modulus \(\omega_P\) and, because \(P\) is a strictly increasing homeomorphism between compact projections of \(Z\), a modulus
++Here \(\beta_{\rm del}:=\beta_{\rm far}+\beta_{\rm end}\le\mathcal E\), distinct from the normalized Bob gain \(\beta\). Since \(\beta_{\rm del}/m_C^2\to0\), both marginals collapse onto the same selected joint component after rescaling. In scalar coordinates, strict graph uniqueness gives both a modulus \(\omega_P\) and, because \(P\) is a strictly increasing homeomorphism between compact projections of \(Z\), a modulus
+ \[
+ \boxed{
+ \omega_{P^{-1}}(h)\to0.
+@@ -117,12 +126,12 @@
+ \]
+ These two moduli turn shrinking one-coordinate cells plus \(R_0\)-sublevel localization into shrinking **joint** neighborhoods of \(z_+\) and \(z_-\).
+ 
+-Passing the multiplier equations (2.2)--(2.3) through this normalized limit yields
+-\[
+-\boxed{
+-K_Av_+=\alpha v_-,
+-\qquad
+-K_Bv_+=\beta v_-,
++Passing the multiplier equations (2.2)--(2.3) through this normalized limit, with the source-evaluated convention (1.3), yields
++\[
++\boxed{
++K_Av_+=\frac1\alpha v_-,
++\qquad
++K_Bv_+=\frac1\beta v_-,
+ \qquad
+ \alpha,\beta>0.
+ }
+@@ -133,9 +142,9 @@
+ 
+ Because the images in (3.5) are parallel to the same nonzero \(v_-\), and \(K_A,K_B\) are normalized isometries,
+ \[
+-\|v_+\|=\alpha\|v_-\|,
+-\qquad
+-\|v_+\|=\beta\|v_-\|.
++\|v_+\|=\frac1\alpha\|v_-\|,
++\qquad
++\|v_+\|=\frac1\beta\|v_-\|.
+ \]
+ Thus
+ \[
+@@ -167,12 +176,21 @@
+ }
+ \tag{5.2}
+ \]
+-Here
++Here \(Q=S\) follows directly from the zero-set receipt, not from an extra limiting-weld slogan. Since \(z_+\in Z=\phi_S^{-1}(0)\),
++\[
++0=\phi_S(z_+)
++=S-\bigl[d(x_*,u_*)+\alpha b_{\rm amp}(x_*)+\beta b_{\rm amp}(u_*)\bigr],
++\]
++which is (5.1) with \(Q=S\). Since \(z_-\in Z\) and involutivity gives the reciprocal source multipliers on the reflected component,
++\[
++0=\phi_S(z_-)
++=S-\left[d(-x_*,-u_*)+\frac{b_{\rm amp}(x_*)}{\alpha}+\frac{b_{\rm amp}(u_*)}{\beta}\right],
++\]
++which is (5.2) with the same left side. Therefore
+ \[
+ \boxed{Q=S.}
+ \tag{5.3}
+ \]
+-Indeed the sequence has Bell value \(S-\varepsilon_n\to S\); the finite-nearmax \(R_{0,S}\) receipt and the vanishing normalized response residuals put the rescaled limit in the exact critical equality module, so the weld tightens at the critical level \(q=S\).
+ 
+ Only **after** (5.1)--(5.3) are established do we insert (4.1), giving normalized distortion \(q=1\). The exact scalar theorem then gives
+ \[
+@@ -196,4 +214,4 @@
+ \[
+ (1-q)z\le e_{\rm ret}.
+ \]
+-It may service \(q<889/1000\), but is not used to derive (4.1). The historical robust packet-local Bell-localization receipt **R2 remains open and is not on the v28 critical path**: the neutral contradiction is obtained only after exactification to (5.1)--(5.3).
++It may service \(q<889/1000\), but is not used to derive (4.1). The historical robust packet-local Bell-localization receipt **R2 (formerly G2) remains OPEN and is not on the v28 critical path**; this is only a status-wording/alias change: the neutral contradiction is obtained only after exactification to (5.1)--(5.3).
+--- a/new_docs/05_EXPONENTIAL_LOWER_ASSEMBLY_V28.md
++++ b/new_docs/05_EXPONENTIAL_LOWER_ASSEMBLY_V28.md
+@@ -124,7 +124,18 @@
+ 
+ ## 4. Terminal service
+ 
+-A sink is paid by Doc 02 (8.2). A repeat is paid by Doc 04:
++A sink is paid by Doc 02 (8.2). In Alternative B the visited sink state still obeys (2.3), so the composition is explicitly
++\[
++z_k^2\ge\frac14\Gamma_d^2z_0^2,
++\]
++\[
++z_k^2\le C_{\rm sink}\mathcal E,
++\]
++\[
++\boxed{\mathcal E\ge\frac{\Gamma_d^2z_0^2}{4C_{\rm sink}}\ge\frac{\Gamma_d^2}{8d\,C_{\rm sink}}.}
++\tag{4.1a}
++\]
++A repeat is paid by Doc 04:
+ \[
+ m_C^2\le C_C\mathcal E.
+ \]
+--- a/new_docs/06_P4_RECEIPTS_AND_SYMBOL_HYGIENE_V28.md
++++ b/new_docs/06_P4_RECEIPTS_AND_SYMBOL_HYGIENE_V28.md
+@@ -11,9 +11,22 @@
+ ## 2. Frozen symbol table
+ 
+ - \(b_{\rm amp}(t)=\sqrt{1-t^2}/2\): response amplitude function.
++- \(b_0=\min_{t\in K}b_{\rm amp}(t)>0\): uniform G1 corridor amplitude floor.
++- \(A_{\max}\): fixed upper bound for the positive response coefficient functions on \(K\).
++- \(\sigma=b_0/A_{\max}>0\): normalized same-marginal response floor.
++- \(\delta_0>0\): fixed reflection-symmetric G1 corridor inset, \(K=[-1+\delta_0,1-\delta_0]\).
++- \(C_{\rm end}\): fixed endpoint-collar payment constant with \(\beta_{\rm end}\le C_{\rm end}\varepsilon\).
+ - \(\iota(t)=-t\): scalar reflection map.
++- \(W,W_B\): raw Alice/Bob response operators before \(b_{\rm amp}\)-normalization.
+ - \(K_A=Wb_{\rm amp}(X)^{-1}\), \(K_B=W_Bb_{\rm amp}(U)^{-1}\): **normalized** response transports on the G1 corridor.
+-- \(\alpha,\beta>0\): normalized response gains consumed by \(F(q)\), \(q=\alpha/\beta\). Endpoint labels never use bare \(\alpha\) or \(\beta\) in the v28 layer.
++- \(\phi_S(x,u)=R_{0,S}(x,u)\): critical scalar \(R_0\) weld; \(Z=\phi_S^{-1}(0)\).
++- \(Q\): common scalar left side in the two exact return component equations; on the critical zero pair, \(Q=S\).
++- \(\mathcal I\): ordered inversion energy of the joint spectral measure.
++- \(\alpha,\beta>0\): **source-evaluated** normalized multiplier gains consumed by \(F(q)\), \(q=\alpha/\beta\); the source-to-reflected-destination vector coefficients are \(1/\alpha,1/\beta\). Endpoint labels never use bare \(\alpha\) or \(\beta\) in the v28 layer.
++- \(\beta_{\rm far}\): far-inversion deletion mass.
++- \(\beta_{\rm end}\): endpoint/collar deletion mass.
++- \(\beta_{\rm del}:=\beta_{\rm far}+\beta_{\rm end}\): total deletion mass in the Pythagorean marginal-to-joint receipt.
++- \(\mathcal E:=\varepsilon+\beta_{\rm far}+\beta_{\rm end}\): global quantitative error/deletion budget, so \(\beta_{\rm del}\le\mathcal E\).
+ - \(r_A^{\rm step},r_B^{\rm step}\): live one-step response residual vectors.
+ - \(r_A^{\rm ret},r_B^{\rm ret}\): fitted R1 common-return residual vectors.
+ - \(r_{A,{\rm mult}},r_{B,{\rm mult}}\): exact scalar multiplier functions in the equality module.
+--- a/new_docs/07_CORRECTION_AND_SUPERSESSION_LEDGER_V28.md
++++ b/new_docs/07_CORRECTION_AND_SUPERSESSION_LEDGER_V28.md
+@@ -1,4 +1,4 @@
+-# v28 Correction and Supersession Ledger
++# v28.1 Correction and Supersession Ledger
+ 
+ **Predecessor:** `historical/v27_authority_docs/07_CORRECTION_AND_SUPERSESSION_LEDGER_V27.md`.
+ 
+@@ -10,6 +10,8 @@
+ - the historical **\(1/2000\) global storage floor** is not promoted and must not be used.
+ 
+ v28 also records the normalized-vs-raw gain distinction, imports the blind-verified G1 source as the live collar receipt, corrects the parity-edge display, and classifies TOP_D as R1-only provenance rather than a live main-route dependency.
++
++**v28.1 documentary addendum (M7):** the historical packet-local receipt is now aliased **R2 (formerly G2)** and its status wording is normalized to **OPEN**. This is a wording/alias change only; its critical-path status is unchanged.
+ 
+ ## Permanent kills / retractions
+ 
+@@ -23,7 +25,7 @@
+ 8. **Separate individual fitted-return estimate:** withdrawn and unused.
+ 9. **Forest/degree-two matching requirement:** retired.
+ 10. **Old explicit constructive coefficient `13.2991468418`:** not authorized by this package.
+-11. **Robust packet-local Bell localization R2:** open but not consumed by the v28 lower route.
++11. **Robust packet-local Bell localization R2 (formerly G2):** **OPEN**, but not consumed by the v28 lower route. The alias/status wording change is documentary only.
+ 12. **Raw-gain substitution into \(F(q)\):** forbidden. \(F\) consumes normalized gains of \(K_A,K_B\), not the raw \(W,W_B\) gains.
+ 
+ ## Live replacements
+--- a/new_docs/09_TERMINAL_EVENT_TABLE_V28.md
++++ b/new_docs/09_TERMINAL_EVENT_TABLE_V28.md
+@@ -7,7 +7,7 @@
+ | Green accumulated-error horn | direct \(\ell^2\) payment |
+ | large local recurrence error before bridge | Doc 05 local-error horn |
+ | repeated side-tagged marginal cell | actual-Z exactification + normalized state-carrying neutral-return contradiction |
+-| reflection-fixed central cell | walk continues by side tag; exact \(t_*=0\) degenerates to \(\alpha=\beta=1\) neutral ceiling |
++| reflection-fixed central cell | walk continues by side tag; exact \(t_*=0\) is killed directly by Doc 02 §7 / Doc 04 (5.1): \(S=d(0,0)+1/2+1/2=0<1/4\) |
+ | already-typed distorted return with \(q<889/1000\) | optional R1 early service |
+ 
+-There is no component cycle, odd common-label cycle, finite-n partial \(\tau\), or packet-local R2 terminal on the critical path.
++There is no component cycle, odd common-label cycle, finite-n partial \(\tau\), or packet-local R2 (formerly G2) terminal on the critical path.

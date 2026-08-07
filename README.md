@@ -272,10 +272,19 @@ mismatch despite `3.9e-16` raw Bellman residuals and `1.2e-15` target overlap
 agreement.  This exposes an unchecked normalization gate in the aligned-wall
 certificate stack.  It is not yet a theorem retraction: an Arb
 matched-coordinate exclusion is the immediate adjudication gate. The
-conditional constant ledger is retained as an open proof
-campaign, but this repository
-does **not** presently claim
-`D(epsilon)=Theta(log(1/epsilon))`.
+conditional constant ledger below is retained as a historical record
+of that campaign.
+
+> **Superseded 2026-08-07.** The rate question is now settled:
+> `D(epsilon) = Theta(log(1/epsilon))` at local-dimension scope
+> (existential constants; the upper half with the derived safe bound
+> `1/kappa_eff <= 23.9010650`, no sharpness claimed). The result is
+> stated and proved in the companion rate note (`paper/`), with
+> complete certificates, guard scripts, and the full audit record —
+> including every denial round of its promotion gate — in
+> `certificate/production/rate-theta-log/`. The paragraph above
+> records the state of the campaign before that proof and is not the
+> current claim.
 
 Consequently,
 

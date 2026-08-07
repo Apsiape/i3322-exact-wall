@@ -1,0 +1,37 @@
+AXIOMCHECK RECEIPT (round-4 finding 7)
+Command: lake env lean AxiomCheck.lean
+Working dir: C:\Infanox\i3322-exact-wall\lean\I3322Kernel
+Public commit: 6e6adb5
+Date: 2026-08-07
+Exit code: 0 (build: "Build completed successfully (3020 jobs).")
+Replayed independently by the round-4 integrity auditor (its verdict,
+"Blocker 8 / B2": "27 theorems, exit 0").
+
+Verbatim stdout:
+'I3322Kernel.discriminant_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'I3322Kernel.amplitude_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'I3322Kernel.sqrt_prod_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'I3322Kernel.amplitude_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'I3322Kernel.scalar_quarter_ceiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'I3322Kernel.quarter_ceiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'I3322Kernel.quarter_lt_window_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'I3322Kernel.mPlus_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'I3322Kernel.mMinus_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'I3322Kernel.mPlus_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'I3322Kernel.mMinus_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'I3322Kernel.mPlus_gt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'I3322Kernel.mMinus_gt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'I3322Kernel.window_sub_mPlus_lt_third' depends on axioms: [propext, Classical.choice, Quot.sound]
+'I3322Kernel.window_sub_mMinus_lt_third' depends on axioms: [propext, Classical.choice, Quot.sound]
+'I3322Kernel.mPlusAt_antitone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'I3322Kernel.mMinusAt_antitone' depends on axioms: [propext, Classical.choice, Quot.sound]
+'I3322Kernel.strictMono_self_eq_id' depends on axioms: [propext, Classical.choice, Quot.sound]
+'I3322Kernel.decreasing_bijections_coincide' depends on axioms: [propext, Classical.choice, Quot.sound]
+'I3322Kernel.staircase_sum_injOn' depends on axioms: [propext, Quot.sound]
+'I3322Kernel.staircase_card_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'I3322Kernel.prod_le_two_pow_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'I3322Kernel.min_point_pseudocycle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'I3322Kernel.s_mul_one_sub_s_le_quarter' depends on axioms: [propext, Classical.choice, Quot.sound]
+'I3322Kernel.band_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'I3322Kernel.band_quarter_ceiling' depends on axioms: [propext, Classical.choice, Quot.sound]
+'I3322Kernel.amplitude_b_le_half' depends on axioms: [propext, Classical.choice, Quot.sound]

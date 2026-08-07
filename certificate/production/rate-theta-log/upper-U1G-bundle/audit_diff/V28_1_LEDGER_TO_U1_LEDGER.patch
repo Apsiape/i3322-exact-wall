@@ -1,0 +1,31 @@
+# Commission-sanitized correction-ledger diff: sealed v28.1 -> U1
+#
+# Exact predecessor identity:
+#   v28.1 bundle SHA-256: 9ec7cab5e54d2168f27840e1eec581cecd163092dff1bff13c33dc14ed7df192
+#   v28.1 ledger SHA-256: df14a654da18b7a47c54d9052f307b2c3ce18c6eac7e591d4be62b3f2d3253af
+#
+# This is intentionally a scope-preserving semantic patch rather than a byte-for-byte
+# unified diff. The commission forbids the retired numerical upper coefficient from
+# appearing anywhere in U1, while the sealed predecessor ledger contains that retired
+# value. The predecessor is therefore hash-identified and the changed assertions are
+# enumerated exactly below without reproducing retired literals.
+
+--- sealed-v28.1/correction-ledger  [SHA-256 above]
++++ U1/authority/U1_CORRECTION_AND_SUPERSESSION_LEDGER.md
+@@ U1 authority/status additions @@
++ D_lower(epsilon)=Omega(log(1/epsilon)) is [P] PROMOTED under the frozen rule.
++ Promoted Theorem (S) is the carrier-existence authority for U1.
++ Promoted G1 is consumed only through compact-interior zero-locus / conditional endpoint logic.
++ Endpoint-Cesaro is consumed only at existential-rate scope.
++ rho_pm <=> q_ret orientation is written directly into the U1 proof.
++ Endpoint-projector truncation is written directly into the proof; local dimension equals retained interval size.
++ The historical explicit upper coefficient remains retracted and is not reproduced in U1.
++ D(epsilon)=Theta(log(1/epsilon)) is conditional on U1 upper promotion.
++ Small-d construction guard is verification support only and introduces no theorem lemma.
+@@ U1 carried exclusions @@
++ No unconditional endpoint-product claim is live.
++ No historical fixed-profile route is used to establish Theorem (S).
++ No numerical endpoint multiplier or rate coefficient is promoted.
++ No Schmidt-rank reformulation is made.
+@@ U1 forward provenance rule @@
++ Any successor claim of inherited identity must carry a content hash or explicit diff hunk.

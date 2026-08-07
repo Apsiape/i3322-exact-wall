@@ -1,5 +1,13 @@
 # Quantitative convergence and the open dimension lower bound
 
+> **Superseded 2026-08-07.** The open lower bound named below has been
+> discharged: `D(epsilon) = Theta(log(1/epsilon))` is proved, with the
+> lower half unconditional. See the companion rate note in `paper/` and
+> `certificate/production/rate-theta-log/`. This document remains the
+> historical record of the one-sided constructive rate (its
+> family-specific exponent `log R` is sharper than, and consistent with,
+> the rate note's uniform safe constant) and of the gap as it was named.
+
 ## Definition
 
 Let `Q_d` be the optimum of the normalized I3322 functional over

@@ -1,0 +1,15 @@
+{
+  "date": "2026-08-06",
+  "status": "LOWER_BOUND_V28_1_FINAL_FIXES_READY_FOR_CLEAN_VERIFICATION",
+  "target": "S-S_d >= c(1+d)^(-K) exp(-C d)",
+  "corollary_target": "D_lower(epsilon)=Omega(log(1/epsilon))",
+  "supersedes_authority": "v28 lower-bound closeout layer",
+  "blind_v27_verdict": "L3 PASS; L1/L2/L4/L5/L6/INTEGRITY PASS-WITH-CONDITIONS; zero kills",
+  "promotion_rule": "Clean v28.1 verification protocol promotes D_lower(epsilon)=Omega(log(1/epsilon)) under frozen rule",
+  "upper_bound_in_scope": false,
+  "theta_log_in_scope": false,
+  "qualitative_theorem_N_affected": false,
+  "route_changed": false,
+  "new_receipt_lemmas": [],
+  "v28_1_scope": "B1-B3 and M1-M8 only; restores/cites existing receipts and fixes documentary/guard defects"
+}

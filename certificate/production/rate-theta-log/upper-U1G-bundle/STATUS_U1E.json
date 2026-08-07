@@ -1,0 +1,38 @@
+{
+  "bundle": "U1G upper-bound bundle - PROMOTED (gate closed round 7 at bf47d0b8)",
+  "date": "2026-08-07",
+  "claim_on_trial": "D_upper(eps) = O(log(1/eps)) at local Hilbert-space dimension scope, existential constant 1/kappa_eff, with the derived safe bound 1/kappa_eff <= 23.9010650 (no sharpness; inherits the [P] root's disclosed residual risk)",
+  "status": "U1G_PROMOTED_ROUND7_GATE_CLOSED",
+  "gate_history": "U1 DENIED (2026-08-07 AM); U1E DENIED (2026-08-07 PM); U1F DENIED (2026-08-07 eve, both surfaces; proof auditor: 'the mathematics is sound and I could not break it' - every blocker anchoring/exposition/custody); U1G executes the round-3 blocker list B1-B7 plus the integrity findings 1-15; U1G round-4 DENIED (integrity: 14/15 round-3 findings discharged, denial 'narrow and mechanical' - two uninstrumented content channels + one missing assert; proof surface verdict in audit_archive/); round-5 bundle ships the round-4 blocker list 1-6 with the auditors' own injections as selftests I9-I13; round-4 PROOF verdict ('On the mathematics I have nothing left to attack'; blockers F-01 custody / F-02 false printed inequality / F-03 blob anchor / F-04 provenance termination) executed as ledger entry 23; FREEZE RULE now standing (banner): no write to the bundle between commissioning and verdict, rounds commissioned against a frozen commit; ROUND 5 (frozen 5c3e9c8b): PROOF surface PROMOTE (first passing surface; freeze held byte-for-byte), INTEGRITY DENIED with six mechanical blockers; round 6 executes those blockers plus the proof surface recommended items, selftest grown to 32 cases; ROUND 6 (frozen a52d24aa): PROOF delta audit PROMOTE CARRIES (zero math/custody/moderate findings), INTEGRITY DENIED narrowest yet (three regex edits, two scan-set decisions, a cmp); round 7 executes that list with V1-V4/E1/E3/E4 shipped as selftests I25-I31 (40 cases); ROUND 7 (frozen bf47d0b8): PROOF delta PROMOTE CARRIES (two-token diff, chain re-verified exact), INTEGRITY PROMOTE (all seven blockers executed as written, 30 injections, zero false displays) - GATE CLOSED, both surfaces clean",
+  "gate_rule": "promotion requires clean PASS from at least two independent refutation-first external auditors (proof + integrity surfaces) under the frozen blind-before-promotion protocol; self-audits and worker stage reports are claims, not verdicts; every gate verdict is written to disk before the next round is commissioned (ledger entry 16)",
+  "verdicts_on_disk": [
+    "U1E/audit_archive/VERDICT-U1-AUDITOR-1-PROOF.md (faithful copy; original in blind-batch-v19, committed)",
+    "U1E/audit_archive/VERDICT-U1-AUDITOR-2-INTEGRITY.md (faithful copy; original in blind-batch-v19, committed)",
+    "U1E/audit_archive/VERDICT-U1E-AUDITOR-1-PROOF.md (reconstructed from session transcript, provenance header inside)",
+    "U1E/audit_archive/VERDICT-U1E-AUDITOR-2-INTEGRITY.md (faithful copy; original in blind-batch-v19, committed)",
+    "U1E/audit_archive/VERDICT-U1F-AUDITOR-1-PROOF.md",
+    "U1E/audit_archive/VERDICT-U1F-AUDITOR-2-INTEGRITY.md",
+    "U1E/audit_archive/VERDICT-U1G-AUDITOR-2-INTEGRITY.md",
+    "U1E/audit_archive/VERDICT-U1G-AUDITOR-1-PROOF.md",
+    "U1E/audit_archive/VERDICT-U1G-R5-AUDITOR-1-PROOF.md (PROMOTE)",
+    "U1E/audit_archive/VERDICT-U1G-R5-AUDITOR-2-INTEGRITY.md",
+    "U1E/audit_archive/VERDICT-U1G-R6-AUDITOR-1-PROOF-DELTA.md (PROMOTE CARRIES)",
+    "U1E/audit_archive/VERDICT-U1G-R6-AUDITOR-2-INTEGRITY.md",
+    "U1E/audit_archive/VERDICT-U1G-R7-AUDITOR-1-PROOF-DELTA.md (PROMOTE CARRIES)",
+    "U1E/audit_archive/VERDICT-U1G-R7-AUDITOR-2-INTEGRITY.md (PROMOTE - gate closing)"
+  ],
+  "theta_log_status": "PROMOTED: the section-8 conditional FIRED at gate closure - D(eps) = Theta(log(1/eps)) at local-dimension scope, existential constants (upper: this bundle; lower: the v28.1 promoted closeout)",
+  "strictness_route": "U1G section 3, self-contained: single-map label monotonicity (certificate section 10:792 boxed + section 6:446 strictly increasing P) -> both tail limits interior (G1 compact interiority) -> Jacobi eigen-row limit equation -> Lean-anchored band algebra (public commit 6e6adb5: band_identity, s_mul_one_sub_s_le_quarter, band_quarter_ceiling, amplitude_b_le_half) + certified window S > S_LO > 1/4 (window hash-anchored; literal comparison quarter_lt_window_lower; second anchor by PART B exhibition) -> mu >= 2.001750769003037 -> outward ratios y <= 0.9590241, y^2 <= 0.9197272 < 1 -> kappa >= 0.0836782 per index; harmonic-mean surrogate K_0 := 0.08367827985 (safe in the denominator, round-4 F-02); kappa_eff >= 0.0418391, 1/kappa_eff <= 2/K_0 = 23.90106493088... <= 23.9010650 (two-sided guard bracket + G5 chain check on every displayed K_0 + structural range check of all displays). Kills 2 and 12 carried and bypassed (declarations in the ledger's retraction blocks). Retired authorities (bracket/identification, sextic, selection, equality-module, hyperbolicity) appear NOWHERE in the U1G proof.",
+  "predecessors": {
+    "U1_bundle_sha256": "44907d3ff9cbd8711d845093f2dea921bbb0e32a14613d241ac89dbd3724aa84",
+    "U1_manifest_sha256": "0308b3f10e829fedbcd6a8ef4a8ae5e158144aa032142062bf29bb6de3d1bc52",
+    "U1F_seal_commit": "4ab222f2",
+    "v28_1_ledger_sha256": "df14a654_verified_by_U1_integrity_auditor_against_file"
+  },
+  "theorem_S_authority": "public repo certificate/production/theorem-S-spatial-attainment-at-S at release v3.1.0, concept DOI 10.5281/zenodo.21782008, five content hashes quoted in proof section 1a (public commits 7cc1a9b, 0292314, e50bfec)",
+  "lean_kernel_authority": "public repo lean/I3322Kernel at public commit 6e6adb5, six source-file hashes quoted in proof section 1b, AxiomCheck covers all 27 theorems (standard axioms only)",
+  "regenerating_outputs_policy": "live guards print to stdout only and write nothing; the ONLY manifest-sealed guard outputs are the demoted small-d fixture files in artifacts/small_d_demoted/ (non-load-bearing, idempotent, disclosed in DISCLOSURE.md there)",
+  "u2_started": false,
+  "u3_started": false,
+  "u4_started": false
+}

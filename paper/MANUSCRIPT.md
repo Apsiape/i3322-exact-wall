@@ -71,7 +71,11 @@ where (R=1.07809205080209208\ldots). Thus
 (\log(1/\varepsilon)/\log R+O(1)) local dimension is sufficient. An
 adversarial reconstruction of a prospective converse found a missing
 localized-response/commutator estimate, so no matching universal dimension
-lower bound or (\Theta(\log(1/\varepsilon))) conclusion is claimed.
+lower bound or (\Theta(\log(1/\varepsilon))) conclusion was claimed at the time of this
+document. [Superseded 2026-08-07: that gap has since been discharged and
+the two-sided rate is now proved — see the companion rate note in `paper/`
+and `certificate/production/rate-theta-log/`; this file remains the
+historical record.]
 
 As a corollary, the finite-dimensional quantum correlation set in the
 three-input binary scenario is not closed; this is the minimal bipartite

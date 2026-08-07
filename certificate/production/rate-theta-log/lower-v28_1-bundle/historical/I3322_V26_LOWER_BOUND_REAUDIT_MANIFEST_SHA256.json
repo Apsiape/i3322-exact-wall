@@ -1,0 +1,235 @@
+{
+  "format": "I3322 v26 lower-bound re-audit detached SHA-256 manifest",
+  "archive": {
+    "path": "I3322_V26_LOWER_BOUND_REAUDIT_BUNDLE_2026-08-06.zip",
+    "size": 393004,
+    "sha256": "9fe8c2bc90d42c0a8adbf9090afd10c024b5d2afa36dbb599e6288a3f4bdf90c"
+  },
+  "member_count": 44,
+  "members": [
+    {
+      "path": "DEPENDENCY_RECEIPT_INDEX.md",
+      "size": 1857,
+      "sha256": "6f4583214380660a41c0a7f398e829648c473444af298fb103e0a3e9bea1f6da"
+    },
+    {
+      "path": "MANIFEST_NOTE.md",
+      "size": 322,
+      "sha256": "22d049da194dde2b85426696ccab9a660db505d2b26b9e6cba8bdd26a9f1cfdb"
+    },
+    {
+      "path": "README.md",
+      "size": 498,
+      "sha256": "eaca0c30636676a96543953e527817b1fae3adf42321fe83045e155fa9af078f"
+    },
+    {
+      "path": "STATUS_V26.json",
+      "size": 798,
+      "sha256": "63044398f2dbd3acf25c8ff32d5d3d7dee4f9e1bf42bb2b8aed4b2cd38437528"
+    },
+    {
+      "path": "dependencies/ANTITONE_EDGE_BUDGET_AND_EXPONENTIAL_BRANCH_SELECTION_V22.md",
+      "size": 8198,
+      "sha256": "cd2022d7fb4ea92e89c79292d5618f201f24b79763bc7a8298e5dee3d173cdfe"
+    },
+    {
+      "path": "dependencies/CANONICAL_CRITICAL_STORAGE_AND_ANCESTRY.md",
+      "size": 5728,
+      "sha256": "887e0932dfad39a756599885001642ea28a89e11535549ec33bde217678b32bc"
+    },
+    {
+      "path": "dependencies/CONSTRUCTIVE_LOG_UPPER_BOUND_V23.HISTORICAL.md",
+      "size": 3781,
+      "sha256": "a89d15a74d70fa18b60a34ccea07c9df0b7659016ba4ce24021c889a101e8de0"
+    },
+    {
+      "path": "dependencies/CONVEX_ENVELOPE_PLATEAU_EXCLUSION_AND_THEOREM_N_COMPLETION.md",
+      "size": 5981,
+      "sha256": "dfa7a4b88dacc147d8fea57ca12ae756948e5c30c9c9895f4e53aca9ee4a4371"
+    },
+    {
+      "path": "dependencies/CRITICAL_ZERO_SET_REDUCTION_FOR_THEOREM_N.md",
+      "size": 7477,
+      "sha256": "1e3e47cf5fc7d003fec3ec41ee768e6aa08a546f274d4add03b91d32b771f42c"
+    },
+    {
+      "path": "dependencies/DISTORTED_RETURN_QUARTER_CEILING_CURRENT_V22.md",
+      "size": 4240,
+      "sha256": "9fa97a4d3b7764a373adbbca29789609b1e9eb64806982eda4bb8873f5007215"
+    },
+    {
+      "path": "dependencies/ENDPOINT_CESARO_CARRIER_RATE_THEOREM.md",
+      "size": 9330,
+      "sha256": "1ed80a067d3afcbd04c58a8792f1c98ae83aff0d783947496f81b7db4b4472b4"
+    },
+    {
+      "path": "dependencies/INCOMING_OWNERSHIP_AND_TYPED_RECURRENCE_V23.md",
+      "size": 3415,
+      "sha256": "8749a8c2b00f3bd169d76f7f536c10e63f6b347a7a76dba6e4146db09faf3159"
+    },
+    {
+      "path": "dependencies/PROJECTED_RETURN_MISMATCH_R1_V23.md",
+      "size": 3928,
+      "sha256": "1f34372eefc2239309ad8e26f1eebe5b34c95a49070efe023ac95f7d2610f66b"
+    },
+    {
+      "path": "dependencies/RANK_COSTED_PACKET_IDENTITY_AND_ALTERNATING_TRUNCATION.md",
+      "size": 11508,
+      "sha256": "908874eed6fe673c80a4c4ac1481809f62b8f6d716556de34228b8fb4b07c8f9"
+    },
+    {
+      "path": "dependencies/REFLECTION_DUAL_UPPER_ENVELOPE_AND_ADAPTIVE_TAILS.md",
+      "size": 7610,
+      "sha256": "589bb7d804984910cff814a3a7513a94634ce37b8c0e7f2cc49a281bb8b0f216"
+    },
+    {
+      "path": "dependencies/SHIFTED_GRID_RANK_COSTED_CLUSTERING_AND_COARSE_CONVERSE.md",
+      "size": 11572,
+      "sha256": "4abe80b32c93a9d882131dbc6e2da9a933a231e009923fb82e42fec81cc351b3"
+    },
+    {
+      "path": "dependencies/SHIFTED_GRID_RESPONSE_INTERFACE_REPAIR_V22.md",
+      "size": 5733,
+      "sha256": "4f1ff30a61d8410212cdd4655a657ba830cbfd8f48d0604c7d5a37a776c77130"
+    },
+    {
+      "path": "dependencies/THEOREM_N_ROUND3_BLIND_AUDIT_SOURCE.md",
+      "size": 39262,
+      "sha256": "53907429cbfb42e9f10a8dd870f283bf27745526f95ec2de159d375c087665d9"
+    },
+    {
+      "path": "dependencies/THEOREM_N_SIGNED_PUBLIC_STATEMENT.md",
+      "size": 3684,
+      "sha256": "b4c2b6711c3dba439856da1dff3bcdf8d70844a4f78799f044fdb5a57a4ef053"
+    },
+    {
+      "path": "dependencies/TOP_D_SIMULTANEOUS_MONOTONE_CLUSTERING_V23.md",
+      "size": 4727,
+      "sha256": "c52bfcd2e622390ae6db05dcc4f8c9f826d045a8d88498ea0f8b1563db27c1cd"
+    },
+    {
+      "path": "guards/GUARD_RESULTS.txt",
+      "size": 924,
+      "sha256": "7c1ffc881981b184dc8ae37371b7ca6e60e7797afc505569835e9824a97d7b25"
+    },
+    {
+      "path": "guards/endpoint_line_certificate_result.json",
+      "size": 6222,
+      "sha256": "94d135fc75ed18737050677f22f2e7f104aec9195b97cff2eeff362d2e072a59"
+    },
+    {
+      "path": "guards/exact_rational_endpoint_line_certificate.py",
+      "size": 4159,
+      "sha256": "3d39c8eed5bac0c7fc29a823cb24dd3d6198363240010607fa0731723f8d1735"
+    },
+    {
+      "path": "guards/guard_cell_grid_and_edge_budget.py",
+      "size": 2448,
+      "sha256": "1bc131f0497f013f7373178ef3c164e4f6f0cd5aa141547817eb7a86b1bac5be"
+    },
+    {
+      "path": "guards/guard_endpoint_certificate_replay.py",
+      "size": 824,
+      "sha256": "d3b7866621cf6f21e219764b537b0bcd5954d405e7ede87e69bc128924058a71"
+    },
+    {
+      "path": "guards/guard_historical_hashes.py",
+      "size": 682,
+      "sha256": "e044dbb4bf550303498f804b431fbc3155b2aeee7469e0ce61eab6695ca712ac"
+    },
+    {
+      "path": "guards/guard_return_hygiene.py",
+      "size": 981,
+      "sha256": "12b78db7082a865a4da20c448134f9c8b6241eac573f8179284f4d208d0ab1cc"
+    },
+    {
+      "path": "guards/run_all_guards.py",
+      "size": 413,
+      "sha256": "829e50a7b92d5b91a673c3ccbfb66ea02a0dfe5684dd35a59577825c887ae68d"
+    },
+    {
+      "path": "historical/I3322_CONSOLIDATED_PROMOTION_BUNDLE_2026-08-06.zip",
+      "size": 242091,
+      "sha256": "06cc24c0da33d7f7b88e4ab9c945010a0a55ef19f88b5b611fd1021b0decf6ef"
+    },
+    {
+      "path": "historical/current-S-antitone-walk-v23.ORIGINAL.zip",
+      "size": 74603,
+      "sha256": "705c3dc4a3d090954c3bca220842c08e316c4a9ebc50f1f9cff69628ea7cc420"
+    },
+    {
+      "path": "new_docs/00_AUTHORITY_BANNER_V26.md",
+      "size": 1666,
+      "sha256": "c6543f6de87587c0aae8e67a13218108ca36f72a7b0afe43ba267d71778b396f"
+    },
+    {
+      "path": "new_docs/01_RAW_CELL_PARITY_EDGE_BUDGET.md",
+      "size": 1346,
+      "sha256": "51ced0ac8b6095e9198505db38a179596ff3e0de9c0889b965598cadfae853ec"
+    },
+    {
+      "path": "new_docs/02_CELL_RESPONSE_AND_BRIDGE_RECURRENCE.md",
+      "size": 1952,
+      "sha256": "2c88b386d2a692c5c2f12823b83f4afcaac79a94957d32431a907df6a0e8a733"
+    },
+    {
+      "path": "new_docs/03_REPEATED_CELL_CYCLE_EXACTIFICATION.md",
+      "size": 2494,
+      "sha256": "4921a4db560d58eede26409bb85259e9f4e260247448d4eadf495613e67f96ec"
+    },
+    {
+      "path": "new_docs/04_STATE_CARRYING_COMMON_RETURN_AND_NEUTRAL_GAIN.md",
+      "size": 1922,
+      "sha256": "e23fff322dd81cffa93d373ea20a8c49726179a2ed58b99bca178fe0cf44e492"
+    },
+    {
+      "path": "new_docs/05_EXPONENTIAL_LOWER_ASSEMBLY_V26.md",
+      "size": 1519,
+      "sha256": "f6a0a92b35b9e28f6def7914f1a3234685a08731dd6aca3deee59cebe57a4ad3"
+    },
+    {
+      "path": "new_docs/06_P4_RECEIPTS_AND_SYMBOL_HYGIENE.md",
+      "size": 2070,
+      "sha256": "90472cdcc1c2773e4b314b805ca6d954d1ba482fc71e79634c128605e730dd94"
+    },
+    {
+      "path": "new_docs/07_CORRECTION_AND_SUPERSESSION_LEDGER_V26.md",
+      "size": 1694,
+      "sha256": "4b05ef7b97eb5a237d144f48aebbb8022e11f5a36100ce4dbc7987302f6c64f1"
+    },
+    {
+      "path": "new_docs/08_P5_ARTIFACT_CLOSEOUT.md",
+      "size": 1719,
+      "sha256": "f12013e653ed0fa563b71a53c908754970af6e62abb7325050565db3c455370a"
+    },
+    {
+      "path": "new_docs/09_TERMINAL_EVENT_TABLE_V26.md",
+      "size": 852,
+      "sha256": "c9c7d5c047e88326ca5f5daa4197045888889d810cb5f70827d44d96e09ba20a"
+    },
+    {
+      "path": "new_docs/10_LOWER_BOUND_PROMOTION_AUDIT_COMMISSION.md",
+      "size": 3098,
+      "sha256": "4ce062c0fcdf92f564973156e9a87eb11c340bcc730310be860cc96af3031934"
+    },
+    {
+      "path": "upper_artifacts/ENDPOINT_PROJECTOR_TRUNCATION_CONSTRUCTION.md",
+      "size": 1242,
+      "sha256": "d486e3e33f83afcea41a68b1930f2548e399eaa584e371c7ea03dc619df054bb"
+    },
+    {
+      "path": "upper_artifacts/RHO_Q_IDENTIFICATION.md",
+      "size": 806,
+      "sha256": "f6af5c954edea0f204623fc19f071ed9e3f4c227aaac5313d17f5416c415b79c"
+    },
+    {
+      "path": "upper_artifacts/UPPER_SCOPE_NOTE.md",
+      "size": 521,
+      "sha256": "ac31c8c99f4eecdb8810166d2ea5ec106095864b270082ee20f3873e86eafea4"
+    }
+  ],
+  "promotion_scope": "lower bound only",
+  "promotion_rule": "L1-L6 all PASS",
+  "historical_v23_sha256": "705c3dc4a3d090954c3bca220842c08e316c4a9ebc50f1f9cff69628ea7cc420",
+  "prior_consolidated_sha256": "06cc24c0da33d7f7b88e4ab9c945010a0a55ef19f88b5b611fd1021b0decf6ef"
+}

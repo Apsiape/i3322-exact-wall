@@ -1,0 +1,1704 @@
+--- v27/00_AUTHORITY_BANNER_V27.md
++++ v28/00_AUTHORITY_BANNER_V28.md
+@@ -1,53 +1,48 @@
+-# I3322 v27 Lower-Bound Re-Audit — Authority Banner
++# I3322 v28 Lower-Bound Closeout — Authority Banner
+ 
+ **Date:** 2026-08-06  
+-**Status:** **LOWER-BOUND THEOREM CANDIDATE — NOT PROMOTED**  
+-**Supersedes:** v26 lower-bound authority layer.  
++**Status:** **LOWER-BOUND THEOREM CANDIDATE — PROMOTION WITHHELD PENDING DIFF-ONLY RE-AUDIT**  
++**Supersedes:** v27 lower-bound authority layer.  
+ **Promotion scope:** only
+ \[
+-S-S_d\ge c(1+d)^{-K}e^{-Cd}
+-\]
+-and therefore
+-\[
++S-S_d\ge c(1+d)^{-K}e^{-Cd},
++\qquad
+ D_{\rm lower}(\varepsilon)=\Omega(\log(1/\varepsilon)).
+ \]
+ 
+-The promoted qualitative Theorem (N) remains untouched.
+-
+-## Live v27 route
+-
+-The v25 component/CME route remains retired. The v27 lower route uses:
++The qualitative Theorem (N) remains promoted and untouched. The constructive upper bound, \(D_{\rm upper}\), and the full \(\Theta(\log)\) statement are outside Commission v28-L.
+ 
+-1. a **reflection-equivariant Borel spectral-cell partition** of width
+-   \(\eta\asymp\varepsilon^{1/8}\), including exact boundary atoms;
+-2. deletion of a weighted cover of far-inverted raw joint cells;
+-3. the raw-cell four-parity edge budget \(|E_{\rm cell}|\le4d\);
+-4. same-marginal response localization plus an explicit joint-block X/U mass bridge;
+-5. a simple marginal-cell walk ending at a sink or repeated parity cell;
+-6. repeated-cell exactification through **actual projections onto the compact zero graph**;
+-7. a state-carrying common-return limit and neutral-gain norm identity;
+-8. the exponential branch/Green comparison, including the explicit local-error horn, and eighth-power inversion.
++## What v28 changes
+ 
+-No near-conflict component diameter, finite-n evaluation of a partial response map,
+-C034 atlas, historical normalization, component rank-cost sum, or robust packet Bell-localization theorem is used.
++v28 is a **receipt/writing closeout only**. It adds no route and no new theorem. It lands the conditions from the six-gate blind v27 audit:
+ 
+-## v26 audit repairs
++1. normalized transports \(K_A,K_B\), multiplier-law parallelism, involutivity, both exact component equations, and the rescaled nonzero-fibre limit in Doc 04;
++2. explicit Alice/Bob provenance for the two actual-\(Z\) cycle relations and cycle evenness in Doc 03;
++3. the exact \(\mathcal I\le2\varepsilon\) Monge receipt, the already-blind-verified G1 collar source, the strict mixed-closure grid-transfer lemma, the corrected parity-edge display, the side-tagged walk state, the central reflection-fixed cell, sink service, no-dilation typing, and explicit anchor substitution in Docs 01/02/05;
++4. the v26 ledger entries accidentally dropped in v27, non-tautological guards, live-authority hygiene, and upper-scope/symbol/index reconciliation.
+ 
+-v27 repairs exactly the two conditional findings of the independent v26 audit:
++## Live v28 route
+ 
+-- **R26-1:** ordinary half-open cells were not reflection-equivariant on boundary atoms. Replaced by the odd-cell Borel partition in `02_CELL_RESPONSE_AND_BRIDGE_RECURRENCE_V27.md`.
+-- **R26-2:** the v26 minimum-node proof evaluated \(P(-u_k)\) without proving \(-u_k\in\operatorname{dom}P\). Replaced by the actual-\(Z\)-projection squeeze in `03_REPEATED_CELL_CYCLE_EXACTIFICATION_V27.md`.
++The mathematical route is unchanged:
+ 
+-The v26 L6 exposition omission is also repaired by an explicit local-error/direct-payment horn in `05_EXPONENTIAL_LOWER_ASSEMBLY_V27.md`.
+-
+-## R1 authority
+-
+-`PROJECTED_RETURN_MISMATCH_R1_V23.md` remains **LIVE, DISTORTED-RETURN SCOPE ONLY**:
+ \[
+-(1-q)z\le e_{\rm ret}.
++\text{raw cells}
++\to
++\text{same-marginal normalized response}
++\to
++\text{actual joint X/U bridge}
++\to
++\text{actual-}Z\text{ exactification}
++\to
++\text{state-carrying common return}
++\to
++\text{neutral quarter obstruction}
++\to
++\text{exponential lower tail}.
+ \]
+-It may service \(q<889/1000\) as an early terminal payment. It is not used to infer neutral gain and is not needed for the main v27 repeated-cell contradiction.
++
++No near-conflict component diameter, finite-n partial \(\tau\), C034/current-S atlas, historical shooting normalization, component rank-cost sum, or packet-local R2 Bell localization is on the critical path.
+ 
+ ## Promotion rule
+ 
+-The lower bound promotes only if all six gates in `10_LOWER_BOUND_PROMOTION_AUDIT_COMMISSION_V27.md` receive **PASS**. The constructive upper bound remains explicitly out of scope for this promotion decision.
++Commission v28-L is **diff-only**. Six PASS verdicts on the conditioned gates, plus integrity PASS, promote only the lower theorem above. Anything else withholds promotion.
+
+--- v27/01_RAW_CELL_PARITY_EDGE_BUDGET.md
++++ v28/01_RAW_CELL_PARITY_EDGE_BUDGET_V28.md
+@@ -1,34 +1,123 @@
+-# Raw-Cell Parity Edge Budget
++# Raw-Cell Inversion Receipt and Parity Edge Budget — v28
+ 
+-## Setup
++## 1. Exact state-anchored inversion payment
+ 
+-Let the retained joint spectral support after far-inversion deletion be a bipartite graph
++On the critical weld write
+ \[
+-E_{\rm cell}\subset X_{\rm cells}\times U_{\rm cells}.
++\phi_S(x,u)=R_{0,S}(x,u)=S-d(x,u)-A(x)-B(u),
+ \]
+-A joint cell is an edge. The scalar grid is indexed by integers. A **far inversion** is a pair of occupied cells \((p,q),(p',q')\) with opposite order and
++with
+ \[
+-|p-p'|\ge2,\qquad |q-q'|\ge2.
++d(x,u)=xu+\frac{x-u}{2}-1.
+ \]
+-The weighted far-inversion cover removes at least one endpoint of every such pair.
++Hence \(\phi_S\) has the **bilinear + separable** form
++\[
++\boxed{
++\phi_S(x,u)=C-xu-F_X(x)-F_U(u)
++}
++\tag{1.1}
++\]
++for
++\[
++C=S+1,\qquad F_X(x)=\frac x2+A(x),\qquad F_U(u)=B(u)-\frac u2.
++\]
++This form is the hypothesis needed below; no unnamed “state-anchored Monge theorem” is imported.
++
++For any two spectral points \((x,u),(x',u')\), the cross-difference is exactly
++\[
++\phi_S(x,u)+\phi_S(x',u')-\phi_S(x,u')-\phi_S(x',u)
++=-(x-x')(u-u').
++\tag{1.2}
++\]
++Since \(\phi_S\ge0\),
++\[
++\big[(x-x')(u-u')\big]_{-}
++\le \phi_S(x,u)+\phi_S(x',u').
++\tag{1.3}
++\]
++Let \(\mu\) be the joint spectral probability measure of \((X,U)\) in \(\psi\), and define the ordered inversion energy
++\[
++\mathcal I
++=
++\iint
++\big[(x-x')(u-u')\big]_{-}
++\,d\mu(x,u)d\mu(x',u').
++\]
++Integrating (1.3) gives
++\[
++\boxed{
++\mathcal I\le2\langle\psi,R_{0,S}\psi\rangle\le2\varepsilon.
++}
++\tag{1.4}
++\]
++The last inequality is the finite near-maximizer \(R_{0,S}\) receipt from Doc 03/06.
++
++## 2. Far-inversion cover
+ 
+-## Theorem — four-parity monotone decomposition
++Use the reflection-equivariant odd partition from Doc 02, of common geometric width \(\eta\). If two retained joint cells have index gaps
++\[
++|p-p'|\ge2,\qquad |q-q'|\ge2,
++\]
++and opposite order, then every spectral pair across those cells is an inversion and, by the strict grid-transfer lemma below,
++\[
++|x-x'|>\eta,\qquad |u-u'|>\eta.
++\]
++Thus each such cell pair is paid by more than \(\eta^2m_vm_w\). The existing weighted vertex-cover lemma therefore gives
++\[
++\boxed{
++\beta_{\rm far}\le8\sqrt{\mathcal I}\,\eta^{-3}.
++}
++\tag{2.1}
++\]
++With (1.4), \(r=\varepsilon^{1/8}\), and the v28 odd partition satisfying \(r/2<\eta\le r\), this is in particular
++\[
++\boxed{
++\beta_{\rm far}<128\,\varepsilon^{1/8}.
++}
++\tag{2.2}
++\]
++The constant is deliberately conservative.
++
++## 3. Strict grid-transfer lemma for the mixed-closure partition
+ 
+-Split rows and columns by index parity. For \(r,s\in\{0,1\}\), let \(E_{rs}\) be the edges with row parity \(r\) and column parity \(s\).
++Let \(I_p,I_{p'}\) be two v28 cells with \(p<p'\) and \(p'-p\ge2\). Their geometric endpoints are separated by at least one full cell width. Equality \(|x'-x|=\eta\) in the nearest case \(p'=p+2\) would require **simultaneously**
+ 
+-If two edges of one \(E_{rs}\) were inverted, their two row indices and two column indices would each differ by at least two. They would therefore form a far inversion, impossible after the cover deletion. Hence every \(E_{rs}\) is monotone.
++- the right endpoint of \(I_p\) to belong to \(I_p\), and
++- the left endpoint of \(I_{p+2}\) to belong to \(I_{p+2}\).
+ 
+-A monotone bipartite support on \(m_r\) rows and \(n_s\) columns has at most
++The reflection-equivariant mixed-closure convention never assigns both facing endpoints in that way: on the left half the first endpoint is excluded, on the right half the second is excluded, and across the central cell one of the two remains excluded. Therefore
+ \[
+-m_r+n_s-1
++\boxed{
++|p-p'|\ge2\quad\Longrightarrow\quad |x-x'|>\eta.
++}
++\tag{3.1}
+ \]
+-edges. Summing the four parity classes gives
++The same statement holds on the \(U\) axis. `guard_grid_transfer_strict.py` attacks boundary atoms explicitly.
++
++## 4. Four-parity monotone decomposition
++
++After far-inversion deletion let
+ \[
+-|E_{\rm cell}|\le 2m_X+2m_U-4\le2m_X+2m_U.
++E_{\rm cell}\subset X_{\rm cells}\times U_{\rm cells}
+ \]
+-For local dimension at most \(d\), a self-adjoint local scalar operator has at most \(d\) occupied spectral cells, so
++be the retained raw joint support. Split edges by row parity and column parity. Within any nonempty parity class, an inversion would have both index gaps at least two and hence would be a deleted far inversion. Every nonempty parity subgraph is therefore monotone.
++
++Let \(k_{\rm par}\in\{1,2,3,4\}\) be the number of nonempty parity subgraphs when \(E_{\rm cell}\ne\varnothing\). Summing the monotone edge bounds gives the corrected display
+ \[
+-\boxed{|E_{\rm cell}|\le4d.}
++\boxed{
++|E_{\rm cell}|
++\le
++2m_X+2m_U-k_{\rm par}
++\le
++4d-1.
++}
++\tag{4.1}
+ \]
++If the graph is empty, the bound is trivial. The older unconditional display \(2m_X+2m_U-4\) is false for, e.g., a \(1\times1\) graph and is retired.
+ 
+-This theorem does not invoke component clustering, top-d component selection, or any rank-cost identity.
++The only dimension input is
++\[
++m_X\le d,\qquad m_U\le d,
++\tag{4.2}
++\]
++because \(X\) and \(U\) act on the original \(d\)-dimensional local factors. No component clustering or component rank-cost identity is used.
+
+--- v27/02_CELL_RESPONSE_AND_BRIDGE_RECURRENCE_V27.md
++++ v28/02_CELL_RESPONSE_AND_BRIDGE_RECURRENCE_V28.md
+@@ -1,140 +1,306 @@
+-# Cell Response and X/U Bridge Recurrence — v27
++# Cell Response, G1 Collar, and X/U Bridge Recurrence — v28
+ 
+-## 1. Reflection-equivariant spectral-cell partition
++## 1. G1 is an imported proved receipt, not the invalid v22 strip claim
+ 
+-Put
++The live source is `dependencies/G1_ENDPOINT_POSITIVITY_AND_CONDITIONAL_ENDPOINT_PRODUCT.md`, imported from the consolidated promotion bundle. It proves
+ \[
+-r=\varepsilon^{1/8}\in(0,1].
++g_S(1)>0,\qquad g_S(-1)>0,
++\tag{1.1}
+ \]
+-Choose the **smallest odd integer**
++using the closed-interval \(3/2\)-Lipschitz modulus and the exact endpoint-line reserves; it then proves that the closed full-zero set
+ \[
+-N=2M+1\ge \frac2r,
++Z=R_{0,S}^{-1}(0)
+ \]
+-and put
++is compactly interior and that
+ \[
+-\eta=\frac2N,
+-\qquad
+-a_j=-1+j\eta\quad(0\le j\le N).
++m_g:=\min_{[-1,1]}g_S>0.
++\tag{1.2}
+ \]
+-Then
++It explicitly supersedes the invalid v22 boundary-set \(\Rightarrow\) fixed-strip inference.
++
++For named v28 constants, put
+ \[
+-\boxed{\frac r2<\eta\le r.}
++g_{\partial}:=\min\{g_S(1),g_S(-1)\}>0.
+ \]
+-Indeed, minimal oddness gives \(N<2/r+2\), hence
+-\(\eta>r/(1+r)\ge r/2\).
+-
+-Define a Borel partition \(\{I_j\}_{j=0}^{N-1}\) of \([-1,1]\) by
+-
++The \(3/2\)-Lipschitz modulus gives
+ \[
+-I_j=[a_j,a_{j+1})\qquad(0\le j<M),
++|t-1|\le g_{\partial}/3\Rightarrow g_S(t)\ge g_{\partial}/2,
+ \]
+-
++and similarly at \(-1\). Since \(Z\Subset(-1,1)^2\), choose once and for all
+ \[
+-I_M=[a_M,a_{M+1}],
++\boxed{
++\delta_0>0
++}
++\tag{1.3}
+ \]
+-
+-and
+-
++so that
+ \[
+-I_j=(a_j,a_{j+1}]\qquad(M<j\le N-1).
++Z\subset K^2,
++\qquad
++K:=[-1+\delta_0,1-\delta_0],
++\tag{1.4}
+ \]
++and choose \(\delta_0\) no larger than the two Lipschitz endpoint radii above. **The corridor \(K\) is reflection-symmetric:** \(K=-K\). The two separately certified endpoint margins make this common symmetric choice lawful.
+ 
+-These sets are disjoint and cover \([-1,1]\). Since
++Define the endpoint square collar
+ \[
+-a_{N-j}=-a_j,
++\mathcal C_{\rm end}:=[-1,1]^2\setminus K^2.
+ \]
+-reflection acts exactly, including boundary atoms:
++Continuity and \(Z\cap\mathcal C_{\rm end}=\varnothing\) give
+ \[
+-\boxed{-I_j=I_{N-1-j}.}
+-\tag{1.1}
++c_{\rm end}:=\min_{\mathcal C_{\rm end}}\phi_S>0,
++\qquad
++\boxed{C_{\rm end}:=2/c_{\rm end}<\infty.}
++\tag{1.5}
+ \]
+-Thus for every self-adjoint scalar operator \(X\), functional calculus gives
++Uniform \(g_q\to g_S\) and (1.2) imply uniform \(\phi_q\to\phi_S\); hence for all sufficiently near-critical \(q>S\), \(\phi_q\ge c_{\rm end}/2\) on the collar. In the critical finite-nearmax receipt this yields
+ \[
+-E_{I_j}(-X)=E_{I_{N-1-j}}(X)
++\boxed{
++\beta_{\rm end}\le C_{\rm end}\varepsilon.
++}
++\tag{1.6}
+ \]
+-with no generic-position assumption on the finite spectrum. The same partition is used for \(U\).
++All constants are independent of \(\varepsilon\) and \(d\).
+ 
+-This replaces the false v26 statement that ordinary left-closed/right-open cells are reflection-equivariant.
++Finally define
++\[
++b_{\rm amp}(t)=\frac{\sqrt{1-t^2}}2,
++\qquad
++\boxed{b_0:=\min_{t\in K}b_{\rm amp}(t)>0,}
++\tag{1.7}
++\]
++and, for the two positive response coefficient functions in the localized identities,
++\[
++\boxed{
++A_{\max}:=\max\Bigl(1,\sup_{t\in K}A(t),\sup_{t\in K}B(t)\Bigr)<\infty,
++\qquad
++\sigma:=b_0/A_{\max}>0.
++}
++\tag{1.8}
++\]
+ 
+-## 2. Far-inversion deletion
++## 2. Reflection-equivariant spectral-cell partition
+ 
+-The existing far-inversion cover theorem gives
++Put
++\[
++r=\varepsilon^{1/8}\in(0,1],
++\]
++choose the smallest odd integer \(N=2M+1\ge2/r\), and set
+ \[
+-\beta_{\rm far}\le 8\sqrt{\mathcal I}\,\eta^{-3},
+-\qquad \mathcal I\le4\varepsilon.
++\eta=2/N,\qquad a_j=-1+j\eta.
+ \]
+-Since \(\sqrt{\mathcal I}\le2\varepsilon^{1/2}=2r^4\) and \(\eta>r/2\),
++Then
+ \[
+-\boxed{\beta_{\rm far}<128\,\varepsilon^{1/8}.}
++\boxed{r/2<\eta\le r.}
+ \tag{2.1}
+ \]
+-Only the fixed constant changes from v26; the exponent is unchanged.
++Define
++\[
++I_j=[a_j,a_{j+1})\quad(0\le j<M),
++\]
++\[
++I_M=[a_M,a_{M+1}],
++\]
++\[
++I_j=(a_j,a_{j+1}]\quad(M<j\le N-1).
++\]
++The cells are disjoint, cover \([-1,1]\), and satisfy exactly
++\[
++\boxed{-I_j=I_{N-1-j}}
++\tag{2.2}
++\]
++including boundary atoms. The same partition is used for \(X\) and \(U\).
+ 
+-## 3. Same-marginal response
++## 3. Same-marginal response and the definition of \(\xi_I\)
+ 
+-Let
++For Alice let
+ \[
+-z_I^X=\|E_I(X)\psi\|.
++r_A^{\rm step}:=A(X)\psi-W\psi,
++\qquad
++\|r_A^{\rm step}\|^2\le C_A\varepsilon.
++\tag{3.1}
+ \]
+-On the G1 endpoint-excluded corridor the normalized response coefficient has fixed bounds
++The exact spectral intertwiner gives the destination-localized identity
+ \[
+-0<b_0\le b_{\rm amp}(t),\qquad A(t)\le A_{\max}<\infty,
++A(X)E_{-I}(X)\psi-WE_I(X)\psi
++=E_{-I}(X)r_A^{\rm step}.
++\tag{3.2}
+ \]
+-where
++By \(W^*W=b_{\rm amp}(X)^2\), (1.7), and (1.8),
+ \[
+-b_{\rm amp}(t)=\frac{\sqrt{1-t^2}}2.
++b_0z_I^X
++\le
++A_{\max}z_{-I}^X+\|E_{-I}r_A^{\rm step}\|.
+ \]
+-The response intertwiner reflects the X spectrum exactly. By (1.1), localization to a cell \(I\) gives a response in the unique reflected cell \(-I\):
++Define
+ \[
+-z_{-I}^X\ge \sigma z_I^X-\xi_I^X,
+-\qquad \sigma=b_0/A_{\max}>0.
+-\tag{3.1}
++\boxed{
++\xi_I^X:=\frac{\|E_{-I}(X)r_A^{\rm step}\|}{A_{\max}}.
++}
++\tag{3.3}
++\]
++Then
++\[
++\boxed{
++z_{-I}^X\ge\sigma z_I^X-\xi_I^X.
++}
++\tag{3.4}
++\]
++Orthogonality gives
++\[
++\sum_I(\xi_I^X)^2\le C_A\varepsilon/A_{\max}^2.
++\tag{3.5}
+ \]
+-The analogous Bob inequality holds on U cells.
++The Bob definitions \(r_B^{\rm step},\xi_J^U\) and inequalities are identical on \(U\)-cells.
+ 
+-## 4. Explicit X/U bridge
++## 4. Actual joint X/U bridge; source/destination indexing
+ 
+-After a same-marginal reflection, decompose the destination marginal vector into retained joint cells. If that marginal cell has retained bridge degree \(D_I\), one retained joint block has norm at least
++For an **X-side walk state** \((\mathsf X,I)\), first reflect to the destination marginal cell \(-I\). Define
++
++- \(D_I\): the number of retained joint cells in the **destination X-row** \(-I\);
++- \(c_I\): the deleted joint probability mass in that **same destination row** \(-I\).
++
++Thus \(D_I,c_I\) are destination-indexed quantities even though the walk state is source-indexed by \(I\).
++
++If \(D_I>0\), the Pythagorean joint decomposition gives a retained joint bridge block of amplitude \(m_I\) with
+ \[
+-D_I^{-1/2}\bigl(z_{-I}^X-\sqrt{c_I}\bigr),
++m_I
++\ge
++D_I^{-1/2}\sqrt{(z_{-I}^X)^2-c_I}
++\ge
++D_I^{-1/2}\bigl(z_{-I}^X-\sqrt{c_I}\bigr).
++\tag{4.1}
+ \]
+-where \(c_I\) is the joint mass deleted from that row. The same block lies in one actual U marginal cell, so
++That exact joint block belongs to one actual \(U\)-marginal cell, so with the safe scalar error
++\[
++e_I:=\xi_I^X+\sqrt{c_I}
++\tag{4.2}
++\]
++we obtain
+ \[
+ \boxed{
+-z_{\rm next}^U
++ z_{\rm next}^U
+ \ge
+ \frac{\sigma}{\sqrt{D_I}}z_I^X-e_I.
+ }
+-\tag{4.1}
++\tag{4.3}
+ \]
+-The U-to-X step is identical. No X spectral projection is substituted for a U projection inside a response intertwiner; the marginal switch occurs only through an actual joint state block.
++The \(U\to X\) step uses the analogous destination column convention. No response intertwiner ever substitutes an \(X\)-projection for a \(U\)-projection; the marginal-family change occurs only through the actual joint state block.
+ 
+-## 5. Global ownership and branch geometry
++The v20 Pythagorean identities underlying this collapse are
++\[
++(y_k^X)^2=w_k+r_k^{\rm del},
++\qquad
++(y_k^U)^2=w_k+c_k^{\rm del},
++\tag{4.4}
++\]
++\[
++\sum_kr_k^{\rm del}\le\beta,
++\qquad
++\sum_kc_k^{\rm del}\le\beta,
++\tag{4.5}
++\]
++and therefore
++\[
++\sum_k|y_k^X-y_k^U|^2\le4\beta.
++\tag{4.6}
++\]
++
++## 5. Global ownership
+ 
+-Before the first repeated marginal parity cell, every X or U marginal cell is used at most once at its own parity. Orthogonality of response residual projections and one-time ownership of deleted joint mass give
++Along a simple side-tagged walk, destination response projections are used at most once on each side before the first repeated walk state. Hence
+ \[
+ \boxed{
+-\sum_{\rm walk} e_I^2
+-\le C\bigl(\varepsilon+\beta_{\rm far}+\beta_{\rm end}\bigr).
++\sum_{\rm walk}e_I^2
++\le
++C_R\bigl(\varepsilon+\beta_{\rm far}+\beta_{\rm end}\bigr)
++=:C_R\mathcal E.
+ }
+ \tag{5.1}
+ \]
+-Also
++
++## 6. The walk state and the length/degree ledger
++
++A **marginal parity cell** means the side-tagged pair
++\[
++\boxed{v=(\mathsf X,I)\quad\text{or}\quad v=(\mathsf U,J).}
++\tag{6.1}
++\]
++The walk alternates sides and stops immediately before the first repeated side-tagged state. A geometric interval with the same index on the two different marginal families is therefore **not** a repeat.
++
++There are at most \(m_X\le d\) X-states and \(m_U\le d\) U-states, so
++\[
++\boxed{L\le m_X+m_U\le2d.}
++\tag{6.2}
++\]
++Reflection is a bijection of the cell set. Distinct X source states therefore use distinct destination rows, so the sum of their bridge degrees is at most \(|E_{\rm cell}|\); likewise U source states use distinct destination columns. Hence
+ \[
+-L\le m_X+m_U\le2d.
+-\tag{5.2}
++\boxed{
++\sum_{\rm walk}D_I\le2|E_{\rm cell}|\le8d-2<8d.
++}
++\tag{6.3}
+ \]
+-The sum of bridge degrees is bounded by the row-plus-column degree sum of the retained raw-cell graph:
++Since \(D\le2^D\) for integers \(D\ge1\), every deterministic prefix product satisfies
+ \[
+ \boxed{
+-\sum_{\rm walk}D_I\le2|E_{\rm cell}|\le8d.
++\Gamma_d:=2^{-4d}\min(1,\sigma)^{2d}
++\le
++\prod_{k<j}\frac{\sigma}{\sqrt{D_k}}.
+ }
+-\tag{5.3}
++\tag{6.4}
+ \]
+-Hence every deterministic prefix product is at least
++
++## 7. Reflection-fixed central cell
++
++The central cell satisfies
++\[
++I_M=-I_M.
++\]
++The walk does not stall there: the state is side-tagged, and after the same-marginal reflection the actual joint bridge changes the marginal family. If the exactified minimum lands at \(t_*=0\), the actual-\(Z\) squeeze gives
++\[
++P(0)=-P(0),
++\]
++so \(P(0)=0\) and \(z_+=z_-=(0,0)\). On that exact one-fibre return, positivity plus involutivity of both normalized transports gives
++\[
++\alpha^2=\beta^2=1,
++\qquad
++\boxed{\alpha=\beta=1,}
++\]
++which is exactly the neutral case killed by the quarter ceiling.
++
++## 8. Sink service under the odd partition
++
++If an X-side state has \(D_I=0\), the destination row \(-I\) contains no retained joint block. Therefore
++\[
++(z_{-I}^X)^2\le c_I.
++\]
++Combining with (3.4),
++\[
++\sigma z_I^X\le\xi_I^X+\sqrt{c_I},
++\]
++and hence
++\[
++\boxed{
++(z_I^X)^2
++\le
++\frac{2}{\sigma^2}\bigl((\xi_I^X)^2+c_I\bigr).
++}
++\tag{8.1}
++\]
++Summing sink states and using (5.1) gives
+ \[
+ \boxed{
+-\Gamma_d:=2^{-4d}\min(1,\sigma)^{2d}=e^{-O(d)}.
++\sum_{I\in\mathrm{sinks}}z_I^2\le C_{\rm sink}\mathcal E,
++\qquad C_{\rm sink}=2\sigma^{-2}\max(1,C_R).
+ }
+-\tag{5.4}
++\tag{8.2}
++\]
++The U-side case is identical.
++
++## 9. No-dilation dimension hypothesis
++
++Throughout the quantitative lower proof, \(X\) and \(U\) act on the original local Hilbert factors of dimension at most \(d\). No Naimark dilation is used in the cell-count ledger. For binary measurements one may perform the standard dimension-preserving extreme-effect replacement at fixed local dimension before taking the finite-dimensional supremum; the quantitative argument is then applied on those same \(d\)-dimensional factors. Thus
++\[
++m_X,m_U\le d
+ \]
++is a statement about the actual local dimension being bounded, not a dilated auxiliary space.
+
+--- v27/03_REPEATED_CELL_CYCLE_EXACTIFICATION_V27.md
++++ v28/03_REPEATED_CELL_CYCLE_EXACTIFICATION_V28.md
+@@ -1,201 +1,126 @@
+-# Repeated Cell-Cycle Exactification — v27
++# Repeated Cell-Cycle Exactification — v28
+ 
+-## 1. Cycle normalization
++This document keeps the blind-verified v27 actual-\(Z\) squeeze unchanged and adds only the requested provenance lines and evenness receipt.
+ 
+-Let a repeated marginal parity cell form an even alternating cycle. For every X/U switch choose the actual retained joint bridge block used by the selected walk, and define
++## 1. Cycle normalization and evenness
++
++A walk state is side-tagged as in Doc 02. The X/U bridge graph is bipartite:
+ \[
+-m_C:=\min_{e\in C}\|Q_e\psi\|.
++X_{\rm cells}\sqcup U_{\rm cells}.
+ \]
+-This is the **minimum bridge-block amplitude**, not a scalar-coordinate minimum.
+-
+-Assume for contradiction a sequence with
++Every walk edge changes side, hence
+ \[
+-\frac{\mathcal E_n}{m_{C,n}^2}\to0,
+-\qquad
+-\mathcal E_n:=\varepsilon_n+\beta_{{\rm far},n}+\beta_{{\rm end},n}.
++\boxed{\text{every closed walk cycle has even length}.}
+ \tag{1.1}
+ \]
+-Then \(\varepsilon_n\to0\), the reflection-equivariant cell width \(\eta_n\to0\), and every selected bridge block has nonzero norm at least \(m_{C,n}\).
+-
+-## 2. Finite near-maximizer R0 localization
+-
+-The generic weld at \(q>S\) gives
++For every X/U switch choose the actual retained joint bridge block used by the selected walk and put
+ \[
+-qI-\mathcal B=R_{0,q}+R_{A,q}+R_{B,q},\qquad R_{\nu,q}\succeq0.
++m_C:=\min_{e\in C}\|Q_e\psi\|.
+ \]
+-For a strategy of value \(S-\varepsilon\),
++Assume the contradiction sequence
+ \[
+-\langle R_{0,q}\rangle\le(q-S)+\varepsilon.
++\frac{\mathcal E_n}{m_{C,n}^2}\to0,
++\qquad
++\mathcal E_n=\varepsilon_n+\beta_{{\rm far},n}+\beta_{{\rm end},n}.
++\tag{1.2}
+ \]
+-G1 gives \(g_S\ge m_g>0\) and uniform \(g_q\to g_S\), hence uniform \(\phi_q\to\phi_S\). Sending \(q\downarrow S\),
++
++## 2. Finite near-maximizer \(R_0\) localization
++
++The generic positive weld at \(q>S\), followed by \(q\downarrow S\), gives
+ \[
+ \boxed{\langle\psi,R_{0,S}\psi\rangle\le\varepsilon.}
+ \tag{2.1}
+ \]
+-Since
+-\[
+-R_{0,S}=\phi_S(X,U)
+-\]
+-is joint functional calculus of the commuting pair, every joint spectral bridge projection \(Q_e\) commutes with \(R_{0,S}\). Therefore
++Because \(R_{0,S}=\phi_S(X,U)\) is joint functional calculus of the commuting pair, each joint bridge projection \(Q_e\) commutes with it and
+ \[
+ \frac{\langle Q_e\psi,R_{0,S}Q_e\psi\rangle}{\|Q_e\psi\|^2}
+-\le
+-\frac{\varepsilon}{m_C^2}\to0
++\le\frac{\varepsilon}{m_C^2}\to0.
+ \tag{2.2}
+ \]
+-uniformly around the cycle.
+-
+-Let \(Z=\phi_S^{-1}(0)\) inside the fixed G1 compact corridor. Define the sublevel localization modulus
+-\[
+-\Omega(s):=
+-\sup\{\operatorname{dist}(z,Z):z\text{ in the compact corridor},\ \phi_S(z)\le s\}.
+-\]
+-Compactness and continuity give
++Sublevel trimming and compactness therefore put every selected bridge within \(\delta_n\to0\) of an actual point of the compact strict zero graph
+ \[
+-\Omega(s)\downarrow0\quad(s\downarrow0).
++Z=\{(P(t),t):t\in D\}.
+ \tag{2.3}
+ \]
+-Choose \(s_n\downarrow0\) with
+-\[
+-\frac{\varepsilon_n}{s_nm_{C,n}^2}\to0.
+-\tag{2.4}
+-\]
+-Trimming each selected bridge block to \(\{\phi_S\le s_n\}\) loses \(o(m_C)\) norm. Every surviving bridge cell is of diameter \(O(\eta_n)\), hence every point of its trimmed support lies within
+-\[
+-\delta_n:=C\bigl(\eta_n+\Omega(s_n)\bigr)\to0
+-\tag{2.5}
+-\]
+-of an actual point of \(Z\), uniformly around the cycle.
+ 
+-## 3. Actual-Z projection variables
++## 3. Four-line derivation of the two actual-\(Z\) relations
+ 
+-The strict full-zero relation is a one-to-one increasing graph
++Fix the two-response-step convention **Bob first, then Alice**; starting on the other side is the same cycle after a cyclic relabeling. Choose actual zero projections
+ \[
+-Z=\{(P(t),t):t\in D\},
+-\tag{3.1}
++(P(t_k),t_k)\in Z
+ \]
+-where \(D=\pi_U(Z)\) is compact. Since \(Z\) is compact and is the graph of a single-valued function, \(P:D\to\pi_X(Z)\) has closed graph on a compact domain and is therefore continuous; hence it is uniformly continuous. Let
++from the source bridge and
+ \[
+-\omega_P(h):=
+-\sup\{|P(a)-P(b)|:a,b\in D,\ |a-b|\le h\},
+-\qquad \omega_P(h)\to0.
+-\tag{3.2}
++(P(s_k),s_k)\in Z
+ \]
++from the bridge after Bob reflection.
+ 
+-For each two-response step choose **actual zero-graph projections**
+-\[
+-(P(t_k),t_k)\in Z,
+-\qquad
+-(P(s_k),s_k)\in Z,
+-\tag{3.3}
+-\]
+-from the trimmed source bridge and the bridge after the first scalar reflection. Reflection-equivariance of the marginal cells and the second reflected bridge give, after increasing the constant in \(\delta_n\),
+-\[
+-\boxed{|s_k+t_k|\le\delta_n,}
+-\tag{3.4}
+-\]
+-\[
+-\boxed{|P(t_{k+1})+P(s_k)|\le\delta_n.}
+-\tag{3.5}
+-\]
+-Indices are cyclic. Every evaluation of \(P\) in (3.4)--(3.5) is therefore at an element of the actual domain \(D\).
++1. Bob reflects the U-coordinate of the source from \(t_k\) to \(-t_k\). Reflection-equivariant shrinking cells plus actual-\(Z\) projection therefore give
++   \[
++   \boxed{|s_k+t_k|\le\delta_n.}
++   \tag{3.4}
++   \]
++2. The same bridge is the source for the Alice response, whose X-coordinate is \(P(s_k)\).
++3. Alice reflects that X-coordinate to \(-P(s_k)\).
++4. The next actual joint bridge projects to \((P(t_{k+1}),t_{k+1})\in Z\), hence shrinking cells give
++   \[
++   \boxed{|P(t_{k+1})+P(s_k)|\le\delta_n.}
++   \tag{3.5}
++   \]
+ 
+-## 4. Minimum-point actual-Z squeeze
++Every occurrence of \(P\) in (3.4)--(3.5) is at an actual member of \(D=\operatorname{dom}P\).
+ 
+-Choose
+-\[
+-t_j=\min_k t_k.
+-\tag{4.1}
+-\]
+-Because \(P\) is increasing,
+-\[
+-P(t_j)\le P(t_{j+1}).
+-\]
+-Using (3.5) at \(k=j\),
+-\[
+-\boxed{P(t_j)+P(s_j)\le\delta_n.}
+-\tag{4.2}
+-\]
++## 4. Minimum-point actual-\(Z\) squeeze — unchanged
+ 
+-For the predecessor, \(t_{j-1}\ge t_j\). From (3.4),
++Because \(Z\) is a compact one-to-one increasing graph, \(P\) is uniformly continuous on \(D\). Put
+ \[
+-s_{j-1}\le -t_{j-1}+\delta_n
+-\le -t_j+\delta_n
+-\le s_j+2\delta_n.
+-\tag{4.3}
++\omega_P(h)=\sup\{|P(a)-P(b)|:a,b\in D,\ |a-b|\le h\}.
+ \]
+-If \(s_{j-1}\le s_j\), monotonicity gives \(P(s_{j-1})\le P(s_j)\). If \(s_{j-1}>s_j\), then (4.3) gives
+-\(|s_{j-1}-s_j|\le2\delta_n\), so uniform continuity gives
++Choose
+ \[
+-P(s_{j-1})\le P(s_j)+\omega_P(2\delta_n).
++t_j=\min_k t_k.
+ \]
+-Thus in all cases
++Then monotonicity and (3.5) give
+ \[
+-P(s_{j-1})\le P(s_j)+\omega_P(2\delta_n).
+-\tag{4.4}
++P(t_j)+P(s_j)\le\delta_n.
++\tag{4.1}
+ \]
+-Using (3.5) at \(k=j-1\),
++For the predecessor, \(t_{j-1}\ge t_j\) and (3.4) imply
+ \[
+-P(t_j)+P(s_{j-1})\ge-\delta_n,
++s_{j-1}\le s_j+2\delta_n.
+ \]
+-and hence
++Thus
+ \[
+-\boxed{
+-P(t_j)+P(s_j)
+-\ge
+--\delta_n-\omega_P(2\delta_n).
+-}
+-\tag{4.5}
++P(s_{j-1})\le P(s_j)+\omega_P(2\delta_n),
+ \]
+-Combining (4.2) and (4.5),
++and (3.5) at \(j-1\) gives
+ \[
+-\boxed{
+-|P(t_j)+P(s_j)|
+-\le
+-\delta_n+\omega_P(2\delta_n).
+-}
+-\tag{4.6}
++P(t_j)+P(s_j)\ge-\delta_n-\omega_P(2\delta_n).
+ \]
+-Together with (3.4),
++Therefore
+ \[
++\boxed{
++|P(t_j)+P(s_j)|\le\delta_n+\omega_P(2\delta_n),
++\qquad
+ |s_j+t_j|\le\delta_n.
+-\tag{4.7}
+-\]
+-
+-Take a subsequence with
+-\[
+-t_j\to t_*,\qquad s_j\to s_*.
+-\]
+-Then (4.7) gives \(s_*=-t_*\). Since \((P(t_j),t_j)\) and \((P(s_j),s_j)\) lie in the closed set \(Z\), their limits also lie in \(Z\); (4.6) gives
+-\[
+-P(s_*)=-P(t_*).
++}
++\tag{4.2}
+ \]
+-Therefore
++Passing to a subsequence gives
+ \[
+ \boxed{
+-s_*=-t_*,
+-\qquad
+-P(-t_*)=-P(t_*).
++s_*=-t_*,\qquad P(s_*)=-P(t_*).
+ }
+-\tag{4.8}
++\tag{4.3}
+ \]
+-The two exact zero points are
++Hence the exact zero points are
+ \[
+ z_+=(x_*,u_*):=(P(t_*),t_*),
+ \]
+ \[
+ z_-=(-x_*,-u_*):=(P(-t_*),-t_*).
+-\tag{4.9}
++\tag{4.4}
+ \]
+-Alice reflection of \(x_*\) and Bob reflection of \(u_*\) therefore have the same exact scalar destination \(z_-\).
+-
+-## 5. Claim boundary
+-
+-The proof uses only:
+-
+-- actual projections onto the compact zero graph;
+-- reflection-equivariant shrinking spectral cells;
+-- monotonicity and closedness of the strict zero graph;
+-- uniform continuity of \(P\) on its compact actual domain.
+ 
+-It does **not** evaluate the zero-graph function on reflected finite labels outside its declared domain, does not invoke the a.e. `Y_0` construction, and does not require a total finite-n response map \(a\) or \(\tau\).
++No evaluation of the zero-graph map at an undeclared reflected finite label, no a.e. \(Y_0\), and no finite-n \(a\) or \(\tau\) occurs.
+
+--- v27/04_STATE_CARRYING_COMMON_RETURN_AND_NEUTRAL_GAIN_V27.md
++++ v28/04_STATE_CARRYING_COMMON_RETURN_AND_NEUTRAL_GAIN_V28.md
+@@ -1,86 +1,199 @@
+-# State-Carrying Common Return and Neutral Gain — v27
++# State-Carrying Common Return and Normalized Neutral Gain — v28
+ 
+-Let the corrected actual-Z squeeze produce
++Let Doc 03 produce the exact zero pair
+ \[
+ z_+=(x_*,u_*)\in Z,
+ \qquad
+ z_-=(-x_*,-u_*)\in Z.
+-\tag{1.1}
++\tag{0.1}
+ \]
+-Both scalar reflections therefore carry the same source zero point to the same destination zero point.
+ 
+-## 1. Nonzero state-carrying fibres
++## 1. Normalized transports — the gains consumed by \(F(q)\)
++
++On the reflection-symmetric G1 corridor \(K\),
++\[
++b_{\rm amp}(t)=\frac{\sqrt{1-t^2}}2\ge b_0>0.
++\]
++The raw response operators satisfy
++\[
++W^*W=b_{\rm amp}(X)^2,
++\qquad
++W_B^*W_B=b_{\rm amp}(U)^2
++\]
++(`SHIFTED_GRID_RESPONSE_INTERFACE_REPAIR_V22.md`, (4.2)). Because \(b_{\rm amp}\) is even and \(WX=-XW\), \(W\) commutes with \(b_{\rm amp}(X)\); similarly for Bob. Define on the corridor
++\[
++\boxed{
++K_A:=W\,b_{\rm amp}(X)^{-1},
++\qquad
++K_B:=W_B\,b_{\rm amp}(U)^{-1}.
++}
++\tag{1.1}
++\]
++Then \(K_A^*K_A=K_B^*K_B=I\) on the relevant response subspaces. In the exact equality module, Theorem-(N) Round 3 item 9 further gives self-adjoint unitarity and
++\[
++\boxed{K_A^2=K_B^2=I.}
++\tag{1.2}
++\]
+ 
+-The two selected bridge blocks adjacent to the minimum node have norm at least
++The symbols \(\alpha,\beta>0\) below are the **normalized gains of \(K_A,K_B\)**. They are exactly the variables in
+ \[
+-m_C-o(m_C).
++F(q)=\frac{(1+q)^2}{16q},
++\qquad q=\alpha/\beta.
++\tag{1.3}
+ \]
+-The live one-step response residuals have total squared norm \(O(\varepsilon)\); under the contradiction normalization
++The raw gains of \(W,W_B\) contain extra factors \(b_{\rm amp}(x_*),b_{\rm amp}(u_*)\). At normalized neutral gain the raw ratio can therefore be
+ \[
+-\mathcal E/m_C^2\to0
++q_{\rm raw}=b_{\rm amp}(x_*)/b_{\rm amp}(u_*),
+ \]
+-they vanish after division by \(m_C\).
++which need not equal one. The quarter ceiling is **not** applied to raw gains.
+ 
+-The sublevel trimming from the corrected L3 proof loses only \(o(m_C)\) norm. Since the marginal cells shrink and the strict zero graph is single-valued in both coordinates, the source X- and U-marginal packet vectors concentrate on the same shrinking joint neighborhood of \(z_+\), and the two reflected destination packets concentrate on the same shrinking joint neighborhood of \(z_-\).
++## 2. Parallelism comes from the multiplier law, not isometry
+ 
+-A Hilbert ultraproduct, or equivalently compactness of these normalized finite norm equations, therefore yields nonzero complete-fibre vectors
++At finite n, `SHIFTED_GRID_RESPONSE_INTERFACE_REPAIR_V22.md` (2.1)--(2.3) supplies the destination-localized response equation; after the m_C-rescaled residual tends to zero, its exact-limit form is the scalar multiplier law. The exact scalar-orbit multiplier receipt (`CURRENT_S_SPATIAL_ATTAINMENT_BY_SCALAR_ORBIT.md`) is
+ \[
+-v_+\ne0,
++K_A\psi=r_{A,{\rm mult}}(X)\psi,
+ \qquad
+-v_-\ne0
++K_B\psi=r_{B,{\rm mult}}(U)\psi,
++\tag{2.1}
++\]
++with positive scalar multipliers on the G1 corridor. Let \(E_{z_+},E_{z_-}\) denote the complete joint zero-fibre projections in the exact limit. Strict graph uniqueness identifies the whole \(X=x_*\) occupied component with \(z_+\) and the whole \(X=-x_*\) component with \(z_-\). Therefore
++\[
++\begin{aligned}
++E_{z_-}K_AE_{z_+}\psi
++&=E_{-x_*}^XK_AE_{x_*}^X\psi\\
++&=E_{-x_*}^XK_A\psi\\
++&=E_{-x_*}^Xr_{A,{\rm mult}}(X)\psi\\
++&=r_{A,{\rm mult}}(-x_*)E_{z_-}\psi.
++\end{aligned}
++\tag{2.2}
++\]
++Likewise strict U-graph uniqueness gives
++\[
++\boxed{
++E_{z_-}K_BE_{z_+}\psi
++=r_{B,{\rm mult}}(-u_*)E_{z_-}\psi.
++}
++\tag{2.3}
++\]
++Thus both response images are multiples of **one and the same destination vector**. Isometry alone would not imply this parallelism.
++
++## 3. Why the naive ultraproduct is insufficient; the \(m_C\)-rescaled nonzero fibres
++
++A naive ultraproduct of the unscaled states need not contain atoms at \(z_\pm\): the shrinking joint-cell masses may tend to zero. The contradiction normalization instead satisfies
++\[
++\mathcal E_n/m_{C,n}^2\to0,
++\]
++and every selected bridge has norm at least \(m_{C,n}\). Divide the two shrinking joint components by \(m_{C,n}\). Their norms are then nonzero, but could a priori be unbounded. The G1 multiplier functions are pinched between fixed positive finite constants, so the source and destination component norms satisfy
++\[
++n_{+,n}\asymp n_{-,n}
++\tag{3.1}
++\]
++with constants independent of \(d,n\). Divide both components once more by \(n_{+,n}\) (equivalently by their comparable common scale). The resulting two sequences are norm-bounded and both have nonzero ultraproduct limits
++\[
++\boxed{v_+\ne0,\qquad v_-\ne0.}
++\tag{3.2}
+ \]
+-carried by the exact fibres over \(z_+\) and \(z_-\).
+ 
+-## 2. Same source and same destination
++The live one-step residual **squared** budget is \(O(\mathcal E_n)\), not merely \(O(\varepsilon_n)\). Hence every localized residual divided by \(m_{C,n}\) tends to zero, and the second normalization cannot enlarge it because \(n_{+,n}\ge1\).
+ 
+-The exact equality-kernel response laws on the endpoint-free zero module are scalar functional-calculus transports between complete fibres. Thus the two normalized exact response transports satisfy
++The marginal-to-joint collapse uses the exact Pythagorean identities from `SHIFTED_GRID_RESPONSE_INTERFACE_REPAIR_V22.md`, (5.1)--(5.3):
++\[
++(y_k^X)^2=w_k+r_k^{\rm del},
++\qquad
++(y_k^U)^2=w_k+c_k^{\rm del},
++\]
++\[
++\sum r_k^{\rm del},\ \sum c_k^{\rm del}\le\beta,
++\qquad
++\sum|y_k^X-y_k^U|^2\le4\beta.
++\tag{3.3}
++\]
++Since \(\beta/m_C^2\to0\), both marginals collapse onto the same selected joint component after rescaling. In scalar coordinates, strict graph uniqueness gives both a modulus \(\omega_P\) and, because \(P\) is a strictly increasing homeomorphism between compact projections of \(Z\), a modulus
++\[
++\boxed{
++\omega_{P^{-1}}(h)\to0.
++}
++\tag{3.4}
++\]
++These two moduli turn shrinking one-coordinate cells plus \(R_0\)-sublevel localization into shrinking **joint** neighborhoods of \(z_+\) and \(z_-\).
++
++Passing the multiplier equations (2.2)--(2.3) through this normalized limit yields
+ \[
+ \boxed{
+ K_Av_+=\alpha v_-,
+ \qquad
+ K_Bv_+=\beta v_-,
++\qquad
++\alpha,\beta>0.
+ }
+-\tag{2.1}
++\tag{3.5}
+ \]
+-for positive scalars \(\alpha,\beta\). No rank-one fibre, invariant line, or simple spectrum is assumed.
+ 
+-The normalized transports are isometric/unitary on the relevant exact response subspaces. Taking norms in (2.1),
++## 4. State-level neutral gain
++
++Because the images in (3.5) are parallel to the same nonzero \(v_-\), and \(K_A,K_B\) are normalized isometries,
+ \[
+ \|v_+\|=\alpha\|v_-\|,
+ \qquad
+ \|v_+\|=\beta\|v_-\|.
+ \]
+-Since \(v_-\ne0\),
++Thus
+ \[
+ \boxed{\alpha=\beta.}
+-\tag{2.2}
++\tag{4.1}
+ \]
+-This is the repair of the v22B kill. A scalar fixed return alone is insufficient; neutral gain follows from the **same nonzero state source, same state destination, and the two exact response equations**.
++This is the v22B repair. A scalar fixed return alone is insufficient; the conclusion uses the same nonzero source, the same nonzero destination, and the multiplier-law parallelism.
+ 
+-## 3. Quarter ceiling and compact contradiction
++## 5. Involutivity and both exact component equations
+ 
+-At neutral distortion \(q=\alpha/\beta=1\), the promoted multiplicity-uniform return algebra gives
++By (1.2), the reverse normalized gains are \(1/\alpha\) and \(1/\beta\). The exact common-return equality module therefore supplies the two component equations consumed by `DISTORTED_RETURN_QUARTER_CEILING_CURRENT_V22.md`:
+ \[
+-S\le\frac14,
++\boxed{
++Q
++=
++d(x_*,u_*)
+++\alpha b_{\rm amp}(x_*)
+++\beta b_{\rm amp}(u_*),
++}
++\tag{5.1}
+ \]
+-contradicting the certified
+ \[
+-S>\frac14.
++\boxed{
++Q
++=
++d(-x_*,-u_*)
+++\frac{b_{\rm amp}(x_*)}{\alpha}
+++\frac{b_{\rm amp}(u_*)}{\beta}.
++}
++\tag{5.2}
+ \]
+-Therefore no sequence with \(\mathcal E/m_C^2\to0\) exists. By contraposition there is a constant \(C_C<\infty\), independent of local dimension and cycle length, such that
++Here
+ \[
+-\boxed{m_C^2\le C_C\mathcal E.}
+-\tag{3.1}
++\boxed{Q=S.}
++\tag{5.3}
+ \]
++Indeed the sequence has Bell value \(S-\varepsilon_n\to S\); the finite-nearmax \(R_{0,S}\) receipt and the vanishing normalized response residuals put the rescaled limit in the exact critical equality module, so the weld tightens at the critical level \(q=S\).
+ 
+-## 4. R1 distorted-return service
++Only **after** (5.1)--(5.3) are established do we insert (4.1), giving normalized distortion \(q=1\). The exact scalar theorem then gives
++\[
++F(1)=\frac14,
++\qquad
++\boxed{S\le\frac14,}
++\]
++contradicting the certified \(S>1/4\).
++
++## 6. Dimension-free repeat payment
+ 
+-Separately, for any already-typed finite common return with
++Therefore no sequence with \(\mathcal E_n/m_{C,n}^2\to0\) exists. By contraposition, there is a fixed constant \(C_C<\infty\), independent of local dimension and cycle length, such that
+ \[
+-q=\alpha/\beta\le1,
++\boxed{m_C^2\le C_C\mathcal E.}
++\tag{6.1}
+ \]
+-R1 gives
++
++## 7. R1 and R2 scope
++
++For an already-typed distorted finite common return, R1 separately gives
+ \[
+ (1-q)z\le e_{\rm ret}.
+ \]
+-Thus every \(q<889/1000\) return is directly serviced. R1 is live only in this distorted-return scope and is not used to obtain (2.2).
++It may service \(q<889/1000\), but is not used to derive (4.1). The historical robust packet-local Bell-localization receipt **R2 remains open and is not on the v28 critical path**: the neutral contradiction is obtained only after exactification to (5.1)--(5.3).
+
+--- v27/05_EXPONENTIAL_LOWER_ASSEMBLY_V27.md
++++ v28/05_EXPONENTIAL_LOWER_ASSEMBLY_V28.md
+@@ -1,191 +1,168 @@
+-# Exponential Lower Assembly — v27
++# Exponential Lower Assembly — v28
+ 
+ Let
+ \[
+ \mathcal E=\varepsilon+\beta_{\rm far}+\beta_{\rm end}.
+ \tag{1.1}
+ \]
+-For sufficiently small \(\varepsilon\), retained joint mass is at least \(1/2\). Since a local dimension-\(d\) scalar operator has at most \(d\) occupied X marginal cells, one retained X-cell anchor obeys
++For sufficiently small deficit, retained joint mass is at least \(1/2\). Since the original local X factor has dimension at most \(d\), at most \(d\) X marginal cells are occupied. Therefore
+ \[
+ \boxed{z_0^2\ge\frac1{2d}.}
+ \tag{1.2}
+ \]
++No dilation or component-rank ledger is used.
+ 
+-The simple marginal-cell walk satisfies
++Doc 02 gives
+ \[
+ L\le2d,
+ \qquad
+-\sum D_k\le8d,
++\sum D_k<8d,
+ \qquad
+ \sum e_k^2\le C_R\mathcal E.
+ \tag{1.3}
+ \]
+-Every deterministic prefix product is at least
++Put
+ \[
+-\Gamma_d=2^{-4d}\bar\sigma^{2d},
++\bar\sigma=\min(1,\sigma),
+ \qquad
+-\bar\sigma=\min(1,\sigma).
++\Gamma_d=2^{-4d}\bar\sigma^{2d}.
+ \tag{1.4}
+ \]
+ 
+ ## 2. Green dichotomy
+ 
+-Put
++Let \(g_k=\sigma/\sqrt{D_k}\). Iterating
+ \[
+-g_k=\frac{\sigma}{\sqrt{D_k}}.
++z_{k+1}\ge g_kz_k-e_k
+ \]
+-Iterating gives
++gives, for every prefix,
+ \[
+ z_j\ge G_jz_0-\sum_{i<j}G_{i+1,j}e_i,
+ \]
+-where \(G_j=\prod_{k<j}g_k\) and \(G_{i+1,j}=\prod_{i<k<j}g_k\). By (1.3)--(1.4),
+-\[
+-G_j\ge\Gamma_d
+-\]
+-for every prefix, while
++with
+ \[
++G_j\ge\Gamma_d,
++\qquad
+ G_{i+1,j}\le\max(1,\sigma)^{2d}.
+ \]
+-Thus Cauchy--Schwarz and \(L\le2d\) give the explicit Green bound
++Therefore
+ \[
+ \sum_{i<j}G_{i+1,j}e_i
+ \le
+ \mathcal H_d\sqrt{C_R\mathcal E},
+ \qquad
+ \boxed{\mathcal H_d\le\sqrt{2d}\max(1,\sigma)^{2d}.}
+-\tag{2.0}
++\tag{2.1}
+ \]
+-This is \(\operatorname{poly}(d)e^{O(d)}\).
+ 
+-### Alternative A — accumulated error already pays
++### Alternative A — accumulated error pays
+ 
+ If
+ \[
+-\mathcal H_d\sqrt{C_R\mathcal E}
+-\ge
+-\frac12\Gamma_dz_0,
++\mathcal H_d\sqrt{C_R\mathcal E}\ge\frac12\Gamma_dz_0,
+ \]
+ then
+ \[
+-\boxed{
+ \mathcal E
+ \ge
+-\frac{\Gamma_d^2z_0^2}{4C_R\mathcal H_d^2}
+-\ge
+-c(1+d)^{-K}e^{-Cd}z_0^2.
+-}
+-\tag{2.1}
++\frac{\Gamma_d^2z_0^2}{4C_R\mathcal H_d^2}.
+ \]
+-This is already polynomial-times-exponential in \(d\).
+-
+-### Alternative B — every visited marginal packet remains large
+-
+-Otherwise every visited marginal cell satisfies
++Substituting (1.2) **at this line**, as required by the audit,
+ \[
+ \boxed{
+-z_k\ge\frac12\Gamma_d z_0.
++\mathcal E
++\ge
++\frac{\Gamma_d^2}{8d\,C_R\mathcal H_d^2}
++\ge
++c(1+d)^{-K}e^{-Cd}.
+ }
+ \tag{2.2}
+ \]
+ 
+-## 3. Explicit local-error horn for selected bridge blocks
++### Alternative B — all visited marginal packets remain large
+ 
+-Let \(m_k\) be the actual selected joint bridge-block amplitude used to leave the marginal cell at step \(k\). The cell response/bridge theorem gives
++Otherwise every visited state satisfies
+ \[
+-m_k\ge \frac{\sigma}{\sqrt{D_k}}z_k-e_k.
+-\tag{3.1}
++\boxed{z_k\ge\frac12\Gamma_dz_0.}
++\tag{2.3}
+ \]
+-Because \(D_k\le d\), there are two cases.
+ 
+-### Horn B1 — one local recurrence error is large
++## 3. Local-error horn before any bridge floor
+ 
+-If for some visited step
+-\[
+-e_k\ge \frac{\sigma}{4\sqrt d}\Gamma_d z_0,
+-\tag{3.2}
+-\]
+-then from \(e_k^2\le C_R\mathcal E\),
++Let \(m_k\) be the actual selected joint bridge amplitude. Then
+ \[
+-\boxed{
+-\mathcal E
+-\ge
+-c\,d^{-1}\Gamma_d^2z_0^2.
+-}
+-\tag{3.3}
++m_k\ge\frac{\sigma}{\sqrt{D_k}}z_k-e_k.
++\tag{3.1}
+ \]
+-So the desired exponential class is paid directly.
++Since \(D_k\le d\):
+ 
+-### Horn B2 — all local recurrence errors are small
+-
+-Otherwise, by (2.2), (3.1), and \(D_k\le d\), every selected bridge obeys
+-\[
+-\boxed{
+-m_k\ge \frac{\sigma}{4\sqrt d}\Gamma_dz_0.}
+-\tag{3.4}
+-\]
+-Hence on any repeated cycle
+-\[
+-\boxed{
+-m_C^2\ge c\,d^{-1}\Gamma_d^2z_0^2.}
+-\tag{3.5}
+-\]
++- if for some step
++  \[
++  e_k\ge\frac{\sigma}{4\sqrt d}\Gamma_dz_0,
++  \]
++  then
++  \[
++  \mathcal E\ge c\,d^{-1}\Gamma_d^2z_0^2
++  \ge c' d^{-2}\Gamma_d^2;
++  \tag{3.2}
++  \]
++- otherwise every selected bridge satisfies
++  \[
++  \boxed{
++  m_k\ge\frac{\sigma}{4\sqrt d}\Gamma_dz_0,
++  }
++  \tag{3.3}
++  \]
++  and on a repeat
++  \[
++  \boxed{
++  m_C^2\ge c\,d^{-1}\Gamma_d^2z_0^2
++  \ge c' d^{-2}\Gamma_d^2.
++  }
++  \tag{3.4}
++  \]
+ 
+ ## 4. Terminal service
+ 
+-At a sink, the inherited response/deletion sink receipt pays the same marginal amplitude scale.
+-
+-At a repeat, the v27 dimension-free repeated-cell theorem gives
++A sink is paid by Doc 02 (8.2). A repeat is paid by Doc 04:
+ \[
+ m_C^2\le C_C\mathcal E.
+-\tag{4.1}
+ \]
+-Combining (3.5), (4.1), and (1.2), or using the direct-payment horns above, yields in every terminal branch
++Together with the direct horns above,
+ \[
+ \boxed{
+-\mathcal E
+-\ge
+-c(1+d)^{-K}e^{-Cd}.
++\mathcal E\ge c(1+d)^{-K}e^{-Cd}.
+ }
+-\tag{4.2}
++\tag{4.1}
+ \]
+-No \(d^{-d}\) factor occurs.
+ 
+ ## 5. Eighth-power inversion
+ 
+-For the v27 reflection-equivariant odd-cell partition,
++Docs 01/02 give
+ \[
+-\beta_{\rm far}<128\varepsilon^{1/8}.
+-\tag{5.1}
++\beta_{\rm far}<128\varepsilon^{1/8},
++\qquad
++\beta_{\rm end}\le C_{\rm end}\varepsilon.
+ \]
+-G1 endpoint-collar deletion is \(O(\varepsilon)\). Therefore for one fixed \(C_0\),
++Thus for one fixed \(C_0\),
+ \[
+ \mathcal E\le C_0\varepsilon^{1/8}
+ \qquad(0<\varepsilon\le1).
+-\tag{5.2}
+-\]
+-Combining (4.2) and (5.2),
+-\[
+-C_0\varepsilon^{1/8}
+-\ge
+-c(1+d)^{-K}e^{-Cd}.
++\tag{5.1}
+ \]
+-Raising to the eighth power and absorbing fixed constants,
++Combining with (4.1) and raising to the eighth power,
+ \[
+ \boxed{
+ S-S_d=\varepsilon
+ \ge
+ c_0(1+d)^{-K_0}e^{-C_0'd}.
+ }
+-\tag{5.3}
++\tag{5.2}
+ \]
+ Equivalently,
+ \[
+ \boxed{D_{\rm lower}(\varepsilon)=\Omega(\log(1/\varepsilon)).}
+-\tag{5.4}
++\tag{5.3}
+ \]
+ 
+-**Status:** theorem candidate pending the six-gate v27 hostile re-audit.
+-
+-## 6. Large-deficit closure
+-
+-The argument above is written in the small-deficit regime where the retained-mass anchor is at least \(1/2\). If \(\varepsilon\) is above that fixed regime threshold, the claimed lower bound is made automatic by decreasing the universal prefactor \(c_0\), since \((1+d)^{-K_0}e^{-C_0'd}\le1\). Thus (5.3) extends to all finite \(d\) after one fixed constant adjustment.
++For deficits above the fixed small-deficit regime threshold, decrease the universal prefactor \(c_0\); since \((1+d)^{-K_0}e^{-C_0'd}\le1\), the same displayed bound then holds for all finite \(d\).
+
+--- v27/06_P4_RECEIPTS_AND_SYMBOL_HYGIENE.md
++++ v28/06_P4_RECEIPTS_AND_SYMBOL_HYGIENE_V28.md
+@@ -1,46 +1,36 @@
+-# P4 Receipts and Symbol Hygiene — v27
++# P4 Receipts and Symbol Hygiene — v28
+ 
+-## P4(a) finite near-maximizer R0 receipt
++## 1. Finite near-maximizer \(R_0\) receipt
+ 
+-For every finite-dimensional strategy of value \(S-\varepsilon\),
++For every finite-dimensional strategy of Bell value \(S-\varepsilon\),
+ \[
+ \boxed{\langle\psi,R_{0,S}(X,U)\psi\rangle\le\varepsilon.}
+ \]
+-Derivation: use the generic positive weld at every \(q>S\), take expectation, then let \(q\downarrow S\) using the canonical uniform storage convergence and the positive G1 storage floor.
++It is obtained from the generic positive weld at \(q>S\) and the canonical uniform storage convergence as \(q\downarrow S\). Since \(R_{0,S}=\phi_S(X,U)\) is functional calculus of the commuting pair, every joint spectral bridge projection \(Q=F(U)E(X)\) commutes with \(R_{0,S}\). No such commutation is asserted for arbitrary positive operators.
+ 
+-Because
+-\[
+-R_{0,S}=\phi_S(X,U)
+-\]
+-is functional calculus of the **commuting pair** \((X,U)\), every joint spectral projection
+-\[
+-Q=F(U)E(X)
+-\]
+-commutes with \(R_{0,S}\). No such statement is asserted for an arbitrary positive operator.
++## 2. Frozen symbol table
+ 
+-## P4(b) residual symbols
++- \(b_{\rm amp}(t)=\sqrt{1-t^2}/2\): response amplitude function.
++- \(\iota(t)=-t\): scalar reflection map.
++- \(K_A=Wb_{\rm amp}(X)^{-1}\), \(K_B=W_Bb_{\rm amp}(U)^{-1}\): **normalized** response transports on the G1 corridor.
++- \(\alpha,\beta>0\): normalized response gains consumed by \(F(q)\), \(q=\alpha/\beta\). Endpoint labels never use bare \(\alpha\) or \(\beta\) in the v28 layer.
++- \(r_A^{\rm step},r_B^{\rm step}\): live one-step response residual vectors.
++- \(r_A^{\rm ret},r_B^{\rm ret}\): fitted R1 common-return residual vectors.
++- \(r_{A,{\rm mult}},r_{B,{\rm mult}}\): exact scalar multiplier functions in the equality module.
++- \(\xi_I\): normalized same-marginal localized response error from Doc 02 (3.3).
++- \(c_I\): deleted joint mass in the **destination** row/column corresponding to source walk state \(I\).
++- \(D_I\): retained bridge degree in that same destination row/column.
++- \(e_I\): scalar recurrence error after combining \(\xi_I\) and \(\sqrt{c_I}\).
++- \(e_{\rm ret}=\|r_A^{\rm ret}-q r_B^{\rm ret}\|\): R1 combined mismatch.
++- \(m_C\): minimum selected bridge-block amplitude on a repeated cycle.
++- \(\Gamma_j\): actual prefix gain; \(\Gamma_d\): uniform exponential prefix floor.
+ 
+-Use the following names in the v27 layer:
++The withdrawn estimate on separate fitted-return residual norms is not consumed.
+ 
+-- \(r_A^{\rm step},r_B^{\rm step}\): live one-step response residual vectors;
+-- \(r_A^{\rm ret},r_B^{\rm ret}\): fitted common-return residuals appearing only in R1;
+-- \(e_k\): scalar amplitude error in the selected cell recurrence;
+-- \(e_{\rm ret}=\|r_A^{\rm ret}-q r_B^{\rm ret}\|\): R1 distorted-return error;
+-- \(m_C\): minimum **selected bridge-block amplitude** on a repeated cycle;
+-- \(b_{\rm amp}(t)=\sqrt{1-t^2}/2\): response amplitude function;
+-- \(\iota(t)=-t\): scalar reflection map;
+-- \(\Gamma_j\): prefix gain product; \(\Gamma_d\): uniform exponential lower prefix bound.
++## 3. Anchor and dimension convention
+ 
+-The withdrawn estimate on separate individual fitted-return norms is not consumed.
+-
+-## P4(c) anchor
+-
+-For sufficiently small deficit, retained joint mass is at least \(1/2\). A local dimension-\(d\) X operator has at most \(d\) occupied X marginal cells. Pigeonhole therefore gives
++The quantitative proof uses the original local factors of dimension at most \(d\), not a Naimark dilation. Retained X-marginal mass is at least \(1/2\) in the small-deficit regime, so
+ \[
+-\boxed{z_0^2\ge\frac1{2d}.}
++\boxed{z_0^2\ge1/(2d).}
+ \]
+ No component-rank ledger is used.
+-
+-## P4(d) reflection/grid symbols
+-
+-The live cell partition is the reflection-equivariant Borel partition of `02_CELL_RESPONSE_AND_BRIDGE_RECURRENCE_V27.md`. It is not the ordinary all-left-closed/right-open partition used in v26.
+
+--- v27/07_CORRECTION_AND_SUPERSESSION_LEDGER_V27.md
++++ v28/07_CORRECTION_AND_SUPERSESSION_LEDGER_V28.md
+@@ -1,25 +1,42 @@
+-# v27 Correction and Supersession Ledger
++# v28 Correction and Supersession Ledger
++
++**Predecessor:** `historical/v27_authority_docs/07_CORRECTION_AND_SUPERSESSION_LEDGER_V27.md`.
++
++## Diff against v27
++
++v28 restores the two entries that existed in v26 but were accidentally dropped from the v27 ledger:
++
++- the **partial/a.e.-\(\tau\) route** is non-load-bearing and must not be revived; the live exactification uses only actual points of the compact strict zero graph;
++- the historical **\(1/2000\) global storage floor** is not promoted and must not be used.
++
++v28 also records the normalized-vs-raw gain distinction, imports the blind-verified G1 source as the live collar receipt, corrects the parity-edge display, and classifies TOP_D as R1-only provenance rather than a live main-route dependency.
+ 
+ ## Permanent kills / retractions
+ 
+-1. **Unconditional endpoint product:** \(g(1)g(-1)=0\) is killed globally. Only the conditional endpoint-approach consequence is valid.
+-2. **v22B neutral-gain shortcut:** scalar fixed return \(\not\Rightarrow\alpha=\beta\). Repaired only by the state-carrying same-source/same-destination norm lemma.
+-3. **Near-conflict component CME:** retired after the v25 tie-chain counterexample. No component diameter is used in v27.
+-4. **Component rank-cost sum:** any old inference `sum component rank costs <= d` is not used. v27 uses occupied marginal-cell counts directly from local dimension.
+-5. **Ordinary half-open reflection grid:** the v26 claim that \([a,b)\mapsto[-b,-a)\) under reflection is false at boundary atoms. Superseded by the reflection-equivariant Borel partition of v27.
+-6. **Finite-label evaluation of partial P:** v26's \(P(-u_k)\) minimum squeeze is retired. v27 evaluates \(P\) only at actual zero-graph projections in its declared compact domain.
+-7. **Forest decomposition / degree-two matching:** retired.
+-8. **Old explicit constructive coefficient `13.2991468418`:** not authorized by the live upper branch.
+-9. **Separate individual fitted-return estimate:** withdrawn and unused.
+-10. **Robust packet-local Bell localization G2:** not consumed by the v27 lower route.
++1. **Unconditional endpoint product:** \(g(1)g(-1)=0\) is false globally. Only the conditional endpoint-approach consequence is lawful.
++2. **v22B neutral-gain shortcut:** scalar fixed return \(\not\Rightarrow\alpha=\beta\). Neutrality is obtained only from the same nonzero state pair and normalized multiplier-law transports.
++3. **Near-conflict component CME:** retired after the v25 tie-chain counterexample.
++4. **Component rank-cost sum:** no inference `sum component rank costs <= d` is used.
++5. **Ordinary half-open reflection grid:** false on boundary atoms; superseded by the mixed-closure odd partition.
++6. **Finite-label evaluation of partial \(P\)/a.e.-\(\tau\) route:** non-load-bearing. No finite-n \(P(-t_k)\), \(a\), or \(\tau\) is used.
++7. **Historical \(1/2000\) storage floor:** not promoted and absent from the live proof chain.
++8. **Separate individual fitted-return estimate:** withdrawn and unused.
++9. **Forest/degree-two matching requirement:** retired.
++10. **Old explicit constructive coefficient `13.2991468418`:** not authorized by this package.
++11. **Robust packet-local Bell localization R2:** open but not consumed by the v28 lower route.
++12. **Raw-gain substitution into \(F(q)\):** forbidden. \(F\) consumes normalized gains of \(K_A,K_B\), not the raw \(W,W_B\) gains.
+ 
+ ## Live replacements
+ 
+-- raw-cell four-parity edge budget;
+-- reflection-equivariant Borel spectral cells, including boundary atoms;
+-- same-marginal response plus actual joint-block X/U bridge;
+-- finite near-maximizer \(R_0\) expectation;
+-- actual-\(Z\)-projection minimum squeeze;
+-- state-carrying common-return neutral-gain lemma;
++- bilinear+separable \(\phi_S\) cross-difference and \(\mathcal I\le2\varepsilon\);
++- imported G1 endpoint positivity / compact interior collar with named constants;
++- reflection-equivariant odd spectral cells and strict grid transfer;
++- corrected raw-cell parity edge budget;
++- side-tagged marginal walk state;
++- normalized same-marginal transports plus actual joint X/U bridge;
++- actual-\(Z\) minimum squeeze;
++- multiplier-law state-carrying neutral gain with involutive reverse equations;
+ - R1 in distorted-return scope only;
+-- explicit local-error horn in the exponential assembly.
++- explicit local-error horn and exponential assembly.
++
++**Ledger rule going forward:** every successor ledger must contain a stated diff against this file or explicitly state “no ledger changes.”
+
+--- v27/08_P5_ARTIFACT_CLOSEOUT_V27.md
++++ v28/08_P5_ARTIFACT_CLOSEOUT_V28.md
+@@ -1,10 +1,11 @@
+-# P5 Artifact Closeout — v27
++# P5 Artifact Closeout — v28
+ 
+-1. **Endpoint rational verifier:** shipped verbatim as `guards/exact_rational_endpoint_line_certificate.py`; exact replay is part of `run_all_guards.py`.
+-2. **Endpoint-projector truncation construction:** shipped under `upper_artifacts/`; supplementary only.
+-3. **Promotion scope:** Commission v27-L adjudicates only the exponential lower tail and \(D_{\rm lower}=\Omega(\log)\).
+-4. **Endpoint multiplier hygiene:** `upper_artifacts/RHO_Q_IDENTIFICATION.md` uses \(\lambda_j\to0\) for \(\rho_\pm\le1\) and the neutral-return obstruction for strictness.
+-5. **Integrity:** a detached per-member SHA-256 manifest is generated after sealing; archive hash is stored separately.
+-6. **Historical v23 hash:** asserted by guard, not merely printed.
+-7. **v26 repairs:** new guards explicitly attack reflection-boundary atoms and partial-domain zero-graph squeezing.
+-8. **No sharp upper coefficient:** the lower promotion cannot authorize a numerical constructive coefficient or the full \(\Theta(\log)\) statement.
++1. The exact rational endpoint verifier is shipped verbatim and replayed by the guard runner.
++2. The already-blind-verified G1 endpoint-positivity/collar document and its exact arithmetic guard are included as live dependencies.
++3. Endpoint-projector truncation remains supplementary upper-only material.
++4. Commission v28-L is lower-bound-only and diff-scoped.
++5. `RHO_Q_IDENTIFICATION.md` uses endpoint labels with `_end` subscripts and distinguishes them from normalized response gains \(\alpha,\beta\).
++6. The live R1 copy uses `r_A^{ret},r_B^{ret}` for fitted residuals and `r_{A,mult},r_{B,mult}` for multiplier functions.
++7. `TOP_D_SIMULTANEOUS_MONOTONE_CLUSTERING_V23.md` is classified as **R1-only optional provenance** because the historical R1 section 3 consumes top-d deletion; it is not consumed by the main v28 neutral-return route.
++8. Detached member-by-member SHA-256 manifest and archive SHA-256 are generated only after the final guard pass.
++9. No numerical upper coefficient and no \(\Theta(\log)\) claim can be promoted by this package.
+
+--- v27/09_TERMINAL_EVENT_TABLE_V27.md
++++ v28/09_TERMINAL_EVENT_TABLE_V28.md
+@@ -1,12 +1,13 @@
+-# v27 Terminal Event Table
++# v28 Terminal Event Table
+ 
+ | terminal/event | live service |
+ |---|---|
+-| endpoint/collar mass | G1 endpoint-collar payment |
+-| retained graph sink | localized response + deleted joint-mass service |
++| endpoint/collar mass | imported G1 fixed-collar payment |
++| retained graph sink | Doc 02 odd-cell sink inequality (8.1)–(8.2) |
+ | Green accumulated-error horn | direct \(\ell^2\) payment |
+-| large local recurrence error before a bridge | v27 L6 local-error horn |
+-| repeated marginal parity cell | actual-Z exactification + state-carrying neutral-return contradiction |
+-| typed distorted return with \(q<889/1000\) | optional R1 early service |
++| large local recurrence error before bridge | Doc 05 local-error horn |
++| repeated side-tagged marginal cell | actual-Z exactification + normalized state-carrying neutral-return contradiction |
++| reflection-fixed central cell | walk continues by side tag; exact \(t_*=0\) degenerates to \(\alpha=\beta=1\) neutral ceiling |
++| already-typed distorted return with \(q<889/1000\) | optional R1 early service |
+ 
+-There is no component cycle, no odd common-label cycle, no finite-n partial \(\tau\), and no separate G2 Bell-localization terminal in the live v27 route.
++There is no component cycle, odd common-label cycle, finite-n partial \(\tau\), or packet-local R2 terminal on the critical path.
+
+--- v27/10_LOWER_BOUND_PROMOTION_AUDIT_COMMISSION_V27.md
++++ v28/10_LOWER_BOUND_PROMOTION_AUDIT_COMMISSION_V28.md
+@@ -1,79 +1,63 @@
+-# Commission v27-L — Lower-Bound-Only Promotion Audit
++# Commission v28-L — Diff-Only Lower-Bound Promotion Re-Audit
+ 
+-Audit refutation-first. The qualitative Theorem (N) is already promoted and is not on trial. The upper constructive rate is out of promotion scope.
++The six-gate blind v27 audit found **zero kills**. L3 was unconditional PASS; L1/L2/L4/L5/L6/INTEGRITY were PASS-WITH-CONDITIONS. v28 contains only the requested existing receipts/writing repairs. **Do not re-open verified mathematics except where needed to check that the inserted receipt says exactly what the condition required.**
+ 
+-Target claim:
++Target:
+ \[
+-\boxed{S-S_d\ge c(1+d)^{-K}e^{-Cd}}
++S-S_d\ge c(1+d)^{-K}e^{-Cd},
++\qquad
++D_{\rm lower}(\varepsilon)=\Omega(\log(1/\varepsilon)).
+ \]
+-for finite constants, hence \(D_{\rm lower}(\varepsilon)=\Omega(\log(1/\varepsilon))\).
+ 
+-## Gate L1 — raw-cell deletion and parity edge budget
++## L1 diff gate
+ 
+-Verify the \(O(\varepsilon^{1/8})\) far-inversion cover and the proof that no-far-inversion support decomposes into four monotone parity subgraphs with
+-\[
+-|E_{\rm cell}|\le4d.
+-\]
+-Attack exact scalar ties. No component merge is permitted because no components are used.
++PASS iff Docs 01/02 contain and correctly connect:
+ 
+-## Gate L2 — reflection-equivariant cell typing, response/bridge typing, ownership
++- the bilinear+separable \(\phi_S\) cross-difference and \(\mathcal I\le2\langle R_0\rangle\le2\varepsilon\);
++- the strict mixed-closure grid-transfer lemma;
++- the corrected edge display \(2m_X+2m_U-k_{\rm par}\le4d-1\), with the guard rejecting the old \(-4\) formula in sparse parity cases.
+ 
+-Attack atoms exactly on every grid boundary. Verify the odd-cell Borel partition satisfies
+-\[
+--I_j=I_{N-1-j}
+-\]
+-as sets and hence at spectral-projector level. Verify response localization is same-marginal and the X/U switch occurs only through an actual joint spectral block. Check
+-\[
+-\sum e_k^2\le C\mathcal E,
+-\quad L\le2d,
+-\quad \sum D_k\le8d.
+-\]
+-Reject any hidden cross-marginal substitution inside a response intertwiner.
++## L2 diff gate
+ 
+-## Gate L3 — repeated-cell scalar exactification on the actual zero-graph domain
++PASS iff Doc 02 contains:
+ 
+-Under \(\mathcal E_n/m_{C,n}^2\to0\), verify the finite near-maximizer \(R_0\) receipt, joint-block commutation, sublevel trimming, and the existence of actual zero-graph projections \(t_k,s_k\in\operatorname{dom}P\) satisfying
+-\[
+-|s_k+t_k|\le\delta_n,
+-\qquad
+-|P(t_{k+1})+P(s_k)|\le\delta_n.
+-\]
+-At a minimum \(t_j\), verify
+-\[
+-|P(t_j)+P(s_j)|\le\delta_n+\omega_P(2\delta_n).
+-\]
+-No evaluation of \(P\) on an undeclared reflected finite label is allowed. No a.e. `Y_0`, finite-n \(a\), or finite-n \(\tau\) may be used.
++- the imported G1 endpoint positivity/compact-interior collar, with named \(\delta_0,b_0,A_{\max},C_{\rm end}\), all independent of \(\varepsilon,d\), and a reflection-symmetric corridor;
++- explicit \(\xi_I\), destination-indexed \(D_I,c_I\), and odd-cell sink service;
++- the side-tagged walk-state definition proving \(L\le2d\), \(\sum D_k<8d\), and therefore the unchanged \(\Gamma_d\);
++- the central reflection-fixed cell case;
++- the no-dilation local-dimension statement.
+ 
+-## Gate L4 — state-carrying common return / v22B repair
++## L3 diff gate
+ 
+-Verify the trimmed bridge vectors give nonzero complete-fibre source and destination components over
+-\[
+-(x_*,u_*),\quad(-x_*,-u_*),
+-\]
+-and that both exact normalized response transports act on that same state pair. Confirm arbitrary multiplicity is harmless after norms. Then verify
+-\[
+-\alpha=\beta
+-\]
+-comes from the two state equations—not scalar fixed return alone—and that the neutral quarter ceiling applies.
++The actual-Z minimum squeeze is already blind-PASS. Check only that Doc 03 now explicitly derives (3.4)/(3.5) with Bob/Alice provenance and states bipartiteness/evenness. Do not rerun the 19.3M squeeze campaign unless a textual inconsistency is found.
+ 
+-## Gate L5 — dimension-independent repeat payment and R1 scope
++## L4 diff gate
+ 
+-Verify the compact-contradiction inference
+-\[
+-m_C^2\le C_C\mathcal E
+-\]
+-with \(C_C\) independent of dimension and cycle length. Separately verify R1 only in distorted-return scope and confirm no withdrawn individual fitted-return estimate is consumed.
++PASS iff Doc 04 explicitly provides:
++
++1. \(K_A=Wb_{\rm amp}(X)^{-1}\), \(K_B=W_Bb_{\rm amp}(U)^{-1}\), with normalized gains \(\alpha,\beta\) identified as the \(F(q)\) variables;
++2. multiplier-law parallelism onto one destination fibre, not isometry-only parallelism;
++3. involutivity and both exact component equations with \(Q=S\) before invoking \(F(1)=1/4\);
++4. the rescaled-limit paragraph: naive atom failure, \(m_C\)-rescaling, norm-boundedness fix, \(O(\mathcal E)\) residual budget, positivity, \(\omega_{P^{-1}}\), Pythagorean marginal/joint collapse, and explicit statement that R2 is not on path.
++
++## L5 diff gate
++
++PASS iff the R1 dependency copy is symbol-clean, its optional TOP_D provenance is correctly classified in the receipt index, and no withdrawn separate fitted-residual estimate is reintroduced.
++
++## L6 diff gate
+ 
+-## Gate L6 — exponential assembly
++PASS iff Doc 05 substitutes \(z_0^2\ge1/(2d)\) explicitly in Alternative A and the live chain uses the side-tagged walk/degree ledger from Doc 02. The previously verified horn threshold and compactness logic are not otherwise on trial.
+ 
+-Verify the anchor \(z_0^2\ge1/(2d)\), prefix product \(\Gamma_d=2^{-4d}\bar\sigma^{2d}\), Green factor \(e^{O(d)}\), the explicit local-error horn before asserting a bridge-amplitude floor, sink/repeat service, \(\mathcal E\le C_0\varepsilon^{1/8}\), and final eighth-power inversion. Confirm every marginal-cell count bound comes from local dimension, not a retracted component rank ledger.
++## INTEGRITY / HYGIENE diff gate
+ 
+-## Required verdict
++PASS iff:
+ 
+-For each gate return exactly one of:
++- the v26 ledger entries for partial/a.e.-\(\tau\) and the \(1/2000\) floor are restored, with a stated v27\(\to\)v28 ledger diff;
++- `guard_return_hygiene.py` executes a real two-fibre normalized multiplier test at multiplicities 1,2,4,8;
++- `guard_live_authority_hygiene.py` enforces symbol typing and killed-item absence in Docs 01–06;
++- `UPPER_SCOPE_NOTE.md`, `RHO_Q_IDENTIFICATION.md`, and the receipt index have the v28 commission/symbol/scope corrections;
++- archive/member hashes and exact endpoint/G1 guards pass.
+ 
+-- **PASS** — with the critical inequality/receipt;
+-- **FAIL** — with the first false implication and preferably a countermodel;
+-- **CONDITIONAL** — only with one precise missing finite receipt.
++## Promotion rule
+ 
+-**Promotion rule:** six PASS verdicts promote only the lower theorem. Anything else blocks. Do not adjudicate \(D_{\rm upper}\) or \(\Theta(\log)\) in this commission.
++Return PASS/FAIL/CONDITIONAL for L1–L6 and INTEGRITY. **Six L-gate PASS plus INTEGRITY PASS promotes only the lower theorem.** \(D_{\rm upper}\) and \(\Theta(\log)\) remain excluded.
+

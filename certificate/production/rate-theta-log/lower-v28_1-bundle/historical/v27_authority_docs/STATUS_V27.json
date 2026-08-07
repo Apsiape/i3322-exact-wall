@@ -1,0 +1,15 @@
+{
+  "date": "2026-08-06",
+  "status": "LOWER_BOUND_THEOREM_CANDIDATE_NOT_PROMOTED",
+  "target": "S-S_d >= c(1+d)^(-K) exp(-C d)",
+  "corollary_target": "D_lower(epsilon)=Omega(log(1/epsilon))",
+  "supersedes_authority": "v26 lower-bound layer",
+  "repairs": [
+    "reflection-equivariant Borel cell partition including boundary atoms",
+    "actual-Z projection minimum squeeze with no finite-label P evaluation outside dom(P)",
+    "explicit L6 local-error/direct-payment horn"
+  ],
+  "promotion_rule": "six PASS verdicts on Commission v27-L",
+  "upper_bound_in_scope": false,
+  "qualitative_theorem_N_affected": false
+}
