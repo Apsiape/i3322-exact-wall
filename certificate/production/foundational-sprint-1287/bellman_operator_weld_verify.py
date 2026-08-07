@@ -1,5 +1,19 @@
 #!/usr/bin/env python3
-"""Exact abstract weld from any positive Bellman subsolution to I3322."""
+"""Scalar/symbolic identity checks for the abstract Bellman weld.
+
+SCOPE (corrected 2026-08-07, reported by N. Mghirbi): this script
+verifies five EXACT SCALAR/SYMBOLIC identities used by the weld
+argument (reflected cost identity, Cauchy identity, potential product
+law, local 2x2 response determinant, and the remainder bookkeeping
+with commuting symbols). It does NOT verify the operator-level weld
+claim: the symbols alpha/beta/core/alice/bob below commute, so the
+cancellation gate is a scalar tautology relative to the operator
+statement. The operator claim (R0, RA, RB all PSD and exactly
+reconstructing qI - Bell) is established in the proof documents, not
+by this script; an operator-level replay (rebuild R0/RA/RB from the
+25,601-knot G on random finite-dimensional strategies and check PSD +
+reconstruction) is the appropriate independent check and has been
+performed externally with agreement to ~1e-15."""
 
 from __future__ import annotations
 

@@ -1,9 +1,11 @@
 {
-  "status": "PROMOTION_CANDIDATE_REPAIRED_AFTER_S1_REFEREE",
+  "status": "PROMOTED_v3.1.0",
   "public_claim": "Theorem (S)",
   "claim": "normal spatial attainment at current certified S",
   "separation": "C_qs(3,3;2,2) minus C_q(3,3;2,2) is nonempty",
   "theorem_N_dependency_for_separation": true,
+  "promotion_record": "S1 referee verdict was 'PROMOTE conditional on repairs'; repairs V1-V9 were executed in this package; the theorem was promoted in release v3.1.0 (2026-08-05) and is stated as Theorem 2 in paper/resolution.pdf (v3.2.3). This field previously read PROMOTION_CANDIDATE_REPAIRED_AFTER_S1_REFEREE and was stale relative to the release history; reconciled 2026-08-07 after the inconsistency was reported by N. Mghirbi.",
+  "residual_risk_note": "Sections 6-9 of the proof document (conull invariant set, Borel transversal, uniqueness of disintegration) carry the residual proof risk and are scheduled for full expanded write-up in the long-form paper.",
   "repairs_executed": [
     "V1",
     "V2",
