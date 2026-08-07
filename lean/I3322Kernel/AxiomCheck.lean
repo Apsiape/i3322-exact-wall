@@ -23,3 +23,11 @@ import I3322Kernel
 #print axioms I3322Kernel.mMinusAt_antitone
 #print axioms I3322Kernel.strictMono_self_eq_id
 #print axioms I3322Kernel.decreasing_bijections_coincide
+#print axioms I3322Kernel.staircase_sum_injOn
+#print axioms I3322Kernel.staircase_card_le
+#print axioms I3322Kernel.prod_le_two_pow_sum
+#print axioms I3322Kernel.min_point_pseudocycle
+#print axioms I3322Kernel.s_mul_one_sub_s_le_quarter
+#print axioms I3322Kernel.band_identity
+#print axioms I3322Kernel.band_quarter_ceiling
+#print axioms I3322Kernel.amplitude_b_le_half
