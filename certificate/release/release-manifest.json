@@ -3988,9 +3988,9 @@
     },
     {
       "path": "paper/rate-companion.tex",
-      "canonical_bytes": 31353,
+      "canonical_bytes": 31354,
       "hash_mode": "canonical-lf",
-      "sha256": "d020ccf9fcde7669907193b8819372dffb10dd53eb59c88c802fc270f2e98d5b"
+      "sha256": "4a7092f36f0778a519358c9fd2c71fe679c2ba4092241f60519b5e1776094fa5"
     },
     {
       "path": "paper/references.bib",
@@ -4054,15 +4054,15 @@
     },
     {
       "path": "paper/resolution.pdf",
-      "canonical_bytes": 299049,
+      "canonical_bytes": 300492,
       "hash_mode": "raw",
-      "sha256": "315e0b2757b543b234cbe652b48fc70200bdbd6419ae161f7b6e5899ac5254bd"
+      "sha256": "5b7dacba92e9714e1a47145b2a31c5ba6a53dc9cd5021d353d5ffbcb5f422216"
     },
     {
       "path": "paper/resolution.tex",
-      "canonical_bytes": 34506,
+      "canonical_bytes": 34512,
       "hash_mode": "canonical-lf",
-      "sha256": "4552f113faf4c6dfd13dbbb40942047f1bffc88e078f9c7bd0940dc8e653d3a9"
+      "sha256": "cd26442d7268690f692f56b41c9380496b40d87456ecbbad19c990d7bbe37b5f"
     },
     {
       "path": "paper/TECHNICAL-SUPPLEMENT.md",
