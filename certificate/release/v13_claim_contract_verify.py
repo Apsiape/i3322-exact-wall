@@ -62,8 +62,12 @@ def main() -> None:
     assert "device-independent dimension lower bound" in manuscript
     assert "Quantitative necessity remains" in manuscript
     assert "tagged archival release" in release_notes
-    assert "version: 1.2.0" in citation
-    assert "doi: 10.5281/zenodo.21782750" in citation
+    # 2026-08 instrument repair (receipt rot): the contract formerly pinned
+    # the v1.2.0 version string and that version's DOI, which fail against
+    # every later release. The stable claim is the concept DOI, identical
+    # across versions; the version field is checked for presence, not value.
+    assert "version: " in citation
+    assert "doi: 10.5281/zenodo.21782008" in citation
     assert source["all_gates_pass"] is True
     assert source_manifest["source_count"] == 21
     source_paths = {entry["path"] for entry in source_manifest["sources"]}

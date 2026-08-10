@@ -35,7 +35,12 @@ HERE = Path(__file__).resolve().parent.parent
 SURFACE = ["proof", "authority", "dependencies", "guards",
            "artifacts", "audit_archive", "audit_diff",
            "STATUS_U1E.json", "MANIFEST_U1E_SHA256.json",
-           "README.md", "U1_TO_U1E_CHANGES.md"]
+           "README.md", "U1_TO_U1E_CHANGES.md",
+           # 2026-08 selftest repair: the manifest requires
+           # PROMOTION_RECORD.md; omitting it from the sandbox surface made
+           # the guard fire on the unmutated I0 control copy. The live
+           # guards on the real tree were unaffected.
+           "PROMOTION_RECORD.md"]
 
 
 def make_copy(tmp: Path) -> Path:

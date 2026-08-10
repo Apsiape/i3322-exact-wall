@@ -603,6 +603,33 @@ interpretation. The truncation rate is an achievability statement, not a
 device-independent dimension lower bound. Quantitative necessity remains
 open.
 
+\paragraph{Scope amendment (2026-08, append-only).}
+The preceding sentence is retained as the historical scope statement of this
+release.  It is superseded for the rate: the companion note
+(\texttt{paper/rate-companion.tex}, v3.3.0), with the certified bundles under
+\texttt{certificate/production/rate-theta-log/}, proves the two-sided
+statement $D(\varepsilon)=\Theta(\log 1/\varepsilon)$ at local-dimension
+scope, the lower half holding for every $d$-dimensional strategy with
+existential constants ($S-S_d \ge c\,(1+d)^{-K}e^{-Cd}$).  Quantitative
+necessity is no longer open in that certified scope.
+
+\paragraph{Remark (non-uniqueness, explicit).}
+The disclaimer of uniqueness above is not merely a hedge: non-uniqueness is
+exhibited.  The two relabelings
+\[
+(A_1,A_2,B_3)\mapsto(A_2,A_1,I-B_3)
+\qquad\text{and}\qquad
+(A_3,B_1,B_2)\mapsto(I-A_3,B_2,B_1)
+\]
+each preserve the $I_{3322}$ functional identically, and they commute.
+Applied to the positive wall they generate at least four distinct fixed-label
+exact maximizing correlations.  This bounds the maximizing set from below and
+no more: it does not show that four points exhaust the maximizing face, does
+not establish uniqueness modulo Bell relabeling, and does not establish
+local-isometry self-testing or dual uniqueness.  It is recorded so that the
+uniqueness disclaimer is read as a demonstrated fact about this functional
+rather than as an unexamined caution.
+
 \paragraph{Computational disclosure.}
 Frontier language models were used extensively for proof discovery,
 implementation, adversarial auditing, and editorial assistance.  The named

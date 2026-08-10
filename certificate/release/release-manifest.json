@@ -2524,9 +2524,9 @@
     },
     {
       "path": "certificate/production/foundational-sprint-1287/bellman_operator_weld_verify.py",
-      "canonical_bytes": 3270,
+      "canonical_bytes": 4115,
       "hash_mode": "canonical-lf",
-      "sha256": "5d9f117092196a99203d92d3af990d05fb6dcb3453fa86081083bb4d04af3fc0"
+      "sha256": "830e46378c274248418b2759f639109f4e073f472180b4d0b499bad415581ef2"
     },
     {
       "path": "certificate/production/foundational-sprint-1287/build_bellman_subsolution_candidate.py",
@@ -2805,6 +2805,834 @@
       "sha256": "342a8e107d81ebf9d535fff5bb08f9372c31f0d34249314f87a02243290d93c9"
     },
     {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/CLOSEOUT_CHECKLIST_V28.md",
+      "canonical_bytes": 2310,
+      "hash_mode": "canonical-lf",
+      "sha256": "38275abcb3e2fee0023df6007030277a6bb28a261a0f4e9b5cf115d8f80f486f"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/dependencies/ANTITONE_EDGE_BUDGET_AND_EXPONENTIAL_BRANCH_SELECTION_V22.md",
+      "canonical_bytes": 8244,
+      "hash_mode": "canonical-lf",
+      "sha256": "b7cf65e8759a9c0acaa80f3c0056e8599771116ced159a67d0cfbecc9b017353"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/dependencies/CANONICAL_CRITICAL_STORAGE_AND_ANCESTRY.md",
+      "canonical_bytes": 5728,
+      "hash_mode": "canonical-lf",
+      "sha256": "887e0932dfad39a756599885001642ea28a89e11535549ec33bde217678b32bc"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/dependencies/CONSTRUCTIVE_LOG_UPPER_BOUND_V23.HISTORICAL.md",
+      "canonical_bytes": 3781,
+      "hash_mode": "canonical-lf",
+      "sha256": "120c92709aa8853098267c94003e9fe16642dbe08950e6769e143c5150bf1068"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/dependencies/CONVEX_ENVELOPE_PLATEAU_EXCLUSION_AND_THEOREM_N_COMPLETION.md",
+      "canonical_bytes": 5981,
+      "hash_mode": "canonical-lf",
+      "sha256": "dfa7a4b88dacc147d8fea57ca12ae756948e5c30c9c9895f4e53aca9ee4a4371"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/dependencies/CRITICAL_ZERO_SET_REDUCTION_FOR_THEOREM_N.md",
+      "canonical_bytes": 7477,
+      "hash_mode": "canonical-lf",
+      "sha256": "1e3e47cf5fc7d003fec3ec41ee768e6aa08a546f274d4add03b91d32b771f42c"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/dependencies/CURRENT_S_SPATIAL_ATTAINMENT_BY_SCALAR_ORBIT.md",
+      "canonical_bytes": 10268,
+      "hash_mode": "canonical-lf",
+      "sha256": "df9902300061ed73e1e702d3a6e034d2bdbea45d5709bd4f1d71f7e76a56bee2"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/dependencies/DISTORTED_RETURN_QUARTER_CEILING_CURRENT_V22.md",
+      "canonical_bytes": 4240,
+      "hash_mode": "canonical-lf",
+      "sha256": "9fa97a4d3b7764a373adbbca29789609b1e9eb64806982eda4bb8873f5007215"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/dependencies/ENDPOINT_CESARO_CARRIER_RATE_THEOREM.md",
+      "canonical_bytes": 9330,
+      "hash_mode": "canonical-lf",
+      "sha256": "1ed80a067d3afcbd04c58a8792f1c98ae83aff0d783947496f81b7db4b4472b4"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/dependencies/G1_ENDPOINT_POSITIVITY_AND_CONDITIONAL_ENDPOINT_PRODUCT.md",
+      "canonical_bytes": 4042,
+      "hash_mode": "canonical-lf",
+      "sha256": "6dbb19c7d00a9fd5d0535b896ab6565f226ce6ae6fab381ea6f71a5f3fa9598a"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/dependencies/INCOMING_OWNERSHIP_AND_TYPED_RECURRENCE_V23.md",
+      "canonical_bytes": 3415,
+      "hash_mode": "canonical-lf",
+      "sha256": "8749a8c2b00f3bd169d76f7f536c10e63f6b347a7a76dba6e4146db09faf3159"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/dependencies/PROJECTED_RETURN_MISMATCH_R1_V23.md",
+      "canonical_bytes": 4387,
+      "hash_mode": "canonical-lf",
+      "sha256": "1159a1451539d834a0a870b46a22f5839e9d29feeb446f75b9276e0dd10ac8c5"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/dependencies/RANK_COSTED_PACKET_IDENTITY_AND_ALTERNATING_TRUNCATION.md",
+      "canonical_bytes": 11508,
+      "hash_mode": "canonical-lf",
+      "sha256": "908874eed6fe673c80a4c4ac1481809f62b8f6d716556de34228b8fb4b07c8f9"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/dependencies/REFLECTION_DUAL_UPPER_ENVELOPE_AND_ADAPTIVE_TAILS.md",
+      "canonical_bytes": 7610,
+      "hash_mode": "canonical-lf",
+      "sha256": "589bb7d804984910cff814a3a7513a94634ce37b8c0e7f2cc49a281bb8b0f216"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/dependencies/SHIFTED_GRID_RANK_COSTED_CLUSTERING_AND_COARSE_CONVERSE.md",
+      "canonical_bytes": 11572,
+      "hash_mode": "canonical-lf",
+      "sha256": "4abe80b32c93a9d882131dbc6e2da9a933a231e009923fb82e42fec81cc351b3"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/dependencies/SHIFTED_GRID_RESPONSE_INTERFACE_REPAIR_V22.md",
+      "canonical_bytes": 5733,
+      "hash_mode": "canonical-lf",
+      "sha256": "4f1ff30a61d8410212cdd4655a657ba830cbfd8f48d0604c7d5a37a776c77130"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/dependencies/THEOREM_N_ROUND3_BLIND_AUDIT_SOURCE.md",
+      "canonical_bytes": 39262,
+      "hash_mode": "canonical-lf",
+      "sha256": "53907429cbfb42e9f10a8dd870f283bf27745526f95ec2de159d375c087665d9"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/dependencies/THEOREM_N_SIGNED_PUBLIC_STATEMENT.md",
+      "canonical_bytes": 3684,
+      "hash_mode": "canonical-lf",
+      "sha256": "b4c2b6711c3dba439856da1dff3bcdf8d70844a4f78799f044fdb5a57a4ef053"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/dependencies/TOP_D_SIMULTANEOUS_MONOTONE_CLUSTERING_V23.md",
+      "canonical_bytes": 4727,
+      "hash_mode": "canonical-lf",
+      "sha256": "c52bfcd2e622390ae6db05dcc4f8c9f826d045a8d88498ea0f8b1563db27c1cd"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/DEPENDENCY_RECEIPT_INDEX.md",
+      "canonical_bytes": 3167,
+      "hash_mode": "canonical-lf",
+      "sha256": "5569b34295cd886f85ea53b0650c66fe356fb30b7cc3948636939804499e9394"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/guards/endpoint_line_certificate_result.json",
+      "canonical_bytes": 6222,
+      "hash_mode": "canonical-lf",
+      "sha256": "94d135fc75ed18737050677f22f2e7f104aec9195b97cff2eeff362d2e072a59"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/guards/exact_rational_endpoint_line_certificate.py",
+      "canonical_bytes": 4159,
+      "hash_mode": "canonical-lf",
+      "sha256": "3d39c8eed5bac0c7fc29a823cb24dd3d6198363240010607fa0731723f8d1735"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/guards/guard_actual_Z_projection_squeeze.py",
+      "canonical_bytes": 2005,
+      "hash_mode": "canonical-lf",
+      "sha256": "fd6d7e34c443ddb59ffb7187523a31f14e349700c24c183da08cb41e9a31078a"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/guards/guard_cell_grid_and_edge_budget.py",
+      "canonical_bytes": 2607,
+      "hash_mode": "canonical-lf",
+      "sha256": "683d3d6db8cbe8ef0af5774bddd62ac733c481fe7a381203520e5208a080c239"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/guards/guard_endpoint_certificate_replay.py",
+      "canonical_bytes": 824,
+      "hash_mode": "canonical-lf",
+      "sha256": "d3b7866621cf6f21e219764b537b0bcd5954d405e7ede87e69bc128924058a71"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/guards/guard_g1_endpoint_arithmetic.py",
+      "canonical_bytes": 1177,
+      "hash_mode": "canonical-lf",
+      "sha256": "2c697fe4196e8383900733899f901cb41a9de6de61420563077c9d5b4d6447b9"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/guards/guard_grid_transfer_strict.py",
+      "canonical_bytes": 1060,
+      "hash_mode": "canonical-lf",
+      "sha256": "04a55b9bcdb96acd6008cc94af5a1995855d43c7d42c31677072a7c5b74e9281"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/guards/guard_historical_hashes.py",
+      "canonical_bytes": 1011,
+      "hash_mode": "canonical-lf",
+      "sha256": "724aa816879d6353b6d93cb2dbcfc0c073130801ead2593489a216bf489d4999"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/guards/guard_L6_local_error_horn.py",
+      "canonical_bytes": 1017,
+      "hash_mode": "canonical-lf",
+      "sha256": "1c999729e523ab8820113dee212ec8743b8bac479a1b76b9001d04551414c2b0"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/guards/guard_live_authority_hygiene.py",
+      "canonical_bytes": 3449,
+      "hash_mode": "canonical-lf",
+      "sha256": "8feefdca81ce3195e1191ea7f5d7804e6494c5b16fe8616aa3e4dbc307da7632"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/guards/guard_monge_cross_difference.py",
+      "canonical_bytes": 806,
+      "hash_mode": "canonical-lf",
+      "sha256": "d4b09783901c6fe48dfeee08d61e56ab4c87525e356865e880b2b21abb6a848d"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/guards/guard_reflection_boundary_atoms.py",
+      "canonical_bytes": 1545,
+      "hash_mode": "canonical-lf",
+      "sha256": "6c39e7ba15c42212c64c06741711f4091c065427f27eff23fe437ede6cac99a1"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/guards/GUARD_RESULTS.txt",
+      "canonical_bytes": 2411,
+      "hash_mode": "canonical-lf",
+      "sha256": "2d1edcdaeab50df1c30f4d8890f6a44fbf19ba82c3b2e081299b048a339b6a3d"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/guards/guard_return_hygiene.py",
+      "canonical_bytes": 3254,
+      "hash_mode": "canonical-lf",
+      "sha256": "decb4c810f3fc1152afbe00754747b1ee784ae60a7b7a80c447910a0040e3ec3"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/guards/run_all_guards.py",
+      "canonical_bytes": 679,
+      "hash_mode": "canonical-lf",
+      "sha256": "509369542d67260dac55ba58bb7f58c85d2dd90c70633f3fc16215f1667f44bf"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/current-S-antitone-walk-v23.ORIGINAL.zip",
+      "canonical_bytes": 74602,
+      "hash_mode": "canonical-lf",
+      "sha256": "91453859a61e764e6edb5c8574a638fd72e57db5dfffeccebeb795f413fb6202"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/I3322_CONSOLIDATED_PROMOTION_BUNDLE_2026-08-06.zip",
+      "canonical_bytes": 242088,
+      "hash_mode": "canonical-lf",
+      "sha256": "f37ea487dbc101c5a9105fce8ffc62aeae8c65b32e793e8e98ef0f7ba8dd630e"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/I3322_V26_LOWER_BOUND_REAUDIT_BUNDLE_2026-08-06.zip",
+      "canonical_bytes": 392997,
+      "hash_mode": "canonical-lf",
+      "sha256": "f026018f28735e241d85e5880a85250e31d2067915dcb6049d29dd718de37f88"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/I3322_V26_LOWER_BOUND_REAUDIT_MANIFEST_SHA256.json",
+      "canonical_bytes": 8536,
+      "hash_mode": "canonical-lf",
+      "sha256": "15adee412ed52eabdf6ac83a8ce5379f3447484b05a84d78c9b95c836084b5f1"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/I3322_V27_LOWER_BOUND_REAUDIT_BUNDLE_2026-08-06.zip",
+      "canonical_bytes": 807114,
+      "hash_mode": "canonical-lf",
+      "sha256": "b8f1d4e68c29e54af68cd41e435c19cf5d6a95e4e3e0cdef39ab43fde10ec35e"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/I3322_V27_LOWER_BOUND_REAUDIT_MANIFEST_SHA256.json",
+      "canonical_bytes": 11924,
+      "hash_mode": "canonical-lf",
+      "sha256": "3ae5845b0789ee8975e2e39bb8b047e666546f3aed447b17addfb74fbdd6aad7"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/v26_authority_docs/00_AUTHORITY_BANNER_V26.md",
+      "canonical_bytes": 1666,
+      "hash_mode": "canonical-lf",
+      "sha256": "c6543f6de87587c0aae8e67a13218108ca36f72a7b0afe43ba267d71778b396f"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/v26_authority_docs/02_CELL_RESPONSE_AND_BRIDGE_RECURRENCE.md",
+      "canonical_bytes": 1952,
+      "hash_mode": "canonical-lf",
+      "sha256": "2c88b386d2a692c5c2f12823b83f4afcaac79a94957d32431a907df6a0e8a733"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/v26_authority_docs/03_REPEATED_CELL_CYCLE_EXACTIFICATION.md",
+      "canonical_bytes": 2494,
+      "hash_mode": "canonical-lf",
+      "sha256": "4921a4db560d58eede26409bb85259e9f4e260247448d4eadf495613e67f96ec"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/v26_authority_docs/04_STATE_CARRYING_COMMON_RETURN_AND_NEUTRAL_GAIN.md",
+      "canonical_bytes": 1922,
+      "hash_mode": "canonical-lf",
+      "sha256": "e23fff322dd81cffa93d373ea20a8c49726179a2ed58b99bca178fe0cf44e492"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/v26_authority_docs/05_EXPONENTIAL_LOWER_ASSEMBLY_V26.md",
+      "canonical_bytes": 1519,
+      "hash_mode": "canonical-lf",
+      "sha256": "f6a0a92b35b9e28f6def7914f1a3234685a08731dd6aca3deee59cebe57a4ad3"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/v26_authority_docs/07_CORRECTION_AND_SUPERSESSION_LEDGER_V26.md",
+      "canonical_bytes": 1694,
+      "hash_mode": "canonical-lf",
+      "sha256": "4b05ef7b97eb5a237d144f48aebbb8022e11f5a36100ce4dbc7987302f6c64f1"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/v26_authority_docs/08_P5_ARTIFACT_CLOSEOUT.md",
+      "canonical_bytes": 1719,
+      "hash_mode": "canonical-lf",
+      "sha256": "f12013e653ed0fa563b71a53c908754970af6e62abb7325050565db3c455370a"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/v26_authority_docs/09_TERMINAL_EVENT_TABLE_V26.md",
+      "canonical_bytes": 852,
+      "hash_mode": "canonical-lf",
+      "sha256": "c9c7d5c047e88326ca5f5daa4197045888889d810cb5f70827d44d96e09ba20a"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/v26_authority_docs/10_LOWER_BOUND_PROMOTION_AUDIT_COMMISSION.md",
+      "canonical_bytes": 3098,
+      "hash_mode": "canonical-lf",
+      "sha256": "4ce062c0fcdf92f564973156e9a87eb11c340bcc730310be860cc96af3031934"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/v27_authority_docs/00_AUTHORITY_BANNER_V27.md",
+      "canonical_bytes": 2538,
+      "hash_mode": "canonical-lf",
+      "sha256": "969364ffeb7211df705133d56a159be9ab99750dbf4480964239278a8ebde327"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/v27_authority_docs/01_RAW_CELL_PARITY_EDGE_BUDGET.md",
+      "canonical_bytes": 1346,
+      "hash_mode": "canonical-lf",
+      "sha256": "51ced0ac8b6095e9198505db38a179596ff3e0de9c0889b965598cadfae853ec"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/v27_authority_docs/02_CELL_RESPONSE_AND_BRIDGE_RECURRENCE_V27.md",
+      "canonical_bytes": 3334,
+      "hash_mode": "canonical-lf",
+      "sha256": "142386cf02bf4c5f630c0762f2b8624cbae8c768f1a46797f28e06892e0aa38a"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/v27_authority_docs/03_REPEATED_CELL_CYCLE_EXACTIFICATION_V27.md",
+      "canonical_bytes": 5099,
+      "hash_mode": "canonical-lf",
+      "sha256": "3fb9c2c79099cc1df183fd4d5a4085076a634f215f754f6e9d2fc1a83a7a0e0a"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/v27_authority_docs/04_STATE_CARRYING_COMMON_RETURN_AND_NEUTRAL_GAIN_V27.md",
+      "canonical_bytes": 2784,
+      "hash_mode": "canonical-lf",
+      "sha256": "f749dd981b593ffad5ba21f4ceb2e659cf074b6171a7ff69cf7e36ff72f130d0"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/v27_authority_docs/05_EXPONENTIAL_LOWER_ASSEMBLY_V27.md",
+      "canonical_bytes": 4015,
+      "hash_mode": "canonical-lf",
+      "sha256": "43d5ed331214d69dd67da651a427f4f885dfc5d568e3f0f9128105d74ff45a66"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/v27_authority_docs/06_P4_RECEIPTS_AND_SYMBOL_HYGIENE.md",
+      "canonical_bytes": 1880,
+      "hash_mode": "canonical-lf",
+      "sha256": "d7cc5929dcc44fec38716f1516c76102c0aaf4a181a85c6c56b6cff8a3f84f20"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/v27_authority_docs/07_CORRECTION_AND_SUPERSESSION_LEDGER_V27.md",
+      "canonical_bytes": 1790,
+      "hash_mode": "canonical-lf",
+      "sha256": "e4929372820c2d4c27dddc9db73ac119884ce900af19ab1759f929ae52ccc45f"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/v27_authority_docs/08_P5_ARTIFACT_CLOSEOUT_V27.md",
+      "canonical_bytes": 1037,
+      "hash_mode": "canonical-lf",
+      "sha256": "9bd7d7e13dfce39a5e95164941ab7d5d8c2d3a4696695a4ffc66cf8757fa1728"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/v27_authority_docs/09_TERMINAL_EVENT_TABLE_V27.md",
+      "canonical_bytes": 673,
+      "hash_mode": "canonical-lf",
+      "sha256": "923ee84f3eca15bd21bd8feb8e6a3fa4e6db7f7380e0c7ccfea0efaea15e0d05"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/v27_authority_docs/10_LOWER_BOUND_PROMOTION_AUDIT_COMMISSION_V27.md",
+      "canonical_bytes": 3449,
+      "hash_mode": "canonical-lf",
+      "sha256": "3121218616b77cdc4a9dc27354cdaa6ace9a4bc76de5eb7341c1200e6a06b056"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/v27_authority_docs/SELF_AUDIT_V27.md",
+      "canonical_bytes": 3696,
+      "hash_mode": "canonical-lf",
+      "sha256": "44dd7e02f0f4111e653d72c39893b8a7ccbf60e48de57c19c18298816726cf4f"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/historical/v27_authority_docs/STATUS_V27.json",
+      "canonical_bytes": 621,
+      "hash_mode": "canonical-lf",
+      "sha256": "75602d15cd5b5275fd5f0e46c3101680d1ec7cc6fb18d3c63deeaf94f8a571a5"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/MANIFEST_NOTE.md",
+      "canonical_bytes": 278,
+      "hash_mode": "canonical-lf",
+      "sha256": "fb0af2c2a7eb4530622e63ba0f388a90be3fd80d3063ab8e1e7688ed53ae5f66"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/new_docs/00_AUTHORITY_BANNER_V28.md",
+      "canonical_bytes": 2158,
+      "hash_mode": "canonical-lf",
+      "sha256": "9882d133565a294b4b8022a1b98018593856d5eeb9e28980fc6ff222898af563"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/new_docs/01_RAW_CELL_PARITY_EDGE_BUDGET_V28.md",
+      "canonical_bytes": 4314,
+      "hash_mode": "canonical-lf",
+      "sha256": "26bcda3570208f95c74bd50637f624fe77dc9fbc677f85771fc8f521e8554825"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/new_docs/02_CELL_RESPONSE_AND_BRIDGE_RECURRENCE_V28.md",
+      "canonical_bytes": 8250,
+      "hash_mode": "canonical-lf",
+      "sha256": "8e4f92459d07809093ac8d2364595599b91fd09c740d80e6ce5c83a40db96e62"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/new_docs/03_REPEATED_CELL_CYCLE_EXACTIFICATION_V28.md",
+      "canonical_bytes": 4475,
+      "hash_mode": "canonical-lf",
+      "sha256": "7964e33f9a69b2d8a5a0e4dfeac3c7933c95897950b82dd7cd49cce5ec01f053"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/new_docs/04_STATE_CARRYING_COMMON_RETURN_AND_NEUTRAL_GAIN_V28.md",
+      "canonical_bytes": 8332,
+      "hash_mode": "canonical-lf",
+      "sha256": "a4a53db493ac0dfd3d19ac3f5b69fa2850f20821046c8277e3735837053eab4e"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/new_docs/05_EXPONENTIAL_LOWER_ASSEMBLY_V28.md",
+      "canonical_bytes": 3226,
+      "hash_mode": "canonical-lf",
+      "sha256": "92534d7783bc86ac62eae71129429f1aab1284068ee20b9c1a8d993580588525"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/new_docs/06_P4_RECEIPTS_AND_SYMBOL_HYGIENE_V28.md",
+      "canonical_bytes": 3462,
+      "hash_mode": "canonical-lf",
+      "sha256": "f7c829e149879d789122a4c81e68683febf2c1b1efa5f5a898711ce86af2be37"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/new_docs/07_CORRECTION_AND_SUPERSESSION_LEDGER_V28.md",
+      "canonical_bytes": 3154,
+      "hash_mode": "canonical-lf",
+      "sha256": "df14a654da18b7a47c54d9052f307b2c3ce18c6eac7e591d4be62b3f2d3253af"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/new_docs/08_P5_ARTIFACT_CLOSEOUT_V28.md",
+      "canonical_bytes": 1089,
+      "hash_mode": "canonical-lf",
+      "sha256": "399f688d854f85a7f804d66006b7d62f942d124cc1990d4dfc06ffbf75d97671"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/new_docs/09_TERMINAL_EVENT_TABLE_V28.md",
+      "canonical_bytes": 844,
+      "hash_mode": "canonical-lf",
+      "sha256": "926676a2c0d325df89111eccdfbd9138e56182e31acf4724f9d527d792d31fd5"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/new_docs/10_LOWER_BOUND_PROMOTION_AUDIT_COMMISSION_V28.md",
+      "canonical_bytes": 3525,
+      "hash_mode": "canonical-lf",
+      "sha256": "56cd64360b186f5f32e804a244c812398bae9bcaa07f560037c163008a874690"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/README.md",
+      "canonical_bytes": 1810,
+      "hash_mode": "canonical-lf",
+      "sha256": "0a48aac95bf0030a84c90cec168963026f684f21d1348d4cbf3cbfba41362a4d"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/STATUS_AMENDMENT_2026-08.md",
+      "canonical_bytes": 1014,
+      "hash_mode": "canonical-lf",
+      "sha256": "a52e302e38de44fbf9cb037897206876925d5bce20472f5992c70285dd30eac3"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/STATUS_V28.json",
+      "canonical_bytes": 759,
+      "hash_mode": "canonical-lf",
+      "sha256": "bc1327072dfb340a3da14bfcb4c91d4ea78f437de3c044d5e44efbb18e28d069"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/upper_artifacts/ENDPOINT_PROJECTOR_TRUNCATION_CONSTRUCTION.md",
+      "canonical_bytes": 1242,
+      "hash_mode": "canonical-lf",
+      "sha256": "d486e3e33f83afcea41a68b1930f2548e399eaa584e371c7ea03dc619df054bb"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/upper_artifacts/RHO_Q_IDENTIFICATION.md",
+      "canonical_bytes": 1049,
+      "hash_mode": "canonical-lf",
+      "sha256": "de1225d967136547e2e39b56bca4700acefaf98b919dc5a3b47d4dc056a96a89"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/upper_artifacts/UPPER_SCOPE_NOTE.md",
+      "canonical_bytes": 790,
+      "hash_mode": "canonical-lf",
+      "sha256": "43dce48636ba7ac2d55e59fc5c7e49d2138aa0f249a376aee4ebc14276a1cb82"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/V27_TO_V28_LIVE_DIFF.patch",
+      "canonical_bytes": 66062,
+      "hash_mode": "canonical-lf",
+      "sha256": "89d054a20bfbc6f30643a46c4af477cfeb71eb305e6939c7ea387939c27ad1fa"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/lower-v28_1-bundle/V28_TO_V28.1_DIFF.patch",
+      "canonical_bytes": 28419,
+      "hash_mode": "canonical-lf",
+      "sha256": "9657fe7a7ea41dd6e208a1718174546cdeea00354baa6d20c526274fc11ac45a"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/README.md",
+      "canonical_bytes": 2967,
+      "hash_mode": "canonical-lf",
+      "sha256": "482caa9dc599c1cf8ce346f130e209265241d1ef36ad51e3660d5e52eeb406e0"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/artifacts/commission_history/CESARO_MULTIPLIER_IDENTIFICATION_TWO_ROUTES.md",
+      "canonical_bytes": 6316,
+      "hash_mode": "canonical-lf",
+      "sha256": "27d866721498ee2825c3627639413d5bbea8b9065e72333dd1bd101f646dc1c9"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/artifacts/commission_history/guard_kappa_bracket_retrodiction.RETIRED.py",
+      "canonical_bytes": 2708,
+      "hash_mode": "canonical-lf",
+      "sha256": "1840f882c4aab4bf90d92f29a68de710ea84d6d7c71cbbc7e27f49d5099527be"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/artifacts/GUARD_DATA_PROVENANCE.md",
+      "canonical_bytes": 897,
+      "hash_mode": "canonical-lf",
+      "sha256": "d2a3fc6df01ab09ba8eb6496e9684a760f6dda49fd7203e3bfe22ef26f41c716"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/artifacts/small_d_demoted/DISCLOSURE.md",
+      "canonical_bytes": 1792,
+      "hash_mode": "canonical-lf",
+      "sha256": "c127db8dedb0d14713e1bdfc7f9e6470af78027322c2faaa6ca47fd3f7d277cc"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/artifacts/small_d_demoted/guard_small_d_endpoint_projector_truncation.py",
+      "canonical_bytes": 13906,
+      "hash_mode": "canonical-lf",
+      "sha256": "fac058521825454704b7dc3535d09f6e78c269b8dd18ed98aadb23793865e884"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/artifacts/small_d_demoted/GUARD_SMALL_D_STDOUT.txt",
+      "canonical_bytes": 4888,
+      "hash_mode": "canonical-lf",
+      "sha256": "f9c70b674e6986b804caa2afd70013b883e31252338ab0403f9061f6c2cbc0e6"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/artifacts/small_d_demoted/small_d_endpoint_projector_truncation_results.json",
+      "canonical_bytes": 4888,
+      "hash_mode": "canonical-lf",
+      "sha256": "f9c70b674e6986b804caa2afd70013b883e31252338ab0403f9061f6c2cbc0e6"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/artifacts/small_d_demoted/SMALL_D_TRUNCATION_SOURCE_DATA.json",
+      "canonical_bytes": 2123,
+      "hash_mode": "canonical-lf",
+      "sha256": "8bae1ff9900b560b466725a37df5e6b6395e7d51bb61accc38c0ad45d3573b67"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/AXIOMCHECK_RECEIPT_2026-08-07.txt",
+      "canonical_bytes": 2818,
+      "hash_mode": "canonical-lf",
+      "sha256": "f32cda5f182a400cac5c0fa985fd1d527ee321aba0ee4eb1f913aadb7be4f90c"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/DISTORTED_RETURN_QUARTER_CEILING_CURRENT_V22.KILL_PROVENANCE.md",
+      "canonical_bytes": 4501,
+      "hash_mode": "canonical-lf",
+      "sha256": "40b61f5539bd0a04896add0ee7f02306a0d6023319c4e7b7c15202a6bb24faa6"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/G1_PROMOTED_UPPER_RECEIPT.EXTRACT.SUPERSEDED.md",
+      "canonical_bytes": 2363,
+      "hash_mode": "canonical-lf",
+      "sha256": "82db0fded51f5cfc12b3eaefcd3874f7cd5f2de71dea00dc4c7e021b780303b2"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/SELF_AUDIT_U1.SUPERSEDED.md",
+      "canonical_bytes": 2750,
+      "hash_mode": "canonical-lf",
+      "sha256": "4257667d961046f22aa582b2b02dfce619adb7a2faddd5a91958febcaf6fdf8d"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/SOURCE_HASH_ANCHORS.json",
+      "canonical_bytes": 1284,
+      "hash_mode": "canonical-lf",
+      "sha256": "0c05238d50a5d14f8408ec358b9c1fcc4664c308ab7cdb37792ee14694574f44"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/TRUNCATION_UPPER_RECEIPT.EXTRACT.SUPERSEDED.md",
+      "canonical_bytes": 1786,
+      "hash_mode": "canonical-lf",
+      "sha256": "de6a4e6971fd3977f391c77c1ff290c615f59966700e76f92f377c2b800a17fe"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/U1_GUARD_RESULTS.HISTORICAL.txt",
+      "canonical_bytes": 11592,
+      "hash_mode": "canonical-lf",
+      "sha256": "1e78f8fcceaa85e7853baf3b0b8de204fa245910396e8d74d7360426e5529416"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/VERDICT-U1-AUDITOR-1-PROOF.md",
+      "canonical_bytes": 3509,
+      "hash_mode": "canonical-lf",
+      "sha256": "935e2759cc97b8619c945dea05dec81c1146439ce6af102535b29b05ddb968e0"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/VERDICT-U1-AUDITOR-2-INTEGRITY.md",
+      "canonical_bytes": 4090,
+      "hash_mode": "canonical-lf",
+      "sha256": "08a173aeaad05d32274ccc20668750b7d7f6b9929eaa4b125dd326b20c1559c8"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/VERDICT-U1E-AUDITOR-1-PROOF.md",
+      "canonical_bytes": 19831,
+      "hash_mode": "canonical-lf",
+      "sha256": "9ec4fa7037037d281bfa4f45f989dd18b8dcde9c44a6fce6f11f1510e9f536e5"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/VERDICT-U1E-AUDITOR-2-INTEGRITY.md",
+      "canonical_bytes": 4026,
+      "hash_mode": "canonical-lf",
+      "sha256": "9531639cba4317f890ff7bc6003f79a37664a020b11d68082010f625ef13f0cc"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/VERDICT-U1F-AUDITOR-1-PROOF.md",
+      "canonical_bytes": 22277,
+      "hash_mode": "canonical-lf",
+      "sha256": "a17078a2c2080e5a6030875af738795702865bb538b77a9269506b5846837905"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/VERDICT-U1F-AUDITOR-2-INTEGRITY.md",
+      "canonical_bytes": 12376,
+      "hash_mode": "canonical-lf",
+      "sha256": "45d538674f9e10f3c85e485867ee02838d14df6efcd17d39619052ef121219cb"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/VERDICT-U1G-AUDITOR-1-PROOF.md",
+      "canonical_bytes": 28428,
+      "hash_mode": "canonical-lf",
+      "sha256": "0be8c2c8e4ec10fc1ce4844aee6c03635b1bf2f14cc3d2101fe2d756243e1ac0"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/VERDICT-U1G-AUDITOR-2-INTEGRITY.md",
+      "canonical_bytes": 10260,
+      "hash_mode": "canonical-lf",
+      "sha256": "cb8a307c889f065483f0cf6cc900f0a012c59f33e56f171ca783657e83d9ac3f"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/VERDICT-U1G-R5-AUDITOR-1-PROOF.md",
+      "canonical_bytes": 14943,
+      "hash_mode": "canonical-lf",
+      "sha256": "2de02ed1a3974357f60ee1c35bd78274a1ec85264300f20689507ff5130355a2"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/VERDICT-U1G-R5-AUDITOR-2-INTEGRITY.md",
+      "canonical_bytes": 10799,
+      "hash_mode": "canonical-lf",
+      "sha256": "12f23a6f6b703a37edede4ac4b3f41cdbf53f05afb87e73a25d1a59b0c24585f"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/VERDICT-U1G-R6-AUDITOR-1-PROOF-DELTA.md",
+      "canonical_bytes": 7315,
+      "hash_mode": "canonical-lf",
+      "sha256": "709c2531d5acd03b79495496347fb108fa02ea4b0ebd51d72699f19ffa50dd5c"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/VERDICT-U1G-R6-AUDITOR-2-INTEGRITY.md",
+      "canonical_bytes": 9783,
+      "hash_mode": "canonical-lf",
+      "sha256": "a7aad621ea2110029548f3044a3263651afdb665f7c879ca5574a8c387e5e4c0"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/VERDICT-U1G-R7-AUDITOR-1-PROOF-DELTA.md",
+      "canonical_bytes": 3656,
+      "hash_mode": "canonical-lf",
+      "sha256": "82059419c97f1d3459da625d3c4a5e116d85d1125d48d0eb1cf7c5478de5f8d0"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/VERDICT-U1G-R7-AUDITOR-2-INTEGRITY.md",
+      "canonical_bytes": 8723,
+      "hash_mode": "canonical-lf",
+      "sha256": "24c5cb4d4e7b971b8b05938280bf0aef60acb78d6ecb6811fb1bfd0ad2ba1d0e"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_diff/V28_1_LEDGER_TO_U1_LEDGER.patch",
+      "canonical_bytes": 1964,
+      "hash_mode": "canonical-lf",
+      "sha256": "018cdfa0db45975193121262ae6cfbc8794d7139244307e224984c5cc642cc53"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/authority/00_AUTHORITY_BANNER_U1E.md",
+      "canonical_bytes": 11012,
+      "hash_mode": "canonical-lf",
+      "sha256": "08e4c2e3a4193cff5a81d521bee607e0958b421c7602b2e0527e2c73a0a8ae95"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/authority/PROMOTED_LOWER_RATE_RECEIPT.md",
+      "canonical_bytes": 737,
+      "hash_mode": "canonical-lf",
+      "sha256": "78633708b12d6d1852e951e79bd25e44879a29b3a2237e5b78fe6dc311fe25ff"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/authority/U1E_CORRECTION_LEDGER.md",
+      "canonical_bytes": 25549,
+      "hash_mode": "canonical-lf",
+      "sha256": "6b144416a5a695d41a9cf8a4139967276ebe5905a982c9ff6a99df8661c476f0"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/authority/U1E_DEPENDENCY_GRAPH.md",
+      "canonical_bytes": 4630,
+      "hash_mode": "canonical-lf",
+      "sha256": "f69c85259fc1518543101477a3035ddec42a2408da9f96ddb6515e87104936f8"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/dependencies/08_ENDPOINT_RECEIPT_PROVENANCE.md",
+      "canonical_bytes": 3058,
+      "hash_mode": "canonical-lf",
+      "sha256": "ec4ffeadf81a33553dfd3a215c2ed4cacaf72f0d226be1068838344183dd4fdc"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/dependencies/ENDPOINT_CESARO_CARRIER_RATE_THEOREM.md",
+      "canonical_bytes": 9330,
+      "hash_mode": "canonical-lf",
+      "sha256": "1ed80a067d3afcbd04c58a8792f1c98ae83aff0d783947496f81b7db4b4472b4"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/dependencies/ENDPOINT_PROJECTOR_TRUNCATION_CONSTRUCTION.md",
+      "canonical_bytes": 1242,
+      "hash_mode": "canonical-lf",
+      "sha256": "d486e3e33f83afcea41a68b1930f2548e399eaa584e371c7ea03dc619df054bb"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/dependencies/G1_ENDPOINT_POSITIVITY_AND_CONDITIONAL_ENDPOINT_PRODUCT.md",
+      "canonical_bytes": 4042,
+      "hash_mode": "canonical-lf",
+      "sha256": "6dbb19c7d00a9fd5d0535b896ab6565f226ce6ae6fab381ea6f71a5f3fa9598a"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/dependencies/RANK_COSTED_PACKET_IDENTITY_AND_ALTERNATING_TRUNCATION.md",
+      "canonical_bytes": 11508,
+      "hash_mode": "canonical-lf",
+      "sha256": "908874eed6fe673c80a4c4ac1481809f62b8f6d716556de34228b8fb4b07c8f9"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/dependencies/REFLECTION_DUAL_UPPER_ENVELOPE_AND_ADAPTIVE_TAILS.md",
+      "canonical_bytes": 7610,
+      "hash_mode": "canonical-lf",
+      "sha256": "589bb7d804984910cff814a3a7513a94634ce37b8c0e7f2cc49a281bb8b0f216"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/dependencies/THEOREM_S_SIGNED_PUBLIC_STATEMENT.md",
+      "canonical_bytes": 1407,
+      "hash_mode": "canonical-lf",
+      "sha256": "7978e7caad9ce9f5c1f47404ca0f183c15a8b378a005b3fc696eeedafe4ae900"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/guards/guard_a8_strictness.py",
+      "canonical_bytes": 8291,
+      "hash_mode": "canonical-lf",
+      "sha256": "3d67a7c0d9020c3d877161e21c78298a79faa9e19418d802e4ba6e78b5e5f323"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/guards/guard_live_upper_authority_hygiene.py",
+      "canonical_bytes": 26706,
+      "hash_mode": "canonical-lf",
+      "sha256": "2fbb1aa6ebfc0f9f8a0a7d10f1a275c90edaac5b25ff1ee7ee6fbd1e16084319"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/guards/guard_second_engine_projectors.py",
+      "canonical_bytes": 9241,
+      "hash_mode": "canonical-lf",
+      "sha256": "1172cb65d69585045ce9cfe3fbd3c667c102fb2a016b6b3a30df9bb112e5f342"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/guards/guard_selftest_injection.py",
+      "canonical_bytes": 24356,
+      "hash_mode": "canonical-lf",
+      "sha256": "87b269896ece9cb6fb9e1ecf121c1358932f8d975661be8a6c04a4ae48444810"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/MANIFEST_U1E_SHA256.json",
+      "canonical_bytes": 6700,
+      "hash_mode": "canonical-lf",
+      "sha256": "218a53c3c03a9b20742d3dc6196f344988181e84378911da225ac5e50a9cccf6"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/PROMOTION_RECORD.md",
+      "canonical_bytes": 1984,
+      "hash_mode": "canonical-lf",
+      "sha256": "09831cd8fc8087907084c7de2a460a4660c4046068c262a95faf168369d046eb"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/proof/CONSTRUCTIVE_LOG_UPPER_BOUND_U1.md",
+      "canonical_bytes": 10595,
+      "hash_mode": "canonical-lf",
+      "sha256": "41f17a7af7cb0461f65e85e04809630720c9a6cf04d5ef0ffb539d4bfb3dae4f"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/proof/CONSTRUCTIVE_LOG_UPPER_BOUND_U1E.md",
+      "canonical_bytes": 13952,
+      "hash_mode": "canonical-lf",
+      "sha256": "7543260538b2db71a1aeb17c5a9c539bb207b9df0617cf8119e88dc1a43f1e5e"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/proof/CONSTRUCTIVE_LOG_UPPER_BOUND_U1F.md",
+      "canonical_bytes": 11012,
+      "hash_mode": "canonical-lf",
+      "sha256": "0749e35d138ba2b3a00cce8337a6fdab8e9426f5b3d523468432318dede460b8"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/proof/CONSTRUCTIVE_LOG_UPPER_BOUND_U1G.md",
+      "canonical_bytes": 26886,
+      "hash_mode": "canonical-lf",
+      "sha256": "c89fec599669f1c1f40dc25145870e2ece757f435d3efc29c03d9f38a16f0826"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/README.md",
+      "canonical_bytes": 4388,
+      "hash_mode": "canonical-lf",
+      "sha256": "a3f9a5c0a7f42e446f058ebf936a890b9d719d60a991e9a97a5502fc99e0b282"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/STATUS_U1E.json",
+      "canonical_bytes": 6072,
+      "hash_mode": "canonical-lf",
+      "sha256": "f7648447b5ec12e82293db7abc9946b363539fef01f70ca6d55ca93b8a7b5423"
+    },
+    {
+      "path": "certificate/production/rate-theta-log/upper-U1G-bundle/U1_TO_U1E_CHANGES.md",
+      "canonical_bytes": 11492,
+      "hash_mode": "canonical-lf",
+      "sha256": "6413752185532cf55744493d4e8019f0c85e8e5f6094227d94e419f1174d68c8"
+    },
+    {
       "path": "certificate/production/theorem-N-four-receipts-at-S/artifacts/convex_envelope_algebraic_guards.py",
       "canonical_bytes": 956,
       "hash_mode": "canonical-lf",
@@ -2907,6 +3735,12 @@
       "sha256": "41808e85d69fd29f00406bb92a570df95a6235f3fd729b5afc8409161afe81cd"
     },
     {
+      "path": "certificate/production/theorem-S-spatial-attainment-at-S/AMENDMENT-2026-08-07-SECTIONS-6-9.md",
+      "canonical_bytes": 4367,
+      "hash_mode": "canonical-lf",
+      "sha256": "f4b7b42e04e401dddb778952e286efbb4d8a2cb0296f57e6f9c770a9554dd26c"
+    },
+    {
       "path": "certificate/production/theorem-S-spatial-attainment-at-S/artifacts/theorem_S_algebraic_smoke_tests.py",
       "canonical_bytes": 1155,
       "hash_mode": "canonical-lf",
@@ -2932,15 +3766,15 @@
     },
     {
       "path": "certificate/production/theorem-S-spatial-attainment-at-S/CURRENT_S_SPATIAL_ATTAINMENT_THEOREM.md",
-      "canonical_bytes": 17707,
+      "canonical_bytes": 18196,
       "hash_mode": "canonical-lf",
-      "sha256": "15e444229b80173986cc5c68fcff42d464e8b08d0c8f60d3a624ec86f40d66b0"
+      "sha256": "090aecebe7d5c1502bbe93961e40821179cc9a4c592de841316a33a4871a4141"
     },
     {
       "path": "certificate/production/theorem-S-spatial-attainment-at-S/MANIFEST_SHA256.txt",
-      "canonical_bytes": 1216,
+      "canonical_bytes": 2013,
       "hash_mode": "canonical-lf",
-      "sha256": "093da37f07e0d6b3dcc87388df20224ba40a8fe39b8e973e6977e15382317043"
+      "sha256": "99cd5a64fc5761d2da1b99ecde88d2f4fd94172508f50c22a529bf31728d20ee"
     },
     {
       "path": "certificate/production/theorem-S-spatial-attainment-at-S/README.md",
@@ -2961,6 +3795,36 @@
       "sha256": "25c1b4f3db0553eaa19d64ea0d9497ee61297b863ed5a4bc886d31fbb0a06c59"
     },
     {
+      "path": "certificate/production/theorem-S-spatial-attainment-at-S/sections-6-9-expansion/U2-OBLIGATIONS-AND-COMMISSION.md",
+      "canonical_bytes": 9225,
+      "hash_mode": "canonical-lf",
+      "sha256": "11b93bf6e678bb2dd35350aa89b1c2b74db631de6ae1ea1616d0c12c66686236"
+    },
+    {
+      "path": "certificate/production/theorem-S-spatial-attainment-at-S/sections-6-9-expansion/U2-SECTIONS-6-9-EXPANDED.md",
+      "canonical_bytes": 143917,
+      "hash_mode": "canonical-lf",
+      "sha256": "55fc013319874261e4576ce94cc030bafaeb1aab6ba44e526c629db5f3e33059"
+    },
+    {
+      "path": "certificate/production/theorem-S-spatial-attainment-at-S/sections-6-9-expansion/VERDICT-U2-AUDITOR-1-PROOF.md",
+      "canonical_bytes": 7278,
+      "hash_mode": "canonical-lf",
+      "sha256": "000d1a81100a994eb5c2f8726ff40709a2e926573671cc2db57d4cdb32f6a9b2"
+    },
+    {
+      "path": "certificate/production/theorem-S-spatial-attainment-at-S/sections-6-9-expansion/VERDICT-U2-AUDITOR-2-ADVERSARY.md",
+      "canonical_bytes": 9371,
+      "hash_mode": "canonical-lf",
+      "sha256": "ba6598ac15b524844b86b2acada5bd547ae8a8ed40241d940ee69dd0ca3a7cd4"
+    },
+    {
+      "path": "certificate/production/theorem-S-spatial-attainment-at-S/sections-6-9-expansion/VERDICT-U2-R2-DIFF-REGATE.md",
+      "canonical_bytes": 5160,
+      "hash_mode": "canonical-lf",
+      "sha256": "710a81776445b6883246fc1c03523d7ae96c8c14a79d0028c740b3fca76785f3"
+    },
+    {
       "path": "certificate/production/theorem-S-spatial-attainment-at-S/SPRINT_1206_SCOPE_AND_RETIREMENT_NOTICE.md",
       "canonical_bytes": 708,
       "hash_mode": "canonical-lf",
@@ -2968,9 +3832,9 @@
     },
     {
       "path": "certificate/production/theorem-S-spatial-attainment-at-S/STATUS.json",
-      "canonical_bytes": 611,
+      "canonical_bytes": 1253,
       "hash_mode": "canonical-lf",
-      "sha256": "cbe06ac945103896073f7bac574d035ed08a94911789325679c75aa872051364"
+      "sha256": "f07821d781bf6092bfc454c95c9722a3ba7514eb0d2ecf4242100ec0f62134c1"
     },
     {
       "path": "certificate/production/theorem-S-spatial-attainment-at-S/THEOREM_S_SIGNED_PUBLIC_STATEMENT.md",
@@ -3028,9 +3892,9 @@
     },
     {
       "path": "certificate/release/v13_claim_contract_verify.py",
-      "canonical_bytes": 4922,
+      "canonical_bytes": 5219,
       "hash_mode": "canonical-lf",
-      "sha256": "edff949fc0768bc203c373d01612cb3c8c293e1b6e6b4fb88989b0a706bd1dc2"
+      "sha256": "5c7373b1e069ce14584a2795f812c49b53f65d8155ae6df976cd6b45cfbba14a"
     },
     {
       "path": "certificate/release/verify_release.py",
@@ -3076,15 +3940,15 @@
     },
     {
       "path": "paper/DIMENSION-GAP-STATUS.md",
-      "canonical_bytes": 7603,
+      "canonical_bytes": 8094,
       "hash_mode": "canonical-lf",
-      "sha256": "4f0272163cd4de977bb30633e699d8b3e985d4d86e355a601c409ff9dabb48a5"
+      "sha256": "59f1bb9e8a74576eb980493ec1dfa49cfe9c349eb246b58e021cc5ea6b48f707"
     },
     {
       "path": "paper/MANUSCRIPT.md",
-      "canonical_bytes": 26620,
+      "canonical_bytes": 28253,
       "hash_mode": "canonical-lf",
-      "sha256": "d46ceb586d59b33533e06e161cd74843a28964ddd5c3f73693f465beb2a15b05"
+      "sha256": "b77b8d3b77f021d0c6a02b553c14f87cdb6e286d0ffbad7dc05b55f5a3a0e245"
     },
     {
       "path": "paper/manuscript.pdf",
@@ -3094,9 +3958,9 @@
     },
     {
       "path": "paper/manuscript.tex",
-      "canonical_bytes": 25308,
+      "canonical_bytes": 26736,
       "hash_mode": "canonical-lf",
-      "sha256": "b795f10422bdd39083af75a53a3391e3220078932b75ecdcf0a5cfe05165663a"
+      "sha256": "4fc7c579edf3d316b61f60be0d794f7a31ffa6e9e04d334076c2dbea38b2f3b0"
     },
     {
       "path": "paper/NORMALIZATION-CONCORDANCE.md",
@@ -3121,6 +3985,12 @@
       "canonical_bytes": 2754,
       "hash_mode": "canonical-lf",
       "sha256": "488968cac5dc2335d9bdbfef6a1e2f7f9b20459f3a226e034469a53a0146dff3"
+    },
+    {
+      "path": "paper/rate-companion.tex",
+      "canonical_bytes": 31353,
+      "hash_mode": "canonical-lf",
+      "sha256": "d020ccf9fcde7669907193b8819372dffb10dd53eb59c88c802fc270f2e98d5b"
     },
     {
       "path": "paper/references.bib",
@@ -3190,9 +4060,9 @@
     },
     {
       "path": "paper/resolution.tex",
-      "canonical_bytes": 34061,
+      "canonical_bytes": 34506,
       "hash_mode": "canonical-lf",
-      "sha256": "22dd511d3a20325ba7147c75a41d903d6cba4aa71085ee241e3b81dea147bdd9"
+      "sha256": "4552f113faf4c6dfd13dbbb40942047f1bffc88e078f9c7bd0940dc8e653d3a9"
     },
     {
       "path": "paper/TECHNICAL-SUPPLEMENT.md",
@@ -3214,9 +4084,9 @@
     },
     {
       "path": "README.md",
-      "canonical_bytes": 18539,
+      "canonical_bytes": 22520,
       "hash_mode": "canonical-lf",
-      "sha256": "a64a72685589384bef233e73a00a3b76902b74222b5dd291684e3570f52b80a8"
+      "sha256": "d210b1f0117534f3c12d18cda2046249574b01ff993d9b68d324b3c54cb32493"
     },
     {
       "path": "requirements.txt",
@@ -3279,6 +4149,6 @@
       "sha256": "a405ef962afdfc120b5c3f2901ca58e95e2ab3963e642fa73dc2022f2d280cfa"
     }
   ],
-  "file_count": 546,
+  "file_count": 691,
   "scope": "Custody manifest for selected published files. Analytic dependency closure is checked separately by verify_release.py and is not inferred from file enumeration alone."
 }

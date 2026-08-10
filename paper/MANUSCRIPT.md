@@ -776,6 +776,31 @@ resolution of the canonical three-setting binary functional. The truncation
 rate is an achievability statement, not a device-independent dimension lower
 bound. Quantitative necessity remains open.
 
+**Scope amendment (2026-08, append-only).** The last sentence above is
+retained as the historical scope statement of this release. It is superseded
+for the rate: the companion note (`paper/rate-companion.tex`, v3.3.0), with
+the certified bundles under `certificate/production/rate-theta-log/`, proves
+the two-sided statement D(eps) = Theta(log(1/eps)) at local-dimension scope,
+the lower half holding for every d-dimensional strategy with existential
+constants (S − S_d ≥ c(1+d)^(−K) e^(−Cd)). Quantitative necessity is no
+longer open in that certified scope.
+
+**Remark (non-uniqueness, explicit).** The disclaimer of uniqueness above is not
+merely a hedge: non-uniqueness is exhibited. The two relabelings
+
+```
+(A1, A2, B3) -> (A2, A1, I - B3)     and     (A3, B1, B2) -> (I - A3, B2, B1)
+```
+
+each preserve the (I_{3322}) functional identically, and they commute. Applied
+to the positive wall they generate **at least four distinct fixed-label exact
+maximizing correlations**. This bounds the maximizing set from below and no
+more: it does **not** show that four points exhaust the maximizing face, does
+not establish uniqueness modulo Bell relabeling, and does not establish
+local-isometry self-testing or dual uniqueness. It is recorded so that the
+uniqueness disclaimer is read as a demonstrated fact about this functional
+rather than as an unexamined caution.
+
 **Computational disclosure.** Frontier language models were used extensively
 for proof discovery, implementation, adversarial auditing, and editorial
 assistance. The named author assumes responsibility for the release. Every
