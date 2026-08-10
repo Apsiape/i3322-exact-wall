@@ -22,9 +22,32 @@ Mutations:
   I8  new unlisted authority/*.md file added       -> must FAIL
 
 Writes nothing outside the system temp directory; prints stdout only.
+
+INSTRUMENT REPAIR 2026-08-10 (public-window defect G6 — portability,
+no injection weakened or dropped):
+  * This file carried the author's PRIVATE absolute paths, and drove
+    injection I16 by TEXT-SUBSTITUTING those literals inside a copy of
+    the hygiene guard's source. Both are gone. The guard now takes its
+    external sealed-source root from I3322_PRIVATE_SOURCE_ROOT, so
+    I16 repoints it by ENVIRONMENT instead of by source surgery.
+  * I16's external mirror is now built from the bundle's OWN shipped
+    dependency copies and archived verdicts rather than read out of
+    the private tree, so the whole self-test is self-contained and
+    runs identically for an external cloner. (The mirror is a faithful
+    stand-in precisely because H7/H10 assert that the shipped copies
+    are byte-identical to the sealed originals; if the guard's
+    expected relative layout ever drifts from the layout built here,
+    the I16a control run fails loudly.)
+  * run_guard()/run_strictness() now hand the child a controlled
+    environment: I3322_PUBLIC_ROOT points at this repository (the
+    sandbox copy sits outside the tree, so the guard's walk-up cannot
+    find the repo root by itself), and I3322_PRIVATE_SOURCE_ROOT is
+    REMOVED unless a test supplies one — so every run below is
+    deterministic regardless of the caller's shell.
 """
 
 from __future__ import annotations
+import os
 import shutil
 import subprocess
 import sys
@@ -32,6 +55,47 @@ import tempfile
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent.parent
+
+# The public repo root, located the same way the hygiene guard locates
+# it (repair 2026-08-10 — no machine-local literal).
+_PUBROOT_SIGNATURE = ("certificate/release/verify_release.py",
+                      "lean/I3322Kernel")
+
+
+def _resolve_pubroot() -> Path:
+    for cand in Path(__file__).resolve().parents:
+        if all((cand / rel).exists() for rel in _PUBROOT_SIGNATURE):
+            return cand
+    print("SELFTEST FAIL: cannot locate the public repository root")
+    sys.exit(1)
+
+
+PUBROOT = _resolve_pubroot()
+
+# I16's external mirror layout — must match the hygiene guard's
+# PRIVATE_SOURCE_RELPATHS / blind-batch relative paths. Drift shows up
+# as an I16a control failure.
+_V281_REL = "I3322_V28_1_LOWER_BOUND_FINAL_FIXES_BUNDLE_2026-08-06"
+_CONS_REL = "i3322_consolidated_promotion_bundle"
+_BLIND_REL = "fsd/papers/i3322-exact-wall/blind-batch-v19"
+MIRROR_FROM_DEPENDENCIES = {
+    "ENDPOINT_CESARO_CARRIER_RATE_THEOREM.md":
+        f"{_V281_REL}/dependencies",
+    "G1_ENDPOINT_POSITIVITY_AND_CONDITIONAL_ENDPOINT_PRODUCT.md":
+        f"{_V281_REL}/dependencies",
+    "RANK_COSTED_PACKET_IDENTITY_AND_ALTERNATING_TRUNCATION.md":
+        f"{_V281_REL}/dependencies",
+    "REFLECTION_DUAL_UPPER_ENVELOPE_AND_ADAPTIVE_TAILS.md":
+        f"{_V281_REL}/dependencies",
+    "ENDPOINT_PROJECTOR_TRUNCATION_CONSTRUCTION.md":
+        f"{_V281_REL}/upper_artifacts",
+    "08_ENDPOINT_RECEIPT_PROVENANCE.md":
+        f"{_CONS_REL}/new_docs",
+}
+MIRROR_FROM_AUDIT_ARCHIVE = ["VERDICT-U1-AUDITOR-1-PROOF.md",
+                             "VERDICT-U1-AUDITOR-2-INTEGRITY.md",
+                             "VERDICT-U1E-AUDITOR-2-INTEGRITY.md"]
+
 SURFACE = ["proof", "authority", "dependencies", "guards",
            "artifacts", "audit_archive", "audit_diff",
            "STATUS_U1E.json", "MANIFEST_U1E_SHA256.json",
@@ -55,11 +119,33 @@ def make_copy(tmp: Path) -> Path:
     return root
 
 
-def run_guard(root: Path) -> int:
+def child_env(private_root: Path | None = None) -> dict:
+    """Deterministic environment for a sandboxed guard run."""
+    env = dict(os.environ)
+    env["I3322_PUBLIC_ROOT"] = str(PUBROOT)
+    env.pop("I3322_PRIVATE_SOURCE_ROOT", None)
+    if private_root is not None:
+        env["I3322_PRIVATE_SOURCE_ROOT"] = str(private_root)
+    return env
+
+
+def build_external_mirror(root: Path, ext: Path) -> None:
+    """Self-contained stand-in for the sealed external source tree."""
+    for name, rel in MIRROR_FROM_DEPENDENCIES.items():
+        dest = ext / rel
+        dest.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(root / "dependencies" / name, dest / name)
+    blind = ext / _BLIND_REL
+    blind.mkdir(parents=True, exist_ok=True)
+    for name in MIRROR_FROM_AUDIT_ARCHIVE:
+        shutil.copy2(root / "audit_archive" / name, blind / name)
+
+
+def run_guard(root: Path, private_root: Path | None = None) -> int:
     r = subprocess.run(
         [sys.executable,
          str(root / "guards" / "guard_live_upper_authority_hygiene.py")],
-        capture_output=True, text=True)
+        capture_output=True, text=True, env=child_env(private_root))
     return r.returncode
 
 
@@ -67,7 +153,7 @@ def run_strictness(root: Path) -> int:
     r = subprocess.run(
         [sys.executable,
          str(root / "guards" / "guard_a8_strictness.py")],
-        capture_output=True, text=True)
+        capture_output=True, text=True, env=child_env())
     return r.returncode
 
 
@@ -312,44 +398,24 @@ def main() -> None:
         # I16 (round-5 N1c): lockstep tamper of a dependency copy AND
         # its external sealed source, with proof digest and manifest
         # re-pinned. Only the pinned digest registry (H7) catches it.
-        # We mirror the external sources into temp and repoint the
-        # copied guard, so the REAL sealed bundles are never touched.
+        # The external sources are MIRRORED into temp and the guard is
+        # repointed at the mirror via I3322_PRIVATE_SOURCE_ROOT (repair
+        # 2026-08-10 — previously a source-text substitution of private
+        # path literals), so the REAL sealed bundles are never touched.
         root = make_copy(tmp)
         ext = tmp / "ext_mirror"
-        (ext / "dependencies").mkdir(parents=True)
-        (ext / "upper_artifacts").mkdir()
-        (ext / "new_docs").mkdir()
-        gpath = root / "guards" / "guard_live_upper_authority_hygiene.py"
-        gtext = gpath.read_text(encoding="utf-8")
-        v281 = ("C:\\Infanox\\finite-contact"
-                "\\I3322_V28_1_LOWER_BOUND_FINAL_FIXES_BUNDLE_2026-08-06")
-        cons = ("C:\\Infanox\\finite-contact"
-                "\\i3322_consolidated_promotion_bundle")
-        for sub_dir in ("dependencies", "upper_artifacts"):
-            src_dir = Path(v281) / sub_dir
-            for f in src_dir.glob("*.md"):
-                shutil.copy2(f, ext / sub_dir / f.name)
-        shutil.copy2(Path(cons) / "new_docs" /
-                     "08_ENDPOINT_RECEIPT_PROVENANCE.md",
-                     ext / "new_docs")
-        gtext2 = gtext.replace(
-            'r"C:\\Infanox\\finite-contact"\n             '
-            'r"\\I3322_V28_1_LOWER_BOUND_FINAL_FIXES_BUNDLE_2026-08-06"',
-            repr(str(ext))).replace(
-            'r"C:\\Infanox\\finite-contact"\n             '
-            'r"\\i3322_consolidated_promotion_bundle"', repr(str(ext)))
-        assert gtext2 != gtext, "selftest setup: path repoint failed"
-        gpath.write_text(gtext2, encoding="utf-8")
+        build_external_mirror(root, ext)
         rehash_manifest(root)
         expect("I16a external-mirror control (repoint only)",
-               run_guard(root), want_fail=False)
+               run_guard(root, private_root=ext), want_fail=False)
         # now the lockstep tamper + full internal re-pin
         import hashlib as _h2
         dep2 = root / "dependencies" / "08_ENDPOINT_RECEIPT_PROVENANCE.md"
         old_d = _h2.sha256(dep2.read_bytes()).hexdigest()
         payload = "\n## Addendum: the coefficient is asserted live.\n"
-        for tgt in (dep2, ext / "new_docs" /
-                    "08_ENDPOINT_RECEIPT_PROVENANCE.md"):
+        for tgt in (dep2, ext / MIRROR_FROM_DEPENDENCIES[
+                "08_ENDPOINT_RECEIPT_PROVENANCE.md"] /
+                "08_ENDPOINT_RECEIPT_PROVENANCE.md"):
             tgt.write_text(tgt.read_text(encoding="utf-8") + payload,
                            encoding="utf-8")
         new_d = _h2.sha256(dep2.read_bytes()).hexdigest()
@@ -358,7 +424,29 @@ def main() -> None:
             old_d, new_d), encoding="utf-8")
         rehash_manifest(root)
         expect("I16 lockstep copy+source tamper, full re-pin (N1c)",
-               run_guard(root), want_fail=True)
+               run_guard(root, private_root=ext), want_fail=True)
+        shutil.rmtree(root)
+        shutil.rmtree(ext)
+
+        # I16b (repair 2026-08-10): H10's EXTERNAL half is now
+        # machine-local, so prove the IN-REPO half is fail-capable on
+        # its own — rewrite an archived verdict, re-pin the manifest,
+        # and repoint the blind-batch mirror at the tampered copy so
+        # the external comparison would agree. Only the pinned
+        # VERDICT_CUSTODY_DIGESTS registry can fire.
+        root = make_copy(tmp)
+        ext = tmp / "ext_mirror"
+        build_external_mirror(root, ext)
+        av0 = (root / "audit_archive" /
+               "VERDICT-U1E-AUDITOR-2-INTEGRITY.md")
+        av0.write_text(av0.read_text(encoding="utf-8").replace(
+            "DENIED", "PROMOTE"), encoding="utf-8")
+        shutil.copy2(av0, ext / _BLIND_REL /
+                     "VERDICT-U1E-AUDITOR-2-INTEGRITY.md")
+        rehash_manifest(root)
+        expect("I16b verdict rewrite with the external original "
+               "rewritten in lockstep (H10 in-repo registry)",
+               run_guard(root, private_root=ext), want_fail=True)
         shutil.rmtree(root)
         shutil.rmtree(ext)
 

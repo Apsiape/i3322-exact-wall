@@ -1,3 +1,5 @@
+> Redaction note (2026-08-10): absolute private-workspace paths neutralized to [private-workspace]; no other byte changed.
+
 # VERDICT — U1G round-5 gate, PROOF surface — **PROMOTE**
 
 PROVENANCE: delivered in-session by the round-5 proof-surface auditor
@@ -10,7 +12,7 @@ adjudicating track, verbatim. HTML entity escapes restored.
 # VERDICT — U1G ROUND-5 PROMOTION GATE, PROOF SURFACE
 
 **Auditor:** independence layer, refutation-first, default FAIL.
-**Frozen subject:** `C:\Infanox\finite-contact\U1E\` at commit `5c3e9c8b`.
+**Frozen subject:** `[private-workspace]\U1E\` at commit `5c3e9c8b`.
 **Method:** every hash recomputed from primary sources (commit blobs and sealed originals, never from the manifest); every constant re-derived from scratch at 140 digits plus exact rationals, never read from a guard; all four guards run by me; the Lean receipt re-verified against the committed blobs rather than trusted; six fault injections of my own design.
 
 ## FREEZE VERIFICATION — the item that killed round 4

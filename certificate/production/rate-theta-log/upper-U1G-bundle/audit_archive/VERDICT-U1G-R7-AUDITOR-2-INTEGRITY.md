@@ -1,3 +1,5 @@
+> Redaction note (2026-08-10): absolute private-workspace paths neutralized to [private-workspace]; no other byte changed.
+
 # VERDICT — U1G round-7 gate, INTEGRITY surface — **PROMOTE**
 
 PROVENANCE: delivered in-session by the round-7 integrity-surface
@@ -11,7 +13,7 @@ escapes restored.
 # VERDICT — U1G round-7 gate, INTEGRITY surface
 
 **Auditor:** independence layer, refutation-first, default FAIL.
-**Subject:** `C:\Infanox\finite-contact\U1E\` at frozen commit `bf47d0b88f7b0172d7173a1c48658e16447328ab`, U1E tree `27c441445eca5d5ef1fd2728eeb0ef9b3c4ae1f7`.
+**Subject:** `[private-workspace]\U1E\` at frozen commit `bf47d0b88f7b0172d7173a1c48658e16447328ab`, U1E tree `27c441445eca5d5ef1fd2728eeb0ef9b3c4ae1f7`.
 **Method:** full 50-file manifest recomputation at open and close; all four guards and the shipped selftest executed; all four RB content digests recomputed independently from raw text; the constant chain re-derived at 80 digits; the seven round-6 blockers attacked by injection in a sandbox copy (the real bundle and the real sealed external bundles were never written); **30 injections of my own construction**; and the a52d24aa tree reconstructed from git to test the round-6 transcriptions' authenticity.
 
 ## FREEZE: **HELD.** Third clean round in a row.

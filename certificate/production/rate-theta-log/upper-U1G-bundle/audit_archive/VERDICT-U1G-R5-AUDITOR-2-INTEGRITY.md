@@ -1,3 +1,5 @@
+> Redaction note (2026-08-10): absolute private-workspace paths neutralized to [private-workspace]; no other byte changed.
+
 # VERDICT — U1G round-5 gate, INTEGRITY surface — DENIED
 
 PROVENANCE: delivered in-session by the round-5 integrity-surface
@@ -10,7 +12,7 @@ the adjudicating track, verbatim. HTML entity escapes restored.
 # VERDICT — U1G round-5 gate, INTEGRITY surface
 
 **Auditor:** independence layer, refutation-first, default FAIL.
-**Subject:** `C:\Infanox\finite-contact\U1E\` at frozen git commit `5c3e9c8b`.
+**Subject:** `[private-workspace]\U1E\` at frozen git commit `5c3e9c8b`.
 **Method:** full manifest recomputation at audit open and close; all four live guards and the 23-case self-test executed; every anchor recomputed from the public trees and from git blobs, never read from a manifest; the round-4 injection set re-run; **9 new injections of my own design** executed in an isolated sandbox. The ledger's narrative was used only as a list of claims to attack.
 
 ## FREEZE: **HELD.** (First clean round.)

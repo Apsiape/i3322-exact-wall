@@ -1,3 +1,5 @@
+> Redaction note (2026-08-10): absolute private-workspace paths neutralized to [private-workspace]; no other byte changed.
+
 # VERDICT — U1G round-6 gate, INTEGRITY surface — DENIED (narrowest)
 
 PROVENANCE: delivered in-session by the round-6 integrity-surface
@@ -11,7 +13,7 @@ transcript). HTML entity escapes restored.
 # VERDICT — U1G round-6 gate, INTEGRITY surface
 
 **Auditor:** independence layer, refutation-first, default FAIL.
-**Subject:** `C:\Infanox\finite-contact\U1E\` at frozen commit `a52d24aa02ecb502d0b4a714860a88f8c3243c34`, U1E tree `f2d0b06ed2e95a47861bdea46cbb91634ef64d02`.
+**Subject:** `[private-workspace]\U1E\` at frozen commit `a52d24aa02ecb502d0b4a714860a88f8c3243c34`, U1E tree `f2d0b06ed2e95a47861bdea46cbb91634ef64d02`.
 **Method:** full 48-file manifest recomputation at open and close; all four live guards and the shipped selftest executed; all four RB block digests recomputed independently from source text; the six round-5 blockers attacked by injection in a sandbox copy (real bundle and real sealed external bundles never written); **19 injections of my own construction** beyond the shipped set.
 
 ## FREEZE: **HELD.** Second clean round in a row. HEAD, U1E tree hash, git status identical at open and close; manifest 48/48 exact at both times; no __pycache__ anywhere, so the disclosed *.pyc exclusion is vacuous on the frozen content.

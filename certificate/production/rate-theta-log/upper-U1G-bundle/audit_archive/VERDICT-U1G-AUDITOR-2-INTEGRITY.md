@@ -1,3 +1,5 @@
+> Redaction note (2026-08-10): absolute private-workspace paths neutralized to [private-workspace]; no other byte changed.
+
 # VERDICT — U1G round-4 gate, INTEGRITY surface
 
 PROVENANCE: delivered in-session by the round-4 integrity-surface
@@ -10,7 +12,7 @@ HTML entity escapes from the delivery wrapper (&lt; &gt;) restored to < >.
 # VERDICT — U1G round-4 gate, INTEGRITY surface
 
 **Auditor:** independent refutation-first integrity surface, round 4.
-**Bundle:** `C:\Infanox\finite-contact\U1E\` at git commit `260e2ffd`.
+**Bundle:** `[private-workspace]\U1E\` at git commit `260e2ffd`.
 **Method:** every property re-derived from the filesystem, git, and the public trees; every hash recomputed; the Lean `AxiomCheck` replayed; 13 injections of my own design executed. The ledger's narrative was used only as a list of claims to attack.
 
 # GATE VERDICT: **DENIED**

@@ -1,3 +1,5 @@
+> Redaction note (2026-08-10): absolute private-workspace paths neutralized to [private-workspace]; no other byte changed.
+
 # VERDICT — U1G round-6 gate, PROOF surface (DELTA AUDIT) — **PROMOTE CARRIES**
 
 PROVENANCE: delivered in-session by the round-6 proof-surface delta
@@ -12,7 +14,7 @@ escapes restored.
 # VERDICT — U1G ROUND-6 PROMOTION GATE, PROOF SURFACE (DELTA AUDIT)
 
 **Auditor:** independence layer, refutation-first, default FAIL.
-**Frozen subject:** `C:\Infanox\finite-contact\U1E\` at commit `a52d24aa`.
+**Frozen subject:** `[private-workspace]\U1E\` at commit `a52d24aa`.
 **Predecessor:** round-5 proof surface, **PROMOTE** at `5c3e9c8b`.
 **Method:** every constant re-derived from `S_LO` at 140 dps + exact rationals; all 13 anchors recomputed from primary sources (working tree + `git cat-file` blobs); all four guards run; 19 mutations of my own design executed in a scratchpad sandbox copy; the real bundle never written.
 

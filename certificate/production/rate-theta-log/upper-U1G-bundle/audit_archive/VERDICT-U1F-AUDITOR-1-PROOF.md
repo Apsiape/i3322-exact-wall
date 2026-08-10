@@ -1,3 +1,5 @@
+> Redaction note (2026-08-10): absolute private-workspace paths neutralized to [private-workspace]; no other byte changed.
+
 # VERDICT — U1F round-3 gate, PROOF surface
 
 PROVENANCE: delivered in-session by the round-3 proof-surface auditor
@@ -113,7 +115,7 @@ That is a **comparison of two rational literals**. It does **not** establish `S 
 ### R3 — ROUND-2 BLOCKER DISCHARGE
 
 **F21 [BLOCKER] — the round-2 proof verdict does not exist.**
-`VERDICT-U1E-AUDITOR-1-PROOF.md` is absent from its stated path, absent from anywhere under `C:\Infanox\finite-contact`, and absent from every git commit (only `VERDICT-U1-AUDITOR-1-PROOF.md` (round 1) and `VERDICT-U1E-AUDITOR-2-INTEGRITY.md` (round 2, integrity) exist).
+`VERDICT-U1E-AUDITOR-1-PROOF.md` is absent from its stated path, absent from anywhere under `[private-workspace]`, and absent from every git commit (only `VERDICT-U1-AUDITOR-1-PROOF.md` (round 1) and `VERDICT-U1E-AUDITOR-2-INTEGRITY.md` (round 2, integrity) exist).
 
 The **only** surviving record of findings A1–A19 is the **audited party's own paraphrase** in `U1E_CORRECTION_LEDGER.md` entries 10–15. That paraphrase references A1, A2, A4, A5, A7, A8, A10, A13, A16, A17, A18, A19 — **twelve of nineteen**. **A3, A6, A9, A11, A12, A14, A15 have no discharge record anywhere in the repository.** The phrase "residual blockers 1–6" appears **nowhere** in the repo.
 

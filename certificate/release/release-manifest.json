@@ -3424,9 +3424,9 @@
     },
     {
       "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/VERDICT-U1F-AUDITOR-1-PROOF.md",
-      "canonical_bytes": 22277,
+      "canonical_bytes": 22395,
       "hash_mode": "canonical-lf",
-      "sha256": "a17078a2c2080e5a6030875af738795702865bb538b77a9269506b5846837905"
+      "sha256": "8d960005aa996d3f6b0a55d569d885a11e82f95957e09444e76a3ad860a3235e"
     },
     {
       "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/VERDICT-U1F-AUDITOR-2-INTEGRITY.md",
@@ -3442,33 +3442,33 @@
     },
     {
       "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/VERDICT-U1G-AUDITOR-2-INTEGRITY.md",
-      "canonical_bytes": 10260,
+      "canonical_bytes": 10378,
       "hash_mode": "canonical-lf",
-      "sha256": "cb8a307c889f065483f0cf6cc900f0a012c59f33e56f171ca783657e83d9ac3f"
+      "sha256": "4828ef8fe31789d472f38bac4d0b584e3a4550967738b809ffa7343eec046c54"
     },
     {
       "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/VERDICT-U1G-R5-AUDITOR-1-PROOF.md",
-      "canonical_bytes": 14943,
+      "canonical_bytes": 15061,
       "hash_mode": "canonical-lf",
-      "sha256": "2de02ed1a3974357f60ee1c35bd78274a1ec85264300f20689507ff5130355a2"
+      "sha256": "564ce3606c227c563f3643a815249fdd052fe4673c1499c2bde29d9f62f22344"
     },
     {
       "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/VERDICT-U1G-R5-AUDITOR-2-INTEGRITY.md",
-      "canonical_bytes": 10799,
+      "canonical_bytes": 10917,
       "hash_mode": "canonical-lf",
-      "sha256": "12f23a6f6b703a37edede4ac4b3f41cdbf53f05afb87e73a25d1a59b0c24585f"
+      "sha256": "e791313bbcd67359f7493a2ba401c35cb97ade491c1251f0e54e0ce558e3c209"
     },
     {
       "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/VERDICT-U1G-R6-AUDITOR-1-PROOF-DELTA.md",
-      "canonical_bytes": 7315,
+      "canonical_bytes": 7433,
       "hash_mode": "canonical-lf",
-      "sha256": "709c2531d5acd03b79495496347fb108fa02ea4b0ebd51d72699f19ffa50dd5c"
+      "sha256": "9bdbf7649e9c461bd65b9ad1163b65aa59630a29fedaf1b9dfefd864ffb5b7ea"
     },
     {
       "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/VERDICT-U1G-R6-AUDITOR-2-INTEGRITY.md",
-      "canonical_bytes": 9783,
+      "canonical_bytes": 9901,
       "hash_mode": "canonical-lf",
-      "sha256": "a7aad621ea2110029548f3044a3263651afdb665f7c879ca5574a8c387e5e4c0"
+      "sha256": "ca855cc40cf7197c03940b5fb2eabc29246ce63b497a1bec1fa4928e0aa291f5"
     },
     {
       "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/VERDICT-U1G-R7-AUDITOR-1-PROOF-DELTA.md",
@@ -3478,9 +3478,9 @@
     },
     {
       "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_archive/VERDICT-U1G-R7-AUDITOR-2-INTEGRITY.md",
-      "canonical_bytes": 8723,
+      "canonical_bytes": 8841,
       "hash_mode": "canonical-lf",
-      "sha256": "24c5cb4d4e7b971b8b05938280bf0aef60acb78d6ecb6811fb1bfd0ad2ba1d0e"
+      "sha256": "5d674247f21d8a9c1b7737b21984c278d6edeb7581e538daa58a8d7b629b21b0"
     },
     {
       "path": "certificate/production/rate-theta-log/upper-U1G-bundle/audit_diff/V28_1_LEDGER_TO_U1_LEDGER.patch",
@@ -3562,9 +3562,9 @@
     },
     {
       "path": "certificate/production/rate-theta-log/upper-U1G-bundle/guards/guard_live_upper_authority_hygiene.py",
-      "canonical_bytes": 26706,
+      "canonical_bytes": 33518,
       "hash_mode": "canonical-lf",
-      "sha256": "2fbb1aa6ebfc0f9f8a0a7d10f1a275c90edaac5b25ff1ee7ee6fbd1e16084319"
+      "sha256": "8c72ad3136f5352a57a85f846a2ae40091872cb31ba445ee6f90783dbf28c4e6"
     },
     {
       "path": "certificate/production/rate-theta-log/upper-U1G-bundle/guards/guard_second_engine_projectors.py",
@@ -3574,15 +3574,15 @@
     },
     {
       "path": "certificate/production/rate-theta-log/upper-U1G-bundle/guards/guard_selftest_injection.py",
-      "canonical_bytes": 24356,
+      "canonical_bytes": 28406,
       "hash_mode": "canonical-lf",
-      "sha256": "87b269896ece9cb6fb9e1ecf121c1358932f8d975661be8a6c04a4ae48444810"
+      "sha256": "d88df97a1556eeab98718a4629c835768b1a075728191bc33d424b171c80f9f9"
     },
     {
       "path": "certificate/production/rate-theta-log/upper-U1G-bundle/MANIFEST_U1E_SHA256.json",
       "canonical_bytes": 6700,
       "hash_mode": "canonical-lf",
-      "sha256": "218a53c3c03a9b20742d3dc6196f344988181e84378911da225ac5e50a9cccf6"
+      "sha256": "789de4ba080ade07eee14609a4b9cdb53ebd79f986e4a091c3b14abb7e106a10"
     },
     {
       "path": "certificate/production/rate-theta-log/upper-U1G-bundle/PROMOTION_RECORD.md",
