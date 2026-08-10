@@ -3898,9 +3898,9 @@
     },
     {
       "path": "certificate/release/verify_release.py",
-      "canonical_bytes": 38631,
+      "canonical_bytes": 38865,
       "hash_mode": "canonical-lf",
-      "sha256": "fcc6659cf0e92e478def456e3501a43d7c48c97c795475b62e1f5859fea8064c"
+      "sha256": "01651b135ca00ccfd1fa2584bf0b821d614619703b8cb8f6ceeb6348e4488ba3"
     },
     {
       "path": "CITATION.cff",
