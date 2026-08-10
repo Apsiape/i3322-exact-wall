@@ -153,6 +153,9 @@ REPLAY = [
 PRIVATE_MARKERS = [
     b"C:" + b"\\Infanox\\" + b"finite-contact",
     b"C:" + b"/Infanox/" + b"finite-contact",
+    # 2026-08-10: bare fragment added after an archived verdict carried the
+    # workspace name without the drive prefix and slipped this gate.
+    b"finite" + b"-contact",
     b"fsd" + b"/frontier/",
     b"fsd" + b"\\frontier\\",
     b"." + b"codex",
