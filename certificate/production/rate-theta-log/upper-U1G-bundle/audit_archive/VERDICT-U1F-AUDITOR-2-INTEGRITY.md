@@ -1,5 +1,7 @@
 # VERDICT — U1F round-3 gate, INTEGRITY surface
 
+> Redaction note (2026-08-10): a private-workspace path fragment neutralized to [private-workspace]; no other byte changed.
+
 PROVENANCE: delivered in-session by the round-3 integrity-surface
 auditor (background agent "U1F round-3 gate: integrity") on 2026-08-07
 and written to disk the same day by the adjudicating track, verbatim.
@@ -53,7 +55,7 @@ Round-3 bundle U1E/U1F. Default FAIL sustained. Substantial real repair happened
 
 **10. [MODERATE] F-7 stamp is path-only.** `git diff` reports **R100** (100% identical content) for both relocations. Zero content change → **no SUPERSEDED stamp, no "gate DENIED" note** in either document. The self-audit still reads as a clean PASS table certifying the killed route: `| rho_pm = 1 excluded | PASS | explicit rho <=> q_ret orientation + neutral quarter ceiling |`. Same defect in `proof/CONSTRUCTIVE_LOG_UPPER_BOUND_U1.md`, whose in-file header still says `**Status:** **UPPER-ONLY PROMOTION CANDIDATE.**`
 
-**11. [MODERATE] Unanchored authority under a [P] root.** Sealed G1 §1 sources its two load-bearing endpoint reserves to `08_ENDPOINT_RECEIPT_PROVENANCE.md` — absent from U1E, absent from the sealed v28.1 bundle, absent from `SOURCE_HASH_ANCHORS.json` (it exists at `finite-contact/i3322_consolidated_promotion_bundle/new_docs/`, unanchored). The extract deletes even its name. Original-F-6 class, one level down.
+**11. [MODERATE] Unanchored authority under a [P] root.** Sealed G1 §1 sources its two load-bearing endpoint reserves to `08_ENDPOINT_RECEIPT_PROVENANCE.md` — absent from U1E, absent from the sealed v28.1 bundle, absent from `SOURCE_HASH_ANCHORS.json` (it exists at `[private-workspace]/i3322_consolidated_promotion_bundle/new_docs/`, unanchored). The extract deletes even its name. Original-F-6 class, one level down.
 
 **12. [MINOR] F-13 claim false as worded.** STATUS: "no guard output file is manifest-sealed; guards print to stdout only." `artifacts/small_d_demoted/GUARD_SMALL_D_STDOUT.txt` and `small_d_endpoint_projector_truncation_results.json` are manifest-sealed guard outputs, and the shipped demoted guard writes the JSON (line 386). Substantively harmless — I confirmed the write is now idempotent and breaks no seal.
 
