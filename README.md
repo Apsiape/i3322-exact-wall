@@ -11,8 +11,9 @@ dimension-complexity theorem (its Section 5), proof architecture, claim
 boundaries, correction history, and full citations. (The rate result
 previously lived in a standalone companion note; it was folded into the
 paper on 2026-08-25, and the standalone note is preserved in the frozen
-v3.3.0 release. `paper/rate-companion.tex` is now a supersession
-notice.)
+v3.3.0 release, DOI
+[`10.5281/zenodo.21843326`](https://doi.org/10.5281/zenodo.21843326).
+`paper/rate-companion.tex` is now a supersession notice.)
 
 **What is proved.** Let `S` denote the common I3322 quantum value,
 certified unconditionally in the window
@@ -330,6 +331,13 @@ count. No minimality is claimed over scenarios with larger output alphabets.
 
 Archival identifiers: concept DOI
 [`10.5281/zenodo.21782008`](https://doi.org/10.5281/zenodo.21782008); frozen
+`v3.3.0` (rate mint, standalone companion note) DOI
+[`10.5281/zenodo.21843326`](https://doi.org/10.5281/zenodo.21843326) —
+note: this record's Zenodo metadata carries the stale version string
+"3.2.3" from the `.zenodo.json` shipped at tag time, but its archive file
+is `i3322-exact-wall-v3.3.0.zip` and it is the v3.3.0 release of record;
+frozen `v3.2.3` DOI
+[`10.5281/zenodo.21826916`](https://doi.org/10.5281/zenodo.21826916); frozen
 `v2.0.0` correction-release DOI
 [`10.5281/zenodo.21799071`](https://doi.org/10.5281/zenodo.21799071); frozen
 `v1.2.0` DOI

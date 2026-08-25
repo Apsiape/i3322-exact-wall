@@ -3988,15 +3988,15 @@
     },
     {
       "path": "paper/rate-companion.pdf",
-      "canonical_bytes": 129326,
+      "canonical_bytes": 130209,
       "hash_mode": "raw",
-      "sha256": "a8ecf3efb18e25336fa8453de1f3359179c4eeb095db73b577545568b700c83a"
+      "sha256": "26d71e13c12b6ef1c0775232af3e92583fffa05fdb90763c06e15378aa3bc5ef"
     },
     {
       "path": "paper/rate-companion.tex",
-      "canonical_bytes": 1821,
+      "canonical_bytes": 2022,
       "hash_mode": "canonical-lf",
-      "sha256": "4cef7d50a82856d717851327164ac7b4ed7b924346d59c8e8f6ef7cfe9a58678"
+      "sha256": "385c4a29540270b49f32b4b547772cfef1a7e01aeaa585e6b0aa0948dc86a727"
     },
     {
       "path": "paper/references.bib",
@@ -4060,9 +4060,9 @@
     },
     {
       "path": "paper/RELEASE-NOTES-v4.0.0.md",
-      "canonical_bytes": 5865,
+      "canonical_bytes": 6597,
       "hash_mode": "canonical-lf",
-      "sha256": "992cd2240a92dbd6855d4cefa932015829f8fdd7b31bd0f3ed17cd510273e495"
+      "sha256": "b2a540d93231a14314c8a42803c070f635658a089e13b386c13482b2f584da92"
     },
     {
       "path": "paper/resolution.pdf",
@@ -4096,9 +4096,9 @@
     },
     {
       "path": "README.md",
-      "canonical_bytes": 24679,
+      "canonical_bytes": 25191,
       "hash_mode": "canonical-lf",
-      "sha256": "516388056797deb8656d96465a740acc784881807c127f9eb7be82c3bf26a453"
+      "sha256": "285845281042d54f812cd8b9f3e0d456cf207edc17d90a8422b880c6cb9ccb76"
     },
     {
       "path": "requirements.txt",

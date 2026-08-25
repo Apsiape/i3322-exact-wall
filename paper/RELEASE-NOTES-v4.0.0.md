@@ -105,3 +105,15 @@ The version DOI for this release is minted at publication; the paper's
 Data availability section and `[MINT AT RELEASE]` placeholders are
 filled at that step. The concept DOI (10.5281/zenodo.21782008) resolves
 to the latest release and is not the citation object.
+
+Recorded during this cycle: the v3.3.0 release (the rate mint, carrying
+the standalone companion note) does have an archived version DOI,
+`10.5281/zenodo.21843326` (2026-08-07) — the webhook fired at tag time,
+but the record's metadata was read from the then-stale `.zenodo.json`
+and therefore carries the version string "3.2.3" and the pre-rate title
+and description, with no mention of the Theta(log) result it contains.
+Its archive file is `i3322-exact-wall-v3.3.0.zip`, and it is the v3.3.0
+release of record. Correcting the record's version string requires the
+owner's Zenodo login (edit metadata on record 21843326); the metadata
+staleness itself is the failure mode this release's `.zenodo.json`
+update closes for v4.0.0.
