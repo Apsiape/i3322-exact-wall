@@ -43,6 +43,6 @@ preferred-citation:
       family-names: Douglas
       orcid: "https://orcid.org/0009-0007-4708-3252"
   year: 2026
-  # version DOI of the release of record — replace at mint; the concept
-  # DOI below resolves to the latest release and is not the citation object
-  doi: 10.5281/zenodo.21782008
+  # version DOI of the v4.0.0 release of record; the top-level doi field
+  # is the concept DOI, which resolves to the latest release
+  doi: 10.5281/zenodo.22099128

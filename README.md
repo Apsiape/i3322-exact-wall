@@ -331,6 +331,8 @@ count. No minimality is claimed over scenarios with larger output alphabets.
 
 Archival identifiers: concept DOI
 [`10.5281/zenodo.21782008`](https://doi.org/10.5281/zenodo.21782008); frozen
+`v4.0.0` (release of record, merged paper) DOI
+[`10.5281/zenodo.22099128`](https://doi.org/10.5281/zenodo.22099128); frozen
 `v3.3.0` (rate mint, standalone companion note) DOI
 [`10.5281/zenodo.21843326`](https://doi.org/10.5281/zenodo.21843326) —
 note: this record's Zenodo metadata carries the stale version string

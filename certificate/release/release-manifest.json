@@ -3904,9 +3904,9 @@
     },
     {
       "path": "CITATION.cff",
-      "canonical_bytes": 1989,
+      "canonical_bytes": 1973,
       "hash_mode": "canonical-lf",
-      "sha256": "0ad8d0ca3535f35a442ef15b87c61a37c83abc4e2b2a04aed59fb28ae59d4cbe"
+      "sha256": "48f6592c16d3ba6faeb91ac34d366a1f6b699db578d95d28e78953cb409af3a3"
     },
     {
       "path": "LICENSE.md",
@@ -4066,15 +4066,15 @@
     },
     {
       "path": "paper/resolution.pdf",
-      "canonical_bytes": 406713,
+      "canonical_bytes": 404977,
       "hash_mode": "raw",
-      "sha256": "8567a36a10a3daf1a65eb4e67982704346ac63aa1609a484d48e09e6dc4d25b5"
+      "sha256": "8820bbecccce4af3d421a9a466d539cf0195a3fd7a6b72554925af6aff4774d8"
     },
     {
       "path": "paper/resolution.tex",
-      "canonical_bytes": 66815,
+      "canonical_bytes": 66898,
       "hash_mode": "canonical-lf",
-      "sha256": "67d4ebeb0b462d8c092223ac87db72c1e905361665cb38f91aa09eb726fd7284"
+      "sha256": "53669705dcfb6e6041cabec4915af94992156b8014c8917c762911e2a347770d"
     },
     {
       "path": "paper/TECHNICAL-SUPPLEMENT.md",
@@ -4096,9 +4096,9 @@
     },
     {
       "path": "README.md",
-      "canonical_bytes": 25191,
+      "canonical_bytes": 25315,
       "hash_mode": "canonical-lf",
-      "sha256": "285845281042d54f812cd8b9f3e0d456cf207edc17d90a8422b880c6cb9ccb76"
+      "sha256": "07936893170f4dc1cf9d932b43d8238cac764ec649abefe2d7e9a79dcc5c4538"
     },
     {
       "path": "requirements.txt",
