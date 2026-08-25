@@ -22,9 +22,9 @@
     },
     {
       "path": ".zenodo.json",
-      "canonical_bytes": 1555,
+      "canonical_bytes": 2240,
       "hash_mode": "canonical-lf",
-      "sha256": "5497328336f0c3181dc5568636b91f69491cb18a50fcfc7ddfcd423dbcc30053"
+      "sha256": "7882ac564aa1381d8f159b2db5cdf028b75b7836adb9449eb1173f431a06dc9e"
     },
     {
       "path": "certificate/independent/amplitude-gap/amplitude-gap-concordance.json",
@@ -3304,9 +3304,9 @@
     },
     {
       "path": "certificate/production/rate-theta-log/README.md",
-      "canonical_bytes": 2967,
+      "canonical_bytes": 3192,
       "hash_mode": "canonical-lf",
-      "sha256": "482caa9dc599c1cf8ce346f130e209265241d1ef36ad51e3660d5e52eeb406e0"
+      "sha256": "7e5afff2458ea5a7377833210a9a9b6765e6ff75ad83270722c6c5f7f51cd08e"
     },
     {
       "path": "certificate/production/rate-theta-log/upper-U1G-bundle/artifacts/commission_history/CESARO_MULTIPLIER_IDENTIFICATION_TWO_ROUTES.md",
@@ -3904,9 +3904,9 @@
     },
     {
       "path": "CITATION.cff",
-      "canonical_bytes": 1591,
+      "canonical_bytes": 1989,
       "hash_mode": "canonical-lf",
-      "sha256": "2fa6022c21938845beb6cd63b0238d321c1a66d3956ff9bf65a995f480dff488"
+      "sha256": "0ad8d0ca3535f35a442ef15b87c61a37c83abc4e2b2a04aed59fb28ae59d4cbe"
     },
     {
       "path": "LICENSE.md",
@@ -3940,15 +3940,15 @@
     },
     {
       "path": "paper/DIMENSION-GAP-STATUS.md",
-      "canonical_bytes": 8094,
+      "canonical_bytes": 8420,
       "hash_mode": "canonical-lf",
-      "sha256": "59f1bb9e8a74576eb980493ec1dfa49cfe9c349eb246b58e021cc5ea6b48f707"
+      "sha256": "4b4fbc74197a32d680b4d1b57d5b71097611c5ac3649a9e2f0c915219b3a81c7"
     },
     {
       "path": "paper/MANUSCRIPT.md",
-      "canonical_bytes": 28253,
+      "canonical_bytes": 28467,
       "hash_mode": "canonical-lf",
-      "sha256": "b77b8d3b77f021d0c6a02b553c14f87cdb6e286d0ffbad7dc05b55f5a3a0e245"
+      "sha256": "25af89c6a008fc4cc9e3903ad98cae149e05dc792c59d9d6f86167c2e1438d6b"
     },
     {
       "path": "paper/manuscript.pdf",
@@ -3976,9 +3976,9 @@
     },
     {
       "path": "paper/PRIORITY-AUDIT.md",
-      "canonical_bytes": 8439,
+      "canonical_bytes": 11481,
       "hash_mode": "canonical-lf",
-      "sha256": "1dd17bc3935b75bda374744bb16f102253bb8019715e02d64a3400c374a5172d"
+      "sha256": "6ead52d4c56952258f807f4956682ac002677ae6daf6257df25f49ffd576448b"
     },
     {
       "path": "paper/PRIORITY-SEARCH-RECEIPT.json",
@@ -3987,10 +3987,16 @@
       "sha256": "488968cac5dc2335d9bdbfef6a1e2f7f9b20459f3a226e034469a53a0146dff3"
     },
     {
+      "path": "paper/rate-companion.pdf",
+      "canonical_bytes": 129326,
+      "hash_mode": "raw",
+      "sha256": "a8ecf3efb18e25336fa8453de1f3359179c4eeb095db73b577545568b700c83a"
+    },
+    {
       "path": "paper/rate-companion.tex",
-      "canonical_bytes": 31354,
+      "canonical_bytes": 1821,
       "hash_mode": "canonical-lf",
-      "sha256": "4a7092f36f0778a519358c9fd2c71fe679c2ba4092241f60519b5e1776094fa5"
+      "sha256": "4cef7d50a82856d717851327164ac7b4ed7b924346d59c8e8f6ef7cfe9a58678"
     },
     {
       "path": "paper/references.bib",
@@ -4053,16 +4059,22 @@
       "sha256": "8a4217ba7d3ce3db0b14f4e8ad3aef64b7f67c6b607602f36e8cde9490dc5d24"
     },
     {
+      "path": "paper/RELEASE-NOTES-v4.0.0.md",
+      "canonical_bytes": 5865,
+      "hash_mode": "canonical-lf",
+      "sha256": "992cd2240a92dbd6855d4cefa932015829f8fdd7b31bd0f3ed17cd510273e495"
+    },
+    {
       "path": "paper/resolution.pdf",
-      "canonical_bytes": 300492,
+      "canonical_bytes": 406713,
       "hash_mode": "raw",
-      "sha256": "5b7dacba92e9714e1a47145b2a31c5ba6a53dc9cd5021d353d5ffbcb5f422216"
+      "sha256": "8567a36a10a3daf1a65eb4e67982704346ac63aa1609a484d48e09e6dc4d25b5"
     },
     {
       "path": "paper/resolution.tex",
-      "canonical_bytes": 34512,
+      "canonical_bytes": 66815,
       "hash_mode": "canonical-lf",
-      "sha256": "cd26442d7268690f692f56b41c9380496b40d87456ecbbad19c990d7bbe37b5f"
+      "sha256": "67d4ebeb0b462d8c092223ac87db72c1e905361665cb38f91aa09eb726fd7284"
     },
     {
       "path": "paper/TECHNICAL-SUPPLEMENT.md",
@@ -4084,9 +4096,9 @@
     },
     {
       "path": "README.md",
-      "canonical_bytes": 22520,
+      "canonical_bytes": 24679,
       "hash_mode": "canonical-lf",
-      "sha256": "d210b1f0117534f3c12d18cda2046249574b01ff993d9b68d324b3c54cb32493"
+      "sha256": "516388056797deb8656d96465a740acc784881807c127f9eb7be82c3bf26a453"
     },
     {
       "path": "requirements.txt",
@@ -4149,6 +4161,6 @@
       "sha256": "a405ef962afdfc120b5c3f2901ca58e95e2ab3963e642fa73dc2022f2d280cfa"
     }
   ],
-  "file_count": 691,
+  "file_count": 693,
   "scope": "Custody manifest for selected published files. Analytic dependency closure is checked separately by verify_release.py and is not inferred from file enumeration alone."
 }

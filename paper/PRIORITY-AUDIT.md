@@ -150,3 +150,58 @@ posting, but it is not a validity gate and is not required for the theorem.
 
 Manuscripts should say "we prove," credit the earlier exact enclosure, and
 avoid "first proof" language.
+
+## Amendment 2026-08-25 — the dimension-complexity (rate) claim
+
+Appended per the standing instruction of the sprint-1206 priority note
+("the existing public priority audit must be amended rather than
+replaced"). This amendment covers the claim, now Section 5 of
+`paper/resolution.tex`, that `D(eps) = Theta(log(1/eps))` is the first
+proved two-sided dimension-complexity characterization for a witness of
+the `C_q` (strictly inside) `C_qs` separation.
+
+**Receipt-scope disclosure.** The shipped
+`PRIORITY-SEARCH-RECEIPT.json` is dated 2026-08-04 and predates the
+Theta(log) promotion (2026-08-07); its ten queries are I3322-specific
+and do not range over the class the rate claim quantifies over. The
+promotion record's reference to a "novelty sweep at the lower-bound
+promotion" has no shipped artifact. The searches supporting the rate
+claim as now worded are: (a) the K5 paper's Section 7 sweep
+(repository `Apsiape/k5-dimension-law`, v1.0.0, 2026-08-10: the DPP
+citing set, ~110 records, zero rate hits — recorded there as
+supporting evidence, not a reproducible check), and (b) a 2026-08-24/25
+primary-source read of the two nearest rivals, below.
+
+**Nearest prior art, adjudicated.**
+
+1. Coladangelo, arXiv:1904.02350 (Quantum 4, 282): its abstract states
+   an explicit dimension *lower* bound, `2^{Omega(eps^{-1/8})}`, for an
+   embezzlement-based game — a witness of the *distinct* separation
+   `C_qs != C_qa`. No matching upper bound, no tightness claim. (An
+   earlier statement in the K5 paper's Section 7.2 that this work has
+   "no rate" was wrong and has been corrected there.)
+
+2. Coladangelo–Stark, arXiv:1804.05116 **v1**, in the paragraph
+   following the proof of its Theorem 12 (deleted from the published
+   Nature Communications version): "This can be used to obtain some
+   quantitative bounds on the dimension required to induce a
+   correlation close to the ideal one. We do not prove this
+   quantitative bound because much more useful bounds already exist for
+   correlations witnessing the separation C_qs != C_qa." Their ideal
+   state's Schmidt coefficients are exactly geometric, so an
+   `O(log(1/eps))` upper bound for their witness is a routine
+   truncation argument; a matching lower bound would require
+   robustifying their exact-attainment orbit argument (equality-case
+   Cauchy–Schwarz, exact Schmidt-multiset partition, additive error
+   control over a chain of growing length) and is not immediate. No
+   subsequent publication proving either half for their witness was
+   found.
+
+**Resulting claim boundary (binding for manuscripts).** Say "first
+*proved* two-sided (Theta) characterization, for any witness of the
+`C_q` (strictly inside) `C_qs` separation"; quote and cite the
+Coladangelo–Stark v1 remark rather than leaving it to be found; concede
+the routine upper half for their witness; never claim priority for the
+existence of dimension rates attached to non-closure witnesses in
+general. As everywhere in this file: a negative search is evidence, not
+a theorem of priority.

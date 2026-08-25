@@ -5,23 +5,36 @@
 ## Start here
 
 **The paper: [paper/resolution.pdf](paper/resolution.pdf)** — *"The
-I3322 quantum value is attained spatially but not in finite dimension"*
-(v3.2.3, 10 pages). It states both theorems with proof architecture,
-claim boundaries, correction history, review methodology, and full
-citations.
+I3322 quantum value is attained spatially but not in finite dimension"*.
+One document, all three results: both attainment theorems, the
+dimension-complexity theorem (its Section 5), proof architecture, claim
+boundaries, correction history, and full citations. (The rate result
+previously lived in a standalone companion note; it was folded into the
+paper on 2026-08-25, and the standalone note is preserved in the frozen
+v3.3.0 release. `paper/rate-companion.tex` is now a supersession
+notice.)
 
 **What is proved.** Let `S` denote the common I3322 quantum value,
 certified unconditionally in the window
 `0.2508753845015185 < S <= 0.250875388108398` (width `3.607e-9`).
 
 1. **Theorem (N)** — no finite-dimensional quantum strategy (any local
-   dimensions, mixed states, POVMs) attains `S`. This is the
-   finite-dimensional half of the Pal–Vertesi conjecture (2010).
-2. **Theorem (S)** — `S` **is** attained by a normal spatial strategy
+   dimensions, mixed states, POVMs) attains `S`. This proves the
+   conjecture of Pal–Vertesi (2010). Their separate *assertion* of
+   infinite-dimensional attainment is Theorem (S), established on an
+   independent route.
+2. **Theorem (S)** — `S` **is** attained by a spatial strategy
    on `ell^2(Z) (x) ell^2(Z)`.
 3. **Corollaries** — the quantum correlation set `C_q(3,3;2,2)` is
-   **not closed**, and `C_qs \ C_q` is nonempty, at the smallest
-   two-outcome scenario where this is possible.
+   **not closed**, and `C_qs \ C_q` is nonempty, at the smallest venue
+   by input count, among two-outcome bipartite scenarios, in which
+   nonclosure is known. No minimality is claimed over scenarios with
+   larger output alphabets.
+4. **Theorem (Rate)** (paper, Section 5) —
+   `D(epsilon) = Theta(log(1/epsilon))`: reaching `S` to accuracy
+   `epsilon` requires and suffices local dimension of order
+   `log(1/epsilon)`, with explicit derived constant `23.9010650` on the
+   upper half.
 
 **Where the evidence lives:**
 
@@ -30,6 +43,9 @@ certified unconditionally in the window
   review, exact-arithmetic guards.
 - [Theorem (S) certificate directory](certificate/production/theorem-S-spatial-attainment-at-S/)
   — proof documents and review record.
+- [Rate certificate directory](certificate/production/rate-theta-log/)
+  — the sealed lower-bound chain and the upper-bound bundle, each with
+  its complete audit record.
 - [Machine-checked cores (Lean 4 + Mathlib)](lean/I3322Kernel/) — the
   paper's displayed formulas, no `sorry`, standard axioms only.
 - [Replayable window certificates](certificate/release/) — run
@@ -37,18 +53,24 @@ certified unconditionally in the window
 - [Claim-to-certificate map](paper/CERTIFICATE-MAP.md) and
   [independent review records](review/).
 
-**What is not claimed.** The exact value of `S` beyond its window, and
-the optimality of the Pal–Vertesi construction, remain open. Earlier
+**What is not claimed.** Two things remain open: the exact value of
+`S` beyond its certified window, and whether the Pal–Vertesi family in
+particular converges to `S`. The window itself is a certified *input*
+to this work, not a contribution of it — Mghirbi's July 2026 release
+gave a tighter enclosure, and it is cited as prior art. Earlier
 releases of this repository claimed an exact identification; that
 claim was refuted by this project's own audit, publicly decertified,
 and the present theorems were rebuilt on independent routes. The full
 correction history is preserved below and in the frozen DOI releases —
 it is part of the record, not an embarrassment to be hidden.
 
-*The sections below preserve the complete provenance narrative
-(sprint-numbered, in chronological layers). New readers need only the
-links above; the layers exist so that every claim's history is
-auditable.*
+> ⚠ **Everything below this line is a historical provenance narrative,
+> written in chronological sprint-numbered layers as the campaign ran.
+> It is NOT the current claim set, and individual paragraphs in it
+> assert things that were later refuted by this project's own audits —
+> including the bi-infinite "wall" construction and the exact constant
+> `q*`. The current claims are the four items above and the paper.
+> The layers are retained so every claim's history is auditable.**
 
 ---
 
@@ -62,16 +84,17 @@ auditable.*
 > dependency list. See
 > [`certificate/production/theorem-N-four-receipts-at-S/`](certificate/production/theorem-N-four-receipts-at-S/)
 > (signed statement, complete proof documents, review record, and
-> algebraic/exact-arithmetic guards). As of **v3.1.0**, a second
-> independently reviewed theorem establishes **normal spatial attainment of
+> algebraic/exact-arithmetic guards). A second
+> reviewed theorem establishes **spatial attainment of
 > `S`** on `ell^2(Z) tensor ell^2(Z)`, hence
 > **`C_qs(3,3;2,2) \ C_q(3,3;2,2)` is nonempty**; see
 > [`certificate/production/theorem-S-spatial-attainment-at-S/`](certificate/production/theorem-S-spatial-attainment-at-S/).
 > The decertified historical amplitude route is not repaired but dissolved:
 > amplitudes are read off an existing conditional spectral measure, so the
 > failed compatibility equation is never posed. The exact optimum
-> (identification of `S` beyond its certified `3.61e-9` window) and the
-> dimension-necessity lower bound remain **open** and are not claimed. Frozen DOI releases
+> (identification of `S` beyond its certified `3.61e-9` window) remains
+> **open** and is not claimed; the dimension-necessity lower bound, open when
+> this note was written, is now proved (paper, Section 5). Frozen DOI releases
 > are preserved as historical records; the correction history is part of the
 > record. The resolution paper —
 > [paper/resolution.pdf](paper/resolution.pdf) — states both theorems with
@@ -138,20 +161,26 @@ q* = 0.250875384513976536...
 q* in [0.250875384513976535514, 0.250875384513976536486].
 ```
 
-Neither model has a finite-dimensional maximizer. The certified bi-infinite
-wall nevertheless defines an explicit normal vector-state maximizer on
-`ell^2(Z) tensor ell^2(Z)` through the alternating Pal--Vertesi projectors.
+It further asserted that the bi-infinite wall defines an explicit
+vector-state maximizer on `ell^2(Z) tensor ell^2(Z)` through the alternating
+Pal--Vertesi projectors. **That construction is decertified**: its
+amplitude-compatibility equation fails by an exactly certified margin in
+`[1.40e-4, 1.79e-4]`, excluding zero, reproduced by two independent interval
+engines. The current Theorem (S) does not repair it — it reaches `S` on a
+route that never poses that equation.
 
-Its centered finite sections obey an exact boundary-flux identity. If `Q_d`
-is the unrestricted tensor-product optimum in local dimension at most `d`,
-allowing binary POVMs, then the explicit wall truncations prove
+The historical release also derived, from those wall truncations, a geometric
+sufficiency rate against `q*`:
 
 ```text
 0 < q* - Q_d <= exp[-d log(R) + O(1)],
 R = 1.07809205080209208....
 ```
 
-Thus `log(1/epsilon)/log(R)+O(1)` local dimension is sufficient. A prospective
+Both the constant `q*` and this derivation are part of the decertified layer;
+the current rate result is the paper's Section 5,
+`D(epsilon) = Theta(log(1/epsilon))`, with the carrier-uniform derived bound
+`1/kappa_eff <= 23.9010650` and no sharpness claimed. A prospective
 matching universal lower bound was blocked by adversarial review: its
 near-fixed packet step lacks a localized-response/commutator estimate. The
 subsequent coupled-sector repair forces a fixed amount of drift mass, but an
@@ -279,7 +308,8 @@ of that campaign.
 > `D(epsilon) = Theta(log(1/epsilon))` at local-dimension scope
 > (existential constants; the upper half with the derived safe bound
 > `1/kappa_eff <= 23.9010650`, no sharpness claimed). The result is
-> stated and proved in the companion rate note (`paper/`), with
+> stated and proved in the companion rate note (`paper/`; folded into
+> `paper/resolution.tex` Section 5 as of 2026-08-25), with
 > complete certificates, guard scripts, and the full audit record —
 > including every denial round of its promotion gate — in
 > `certificate/production/rate-theta-log/`. The paragraph above
@@ -293,9 +323,10 @@ C_q(3,3;2,2) != C_qs(3,3;2,2),
 ```
 
 and `C_q(3,3;2,2)` is not closed. A separate Jordan-decomposition argument
-proves that every binary scenario with at most two inputs on either side has
-`C_q=C_qs` and is compact, so the three-input-per-party scenario is minimal by
-input counts for both phenomena.
+proves that any two-outcome bipartite scenario in which either party has only
+two inputs has closed (indeed compact) `C_q`, so among **two-outcome**
+scenarios three inputs per party is the smallest possible venue by input
+count. No minimality is claimed over scenarios with larger output alphabets.
 
 Archival identifiers: concept DOI
 [`10.5281/zenodo.21782008`](https://doi.org/10.5281/zenodo.21782008); frozen
@@ -309,18 +340,21 @@ Archival identifiers: concept DOI
 [`10.5281/zenodo.21782009`](https://doi.org/10.5281/zenodo.21782009).
 
 The promoted results establish finite-dimensional nonattainment of the
-common value S and normal spatial attainment of S (the spatial strategy uses
+common value S and spatial attainment of S (the spatial strategy uses
 the alternating block FORM of Pal--Vertesi with labels and amplitudes derived
-independently; their construction is not certified as optimal, and the exact
-value beyond the certified window remains open). This is not a claim of
+independently; whether their family converges to S is not settled, and the
+exact value beyond the certified window remains open). This is not a claim of
 priority for the block construction or for general finite/infinite-dimensional
 separation, which are known from earlier work.
 
 Mghirbi's July 2026 release
 [`10.5281/zenodo.21477901`](https://doi.org/10.5281/zenodo.21477901)
-previously gave a proof-carrying exact enclosure of width below `10^-9`. The
-present result closes that remaining interval and proves nonattainment; it is
-not the first exact certified bound for I3322.
+gave a proof-carrying exact enclosure of width below `10^-9` — **tighter than
+the window used here**. That enclosure is a certified *input* to this work,
+not a contribution of it. What the present results add is equality of the two
+models, nonattainment, and spatial attainment, none of which those
+certificates address. The exact value of `S` remains open, and this is not
+the first exact certified bound for I3322.
 
 ## Paper
 

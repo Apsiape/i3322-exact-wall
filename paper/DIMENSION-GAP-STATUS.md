@@ -7,6 +7,12 @@
 > historical record of the one-sided constructive rate (its
 > family-specific exponent `log R` is sharper than, and consistent with,
 > the rate note's uniform safe constant) and of the gap as it was named.
+>
+> **Pointer update 2026-08-25.** The standalone rate note has been folded
+> into the main paper: the result now appears as Section 5 of
+> `paper/resolution.tex` / `resolution.pdf`. The certificates are
+> unchanged at `certificate/production/rate-theta-log/`; the standalone
+> note is preserved in the frozen v3.3.0 release.
 
 ## Definition
 

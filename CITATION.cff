@@ -1,13 +1,13 @@
 cff-version: 1.2.0
 message: "If you use this theorem package or its certificates, please cite this work."
-title: "The I3322 quantum value: certified window, spatial attainment, finite-dimensional nonattainment, and the Cqs/Cq separation"
+title: "The I3322 quantum value is attained spatially but not in finite dimension"
 type: article
 authors:
   - given-names: Seth
     family-names: Douglas
     email: apsiape@gmail.com
     orcid: "https://orcid.org/0009-0007-4708-3252"
-version: 3.2.3
+version: 4.0.0
 doi: 10.5281/zenodo.21782008
 license: CC-BY-4.0
 repository-code: "https://github.com/Apsiape/i3322-exact-wall"
@@ -16,9 +16,14 @@ abstract: >-
   The tensor-product and commuting-operator suprema of the canonical I3322
   Bell functional coincide at a common value S, certified within an exact
   two-sided window of width 3.61e-9 (the exact value beyond the window
-  remains open). A normal spatial strategy attains S, while no
-  finite-dimensional strategy does. Consequently C_q(3,3;2,2) differs from
-  C_qs(3,3;2,2), and the scenario is minimal by bipartite binary input counts.
+  remains open). A spatial strategy on l2(Z) tensor l2(Z) attains S, while no
+  finite-dimensional strategy does - proving the 2010 conjecture of Pal and
+  Vertesi. Consequently C_q(3,3;2,2) is not closed and differs from
+  C_qs(3,3;2,2), at the smallest venue by input count, among two-outcome
+  bipartite scenarios, in which nonclosure is known; no minimality is claimed
+  over scenarios with larger output alphabets. The paper further proves the
+  dimension complexity D(eps) = Theta(log(1/eps)), with explicit derived
+  constant 23.9010650 on the upper half.
 keywords:
   - Bell inequalities
   - I3322
@@ -32,10 +37,12 @@ keywords:
   - minimal Bell scenario
 preferred-citation:
   type: article
-  title: "The I3322 quantum value: certified window, spatial attainment, finite-dimensional nonattainment, and the Cqs/Cq separation"
+  title: "The I3322 quantum value is attained spatially but not in finite dimension"
   authors:
     - given-names: Seth
       family-names: Douglas
       orcid: "https://orcid.org/0009-0007-4708-3252"
   year: 2026
+  # version DOI of the release of record — replace at mint; the concept
+  # DOI below resolves to the latest release and is not the citation object
   doi: 10.5281/zenodo.21782008

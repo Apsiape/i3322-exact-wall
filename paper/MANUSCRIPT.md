@@ -75,7 +75,9 @@ lower bound or (\Theta(\log(1/\varepsilon))) conclusion was claimed at the time 
 document. [Superseded 2026-08-07: that gap has since been discharged and
 the two-sided rate is now proved — see the companion rate note in `paper/`
 and `certificate/production/rate-theta-log/`; this file remains the
-historical record.]
+historical record. Pointer update 2026-08-25: the rate note is now
+Section 5 of `paper/resolution.tex`; the standalone note is preserved in
+the frozen v3.3.0 release.]
 
 As a corollary, the finite-dimensional quantum correlation set in the
 three-input binary scenario is not closed; this is the minimal bipartite
@@ -778,7 +780,8 @@ bound. Quantitative necessity remains open.
 
 **Scope amendment (2026-08, append-only).** The last sentence above is
 retained as the historical scope statement of this release. It is superseded
-for the rate: the companion note (`paper/rate-companion.tex`, v3.3.0), with
+for the rate: the companion note (`paper/rate-companion.tex`, v3.3.0 —
+folded into `paper/resolution.tex` Section 5 as of 2026-08-25), with
 the certified bundles under `certificate/production/rate-theta-log/`, proves
 the two-sided statement D(eps) = Theta(log(1/eps)) at local-dimension scope,
 the lower half holding for every d-dimensional strategy with existential

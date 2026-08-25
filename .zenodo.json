@@ -1,5 +1,5 @@
 {
-  "title": "The I3322 quantum value: certified window, spatial attainment, finite-dimensional nonattainment, and the Cqs/Cq separation",
+  "title": "The I3322 quantum value is attained spatially but not in finite dimension",
   "upload_type": "publication",
   "publication_type": "preprint",
   "access_right": "open",
@@ -10,19 +10,24 @@
       "orcid": "0009-0007-4708-3252"
     }
   ],
-  "description": "Certified two-sided window for the I3322 quantum supremum S, tensor/commuting value equality, finite-dimensional nonattainment of S, nonclosure of C_q(3,3;2,2), and (v3.1.0) normal spatial attainment of S giving a nonempty separation C_qs \\ C_q - each established by routes that survived independent refutation-first adversarial review, with the full review records and correction history shipped in-repository. The exact optimum beyond the certified 3.61e-9 window and the dimension-necessity lower bound remain open. Includes the resolution paper (paper/resolution.pdf): full statement, proof architecture, review methodology, and the attainment/open-carrier discussion.",
+  "description": "Three theorems about the I3322 Bell functional, working from an exactly certified window for its quantum value S and a certified tensor/commuting value equality. Theorem (N): no finite-dimensional quantum strategy attains S (any local dimensions, mixed states, POVMs), proving the 2010 conjecture of Pal and Vertesi. Theorem (S): S is attained by a spatial strategy on l2(Z) tensor l2(Z). Consequently C_q(3,3;2,2) is not closed and C_qs \\ C_q is nonempty, at the smallest venue by input count, among two-outcome bipartite scenarios, in which nonclosure is known; no minimality is claimed over larger output alphabets. Theorem (Rate): the dimension complexity is D(eps) = Theta(log(1/eps)) - reaching S to accuracy eps requires and suffices local dimension of order log(1/eps), with explicit derived constant 23.9010650 on the upper half and existential constants on the lower. The exact optimum beyond the certified 3.61e-9 window, and whether the Pal-Vertesi family converges to S, remain open. The repository ships the paper (paper/resolution.pdf), machine-checkable certificates with complete audit records, a Lean 4 kernel (27 theorems, standard axioms only), and the full correction history, including the public decertification of an earlier claimed proof by this program.",
   "keywords": [
     "Bell inequalities",
     "I3322",
     "quantum correlations",
     "commuting operators",
     "computer-assisted proof",
+    "nonattainment",
     "quantum spatial correlations",
     "Cq versus Cqs",
+    "nonclosed quantum correlations",
     "minimal Bell scenario",
+    "dimension witness",
+    "dimension complexity",
     "certified value window",
     "correction record",
-    "interval arithmetic"
+    "interval arithmetic",
+    "Lean 4"
   ],
   "related_identifiers": [
     {
@@ -31,5 +36,5 @@
       "scheme": "url"
     }
   ],
-  "version": "3.2.3"
+  "version": "4.0.0"
 }

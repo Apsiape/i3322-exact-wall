@@ -7,7 +7,10 @@ explicit truncation of the attaining carrier achieves it. Existential
 constants; the upper half carries the derived safe bound
 1/κ_eff ≤ 23.9010650 (no sharpness claimed). The companion note in
 `paper/` states and proves the result; this directory is its
-certificate root.
+certificate root. (Pointer update 2026-08-25: the note has been folded
+into the main paper — the result is now Section 5 of
+`paper/resolution.tex`; the standalone note is preserved in the frozen
+v3.3.0 release. This directory is unchanged.)
 
 ## Contents
 
