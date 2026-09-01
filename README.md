@@ -4,6 +4,11 @@
 
 ## Start here
 
+**Want to check the claims yourself? [VERIFY.md](VERIFY.md)** — every
+claim mapped to a runnable check with its expected output, what each
+layer does and does not verify, and suggested 15-minute / 2-hour /
+full-audit reading paths.
+
 **The paper: [paper/resolution.pdf](paper/resolution.pdf)** — *"The
 I3322 quantum value is attained spatially but not in finite dimension"*.
 One document, all three results: both attainment theorems, the
