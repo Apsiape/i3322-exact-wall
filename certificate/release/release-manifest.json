@@ -90,7 +90,7 @@
       "path": "certificate/independent/bellman-path/bellman-path-independent.json",
       "canonical_bytes": 6261,
       "hash_mode": "canonical-lf",
-      "sha256": "3f5368018911b994933eb3223ab465decda6e93875d8c22003ad5137652ca2d4"
+      "sha256": "4022400f64ec1e748e382204f21e0e0f03429e23d18ebff5491aaccd2c5fea36"
     },
     {
       "path": "certificate/independent/bellman-path/bellman_path_independent.py",
@@ -3582,7 +3582,7 @@
       "path": "certificate/production/rate-theta-log/upper-U1G-bundle/MANIFEST_U1E_SHA256.json",
       "canonical_bytes": 6700,
       "hash_mode": "canonical-lf",
-      "sha256": "2e730f5d047c5ee04b0771802baffe052fd75b29fa3b067ff6d84c72c891e3e8"
+      "sha256": "2bcad508a333adfb5064d4ae91ffe4c2f142e02e20280a76ed138887c079d599"
     },
     {
       "path": "certificate/production/rate-theta-log/upper-U1G-bundle/PROMOTION_RECORD.md",
@@ -4096,9 +4096,9 @@
     },
     {
       "path": "README.md",
-      "canonical_bytes": 25315,
+      "canonical_bytes": 25580,
       "hash_mode": "canonical-lf",
-      "sha256": "07936893170f4dc1cf9d932b43d8238cac764ec649abefe2d7e9a79dcc5c4538"
+      "sha256": "9fa9c425c6025f035d14ecaeb958aa82284ea920043d7d12760e065fbf220569"
     },
     {
       "path": "requirements.txt",

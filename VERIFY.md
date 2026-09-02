@@ -104,11 +104,20 @@ promotion history (referee verdict "PROMOTE conditional on repairs"; the
 repairs V1–V9 and their execution ledger are included). `MANIFEST_SHA256.txt`
 freezes the package.
 
-Honest boundary, stated in `STATUS.json` itself: Sections 6–9 of the proof
-document (conull invariant set, Borel transversal, uniqueness of
-disintegration) carry the residual proof risk and are scheduled for expanded
-write-up. A reader auditing Theorem (S) should read exactly those sections
-hardest.
+Honest boundary: Sections 6–9 of the proof document (conull invariant set,
+Borel transversal, uniqueness of disintegration) were originally flagged in
+`STATUS.json` as carrying the residual proof risk. That risk was
+**discharged on 2026-08-07**: `AMENDMENT-2026-08-07-SECTIONS-6-9.md` records
+the full expanded write-up
+(`sections-6-9-expansion/U2-SECTIONS-6-9-EXPANDED.md`: 25 numbered lemmas
+with complete proofs, explicit quantifier labels, and an axiom inventory),
+reviewed in two blind adversarial rounds — a hostile proof-surface review
+plus an independent countermodel search (22 constructed attacks, no
+counterexample), then a diff-scoped re-review of the repaired document that
+verified every repair item by item. `STATUS.json` itself is hash-frozen and
+deliberately unamended; the amendment file is the correction of record. A
+reader auditing Theorem (S) should still read exactly those sections
+hardest — the amendment says where.
 
 ---
 
@@ -195,7 +204,10 @@ Three layers, kept deliberately distinct:
 3. **Analytic steps** (weak-* limits, disintegration, operator closure,
    Sections 6–9 of Theorem (S)) are proved in the paper and were subjected
    to multi-round refutation-first review (records in `review/` and in each
-   certificate directory), but are *not* machine-checked. They are the right
+   certificate directory), but are *not* machine-checked. For Theorem (S)
+   §§6–9 specifically, the expanded 25-lemma write-up and its two-round
+   blind gate live in the certificate's `sections-6-9-expansion/` directory
+   (see §3 above). They are the right
    place for a referee to spend effort, and the documents say so.
 
 No claim in this repository rests on a check that is not either runnable
@@ -211,7 +223,8 @@ above or explicitly labeled as analytic.
 - **2 hours:** the above, plus `THEOREM_N_SIGNED_PUBLIC_STATEMENT.md` with
   its assembly document and one review round; run the §2 scripts; skim the
   Lean lemmas.
-- **Full audit:** add Theorem (S) Sections 6–9 (the flagged residual risk),
+- **Full audit:** add Theorem (S) Sections 6–9 (originally flagged residual
+  risk, discharged by the 2026-08-07 amendment — read both),
   the rate bundles' promotion records, `verify_release.py --full`, and
   `lake build`. The sprint directories under `certificate/production/`
   contain the complete construction history, including failures.

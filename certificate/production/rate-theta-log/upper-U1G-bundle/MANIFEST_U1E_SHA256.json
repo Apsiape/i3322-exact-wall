@@ -15,7 +15,7 @@
   "artifacts/small_d_demoted/GUARD_SMALL_D_STDOUT.txt": "f9c70b674e6986b804caa2afd70013b883e31252338ab0403f9061f6c2cbc0e6",
   "artifacts/small_d_demoted/SMALL_D_TRUNCATION_SOURCE_DATA.json": "8bae1ff9900b560b466725a37df5e6b6395e7d51bb61accc38c0ad45d3573b67",
   "artifacts/small_d_demoted/guard_small_d_endpoint_projector_truncation.py": "fac058521825454704b7dc3535d09f6e78c269b8dd18ed98aadb23793865e884",
-  "artifacts/small_d_demoted/small_d_endpoint_projector_truncation_results.json": "7c8b5c4277ddcc1cb96f0e6ab572e6ee34028d8d8afc1b48462f000f79a0300e",
+  "artifacts/small_d_demoted/small_d_endpoint_projector_truncation_results.json": "f9c70b674e6986b804caa2afd70013b883e31252338ab0403f9061f6c2cbc0e6",
   "audit_archive/AXIOMCHECK_RECEIPT_2026-08-07.txt": "f32cda5f182a400cac5c0fa985fd1d527ee321aba0ee4eb1f913aadb7be4f90c",
   "audit_archive/DISTORTED_RETURN_QUARTER_CEILING_CURRENT_V22.KILL_PROVENANCE.md": "40b61f5539bd0a04896add0ee7f02306a0d6023319c4e7b7c15202a6bb24faa6",
   "audit_archive/G1_PROMOTED_UPPER_RECEIPT.EXTRACT.SUPERSEDED.md": "82db0fded51f5cfc12b3eaefcd3874f7cd5f2de71dea00dc4c7e021b780303b2",

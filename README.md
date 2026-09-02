@@ -374,7 +374,8 @@ the first exact certified bound for I3322.
 ## Paper
 
 - **[Resolution paper — the current paper](paper/resolution.pdf)**
-  (v3.2.3; readable source in the paper/ directory)
+  (v4.0.0, the merged paper of record; readable source in the paper/
+  directory)
 - [Claim-to-certificate map](paper/CERTIFICATE-MAP.md)
 - [Priority audit](paper/PRIORITY-AUDIT.md)
 - [Independent frontier-model review and adjudication](review/README.md)
