@@ -3927,6 +3927,12 @@
       "sha256": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744"
     },
     {
+      "path": "paper/ARXIV-SUBMISSION.md",
+      "canonical_bytes": 20068,
+      "hash_mode": "canonical-lf",
+      "sha256": "28ae13c12966eb54c880ddb9562b0b821724f428863deba6eded2bb947541430"
+    },
+    {
       "path": "paper/CERTIFICATE-MAP.md",
       "canonical_bytes": 23082,
       "hash_mode": "canonical-lf",
@@ -4000,9 +4006,9 @@
     },
     {
       "path": "paper/references.bib",
-      "canonical_bytes": 4319,
+      "canonical_bytes": 4828,
       "hash_mode": "canonical-lf",
-      "sha256": "b66e43f78a154f21233c1d679dc0b319e2cea2bd8f6f345803a26e4fb0e610df"
+      "sha256": "8f5c37232b5aa0eb2f7976008ea0328621183a28ac578280d1f937bc792c618d"
     },
     {
       "path": "paper/RELEASE-NOTES-v1.1.0.md",
@@ -4066,15 +4072,15 @@
     },
     {
       "path": "paper/resolution.pdf",
-      "canonical_bytes": 404977,
+      "canonical_bytes": 438961,
       "hash_mode": "raw",
-      "sha256": "8820bbecccce4af3d421a9a466d539cf0195a3fd7a6b72554925af6aff4774d8"
+      "sha256": "7321e789a901f4dbd921e710ff51a7a606a58a518b76fc7de19609513d836016"
     },
     {
       "path": "paper/resolution.tex",
-      "canonical_bytes": 66898,
+      "canonical_bytes": 81126,
       "hash_mode": "canonical-lf",
-      "sha256": "53669705dcfb6e6041cabec4915af94992156b8014c8917c762911e2a347770d"
+      "sha256": "a6b951e80ef819848d05a47a7f5c8ce54cd0a4c1ef46c90156219df794ae1bb1"
     },
     {
       "path": "paper/TECHNICAL-SUPPLEMENT.md",
@@ -4161,6 +4167,6 @@
       "sha256": "a405ef962afdfc120b5c3f2901ca58e95e2ab3963e642fa73dc2022f2d280cfa"
     }
   ],
-  "file_count": 693,
+  "file_count": 694,
   "scope": "Custody manifest for selected published files. Analytic dependency closure is checked separately by verify_release.py and is not inferred from file enumeration alone."
 }

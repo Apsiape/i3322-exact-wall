@@ -18,7 +18,7 @@
 \author{Seth Douglas\\
 \small ORCID \href{https://orcid.org/0009-0007-4708-3252}{0009-0007-4708-3252}
 \ $\cdot$\ \texttt{apsiape@gmail.com}}
-\date{August 2026}
+\date{September 2026}
 
 \begin{document}
 \maketitle
@@ -28,7 +28,8 @@ Let $S=\omega_{\mathrm{tensor}}(I_{3322})=\omega_{\mathrm{commuting}}(I_{3322})$
 denote the quantum supremum of the $I_{3322}$ Bell functional in the
 Collins--Gisin normalization (classical bound $0$; two-qubit maximum exactly
 $1/4$). Working from an exactly certified window
-$S\in(0.2508753845015185,\,0.250875388108398]$ and a certified equality of the
+$S\in(0.2508753845015185,\,0.250875388108398]$ --- a certified input built
+on Mghirbi's proof-carrying enclosure --- and a certified equality of the
 tensor-product and commuting-operator suprema, we prove:
 (i)~\textbf{no finite-dimensional quantum strategy attains $S$} --- any finite
 local dimensions, pure or mixed states, projective or POVM measurements ---
@@ -59,7 +60,7 @@ and suffices local dimension of order $\log(1/\eps)$. The upper half is
 proved in the paper, constructively, with the explicit derived bound
 $D(\eps)\le 23.9010650\,\log(1/\eps)$ ($\log$ natural) for all
 sufficiently small $\eps$; the matching lower half, with existential
-constants, is established in a sealed certificate chain shipped with the
+constants, is established in a certificate chain shipped with the
 paper. The combinatorial and scalar cores of both halves are
 machine-checked in Lean~4 --- cores, not the reductions. We close with a
 structural observation suggested by the results: in every case known to us,
@@ -203,11 +204,125 @@ failed compatibility equation is not repaired anywhere in the present chain
 this history first because computer-assisted claims are only as credible as
 their failure handling; the correction record is part of the result.
 
+\subsection*{Relation to independent concurrent work}
+
+The nonattainment, nonclosure, and spatial-attainment results of this
+paper were first announced in public repository releases on 5 August
+2026 (git tags v3.0.0 and v3.1.0 in \cite{Repo}); the
+dimension-complexity rate followed on 7 August 2026 (v3.3.0). Frozen archival snapshots from that week are
+preserved under version DOIs
+\href{https://doi.org/10.5281/zenodo.21826916}{10.5281/zenodo.21826916}
+(v3.2.3, 6 August) and
+\href{https://doi.org/10.5281/zenodo.21843326}{10.5281/zenodo.21843326}
+(v3.3.0, 7 August); the concept DOI
+\href{https://doi.org/10.5281/zenodo.21782008}{10.5281/zenodo.21782008}
+resolves to the present merged paper of record (v4.0.0). Independently
+and concurrently, Pauwels \cite{Pauwels} proved finite-dimensional
+nonattainment and nonclosure by a different route (spectral-weight
+matrices and a Jacobi-recurrence argument), and the concurrent work
+\cite{Coladangelo2026} independently establishes that the $I_{3322}$
+Bell inequality requires infinite dimensions. To our
+knowledge the three works were carried out independently --- Pauwels
+states in print that nothing in his paper depends on this repository
+--- and we regard them as concurrent.
+Beyond the shared core, the present paper additionally establishes
+spatial attainment on $\ell^2(\mathbb{Z})\otimes\ell^2(\mathbb{Z})$ and
+the dimension-complexity rate $D(\eps)=\Theta(\log(1/\eps))$ --- the
+attainment question (posed by P\'al--V\'ertesi and by
+Dykema--Paulsen--Prakash) and the convergence-rate question, both of
+which Pauwels' Section~VI also records as open.
+
+\subsection*{How the proofs work}
+
+Both theorems run through one reduction, which we state informally here and
+use throughout. It is convenient to replace each party's first two binary
+measurements by the pair
+\[
+X=A_1+A_2-I,\quad Y=A_2-A_1,\qquad U=B_1+B_2-I,\quad V=B_2-B_1,
+\]
+which for binary projections satisfy $X^2+Y^2=I$ and $XY+YX=0$, and likewise
+for $(U,V)$ --- the pairwise Jordan structure of a pair of binary
+projections. In these coordinates \eqref{eq:bell} reads
+\[
+\B \;=\; X\otimes U+\tfrac12 X\otimes I-\tfrac12 I\otimes U-I
+\;+\;Y\otimes(B_3-\tfrac12 I)\;+\;(A_3-\tfrac12 I)\otimes V ,
+\]
+so the third measurements enter only through the two off-diagonal blocks.
+Each spectral value $t\in[-1,1]$ of $X$, or of $U$, is a \emph{label}. A
+finite word of labels $\mathbf c=(c_0,\dots,c_n)$ names the real symmetric
+tridiagonal (Jacobi) matrix $J_{\mathbf c}$ whose entries are explicit
+functions of neighbouring labels --- diagonal
+$\delta(x,u)=xu+(x-u)/2-1$, off-diagonal $b(t)=\sqrt{1-t^2}/2$ --- and the
+P\'al--V\'ertesi block-to-Jacobi identity realizes the Rayleigh quotients of
+$J_{\mathbf c}$ as Bell values of finite strategies. Then
+\[
+  S \;=\; \sup_{\mathbf c}\ \lambda_{\max}(J_{\mathbf c}),
+\]
+the same supremum for the tensor and for the commuting model: that is input
+(T0) below, and it is why the two values agree for this functional.
+
+Dualizing that supremum by an LDL/Schur-pivot computation on
+$qI-J_{\mathbf c}$ replaces the word supremum by a \emph{one-site} problem.
+Call a positive continuous function $g$ on the label interval a
+\emph{storage}, and call it \emph{Bellman-feasible at level $q$} when
+\[
+  \frac{b(x)^2}{g(x)} + g(u) \;\le\; q-\delta(x,u)
+  \qquad\text{for all labels } x,u .
+\]
+Feasible storages price the steps of a path: $b(x)^2/g(x)$ is charged to the
+edge leaving the label $x$ and $g(u)$ to the edge entering $u$. Input~(T0)
+says that the infimum of the levels admitting a feasible storage is exactly
+$S$, and it produces one such storage $g_q$ at each level $q>S$, namely the
+infimum of terminal Schur pivots over finite histories ending at the given
+label. The object both proofs analyse is the \emph{critical storage} $g$
+obtained from these as $q\downarrow S$, together with the \emph{zero set}
+$Z$ on which the scalar remainder of the resulting operator decomposition
+vanishes --- the label pairs a strategy of value exactly $S$ is allowed to
+occupy.
+
+\emph{Theorem~\ref{thm:N}, in one paragraph.} A strategy of value exactly
+$S$ must occupy $Z$, and $Z$ is the graph of a single strictly increasing
+injection $P$: each label is served by exactly one predecessor and serves
+exactly one successor. The occupied labels of a maximizer therefore carry
+two order-reversing maps --- reflection $\sigma(u)=-u$, and
+$a=P^{-1}\circ(-P)$. A finite totally ordered set admits exactly one
+order-reversing bijection, so in finite dimension $a=\sigma$: every occupied
+label is paired with its own reflection. Eliminating amplitude ratios on
+such a reflected pair caps the value at $1/4$, and $S>1/4$. Finite dimension
+is used exactly twice, and only the second use is irreducibly
+finite-dimensional (Remark~\ref{rem:twice}).
+
+\emph{Theorem~\ref{thm:S}, in one paragraph.} The commuting model does have
+a maximizer, and the zero-set geometry above never used finite dimension, so
+the same two order-reversing maps act --- now on the spectrum of the
+commuting pair of label operators $X,U$, which need not be finite. Their
+composition $\tau=a\circ\sigma$ is increasing and, off a null set,
+fixed-point free, so each of its orbits is order-isomorphic to
+$\mathbb{Z}$. Disintegrating the maximizer's scalar spectral measure over
+the orbits of the group generated by $a$ and $\sigma$, and fixing one orbit,
+yields weights whose square roots are the amplitudes of an
+$\ell^2(\mathbb{Z})$ eigenvector of the Jacobi matrix at eigenvalue $S$.
+Normalizability is not imposed: it is inherited, because the weights came
+from a probability measure. Installing that eigenvector in the alternating
+block form returns a spatial strategy of value $S$.
+
+\emph{Theorem~\ref{thm:rate}, in one paragraph.} Upper half: the labels
+along the carrier of Theorem~\ref{thm:S} are monotone, so the amplitudes
+decay geometrically at each end, at rates $\kappa_-$ and $\kappa_+$;
+truncating to a window costs only a two-bond boundary flux, and balancing
+the two ends gives local dimension of order $(1/\keff)\log(1/\eps)$ with
+$\keff=(1/\kappa_-+1/\kappa_+)^{-1}$. Lower half: an $\eps$-good
+$d$-dimensional strategy has a small response defect, while a staircase edge
+budget caps its response walk at $O(d)$ steps; a defect too small for the
+available walk length would produce the reflected configuration that the
+$1/4$ ceiling forbids, so the defect --- hence $\eps$ --- cannot be smaller
+than $e^{-O(d)}$.
+
 \section{Setting and certified inputs}\label{sec:setup}
 
 For binary effects $A_1,A_2,A_3,B_1,B_2,B_3$ (that is, $0\le A_i,B_j\le I$;
-projections in the projective case), the Bell operator in the
-convention used throughout the repository is
+projections in the projective case), the Bell operator, in the
+normalization used throughout this paper, is
 \begin{equation}\label{eq:bell}
 \B \;=\; -A_2-B_1-2B_2
 \;+\;A_1B_1+A_1B_2-A_1B_3
@@ -243,7 +358,7 @@ P\'al--V\'ertesi family converges to $S$, though all certified data are
 consistent with both.
 
 Exact rational two-sided enclosures for the $I_{3322}$ quantum value predate
-this program's releases: Mghirbi \cite{Mghirbi} published proof-carrying
+our own releases: Mghirbi \cite{Mghirbi} published proof-carrying
 exact certificates with enclosure width below $10^{-9}$ --- tighter than the
 window used here --- in July 2026. Those certificates establish a strict
 enclosure; they do not address equality of the two models, attainment, or
@@ -276,11 +391,24 @@ $\omega_{\mathrm{commuting}}\le\omega_{\mathrm{tensor}}$ --- a consequence of
 
 \section{Nonattainment}\label{sec:N}
 
-We sketch the architecture; complete proofs, with every constant exact, are
-in the certificate documents \cite{Repo}, directory
-\texttt{theorem-N-four-receipts-at-S}.
+This section gives Theorem~\ref{thm:N} at the level of its lemma chain: the
+five steps below are stated in the order they are used, each with the
+property of the critical storage it consumes. The complete arguments, with
+every constant exact, are in the proof documents of \cite{Repo};
+Section~\ref{sec:methods} records which parts are machine-checked.
 
-\emph{The critical storage.} As $q\downarrow S$ the storages $g_q$ admit,
+The chain is: (N1) the critical storage exists and is concave; (N2) the two
+endpoints are excluded by exact rational margins; (N3) a hypothetical
+maximizer carries an exact equality module at $S$; (N4) on that module the
+occupied support is a strictly increasing one-to-one graph; (N5) in finite
+dimension the two order-reversing transports on that graph must coincide,
+which caps the value at $1/4$. Steps (N1), (N2) and (N4) never use finite
+dimension; (N3) uses it once, to reduce the limit passage to a finite
+interior spectrum, and (N5) uses it again in the closure step. Only the
+second of those two uses is irreducibly finite-dimensional
+(Remark~\ref{rem:twice}), which is why Theorem~\ref{thm:S} is possible.
+
+\emph{(N1) The critical storage.} As $q\downarrow S$ the storages $g_q$ admit,
 by equicontinuity and Arzel\`a--Ascoli, a subsequence converging uniformly to
 a limit $g$, which is continuous, nonnegative, \emph{concave} (each terminal
 pivot is affine in the target label, and an infimum of affine functions is
@@ -290,7 +418,7 @@ are all that is consumed. Concavity is elementary but decisive:
 it forces every corner of the contact intercept downward, which is what
 ultimately excludes contact plateaus.
 
-\emph{Exact endpoint exclusion.} Two-edge finite histories give exact
+\emph{(N2) Exact endpoint exclusion.} Two-edge finite histories give exact
 rational margins: taking the interior detour radius $r=1/10$, the endpoint
 predecessor lines exceed the storage, uniformly over the certified window, by
 at least
@@ -307,7 +435,7 @@ $S$. These are
 closed-form rational certificates; no branch geometry or reflected wing is
 used.
 
-\emph{The equality module of a hypothetical maximizer.} Suppose a
+\emph{(N3) The equality module of a hypothetical maximizer.} Suppose a
 finite-dimensional strategy attains $S$. (Purification is unnecessary:
 $\operatorname{Tr}(\rho R)=0$ with $R\succeq0$ gives $R\rho=0$ directly.
 POVMs reduce to projective measurements by the extreme-effect replacement of
@@ -325,7 +453,7 @@ $\rho$. Thus the maximizer carries an exact critical equality module at $S$
 --- \emph{without} any claim that the storage infimum is attained (the
 endpoint boundary layer is bypassed, not solved).
 
-\emph{Zero-set geometry.} On the equality module, the scalar remainder
+\emph{(N4) Zero-set geometry.} On the equality module, the scalar remainder
 symbol vanishes. Reflected finite histories give the gluing inequality
 $g(x)\,g(-x)\ge b(x)^2$ with $b(x)^2=(1-x^2)/4$; full equality of the two
 Bellman inequalities and the Cauchy--Schwarz step forces
@@ -346,7 +474,7 @@ system, which requires no symmetry of $g$ itself) no target is served by two
 sources. The occupied support of any maximizer is therefore a strictly
 increasing one-to-one graph.
 
-\emph{Finiteness forces closure; closure caps the value.} The equality
+\emph{(N5) Finiteness forces closure; closure caps the value.} The equality
 module carries two response transports --- scalar multiples of unitaries
 between complete fibres --- implementing the decreasing
 involutions $a(u)=P^{-1}(-P(u))$ and $\sigma(u)=-u$ on the occupied support,
@@ -366,7 +494,16 @@ space: finite-dimensional behaviors approach value $S$; a convergent
 subsequence has value exactly $S$; closedness of $\Cq$ would give a
 finite-dimensional realization attaining $S$.
 
-\begin{remark}
+\emph{What is machine-checked here.} The Lean~4 kernel checks the exact
+endpoint margins of (N2), the finite-closure lemma of (N5) --- the single
+point at which finite dimensionality enters Theorem~\ref{thm:N} --- and the
+amplitude-elimination chain and quarter ceiling that (N5) ends with.
+Exact-arithmetic scripts guard the algebraic identities of (N1) and (N4),
+and each prints explicitly the analytic steps it does not cover: envelope
+existence and maximality, the gluing inequality, the limiting passage,
+spectral support, and operator closure (Section~\ref{sec:methods}).
+
+\begin{remark}\label{rem:twice}
 Finite dimension enters twice: once to reduce the limit passage above to a
 finite interior spectrum, and once in the closure step ``a finite ordered set
 has one decreasing bijection.'' Section~\ref{sec:S} replaces the first by a
@@ -376,12 +513,39 @@ which is exactly why Theorem~\ref{thm:S} is possible.
 
 \section{Spatial attainment}\label{sec:S}
 
-The historical route to attainment constructed amplitudes along a
-bi-infinite wall and then demanded a global compatibility equation --- the
-equation whose exact failure decertified the original release. The present
-route \emph{dissolves} that obstruction rather than repairing it: no
-amplitude is ever constructed, and the equation is never posed.
+\emph{The idea.} The commuting model always attains its value, and the
+zero-set geometry of Section~\ref{sec:N} transfers to a commuting maximizer
+unchanged, because the envelope argument consumed only the storage
+properties and the gluing inequality. Of the two places where
+Section~\ref{sec:N} used finite dimension, the limit passage is replaced
+below by exact operator blocks, while the closure step --- the one that
+capped the value at $1/4$ --- is the irreducibly finite-dimensional one, and
+that is what leaves room for attainment. What takes the place of a finite
+spectrum is a disintegration: the maximizer's scalar spectral measure
+decomposes over the countable orbits of the group generated by its two
+response transports, and a single orbit already carries an
+$\ell^2(\mathbb{Z})$ eigenvector of the Jacobi matrix at eigenvalue $S$. The
+point to watch is normalizability, which here is not imposed but inherited
+--- the amplitudes are square roots of the weights of a probability measure.
+The route of our withdrawn release instead constructed amplitudes along a
+bi-infinite wall and then demanded a global amplitude-compatibility
+equation, the equation our own audit refuted; here no amplitude is ever
+constructed and that equation is never posed, so the obstruction is
+\emph{dissolved} rather than repaired.
 
+The chain is: (S1) a maximizing commuting state exists and the zero-set
+geometry of Section~\ref{sec:N} transfers to it unchanged; (S2) the response
+transports are realized by exact operator blocks, giving Radon--Nikodym
+transport laws for the maximizer's scalar spectral measure; (S3) the
+response translation is fixed-point free off a null set, its orbits are
+order-isomorphic to $\mathbb{Z}$, and a Borel transversal is constructed
+explicitly; (S4) disintegration over the orbits of the group generated by
+the two transports yields, on one orbit, amplitudes that are automatically
+square-summable and satisfy the Jacobi eigenvalue equation; (S5) the
+P\'al--V\'ertesi block identity installs the resulting eigenvector as a
+spatial strategy of value exactly $S$.
+
+\emph{(S1) A commuting maximizer, and the same zero set.}
 By weak-$*$ compactness of the state space of the universal commuting
 $C^*$-algebra, a maximizing state exists for the commuting model: the
 commuting-operator value of a Bell functional is always a maximum
@@ -395,11 +559,13 @@ consumed only the storage properties and the gluing inequality, neither of
 which used finite dimension; the occupied support of the commuting
 maximizer is again a strictly increasing one-to-one graph $P$, on whose
 labels the decreasing involutions $a(u)=P^{-1}(-P(u))$ and $\sigma(u)=-u$
-act as in Section~\ref{sec:N}. The
+act as in Section~\ref{sec:N}.
+
+\emph{(S2) Transports without a finite spectrum.} The
 modification: no finite spectral support is available, and the
 transports are expressed through the exact operator blocks
-$W=Y(B_3-\tfrac12 I)$ and $W_B=(A_3-\tfrac12 I)V$ (names as in the
-certificate), which satisfy $W^2=b(X)^2$ and $WX=-XW$, with the
+$W=Y(B_3-\tfrac12 I)$ and $W_B=(A_3-\tfrac12 I)V$, which satisfy
+$W^2=b(X)^2$ and $WX=-XW$, with the
 corresponding $U$-side identities for $W_B$, as projector identities (no
 global spectral involution is assumed; it need not exist). Here $X$ and
 $U$ are the commuting source and target label operators, and $Y,V$ the
@@ -409,6 +575,7 @@ the joint projection-valued measure of that pair, $\mu(\Delta)
 =\langle\Omega,E(\Delta)\Omega\rangle$ is a Borel probability measure,
 normalized because $\|\Omega\|=1$.
 
+\emph{(S3) Orbits of the response translation.}
 The fixed-point set of the response translation $\tau=a\circ\sigma$ carries
 no mass --- on it the two transport densities coincide, which fires the
 quarter-ceiling elimination against $S>1/4$; the set need not be empty, and
@@ -416,7 +583,9 @@ nullity is all that is used. Off it $\tau$ is fixed-point-free and, being a
 composition of two decreasing maps, strictly increasing, so each of its
 orbits is order-isomorphic to $\mathbb{Z}$ and a Borel transversal can be
 \emph{constructed} --- by selecting the first rational separating an orbit
-point from its image --- with no appeal to smoothness machinery. Passing to
+point from its image --- with no appeal to smoothness machinery.
+
+\emph{(S4) Disintegration, and inherited normalizability.} Passing to
 the group $G=\langle a,\sigma\rangle$ generated by the two transports, which
 is infinite dihedral and whose orbits may carry nontrivial stabilizers,
 $\mu$ disintegrates over the countable $G$-orbits. The transport laws are
@@ -434,6 +603,8 @@ equality closes the Jacobi eigenvalue equation $J\lambda=S\lambda$ exactly,
 where $J$ is the Jacobi matrix whose entries \S\ref{sec:rate-upper}
 records; henceforth $\lambda$ is rescaled to unit norm, which changes
 neither the cocycle nor the eigenvalue equation.
+
+\emph{(S5) Installing the eigenvector as a strategy.}
 The P\'al--V\'ertesi block identity, in its no-endpoint alternating form,
 installs the normalized eigenpair as a spatial strategy with value $S$; the
 identity is two-site local, so it applies to the bi-infinite chain
@@ -456,6 +627,28 @@ here is P\'al--V\'ertesi's; the labels $c_j$ and the amplitudes $\lambda_j$
 come from the disintegration. This proves Theorem~\ref{thm:S} and, with
 Theorem~\ref{thm:N}, the separation in Corollary~\ref{cor:nonclosure}.
 
+\emph{What is machine-checked here.} None of it. The measure-theoretic and
+operator-algebraic chains of this section are not formalized in Lean~4, and
+the exact-arithmetic guard scripts name the limiting passage, spectral
+support and operator closure explicitly among the steps they do not cover.
+They are proved here and in the certificate's proof document, and were
+audited in the review rounds recorded there (Section~\ref{sec:methods}).
+
+The measure-theoretic steps of this argument --- the conull invariant
+set, the Borel transversal, and the uniqueness of the disintegration
+(\S\S6--9 of the certificate's proof document) --- were originally
+flagged in the certificate's status file as carrying residual proof
+risk. That risk was discharged on 7 August 2026 by a full expanded
+write-up (25 numbered lemmas, each with complete proof and explicit
+quantifier labels, plus an axiom inventory) reviewed in two blind
+adversarial rounds: a hostile proof-surface review together with an
+independent countermodel search (22 constructed attacks, no
+counterexample), followed by a re-review of the repaired document that
+verified every repair item by item
+(\texttt{AMENDMENT-2026-08-07-SECTIONS-6-9} in the certificate
+directory). The status file itself is hash-frozen and deliberately
+unamended; the amendment is the correction of record.
+
 \begin{remark}[Envelope versus orbit]
 The closure argument of Section~\ref{sec:N} forces the $u\mapsto-u$
 symmetry only on the \emph{occupied orbit} of a hypothetical finite
@@ -463,7 +656,7 @@ maximizer; nothing forces the critical envelope itself to be
 reflection-symmetric, and no step above obtains one wing of the envelope by
 reflecting the other. The historical construction's implicit reflection
 symmetry is, in retrospect, adjacent to the exact incompatibility that
-decertified it.
+forced its withdrawal.
 \end{remark}
 
 \section{Dimension complexity}\label{sec:rate}
@@ -472,8 +665,10 @@ This section determines how fast the finite-dimensional optima approach
 $S$. Throughout, $\log$ denotes the natural logarithm; and, in this
 section only, $\mu(t)$ denotes the band multiplier (not the spectral
 measure of Section~\ref{sec:S}), $\Delta(t)$ its diagonal value (not a
-Borel set), $E$ the response defect of the sealed chain (not the joint
-spectral measure), and $I$ a window of integers. Define, for each
+Borel set), and $E$ the response defect of \cite{RLB26} (not the joint
+spectral measure); the symbol $I$ keeps its meaning as the identity
+operator throughout, and windows of integers are written $\mathcal{I}$.
+Define, for each
 $d\ge1$,
 \begin{align*}
 S_d &:= \sup\,\bigl\{\,\langle\psi|\B|\psi\rangle \;:\;
@@ -521,13 +716,14 @@ $\eps$.
 \end{theorem}
 
 \noindent\emph{Where the two halves are proved.} The upper half is proved
-in \S\ref{sec:rate-upper}. The lower half is established in the sealed
+in \S\ref{sec:rate-upper}. The lower half is established in the
 certificate chain \cite{RLB26}, under the same verification standard as
 the certificate chains behind Theorems \ref{thm:N} and~\ref{thm:S};
 \S\ref{sec:rate-lower} maps its route and \S\ref{sec:rate-scope} records
-its inheritances --- in particular, both halves consume the repository's
-endpoint-positivity receipt, at its stated proved-candidate standing, for
-the compact interiority of the zero locus. The two halves are independent
+its inheritances --- in particular, both halves use the statement,
+established in \cite{Repo}, that the zero locus $Z$ is contained in a
+compact subset of $(-1,1)^2$, at the standing set out in
+\S\ref{sec:rate-scope}. The two halves are independent
 in route and in audit history.
 
 In gap form, given the monotonicity of $S_d$:
@@ -540,13 +736,14 @@ with $S-S_d\ge c(1+d)^{-p}e^{-Cd}$ for every $d$.
 
 The lower half says no finite-dimensional strategy --- windowed or not ---
 approaches $S$ faster than geometrically. It is established in the
-certificate chain \cite{RLB26} (five documents, cited by number below,
+certificate chain \cite{RLB26} (eleven numbered documents, of which
+Docs~01--05 are cited by number below,
 with three combinatorial cores machine-checked in Lean~4,
 Section~\ref{sec:methods}) and is not re-derived in this section. What
 follows is a route map of that argument, at the granularity a reader
 needs in order to see what the upper half is being matched against;
 where this subsection's wording and the chain's wording differ, the
-chain governs. The statement established there is
+chain is the authority for its own statement. The statement established there is
 \begin{equation}\label{eq:lb}
 S-S_d \;\ge\; c(1+d)^{-p}\,e^{-Cd}\qquad\text{for every } d,
 \end{equation}
@@ -571,7 +768,7 @@ contains a repeated cell --- a $\delta$-pseudo-cycle --- and the first
 machine-checked core (Lean: \texttt{min\_point\_pseudocycle}) extracts
 from any cyclic $\delta$-pseudo-orbit of a monotone real map a
 $\delta$-approximate fixed point at its minimum, with the same accuracy
-$\delta$, independent of cycle length. The sealed chain's min-point
+$\delta$, independent of cycle length. The certificate chain's min-point
 squeeze (\cite{RLB26} Doc~03) refines this to a reflected zero pair
 $(z,-z)$ of the response structure, by compactness (no rate at this
 step).
@@ -582,7 +779,7 @@ normalized transport multiplier gains coincide (\cite{RLB26} Doc~04, its
 display (4.1)) --- which, combined with the chain's identification of its
 common transport value with $S$ (Doc~04, display (5.3)), forces the
 distorted-return value $F(1)=1/4$ for $S$ itself, contradicting the
-certified $S>1/4$. (Here $F(q)=(1+q)^2/(16q)$ is the sealed chain's
+certified $S>1/4$. (Here $F(q)=(1+q)^2/(16q)$ is the certificate chain's
 distorted-return ceiling, $S\le F(q)$, with neutral gain forcing $q=1$;
 only the qualitative fact $S>1/4$ is consumed, not the window's numerical
 margin.) By contraposition, an $\eps$-good strategy's labels can only
@@ -618,9 +815,9 @@ qualitative facts --- the existence of the exact reflected configuration
 that the quarter ceiling forbids --- while the quantitative chain runs
 entirely through the defect $E$ and the dimension-free bound
 $m_C^2\le C_C\,E$. This half was established through its own audit
-campaign on the sealed chain, independent in route and in audit history
+campaign on the certificate chain, independent in route and in audit history
 from the upper half's, though the two share the endpoint-positivity
-receipt and the certificate's graph structure
+statement and the certificate's graph structure
 (\S\ref{sec:rate-scope}).
 
 \subsection{The upper bound, explicitly}\label{sec:rate-upper}
@@ -629,7 +826,7 @@ The upper half is constructive, and is given here in compressed form: the
 construction, the constants, and the route are all stated, while the full
 accounting of the endpoint-diagonal payment and its constants is carried
 by the proof document \cite{RUB26}. It consumes
-Theorem~\ref{thm:S} and the receipts named below; the reductions,
+Theorem~\ref{thm:S} and the inputs named below; the reductions,
 transport typing, and assembly are not formalized
 (\S\ref{sec:rate-scope}).
 
@@ -653,16 +850,13 @@ $\delta(x,u):=xu+(x-u)/2-1$ is the certificate's diagonal cost;
 interior, $Z\subset\subset(-1,1)^2$.
 \end{itemize}
 Item~(i) is proved in the certificate's \S\S6--9 (conull invariant set,
-Borel transversal, uniqueness of disintegration) and \S10; the expanded
-write-up of \S\S6--9, published as
-\texttt{AMENDMENT-2026-08-07-SECTIONS-6-9} in the Theorem~\ref{thm:S}
-certificate directory, was gated through two hostile review rounds, the
-second returning CLEAN. The compact interiority~(iv) is supplied by the
-repository's endpoint-positivity receipt, whose own status line ---
-``PROVED CANDIDATE; promotion audit may attack provenance/typing but no
-new frontier input is assumed'' --- is inherited, not upgraded
-(\S\ref{sec:rate-scope}). The positivity in~(ii), by contrast, needs no
-receipt on the closed interval: what the argument below uses is a
+Borel transversal, uniqueness of disintegration) and \S10; an expanded
+write-up of \S\S6--9 is included in the same certificate directory as
+\texttt{AMENDMENT-2026-08-07-SECTIONS-6-9}. The compact interiority~(iv)
+is the endpoint-positivity statement of \cite{Repo}, used here exactly as
+established there and at the standing set out in
+\S\ref{sec:rate-scope}. The positivity in~(ii), by contrast, needs no
+such input on the closed interval: what the argument below uses is a
 positive lower bound on the compact label set only, and that follows
 from Section~\ref{sec:N}'s own properties of $g$ --- continuous,
 positive on the open interval --- once (iv) confines the labels to a
@@ -747,9 +941,9 @@ gap, the eventual bound $D(\eps)\le 23.9010650\cdot\log(1/\eps)$ follows
 --- a bare $\limsup\le 23.9010650$ alone would not give it.)
 
 \emph{The truncation, at exact local dimension $d$.} For a window
-$I=[-L,R]\cap\mathbb{Z}$, keep every full $2\times2$ rank-one block of
+$\mathcal{I}=[-L,R]\cap\mathbb{Z}$, keep every full $2\times2$ rank-one block of
 each of the carrier's two alternating matchings whose paired indices lie
-in $I$; at a severed endpoint pair, replace the block by the
+in $\mathcal{I}$; at a severed endpoint pair, replace the block by the
 one-dimensional projector on the retained index (either of the two
 admissible one-dimensional assignments serves; we fix this one, and the
 choice is part of the endpoint-diagonal payment accounted below). All
@@ -758,20 +952,20 @@ operators remain exact projections --- each is a direct sum of orthogonal
 rank-one blocks and one-dimensional projectors (verified symbolically at
 arbitrary block angles for window sizes $m=3,\ldots,8$ by an
 independently written script; the general case is the direct-sum
-structure itself) --- and the local dimension is exactly $d=|I|$, with no
+structure itself) --- and the local dimension is exactly $d=|\mathcal{I}|$, with no
 dilation and no padding. The truncated state is the renormalized window
 of $\lambda$.
 
-\emph{Error accounting.} Let $v_I$ be the value of the principal Jacobi
-compression on $I$ and $V_I$ the Bell value of the truncated strategy
+\emph{Error accounting.} Let $v_{\mathcal{I}}$ be the value of the principal Jacobi
+compression on $\mathcal{I}$ and $V_{\mathcal{I}}$ the Bell value of the truncated strategy
 just built. The exact two-boundary flux identity (two lines from
 $J\lambda=S\lambda$):
 \[
-S-v_I \;=\; B_I/M_I,\qquad
-B_I := b(c_{-L-1})\lambda_{-L-1}\lambda_{-L}
+S-v_{\mathcal{I}} \;=\; B_{\mathcal{I}}/M_{\mathcal{I}},\qquad
+B_{\mathcal{I}} := b(c_{-L-1})\lambda_{-L-1}\lambda_{-L}
 + b(c_R)\lambda_R\lambda_{R+1},
 \]
-with $M_I=\sum_{j\in I}\lambda_j^2$ the window mass --- only the two cut
+with $M_{\mathcal{I}}=\sum_{j\in\mathcal{I}}\lambda_j^2$ the window mass --- only the two cut
 edges are unpaid. Relative to the compression, the completion changes
 exactly three kinds of term: the two cut-bond off-diagonals (already and
 only accounted by the flux identity --- not charged twice), the two
@@ -781,18 +975,18 @@ a product of two projector diagonals, so its change has modulus at most
 $2$; the marginal coefficients contribute their absolute sum $4$; hence
 the safe count $C_{\mathrm{diag}}\le 4\cdot1+8\cdot2=20$ and
 \[
-0 \;\le\; S-V_I \;\le\; (1/2 + 20\cdot R_{\max})\cdot B_I/(1-T_I),
+0 \;\le\; S-V_{\mathcal{I}} \;\le\; (1/2 + 20\cdot R_{\max})\cdot B_{\mathcal{I}}/(1-T_{\mathcal{I}}),
 \]
-with $T_I:=1-M_I$ the omitted tail mass. (The bracketed constant is the
+with $T_{\mathcal{I}}:=1-M_{\mathcal{I}}$ the omitted tail mass. (The bracketed constant is the
 proof document's safe count; its full derivation, including the
 conversion of endpoint weights through $b_0$, is in \cite{RUB26}. Any
 such multiplicative constant affects only the $O(1)$ term of $D(\eps)$
 and cannot touch the displayed $23.9010650$, which is carried entirely
-by the decay rates.) Both $B_I$ and $T_I$ decay like
+by the decay rates.) Both $B_{\mathcal{I}}$ and $T_{\mathcal{I}}$ decay like
 $e^{-\kappa_- L}+e^{-\kappa_+ R}$ by the tail estimates above, so
-balancing $L:R$ as $\kappa_+:\kappa_-$ with $|I|=d$ exactly:
+balancing $L:R$ as $\kappa_+:\kappa_-$ with $|\mathcal{I}|=d$ exactly:
 \begin{equation}\label{eq:ub}
-S-S_d \;\le\; S-V_{I_d} \;\le\; \exp(-\keff\cdot d + o(d)),
+S-S_d \;\le\; S-V_{\mathcal{I}_d} \;\le\; \exp(-\keff\cdot d + o(d)),
 \end{equation}
 where the $o(d)$ absorbs the multiplicative constants, the integer
 rounding of $L$ and $R$, and the ratio-to-tail conversion; therefore, for
@@ -825,12 +1019,13 @@ single explicit number $23.9010650$ bounds the upper half's constant
 only; it derives from the certified window and the band algebra alone via
 a certified exact-rational chain, and is certainly not sharp (the true
 carrier rate is governed by $r$ at the actual tail limits; the
-repository's earlier dimension-gap document \cite{DGS26} derives the
-sharper family-specific exponent
+repository's earlier dimension-gap document \cite{DGS26} derives, on the
+now-decertified wall route and against a constant of that decertified
+layer, the sharper family-specific exponent
 $\log R = 0.075192859195702\ldots$ along its carrier family --- per unit
 of local dimension, the same units as $\keff$, so the comparison
-$\log R>\keff$-bound is meaningful --- consistent
-with and not claimed here). The lower half's constants $c,p,C$ are
+$\log R>\keff$-bound is meaningful --- a historical comparison only,
+consistent with and not an input here). The lower half's constants $c,p,C$ are
 existential and no explicit values are claimed, so no explicit two-sided
 window on $D(\eps)/\log(1/\eps)$ is asserted; the $o(d)$ in
 \eqref{eq:ub} is not made explicit, and the Theorem's inequalities are
@@ -841,16 +1036,24 @@ combinatorial and scalar cores named above (27 theorems, standard axioms
 only). The reductions, transport typing, and assembly are \emph{not}
 formalized; they are carried by the certificate documents.
 
-\emph{Inheritance.} Both halves consume the endpoint-positivity receipt
-at its stated proved-candidate standing, and both consume the
+\emph{Inheritance.} Both halves use one statement established in
+\cite{Repo}: the zero locus $Z$ is contained in a compact subset of
+$(-1,1)^2$ --- equivalently, occupied labels stay away from $\pm1$. It is
+proved there in full, from the reflection-gluing inequality, the Lipschitz
+modulus of $g$, the certified window, and exact rational endpoint reserves;
+the certificate records it as a \emph{proved candidate}, meaning that its
+argument is complete and assumes no input beyond those already in use,
+while its own audit left open the provenance and typing of those inputs. We
+use it exactly as established there, and neither re-derive nor upgrade it.
+Both halves also consume the
 certificate's \S6/\S10 graph structure, whose formerly disclosed residual
-risk was discharged by the gated \S\S6--9 amendment named above; the
+risk was discharged by the \S\S6--9 amendment named above; the
 carrier vector $\lambda$ itself is consumed by the upper half only. The
 two halves are independent in route and in audit history, not in these
 shared roots. The repository's earlier dimension-gap document
 \cite{DGS26} had established a constructive one-sided rate for its
 specific carrier family together with a conditional lower bound whose
-missing step it named explicitly; the sealed chain \cite{RLB26}
+missing step it named explicitly; the certificate chain \cite{RLB26}
 discharges that step, subject to the shared inheritances just recorded.
 
 \emph{Priority, stated against the nearest prior art.} Two
@@ -874,7 +1077,7 @@ argument, and their own discussion already names truncation to
 bounded-energy subspaces as the approximation mechanism. What we claim is
 therefore narrower and, we believe, accurate: a first two-sided
 characterization established with complete proofs --- the upper half in
-\S\ref{sec:rate-upper}, the lower half in the sealed chain \cite{RLB26}
+\S\ref{sec:rate-upper}, the lower half in the certificate chain \cite{RLB26}
 --- for any witness of $\Cq\subsetneq\Cqs$. We note also what their
 method does not immediately give: the present carrier is \emph{not}
 geometric but asymptotically geometric at two different rates at its two
@@ -900,7 +1103,9 @@ extreme points are realized by qubit strategies \cite{Masanes}; fixed CGLMP
 functionals, whose global optimum is attained at local dimension $d$ (proven
 for $d=3,4$ \cite{IoannouRosset}; we make no minimality claim); and,
 informally, those families whose sum-of-squares certificates force
-finite-dimensional algebraic relations on optimal strategies. Conversely,
+finite-dimensional algebraic relations on optimal strategies.
+
+Conversely,
 both known explicit transport-class nonattainment objects are infinite open
 ladders: the Coladangelo--Stark state is an exactly geometric ladder whose
 nonattainment proof (Theorem~12 of the arXiv version of
@@ -917,7 +1122,9 @@ nonattainment \cite{vanDamHayden,JLV,Coladangelo} is carried by the
 log-flat ladder $p_j\propto1/j$ --- an open chain of a different decay
 class; whether this heuristic correspondence with its operator-algebraic
 classification \cite{vLSWW} can be made precise is an open question we do
-not pursue here. Group-theoretic and type-based obstructions
+not pursue here.
+
+Group-theoretic and type-based obstructions
 \cite{Slofstra1,DPP,MusatRordam,MIPRE} form a third family outside this
 transport picture; Slofstra's undecidability of perfect-strategy existence
 for linear-system games \cite{Slofstra1}, the RE-completeness of
@@ -927,7 +1134,9 @@ nonlocal game equals $1$ is $\Pi_2$-complete (Mousavi--Nezhadi--Yuen),
 whereas deciding whether the commuting-operator value equals $1$ is $\Pi_1$
 (Slofstra, as restated there), precisely because the finite-dimensional
 supremum need not be attained --- imply that any general
-structural criterion must be restricted to a subclass. Within the
+structural criterion must be restricted to a subclass.
+
+Within the
 two-outcome bipartite class, where pairwise Jordan structure generates the
 offset $2\times2$ chain architecture of the constructions above, one direction
 of a possible dichotomy is already established, and it is the mechanism of
@@ -942,7 +1151,9 @@ functional, and supplying one is the
 first obstacle to testing it. We also
 note the marginal/correlator boundary: Tsirelson's theorem covers
 correlators only, and it is exactly the marginal terms through which
-$I_{3322}$ escapes it. Finally, two cautions from the literature, both
+$I_{3322}$ escapes it.
+
+Finally, two cautions from the literature, both
 concerning the \emph{hierarchy} sense of ``attain'' rather than the
 strategy sense used in this paper: non-saturation of finite levels of the
 Navascu\'es--Pironio--Ac\'in hierarchy \cite{NPA} is not evidence of
@@ -976,6 +1187,38 @@ equation.
 
 \section{Methods and data}\label{sec:methods}
 
+\begin{center}
+\fbox{%
+\begin{minipage}{0.94\textwidth}
+\medskip
+\begin{center}\textbf{\large Verifying this paper's claims}\end{center}
+\raggedright
+\begin{enumerate}\setlength{\itemsep}{3pt}\setlength{\parskip}{0pt}
+\item \texttt{pip install -r requirements.txt}, then
+  \texttt{python certificate/release/verify\_release.py} --- frozen
+  SHA-256 custody + exact rational window; ${\sim}4$ seconds; exit~0.
+\item Theorem~\ref{thm:N}:
+  \texttt{certificate/production/theorem-N-four-receipts-at-S/} ---
+  signed statement, three rounds of refutation-first, model-based
+  adversarial review (see the disclosure below), exact-arithmetic
+  guards.
+\item Theorem~\ref{thm:S}:
+  \texttt{certificate/production/theorem-S-spatial-attainment-at-S/} ---
+  proof documents, review record, and the amendment of 2026-08-07
+  discharging the initially flagged \S\S6--9 residual risk (25 lemmas,
+  two blind review rounds).
+\item Theorem~\ref{thm:rate}, the rate $D(\eps)=\Theta(\log(1/\eps))$:
+  \texttt{certificate/production/rate-theta-log/} --- both bundles with
+  promotion-gate records.
+\item Lean cores: \texttt{cd lean/I3322Kernel \&\& lake build} --- no
+  \texttt{sorry}, standard axioms.
+\item \texttt{VERIFY.md} at repository root: every claim mapped to its
+  check, with 15-minute / 2-hour / full-audit reading paths.
+\end{enumerate}
+\medskip
+\end{minipage}}
+\end{center}
+
 \subsection*{Exact computation}
 All load-bearing computations are exact --- rational arithmetic or
 outward-rounded interval arithmetic --- and two-engine where numerical:
@@ -999,7 +1242,11 @@ independently instantiated sessions, with the auditing sessions instructed to
 refute rather than confirm. The author conceived the research program and its
 hypotheses, set the verification standards and the preregistration and
 correction protocols, made all promotion, retraction, and publication
-decisions, and assumes sole responsibility for this work.
+decisions, and assumes sole responsibility for this work. The
+load-bearing content does not rest on model output: every load-bearing
+computation is exact --- rational or outward-rounded interval arithmetic
+--- and independently reimplemented, and the combinatorial and scalar
+cores are checked by the Lean kernel (above).
 
 \subsection*{Data availability}
 Repository: \url{https://github.com/Apsiape/i3322-exact-wall}. The proofs
@@ -1044,6 +1291,12 @@ finite and infinite-dimensional quantum correlations}). The remark on
 quantitative dimension bounds quoted in \S\ref{sec:rate-scope} appears in
 the arXiv version only, in the paragraph following the proof of its
 Theorem~12.
+\bibitem{Pauwels} J.~Pauwels, \emph{The quantum supremum of the
+$I_{3322}$ Bell inequality is not attained in finite dimension} (2026),
+arXiv:2608.29734.
+\bibitem{Coladangelo2026} A.~Coladangelo, \emph{The $I_{3322}$ Bell
+inequality requires infinite dimensions}, to appear on arXiv,
+September 3, 2026.
 \bibitem{Mghirbi} N.~Mghirbi, \emph{Proof-carrying exact quantum bounds
 for the I3322 Bell inequality}, Zenodo preprint (July 2026),
 DOI \href{https://doi.org/10.5281/zenodo.21477901}{10.5281/zenodo.21477901};
@@ -1134,12 +1387,12 @@ arXiv:2203.01837.
 \bibitem{DGS26} S.~Douglas, \emph{Dimension-gap status}, repository
 document \texttt{paper/DIMENSION-GAP-STATUS.md} in \cite{Repo} (2026).
 \bibitem{RLB26} S.~Douglas, \emph{The rate lower-bound certificate chain}
-(five documents and audit record), repository directory
+(eleven numbered documents and audit record), repository directory
 \texttt{certificate/production/rate-theta-log/lower-v28\_1-bundle/} in
 \cite{Repo} (2026).
 \bibitem{RUB26} S.~Douglas, \emph{Constructive logarithmic upper bound}
-(proof document, guard scripts, and the fourteen-verdict promotion
-record), repository directory
+(proof document, guard scripts, and the complete review record of fourteen
+verdicts), repository directory
 \texttt{certificate/production/rate-theta-log/upper-U1G-bundle/} in
 \cite{Repo} (2026).
 \bibitem{Lean} L.~de~Moura et al., the Lean~4 theorem prover and Mathlib.
