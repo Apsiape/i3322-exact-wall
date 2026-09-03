@@ -169,10 +169,13 @@ What was compressed, and what was preserved:
 
 ## 6b. Optional tightened abstract (author's call)
 
-**Not applied to `resolution.tex`.** This is a drafted replacement for the PDF
-abstract, produced by the 2026-09-02 consumability review and checked here
-against the current `.tex` abstract claim by claim. It is offered as an option,
-not a correction: the shipped abstract is complete and correct as it stands.
+**⚠ STALE DRAFT — DO NOT PASTE INTO THE ARXIV FORM.** This LaTeX block was a
+drafted replacement for the *PDF* abstract only, predates the 2026-09-03
+reviewer pass, and still contains the corrected-away Mghirbi attribution,
+"ships with the paper" phrasing, and custom macros (`\Cq`, `\Cqs`, `\eps`)
+that do not render in arXiv metadata. The form abstract is the condensed
+block in §6 above ("Let $S$ be the quantum supremum..."). Kept only as a
+record of the consumability review.
 
 **One-line diff:** it keeps every claim, quantifier and hedge, adds the Pauwels
 concurrency sentence, and drops only the closing structural observation, the
