@@ -3644,8 +3644,8 @@
     },
     {
       "path": "tools/verify_lean_pins.py",
-      "bytes": 891,
-      "sha256": "126f7a360298723d0fc4851fd6ffa412f83d7ddb9f3d00522c3bd43ed80125f8"
+      "bytes": 1206,
+      "sha256": "6cb05551a86c367d09b435dfb79c24540c00cd9e10906317187ede4f2f80fb31"
     }
   ]
 }
