@@ -9,8 +9,8 @@
     },
     {
       "path": ".github/workflows/verify.yml",
-      "bytes": 4485,
-      "sha256": "cc75d83657ba5eda3727da7a9e726d4ee3b6af1801eb63b3b3dd93d62e4d3ca4"
+      "bytes": 4673,
+      "sha256": "7324204918a4c017de766bf864ab8225795e3c7e3964538b6f9c7426db48ab23"
     },
     {
       "path": ".gitignore",
@@ -134,8 +134,8 @@
     },
     {
       "path": "certificate/independent/bellman-path/bellman-path-independent.json",
-      "bytes": 6482,
-      "sha256": "cbe2cf5c51e58cbcd4dba36ef4e239d30e206efaf49025ee300c6a247dfac625"
+      "bytes": 6261,
+      "sha256": "4022400f64ec1e748e382204f21e0e0f03429e23d18ebff5491aaccd2c5fea36"
     },
     {
       "path": "certificate/independent/bellman-path/bellman_path_independent.py",
@@ -689,8 +689,8 @@
     },
     {
       "path": "certificate/production/foundational-sprint-1206/SPATIAL-ATTAINMENT-THEOREM.md",
-      "bytes": 5329,
-      "sha256": "0019199d97dae71576e134709bb1a65cfb7e5687339f700a0cc459e703f17d91"
+      "bytes": 5154,
+      "sha256": "e97514040848634639f5d93477c62be2bc1b361c4fcaa0ea29f09695746a3a7a"
     },
     {
       "path": "certificate/production/foundational-sprint-1206/spatial-realization-guard.json",
@@ -2364,8 +2364,8 @@
     },
     {
       "path": "certificate/production/foundational-sprint-1295/bellman-path-equivalence.json",
-      "bytes": 6082,
-      "sha256": "2b467e595ceacd69d8ced5ba99694eb6bf9fdbc6a950e1d810736e67fc0175ba"
+      "bytes": 5862,
+      "sha256": "5da87bd8b74175739dba4d6374091e15e892e2f5d9195aff17e7d8a00eb564ae"
     },
     {
       "path": "certificate/production/foundational-sprint-1295/bellman_path_equivalence_verify.py",
@@ -3144,8 +3144,8 @@
     },
     {
       "path": "certificate/production/theorem-N-four-receipts-at-S/artifacts/theorem_N_promoted_status.json",
-      "bytes": 895,
-      "sha256": "8fe84cf867cb7d99e68a09a7f2d23a491e2df5bbc1ddda407ee2dd9ae99ea308"
+      "bytes": 867,
+      "sha256": "dfa8d793ccb0073dedb2960a45f715baf319f7facdfe3734591f3e712338b7d5"
     },
     {
       "path": "certificate/production/theorem-N-four-receipts-at-S/review/ROUND1-VERDICT.md",
@@ -3174,8 +3174,8 @@
     },
     {
       "path": "certificate/production/theorem-S-spatial-attainment-at-S/MANIFEST_SHA256.txt",
-      "bytes": 2033,
-      "sha256": "dd20bc753ba125d2af6143791af0e95ab8ca6ad097cf8e78605058796b5488d5"
+      "bytes": 2013,
+      "sha256": "99cd5a64fc5761d2da1b99ecde88d2f4fd94172508f50c22a529bf31728d20ee"
     },
     {
       "path": "certificate/production/theorem-S-spatial-attainment-at-S/README.md",
@@ -3259,8 +3259,8 @@
     },
     {
       "path": "certificate/release/README.md",
-      "bytes": 3602,
-      "sha256": "3053eea31f2ccbfe9add0c2a45254619d9ff7f43b8f54829ece8798b6c02a01b"
+      "bytes": 3531,
+      "sha256": "1fe4da2bd417a88a9e0d79ae80c84789cea606754dd1c38ce8e26a30b2d2b94b"
     },
     {
       "path": "certificate/release/REVISION-STATUS.md",
@@ -3294,13 +3294,13 @@
     },
     {
       "path": "certificate/release/release-manifest.json",
-      "bytes": 184058,
-      "sha256": "58bc55b4a5cf9a168489a7d3b1c06e98c8eb63df9e4d01a43141397e2b5c7d3f"
+      "bytes": 179886,
+      "sha256": "f8bc538ff61c3a6dab5acb2914cea42a87b0c43956ed93db6a2f9acd33e5c7a5"
     },
     {
       "path": "certificate/release/v13-claim-contract.json",
-      "bytes": 1094,
-      "sha256": "3858cb918141b682d49b61cd577fe88b17f101ef34e7b43e281f17bbd5bc46fd"
+      "bytes": 1075,
+      "sha256": "2a1dd215d21ff541cb15b6c181b8528d8dbc4cee93b94d871dd85ca226e08f1d"
     },
     {
       "path": "certificate/release/v13_claim_contract_verify.py",
@@ -3389,8 +3389,8 @@
     },
     {
       "path": "paper/CERTIFICATE-STATUS-ALERT.md",
-      "bytes": 8200,
-      "sha256": "69ba771db9e4a941b8e6036fc61dabc30fb5cec95e6babaaebf9829da0f5ec2f"
+      "bytes": 8033,
+      "sha256": "228b5a4dc921cbe6b8e0ac050325743a2391f136117dfce4676a32684c5891c9"
     },
     {
       "path": "paper/DIMENSION-GAP-STATUS.md",
@@ -3489,8 +3489,8 @@
     },
     {
       "path": "paper/TECHNICAL-SUPPLEMENT.md",
-      "bytes": 16638,
-      "sha256": "a5629e1f30fc8455c4db811b0dba5bcc03d8474ce360ea6ff147a5f3935037b8"
+      "bytes": 16212,
+      "sha256": "5748a8dcd312f826d188950eb9bd65fc5e8c91e589d3f2e0dd71bd78ae0eb56c"
     },
     {
       "path": "paper/manuscript.pdf",
@@ -3499,8 +3499,8 @@
     },
     {
       "path": "paper/manuscript.tex",
-      "bytes": 27384,
-      "sha256": "6101c77e851c51ade664db39f4cbda5cbd1e0326e1f5ad07f8444c9829b57c1a"
+      "bytes": 26736,
+      "sha256": "4fc7c579edf3d316b61f60be0d794f7a31ffa6e9e04d334076c2dbea38b2f3b0"
     },
     {
       "path": "paper/rate-companion.pdf",
@@ -3586,6 +3586,16 @@
       "path": "review/model-audits/QUANTIFIER-AUDIT.md",
       "bytes": 2305,
       "sha256": "193dff55e8f15ffaa9530e3e0d0c9f520787ef17875dc9da82768642f7db9611"
+    },
+    {
+      "path": "tools/check_git_snapshot.py",
+      "bytes": 3423,
+      "sha256": "0ee498d146fade02c52df360e71ea3f13733ba4d4e9cfca431116b03095319d8"
+    },
+    {
+      "path": "tools/check_git_snapshot_selftest.py",
+      "bytes": 2260,
+      "sha256": "6d3b8d9c1df76c785d4b23a1dfe4fcf79b3d19dbf15b02bfe503c115800dfc6d"
     },
     {
       "path": "tools/check_publication.py",

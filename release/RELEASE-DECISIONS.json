@@ -12,8 +12,8 @@
   "proof_review_approval": {
     "approved_by": "Codex root: local review acceptance, not an independent human approval",
     "approved_at": "2026-09-10",
-    "source_manifest_sha256": "492ed4e2f243c111b27539714afaf6f8412ee81308416c77cc484484d7a9a7a6",
-    "rebind_basis": "Latest exact inventory delta changes only tools/verify_lean_pins.py to disable parallel Git index work under the existing check cap. All scientific source/PDF/Lean bytes remain unchanged. Hosted run 34539834696 passed development, fresh selected-Lean reproduction, all 37 named axiom checks and nine dependency-pin checks.",
+    "source_manifest_sha256": "d644e64ac3fc5a78efb49f951d1f92dccae891e1bcf34b511583354a30562f1a",
+    "rebind_basis": "Byte-custody repair after tag run 34540662277 rejected CRLF/LF inventory drift. Eleven historical files restored to the exact existing Git blobs; current paper/PDF/Lean content unchanged. Added actual Git index/commit blob verification with adversarial regression controls before Lean CI. Tag gate must pass again before publication.",
     "paper_pdf_sha256": "9aeed79f970cb033cca77dc915fefa7fac29d2d85b77fa3f1898172c6fb108a6",
     "final_paper_only_report_sha256": "9c095a8f1ae403863d32ad7ef4cea51b1ad6599d8ae781de10e2003514408894",
     "scope": "Final blind paper-only review found no blocking internal mathematical defect or additional internal proof gap; declared external inputs were not independently verified in that review. Separate scoped source, computational and selected-Lean checks retain their recorded limitations. Not a full formal proof or guarantee. Any source change requires re-binding review approval."
@@ -21,16 +21,16 @@
   "public_release_approval": {
     "approved_by": "Seth Douglas, explicit instruction to proceed after successful CI",
     "approved_at": "2026-09-10",
-    "source_manifest_sha256": "492ed4e2f243c111b27539714afaf6f8412ee81308416c77cc484484d7a9a7a6",
-    "scope": "Create v4.1.0 tag; pass tag verification and owner checkpoint; publish GitHub release to trigger existing Zenodo integration and verify resulting archive. Does not authorize arXiv replacement or mathematical changes."
+    "source_manifest_sha256": "d644e64ac3fc5a78efb49f951d1f92dccae891e1bcf34b511583354a30562f1a",
+    "scope": "Create v4.1.0 tag; pass tag verification and owner checkpoint; publish GitHub release to trigger existing Zenodo integration and verify resulting archive. Does not authorize arXiv replacement or mathematical changes. Author also explicitly authorized replacing the pushed but unpublished v4.1.0 tag after this byte-only repair, preserving the old identity in the local audit record."
   },
-  "hosted_workflow_execution": "PASS: https://github.com/Apsiape/i3322-exact-wall/actions/runs/34539834696 on 294df153b9831d79a02d4871bef112ac3d76280f. Final release decisions are separate control metadata, not changes to the frozen 729-file source inventory. Tag verification must also pass before release publication.",
+  "hosted_workflow_execution": "Prior selected Lean run 34539834696 passed. Unpublished tag run 34540662277 passed development and selected Lean but failed final raw source custody on historical line endings. This repaired snapshot requires a new complete tag-gate pass; no release published from the failed snapshot.",
   "review_environment": "i3322-release-review; Apsiape required reviewer. Self-review allowed for solo owner; not an independent human audit. Final approved source/decision hashes must be installed and matched by the tag gate.",
   "public_inventory_approval": {
     "approved_by": "Seth Douglas, via explicit branch-push approval followed by release authorization",
     "approved_at": "2026-09-10",
-    "source_manifest_sha256": "492ed4e2f243c111b27539714afaf6f8412ee81308416c77cc484484d7a9a7a6",
-    "engineering_rebind": "Only hosted runtime and Git scheduling tooling changed after first authorized push; scientific content unchanged; the final hosted run passed.",
+    "source_manifest_sha256": "d644e64ac3fc5a78efb49f951d1f92dccae891e1bcf34b511583354a30562f1a",
+    "engineering_rebind": "Historical Git byte identity preserved; manifest repaired; actual Git blob guard and regression tests added. Author explicitly approved repair and replacement of the unpublished tag.",
     "scope": "Publish the frozen source snapshot and release control records as v4.1.0, including automatic Zenodo archival. Private operational files remain excluded."
   },
   "local_phase": "RELEASE-AUTHORIZED-AWAITING-TAG-GATE",

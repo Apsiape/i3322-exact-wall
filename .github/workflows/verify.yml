@@ -29,6 +29,9 @@ jobs:
           timeout 60s python tools/release-preflight.py check
           timeout 60s python tools/release-preflight-selftest.py
           timeout 60s python tools/verify_candidate.py static
+          timeout 60s python tools/verify_candidate.py integrity
+          timeout 60s python tools/check_git_snapshot.py
+          timeout 60s python tools/check_git_snapshot_selftest.py
           timeout 60s python tools/verify_candidate_selftest.py
       - name: Development controls (not proof or release approval)
         shell: bash
