@@ -12,19 +12,20 @@
   "proof_review_approval": {
     "approved_by": "Codex root: local review acceptance, not an independent human approval",
     "approved_at": "2026-09-10",
-    "source_manifest_sha256": "9287284939d4b4657336f808f073d27a23db668938fcd1216cc8a7a02a6d2264",
-    "rebind_basis": "Exact inventory comparison: only eight release/documentation files changed for automatic DOI minting. Paper PDF, both TeX files, certificates and every Lean source are unchanged. Release tool selftests and isolated Git-roundtrip checks passed.",
+    "source_manifest_sha256": "69ca9ef7db1c8449165a60ae38121bf54da27d4cb80cf044f1a8cc4e6c41b1a1",
+    "rebind_basis": "After automatic-mint metadata checks, a hosted-runtime fix changes only the workflow and adds tools/ci_lean.sh: 1536 MiB cgroup memory cap replaces an incompatible virtual-address-space limit. Exact inventory comparison confirms all scientific source/PDF/Lean bytes unchanged. This approval does not assert success of the new hosted run.",
     "paper_pdf_sha256": "9aeed79f970cb033cca77dc915fefa7fac29d2d85b77fa3f1898172c6fb108a6",
     "final_paper_only_report_sha256": "9c095a8f1ae403863d32ad7ef4cea51b1ad6599d8ae781de10e2003514408894",
     "scope": "Final blind paper-only review found no blocking internal mathematical defect or additional internal proof gap; declared external inputs were not independently verified in that review. Separate scoped source, computational and selected-Lean checks retain their recorded limitations. Not a full formal proof or guarantee. Any source change requires re-binding review approval."
   },
   "public_release_approval": null,
-  "hosted_workflow_execution": "UNTESTED",
+  "hosted_workflow_execution": "Run 34538757523: development passed; Lean cache bootstrap failed before theorem checking with thread creation error. Cgroup-based runner correction prepared; new run pending.",
   "review_environment": "Configured 2026-09-10: i3322-release-review; Apsiape required reviewer. Self-review allowed for the solo owner; not an independent human audit. Approval hash variables remain unset.",
   "public_inventory_approval": {
     "approved_by": "Seth Douglas, via explicit authorization to commit and push the prepared changes",
     "approved_at": "2026-09-10",
-    "source_manifest_sha256": "9287284939d4b4657336f808f073d27a23db668938fcd1216cc8a7a02a6d2264",
+    "source_manifest_sha256": "69ca9ef7db1c8449165a60ae38121bf54da27d4cb80cf044f1a8cc4e6c41b1a1",
+    "engineering_rebind": "Only hosted resource-limit setup changed after first authorized push; scientific content unchanged. Publication approval remains unset.",
     "scope": "Publish the prepared source snapshot to the repository branch; no tag, GitHub release, DOI deposit or arXiv submission authorized."
   },
   "local_phase": "BRANCH-PUSH-AUTHORIZED-RELEASE-NOT-AUTHORIZED",

@@ -65,14 +65,20 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          ulimit -v 1572864
-          export MATHLIB_CACHE_DIR="$RUNNER_TEMP/i3322-mathlib-cache"
-          timeout 600s lake exe cache get Mathlib.Tactic Mathlib.Analysis.SpecialFunctions.Sqrt
-          for module in QuarterCeiling EndpointMargins FiniteClosure RateCores WeightedFlow; do
-            timeout 600s lake --no-cache build "I3322Kernel.$module"
-          done
-          timeout 600s lake --no-cache build
-          timeout 600s lake env lean AxiomCheck.lean > "$RUNNER_TEMP/i3322-axioms.txt"
+          # Cap the complete process group's charged memory, not virtual
+          # address reservations needed by Lean's runtime/thread stacks.
+          # Failure to create the bounded service fails closed; no fallback.
+          sudo systemd-run --quiet --wait --pipe --collect \
+            --unit="i3322-lean-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}" \
+            --property=MemoryMax=1536M --property=MemorySwapMax=0 \
+            --property=RuntimeMaxSec=2100 --property=LimitCORE=0 \
+            --property=KillMode=control-group \
+            --uid="$(id -u)" --gid="$(id -g)" --working-directory="$PWD" \
+            --setenv="PATH=$PATH" --setenv="HOME=$HOME" \
+            --setenv=LEAN_NUM_THREADS=1 --setenv=MATHLIB_NO_CACHE_ON_UPDATE=1 \
+            --setenv="MATHLIB_CACHE_DIR=$RUNNER_TEMP/i3322-mathlib-cache" \
+            --setenv="I3322_AXIOM_LOG=$RUNNER_TEMP/i3322-axioms.txt" \
+            /bin/bash "$GITHUB_WORKSPACE/tools/ci_lean.sh"
       - name: Check selected axioms and unchanged dependency pins
         shell: bash
         run: |

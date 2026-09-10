@@ -9,8 +9,8 @@
     },
     {
       "path": ".github/workflows/verify.yml",
-      "bytes": 4032,
-      "sha256": "fc2e3933f65963bbbdfe5789a13750ecdfd3105d488654dc412c1337ffdac5f1"
+      "bytes": 4485,
+      "sha256": "cc75d83657ba5eda3727da7a9e726d4ee3b6af1801eb63b3b3dd93d62e4d3ca4"
     },
     {
       "path": ".gitignore",
@@ -3596,6 +3596,11 @@
       "path": "tools/check_revision.py",
       "bytes": 5141,
       "sha256": "1d4fd59e6849f3dbe32e02f9218a7e3c3cce2f5b13255ea01625beb0ce8dc300"
+    },
+    {
+      "path": "tools/ci_lean.sh",
+      "bytes": 876,
+      "sha256": "7f36f6fea376a35de08a7fa247d9ad71692addb6232033224587d1e5486f2ef8"
     },
     {
       "path": "tools/freeze_candidate.py",
