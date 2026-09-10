@@ -5,6 +5,13 @@ attainment, and D(epsilon) = Theta(log(1/epsilon)). The current paper is
 `resolution.pdf`; its sources supersede older papers in this directory.
 Historical v4.0.0 remains unchanged at DOI 10.5281/zenodo.22099128.
 
+The corrected v4.1.0 release is archived at
+[DOI 10.5281/zenodo.22698978](https://doi.org/10.5281/zenodo.22698978).
+After publication, the main-branch paper and citation metadata were updated
+to include that DOI. The rebuilt PDF is a citation-only variant, not the
+identical archived file. No theorem or proof was changed in this follow-up;
+the published tag and Zenodo archive remain unchanged.
+
 ## Substantive corrections
 
 - Replaced an unjustified paired-component identification in the lower bound

@@ -10,8 +10,11 @@ Seth Douglas · [ORCID](https://orcid.org/0009-0007-4708-3252)
 - [Certificate dependency map](paper/CERTIFICATE-MAP.md).
 - [Release procedure](paper/ARXIV-SUBMISSION.md).
 
-Version 4.1.0 is the revised proof and verification snapshot; publication
-status and author approvals are recorded in the release decisions below.
+Version 4.1.0 is the revised proof and verification snapshot, archived at
+[DOI 10.5281/zenodo.22698978](https://doi.org/10.5281/zenodo.22698978).
+The published tag and archive are immutable. The main branch additionally
+includes a citation-only DOI update and rebuilt PDF; its bytes differ from
+the archived PDF, but its mathematical content is unchanged.
 Historical v4.0.0 is
 permanently identified by [DOI 10.5281/zenodo.22099128](https://doi.org/10.5281/zenodo.22099128).
 The [concept DOI](https://doi.org/10.5281/zenodo.21782008) identifies the version

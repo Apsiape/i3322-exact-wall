@@ -1,6 +1,7 @@
 cff-version: 1.2.0
-message: "Cite the versioned release below. Zenodo assigns its version DOI when the GitHub release is published; consult that release for the archive DOI."
+message: "Cite the frozen v4.1.0 release using its DOI below. The main branch additionally includes a citation-only DOI update and rebuilt PDF."
 version: 4.1.0
+doi: "10.5281/zenodo.22698978"
 title: "The I3322 quantum value is attained spatially but not in finite dimension"
 type: article
 authors:

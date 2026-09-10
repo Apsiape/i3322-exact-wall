@@ -1,8 +1,8 @@
 {
   "schema": "i3322-release-decisions-v1",
-  "status": "APPROVED-FOR-RELEASE",
+  "status": "POST-RELEASE-CITATION-UPDATE",
   "version": "4.1.0",
-  "version_doi": null,
+  "version_doi": "10.5281/zenodo.22698978",
   "doi_mode": "zenodo-after-github-release",
   "release_url": "https://github.com/Apsiape/i3322-exact-wall/releases/tag/v4.1.0",
   "concept_doi": "10.5281/zenodo.21782008",
@@ -24,7 +24,7 @@
     "source_manifest_sha256": "d644e64ac3fc5a78efb49f951d1f92dccae891e1bcf34b511583354a30562f1a",
     "scope": "Create v4.1.0 tag; pass tag verification and owner checkpoint; publish GitHub release to trigger existing Zenodo integration and verify resulting archive. Does not authorize arXiv replacement or mathematical changes. Author also explicitly authorized replacing the pushed but unpublished v4.1.0 tag after this byte-only repair, preserving the old identity in the local audit record."
   },
-  "hosted_workflow_execution": "Prior selected Lean run 34539834696 passed. Unpublished tag run 34540662277 passed development and selected Lean but failed final raw source custody on historical line endings. This repaired snapshot requires a new complete tag-gate pass; no release published from the failed snapshot.",
+  "hosted_workflow_execution": "PASS: all three jobs in https://github.com/Apsiape/i3322-exact-wall/actions/runs/34541980132 on archived commit 85b97c648541f52fc42fb31ee3626988f7bfde6c. Published GitHub release 2026-09-10T23:33:18Z; Zenodo minted DOI 10.5281/zenodo.22698978.",
   "review_environment": "i3322-release-review; Apsiape required reviewer. Self-review allowed for solo owner; not an independent human audit. Final approved source/decision hashes must be installed and matched by the tag gate.",
   "public_inventory_approval": {
     "approved_by": "Seth Douglas, via explicit branch-push approval followed by release authorization",
@@ -33,7 +33,22 @@
     "engineering_rebind": "Historical Git byte identity preserved; manifest repaired; actual Git blob guard and regression tests added. Author explicitly approved repair and replacement of the unpublished tag.",
     "scope": "Publish the frozen source snapshot and release control records as v4.1.0, including automatic Zenodo archival. Private operational files remain excluded."
   },
-  "local_phase": "RELEASE-AUTHORIZED-AWAITING-TAG-GATE",
-  "public_metadata_pending": "Version DOI will be assigned after authorized GitHub release publication. Prepublication metadata uses the versioned GitHub URL; postpublication archive/DOI verification must precede arXiv replacement.",
-  "branch_push_authorization": "Explicit author approval on 2026-09-10 to commit and push, then inspect hosted CI; do not create a release."
+  "local_phase": "PUBLISHED-ARCHIVE-WITH-POST-RELEASE-CITATION-UPDATE",
+  "branch_push_authorization": "Explicit author approval on 2026-09-10 to commit and push, then inspect hosted CI; do not create a release.",
+  "post_release_citation_update": {
+    "author_authorization": "Explicit instruction to add minted DOI, rebuild, commit and push; no arXiv action.",
+    "current_source_manifest_sha256": "d99e34d831b20ebd5b8464481d63335fbd6bc01086cc2c53cda103b88117c287",
+    "archive_source_manifest_sha256": "d644e64ac3fc5a78efb49f951d1f92dccae891e1bcf34b511583354a30562f1a",
+    "scope": "Citation metadata, archive links, PDF rebuild and file receipts only. Existing approval objects refer to the frozen release, not this new snapshot. No new release or tag; published tag remains immutable.",
+    "changed_source_files": [
+      ".zenodo.json",
+      "CITATION.cff",
+      "README.md",
+      "paper/ARXIV-SUBMISSION.md",
+      "paper/BUILD.json",
+      "paper/REVISION-NOTES.md",
+      "paper/resolution.pdf",
+      "paper/resolution.tex"
+    ]
+  }
 }

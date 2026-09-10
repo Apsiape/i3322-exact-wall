@@ -19,13 +19,13 @@
     },
     {
       "path": ".zenodo.json",
-      "bytes": 2740,
-      "sha256": "8eb20c5c4b3e008f2758cb5ff8bfd01dc581775f079435d8a47cabaf491fd470"
+      "bytes": 2776,
+      "sha256": "603050aec23410785ee33f0cfbf5f44153938a1563c1a47c18f1c9aaeb860868"
     },
     {
       "path": "CITATION.cff",
-      "bytes": 2073,
-      "sha256": "2f7194db23f361ba695ebc6a4f200feb2d3c8490d632c1561075d3e27bc03e87"
+      "bytes": 2093,
+      "sha256": "d35a715da706d09bc979b82ce22683d04123c22d7fc0036fc1dd9a0ef24278d0"
     },
     {
       "path": "LICENSE.md",
@@ -44,8 +44,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3185,
-      "sha256": "c120f51f50eac7bccfb73fc87293c28e153b781d66fe954aca8073a8f59a687f"
+      "bytes": 3394,
+      "sha256": "1f76e411b621aa52bb218e34a3bfabfe10affcaa34e0a922a6c0f8982bce9dc3"
     },
     {
       "path": "REVIEW-START-HERE.md",
@@ -3374,13 +3374,13 @@
     },
     {
       "path": "paper/ARXIV-SUBMISSION.md",
-      "bytes": 2873,
-      "sha256": "66eb7b4f44f60c3c320312693f742075217552aff3f4d38cc30d71a433d86719"
+      "bytes": 3097,
+      "sha256": "d6f377023b01403d570ba7bd142198f0fd8cb31f017e0409b3d273f749e86db3"
     },
     {
       "path": "paper/BUILD.json",
-      "bytes": 453,
-      "sha256": "624d0c8c1ab83c1a410a123e206550483699e800993d7a92b628617eee0e95c6"
+      "bytes": 629,
+      "sha256": "7da8acea250a8389fde61ce175efbf8c6311f805321989591a6757c26958757a"
     },
     {
       "path": "paper/CERTIFICATE-MAP.md",
@@ -3484,8 +3484,8 @@
     },
     {
       "path": "paper/REVISION-NOTES.md",
-      "bytes": 2219,
-      "sha256": "b1e58cb7ae077b1bd3f456be37c776fae725317ffb129024e611c3a378befe66"
+      "bytes": 2616,
+      "sha256": "2a8065d27073e7cd772c1e2e7d375b05d9008b319ac6752ad2ac966b9fb31bdc"
     },
     {
       "path": "paper/TECHNICAL-SUPPLEMENT.md",
@@ -3519,13 +3519,13 @@
     },
     {
       "path": "paper/resolution.pdf",
-      "bytes": 468806,
-      "sha256": "9aeed79f970cb033cca77dc915fefa7fac29d2d85b77fa3f1898172c6fb108a6"
+      "bytes": 469181,
+      "sha256": "b3e626a8528c2d0a184aaca97ce34f46d87a9227246083845c968067dc266757"
     },
     {
       "path": "paper/resolution.tex",
-      "bytes": 78383,
-      "sha256": "dd00798a743e17d3dc11b5664063194914ad3e218c24432ed1aae08c49c3eb22"
+      "bytes": 78612,
+      "sha256": "7fcbb23a0e87717cc6e85bd46d1465cf51355f2680ed045317c1eb564137bdf9"
     },
     {
       "path": "paper/technical-supplement.pdf",

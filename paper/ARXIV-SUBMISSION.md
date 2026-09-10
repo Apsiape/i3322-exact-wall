@@ -8,7 +8,7 @@ Local preparation does not authorize external publication.
    freeze `release/SOURCE-MANIFEST.json` from those Git-normalized bytes.
 3. Inspect the PDF, source diff and [correction record](REVISION-NOTES.md).
 4. Obtain author approval of inventory, version and release. Version 4.1.0
-   is selected for local preparation, not yet published. Decisions are recorded in
+   was published at DOI 10.5281/zenodo.22698978. Decisions are recorded in
    `release/RELEASE-DECISIONS.json`.
 
 The verified integration archives a **published GitHub release** and then
@@ -34,6 +34,11 @@ arXiv paper, build a separate citation-only variant and record its distinct
 PDF/source hashes; do not claim it is byte-identical to the archived PDF.
 No mathematical edits are implicit in DOI reconciliation. A pre-reserved DOI
 route is allowed only if a supported linked workflow is independently verified.
+
+The main-branch paper now includes the minted v4.1.0 DOI. Its rebuilt
+source/PDF hashes are recorded in `paper/BUILD.json`; the frozen release
+retains its original files. No arXiv replacement has been submitted by this
+DOI update.
 
 Replace the existing arXiv article, not a duplicate submission. Its source ZIP
 contains only `resolution.tex` and `LOWER-BOUND-REVISION.tex`. Inspect arXiv's
