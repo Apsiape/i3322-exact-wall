@@ -1,4 +1,4 @@
-name: Verify certificate
+name: Bounded verification and separately approved release gate
 
 on:
   push:
@@ -7,21 +7,13 @@ on:
   pull_request:
   workflow_dispatch:
 
-jobs:
-  custody:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.13'
-          cache: pip
-      - run: python -m pip install -r requirements.txt
-      - run: python certificate/release/verify_release.py
+permissions:
+  contents: read
 
-  full-replay:
-    if: startsWith(github.ref, 'refs/tags/v') || github.event_name == 'workflow_dispatch'
+jobs:
+  development:
     runs-on: ubuntu-latest
+    timeout-minutes: 6
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -29,4 +21,88 @@ jobs:
           python-version: '3.13'
           cache: pip
       - run: python -m pip install -r requirements.txt
-      - run: python certificate/release/verify_release.py --full
+      - name: Read-only package and inventory preparation
+        shell: bash
+        run: |
+          set -euo pipefail
+          ulimit -v 524288
+          timeout 60s python tools/release-preflight.py check
+          timeout 60s python tools/release-preflight-selftest.py
+          timeout 60s python tools/verify_candidate.py static
+          timeout 60s python tools/verify_candidate_selftest.py
+      - name: Development controls (not proof or release approval)
+        shell: bash
+        run: |
+          set -euo pipefail
+          ulimit -v 524288
+          timeout 60s python tools/check_revision.py
+          timeout 60s python tools/check_publication.py
+
+  selected-lean-reproduction:
+    needs: development
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      LEAN_NUM_THREADS: '1'
+      MATHLIB_NO_CACHE_ON_UPDATE: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install pinned project toolchain only
+        uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: lean/I3322Kernel
+          auto-config: 'false'
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          use-mathlib-cache: 'false'
+          use-github-cache: 'false'
+      - name: Fresh official upstream artifacts and sequential project compilation
+        working-directory: lean/I3322Kernel
+        shell: bash
+        run: |
+          set -euo pipefail
+          ulimit -v 1572864
+          export MATHLIB_CACHE_DIR="$RUNNER_TEMP/i3322-mathlib-cache"
+          timeout 600s lake exe cache get Mathlib.Tactic Mathlib.Analysis.SpecialFunctions.Sqrt
+          for module in QuarterCeiling EndpointMargins FiniteClosure RateCores WeightedFlow; do
+            timeout 600s lake --no-cache build "I3322Kernel.$module"
+          done
+          timeout 600s lake --no-cache build
+          timeout 600s lake env lean AxiomCheck.lean > "$RUNNER_TEMP/i3322-axioms.txt"
+      - name: Check selected axioms and unchanged dependency pins
+        shell: bash
+        run: |
+          set -euo pipefail
+          ulimit -v 524288
+          timeout 60s python tools/verify_candidate.py axioms --log "$RUNNER_TEMP/i3322-axioms.txt"
+          git diff --exit-code -- lean/I3322Kernel
+          timeout 60s python tools/verify_lean_pins.py
+          echo 'Selected project declarations only; official upstream artifacts allowed. Full paper and full upstream source build not claimed.'
+
+  release-approval:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [development, selected-lean-reproduction]
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    # Configure required reviewers and protected tags before any release.
+    # Missing approved hashes fail closed even for an unconfigured environment.
+    environment: i3322-release-review
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Require human-approved hashes, version, DOI workflow and source inventory
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+          APPROVED_MANIFEST: ${{ vars.I3322_APPROVED_MANIFEST_SHA256 }}
+          APPROVED_DECISIONS: ${{ vars.I3322_APPROVED_DECISIONS_SHA256 }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          ulimit -v 524288
+          timeout 60s python tools/verify_candidate.py release --tag "$RELEASE_TAG" --approved-manifest-sha256 "$APPROVED_MANIFEST" --approved-decisions-sha256 "$APPROVED_DECISIONS"

@@ -1,0 +1,33 @@
+{
+  "schema": "i3322-release-decisions-v1",
+  "status": "UNRELEASED",
+  "version": "4.1.0",
+  "version_doi": null,
+  "doi_mode": "zenodo-after-github-release",
+  "release_url": "https://github.com/Apsiape/i3322-exact-wall/releases/tag/v4.1.0",
+  "concept_doi": "10.5281/zenodo.21782008",
+  "historical_v4_doi": "10.5281/zenodo.22099128",
+  "version_selection_basis": "Local preparation for recommended version 4.1.0 following author's instruction to proceed; no public operation authorized by this record.",
+  "version_reason": "Substantive proof correction after historical v4.0.0 with unchanged main theorem statements.",
+  "proof_review_approval": {
+    "approved_by": "Codex root: local review acceptance, not an independent human approval",
+    "approved_at": "2026-09-10",
+    "source_manifest_sha256": "9287284939d4b4657336f808f073d27a23db668938fcd1216cc8a7a02a6d2264",
+    "rebind_basis": "Exact inventory comparison: only eight release/documentation files changed for automatic DOI minting. Paper PDF, both TeX files, certificates and every Lean source are unchanged. Release tool selftests and isolated Git-roundtrip checks passed.",
+    "paper_pdf_sha256": "9aeed79f970cb033cca77dc915fefa7fac29d2d85b77fa3f1898172c6fb108a6",
+    "final_paper_only_report_sha256": "9c095a8f1ae403863d32ad7ef4cea51b1ad6599d8ae781de10e2003514408894",
+    "scope": "Final blind paper-only review found no blocking internal mathematical defect or additional internal proof gap; declared external inputs were not independently verified in that review. Separate scoped source, computational and selected-Lean checks retain their recorded limitations. Not a full formal proof or guarantee. Any source change requires re-binding review approval."
+  },
+  "public_release_approval": null,
+  "hosted_workflow_execution": "UNTESTED",
+  "review_environment": "Configured 2026-09-10: i3322-release-review; Apsiape required reviewer. Self-review allowed for the solo owner; not an independent human audit. Approval hash variables remain unset.",
+  "public_inventory_approval": {
+    "approved_by": "Seth Douglas, via explicit authorization to commit and push the prepared changes",
+    "approved_at": "2026-09-10",
+    "source_manifest_sha256": "9287284939d4b4657336f808f073d27a23db668938fcd1216cc8a7a02a6d2264",
+    "scope": "Publish the prepared source snapshot to the repository branch; no tag, GitHub release, DOI deposit or arXiv submission authorized."
+  },
+  "local_phase": "BRANCH-PUSH-AUTHORIZED-RELEASE-NOT-AUTHORIZED",
+  "public_metadata_pending": "Version DOI will be assigned after authorized GitHub release publication. Prepublication metadata uses the versioned GitHub URL; postpublication archive/DOI verification must precede arXiv replacement.",
+  "branch_push_authorization": "Explicit author approval on 2026-09-10 to commit and push, then inspect hosted CI; do not create a release."
+}

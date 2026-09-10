@@ -11,7 +11,8 @@ International License in `LICENSES/CC-BY-4.0.txt`:
 - all files under `paper/`;
 - all Markdown theorem, audit, preregistration, and README files under
   `certificate/`;
-- the repository `README.md` and citation/archive metadata.
+- all other repository Markdown documentation, including verification and
+  historical-review summaries, and citation/archive metadata.
 
 Copyright 2026 Seth Douglas.
 
@@ -22,5 +23,10 @@ The following are licensed under the BSD 3-Clause License in
 
 - all `.py`, `.json`, and `.npz` files under `certificate/`;
 - `requirements.txt` and other executable build or verification files.
+- all Lean source under `lean/`, and scripts under `tools/`.
+
+Third-party dependencies retain their respective licenses. Referenced papers
+are not relicensed by this notice. Local ignored working material is not part
+of the public package.
 
 Copyright 2026 Seth Douglas.

@@ -11,3 +11,11 @@ __pycache__/
 *.fdb_latexmk
 *.synctex.gz
 /tmp/
+# Development PDF build products; the review copy is paper/resolution.pdf.
+/output/
+# Local audit operations and imported development-only provenance.
+/review/end-to-end-2026-09-10/
+/review/revision-2026-09-10/
+.env
+.env.*
+!.env.example

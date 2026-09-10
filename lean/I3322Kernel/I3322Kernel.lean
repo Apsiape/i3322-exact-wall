@@ -2,3 +2,4 @@ import I3322Kernel.QuarterCeiling
 import I3322Kernel.EndpointMargins
 import I3322Kernel.FiniteClosure
 import I3322Kernel.RateCores
+import I3322Kernel.WeightedFlow

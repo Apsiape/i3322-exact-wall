@@ -1,0 +1,338 @@
+\subsection{The lower bound by finite weighted flow}\label{sec:rate-lower}
+
+We prove, with constants depending only on the fixed Bell functional,
+\begin{equation}\label{eq:lb}
+ S-S_d\ge c_* e^{-C_*d}\qquad(d\ge1).
+\end{equation}
+The proof uses neither a dimension-preserving conversion to a chain nor
+identification of vectors in different joint spectral cells. There can be
+quadratically many such cells. We count only the distinct local spectral
+labels, and control all nonnegative cell weights simultaneously.
+
+\subsubsection*{Critical data and the original-dimension interface}
+
+Write
+\[
+ \delta(x,u)=xu+(x-u)/2-1,\quad b(t)=\tfrac12\sqrt{1-t^2},
+ \quad w=b^2.
+\]
+The critical-storage construction of Section~\ref{sec:setup} gives a
+concave $3/2$-Lipschitz function $g$ on $[-1,1]$, positive in the open
+interval, such that
+\begin{equation}\label{eq:wf-feasibility}
+ \frac{w(x)}{g(x)}+g(u)\le S-\delta(x,u),\qquad
+ g(t)g(-t)\ge w(t).
+\end{equation}
+Initially the quotient is taken at interior points. To make the inherited
+input precise, for $q>S$ take the infimum $g_q$ of terminal Schur pivots
+over finite Jacobi histories. The bound $J\preceq SI$ gives pivots at least
+$q-S$; extending a history gives the first inequality at level $q$.
+Each terminal-pivot function has slope $1/2-x$ in the terminal label, so
+their infimum is concave and $3/2$-Lipschitz. Monotonicity in $q$ and the
+common modulus give a uniform limit $g$ as $q\downarrow S$.
+Feasibility with a fixed target label bounds $w(t)/g_q(t)$ uniformly for
+each interior $t$, proving $g(t)>0$ there. Concatenating a history ending
+at $t$ with the reflected reverse of a history ending at $-t$ gives two
+central Schur pivots coupled by $b(t)$. The resulting positive
+$2\times2$ matrix gives the second inequality in
+\eqref{eq:wf-feasibility} after taking the two infima and the limit.
+This is the critical-storage input, not a consequence of the old
+finite-dimensional rate argument.
+For a related treatment of canonical storage and positive welds for
+reversible Bell functionals, see Mghirbi \cite{MghirbiDynamics}.
+The argument below supplies the unrestricted lower bound directly;
+no such bound is imported from that work.
+
+Here is an elementary endpoint check using only $S<1/3$.
+One-edge histories give $g(1),g(-1)\le S$. If $g(1)=0$, Lipschitz
+continuity and reflection gluing imply, for $-1<t<1$,
+\[
+ g(t)\le\tfrac32(1-t),\qquad
+ g(-t)\ge\frac{1-t^2}{4g(t)}\ge\frac{1+t}{6}.
+\]
+Letting $t\uparrow1$ contradicts $g(-1)\le S<1/3$. Reflecting proves
+$g(-1)>0$ also. Thus $m:=\min_{[-1,1]}g>0$, and all quotients below
+extend continuously to the endpoints.
+
+Set
+\[
+ p=w/g,\quad \alpha(t)=b(t)\sqrt{g(-t)/g(t)},\quad
+ \beta(t)=\alpha(-t),\quad
+ \phi(x,u)=S-\delta(x,u)-\alpha(x)-\beta(u).
+\]
+Feasibility and its reflected version, followed by Cauchy--Schwarz, give
+$\phi\ge0$. In detail, the two vectors
+$(\sqrt{p(x)},\sqrt{g(u)})$ and
+$(\sqrt{g(-x)},\sqrt{p(-u)})$ have inner product
+$\alpha(x)+\beta(u)$ and squared norms at most $S-\delta(x,u)$.
+At $x=\pm1$ they cannot be proportional: the first coordinate of the
+first vector vanishes, whereas both $g(u)$ and $g(-x)$ are positive.
+Consequently $\phi>0$ on those two boundary edges; reflection treats the
+other two. Compactness supplies a symmetric interval
+$K=[-a,a]\subset(-1,1)$ containing every zero strictly inside $K^2$,
+and a constant $a_0>0$ with
+\begin{equation}\label{eq:wf-collar}
+ \inf_{(x,u)\notin K^2}\phi(x,u)\ge a_0.
+\end{equation}
+For example, minimize on the closed boundary collar
+$\max(|x|,|u|)\ge a$. No minimum on a nonclosed set is needed.
+
+First reduce arbitrary binary effects and mixed states without dimension
+loss. At fixed state the Bell value is affine in each effect; successively
+maximize each coordinate at a projection, then choose a top eigenvector
+of the resulting Bell operator. The value cannot decrease and neither
+local dimension changes. It therefore suffices to prove the lower bound
+for projective pure-state strategies. For such measurements on the
+original tensor product, put
+\[
+ X=A_1+A_2-I,\quad Y=A_2-A_1,\quad
+ U=B_1+B_2-I,\quad V=B_2-B_1,
+\]
+and $W_A=Y(B_3-I/2)$, $W_B=(A_3-I/2)V$. Direct multiplication, using
+idempotence of the measurement projections, gives
+\[
+ W_A^*=W_A,\quad W_AX=-XW_A,\quad W_A^2=b(X)^2,
+\]
+and the analogous identities for $W_B,U$. In particular $W_A$ is not
+assumed to commute with $U$. The operators
+$Q_A=\alpha(X)-W_A$ and $T_A=\alpha(-X)+W_A$ are self-adjoint and
+satisfy $Q_AT_A=0$: use $W_Af(X)=f(-X)W_A$ and
+$\alpha(t)\alpha(-t)=b(t)^2$. They therefore commute. Their sum is
+nonnegative, so their joint spectral values show that both factors are
+nonnegative. Likewise $Q_B=\beta(U)-W_B\ge0$. Expanding gives
+\begin{equation}\label{eq:wf-weld}
+ SI-\B=\phi(X,U)+Q_A+Q_B.
+\end{equation}
+For a unit vector of deficit $\eps=S-\langle\B\rangle$ and its joint
+spectral probability measure $\mu$, positivity and bounded norms imply
+\begin{equation}\label{eq:wf-residual}
+ \int\phi\,d\mu\le\eps,\qquad
+ \|Q_A\psi\|+\|Q_B\psi\|\le C\sqrt\eps,\qquad
+ \mu((K^2)^c)\le a_0^{-1}\eps.
+\end{equation}
+Indeed $\|Q_A\psi\|^2\le\|Q_A\|\langle Q_A\rangle$, with a fixed,
+dimension-independent norm bound. This derives the approximate response
+estimate from the positive weld, not from an exact-equality statement.
+
+If the original local dimensions are at most $d$, each of $X,U$ has at most $d$ distinct
+eigenvalues, regardless of spectral multiplicities.
+
+\subsubsection*{A quantitative monotone predictor}
+
+Put $C_0(x)=S+1-x/2-p(x)$ and let $H$ be its greatest convex minorant
+on the full interval $[-1,1]$. There is a fixed $M\ge1$ such that
+$h=H'$ is nondecreasing and $M$-Lipschitz in the interior, with a
+continuous constant extension past either endpoint.
+For completeness, for smooth positive concave approximants to $g$,
+\[
+ p''=\frac{w''}{g}-\frac{2w'g'}{g^2}
+       +\frac{2w(g')^2}{g^3}-\frac{wg''}{g^2}
+       \ge-\frac1m-\frac{4L}{m^2},
+\]
+where $L$ bounds the slopes and the approximants are at least $m/2$.
+Concave affine extensions followed by mollification and uniform limits
+show that $C_0$ is semiconcave. One may take
+$M=1+1/m+4L/m^2$. On every open gap where $H<C_0$, maximality makes
+$H$ affine. At an interior contact,
+\[
+ C'_{0,-}\le H'_-\le H'_+\le C'_{0,+},
+\]
+whereas semiconcavity reverses the outside inequality. All four values
+coincide. Adding the semiconcavity inequalities at contact points $x<y$
+gives $0\le H'(y)-H'(x)\le M(y-x)$. The affine gaps extend this estimate
+to arbitrary points, establishing the assertion.
+
+The affine minorant at $\min_z(C_0(z)-uz)$ lies below $H$, so
+\[
+ g(u)-u/2\le\min_z(C_0(z)-uz)=\min_z(H(z)-uz).
+\]
+Write $D=S-\delta(x,u)$, $L_1=D-p(x)-g(u)$ and
+$L_2=D-g(-x)-p(-u)$. Both are nonnegative, and
+\[
+ \alpha(x)+\beta(u)\le\sqrt{(D-L_1)(D-L_2)}
+ \le D-(L_1+L_2)/2.
+\]
+Consequently
+\begin{equation}\label{eq:wf-envelope-gap}
+ H(x)-ux-\min_z(H(z)-uz)\le L_1\le2\phi(x,u).
+\end{equation}
+Choose $\rho>0$ with every $x\in K$ at least $\rho$ from the interval
+endpoints. For $F(z)=H(z)-uz$, the admissible step
+$z=x-\rho\operatorname{sign}F'(x)$ shows that a gap smaller than
+$M\rho^2/2$ implies $|F'(x)|<M\rho$. The full step $x-F'(x)/M$ is
+then admissible; the smoothness inequality gives a decrease at least
+$|F'(x)|^2/(2M)$. Thus, for every $s$ below a fixed sufficiently small
+positive threshold,
+\begin{equation}\label{eq:wf-predictor}
+ x,u\in K,\ \phi(x,u)\le s
+ \quad\Longrightarrow\quad |u-h(x)|\le2\sqrt{Ms}.
+\end{equation}
+
+\subsubsection*{Scalar balance without identification of joint cells}
+
+Let $p_X,p_U$ be the original spectral marginals, and put
+$r(t)=\sqrt{g(-t)/g(t)}$, $R(t)=r(t)^2$. On $K$, $R$ is Lipschitz,
+with $0<R_{\min}\le R\le R_{\max}<\infty$.
+The operator $b(X)^{-1}W_A$ is an isometry on the $X$-corridor and
+reflects its spectral projections. Projecting the response residual in
+\eqref{eq:wf-residual}, dividing by $b(t)\ge b_0>0$, and using the
+reverse triangle inequality yields
+\[
+ \sum_{t\in K}
+ \left(\sqrt{p_X(-t)}-r(t)\sqrt{p_X(t)}\right)^2\le C\eps.
+\]
+Missing spectral atoms have weight zero. Cauchy--Schwarz converts this
+to the total $\ell^1$ bounds
+\[
+ \|\mathcal Fp_X-Rp_X\|_{1,K}\le C_1\sqrt\eps,\qquad
+ \|\mathcal Fp_U-R^{-1}p_U\|_{1,K}\le C_2\sqrt\eps,
+\]
+where $\mathcal F$ reflects a measure. These inequalities use genuine
+projected response vectors but not their localization in joint cells.
+
+Average measures only:
+$\bar\mu=(\mu+J_*\mu)/2$, $J(x,u)=(-u,-x)$. Since
+$\phi\circ J=\phi$, the defect bound is unchanged. Its marginals
+$p=(p_X+\mathcal Fp_U)/2$, $q=(p_U+\mathcal Fp_X)/2$ satisfy
+\[
+ q-Rp=\tfrac12(\mathcal Fp_X-Rp_X)
+       -\tfrac12R(\mathcal Fp_U-R^{-1}p_U).
+\]
+Fix the vertex universe to be the union of the original and reflected
+spectral labels in $K$, of cardinality $n\le4d$. Retain only cells
+$(x,u)\in K^2$ with $\phi(x,u)\le s\le1$, as directed edges $x\to u$.
+Keep isolated vertices. If $m_s$ is retained mass and $o,i$ are outgoing
+and incoming masses, Markov's inequality gives fixed constants with
+\begin{equation}\label{eq:wf-balance}
+ 1-m_s\le D_0\eps/s,\qquad
+ \|i-Ro\|_1\le C_b\sqrt\eps+(1+R_{\max})D_0\eps/s.
+\end{equation}
+No physical realization of $\bar\mu$ is asserted or needed.
+
+\subsubsection*{Cycles and paths}
+
+An elementary monotonicity observation will be used. If
+$x_0,\ldots,x_k=x_0$ satisfies $|x_{j+1}-h(x_j)|\le\delta$ with
+$h$ nondecreasing, then $|h(t)-t|\le\delta$ throughout the visited
+interval. Every interior level is crossed upwards and downwards; an
+upward crossing gives $h(t)\ge t-\delta$, and a downward one gives
+$h(t)\le t+\delta$. Predecessor and successor inequalities give the
+same bounds at the minimum and maximum. In particular every cycle edge
+has length at most $2\delta$.
+
+Put $\Delta=S-1/4>0$. Since $t^2-1+2b(t)\le1/4$, on the diagonal
+\[
+ \phi(t,t)=S-[t^2-1+b(t)(r(t)+r(t)^{-1})].
+\]
+For $|R(t)-1|\le c\le1/2$ the identity
+$r+r^{-1}-2=(R-1)^2/[r(r+1)^2]$ implies
+$\phi(t,t)\ge\Delta-c^2$. Choose
+$c=\min(1/2,\sqrt\Delta/2)$. On a retained cycle,
+\eqref{eq:wf-predictor} instead bounds
+$\phi(x,x)\le s+2L_\phi\delta$, where
+$\delta=2\sqrt{Ms}$ and $L_\phi$ is a Lipschitz constant on $K^2$.
+Choose a fixed sufficiently small $\delta_*>0$ so that the latter
+quantity is at most $\Delta/2$ whenever $\delta\le\delta_*$.
+Every cyclic vertex must then have $R\le1-c$ or $R\ge1+c$.
+Every internal edge of a cyclic strongly connected component belongs
+to a cycle. Decreasing $\delta_*$ so that $2L_R\delta_*<2c$ shows
+that such a component is entirely low or entirely high.
+
+Individual components are not enough: a low cycle feeding a high cycle
+can support a nonzero exactly balanced flow. To exclude this, also take
+$\delta_*\le c/(4\max(1,L_R))$, and choose the cut using the previously
+fixed universe:
+\begin{equation}\label{eq:wf-cut}
+ \delta_n=\delta_*(M+1)^{-n},\qquad s_n=\delta_n^2/(4M).
+\end{equation}
+Starting at a cyclic vertex $a$, any $k$-edge path satisfies
+\[
+ |x_{j+1}-a|\le M|x_j-a|+2\delta_n,\qquad
+ |x_k-a|\le2\delta_n\sum_{j=0}^{k-1}M^j
+              \le2\delta_n(M+1)^k.
+\]
+A shortest path is simple, hence has at most $n-1$ edges. Its endpoint
+cannot be an opposite-gain cyclic vertex: such vertices differ in $R$
+by at least $2c$, while the displayed distance and Lipschitz continuity
+give a difference at most $c/2$. In particular no low cyclic component
+can reach a high cyclic component.
+
+\subsubsection*{A signed potential that controls every branch}
+
+For any $n$-vertex directed graph with these properties there is a real
+function $f$ such that
+\begin{equation}\label{eq:wf-potential}
+ R_xf_x-f_y\ge1\quad(x\to y),\qquad
+ \|f\|_\infty\le B_*^{n+1},\quad
+ B_*=4+2R_{\max}+2/R_{\min}+2/c.
+\end{equation}
+Here is the construction. Let $\mathcal U$ be all vertices reachable
+from low cyclic components. It is forward closed and contains no high
+cycle. Its complement is backward closed, and no strongly connected
+component straddles the split: any component meeting $\mathcal U$ is
+contained in it by forward closure. On its condensation directed acyclic graph choose constants in
+topological order,
+\[
+ g_C=\max\{1,1/c,\max_{D\to C}(R_{\max}g_D+1)\},
+\]
+omitting empty inner maxima, and put $f=-g_C$ on $C$. An internal
+edge in a cyclic component has $(1-R_x)g_C\ge1$; edges between
+components satisfy $g_{C(y)}-R_xg_{C(x)}\ge1$ by construction.
+An acyclic singleton has no internal edge. On the complementary
+condensation graph process in reverse topological order and set
+\[
+ f_C=\max\{1/R_{\min},1/c,
+       \max_{C\to D,\ D\not\subset\mathcal U}(f_D+1)/R_{\min}\}.
+\]
+Its cyclic components are high, so internal edges obey
+$(R_x-1)f_C\ge1$; edges between components obey the same required
+inequality by the recursion. Edges into $\mathcal U$ obey it because
+$f_x\ge1/R_{\min}$ and $f_y<0$. No edge leaves $\mathcal U$.
+At most $n$ stages, with fixed bounded growth at each, give the norm
+bound in \eqref{eq:wf-potential}.
+
+For arbitrary nonnegative weights on all retained edges, summing gives
+\begin{equation}\label{eq:wf-all-branches}
+ m_s\le\sum_{x\to y}\bar\mu_{xy}(R_xf_x-f_y)
+       =\sum_x f_x(R_xo_x-i_x)
+       \le B_*^{n+1}\|Ro-i\|_1.
+\end{equation}
+This is why branching and spectral multiplicity introduce no missing
+payment: no edge, row, or component is replaced by a selected path.
+
+\subsubsection*{Assembly}
+
+If the fixed universe is empty, the collar estimate already gives a
+positive lower bound on $\eps$. Otherwise combine
+\eqref{eq:wf-balance}--\eqref{eq:wf-all-branches}, with
+$C_3=(1+R_{\max})D_0$ and constants enlarged to at least one:
+\[
+ 1-D_0\eps/s_n\le B_*^{n+1}
+                 (C_b\sqrt\eps+C_3\eps/s_n).
+\]
+Either $D_0\eps/s_n\ge1/2$, or one of the two right-hand terms is
+at least $1/4$. Hence
+\[
+ \eps\ge\min\left\{\frac{s_n}{2D_0},
+ \frac{1}{16C_b^2B_*^{2n+2}},
+ \frac{s_n}{4C_3B_*^{n+1}}\right\}.
+\]
+By \eqref{eq:wf-cut} this is at least $c_0e^{-C_0n}$ with fixed positive
+constants. Since $n\le4d$, \eqref{eq:lb} follows. It also excludes exact
+finite-dimensional attainment without using spatial attainment or the
+old common-return argument. Finally,
+$\eps\ge c_*e^{-C_*d}$ implies
+$d\ge C_*^{-1}\log(c_*/\eps)$, proving the lower half of
+Theorem~\ref{thm:rate}.\hfill$\square$
+
+\paragraph{Verification scope.}
+This proof is analytic. Exact finite-graph tests exercise the signed
+potential and negative controls, but do not prove the analytic estimates.
+The Lean module \texttt{I3322Kernel.WeightedFlow} verifies the finite
+all-edge summation identity, the residual bound conditional on an edge
+potential, three local potential inequalities, and the elementary
+assembly alternative. It does not prove the existence of the potential
+from strongly connected components, convex-envelope regularity, or the
+quantum-to-flow reduction. The full chain remains an analytic proof.
+The earlier staircase and selected-walk cores are not dependencies of
+this replacement.

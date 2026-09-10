@@ -1,0 +1,11 @@
+{
+  "kind": "source-pdf-build-identity-not-proof",
+  "date": "2026-09-10",
+  "engine": "pdflatex -no-shell-escape, two successful passes",
+  "pages": 25,
+  "sha256": {
+    "resolution.tex": "dd00798a743e17d3dc11b5664063194914ad3e218c24432ed1aae08c49c3eb22",
+    "LOWER-BOUND-REVISION.tex": "e9feb6b09aaf983fe6d7b32c275489ee8ec9fa3ab591f40a5facb2fa50a7d6d7",
+    "resolution.pdf": "9aeed79f970cb033cca77dc915fefa7fac29d2d85b77fa3f1898172c6fb108a6"
+  }
+}

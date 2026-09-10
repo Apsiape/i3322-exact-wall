@@ -31,3 +31,16 @@ import I3322Kernel
 #print axioms I3322Kernel.band_identity
 #print axioms I3322Kernel.band_quarter_ceiling
 #print axioms I3322Kernel.amplitude_b_le_half
+
+-- Replacement lower proof: selected finite accounting cores, not the
+-- analytic/SCC-existence/quantum reduction chain.
+#print axioms I3322Kernel.WeightedFlow.all_edges
+#print axioms I3322Kernel.WeightedFlow.balance_identity
+#print axioms I3322Kernel.WeightedFlow.signed_work_bound
+#print axioms I3322Kernel.WeightedFlow.mass_le_residual
+#print axioms I3322Kernel.WeightedFlow.low_internal
+#print axioms I3322Kernel.WeightedFlow.high_internal
+#print axioms I3322Kernel.WeightedFlow.entering_low
+#print axioms I3322Kernel.WeightedFlow.assembly_alternative
+#print axioms I3322Kernel.WeightedFlow.weighted_endpoint_payment
+#print axioms I3322Kernel.WeightedFlow.upper_rounding_slack

@@ -1,5 +1,6 @@
 {
   "title": "The I3322 quantum value is attained spatially but not in finite dimension",
+  "version": "4.1.0",
   "upload_type": "publication",
   "publication_type": "preprint",
   "access_right": "open",
@@ -10,7 +11,7 @@
       "orcid": "0009-0007-4708-3252"
     }
   ],
-  "description": "Three theorems about the I3322 Bell functional, working from an exactly certified window for its quantum value S and a certified tensor/commuting value equality. Theorem (N): no finite-dimensional quantum strategy attains S (any local dimensions, mixed states, POVMs), proving the 2010 conjecture of Pal and Vertesi. Theorem (S): S is attained by a spatial strategy on l2(Z) tensor l2(Z). Consequently C_q(3,3;2,2) is not closed and C_qs \\ C_q is nonempty, at the smallest venue by input count, among two-outcome bipartite scenarios, in which nonclosure is known; no minimality is claimed over larger output alphabets. Theorem (Rate): the dimension complexity is D(eps) = Theta(log(1/eps)) - reaching S to accuracy eps requires and suffices local dimension of order log(1/eps), with explicit derived constant 23.9010650 on the upper half and existential constants on the lower. The exact optimum beyond the certified 3.61e-9 window, and whether the Pal-Vertesi family converges to S, remain open. The repository ships the paper (paper/resolution.pdf), machine-checkable certificates with complete audit records, a Lean 4 kernel (27 theorems, standard axioms only), and the full correction history, including the public decertification of an earlier claimed proof by this program.",
+  "description": "Version 4.1.0: revised proof and verification release. Three theorems about the I3322 Bell functional start from an exactly certified window for its quantum value S and tensor/commuting value equality. No finite-dimensional strategy attains S (arbitrary finite local dimensions, mixed states and binary POVMs), while a spatial strategy on l2(Z) tensor l2(Z) does. Consequently C_q(3,3;2,2) is not closed and differs from C_qs in the smallest scenario by input count among binary-output bipartite scenarios where nonclosure is known; no minimality is claimed over larger output alphabets. The dimension complexity is D(eps) = Theta(log(1/eps)); constructively D(eps) <= 23.9010650 log(1/eps) for all sufficiently small eps, with no explicit threshold supplied. The replacement finite weighted-flow lower proof has existential constants and removes an unjustified component-identification step; foundational and upper-bound estimates and spatial-amplitude exposition were also corrected. Lean 4 checks 37 selected declarations using standard axioms only; the complete analytic proof is not formalized. The exact value beyond the certified window is not identified here. Pauwels (arXiv:2608.29734v1, Theorem 1) proves equality of the finite Pal-Vertesi-family and finite quantum suprema; this does not identify the limit of any prescribed numerical parameter sequence. Pauwels proves finite nonattainment; Coladangelo (arXiv:2609.06038v1) independently proves finite nonattainment and spatial attainment. Original certificates, provenance and correction history are preserved, including the earlier public decertification. The concept DOI 10.5281/zenodo.21782008 identifies the version family; historical v4.0.0 remains DOI 10.5281/zenodo.22099128 and does not contain this revision.",
   "keywords": [
     "Bell inequalities",
     "I3322",
@@ -35,6 +36,5 @@
       "relation": "isSupplementTo",
       "scheme": "url"
     }
-  ],
-  "version": "4.0.0"
+  ]
 }

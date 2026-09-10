@@ -1,5 +1,6 @@
 cff-version: 1.2.0
-message: "If you use this theorem package or its certificates, please cite this work."
+message: "Cite the versioned release below. Zenodo assigns its version DOI when the GitHub release is published; consult that release for the archive DOI."
+version: 4.1.0
 title: "The I3322 quantum value is attained spatially but not in finite dimension"
 type: article
 authors:
@@ -7,11 +8,9 @@ authors:
     family-names: Douglas
     email: apsiape@gmail.com
     orcid: "https://orcid.org/0009-0007-4708-3252"
-version: 4.0.0
-doi: 10.5281/zenodo.21782008
 license: CC-BY-4.0
 repository-code: "https://github.com/Apsiape/i3322-exact-wall"
-url: "https://doi.org/10.5281/zenodo.21782008"
+url: "https://github.com/Apsiape/i3322-exact-wall/releases/tag/v4.1.0"
 abstract: >-
   The tensor-product and commuting-operator suprema of the canonical I3322
   Bell functional coincide at a common value S, certified within an exact
@@ -23,7 +22,11 @@ abstract: >-
   bipartite scenarios, in which nonclosure is known; no minimality is claimed
   over scenarios with larger output alphabets. The paper further proves the
   dimension complexity D(eps) = Theta(log(1/eps)), with explicit derived
-  constant 23.9010650 on the upper half.
+  upper bound D(eps) <= 23.9010650 log(1/eps) for all sufficiently small
+  eps. The lower proof is a finite weighted-flow argument with existential
+  constants. Lean checks cover 37 selected declarations; the complete
+  analytic proof is not formalized. Concurrent work is credited to
+  Pauwels (arXiv:2608.29734v1) and Coladangelo (arXiv:2609.06038v1).
 keywords:
   - Bell inequalities
   - I3322
@@ -35,14 +38,5 @@ keywords:
   - Cq versus Cqs
   - nonclosed quantum correlations
   - minimal Bell scenario
-preferred-citation:
-  type: article
-  title: "The I3322 quantum value is attained spatially but not in finite dimension"
-  authors:
-    - given-names: Seth
-      family-names: Douglas
-      orcid: "https://orcid.org/0009-0007-4708-3252"
-  year: 2026
-  # version DOI of the v4.0.0 release of record; the top-level doi field
-  # is the concept DOI, which resolves to the latest release
-  doi: 10.5281/zenodo.22099128
+# Historical v4.0.0 remains DOI 10.5281/zenodo.22099128.
+# Concept DOI 10.5281/zenodo.21782008 identifies the version family, not v4.1.0.

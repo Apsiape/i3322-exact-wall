@@ -15,6 +15,17 @@ would otherwise check by hand.
 
 ## Contents
 
+The 2026-09-10 revision adds `I3322Kernel/WeightedFlow.lean`, with ten
+declarations covering all-edge summation, oriented balance, the conditional
+residual estimate, three local potential inequalities, a three-way algebraic
+alternative, endpoint addition, and strict upper-coefficient slack.
+`AxiomCheck.lean` includes all ten. They compiled during development with
+only the standard axioms. The potential's existence from SCC separation is
+**not** formalized; neither is the analytic quantum-to-flow reduction.
+See `../../certificate/production/lower-weighted-flow/README.md` for the exact
+mapping. The historical `RateCores.lean` lemmas remain available but do not
+certify the replacement's application hypotheses.
+
 | File | Lemma | Paper statement formalized |
 |---|---|---|
 | `I3322Kernel/QuarterCeiling.lean` | L1 | The amplitude-elimination chain (Sprint 1198 (16)–(20)): the expansion identity, the discriminant ring identity, the bound `(b_x+b_u)² + (x−u)²/4 ≤ 1−xu`, the scalar ceiling `−t+√t ≤ 1/4` for `t ≥ 0`, and the conclusion `xu−1+√(…) ≤ 1/4`. Plus `1/4 <` the certified window's lower endpoint (exact rationals). Together: any *closed* (`a = b`) strategy value is capped strictly below `S`. |

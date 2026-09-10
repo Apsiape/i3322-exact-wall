@@ -1,3 +1,15 @@
 * text=auto eol=lf
 *.pdf binary
 *.npz binary
+# Historical certificate bytes are provenance, not editable prose.
+certificate/** -text
+paper/manuscript.tex -text
+paper/TECHNICAL-SUPPLEMENT.md -text
+paper/CERTIFICATE-STATUS-ALERT.md -text
+# Preserve raw SHA-256 provenance when staging and checking out imported copies.
+review/revision-2026-09-10/baseline/** -text
+review/revision-2026-09-10/imported-repair/** -text
+review/end-to-end-2026-09-10/finalization-20260910/baseline/** -text
+review/end-to-end-2026-09-10/finalization-20260910/external-lower/** -text
+review/end-to-end-2026-09-10/fresh-rebuild-20260910/** -text
+review/end-to-end-2026-09-10/release-prep-20260910/baseline/** -text
