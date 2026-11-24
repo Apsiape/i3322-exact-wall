@@ -24,8 +24,8 @@
     },
     {
       "path": "CITATION.cff",
-      "bytes": 2093,
-      "sha256": "d35a715da706d09bc979b82ce22683d04123c22d7fc0036fc1dd9a0ef24278d0"
+      "bytes": 2217,
+      "sha256": "bde1cbc2bcacef98a39c0d0af4a12fff2603d48b885845f02c31a159cae361ea"
     },
     {
       "path": "LICENSE.md",
@@ -44,8 +44,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3394,
-      "sha256": "1f76e411b621aa52bb218e34a3bfabfe10affcaa34e0a922a6c0f8982bce9dc3"
+      "bytes": 3455,
+      "sha256": "bb67aeb54b6e4a5746ea9c79819db96f60c5f502f1aa8e34ddce8f13126e4de9"
     },
     {
       "path": "REVIEW-START-HERE.md",

@@ -50,5 +50,14 @@
       "paper/resolution.pdf",
       "paper/resolution.tex"
     ]
+  },
+  "post_release_arxiv_identifier_update": {
+    "author_authorization": "Explicit owner instruction on 2026-11-24 to record the arXiv identifier arXiv:2609.05555; no new release or tag.",
+    "current_source_manifest_sha256": "125dbdfc7dc4a1e6cce1936cc2dbeb68e45f6151d8c50971f030ca436218f8a9",
+    "scope": "Citation metadata only: arXiv identifier added to README.md and CITATION.cff. Published tag and archive remain immutable.",
+    "changed_source_files": [
+      "CITATION.cff",
+      "README.md"
+    ]
   }
 }

@@ -2,6 +2,8 @@
 
 Seth Douglas · [ORCID](https://orcid.org/0009-0007-4708-3252)
 
+arXiv: [arXiv:2609.05555](https://arxiv.org/abs/2609.05555)
+
 ## Start here
 
 - [Current paper](paper/resolution.pdf) and [LaTeX source](paper/resolution.tex).
